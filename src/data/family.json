@@ -1,0 +1,8297 @@
+{
+  "meta": {
+    "title": "Wixted Family Tree",
+    "version": "v9.5",
+    "updated": "2022-05-29",
+    "focus": "Katie Alyson Wixted"
+  },
+  "branches": [
+    {
+      "id": "wixted",
+      "label": "Wixted",
+      "desc": "Main Wixted family line — Corning, NY to Rochester",
+      "count": 119
+    },
+    {
+      "id": "evelyn",
+      "label": "Evelyn",
+      "desc": "Swedish ancestry — Kalmar & Småland",
+      "count": 35
+    },
+    {
+      "id": "ev-gilbert",
+      "label": "Gilbert",
+      "desc": "Gilbert line — French & colonial roots",
+      "count": 161
+    },
+    {
+      "id": "breitenbach",
+      "label": "Breitenbach",
+      "desc": "Breitenbach family branch",
+      "count": 55
+    },
+    {
+      "id": "clark",
+      "label": "Clark",
+      "desc": "Clark family — Dollie Avarilla line",
+      "count": 95
+    },
+    {
+      "id": "collins",
+      "label": "Collins",
+      "desc": "Collins family branch",
+      "count": 18
+    },
+    {
+      "id": "amor",
+      "label": "Amor",
+      "desc": "Amor family research",
+      "count": 94
+    },
+    {
+      "id": "jess",
+      "label": "Nordquist",
+      "desc": "Jessica Nordquist line",
+      "count": 55
+    },
+    {
+      "id": "from-ireland",
+      "label": "From Ireland",
+      "desc": "Wixteds born in Ireland",
+      "count": 4
+    },
+    {
+      "id": "mayflower",
+      "label": "Mayflower",
+      "desc": "Alden Mayflower descent",
+      "count": 33
+    },
+    {
+      "id": "danforth",
+      "label": "Danforth",
+      "desc": "Danforth family line",
+      "count": 25
+    }
+  ],
+  "people": [
+    {
+      "id": "wixted-18-1",
+      "name": "Mary Hogan",
+      "dates": "1800-9/1873 (73)",
+      "notes": [
+        "d. Lambeth,London"
+      ],
+      "col": 1,
+      "row": 18,
+      "branch": "wixted",
+      "generation": 0
+    },
+    {
+      "id": "wixted-18-3",
+      "name": "Thomas James Wixted",
+      "dates": "1796-9/1873 (77)",
+      "notes": [
+        "d. Lambeth,London"
+      ],
+      "col": 3,
+      "row": 18,
+      "branch": "wixted",
+      "generation": 0
+    },
+    {
+      "id": "wixted-18-21",
+      "name": "Margaret Walsh",
+      "dates": "1815-11/1884 (69)",
+      "notes": [
+        "c1870 Avon 60 w/Bridget",
+        "c1880 Avon 68 w/Bridget"
+      ],
+      "col": 21,
+      "row": 18,
+      "branch": "wixted",
+      "generation": 0
+    },
+    {
+      "id": "wixted-18-31",
+      "name": "Patrick Donovan",
+      "dates": "1804-12/4/1884 (90)",
+      "notes": [
+        "Corning, NY"
+      ],
+      "col": 31,
+      "row": 18,
+      "branch": "wixted",
+      "generation": 0
+    },
+    {
+      "id": "wixted-30-1",
+      "name": "Henry Britt",
+      "dates": "4/20/1838-2/22/1927 (89)",
+      "notes": [],
+      "col": 1,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-1"
+    },
+    {
+      "id": "wixted-30-3",
+      "name": "Margaret Wicksted",
+      "dates": "8/14/1838-9/8/1902 (64)",
+      "notes": [],
+      "col": 3,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-3"
+    },
+    {
+      "id": "wixted-30-23",
+      "name": "John McGraw",
+      "dates": "3/1836(1935?)-10/15/1907 (72)",
+      "notes": [
+        "Erie RR Trackwalker",
+        "gravesite photo",
+        "c1870 Avon 33",
+        "c1880 Avon 43",
+        "c1900 Avon 64"
+      ],
+      "col": 23,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-21"
+    },
+    {
+      "id": "wixted-30-29",
+      "name": "Henry(1) Wixted",
+      "dates": "1823-1893 (70)",
+      "notes": [
+        "c1855 Corning 38",
+        "c1860 Corning 34",
+        "c1865 Corning 44",
+        "c1870 Corning 46",
+        "c1880 Corning 55"
+      ],
+      "col": 29,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-31"
+    },
+    {
+      "id": "wixted-30-31",
+      "name": "Bridget Donovan",
+      "dates": "1830-4/26/1904 (74)",
+      "notes": [
+        "c1855 Corning 28",
+        "c1860 Corning 30",
+        "c1865 Corning 35",
+        "c1870 Corning 40",
+        "c1880 Corning 50"
+      ],
+      "col": 31,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-31"
+    },
+    {
+      "id": "wixted-30-33",
+      "name": "John Donovan",
+      "dates": "",
+      "notes": [],
+      "col": 33,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1,
+      "parentId": "wixted-18-31"
+    },
+    {
+      "id": "wixted-30-55",
+      "name": "Mary Colton",
+      "dates": "2/1830-",
+      "notes": [
+        "c1892 Corning 62",
+        "c1900 Corning 70"
+      ],
+      "col": 55,
+      "row": 30,
+      "branch": "wixted",
+      "generation": 1
+    },
+    {
+      "id": "wixted-49-1",
+      "name": "Margaret Kelly",
+      "dates": "8/8/1874-11/27/1936 (62)",
+      "notes": [],
+      "col": 1,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-1"
+    },
+    {
+      "id": "wixted-49-3",
+      "name": "John Britt",
+      "dates": "8/24/1869-9/19/1947 (78)",
+      "notes": [],
+      "col": 3,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-3"
+    },
+    {
+      "id": "wixted-49-9",
+      "name": "John H McGraw jr",
+      "dates": "3/13/1868-5/23/1954 (86)",
+      "notes": [
+        "Spanish-Am War Vet",
+        "In lumber business,lived",
+        "in SFO, Seattle",
+        "c1870 Avon 2",
+        "c1880 Avon 12"
+      ],
+      "col": 9,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-3"
+    },
+    {
+      "id": "wixted-49-13",
+      "name": "William W McGraw",
+      "dates": "1872-1/24/1941 (69)",
+      "notes": [
+        "c1880 Avon 8"
+      ],
+      "col": 13,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-3"
+    },
+    {
+      "id": "wixted-49-17",
+      "name": "Sarah A McGraw",
+      "dates": "4/1880-2/1958 (78)",
+      "notes": [
+        "(Note 1)",
+        "Nurse",
+        "c1880 Avon 2"
+      ],
+      "col": 17,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-23"
+    },
+    {
+      "id": "wixted-49-23",
+      "name": "Margaret A. McGraw",
+      "dates": "1870-2/26/1953 (83)",
+      "notes": [
+        "c1870 Avon 3/12",
+        "c1880 Avon 10"
+      ],
+      "col": 23,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-23"
+    },
+    {
+      "id": "wixted-49-25",
+      "name": "Henry(2) Joseph Wixted",
+      "dates": "8/7/1866-12/30/1942 (76)",
+      "notes": [
+        "(1915 article about sueing",
+        "because he will lose his)",
+        "hand from electrical accident",
+        "Read obit",
+        "c1870 Corning 4",
+        "c1880 Corning 13"
+      ],
+      "col": 25,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-23"
+    },
+    {
+      "id": "wixted-49-31",
+      "name": "Hugh M Wixted  a RR Fireman",
+      "dates": "10/1850-9/9/1935 see obit",
+      "notes": [
+        "c1855 Corning 6",
+        "c1860 Corning 9",
+        "c1865 Corning 14",
+        "c1870 Corning 20",
+        "c1880 Corning 27"
+      ],
+      "col": 31,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-31"
+    },
+    {
+      "id": "wixted-49-33",
+      "name": "Julia M. McAvoy",
+      "dates": "3/1860-2/17/1927",
+      "notes": [],
+      "col": 33,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-35",
+      "name": "Mary A. Wixted-Reilly",
+      "dates": "1860-1942 (82)",
+      "notes": [
+        "c1860 Corning 1",
+        "c1865 Corning 6",
+        "c1870 Corning 11"
+      ],
+      "col": 35,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-37",
+      "name": "Bridget Wixted-Barry",
+      "dates": "1857-",
+      "notes": [
+        "c1860 Corning 3",
+        "c1865 Corning 8",
+        "c1870 Corning 13"
+      ],
+      "col": 37,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-39",
+      "name": "Johanna Wixted-Salley",
+      "dates": "1855-7/14/1932",
+      "notes": [
+        "c1860 Corning 6",
+        "c1865 Corning 10",
+        "c1870 Corning 16"
+      ],
+      "col": 39,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-41",
+      "name": "James J Salley",
+      "dates": "7/26/1852-7/26/1924",
+      "notes": [
+        "RR Engineer"
+      ],
+      "col": 41,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-43",
+      "name": "Anna Wixted-Wright",
+      "dates": "1863-",
+      "notes": [
+        "c1865 Corning 2",
+        "c1870 Corning 7",
+        "c1880 Corning 16"
+      ],
+      "col": 43,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-33"
+    },
+    {
+      "id": "wixted-49-45",
+      "name": "Julia C Wixted-Williams",
+      "dates": "1852-",
+      "notes": [
+        "c1855 Corning 3",
+        "c1860 Corning 8",
+        "c1865 Corning 12",
+        "c1870 Corning 18"
+      ],
+      "col": 45,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-55"
+    },
+    {
+      "id": "wixted-49-53",
+      "name": "John Joseph Wixted",
+      "dates": "10/1/1862-4/9/1927",
+      "notes": [
+        "conducter",
+        "1909 221 W 1st conductor",
+        "c1865 Corning 4",
+        "c1870 Corning 9",
+        "c1880 Corning 18"
+      ],
+      "col": 53,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-55"
+    },
+    {
+      "id": "wixted-49-67",
+      "name": "Mary A     maybe Mary Lane",
+      "dates": "3/1864-",
+      "notes": [
+        "c1892 Corning 28"
+      ],
+      "col": 67,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2,
+      "parentId": "wixted-30-55"
+    },
+    {
+      "id": "wixted-49-69",
+      "name": "Henry(3)(Andre) Joseph Wixted",
+      "dates": "10/1862-",
+      "notes": [
+        "glass worker",
+        "c1892 Corning 32"
+      ],
+      "col": 69,
+      "row": 49,
+      "branch": "wixted",
+      "generation": 2
+    },
+    {
+      "id": "wixted-54-5",
+      "name": "Post Office worker",
+      "dates": "",
+      "notes": [
+        "c1870 Avon 6",
+        "c1880 Avon 15",
+        "c1900 Avon 34"
+      ],
+      "col": 5,
+      "row": 54,
+      "branch": "wixted",
+      "generation": 3,
+      "parentId": "wixted-49-3"
+    },
+    {
+      "id": "wixted-54-11",
+      "name": "Mother Betsy",
+      "dates": "",
+      "notes": [
+        "c1900 Mt Morris,NY"
+      ],
+      "col": 11,
+      "row": 54,
+      "branch": "wixted",
+      "generation": 3,
+      "parentId": "wixted-49-9"
+    },
+    {
+      "id": "wixted-54-19",
+      "name": "Staff Nurse, Stecher-Traung",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 54,
+      "branch": "wixted",
+      "generation": 3,
+      "parentId": "wixted-49-17"
+    },
+    {
+      "id": "wixted-73-1",
+      "name": "William Ambrose Fenelon",
+      "dates": "10/25/1904-12/6/1986 (82)",
+      "notes": [],
+      "col": 1,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-5"
+    },
+    {
+      "id": "wixted-73-3",
+      "name": "Veronica Britt",
+      "dates": "6/13/1905-",
+      "notes": [],
+      "col": 3,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-5"
+    },
+    {
+      "id": "wixted-73-19",
+      "name": "Carroll W. (male)",
+      "dates": "1909-   NY",
+      "notes": [],
+      "col": 19,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-21",
+      "name": "Francis J Vadas",
+      "dates": "1906-1974",
+      "notes": [
+        "Bruce's Football Coach",
+        "Buried next to Marg",
+        "& Henry",
+        "c1930 Roch 24 1081 GPB"
+      ],
+      "col": 21,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-23",
+      "name": "Ethel Mary Wixted-Vadas",
+      "dates": "1/7/1905-1/10/1993 (88)",
+      "notes": [
+        "SS 072-30-2770",
+        "c1910 Avon 5",
+        "c1920 Roch 15",
+        "c1925 Roch 20",
+        "c1930 Roch 24 1081 GPB"
+      ],
+      "col": 23,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-25",
+      "name": "Margaret G.Wixted-Semo",
+      "dates": "1902-1976 (74)",
+      "notes": [
+        "dictaphone operator",
+        "c1910 Avon 7",
+        "c1920 Roch 17",
+        "1922 Roch 12 Kensington",
+        "c1925 Roch 22",
+        "c1930 Roch 27 1081 GPB"
+      ],
+      "col": 25,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-27",
+      "name": "John Leroy Wixted",
+      "dates": "3/13/1900-9/1993 (93)",
+      "notes": [
+        "SS128-09-5338",
+        "have draft card registration",
+        "c1910 Avon 10",
+        "c1920 Roch 19",
+        "1922 Roch 12 Kensington",
+        "c1925 Roch 25",
+        "c1930 Roch 30"
+      ],
+      "col": 27,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-29",
+      "name": "Hazel Mae Breitenbach",
+      "dates": "SS104-07-4721",
+      "notes": [
+        "11/6/05-5/84 (79)",
+        "c1930 Roch 24"
+      ],
+      "col": 29,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4,
+      "parentId": "wixted-54-19"
+    },
+    {
+      "id": "wixted-73-33",
+      "name": "Roger S Wixted",
+      "dates": "6/18/1899-5/7/1972 (73)",
+      "notes": [
+        "SS104-07-4572",
+        "c1900 Roch 1",
+        "c1910 Roch 10",
+        "c1920 Roch 20",
+        "c1925 Roch 25",
+        "c1930 Roch 30",
+        "1922 Roch 5 Terry"
+      ],
+      "col": 33,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-35",
+      "name": "Teresa Gertrude",
+      "dates": "10/6/1891-11/5/1966 (75)",
+      "notes": [
+        "SS120-32-6440 teacher",
+        "c1900 Roch 8",
+        "c1910 Roch 18",
+        "c1920 Roch 27",
+        "1909 newspaper article",
+        "c1930 Roch 38 with Dad",
+        "1922 Roch 5 Terry"
+      ],
+      "col": 35,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-37",
+      "name": "Edward Peter Kummer",
+      "dates": "1/21/1888-10/9/1967",
+      "notes": [
+        "SS128-09-6631",
+        "c1930 Roch 42 with Hugh"
+      ],
+      "col": 37,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-39",
+      "name": "Alice M.",
+      "dates": "9/1886-10/22/1918 (32)",
+      "notes": [
+        "c1910 Roch 23"
+      ],
+      "col": 39,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-41",
+      "name": "Frank J. Wixted",
+      "dates": "1897-",
+      "notes": [
+        "Ink mixer",
+        "c1920 Roch 23",
+        "c1925 Roch 28",
+        "1922 Roch 5 Terry"
+      ],
+      "col": 41,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-43",
+      "name": "Frances John Wixted",
+      "dates": "6/14/1896-12/8/1973",
+      "notes": [
+        "SS104-05-2177",
+        "have draft registration",
+        "c1900 Roch 3",
+        "c1910 Roch 13"
+      ],
+      "col": 43,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-45",
+      "name": "Julia Cecilia Salley",
+      "dates": "11/5/1873-6/13/1911",
+      "notes": [
+        "grave \"Lulu Sackett\""
+      ],
+      "col": 45,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-47",
+      "name": "Edgar G Sackett",
+      "dates": "1872-1943",
+      "notes": [],
+      "col": 47,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-49",
+      "name": "Frances Winifred Salley",
+      "dates": "1881-6/24/1906",
+      "notes": [],
+      "col": 49,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-51",
+      "name": "Isadora Salley",
+      "dates": "",
+      "notes": [
+        "Benjamin"
+      ],
+      "col": 51,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-53",
+      "name": "Helen Wixted-Marx",
+      "dates": "6/1887-",
+      "notes": [
+        "c1892 Corning 5",
+        "c1900 Corning 12",
+        "c1910 Corning 22",
+        "c1920 Corning 32",
+        "c1925 Corning 36",
+        "c1930 Corning 42"
+      ],
+      "col": 53,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-57",
+      "name": "Gertrude Wixted-Grimaldi",
+      "dates": "3/8/1895-3/11/1984",
+      "notes": [
+        "1901-1978",
+        "c1900 Corning 5",
+        "c1910 Corning 15",
+        "c1920 Corning 24",
+        "c1930 Corning 33 w/mom"
+      ],
+      "col": 57,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-59",
+      "name": "Raymond Jose Wixted",
+      "dates": "2/18/1902-11/20/1973",
+      "notes": [
+        "c1910 Corning 8",
+        "c1920 Corning 18",
+        "c1930 Syracuse"
+      ],
+      "col": 59,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-61",
+      "name": "Margaret C. (B)",
+      "dates": "1901-1984",
+      "notes": [
+        "1909 221 W 1st",
+        "clerk J.Hoare & Co.",
+        "c1930 Syracuse"
+      ],
+      "col": 61,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-63",
+      "name": "Celia Wixted-Murphy",
+      "dates": "3/1890-",
+      "notes": [
+        "c1892 Corning 2",
+        "c1900 Corning 10",
+        "c1910 Corning 19",
+        "1909 221 W 1st bookkeeper"
+      ],
+      "col": 63,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-69",
+      "name": "James Thomas",
+      "dates": "7/10/1886-",
+      "notes": [
+        "carpenter / have draft registration",
+        "c1892 Corning 6",
+        "c1900 Corning 13",
+        "c1905 Corning 18",
+        "c1910 Corning 22",
+        "1909 101 Lexington brakeman",
+        "c1915 Corning 28 101 Lexington"
+      ],
+      "col": 69,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-71",
+      "name": "Henry(4) J Wixted",
+      "dates": "8/31/1889-",
+      "notes": [
+        "c1892 Corning 3",
+        "c1900 Corning 10",
+        "c1905 Corning 15",
+        "c1910 Corning 20",
+        "1909 101 Lexington glass worker"
+      ],
+      "col": 71,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-73",
+      "name": "Frances Katherine",
+      "dates": "2/1893-",
+      "notes": [
+        "c1900 Corning 7",
+        "c1905 Corning 11",
+        "c1910 Corning 17"
+      ],
+      "col": 73,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-73-77",
+      "name": "Vincent Depaul",
+      "dates": "9/14/1899-6/1977",
+      "notes": [
+        "c1900 Corning 0",
+        "c1905 Corning 5",
+        "c1910 Corning 11",
+        "c1915 Corning 15 101 Lexington",
+        "1921 Elmira 244 Birchwood"
+      ],
+      "col": 77,
+      "row": 73,
+      "branch": "wixted",
+      "generation": 4
+    },
+    {
+      "id": "wixted-77-15",
+      "name": "Either Dorothy of Elizabeth",
+      "dates": "",
+      "notes": [
+        "was Sister M. Ceiestine",
+        "Order of Carmel, NYC",
+        "and the other became",
+        "Mrs. Victor Wallock of",
+        "Rochester"
+      ],
+      "col": 15,
+      "row": 77,
+      "branch": "wixted",
+      "generation": 5,
+      "parentId": "wixted-73-19"
+    },
+    {
+      "id": "wixted-77-17",
+      "name": "Either Dorothy of Elizabeth",
+      "dates": "",
+      "notes": [
+        "was Sister M. Ceiestine",
+        "Order of Carmel, NYC",
+        "and the other became",
+        "Mrs. Victor Wallock of",
+        "Rochester"
+      ],
+      "col": 17,
+      "row": 77,
+      "branch": "wixted",
+      "generation": 5,
+      "parentId": "wixted-73-19"
+    },
+    {
+      "id": "wixted-91-3",
+      "name": "Margot Helena Fenelon",
+      "dates": "7/28/1944-",
+      "notes": [
+        "Yarraville,Aust"
+      ],
+      "col": 3,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6,
+      "parentId": "wixted-77-15"
+    },
+    {
+      "id": "wixted-91-15",
+      "name": "Margaret Ann Darrow-Vadas",
+      "dates": "",
+      "notes": [
+        "known as \"Aunt Peggy\" by Keith",
+        "lives in East Haddam, Conn 2010",
+        "Went to Nazareth Academy",
+        "High in Rochester",
+        "b. Rochester"
+      ],
+      "col": 15,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6,
+      "parentId": "wixted-77-15"
+    },
+    {
+      "id": "wixted-91-19",
+      "name": "Karyl Jean Johnston",
+      "dates": "7/9/1952-",
+      "notes": [
+        "Rochester,NY",
+        "Age today is 74.0"
+      ],
+      "col": 19,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6,
+      "parentId": "wixted-77-17"
+    },
+    {
+      "id": "wixted-91-21",
+      "name": "Rodney Henri Wixted",
+      "dates": "03/14/1946",
+      "notes": [
+        "Rochester,NY",
+        "Age today is 80.3"
+      ],
+      "col": 21,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6,
+      "parentId": "wixted-77-17"
+    },
+    {
+      "id": "wixted-91-29",
+      "name": "Bruce John Wixted",
+      "dates": "SS117-22-6934",
+      "notes": [
+        "04/03/33-03/11/95 (62)"
+      ],
+      "col": 29,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6,
+      "parentId": "wixted-77-17"
+    },
+    {
+      "id": "wixted-91-31",
+      "name": "Evelyn Ruth Jones",
+      "dates": "SS112-24-1440",
+      "notes": [
+        "08/27/32-12/15/88 (56)",
+        "Librarian",
+        "Rochester,NY"
+      ],
+      "col": 31,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-43",
+      "name": "Isadora L Sackett Bamford",
+      "dates": "1903-2001",
+      "notes": [],
+      "col": 43,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-45",
+      "name": "Frances Helen Sackett",
+      "dates": "3/19/1908-4/25/1998",
+      "notes": [],
+      "col": 45,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-47",
+      "name": "Elmer J Weis",
+      "dates": "",
+      "notes": [],
+      "col": 47,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-53",
+      "name": "Mary C. Marx",
+      "dates": "1913-",
+      "notes": [
+        "c1920 Corning 7",
+        "c1925 Corning 12",
+        "c1930 Corning 17"
+      ],
+      "col": 53,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-55",
+      "name": "John Colton Marx",
+      "dates": "12/25/1914-2/17/1999",
+      "notes": [
+        "c1920 Corning 5",
+        "c1925 Corning 10",
+        "c1930 Corning 15"
+      ],
+      "col": 55,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-91-57",
+      "name": "Gertrude M Marx",
+      "dates": "1918-",
+      "notes": [
+        "c1920 Corning 2",
+        "c1925 Corning 7",
+        "c1930 Corning 12 wiGertrude Wixted"
+      ],
+      "col": 57,
+      "row": 91,
+      "branch": "wixted",
+      "generation": 6
+    },
+    {
+      "id": "wixted-100-29",
+      "name": "Rancho Mirage,CA",
+      "dates": "",
+      "notes": [
+        "Divorced 7/30/75"
+      ],
+      "col": 29,
+      "row": 100,
+      "branch": "wixted",
+      "generation": 7,
+      "parentId": "wixted-91-29"
+    },
+    {
+      "id": "wixted-100-31",
+      "name": "Fairhaven Mem Santa Ana,CA",
+      "dates": "Married 12/8/1951",
+      "notes": [],
+      "col": 31,
+      "row": 100,
+      "branch": "wixted",
+      "generation": 7,
+      "parentId": "wixted-91-31"
+    },
+    {
+      "id": "wixted-104-15",
+      "name": "Glenn Dayton White",
+      "dates": "",
+      "notes": [
+        "12/12/80-",
+        "Boston,Mass"
+      ],
+      "col": 15,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8
+    },
+    {
+      "id": "wixted-104-17",
+      "name": "Maura Rachelle Wixted",
+      "dates": "",
+      "notes": [
+        "1/15/79-",
+        "Canandaigua,NY",
+        "Age today is 47.5"
+      ],
+      "col": 17,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-19",
+      "name": "Kolleen N. Wixted",
+      "dates": "4/4/75-10/23/2017",
+      "notes": [
+        "Canandaigua,NY",
+        "Honeoye,NY"
+      ],
+      "col": 19,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-21",
+      "name": "Bruce John Wixted",
+      "dates": "",
+      "notes": [
+        "05/15/52-",
+        "Rochester,NY",
+        "Age today is 74.2"
+      ],
+      "col": 21,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-23",
+      "name": "Mimi Colliflower",
+      "dates": "",
+      "notes": [
+        "04/12/53-",
+        "E.St.Louis,Ill",
+        "Age today is 73.3"
+      ],
+      "col": 23,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-25",
+      "name": "Roger Miller",
+      "dates": "",
+      "notes": [
+        "07/20/54-",
+        "Redbud,Ill",
+        "Age today is 72.0"
+      ],
+      "col": 25,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-27",
+      "name": "Lynn Louise Wixted",
+      "dates": "",
+      "notes": [
+        "09/05/54-",
+        "Rochester,NY",
+        "Age today is 71.9"
+      ],
+      "col": 27,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-29",
+      "name": "David Warren Holland",
+      "dates": "",
+      "notes": [
+        "09/30/61-",
+        "Columbus,OH",
+        "Age today is 64.8"
+      ],
+      "col": 29,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-29"
+    },
+    {
+      "id": "wixted-104-31",
+      "name": "Daniel Scott Wixted",
+      "dates": "",
+      "notes": [
+        "03/12/59-",
+        "Rochester,NY",
+        "Age today is 67.3"
+      ],
+      "col": 31,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-33",
+      "name": "Mary Joan Tracy",
+      "dates": "",
+      "notes": [
+        "07/07/61-",
+        "Whittier,CA",
+        "Age today is 65.0"
+      ],
+      "col": 33,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-35",
+      "name": "Irina Alekseeva",
+      "dates": "01/14/1968-",
+      "notes": [
+        "Umert,Russia",
+        "Age today is 58.5"
+      ],
+      "col": 35,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-37",
+      "name": "Kevin Paul Wixted",
+      "dates": "",
+      "notes": [
+        "04/14/56-",
+        "Rochester,NY",
+        "Age today is 70.3",
+        "m.May 29 1993 Div Dec 2005"
+      ],
+      "col": 37,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-39",
+      "name": "Angela Maxine Amor",
+      "dates": "",
+      "notes": [
+        "12/17/54-"
+      ],
+      "col": 39,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-41",
+      "name": "Richard King Nordquist",
+      "dates": "",
+      "notes": [
+        "09/20/43-"
+      ],
+      "col": 41,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8,
+      "parentId": "wixted-100-31"
+    },
+    {
+      "id": "wixted-104-45",
+      "name": "Rita Frances Weis",
+      "dates": "",
+      "notes": [],
+      "col": 45,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8
+    },
+    {
+      "id": "wixted-104-47",
+      "name": "Charles John Haas",
+      "dates": "",
+      "notes": [],
+      "col": 47,
+      "row": 104,
+      "branch": "wixted",
+      "generation": 8
+    },
+    {
+      "id": "wixted-109-39",
+      "name": "Long Beach,CA",
+      "dates": "",
+      "notes": [
+        "Age today is 71.6"
+      ],
+      "col": 39,
+      "row": 109,
+      "branch": "wixted",
+      "generation": 9,
+      "parentId": "wixted-104-39"
+    },
+    {
+      "id": "wixted-109-41",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "Age today is 82.8"
+      ],
+      "col": 41,
+      "row": 109,
+      "branch": "wixted",
+      "generation": 9,
+      "parentId": "wixted-104-41"
+    },
+    {
+      "id": "wixted-114-11",
+      "name": "Hannah Rachelle White",
+      "dates": "",
+      "notes": [
+        "7/21/09-",
+        "Rochesster,NY"
+      ],
+      "col": 11,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-13",
+      "name": "Molly Dayton White",
+      "dates": "6/8/2013 6:45am 7lb3oz",
+      "notes": [
+        "Rochester,NY"
+      ],
+      "col": 13,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-15",
+      "name": "Timothy James Fitz",
+      "dates": "8/13/1985-",
+      "notes": [
+        "York,PA",
+        "Age today is 40.9"
+      ],
+      "col": 15,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-17",
+      "name": "Amanda Rose Wixted",
+      "dates": "",
+      "notes": [
+        "11/23/81-",
+        "Paris,France",
+        "Age today is 44.6"
+      ],
+      "col": 17,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-19",
+      "name": "Elizabeth Anne Myers",
+      "dates": "11/10/1985-",
+      "notes": [
+        "Farmington,NM"
+      ],
+      "col": 19,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-21",
+      "name": "Brody Joseph Wixted",
+      "dates": "",
+      "notes": [
+        "10/30/83-",
+        "Kuwait",
+        "Age today is 42.7"
+      ],
+      "col": 21,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-25",
+      "name": "Andrew William Miller",
+      "dates": "",
+      "notes": [
+        "11/09/77-",
+        "Flagstaff,AZ",
+        "Age today is 48.7"
+      ],
+      "col": 25,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10
+    },
+    {
+      "id": "wixted-114-29",
+      "name": "Mathew Scott Wixted",
+      "dates": "",
+      "notes": [
+        "10/10/87-",
+        "Whittier,CA",
+        "Age today is 38.7"
+      ],
+      "col": 29,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-31",
+      "name": "Ryan Patrick Wixted",
+      "dates": "",
+      "notes": [
+        "06/16/89-",
+        "Whittier,CA",
+        "Age today is 37.1",
+        "m Octorber 13, 2018"
+      ],
+      "col": 31,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-33",
+      "name": "Kylie Renee Wixted",
+      "dates": "1992-08-21 00:00:00",
+      "notes": [
+        "Placentia, CA",
+        "Age today 29"
+      ],
+      "col": 33,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-35",
+      "name": "Alexander Daniel Wixted",
+      "dates": "",
+      "notes": [
+        "11/20/92-",
+        "Orange,CA",
+        "Age today is 33.6"
+      ],
+      "col": 35,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-37",
+      "name": "Dallin Bundy",
+      "dates": "",
+      "notes": [],
+      "col": 37,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-39",
+      "name": "Katie Alyson Wixted",
+      "dates": "",
+      "notes": [
+        "09/27/93-"
+      ],
+      "col": 39,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-39"
+    },
+    {
+      "id": "wixted-114-41",
+      "name": "Jessica Michele Nordquist",
+      "dates": "",
+      "notes": [
+        "05/11/81-",
+        "Age today is 45.2"
+      ],
+      "col": 41,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-41"
+    },
+    {
+      "id": "wixted-114-45",
+      "name": "Irene Haas-Grissom",
+      "dates": "",
+      "notes": [
+        "Relatioonaship: Henry Wixted(1) 1823-1868"
+      ],
+      "col": 45,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "parentId": "wixted-109-41"
+    },
+    {
+      "id": "wixted-121-17",
+      "name": "Ruby Polaris Wixted",
+      "dates": "3/27/2015-",
+      "notes": [
+        "Austin,TX",
+        "Age today is 11.3"
+      ],
+      "col": 17,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-17"
+    },
+    {
+      "id": "wixted-121-19",
+      "name": "Brigham Alexander",
+      "dates": "",
+      "notes": [
+        "7/13/04-",
+        "Age today is 22.0",
+        "2015-03-27 00:00:00",
+        "2021-11-06 00:00:00",
+        "1906-08-12 00:00:00"
+      ],
+      "col": 19,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-19"
+    },
+    {
+      "id": "wixted-121-21",
+      "name": "Tatum Isabelle",
+      "dates": "5/9/2007-",
+      "notes": [
+        "Age today is 19.2"
+      ],
+      "col": 21,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-21"
+    },
+    {
+      "id": "wixted-121-23",
+      "name": "Beckham Augustine",
+      "dates": "",
+      "notes": [
+        "7/3/09-",
+        "Age today is 17.0"
+      ],
+      "col": 23,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-21"
+    },
+    {
+      "id": "wixted-121-25",
+      "name": "Tegan Evangeline",
+      "dates": "",
+      "notes": [
+        "8/11/11-",
+        "Age today is 14.9"
+      ],
+      "col": 25,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-25"
+    },
+    {
+      "id": "wixted-121-27",
+      "name": "Tessa Emeline",
+      "dates": "",
+      "notes": [
+        "4/11/14-",
+        "Age today is 12.2"
+      ],
+      "col": 27,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-25"
+    },
+    {
+      "id": "wixted-121-31",
+      "name": "Sedona Tracy Wixted",
+      "dates": "2019-08-24 00:00:00",
+      "notes": [
+        "Orange, CA",
+        "Agee today 2"
+      ],
+      "col": 31,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-31"
+    },
+    {
+      "id": "wixted-121-33",
+      "name": "Bruce William Wixted",
+      "dates": "2021-07-24 00:00:00",
+      "notes": [
+        "Orange, CA",
+        "Age today 10 months"
+      ],
+      "col": 33,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-33"
+    },
+    {
+      "id": "wixted-121-37",
+      "name": "Scout Evelyn Bundy",
+      "dates": "5/8/2022-",
+      "notes": [
+        "Tucson,AZ",
+        "Age today is 4.1"
+      ],
+      "col": 37,
+      "row": 121,
+      "branch": "wixted",
+      "generation": 11,
+      "parentId": "wixted-114-37"
+    },
+    {
+      "id": "wixted-141-19",
+      "name": "Margaret Brown  (not related)",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 141,
+      "branch": "wixted",
+      "generation": 12,
+      "parentId": "wixted-121-19"
+    },
+    {
+      "id": "wixted-141-29",
+      "name": "Bruce & Evelyn Wixted moved with 4 kids from Rochester,NY to",
+      "dates": "",
+      "notes": [
+        "Phoenix,AZ in 1963",
+        "Then to Orange,Orange County, CA in 1971",
+        "In 1975 they divorced & Bruce married Carol"
+      ],
+      "col": 29,
+      "row": 141,
+      "branch": "wixted",
+      "generation": 12,
+      "parentId": "wixted-121-27"
+    },
+    {
+      "id": "evelyn-12-5",
+      "name": "Anders Parsson",
+      "dates": "2/23/1739-1/20/1801",
+      "notes": [
+        "Applekulla,Rumskulla.Kalmar,swe",
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 5,
+      "row": 12,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-12-7",
+      "name": "Kersten Bengtsdotter",
+      "dates": "1738-5/14/1771",
+      "notes": [
+        "Hylta,Rumskulla.Kalmar,swe",
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 7,
+      "row": 12,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-12-11",
+      "name": "Sara Nilsdotter",
+      "dates": "1734-4/26/1788",
+      "notes": [
+        "Hylta,Rumskulla.Kalmar,swe",
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 11,
+      "row": 12,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-19-7",
+      "name": "Anders Andersson",
+      "dates": "1/19/1760-7/5/1844 (84)",
+      "notes": [
+        "Applekulla,Rumskulla.Kalmar,swe",
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 7,
+      "row": 19,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-19-9",
+      "name": "Catharina Persdotter",
+      "dates": "10/12/1760-5/19/1834",
+      "notes": [
+        "Hylta,Rumskulla.Kalmar,swe",
+        "Applekulla,Rumskulla.Kalmar,swe"
+      ],
+      "col": 9,
+      "row": 19,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-26-5",
+      "name": "Gabriel Persson",
+      "dates": "3/8/1775-6/18/1812 (37)",
+      "notes": [
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 5,
+      "row": 26,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-26-7",
+      "name": "Cristina Andersdotter",
+      "dates": "5/12/1785-5/7/1841 (55)",
+      "notes": [
+        "Hult,Rumskulla.Kalmar,swe",
+        "Rumskulla.Kalmar,swe"
+      ],
+      "col": 7,
+      "row": 26,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-26-9",
+      "name": "Johannes Samuelsson",
+      "dates": "Cristina remarried 2/2/1814",
+      "notes": [],
+      "col": 9,
+      "row": 26,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-26-15",
+      "name": "Family Tree goes back to",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 26,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-33-5",
+      "name": "Sara Catherina Gabrielsdotter",
+      "dates": "4/29/1807-11/4/1864 (57)",
+      "notes": [
+        "Rumskulla.Kalmar,swe",
+        "Hassleby,Jonkoping,swe",
+        "Carl Johan Petersson 9/12/1831-"
+      ],
+      "col": 5,
+      "row": 33,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-33-7",
+      "name": "Peter Jonsson",
+      "dates": "5/24/1794-2/4/1847 (52)",
+      "notes": [
+        "swe",
+        "Hassleby,Jonkoping,swe"
+      ],
+      "col": 7,
+      "row": 33,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-33-17",
+      "name": "Caroline L Calkins",
+      "dates": "1835-4/7/1911",
+      "notes": [
+        "c1875 Phelps 40",
+        "died in Rochester"
+      ],
+      "col": 17,
+      "row": 33,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-39-15",
+      "name": "Riverview Cem Phelps",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 39,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-39-17",
+      "name": "Riverview Cem Phelps",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 39,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-42-7",
+      "name": "Peter August Petersson",
+      "dates": "9/19/1833-",
+      "notes": [
+        "Hassleby,Jonkoping,swe"
+      ],
+      "col": 7,
+      "row": 42,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-42-9",
+      "name": "Kristina Maria Bornholm",
+      "dates": "7/3/1838-10/1896 (57)",
+      "notes": [
+        "Vetlanda,Jonkoping,swe",
+        "Hassleby,Jonkoping,swe"
+      ],
+      "col": 9,
+      "row": 42,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-42-11",
+      "name": "Arvilla Fanton (Fenton?)",
+      "dates": "1847-",
+      "notes": [
+        "c1875 28 Phelps (Short Family \"Wife's Cousin\")",
+        "c1880 Geneva NY 35 house keeper"
+      ],
+      "col": 11,
+      "row": 42,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-42-15",
+      "name": "Ella C Short",
+      "dates": "1856-",
+      "notes": [
+        "c1875 Phelps 19"
+      ],
+      "col": 15,
+      "row": 42,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-42-17",
+      "name": "Carrie L Short",
+      "dates": "1867-",
+      "notes": [
+        "c1875 Phelps 8"
+      ],
+      "col": 17,
+      "row": 42,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-3",
+      "name": "Alfreda H. Soderman",
+      "dates": "1868-1936",
+      "notes": [],
+      "col": 3,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-5",
+      "name": "Bror August L. Bornholm",
+      "dates": "10/2/1863-1/18/1953",
+      "notes": [],
+      "col": 5,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-7",
+      "name": "Selma Maria Petersdotter",
+      "dates": "1/19/1866-1932 (gravestone) (66)",
+      "notes": [],
+      "col": 7,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-9",
+      "name": "Fritiof Jonsson",
+      "dates": "1866-1932 (66)",
+      "notes": [],
+      "col": 9,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-11",
+      "name": "Nellie Beatrice Fanton",
+      "dates": "Nov 1873-10/28/1957 (84)",
+      "notes": [
+        "cancer pancreas",
+        "c1875 Phelps 1  8/12  (??'s daughter)",
+        "c1880 Geneva NY 6 with Mom",
+        "c1900 Gorham NY 24"
+      ],
+      "col": 11,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-53-13",
+      "name": "Charles Albert Gilbert",
+      "dates": "9/15/1869-4/6/1949 (80)",
+      "notes": [
+        "cerebral hemmorage",
+        "d. 154 Penhurst St.",
+        "c1900 Gorham NY 30"
+      ],
+      "col": 13,
+      "row": 53,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-69-11",
+      "name": "Mt Hope Rochester",
+      "dates": "",
+      "notes": [],
+      "col": 11,
+      "row": 69,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-69-13",
+      "name": "Mt Hope Rochester",
+      "dates": "m. 1898-99",
+      "notes": [],
+      "col": 13,
+      "row": 69,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-1",
+      "name": "Carmen Ulrika Elisabet*",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-3",
+      "name": "Martin Fritiof Tobias Leby*",
+      "dates": "2/1/1889-7/27/1984 (95)",
+      "notes": [],
+      "col": 3,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-5",
+      "name": "Karl Hilmer Elde*",
+      "dates": "3/6/1889-8/21/1971 (82)",
+      "notes": [],
+      "col": 5,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-7",
+      "name": "Selma Lydia Maria*",
+      "dates": "10/11/1894-7/28/1973 (78)",
+      "notes": [],
+      "col": 7,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-9",
+      "name": "Jonas Fritiof Emanuel Jones *",
+      "dates": "1/8/1893-10/1962 (69)",
+      "notes": [
+        "SS104-07-4667",
+        "c1910 Jamestown,ny 17",
+        "c1920 Roch 27 w/Fontaine family",
+        "c1925 Roch 32 w/Grace",
+        "c1930 Roch 37",
+        "c1940 Roch 47"
+      ],
+      "col": 9,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-72-11",
+      "name": "Grace Louise Gilbert",
+      "dates": "SS116-20-2710",
+      "notes": [
+        "10/8/99 - 9/26/49 (49)",
+        "c1900 Gorham NY 7/12",
+        "c1910 Rochester NY 10",
+        "c1920 Rochester NY 20",
+        "c1920 Roch 25 w/Emanuel",
+        "c1930 Roch 30",
+        "c1940 Roch 38"
+      ],
+      "col": 11,
+      "row": 72,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-85-9",
+      "name": "Mt Hope Rochester,NY",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 85,
+      "branch": "evelyn"
+    },
+    {
+      "id": "evelyn-85-11",
+      "name": "Mt Hope Rochester,NY",
+      "dates": "",
+      "notes": [
+        "came to Roch in 1903"
+      ],
+      "col": 11,
+      "row": 85,
+      "branch": "evelyn"
+    },
+    {
+      "id": "ev-gilbert-5-13",
+      "name": "Thomas Bonnell",
+      "dates": "1540-1607",
+      "notes": [
+        "Hondschoote,Ypres,Fr",
+        "Norwich, Eng"
+      ],
+      "col": 13,
+      "row": 5,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-5-15",
+      "name": "Jacque Marie Bygote",
+      "dates": "1540-",
+      "notes": [
+        "Hondschoote,Ypres,Fr",
+        "Norwich, Eng"
+      ],
+      "col": 15,
+      "row": 5,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-11-13",
+      "name": "Benjamin Bonnell",
+      "dates": "1/7/1590-7/1655",
+      "notes": [
+        "London, Eng"
+      ],
+      "col": 13,
+      "row": 11,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-11-15",
+      "name": "Robecca Brooks",
+      "dates": "1570-",
+      "notes": [
+        "London, Eng",
+        "Norwich, Eng"
+      ],
+      "col": 15,
+      "row": 11,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-11-17",
+      "name": "Benjamin Wilmot",
+      "dates": "1589-10/7/1669",
+      "notes": [
+        "history doc"
+      ],
+      "col": 17,
+      "row": 11,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-11-19",
+      "name": "Ann Ladd",
+      "dates": "1593-10/7/1668",
+      "notes": [],
+      "col": 19,
+      "row": 11,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-11-29",
+      "name": "Sir John Done",
+      "dates": "1575-4/14/1629",
+      "notes": [],
+      "col": 29,
+      "row": 11,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-16-17",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [
+        "Rev. Isaac Whitehead",
+        "history doc"
+      ],
+      "col": 17,
+      "row": 16,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-16-19",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 16,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-16-29",
+      "name": "Eng St Helens Parish Churchyard Cheshire",
+      "dates": "",
+      "notes": [],
+      "col": 29,
+      "row": 16,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-13",
+      "name": "William Bonnell (Bunnell)",
+      "dates": "1610-8/18/1669",
+      "notes": [
+        "came 1630, ship \"James\"",
+        "history doc"
+      ],
+      "col": 13,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-15",
+      "name": "Ann Wilmot",
+      "dates": "1610-5/1653",
+      "notes": [
+        "history doc"
+      ],
+      "col": 15,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-19",
+      "name": "Mary Brown",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-21",
+      "name": "Thomas Dimick",
+      "dates": "1604-1658",
+      "notes": [
+        "Barnstable, Mass"
+      ],
+      "col": 21,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-23",
+      "name": "Anne Hammond",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-25",
+      "name": "John Bursley",
+      "dates": "1600-1660",
+      "notes": [
+        "Came to Plymouth Colony 1623",
+        "England",
+        "Barnstable,Mass"
+      ],
+      "col": 25,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-27",
+      "name": "Joanna Hull Bursley Davis",
+      "dates": "1620-1683",
+      "notes": [
+        "England",
+        "Mass"
+      ],
+      "col": 27,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-19-29",
+      "name": "Sir Knight Deacon John Doane",
+      "dates": "1590-2/21/1685",
+      "notes": [
+        "gravestone photo",
+        "came to Plymouth 1629 via Holland"
+      ],
+      "col": 29,
+      "row": 19,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-24-15",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 24,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-24-17",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 24,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-25-13",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 25,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-25-15",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 25,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-13",
+      "name": "Nathaniel Bonnel",
+      "dates": "1648-1711 or 3/12/1696",
+      "notes": [
+        "history doc"
+      ],
+      "col": 13,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-15",
+      "name": "Susannah Whitehead",
+      "dates": "9/5/1650-2/13/1733",
+      "notes": [
+        "history doc"
+      ],
+      "col": 15,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-17",
+      "name": "John Searing",
+      "dates": "1648-9/8/1712",
+      "notes": [],
+      "col": 17,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-19",
+      "name": "Susannah Pine (Pyne)",
+      "dates": "1653-1713",
+      "notes": [],
+      "col": 19,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-21",
+      "name": "Robert Morse",
+      "dates": "1629-",
+      "notes": [
+        "England"
+      ],
+      "col": 21,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-23",
+      "name": "Ann Lewis",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-25",
+      "name": "Deacon Shubael Dimmock",
+      "dates": "9/14/1644-10/29/1732",
+      "notes": [
+        "Barnstable,Mass"
+      ],
+      "col": 25,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-27",
+      "name": "Joanna Bursley",
+      "dates": "3/1/1644-5/8/1727",
+      "notes": [
+        "gravestone photo",
+        "Barnstable,Mass"
+      ],
+      "col": 27,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-29",
+      "name": "Deacon Daniel Doane Sr",
+      "dates": "11/28/1636-12/20/1712",
+      "notes": [],
+      "col": 29,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-29-31",
+      "name": "Hepzibah Cole",
+      "dates": "4/16/1649-1712",
+      "notes": [
+        "2nd wife",
+        "Eastham,Barnstable,Mass"
+      ],
+      "col": 31,
+      "row": 29,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-31-17",
+      "name": "Dad Simon born Southwark,Eng",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 31,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-31-19",
+      "name": "Dad James born Devon,Eng",
+      "dates": "",
+      "notes": [
+        "Hempstead,NY"
+      ],
+      "col": 19,
+      "row": 31,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-32-17",
+      "name": "Mom Jane born Hertfordshire,Eng",
+      "dates": "",
+      "notes": [
+        "Hempstead,NY"
+      ],
+      "col": 17,
+      "row": 32,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-32-29",
+      "name": "Cove Burying Ground",
+      "dates": "",
+      "notes": [
+        "Plymouth,Mass",
+        "Eastham, Mass"
+      ],
+      "col": 29,
+      "row": 32,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-33-13",
+      "name": "New Haven, Conn",
+      "dates": "",
+      "notes": [
+        "Elizabethtown,NJ"
+      ],
+      "col": 13,
+      "row": 33,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-33-15",
+      "name": "New Haven, Conn",
+      "dates": "m. 1/3/1665 New Haven",
+      "notes": [
+        "Elizabethtown,NJ"
+      ],
+      "col": 15,
+      "row": 33,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-34-25",
+      "name": "Mansfield Center Olde Cem CT",
+      "dates": "",
+      "notes": [],
+      "col": 25,
+      "row": 34,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-34-27",
+      "name": "Mansfield Center Olde Cem CT",
+      "dates": "m. 4/1663",
+      "notes": [],
+      "col": 27,
+      "row": 34,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-9",
+      "name": "Edward Lacy",
+      "dates": "1655-",
+      "notes": [
+        "Nottingham, Eng",
+        "Fairfield, Conn"
+      ],
+      "col": 9,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-11",
+      "name": "Sarah Jackson",
+      "dates": "",
+      "notes": [
+        "abt 1655",
+        "Fairfield, Conn"
+      ],
+      "col": 11,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-13",
+      "name": "Joseph Bonnell",
+      "dates": "1684-3/14/1747",
+      "notes": [],
+      "col": 13,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-15",
+      "name": "Nathaniel Bonnell",
+      "dates": "1669-9/4/1736",
+      "notes": [
+        "history doc",
+        "gravestone photo"
+      ],
+      "col": 15,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-17",
+      "name": "Mary Searing",
+      "dates": "1671-aft 9/1736",
+      "notes": [
+        "history doc",
+        "Hempstead, NY"
+      ],
+      "col": 17,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-19",
+      "name": "William Broadwell",
+      "dates": "1656-1689",
+      "notes": [],
+      "col": 19,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-21",
+      "name": "Mary Morse",
+      "dates": "9/19/1659-8/23/1725",
+      "notes": [
+        "2nd wife"
+      ],
+      "col": 21,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-23",
+      "name": "Timothy Dimmock",
+      "dates": "3/8/1668-",
+      "notes": [
+        "Barnstable,Mass",
+        "Ashford, CT"
+      ],
+      "col": 23,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-38-25",
+      "name": "Abigail Doane",
+      "dates": "1683-",
+      "notes": [
+        "2nd wife",
+        "Eastham,Barnstable,Mass"
+      ],
+      "col": 25,
+      "row": 38,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-41-19",
+      "name": "First Pres Churchyard",
+      "dates": "",
+      "notes": [
+        "Leicestershire,England",
+        "Elizabethtown, NJ"
+      ],
+      "col": 19,
+      "row": 41,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-41-21",
+      "name": "New Providence Pres Cem NJ",
+      "dates": "",
+      "notes": [
+        "Newbury,Mass",
+        "Elizabethtown, NJ"
+      ],
+      "col": 21,
+      "row": 41,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-42-13",
+      "name": "Essex Co. NJ",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 42,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-42-15",
+      "name": "Essex County, NJ",
+      "dates": "",
+      "notes": [
+        "Elizabethtown, NJ"
+      ],
+      "col": 15,
+      "row": 42,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-11",
+      "name": "Henry Lacy",
+      "dates": "1681-7/16/1768",
+      "notes": [
+        "Salem, Mass",
+        "Morristown, NJ"
+      ],
+      "col": 11,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-13",
+      "name": "Hannah Morehouse",
+      "dates": "10/7/1694-8/21/1727",
+      "notes": [
+        "Fairfield, Conn",
+        "Elizabethtown, NJ"
+      ],
+      "col": 13,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-15",
+      "name": "Capt Nathaniel Bonnell",
+      "dates": "1696-11/18/1763  grave photo",
+      "notes": [],
+      "col": 15,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-17",
+      "name": "Hannah Bonnell",
+      "dates": "1694-6/19/1736",
+      "notes": [
+        "Elizabethtown, NJ"
+      ],
+      "col": 17,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-19",
+      "name": "Richard Broadwell",
+      "dates": "1679-1731",
+      "notes": [
+        "Elizabethtown, NJ"
+      ],
+      "col": 19,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-23",
+      "name": "John Dimick",
+      "dates": "1/3/1705-6/23/1789",
+      "notes": [
+        "Mansfield,Conn"
+      ],
+      "col": 23,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-47-25",
+      "name": "Hannah Kendall (Kindall)",
+      "dates": "7/24/1707-8/23/1790 (83)",
+      "notes": [
+        "Woburn,Mass"
+      ],
+      "col": 25,
+      "row": 47,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-51-23",
+      "name": "Four Corners Cem Sullivan,NH",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 51,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-51-25",
+      "name": "Four Corners Cem Sullivan,NH",
+      "dates": "m. 10/10/1728",
+      "notes": [],
+      "col": 25,
+      "row": 51,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-55-15",
+      "name": "Abraham Lacy",
+      "dates": "1722-6/2/1777",
+      "notes": [
+        "Elizabethtown,NJ"
+      ],
+      "col": 15,
+      "row": 55,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-55-17",
+      "name": "Rachel Broadwell",
+      "dates": "1725-7/9/1784",
+      "notes": [
+        "Elizabethtown,NJ"
+      ],
+      "col": 17,
+      "row": 55,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-55-23",
+      "name": "Isaac Dimmick",
+      "dates": "7/3/1743-4/21/1807",
+      "notes": [
+        "moved to NH 1769",
+        "then returned to Ashford",
+        "Willington,Conn"
+      ],
+      "col": 23,
+      "row": 55,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-55-25",
+      "name": "Sarah Chapman",
+      "dates": "1747-",
+      "notes": [
+        "Ashford,Conn"
+      ],
+      "col": 25,
+      "row": 55,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-11",
+      "name": "Samuel Gilbert",
+      "dates": "1756-",
+      "notes": [
+        "died young",
+        "Edinburgh,England"
+      ],
+      "col": 11,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-13",
+      "name": "Ester Thomkins",
+      "dates": "1756-",
+      "notes": [
+        "remarried",
+        "England"
+      ],
+      "col": 13,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-15",
+      "name": "Abraham Lacy",
+      "dates": "10/6/1755-10/16/1827 (72)",
+      "notes": [
+        "Elizabethtown,NJ",
+        "Burns,NY"
+      ],
+      "col": 15,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-17",
+      "name": "Susannah Wyllis(Willis)",
+      "dates": "11/1/1754-4/4/1832 (78)",
+      "notes": [
+        "Bridgewater,Mass"
+      ],
+      "col": 17,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-19",
+      "name": "John Dimmick",
+      "dates": "1772-6/23/1842",
+      "notes": [
+        "Mass"
+      ],
+      "col": 19,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-21",
+      "name": "Sarah Cooper",
+      "dates": "1794-",
+      "notes": [
+        "Ossian NY"
+      ],
+      "col": 21,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-23",
+      "name": "Isaac Dimmick",
+      "dates": "7/12/1770-",
+      "notes": [
+        "Next door neighbor to"
+      ],
+      "col": 23,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-64-25",
+      "name": "Elizabeth Brewer",
+      "dates": "1779-4/26/1861 (81)",
+      "notes": [
+        "Next door neighbor to"
+      ],
+      "col": 25,
+      "row": 64,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-69-23",
+      "name": "Elias Dimmick in 1850",
+      "dates": "",
+      "notes": [
+        "Gilsum or Keene, NH"
+      ],
+      "col": 23,
+      "row": 69,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-69-25",
+      "name": "Elias Dimmick in 1850",
+      "dates": "",
+      "notes": [],
+      "col": 25,
+      "row": 69,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-72-19",
+      "name": "Wood Cem Ossian,NY",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 72,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-72-23",
+      "name": "Wood Cem Ossian NY",
+      "dates": "",
+      "notes": [
+        "Jacob",
+        "1/15/1819+"
+      ],
+      "col": 23,
+      "row": 72,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-72-25",
+      "name": "Wood Cem Ossian NY",
+      "dates": "",
+      "notes": [],
+      "col": 25,
+      "row": 72,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-3",
+      "name": "Sarah Gilbert",
+      "dates": "1792-",
+      "notes": [],
+      "col": 3,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-11",
+      "name": "Susan Lacy",
+      "dates": "1792-",
+      "notes": [
+        "1st wife died",
+        "2 children w. John",
+        "Elizabethtown,NJ"
+      ],
+      "col": 11,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-13",
+      "name": "John Gilbert",
+      "dates": "9/24/1776-8/19/1843 (67)",
+      "notes": [
+        "m.Susan, then Susan died, m.",
+        "sister Sally",
+        "Ossian,NY"
+      ],
+      "col": 13,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-15",
+      "name": "Sally Lacy",
+      "dates": "9/24/1781-3/8/1861 (67)",
+      "notes": [
+        "Elizabethtown,NJ",
+        "Sparta,NY"
+      ],
+      "col": 15,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-17",
+      "name": "Mercy Loomis",
+      "dates": "1802-",
+      "notes": [
+        "Dansville,NY"
+      ],
+      "col": 17,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-19",
+      "name": "Elias Dimmick",
+      "dates": "12/1804-4/23/1882",
+      "notes": [
+        "look at neighbors on 1850 census",
+        "Conn"
+      ],
+      "col": 19,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-29",
+      "name": "John Washington Dimmick",
+      "dates": "8/29/1798-11/12/1884 (86)",
+      "notes": [
+        "Carpenter",
+        "Neighbor to"
+      ],
+      "col": 29,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-76-31",
+      "name": "Cynthia Lucretia Payne",
+      "dates": "3/5/1810-9/25/1899",
+      "notes": [
+        "Neighbor to"
+      ],
+      "col": 31,
+      "row": 76,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-81-29",
+      "name": "Elias Dimmick in 1850",
+      "dates": "To MN 1852-1856 w. Henry",
+      "notes": [
+        "Hinsdale,Berkshire,Mass"
+      ],
+      "col": 29,
+      "row": 81,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-81-31",
+      "name": "Elias Dimmick in 1850",
+      "dates": "m. 9/30/1828 in Ossian",
+      "notes": [
+        "Hinsdale, Mass"
+      ],
+      "col": 31,
+      "row": 81,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-83-9",
+      "name": "Rose Cem, Green tsp,Gallia,Ohio",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 83,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-83-17",
+      "name": "Wood Cem,Ossian,NY",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 83,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-83-19",
+      "name": "Wood Cem Ossian,NY",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 83,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-83-29",
+      "name": "Oak Knoll Cem,Princeton,MN",
+      "dates": "To MN 1852-1856 w. Henry",
+      "notes": [],
+      "col": 29,
+      "row": 83,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-83-31",
+      "name": "Oak Knoll Cem,Princeton,MN",
+      "dates": "m. 9/30/1828 in Ossian",
+      "notes": [],
+      "col": 31,
+      "row": 83,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-9",
+      "name": "Alonzo Gilbert",
+      "dates": "1837-3/1911",
+      "notes": [],
+      "col": 9,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-13",
+      "name": "Lester Gilbert",
+      "dates": "1830-1880 (50)",
+      "notes": [
+        "1858 Sparta,NY"
+      ],
+      "col": 13,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-17",
+      "name": "Issac C. Dimmick",
+      "dates": "1842-1924",
+      "notes": [],
+      "col": 17,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-19",
+      "name": "Sabrina Peckham",
+      "dates": "1847-1923",
+      "notes": [],
+      "col": 19,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-21",
+      "name": "Charles M. Dimmick",
+      "dates": "1848-1915",
+      "notes": [
+        "Ossian, NY"
+      ],
+      "col": 21,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-23",
+      "name": "Nathaniel C.",
+      "dates": "1/16/1833-9/10/1886 (53)",
+      "notes": [],
+      "col": 23,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-25",
+      "name": "Ruel Loomis Dimmick",
+      "dates": "5/18/1835-10/10/1926 (91)",
+      "notes": [],
+      "col": 25,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-29",
+      "name": "David D.",
+      "dates": "1838-7/6/1915",
+      "notes": [
+        "Wife: Mary Elizabeth Cole.",
+        "Moulder at Geo Sweet in Cumminsville"
+      ],
+      "col": 29,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-87-31",
+      "name": "Henry Glennara Dimmick",
+      "dates": "8/22/1829-1/6/1911",
+      "notes": [
+        "Neighbor to"
+      ],
+      "col": 31,
+      "row": 87,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-92-9",
+      "name": "Son Frank, Daughter Mrs Abner Moore",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 92,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-92-29",
+      "name": "Civil War Co G 13th NY infantry",
+      "dates": "",
+      "notes": [],
+      "col": 29,
+      "row": 92,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-93-15",
+      "name": "Erwin Cemetery Springwater,ny",
+      "dates": "",
+      "notes": [
+        "Ossian,NY",
+        "Almond,NY"
+      ],
+      "col": 15,
+      "row": 93,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-93-23",
+      "name": "Green Mount Cem Dansville",
+      "dates": "",
+      "notes": [
+        "Sec S-upper",
+        "Ossian, NY",
+        "Dansville,NY"
+      ],
+      "col": 23,
+      "row": 93,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-93-25",
+      "name": "Green Mount Cem Dansville",
+      "dates": "",
+      "notes": [
+        "Sec E",
+        "Ossian, NY",
+        "Buffalo,NY"
+      ],
+      "col": 25,
+      "row": 93,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-93-31",
+      "name": "Elias Dimmick in 1850",
+      "dates": "",
+      "notes": [],
+      "col": 31,
+      "row": 93,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-94-9",
+      "name": "Erwin Cemetery Springwater,ny",
+      "dates": "",
+      "notes": [
+        "Ossian,NY",
+        "Rochester,NY",
+        "Lambert 'Bert' Smith",
+        "6/22/1856-"
+      ],
+      "col": 9,
+      "row": 94,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-94-13",
+      "name": "Erwin Cemetery Springwater,ny",
+      "dates": "",
+      "notes": [
+        "Ossian,NY",
+        "Sparta,NY - Mt Hope Rochester"
+      ],
+      "col": 13,
+      "row": 94,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-94-29",
+      "name": "Green Mount Cemetery",
+      "dates": "",
+      "notes": [
+        "Wadsworth,NY",
+        "Dansville,NY"
+      ],
+      "col": 29,
+      "row": 94,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-7",
+      "name": "Seymour Oliver Gilbert",
+      "dates": "8/6/1864-1/1935 (70)",
+      "notes": [],
+      "col": 7,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-11",
+      "name": "Sarah Jane Gilbert Smith",
+      "dates": "3/12/1859-12/3/1905 (46)",
+      "notes": [
+        "children:",
+        "Scott H. 1882-1933",
+        "Oscar 1886-1905",
+        "Martin Monroe 1892-1975",
+        "Bessie A. 1894-1906"
+      ],
+      "col": 11,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-13",
+      "name": "Nellie Beatrice Fanton",
+      "dates": "Nov 1873-10/28/1957 (84)",
+      "notes": [
+        "cancer pancreas",
+        "c1900 Gorham ny 24",
+        "c1910 Rochester ny 34",
+        "c1915 Rochester ny 42"
+      ],
+      "col": 13,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-15",
+      "name": "Charles Albert Gilbert",
+      "dates": "Sep 15 1869-4/6/1949 (80)",
+      "notes": [
+        "cerebral hemmorage",
+        "d. 154 Penhurst St.",
+        "c1900 Gorham ny 30",
+        "c1910 Rochester ny 35",
+        "c1915 Rochester ny 42"
+      ],
+      "col": 15,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-17",
+      "name": "Laura Ann",
+      "dates": "1854-1865 (11)",
+      "notes": [],
+      "col": 17,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-19",
+      "name": "John W.",
+      "dates": "1858-aft 1940",
+      "notes": [],
+      "col": 19,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-21",
+      "name": "Eli E.(twin)",
+      "dates": "1858-1891",
+      "notes": [],
+      "col": 21,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-23",
+      "name": "Elias J. (twin)",
+      "dates": "1858-1886",
+      "notes": [],
+      "col": 23,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-101-25",
+      "name": "Mary Elizabeth",
+      "dates": "1865-",
+      "notes": [],
+      "col": 25,
+      "row": 101,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-116-9",
+      "name": "Erwin Cemetery Springwater,NY",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 116,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-116-11",
+      "name": "Erwin Cemetery Springwater",
+      "dates": "",
+      "notes": [
+        "Springwater,NY",
+        "Sparta,NY"
+      ],
+      "col": 11,
+      "row": 116,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-117-5",
+      "name": "Erwin Cemetery Springwater,NY",
+      "dates": "",
+      "notes": [
+        "Children"
+      ],
+      "col": 5,
+      "row": 117,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-117-7",
+      "name": "Erwin Cemetery Springwater,NY",
+      "dates": "",
+      "notes": [
+        "Sparta,NY"
+      ],
+      "col": 7,
+      "row": 117,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-119-13",
+      "name": "Mt Hope Rochester",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 119,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-119-15",
+      "name": "Mt Hope Rochester",
+      "dates": "m. 1898-99",
+      "notes": [],
+      "col": 15,
+      "row": 119,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-7",
+      "name": "Laura Esidean Morrell",
+      "dates": "Harriet Mae 1888-7/21/1976",
+      "notes": [
+        "George Lester1890-5/20/1959",
+        "Martin Evert 1892-5/12/1974"
+      ],
+      "col": 7,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-9",
+      "name": "Jonas Fritiof Emanuel Jones",
+      "dates": "1/8/1893-10/1962 (69)",
+      "notes": [
+        "SS104-07-4667",
+        "Ramsberg,Gullered,Sweden"
+      ],
+      "col": 9,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-11",
+      "name": "Grace Louise Gilbert",
+      "dates": "10/8/1899 - 9/26/1949 (50)",
+      "notes": [
+        "SS116-20-2710",
+        "c1900 Gorham ny 7/12",
+        "c1910 Rochester ny 10",
+        "c1915 Rochester ny 15",
+        "c1920 Rochester ny 20"
+      ],
+      "col": 11,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-13",
+      "name": "Florence A. Gilbert",
+      "dates": "6/11/1911-10/8/1980 (69)",
+      "notes": [
+        "SS104-10-1316",
+        "stenographer",
+        "c1915 Rochester ny 4",
+        "c1920 Rochester ny 8 w/parents",
+        "c1930 Rochester ny 18 w/parents",
+        "1951 383 Flint Roch"
+      ],
+      "col": 13,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-15",
+      "name": "Robert Alon Curtiss",
+      "dates": "3/27/1907-10/17/1962 (55)",
+      "notes": [
+        "Electrician (electrocuted)",
+        "Enlisted 12/11/1943",
+        "Sgt. Army",
+        "1951 383 Flint Roch"
+      ],
+      "col": 15,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-122-17",
+      "name": "Leroy C. Gilbert (Roy)",
+      "dates": "4/6/1903-12/29/1998 (95)",
+      "notes": [
+        "COL US Army",
+        "c1910 Rochester ny 7",
+        "c1915 Rochester ny 12",
+        "c1920 Rochester ny 16"
+      ],
+      "col": 17,
+      "row": 122,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-126-5",
+      "name": "In Erwin and Kiehle Cem in",
+      "dates": "",
+      "notes": [
+        "Sparta,NY"
+      ],
+      "col": 5,
+      "row": 126,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-126-7",
+      "name": "Nina Ethel Cudd (Henrietta, NC)",
+      "dates": "Milo William 11/3/1894-3/2/1997",
+      "notes": [
+        "Laverna Emma Hynes 11/16/1896-4/6/1991",
+        "Seymour Adelbert \"Dee\" 1/16/1898-3/20/1983",
+        "Freeman Eli 7/30/1900-9/13/1993"
+      ],
+      "col": 7,
+      "row": 126,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-134-9",
+      "name": "Mt Hope Rochester",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 134,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-134-11",
+      "name": "Mt Hope Rochester",
+      "dates": "",
+      "notes": [
+        "came to Roch in 1903"
+      ],
+      "col": 11,
+      "row": 134,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-134-13",
+      "name": "Mt Hope Riverside,Rochester",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 134,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-134-15",
+      "name": "Mt Hope Riverside,Rochester",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 134,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-134-17",
+      "name": "Glenwood Mem Gardens Broomall,PA",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 134,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-7",
+      "name": "Bruce J Wixted",
+      "dates": "4/3/1933-3/11/1995",
+      "notes": [
+        "Rochester,NY"
+      ],
+      "col": 7,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-9",
+      "name": "Evelyn Ruth Jones",
+      "dates": "Librarian SS112-24-1440",
+      "notes": [
+        "08/27/32-12/15/88 (56)",
+        "Rochester,NY"
+      ],
+      "col": 9,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-11",
+      "name": "Russell Leroy Curtiss",
+      "dates": "11/1943-1/22/2003 (60)",
+      "notes": [
+        "Rochester,NY",
+        "d. Albion,NY"
+      ],
+      "col": 11,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-13",
+      "name": "Caren Taylor",
+      "dates": "",
+      "notes": [
+        "Rochester,NY"
+      ],
+      "col": 13,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-15",
+      "name": "Suzanne A. Curtiss",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-17",
+      "name": "Donald Schlageter",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-19",
+      "name": "Robert Hart Curtiss",
+      "dates": "1941-",
+      "notes": [
+        "5/21/1941-6/14/2006",
+        "in Biggsville,IL"
+      ],
+      "col": 19,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-21",
+      "name": "Rose Mary King",
+      "dates": "",
+      "notes": [],
+      "col": 21,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-23",
+      "name": "David F. Gilbert",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-138-25",
+      "name": "Donald M.",
+      "dates": "",
+      "notes": [],
+      "col": 25,
+      "row": 138,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-143-11",
+      "name": "Erien Roye Curtiss (male)",
+      "dates": "",
+      "notes": [],
+      "col": 11,
+      "row": 143,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-143-15",
+      "name": "Jeffery Paul Schlageter",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 143,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-143-19",
+      "name": "Terry Alon Curtiss",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 143,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-144-15",
+      "name": "Mark Francis Schlageter",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 144,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-144-19",
+      "name": "Brian Scott Curtiss",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 144,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-145-9",
+      "name": "Kevin P Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 145,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-145-15",
+      "name": "Robert Alon Schlageter",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 145,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-153-17",
+      "name": "Isaac C. Dimmick",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 153,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-153-19",
+      "name": "Robert Curtiss",
+      "dates": "",
+      "notes": [
+        "Most info from a personal tree",
+        "on Genealogy.com (every name seems to fit)"
+      ],
+      "col": 19,
+      "row": 153,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-156-9",
+      "name": "Rushville Village near Gorham,NY in 1900",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 156,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "ev-gilbert-156-19",
+      "name": "From Robert (b. NY)marrying Florence Gilbert",
+      "dates": "",
+      "notes": [
+        "to all 3 kids Russell,Suzanne,Robert"
+      ],
+      "col": 19,
+      "row": 156,
+      "branch": "ev-gilbert"
+    },
+    {
+      "id": "breitenbach-6-13",
+      "name": "Peter Breitenbach",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 6,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-6-15",
+      "name": "Peter Schleich",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 6,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-6-17",
+      "name": "Peter Breitenbach",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 6,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-6-19",
+      "name": "Jacob Weber",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 6,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-12-13",
+      "name": "Philip Breitenbach",
+      "dates": "1808-",
+      "notes": [
+        "Freilaubersheim,Germ"
+      ],
+      "col": 13,
+      "row": 12,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-12-15",
+      "name": "Susanna Margarethe Schleich",
+      "dates": "1810-",
+      "notes": [
+        "Freilaubersheim,Germ"
+      ],
+      "col": 15,
+      "row": 12,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-12-17",
+      "name": "Wilhelm Breitenbach",
+      "dates": "3/1803-",
+      "notes": [
+        "Elizabeth's obit lists all children"
+      ],
+      "col": 17,
+      "row": 12,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-12-19",
+      "name": "Margaretha Webber",
+      "dates": "1805-",
+      "notes": [],
+      "col": 19,
+      "row": 12,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-18-13",
+      "name": "Peter Breitenbach",
+      "dates": "7/5/1840-2/15/1887 (47)",
+      "notes": [
+        "Suicide",
+        "1878 Port of NY 38",
+        "Freilaubersheim,Germ",
+        "Poughkeepsie,NY"
+      ],
+      "col": 13,
+      "row": 18,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-18-15",
+      "name": "Elizabeth Breitenbach",
+      "dates": "1/12/1841-5/28/1918 (77)",
+      "notes": [
+        "1878 Port of NY 37",
+        "c1900 Roch 59",
+        "Buried in Mt Hope Rochester",
+        "Freilaubersheim,Germ",
+        "Rochester,NY"
+      ],
+      "col": 15,
+      "row": 18,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-1",
+      "name": "Auguste Louise Friederike BEHM",
+      "dates": "6/4/1877-1939",
+      "notes": [],
+      "col": 1,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-9",
+      "name": "Louisa Zimmerman",
+      "dates": "1879-",
+      "notes": [],
+      "col": 9,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-11",
+      "name": "Adam Jr",
+      "dates": "6/1878-2/1/1953",
+      "notes": [],
+      "col": 11,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-13",
+      "name": "Dollie Avarilla Clark",
+      "dates": "4/10/1882-Jan 1969 (87)",
+      "notes": [
+        "SS 062-28-9393",
+        "sometimes Averilla",
+        "c1900 Roch 18",
+        "c1910 Roch 28"
+      ],
+      "col": 13,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-15",
+      "name": "John Breitenbach",
+      "dates": "8/15/1881-4/8/1924 (42)",
+      "notes": [
+        "(Britenbach per 1920 census)",
+        "Shoemaker",
+        "Brietenbach per Mt Hope",
+        "peritonitas St Mary's Hosp",
+        "c1900 Roch 18",
+        "c1910 Roch 28"
+      ],
+      "col": 15,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-21",
+      "name": "Jacob H. Breitenbach",
+      "dates": "8/1865-",
+      "notes": [
+        "Janitor",
+        "1878 Port of NY 9",
+        "c1900 Roch 34"
+      ],
+      "col": 21,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-25",
+      "name": "Karl Shulz",
+      "dates": "",
+      "notes": [],
+      "col": 25,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-27",
+      "name": "Adam Breitenbach",
+      "dates": "1871-",
+      "notes": [
+        "in 1924",
+        "1878 Port of NY 5"
+      ],
+      "col": 27,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-29",
+      "name": "Peter Breitenbach",
+      "dates": "7/31/1873-10/7/1936 (63)",
+      "notes": [
+        "1878 Port of NY 4"
+      ],
+      "col": 29,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-31",
+      "name": "Alma Silen",
+      "dates": "1878-12/11/1942 (64)",
+      "notes": [],
+      "col": 31,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-30-41",
+      "name": "William Knope",
+      "dates": "",
+      "notes": [],
+      "col": 41,
+      "row": 30,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-1",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [
+        "All born in Wheatfield,NY",
+        "Frederick 5/13/1898-",
+        "Louis 4/16/1897-"
+      ],
+      "col": 1,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-3",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [
+        "Fred",
+        "1898-"
+      ],
+      "col": 3,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-9",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [
+        "William 1901-"
+      ],
+      "col": 9,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-11",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [
+        "arrived 1884"
+      ],
+      "col": 11,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-15",
+      "name": "Mt Hope Rochester",
+      "dates": "m. 5/2/1905",
+      "notes": [],
+      "col": 15,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-17",
+      "name": "Prob Mt Hope",
+      "dates": "",
+      "notes": [
+        "Herman & Anna",
+        "prob Mt Hope"
+      ],
+      "col": 17,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-42-29",
+      "name": "Mt Hope Rochester",
+      "dates": "",
+      "notes": [
+        "Roy 3/21/1904-2/1979",
+        "Ralph 7/31/1915-5/1971",
+        "Alma Elizabeth 7/13/1917-"
+      ],
+      "col": 29,
+      "row": 42,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-11",
+      "name": "Adam E. Breitenbach",
+      "dates": "1/1900-8/28/1978",
+      "notes": [
+        "Tonawanda,NY"
+      ],
+      "col": 11,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-13",
+      "name": "Hazel Mae Breitenbach",
+      "dates": "SS104-07-4721",
+      "notes": [
+        "11/6/05-5/84 (79)",
+        "c1910 Roch 4",
+        "Rochester,NY"
+      ],
+      "col": 13,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-15",
+      "name": "John Leroy Wixted",
+      "dates": "3/13/1900-9/1993 (93)",
+      "notes": [
+        "SS128-09-5338",
+        "Avon,NY"
+      ],
+      "col": 15,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-23",
+      "name": "Ruth M. Schultz",
+      "dates": "1893-9/24/1985 (93)",
+      "notes": [],
+      "col": 23,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-25",
+      "name": "Herbert J. Wahl",
+      "dates": "9/23/1897-8/13/1975",
+      "notes": [
+        "Rochester,NY"
+      ],
+      "col": 25,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-27",
+      "name": "Mable A. Breitenbach",
+      "dates": "3/30/1899-3/3/1965 (66)",
+      "notes": [
+        "Poughkeepsie",
+        "Rochester,NY"
+      ],
+      "col": 27,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-35",
+      "name": "Florence M. Frank",
+      "dates": "1903-",
+      "notes": [],
+      "col": 35,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-37",
+      "name": "Edwin P. Frank",
+      "dates": "1908-",
+      "notes": [],
+      "col": 37,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-46-39",
+      "name": "Gladys P. Frank",
+      "dates": "1909-",
+      "notes": [],
+      "col": 39,
+      "row": 46,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-55-9",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [
+        "1900 Rochester Census",
+        "Elizabeth"
+      ],
+      "col": 9,
+      "row": 55,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-55-11",
+      "name": "Wheatfield Cem",
+      "dates": "",
+      "notes": [],
+      "col": 11,
+      "row": 55,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-55-21",
+      "name": "Mt Hope Roch",
+      "dates": "",
+      "notes": [],
+      "col": 21,
+      "row": 55,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-55-23",
+      "name": "Mt Hope Roch",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 55,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-55-25",
+      "name": "Fort Myers,FL",
+      "dates": "",
+      "notes": [
+        "Hogestyn"
+      ],
+      "col": 25,
+      "row": 55,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-58-21",
+      "name": "Vern Breitenbach",
+      "dates": "10/9/1923-",
+      "notes": [],
+      "col": 21,
+      "row": 58,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-58-27",
+      "name": "Doris Jean Wahl",
+      "dates": "3/10/1935-",
+      "notes": [
+        "Rochester,NY",
+        "Deisinger"
+      ],
+      "col": 27,
+      "row": 58,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-66-13",
+      "name": "Hernan Arnedt 17",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 66,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-66-23",
+      "name": "Alice Bishop Breitenbach - wife",
+      "dates": "1902-1931",
+      "notes": [],
+      "col": 23,
+      "row": 66,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-68-13",
+      "name": "Elizabeth Breitenbach 69",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 68,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-68-17",
+      "name": "Mt Hope",
+      "dates": "d.10/7/1936",
+      "notes": [],
+      "col": 17,
+      "row": 68,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-69-1",
+      "name": "Margaret Breitenbach Bayer (daughter of Phillip & Auguste",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 69,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-69-13",
+      "name": "Jacob Breitenbach 44",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 69,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-69-17",
+      "name": "Peter Breitenbach",
+      "dates": "d.10/7/1936",
+      "notes": [
+        "age 63",
+        "SW 25 R270",
+        "Removed to Irondequoit 5/14/1943"
+      ],
+      "col": 17,
+      "row": 69,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-70-1",
+      "name": "Tonawanda News, 23 October 1979",
+      "dates": "",
+      "notes": [
+        "BAYER Margaret K Bayer, 69, of the Town",
+        "of Pendleton, Monday (October 22, 1979) at",
+        "DeGraff Memorial Hospital. Born in",
+        "WheatfieM, Mrs, Bayer was a member of St."
+      ],
+      "col": 1,
+      "row": 70,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-70-13",
+      "name": "Jacob Breitenbach jr 18",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 70,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-82-1",
+      "name": "Henry Breitenbach of Niagara Falls and John",
+      "dates": "",
+      "notes": [
+        "(Loretta) Breitenbach of the Town of Tonawanda;",
+        "two sisters, Mrs Anna Wendt of Sanborn and"
+      ],
+      "col": 1,
+      "row": 82,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "breitenbach-82-11",
+      "name": "Peter Breitenbach",
+      "dates": "",
+      "notes": [
+        "Sources:",
+        "1. Marriage record from Vern Breitenbach",
+        "2. Frei-Laubersheim church records from family history center"
+      ],
+      "col": 11,
+      "row": 82,
+      "branch": "breitenbach"
+    },
+    {
+      "id": "clark-12-5",
+      "name": "John Clark(e) I",
+      "dates": "1590/1595-5/2/1676 (81)",
+      "notes": [
+        "Uffington,Shropshire,Eng",
+        "Milford, CT"
+      ],
+      "col": 5,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-7",
+      "name": "Mary Elizabeth Coleley",
+      "dates": "1616-1/22/1678 (62)",
+      "notes": [],
+      "col": 7,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-13",
+      "name": "Nicholas Danforth",
+      "dates": "1589-4/1638",
+      "notes": [
+        "Framlington,Sufflk,Eng",
+        "Cambridge,Mass"
+      ],
+      "col": 13,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-15",
+      "name": "Elizabeth Symmes",
+      "dates": "1596-2/1629",
+      "notes": [
+        "Framlington,Sufflk,Eng"
+      ],
+      "col": 15,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-17",
+      "name": "Matthew Grinnell",
+      "dates": "1602-11/10/1643 (41)",
+      "notes": [
+        "arrived 1639",
+        "Macon,Ain,Rhone-Alpes,FR",
+        "Portsmouth,RI"
+      ],
+      "col": 17,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-19",
+      "name": "Rose French",
+      "dates": "1612-1673 (61)",
+      "notes": [
+        "Newport,RI",
+        "Portsmouth,RI"
+      ],
+      "col": 19,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-21",
+      "name": "John Alden",
+      "dates": "1599-9/12/1687 (88)",
+      "notes": [],
+      "col": 21,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-12-23",
+      "name": "Priscila Sarah Mullins",
+      "dates": "1601-2/5/1688 (87)",
+      "notes": [
+        "Of,Dorking,Surrey,Eng"
+      ],
+      "col": 23,
+      "row": 12,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-15-7",
+      "name": "Great Mudan,Herdfordshire, Eng",
+      "dates": "",
+      "notes": [
+        "Farmington,CT"
+      ],
+      "col": 7,
+      "row": 15,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-15-21",
+      "name": "South Hampton,Eng",
+      "dates": "",
+      "notes": [
+        "Came on Mayflower"
+      ],
+      "col": 21,
+      "row": 15,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-3",
+      "name": "William Comstock",
+      "dates": "",
+      "notes": [
+        "was one of the",
+        "first Puritan settlers of",
+        "the colony of Conn."
+      ],
+      "col": 3,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-5",
+      "name": "William Comstock",
+      "dates": "7/4/1595-1683",
+      "notes": [
+        "Culmstock,Devenshire,Eng"
+      ],
+      "col": 5,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-7",
+      "name": "Elizabeth Daniels",
+      "dates": "1/8/1608-1665",
+      "notes": [
+        "Culmstock,Devenshire,Eng"
+      ],
+      "col": 7,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-9",
+      "name": "John Clark(e) II",
+      "dates": "2/21/1630-9/21-1677 (47)",
+      "notes": [
+        "Herdfordshire, Eng"
+      ],
+      "col": 9,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-11",
+      "name": "Rebecca Porter",
+      "dates": "9/16/1630-1/9/1682 (52)",
+      "notes": [
+        "Felstead, Essex,Eng",
+        "d.Saybrook,CT"
+      ],
+      "col": 11,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-13",
+      "name": "William Beaumont",
+      "dates": "1608 -2/4/1608or 1609",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 13,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-15",
+      "name": "Lydia Danforth",
+      "dates": "1625-8/16/1686",
+      "notes": [
+        "Framlington,Sufflk,Eng",
+        "Saybrook,CT"
+      ],
+      "col": 15,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-17",
+      "name": "Daniel Grinnell",
+      "dates": "1636-1703 (67)",
+      "notes": [
+        "bros Richard & Jonathon",
+        "Portsmouth,RI"
+      ],
+      "col": 17,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-19",
+      "name": "Mary Wodell (english)",
+      "dates": "11/1640-1673 or 1676(33)",
+      "notes": [
+        "Tiverton,RI"
+      ],
+      "col": 19,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-21",
+      "name": "Elizabeth Alden",
+      "dates": "1624-1717 (93)",
+      "notes": [
+        "Plymouth,Mass",
+        "John 10/4/1645",
+        "Elizabeth 4/24/1647"
+      ],
+      "col": 21,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-19-23",
+      "name": "William Pa(d)bodie",
+      "dates": "1620-12/13/1707 (87)",
+      "notes": [
+        "StAlbans,Hartford,Eng",
+        "Martha 2/24/165x",
+        "Priscilla 1/15/1654"
+      ],
+      "col": 23,
+      "row": 19,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-23-17",
+      "name": "Little Compton,Newport,RI",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 23,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-23-19",
+      "name": "Little Compton,Newport,RI",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 23,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-1",
+      "name": "Hannah Norton",
+      "dates": "1648-1/18/1710 (62)",
+      "notes": [
+        "Weymouth,Mass"
+      ],
+      "col": 1,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-3",
+      "name": "Augustine Williams",
+      "dates": "",
+      "notes": [
+        "1653",
+        "Killingworth,CT"
+      ],
+      "col": 3,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-5",
+      "name": "John Pratt",
+      "dates": "2/20/1644",
+      "notes": [
+        "Hartford,CT"
+      ],
+      "col": 5,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-7",
+      "name": "Sarah Jones",
+      "dates": "2/20/1644",
+      "notes": [
+        "Hartford,CT"
+      ],
+      "col": 7,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-9",
+      "name": "Edward Shipton",
+      "dates": "1628-9/15/1697",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 9,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-11",
+      "name": "Elizabeth Comstock",
+      "dates": "1633-7/15/1659",
+      "notes": [
+        "Saybrook,CT",
+        "Abigail (2nd wife)",
+        "1667",
+        "Chester,CT"
+      ],
+      "col": 11,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-13",
+      "name": "John Clark(e) III",
+      "dates": "11/17/1655-2/17/1735 (80)",
+      "notes": [
+        "Saybrook,CT",
+        "m.9/17/1684"
+      ],
+      "col": 13,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-15",
+      "name": "Rebekah Beaumont",
+      "dates": "9/17/1659-4/3/1742 (83)",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 15,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-17",
+      "name": "Daniel Grinnell",
+      "dates": "1665-1/7/1740 (75)",
+      "notes": [
+        "Portsmouth,Newport,RI",
+        "d.Saybrook,CT"
+      ],
+      "col": 17,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-27-19",
+      "name": "Lydia Pabodie",
+      "dates": "4/3/1667-7/13/1748 (81)",
+      "notes": [
+        "Duxbury,Plymouth,Mass",
+        "d.Saybrook,CT"
+      ],
+      "col": 19,
+      "row": 27,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-1",
+      "name": "Hannah Williams",
+      "dates": "1/10/1680",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 1,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-3",
+      "name": "John Pratt Jr",
+      "dates": "9/5/1671",
+      "notes": [
+        "Lyme,CT"
+      ],
+      "col": 3,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-5",
+      "name": "Elizabeth Shipman",
+      "dates": "5/1652-7/31/1701",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 5,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-7",
+      "name": "William Shipman",
+      "dates": "6/6/1656-9/9/1725",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 7,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-9",
+      "name": "Edward Shipman",
+      "dates": "2/15/1654-12/30/1711 (57)",
+      "notes": [
+        "Saybrook,CT",
+        "Chester,CT",
+        "Abigail 1689-",
+        "Deborah 1691-",
+        "Benjamin 1693-1726",
+        "Lydia 1693-"
+      ],
+      "col": 9,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-13",
+      "name": "Joseph Clark(e)",
+      "dates": "1/23/1692",
+      "notes": [
+        "Saybrook,CT",
+        "m.9/25/1712"
+      ],
+      "col": 13,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-15",
+      "name": "Lydia Grinnell",
+      "dates": "4/3/1693-7/13/1748 (55)",
+      "notes": [
+        "Duxbury,Plymouth,Mass"
+      ],
+      "col": 15,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-21",
+      "name": "Daniel Merwin",
+      "dates": "1687-4/11/1766",
+      "notes": [
+        "Millford,Conn",
+        "Durham,Conn"
+      ],
+      "col": 21,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-23",
+      "name": "Sarah Botsford",
+      "dates": "8/10/1683-9/23/1764",
+      "notes": [
+        "Millford,Conn",
+        "Durham,Conn"
+      ],
+      "col": 23,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-25",
+      "name": "James Wells",
+      "dates": "11/27/1668-12/27/1744",
+      "notes": [
+        "Haddam,Conn"
+      ],
+      "col": 25,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-34-27",
+      "name": "Rebecca Selden",
+      "dates": "2/12/1678-7/6/1764",
+      "notes": [
+        "Hadley,Mass",
+        "Haddam,Conn"
+      ],
+      "col": 27,
+      "row": 34,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-1",
+      "name": "Thomas Pratt",
+      "dates": "4/23/1701",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 1,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-3",
+      "name": "Jerusha Beckwith",
+      "dates": "8/10/1709",
+      "notes": [],
+      "col": 3,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-13",
+      "name": "Parnell Shipman",
+      "dates": "1711-",
+      "notes": [
+        "Chester,CT",
+        "Alan Clark 1744-",
+        "Rebecca Clark 1746-",
+        "both b. Saybrook,CT"
+      ],
+      "col": 13,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-15",
+      "name": "Joseph Clark",
+      "dates": "1/25/1713-11/13/1753 (40)",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 15,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-23",
+      "name": "Daniel Merwin",
+      "dates": "9/15/1714-5/15/1758",
+      "notes": [
+        "Millford,Conn",
+        "Durham,Conn"
+      ],
+      "col": 23,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-40-25",
+      "name": "Elizabeth Wells",
+      "dates": "2/9/1713-10/29/1739",
+      "notes": [
+        "Haddam,Conn",
+        "Durham,Conn"
+      ],
+      "col": 25,
+      "row": 40,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-3",
+      "name": "Thomas Pratt, Jr",
+      "dates": "1740-3/3/1818 (78)",
+      "notes": [
+        "Saybrook,CT",
+        "d.Saybrook,CT",
+        "m.2/16/1767"
+      ],
+      "col": 3,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-5",
+      "name": "Ruth Wilcox",
+      "dates": "2/5/1742-11/15/1819 (77)",
+      "notes": [
+        "Saybrook,CT",
+        "d.Saybrook"
+      ],
+      "col": 5,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-15",
+      "name": "Reuben Clark",
+      "dates": "1734-12/18/1812 (78)",
+      "notes": [
+        "Chester,CT",
+        "d.Chester,CT",
+        "m.12/3/1759",
+        "Rev. John Clark",
+        "9/8/1766-7/8/1835"
+      ],
+      "col": 15,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-17",
+      "name": "Elizabeth Truby",
+      "dates": "1738-8/21/1778 (40)",
+      "notes": [
+        "Chester,CT",
+        "d.Chester,CT",
+        "Isabella ?",
+        "2nd wife?"
+      ],
+      "col": 17,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-23",
+      "name": "James Merwin",
+      "dates": "10/19/1739-2/13/1790 (51)",
+      "notes": [
+        "Durham,CT",
+        "d.Haddem,CT"
+      ],
+      "col": 23,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-46-25",
+      "name": "Martha Smith",
+      "dates": "1738-8/2/1808 (70)",
+      "notes": [
+        "d.Haddem,CT"
+      ],
+      "col": 25,
+      "row": 46,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-54-13",
+      "name": "Chloe Pratt",
+      "dates": "12/1/1773-8/27/1813 (40)",
+      "notes": [
+        "Saybrook,CT",
+        "d. Pt Leyden,NY",
+        "John Anson 2/4/1805",
+        "Reuben Pratt 8/6/1807"
+      ],
+      "col": 13,
+      "row": 54,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-54-23",
+      "name": "Heman Merwin",
+      "dates": "8/1/1767-2/15/1844",
+      "notes": [
+        "Haddem,CT",
+        "d. Belfast,NY",
+        "m.5/6/1790"
+      ],
+      "col": 23,
+      "row": 54,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-54-25",
+      "name": "Anna Brooks",
+      "dates": "11/25/1770-11/17/1809",
+      "notes": [],
+      "col": 25,
+      "row": 54,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-58-15",
+      "name": "Locust Grove,Lord  Leyden,Lewis",
+      "dates": "",
+      "notes": [
+        "Elizabeth 4/18/1792",
+        "Roxana 7/17/1798",
+        "Ruth 3/16/1801",
+        "All b. Saybrook,CT"
+      ],
+      "col": 15,
+      "row": 58,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-58-17",
+      "name": "Locust Grove,Leyden",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 58,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-62-7",
+      "name": "John Collins",
+      "dates": "1801-9/7/1883 (83)",
+      "notes": [
+        "have photograph",
+        "Came from Yorkshire",
+        "Eng 1831",
+        "d.Whitby,Can"
+      ],
+      "col": 7,
+      "row": 62,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-62-9",
+      "name": "Sarah Fowler",
+      "dates": "1806-8/25/1889 (83)",
+      "notes": [
+        "buried in Oshawa,Ontario,Can",
+        "Came from Yorkshire",
+        "Eng 1831",
+        "d.Whitby,Can",
+        "fam fr CT"
+      ],
+      "col": 9,
+      "row": 62,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-62-17",
+      "name": "Charles William Clark",
+      "dates": "3/13/1796-11/18/1880 (84)",
+      "notes": [],
+      "col": 17,
+      "row": 62,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-62-19",
+      "name": "Anna Merwin",
+      "dates": "11/19/1795-after 6/1880",
+      "notes": [
+        "have photograph",
+        "buried in Foster plot"
+      ],
+      "col": 19,
+      "row": 62,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-67-11",
+      "name": "Mt Adnah,Fulton",
+      "dates": "",
+      "notes": [],
+      "col": 11,
+      "row": 67,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-67-17",
+      "name": "Mt Adnah,Fulton",
+      "dates": "m. 1/30/1817",
+      "notes": [],
+      "col": 17,
+      "row": 67,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-67-19",
+      "name": "Mt Adnah,Fulton",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 67,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-13",
+      "name": "Sarah Collins",
+      "dates": "3/15/1846-2/13/1925 (79)",
+      "notes": [
+        "c1900 Roch 54",
+        "Pickering,Canada"
+      ],
+      "col": 13,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-15",
+      "name": "James Alanson Clark",
+      "dates": "5/23/1823-8/10/1906 (83)",
+      "notes": [
+        "Watchmaker/Jeweler",
+        "c1900 Roch 77"
+      ],
+      "col": 15,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-17",
+      "name": "Isabel Clough",
+      "dates": "",
+      "notes": [
+        "First wife",
+        "Aberdeen,Scotland"
+      ],
+      "col": 17,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-19",
+      "name": "Charles Victor Clark",
+      "dates": "1818-",
+      "notes": [
+        "Leyden,NY"
+      ],
+      "col": 19,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-21",
+      "name": "Philander Merwin Clark",
+      "dates": "4/5/1819-7/5/1878 (59)",
+      "notes": [
+        "Leyden,NY"
+      ],
+      "col": 21,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-23",
+      "name": "Anselm Heman Clark",
+      "dates": "12/6/1826-4/7/1908 (82)",
+      "notes": [
+        "Leyden,NY"
+      ],
+      "col": 23,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-25",
+      "name": "Chloe Ann Clark",
+      "dates": "1830-7/22/1910 (80)",
+      "notes": [
+        "Leyden,NY"
+      ],
+      "col": 25,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-71-27",
+      "name": "John Dorland Foster",
+      "dates": "6/3/1826-6/23/1913 (87)",
+      "notes": [
+        "Leyden,NY"
+      ],
+      "col": 27,
+      "row": 71,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-5",
+      "name": "Theresa Hermes",
+      "dates": "6/30/1887",
+      "notes": [],
+      "col": 5,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-7",
+      "name": "Reuben Victor Clark",
+      "dates": "2/7/1877-",
+      "notes": [
+        "Omemee,Canada"
+      ],
+      "col": 7,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-9",
+      "name": "Bertha Clark-Barber",
+      "dates": "10/26/1884-6/2/1971 (87)",
+      "notes": [
+        "4 children",
+        "Mrs. Frank L. Barber",
+        "c1900 Roch 15",
+        "Omemee,Canada"
+      ],
+      "col": 9,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-11",
+      "name": "Archie Eugene Herrick",
+      "dates": "1874-1949",
+      "notes": [
+        "Cohocton,NY"
+      ],
+      "col": 11,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-13",
+      "name": "Nellie Grant Clark",
+      "dates": "5/13/1872-12/13/1951 (79)",
+      "notes": [
+        "4 children",
+        "Omemee,Canada"
+      ],
+      "col": 13,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-15",
+      "name": "Annie May Clark",
+      "dates": "1874-01/05/1877 (3)",
+      "notes": [
+        "Omemee,Canada"
+      ],
+      "col": 15,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-17",
+      "name": "Dollie Avarilla Clark",
+      "dates": "4/10/1882-Jan 1969 (87)",
+      "notes": [
+        "SS 062-28-9393",
+        "c1900 Roch 18",
+        "c1910 Roch 28",
+        "Omemee,Ont,Canada"
+      ],
+      "col": 17,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-19",
+      "name": "John Breitenbach",
+      "dates": "8/15/1881",
+      "notes": [
+        "(Shoemaker)"
+      ],
+      "col": 19,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-21",
+      "name": "William Frederick Clark",
+      "dates": "11/11/1853-7/25/1905 (52)",
+      "notes": [
+        "have photo",
+        "Whitby,Ont,Can"
+      ],
+      "col": 21,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-23",
+      "name": "Charles John Clark",
+      "dates": "",
+      "notes": [
+        "1855"
+      ],
+      "col": 23,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-25",
+      "name": "John W. Clark",
+      "dates": "",
+      "notes": [
+        "1858",
+        "Whitby,Ont,Can"
+      ],
+      "col": 25,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-85-27",
+      "name": "Cora Avarilla",
+      "dates": "",
+      "notes": [],
+      "col": 27,
+      "row": 85,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-87-23",
+      "name": "James Merwin Clark",
+      "dates": "",
+      "notes": [
+        "1856",
+        "Whitby,Ont,Can"
+      ],
+      "col": 23,
+      "row": 87,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-87-27",
+      "name": "Langdon Clark",
+      "dates": "",
+      "notes": [],
+      "col": 27,
+      "row": 87,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-88-15",
+      "name": "George Alanson Clark",
+      "dates": "2/2/1880-12/15/1887 (7)",
+      "notes": [
+        "Omemee,Canada"
+      ],
+      "col": 15,
+      "row": 88,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-88-27",
+      "name": "John Merwin",
+      "dates": "",
+      "notes": [],
+      "col": 27,
+      "row": 88,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-98-11",
+      "name": "Agnes Teresa Warden",
+      "dates": "9/27/1898-1/23/1948",
+      "notes": [
+        "Buffalo,NY"
+      ],
+      "col": 11,
+      "row": 98,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-98-13",
+      "name": "Ernest Eugene Herrick",
+      "dates": "7/16/1897-2/9/1981 (83)",
+      "notes": [
+        "Rochester,NY"
+      ],
+      "col": 13,
+      "row": 98,
+      "branch": "clark"
+    },
+    {
+      "id": "clark-98-17",
+      "name": "Hazel Mae Breitenbach",
+      "dates": "11/6/1905-5/1984 (79)",
+      "notes": [
+        "SS104-07-4721",
+        "Rochester,NY",
+        "Hazel is 1/1024th French"
+      ],
+      "col": 17,
+      "row": 98,
+      "branch": "clark"
+    },
+    {
+      "id": "collins-5-5",
+      "name": "John Collins",
+      "dates": "1801-9/7/1883 (83)",
+      "notes": [
+        "d.Whitby,Can"
+      ],
+      "col": 5,
+      "row": 5,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-5-7",
+      "name": "Sarah Fowler",
+      "dates": "1806-8/25/1889 (83)",
+      "notes": [
+        "d.Whitby,Can"
+      ],
+      "col": 7,
+      "row": 5,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-1",
+      "name": "Mary Collins-Wilson",
+      "dates": "1838-1915 (77)",
+      "notes": [
+        "9 children"
+      ],
+      "col": 1,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-3",
+      "name": "Rachel Madill",
+      "dates": "1845-1913 (68)",
+      "notes": [],
+      "col": 3,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-5",
+      "name": "George Collins",
+      "dates": "3/26/1842-1876 (34)",
+      "notes": [
+        "Susan",
+        "1870-",
+        "Pickering,CAN"
+      ],
+      "col": 5,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-7",
+      "name": "Christiana Collins-Peters",
+      "dates": "2/1/1839-1923 (84)",
+      "notes": [
+        "4 children",
+        "Judson",
+        "6/1871-",
+        "Pickering,CAN"
+      ],
+      "col": 7,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-9",
+      "name": "Josephus Rev.",
+      "dates": "1844-1928 (84)",
+      "notes": [
+        "4 children"
+      ],
+      "col": 9,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-11",
+      "name": "John Jr",
+      "dates": "1848-1916 (68)",
+      "notes": [
+        "2 children"
+      ],
+      "col": 11,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-13",
+      "name": "Martha Collins-Lapham",
+      "dates": "1832-1909 (77)",
+      "notes": [
+        "8 children",
+        "Of interest:",
+        "George died without a will at 34 years of age. His wife Rachel had to petition",
+        "the courts to become administrator of his estate.",
+        "In that era, if you were left a widow, your father-in-law or brother-in-laws"
+      ],
+      "col": 13,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-15",
+      "name": "Sarah Collins",
+      "dates": "3/15/1846-2/13/1925 (79)",
+      "notes": [
+        "Pickering,Canada"
+      ],
+      "col": 15,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-10-17",
+      "name": "James Alanson Clark",
+      "dates": "5/23/1823-8/10/1906 (83)",
+      "notes": [],
+      "col": 17,
+      "row": 10,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-16-1",
+      "name": "Minetta Brumwell",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 16,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-16-3",
+      "name": "William Edmund Collins",
+      "dates": "4/24/1868-1948 (80)",
+      "notes": [],
+      "col": 3,
+      "row": 16,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-16-9",
+      "name": "John Adouliam",
+      "dates": "2/9/1875-1939",
+      "notes": [
+        "Pickering,CAN",
+        "Daughter"
+      ],
+      "col": 9,
+      "row": 16,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-22-1",
+      "name": "Helen Morcombe",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 22,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-22-3",
+      "name": "Walter Roy Collins",
+      "dates": "1902-1966",
+      "notes": [
+        "11 children"
+      ],
+      "col": 3,
+      "row": 22,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-27-1",
+      "name": "Lillian Johnson",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 27,
+      "branch": "collins"
+    },
+    {
+      "id": "collins-27-3",
+      "name": "Robert Alvin Collins",
+      "dates": "9/8/1932-6/30/1997 (65)",
+      "notes": [
+        "Cowboy",
+        "3 children"
+      ],
+      "col": 3,
+      "row": 27,
+      "branch": "collins"
+    },
+    {
+      "id": "amor-4-23",
+      "name": "Andrew Schrauger",
+      "dates": "1656-1753 (96)",
+      "notes": [
+        "Emigration 1710",
+        "Rheinland-Pfalz,Germany",
+        "Germantown,PA"
+      ],
+      "col": 23,
+      "row": 4,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-4-25",
+      "name": "Barbara Hendricks",
+      "dates": "1665-1740 (74)",
+      "notes": [
+        "Rheinland-Pfalz,Germany",
+        "Germantown,PA"
+      ],
+      "col": 25,
+      "row": 4,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-12-17",
+      "name": "Hans Detyweiler",
+      "dates": "1685-6/1761",
+      "notes": [
+        "Switzerland",
+        "Skippack,PA"
+      ],
+      "col": 17,
+      "row": 12,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-12-21",
+      "name": "Rev Michael Ziegler",
+      "dates": "1684-10/29/1765 (80)",
+      "notes": [
+        "Arrived 1709",
+        "Baden-Wurttemberg,Germany",
+        "Skippack,PA"
+      ],
+      "col": 21,
+      "row": 12,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-12-23",
+      "name": "Catharine Schrauger",
+      "dates": "1686-1765 (78)",
+      "notes": [
+        "Germany"
+      ],
+      "col": 23,
+      "row": 12,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-12-25",
+      "name": "Dielman Kolb Jr",
+      "dates": "5/10/1691-12/28/1756 (65)",
+      "notes": [],
+      "col": 25,
+      "row": 12,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-9",
+      "name": "Ulrich Michael Gingrich",
+      "dates": "1715-1772",
+      "notes": [],
+      "col": 9,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-13",
+      "name": "Magkalena Bieri",
+      "dates": "1/3/1732-9/8/1796",
+      "notes": [],
+      "col": 13,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-15",
+      "name": "Henry Sellen Tyson",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-17",
+      "name": "Madeline Conrad Custer",
+      "dates": "1714-1764 (49)",
+      "notes": [],
+      "col": 17,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-21",
+      "name": "Anna Moyer Reiff",
+      "dates": "11/7/1722-1/9/1798 (75)",
+      "notes": [],
+      "col": 21,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-20-25",
+      "name": "Elizabeth Schnebli Kolb",
+      "dates": "1715-1784 (68)",
+      "notes": [
+        "Germany"
+      ],
+      "col": 25,
+      "row": 20,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-23-11",
+      "name": "Kimmel Cem Jonesboro,Illinois",
+      "dates": "",
+      "notes": [
+        "Wiesbaden,Germany",
+        "Jonesboro,Illinois"
+      ],
+      "col": 11,
+      "row": 23,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-23-21",
+      "name": "Lower Salford Monnonite Cem",
+      "dates": "",
+      "notes": [],
+      "col": 21,
+      "row": 23,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-24-9",
+      "name": "Near Strassberg,Alsace,Germany",
+      "dates": "",
+      "notes": [
+        "Warwick,PA"
+      ],
+      "col": 9,
+      "row": 24,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-24-13",
+      "name": "Fayette Co, PA",
+      "dates": "",
+      "notes": [
+        "Springhill,PA"
+      ],
+      "col": 13,
+      "row": 24,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-24-19",
+      "name": "Montgomery Co,PA",
+      "dates": "",
+      "notes": [
+        "Skippack,PA"
+      ],
+      "col": 19,
+      "row": 24,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-13",
+      "name": "Abraham H. Gingrich",
+      "dates": "1751-1814",
+      "notes": [
+        "Warwick,PA",
+        "Preston,Waterloo,Ontario,Can"
+      ],
+      "col": 13,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-15",
+      "name": "Barbara Hunsaker",
+      "dates": "5/6/1754-7/27/1788 (34)",
+      "notes": [
+        "Manchester,PA",
+        "Lancaster,PA"
+      ],
+      "col": 15,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-17",
+      "name": "Henry Pannebecker",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-19",
+      "name": "Barbara Custer Tyson",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-21",
+      "name": "Abraham Detweiler",
+      "dates": "9/13/1752-2/26/1818 (65)",
+      "notes": [],
+      "col": 21,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-29-23",
+      "name": "Elizabeth Ziegler",
+      "dates": "1750-5/21/1836",
+      "notes": [],
+      "col": 23,
+      "row": 29,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-32-21",
+      "name": "Lower Skippack Mennonite Cem",
+      "dates": "",
+      "notes": [
+        "Skippack,Penn"
+      ],
+      "col": 21,
+      "row": 32,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-32-23",
+      "name": "Lower Skippack Mennonite Cem",
+      "dates": "",
+      "notes": [
+        "Skippack,Penn"
+      ],
+      "col": 23,
+      "row": 32,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-7",
+      "name": "Major Augustine Leftwich",
+      "dates": "1744-1835",
+      "notes": [],
+      "col": 7,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-9",
+      "name": "Mary Ann Turner",
+      "dates": "1749-1821",
+      "notes": [
+        "6 children"
+      ],
+      "col": 9,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-15",
+      "name": "Martin Treichler Baer Sr",
+      "dates": "11/6/1772-6/13/1842",
+      "notes": [],
+      "col": 15,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-17",
+      "name": "Catherine Hunsaker Gingerich",
+      "dates": "9/1783-3/6/1849 (65)",
+      "notes": [
+        "Preston,Waterloo,Ontario,Canada"
+      ],
+      "col": 17,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-19",
+      "name": "Cornelius Peaaebecker",
+      "dates": "12/8/1770-6/22/1855 (84)",
+      "notes": [],
+      "col": 19,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-38-21",
+      "name": "Anna Dettweiler",
+      "dates": "11/16/1775-10/27/1855 (79)",
+      "notes": [],
+      "col": 21,
+      "row": 38,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-41-9",
+      "name": "Mount Airy-Leftwich Cem",
+      "dates": "m. 2/12/1765",
+      "notes": [],
+      "col": 9,
+      "row": 41,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-41-19",
+      "name": "Wanner Mennonite Cemetery",
+      "dates": "",
+      "notes": [
+        "Anna \"Nancy\" Detweiler Pannabecker",
+        "4/23/1812-2/16/1875"
+      ],
+      "col": 19,
+      "row": 41,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-41-21",
+      "name": "Wanner Mennonite Cemetery",
+      "dates": "",
+      "notes": [],
+      "col": 21,
+      "row": 41,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-42-9",
+      "name": "Bedford Co,VA",
+      "dates": "m. 2/12/1765",
+      "notes": [],
+      "col": 9,
+      "row": 42,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-42-15",
+      "name": "York Co,PA",
+      "dates": "",
+      "notes": [
+        "Preston,Waterloo,Ontario,Canada"
+      ],
+      "col": 15,
+      "row": 42,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-46-7",
+      "name": "Lockey Leftwich",
+      "dates": "1/1/1767-11/29/1853 (86)",
+      "notes": [
+        "Col. David Sauders Cemetery",
+        "Bedford,VA"
+      ],
+      "col": 7,
+      "row": 46,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-46-9",
+      "name": "Col David Saunders",
+      "dates": "2/1761-9/29/1845 (81)",
+      "notes": [
+        "Col. David Sauders Cemetery",
+        "Hanover,VA",
+        "Bedford,VA"
+      ],
+      "col": 9,
+      "row": 46,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-46-17",
+      "name": "Rev John G Baer Sr",
+      "dates": "5/15/1804-12/24/1894",
+      "notes": [],
+      "col": 17,
+      "row": 46,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-49-17",
+      "name": "Wanner Mennonite Cemetery",
+      "dates": "",
+      "notes": [
+        "Preston,Waterloo,Ontario,Canada",
+        "Hespeler,Waterloo,Ontario,Can"
+      ],
+      "col": 17,
+      "row": 49,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-49-19",
+      "name": "Wanner Mennonite Cemetery",
+      "dates": "m. 2/11/1827",
+      "notes": [
+        "Hespeler,Waterloo,Ontario,Canada",
+        "Preston,Waterloo,Ontario,Canada"
+      ],
+      "col": 19,
+      "row": 49,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-49-23",
+      "name": "Magdalena Jaltepec, Oaxaca, Mexico",
+      "dates": "",
+      "notes": [
+        "Pannabecker's are Mennonite German farmers from Pennsylvania"
+      ],
+      "col": 23,
+      "row": 49,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-7",
+      "name": "Angelina Anzoletta M. Warwick",
+      "dates": "6/10/1806-11/27/1871",
+      "notes": [
+        "Amherst,VA",
+        "Bedford,VA",
+        "Lucy C. 1837-",
+        "Leanor M. 1839-",
+        "David J. W. 1841-"
+      ],
+      "col": 7,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-9",
+      "name": "David Saunders",
+      "dates": "1/30/1794-2/1850",
+      "notes": [
+        "Bedford,VA"
+      ],
+      "col": 9,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-17",
+      "name": "David Pannebecker Baer",
+      "dates": "12/5/1828-5/6/1907",
+      "notes": [
+        "Waterloo,Ontario,Canada",
+        "Croswell, Sanilac,Michigan",
+        "Edward Baer 1854-",
+        "William H Baer 1858-",
+        "Nataniel Baer 1859-1938"
+      ],
+      "col": 17,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-19",
+      "name": "Susannah Groh Witmer Baer",
+      "dates": "1/28/1833-5/14/1880",
+      "notes": [
+        "Hespeler,Waterloo,Ontario,Canada",
+        "Colbourne,Huron,Ontario,Canada"
+      ],
+      "col": 19,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-21",
+      "name": "Matilde Cano",
+      "dates": "",
+      "notes": [
+        "Mexico"
+      ],
+      "col": 21,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-23",
+      "name": "Jose Maria Montes",
+      "dates": "",
+      "notes": [
+        "Mexico"
+      ],
+      "col": 23,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-25",
+      "name": "Regina Natividad Villaraos",
+      "dates": "",
+      "notes": [
+        "Mexico"
+      ],
+      "col": 25,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-27",
+      "name": "Fransisco Rivera",
+      "dates": "",
+      "notes": [
+        "Mexico"
+      ],
+      "col": 27,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-54-29",
+      "name": "Eugene Amor",
+      "dates": "1830-",
+      "notes": [
+        "France",
+        "Rich store owner in MO"
+      ],
+      "col": 29,
+      "row": 54,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-9",
+      "name": "Mary Gregory",
+      "dates": "1/1865-1887 (21)",
+      "notes": [
+        "1st wife"
+      ],
+      "col": 9,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-11",
+      "name": "Abram Warwick Saunders",
+      "dates": "Feb/1834-7/10/1903",
+      "notes": [],
+      "col": 11,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-19",
+      "name": "Franklin J. Baer",
+      "dates": "1870-1956",
+      "notes": [
+        "Colbourne,Huron,Ontario,Canada",
+        "Walton,Huron,Ontario,Canada"
+      ],
+      "col": 19,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-23",
+      "name": "Jesus Montez (Montes)",
+      "dates": "",
+      "notes": [
+        "Mexico"
+      ],
+      "col": 23,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-25",
+      "name": "Vicenta Rivera",
+      "dates": "1875-",
+      "notes": [
+        "USCit 1900",
+        "Mexico"
+      ],
+      "col": 25,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-27",
+      "name": "Joseph E. Amor",
+      "dates": "1860-",
+      "notes": [
+        "Missouri"
+      ],
+      "col": 27,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-61-29",
+      "name": "Max Amor",
+      "dates": "1830-",
+      "notes": [
+        "Prussia",
+        "Tobacco dealer",
+        "Rich in San Fran,had Iriish maid"
+      ],
+      "col": 29,
+      "row": 61,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-9",
+      "name": "Justice Goeble Saunders",
+      "dates": "6/6/1893-6/28/1957",
+      "notes": [
+        "Manager of chain store",
+        "Neb 1910, Mich in 1920 &1930",
+        "Mich 1930 Census"
+      ],
+      "col": 9,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-13",
+      "name": "William Bryan Saunders",
+      "dates": "10/1/1896-10/5/1958",
+      "notes": [],
+      "col": 13,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-15",
+      "name": "Benjamin A. Guggemos",
+      "dates": "1897-",
+      "notes": [
+        "Father b. Germany",
+        "Mother b. Switzerland",
+        "Neb 1920 Census",
+        "c1940 430 Cherry Long Beach"
+      ],
+      "col": 15,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-17",
+      "name": "Virgil Saunders",
+      "dates": "3/221899-8/7/1964 (65)",
+      "notes": [
+        "listed as a son 1910",
+        "A.W. gone in 1910",
+        "Neb 1920 Census",
+        "c1940 430 Cherry Long Beach"
+      ],
+      "col": 17,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-19",
+      "name": "Harry Clinton Stanley Baer",
+      "dates": "5/27/1900-10/4/1966",
+      "notes": [
+        "photographer",
+        "SS438-46-4535",
+        "c1940 430 Cherry Long Beach"
+      ],
+      "col": 19,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-21",
+      "name": "Vincent Amor",
+      "dates": "1895-",
+      "notes": [
+        "auto mechanic"
+      ],
+      "col": 21,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-23",
+      "name": "Julia Esqueda",
+      "dates": "1897-1935 (38)",
+      "notes": [
+        "became citizen 1902"
+      ],
+      "col": 23,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-73-25",
+      "name": "Maximina Amor Montez",
+      "dates": "1898-",
+      "notes": [],
+      "col": 25,
+      "row": 73,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-85-7",
+      "name": "Mil Grave-Memphis Nat Cem",
+      "dates": "",
+      "notes": [],
+      "col": 7,
+      "row": 85,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-85-9",
+      "name": "Military Grave-Memphis Nat Cem",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 85,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-85-19",
+      "name": "Los Angeles,CA",
+      "dates": "",
+      "notes": [],
+      "col": 19,
+      "row": 85,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-85-23",
+      "name": "New Mexico",
+      "dates": "",
+      "notes": [],
+      "col": 23,
+      "row": 85,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-5",
+      "name": "Betty L.",
+      "dates": "1922-",
+      "notes": [
+        "Mich 1930 Census",
+        "Mich"
+      ],
+      "col": 5,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-7",
+      "name": "Justine W.",
+      "dates": "1921-",
+      "notes": [
+        "Mich 1930 Census",
+        "Mich"
+      ],
+      "col": 7,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-9",
+      "name": "Freda McFadden",
+      "dates": "",
+      "notes": [
+        "Cheryl"
+      ],
+      "col": 9,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-11",
+      "name": "Benjamin Aloysius Guggemos",
+      "dates": "12/29/1927-2001 (74)",
+      "notes": [
+        "c1940 430 Cherry Long Beach"
+      ],
+      "col": 11,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-13",
+      "name": "Barbara L.  Guggenmos",
+      "dates": "7/18/1923-",
+      "notes": [
+        "Nebraska",
+        "Lenny"
+      ],
+      "col": 13,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-15",
+      "name": "Leonard Shilder",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-17",
+      "name": "Phillip Arbiso III",
+      "dates": "7/28/1929-3/11/2011 (81)",
+      "notes": [
+        "mother's maiden name Acosta",
+        "Orange, CA"
+      ],
+      "col": 17,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-19",
+      "name": "Maxine Baer",
+      "dates": "",
+      "notes": [
+        "03/07/36-",
+        "c1940 430 Cherry Long Beach"
+      ],
+      "col": 19,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-21",
+      "name": "Roy Luiz Amor",
+      "dates": "SS525-42-5403",
+      "notes": [
+        "04/15/27-03/27/79 (52)",
+        "auto mechanic"
+      ],
+      "col": 21,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-23",
+      "name": "Edward E. Amor",
+      "dates": "3/9/1924-5/3/1984 (60)",
+      "notes": [
+        "SS525-34-8096"
+      ],
+      "col": 23,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-89-25",
+      "name": "Bertha May Frisby",
+      "dates": "6/7/1928-1/16/1998",
+      "notes": [
+        "Marceline, Missouri",
+        "Honolulu,HI",
+        "Edward"
+      ],
+      "col": 25,
+      "row": 89,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-94-19",
+      "name": "Long Beach,CA",
+      "dates": "m. 8/23/1980",
+      "notes": [
+        "Michelle"
+      ],
+      "col": 19,
+      "row": 94,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-94-21",
+      "name": "Las Cruces,NM",
+      "dates": "m. 10/2/1952",
+      "notes": [],
+      "col": 21,
+      "row": 94,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-98-15",
+      "name": "Richard King Nordquist",
+      "dates": "",
+      "notes": [
+        "09/20/43-"
+      ],
+      "col": 15,
+      "row": 98,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-98-17",
+      "name": "Angela Maxine Amor",
+      "dates": "",
+      "notes": [
+        "12/17/54-"
+      ],
+      "col": 17,
+      "row": 98,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-98-21",
+      "name": "Roy Amor",
+      "dates": "",
+      "notes": [
+        "07/13/53-"
+      ],
+      "col": 21,
+      "row": 98,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-102-15",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 102,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-102-17",
+      "name": "Long Beach,CA",
+      "dates": "",
+      "notes": [],
+      "col": 17,
+      "row": 102,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-102-21",
+      "name": "Long Beach,CA",
+      "dates": "",
+      "notes": [],
+      "col": 21,
+      "row": 102,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-105-2",
+      "name": "Social Security App received:",
+      "dates": "",
+      "notes": [],
+      "col": 2,
+      "row": 105,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-105-13",
+      "name": "From Lenny",
+      "dates": "",
+      "notes": [
+        "Randy",
+        "Kelly"
+      ],
+      "col": 13,
+      "row": 105,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-106-2",
+      "name": "Roy Luiz Amor",
+      "dates": "",
+      "notes": [],
+      "col": 2,
+      "row": 106,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-106-15",
+      "name": "Jessica Michele Nordquist",
+      "dates": "",
+      "notes": [
+        "05/11/81-",
+        "Harry Baer b. 3/10/1895 per Maxine",
+        "in Calif Deaths Index",
+        "5/27/1900-10/7/1966"
+      ],
+      "col": 15,
+      "row": 106,
+      "branch": "amor"
+    },
+    {
+      "id": "amor-106-21",
+      "name": "Kristen Skylar Amor",
+      "dates": "",
+      "notes": [
+        "10/20/94-"
+      ],
+      "col": 21,
+      "row": 106,
+      "branch": "amor"
+    },
+    {
+      "id": "jess-5-13",
+      "name": "Jakob Wyssmann",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 5,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-5-15",
+      "name": "Elisabeth Graeub",
+      "dates": "",
+      "notes": [],
+      "col": 15,
+      "row": 5,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-11-9",
+      "name": "Michael S Callahan",
+      "dates": "12/1846-1908",
+      "notes": [
+        "musician",
+        "c1900 New York 54",
+        "Ireland"
+      ],
+      "col": 9,
+      "row": 11,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-11-11",
+      "name": "Amelia B Butler",
+      "dates": "5/1854-1930",
+      "notes": [
+        "c1900 New York 46",
+        "c1910 New York 52",
+        "England",
+        "Brooklyn,NY"
+      ],
+      "col": 11,
+      "row": 11,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-11-13",
+      "name": "Charles Anshanslin",
+      "dates": "4/10/1862-",
+      "notes": [
+        "Zurich,Switzerland"
+      ],
+      "col": 13,
+      "row": 11,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-11-15",
+      "name": "Maria Wyssmann",
+      "dates": "1/31/1857-1/29/1937",
+      "notes": [
+        "Berne,Switzerland"
+      ],
+      "col": 15,
+      "row": 11,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-3",
+      "name": "Sarah Callihan",
+      "dates": "1/5/1889-",
+      "notes": [],
+      "col": 3,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-5",
+      "name": "Frederick Stephen Callahan",
+      "dates": "1/20/1880-7/1965",
+      "notes": [
+        "c1900 New York 20",
+        "c1910 New York 26"
+      ],
+      "col": 5,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-7",
+      "name": "Alfred James Callahan",
+      "dates": "7/23/1882-1/21/1982",
+      "notes": [
+        "c1900 New York 17",
+        "c1910 New York 26",
+        "Anna c1910 New York 23 with",
+        "Callahan family and Edward Jr 3"
+      ],
+      "col": 7,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-9",
+      "name": "Edward Francis Callahan",
+      "dates": "6/27/1884-5/4/1982",
+      "notes": [
+        "c1900 New York 14",
+        "c1910 New York 23"
+      ],
+      "col": 9,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-11",
+      "name": "Charles Herbert Callahan",
+      "dates": "8/1/1892-1/25/1969",
+      "notes": [
+        "SS 453-56-4081",
+        "c1900 New York 8",
+        "c1910 New York 17",
+        "c1920 Wichita 27",
+        "1919 Wichita 901 Litchfield Ave",
+        "c1930 Wichita 37 3915 Edgemont"
+      ],
+      "col": 11,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-13",
+      "name": "Martha Rose Anshanslin",
+      "dates": "6/21/1898-5/24/1985",
+      "notes": [
+        "SS 456-17-4984",
+        "c1920 Wichita 25",
+        "1919 Wichita 901 Litchfield Ave",
+        "c1930 Wichita 32 3915 Edgemont"
+      ],
+      "col": 13,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-24-17",
+      "name": "Michael Nordquist",
+      "dates": "1872-",
+      "notes": [
+        "Ash wheeler-furnace co.",
+        "c1910 Marquette 36"
+      ],
+      "col": 17,
+      "row": 24,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-39-3",
+      "name": "New York,NY",
+      "dates": "",
+      "notes": [],
+      "col": 3,
+      "row": 39,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-39-9",
+      "name": "New York,NY",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 39,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-39-11",
+      "name": "New York,NY",
+      "dates": "",
+      "notes": [],
+      "col": 11,
+      "row": 39,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-39-13",
+      "name": "New York,NY",
+      "dates": "",
+      "notes": [],
+      "col": 13,
+      "row": 39,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-40-5",
+      "name": "White Hall,Maryland",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 40,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-40-9",
+      "name": "Morehead City,North Carolina",
+      "dates": "",
+      "notes": [],
+      "col": 9,
+      "row": 40,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-40-11",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "G Grandfather"
+      ],
+      "col": 11,
+      "row": 40,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-40-13",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "G Grandmother"
+      ],
+      "col": 13,
+      "row": 40,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-3",
+      "name": "Ralph Joseph Hindelang",
+      "dates": "2/2/1923-9/17/1983",
+      "notes": [],
+      "col": 3,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-5",
+      "name": "Peggy Jean Callahan",
+      "dates": "5/6/1921-11/15/1997",
+      "notes": [
+        "c1925 Wichita 3",
+        "c1930 Wichita 8 3915 Edgemont",
+        "c1940 SanAnt 18 110 E Magnolia",
+        "Wichita,Kansas"
+      ],
+      "col": 5,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-7",
+      "name": "Elaine H Callahan",
+      "dates": "1925-6/12/2011",
+      "notes": [
+        "c1930 Wichita 4.5 3915 Edgemont",
+        "c1940 SanAnt 13 110 E Magnolia",
+        "Wichita,Kansas"
+      ],
+      "col": 7,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-9",
+      "name": "Stanley E Callahan",
+      "dates": "4/16/1924-7/5/1944",
+      "notes": [
+        "c1925 Wichita 1",
+        "c1930 Wichita 6 3915 Edgemont",
+        "c1940 SanAnt 15 110 E Magnolia",
+        "Wichita,Kansas"
+      ],
+      "col": 9,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-11",
+      "name": "Jonne Forde Perry",
+      "dates": "2/6/1912-3/1/1991",
+      "notes": [
+        "Palacios,TX"
+      ],
+      "col": 11,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-13",
+      "name": "Shirley Amelia Callahan",
+      "dates": "1919-",
+      "notes": [
+        "c1920 Wichita 25 8mos",
+        "c1925 Wichita 5",
+        "c1930 Wichita 10 3915 Edgemont",
+        "c1940 SanAnt 20 110 E Magnolia",
+        "Wichita,Kansas"
+      ],
+      "col": 13,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-15",
+      "name": "Richard King Nordquist Sr",
+      "dates": "8/16/1917-3/22/1943",
+      "notes": [
+        "MIA WWII Tech Sgt 5'5\" 132lb",
+        "c1920 Marquette 2.5",
+        "c1930 Marquette 12",
+        "c1940 Marquette 23",
+        "1940 enlisted US Army AirCorp",
+        "Marquette,Michigan"
+      ],
+      "col": 15,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-17",
+      "name": "Eric Nordquist",
+      "dates": "7/4/1892-",
+      "notes": [
+        "c1910 Marquette 17",
+        "c1920 Marquette 27",
+        "c1930 Marquette 37",
+        "c1940 Marquette 38?",
+        "boiler maker-railroad",
+        "Finland"
+      ],
+      "col": 17,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-21",
+      "name": "Helen Nordquist",
+      "dates": "1912-",
+      "notes": [
+        "c1920 Marquette 8",
+        "c1930 Marquette 18",
+        "c1940 Marquette 28",
+        "Marquette,Michigan"
+      ],
+      "col": 21,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-23",
+      "name": "Morgan R Nordquist",
+      "dates": "1907-",
+      "notes": [
+        "c1910 Marquette 3",
+        "c1920 Marquette 13",
+        "c1930 Marquette 23",
+        "c1940 Marquette 33",
+        "Marquette,Michigan"
+      ],
+      "col": 23,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-44-25",
+      "name": "Pearl E. Anderson",
+      "dates": "1920-",
+      "notes": [
+        "c1940 Marquette 20",
+        "Michigan"
+      ],
+      "col": 25,
+      "row": 44,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-54-3",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [],
+      "col": 3,
+      "row": 54,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-54-5",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "G Aunt",
+        "Brian.Dale"
+      ],
+      "col": 5,
+      "row": 54,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-54-7",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "G Aunt"
+      ],
+      "col": 7,
+      "row": 54,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-54-11",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "Not related"
+      ],
+      "col": 11,
+      "row": 54,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-5",
+      "name": "Linda Perry",
+      "dates": "10/5/1951-11/30/2013",
+      "notes": [],
+      "col": 5,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-7",
+      "name": "James Foote",
+      "dates": "",
+      "notes": [],
+      "col": 7,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-9",
+      "name": "Patti Carol Perry",
+      "dates": "11/28/1954-",
+      "notes": [],
+      "col": 9,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-11",
+      "name": "Randal Carle Perry",
+      "dates": "4/8/1949-",
+      "notes": [
+        "div. Marcy 4/7/1889"
+      ],
+      "col": 11,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-15",
+      "name": "Patricia K Varsos",
+      "dates": "1948-",
+      "notes": [],
+      "col": 15,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-17",
+      "name": "Richard King Nordquist Jr",
+      "dates": "9/20/1943-",
+      "notes": [],
+      "col": 17,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-19",
+      "name": "Angela Maxine Amor",
+      "dates": "12/17/1954-",
+      "notes": [],
+      "col": 19,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-21",
+      "name": "Kevin P Wixted",
+      "dates": "4/14/1956-",
+      "notes": [
+        "Rochester,NY",
+        "Hero"
+      ],
+      "col": 21,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-23",
+      "name": "Walter Fritz",
+      "dates": "",
+      "notes": [
+        "c1930 Marquette 3.5",
+        "Cousin"
+      ],
+      "col": 23,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-25",
+      "name": "Hellen Nordquist-Adams",
+      "dates": "1936-",
+      "notes": [
+        "c1940 Marquette 4",
+        "Michigan",
+        "Cousin"
+      ],
+      "col": 25,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-27",
+      "name": "Richard M Nordquist",
+      "dates": "2/28/1937-4/8/2012",
+      "notes": [
+        "US Navy",
+        "c1940 Marquette 3",
+        "Marquette,Michigan",
+        "Negaunee,Michigan",
+        "in Park Cemetery"
+      ],
+      "col": 27,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-59-29",
+      "name": "Anna Nordquist-Bradley",
+      "dates": "1940-",
+      "notes": [
+        "c1940 Marquette 0",
+        "Michigan",
+        "Cousin"
+      ],
+      "col": 29,
+      "row": 59,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-65-5",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 65,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-65-9",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "Aunt"
+      ],
+      "col": 9,
+      "row": 65,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-65-11",
+      "name": "San Antonio,TX",
+      "dates": "",
+      "notes": [
+        "Uncle"
+      ],
+      "col": 11,
+      "row": 65,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-65-17",
+      "name": "San Antonio,TX",
+      "dates": "m.1/11/1980",
+      "notes": [
+        "Father"
+      ],
+      "col": 17,
+      "row": 65,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-65-19",
+      "name": "Long Beach,CA",
+      "dates": "",
+      "notes": [
+        "Mother"
+      ],
+      "col": 19,
+      "row": 65,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-71-17",
+      "name": "Jessica Michele Nordquist",
+      "dates": "5/11/1981-",
+      "notes": [],
+      "col": 17,
+      "row": 71,
+      "branch": "jess"
+    },
+    {
+      "id": "jess-71-19",
+      "name": "Katie Alyson Wixted",
+      "dates": "9/27/1993-",
+      "notes": [],
+      "col": 19,
+      "row": 71,
+      "branch": "jess"
+    },
+    {
+      "id": "from-ireland-8-1",
+      "name": "Wm Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 8,
+      "branch": "from-ireland"
+    },
+    {
+      "id": "from-ireland-8-7",
+      "name": "The Dolphin Liverpool",
+      "dates": "",
+      "notes": [],
+      "col": 7,
+      "row": 8,
+      "branch": "from-ireland"
+    },
+    {
+      "id": "from-ireland-9-1",
+      "name": "Ane Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 9,
+      "branch": "from-ireland"
+    },
+    {
+      "id": "from-ireland-9-7",
+      "name": "The Dolphin Liverpool",
+      "dates": "",
+      "notes": [],
+      "col": 7,
+      "row": 9,
+      "branch": "from-ireland"
+    },
+    {
+      "id": "mayflower-6-1",
+      "name": "Richard Alden",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 6,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-6-2",
+      "name": "All Saints,Southhamton,Eng",
+      "dates": "",
+      "notes": [],
+      "col": 2,
+      "row": 6,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-6-6",
+      "name": "All Saints,Southhamton,Eng",
+      "dates": "",
+      "notes": [
+        "Stafford,Eng",
+        "Of,Dorking,Surrey,Eng",
+        "StAlbans,Hartford,Eng",
+        "Portsmouth,Newport,RI",
+        "Saybrook,Conn",
+        "Chester,Conn",
+        "Conn"
+      ],
+      "col": 6,
+      "row": 6,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-7-1",
+      "name": "George Joseph Alden",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 7,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-7-2",
+      "name": "All Saints,Southhamton,Eng",
+      "dates": "",
+      "notes": [],
+      "col": 2,
+      "row": 7,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-7-5",
+      "name": "Jane Fowlk",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 7,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-8-1",
+      "name": "John Alden",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 8,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-8-2",
+      "name": "South Hampton,Eng",
+      "dates": "",
+      "notes": [
+        "Plymouth,Mass",
+        "Duxbury,Plymouth,Mass",
+        "Saybrook,Conn",
+        "Chester,Conn",
+        "Conn"
+      ],
+      "col": 2,
+      "row": 8,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-8-5",
+      "name": "Priscila Sarah Mullins",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 8,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-9-1",
+      "name": "Elizabeth Alden",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 9,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-9-5",
+      "name": "William Pabodie",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 9,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-10-1",
+      "name": "Lydia Pabodie",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 10,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-10-5",
+      "name": "Daniel Grinnell",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 10,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-11-1",
+      "name": "Lydia Grinnell",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 11,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-11-5",
+      "name": "Joseph Clark(e)",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 11,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-12-1",
+      "name": "Joseph Clark",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 12,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-12-5",
+      "name": "Parnell Shipman",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 12,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-13-1",
+      "name": "Reuben Clark",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 13,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-13-5",
+      "name": "Elizabeth Truby",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 13,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-14-1",
+      "name": "John Clark",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 14,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-14-5",
+      "name": "Chloe Pratt",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 14,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-15-1",
+      "name": "Charles William Clark",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 15,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-15-5",
+      "name": "Anna Merwin",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 15,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-16-1",
+      "name": "James Alanson Clark",
+      "dates": "",
+      "notes": [
+        "Dolly (Dollie) Avarilla Clark"
+      ],
+      "col": 1,
+      "row": 16,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-16-2",
+      "name": "Port Leyden (Lewis),NY",
+      "dates": "",
+      "notes": [
+        "Omemee,Ont,Canada",
+        "Rochester,NY"
+      ],
+      "col": 2,
+      "row": 16,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-16-5",
+      "name": "Sarah Collins",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 16,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-18-1",
+      "name": "Hazel Mae Breitenbach",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 18,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-18-5",
+      "name": "John Leroy Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 18,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-19-1",
+      "name": "Bruce John Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 19,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-19-5",
+      "name": "Evelyn Ruth Jones",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 19,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-20-1",
+      "name": "Kevin Paul Wixted",
+      "dates": "",
+      "notes": [],
+      "col": 1,
+      "row": 20,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-20-5",
+      "name": "Angela Maxine Amor",
+      "dates": "",
+      "notes": [],
+      "col": 5,
+      "row": 20,
+      "branch": "mayflower"
+    },
+    {
+      "id": "mayflower-20-6",
+      "name": "Long Beach,CA",
+      "dates": "",
+      "notes": [],
+      "col": 6,
+      "row": 20,
+      "branch": "mayflower"
+    },
+    {
+      "id": "danforth-16-3",
+      "name": "Nicholas Danforth",
+      "dates": "1510-2/17/1585 or 1586",
+      "notes": [
+        "Framlingham,Sufflk,Eng",
+        "Anne 1561-",
+        "Johane 1563-1578",
+        "Margaret 1565-",
+        "Olive 1567-",
+        "Elizabeth 1569-"
+      ],
+      "col": 3,
+      "row": 16,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-16-7",
+      "name": "Thomas Sudbury",
+      "dates": "",
+      "notes": [
+        "d. 1606"
+      ],
+      "col": 7,
+      "row": 16,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-22-5",
+      "name": "Thomas Danforth",
+      "dates": "1560-9/7/1621",
+      "notes": [
+        "Framlingham,Sufflk,Eng"
+      ],
+      "col": 5,
+      "row": 22,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-22-7",
+      "name": "Jane Sudbury",
+      "dates": "1564-1601",
+      "notes": [
+        "Kelshall,Hertford,Eng"
+      ],
+      "col": 7,
+      "row": 22,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-28-5",
+      "name": "Nicholas Danforth",
+      "dates": "1589-4/1638",
+      "notes": [
+        "Came to US in 1634",
+        "Framlington,Sufflk,Eng",
+        "Cambridge,Mass"
+      ],
+      "col": 5,
+      "row": 28,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-28-7",
+      "name": "Elizabeth Symmes",
+      "dates": "1596-2/1629",
+      "notes": [
+        "Came to US in 1634",
+        "Framlington,Sufflk,Eng"
+      ],
+      "col": 7,
+      "row": 28,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-35-5",
+      "name": "William Beaumont",
+      "dates": "1608 -2/4/1698or 1699",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 5,
+      "row": 35,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-35-7",
+      "name": "Lydia Danforth",
+      "dates": "1625-8/16/1686",
+      "notes": [
+        "Came to US in 1634",
+        "Framlington,Sufflk,Eng",
+        "Saybrook,CT"
+      ],
+      "col": 7,
+      "row": 35,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-35-9",
+      "name": "Samuel Danforth",
+      "dates": "10/17/1626-11/19/1674",
+      "notes": [
+        "Framlington,Sufflk,Eng"
+      ],
+      "col": 9,
+      "row": 35,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-42-5",
+      "name": "John Clark(e)",
+      "dates": "11/17/1655-2/17/1735 (80)",
+      "notes": [
+        "Saybrook,CT",
+        "m.9/17/1684"
+      ],
+      "col": 5,
+      "row": 42,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-42-7",
+      "name": "Rebekah Beaumont",
+      "dates": "9/17/1659-4/3/1742 (83)",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 7,
+      "row": 42,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-48-5",
+      "name": "Joseph Clark(e)",
+      "dates": "1/23/1692",
+      "notes": [
+        "Saybrook,CT",
+        "m.9/25/1712"
+      ],
+      "col": 5,
+      "row": 48,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-48-7",
+      "name": "Lydia Grinnell",
+      "dates": "4/3/1693-7/13/1748 (55)",
+      "notes": [
+        "Duxbury,Plymouth,Mass"
+      ],
+      "col": 7,
+      "row": 48,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-54-5",
+      "name": "Joseph Clark",
+      "dates": "1/25/1713-11/13/1753 (40)",
+      "notes": [
+        "Saybrook,CT"
+      ],
+      "col": 5,
+      "row": 54,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-54-7",
+      "name": "Parnell Shipman",
+      "dates": "1711-",
+      "notes": [
+        "Chester,CT"
+      ],
+      "col": 7,
+      "row": 54,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-60-5",
+      "name": "Reuben Clark",
+      "dates": "1734-12/18/1812 (78)",
+      "notes": [
+        "Chester,CT",
+        "d.Chster,CT",
+        "m.12/3/1759",
+        "Rev. John Clark",
+        "9/8/1766-7/8/1835"
+      ],
+      "col": 5,
+      "row": 60,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-60-7",
+      "name": "Elizabeth Truby",
+      "dates": "1738-8/21/1778 (40)",
+      "notes": [
+        "Chester,CT",
+        "d.Chster,CT"
+      ],
+      "col": 7,
+      "row": 60,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-73-5",
+      "name": "Charles William Clark",
+      "dates": "3/13/1796-11/18/1880 (84)",
+      "notes": [],
+      "col": 5,
+      "row": 73,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-73-7",
+      "name": "Anna Merwin",
+      "dates": "11/19/1795-after 6/1880",
+      "notes": [
+        "have photograph",
+        "buried in Foster plot"
+      ],
+      "col": 7,
+      "row": 73,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-78-5",
+      "name": "Mt Adnah,Fulton",
+      "dates": "m. 1/30/1817",
+      "notes": [],
+      "col": 5,
+      "row": 78,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-78-7",
+      "name": "Mt Adnah,Fulton",
+      "dates": "",
+      "notes": [],
+      "col": 7,
+      "row": 78,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-82-5",
+      "name": "James Alanson Clark",
+      "dates": "5/23/1823-8/10/1906 (83)",
+      "notes": [
+        "Watchmaker/Jeweler"
+      ],
+      "col": 5,
+      "row": 82,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-82-7",
+      "name": "Sarah Collins",
+      "dates": "3/15/1846-2/13/1925 (79)",
+      "notes": [
+        "Pickering,Canada"
+      ],
+      "col": 7,
+      "row": 82,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-91-5",
+      "name": "Dollie Avarilla Clark",
+      "dates": "4/10/1882-Jan 1969 (87)",
+      "notes": [
+        "SS 062-28-9393",
+        "Omemee,Ont,Canada",
+        "d. Syracuse,NY",
+        "sometimes Averilla"
+      ],
+      "col": 5,
+      "row": 91,
+      "branch": "danforth"
+    },
+    {
+      "id": "danforth-91-7",
+      "name": "John Breitenbach",
+      "dates": "8/15/1881",
+      "notes": [
+        "(Shoemaker)"
+      ],
+      "col": 7,
+      "row": 91,
+      "branch": "danforth"
+    }
+  ],
+  "cemetery": [
+    {
+      "id": "cem-4",
+      "name": "Holy Sepulchre, Rochester from their site",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "est b.",
+      "notes": "Dollie Avarilla Clark"
+    },
+    {
+      "id": "cem-5",
+      "name": "Henry",
+      "age": "46",
+      "died": "1962-08-30",
+      "relation": "",
+      "location": "SO20 lot27 grave 30L",
+      "born": "1916",
+      "notes": "John Breitenbach"
+    },
+    {
+      "id": "cem-6",
+      "name": "John F.",
+      "age": "77",
+      "died": "1973-12-10",
+      "relation": "",
+      "location": "SO32 lot 8 grave 37L",
+      "born": "1896",
+      "notes": "Take Margot's notes for all other family names, Take memory stick"
+    },
+    {
+      "id": "cem-7",
+      "name": "Josephine C.",
+      "age": "68",
+      "died": "1973-08-21",
+      "relation": "",
+      "location": "SO32 lot 8 grave 37R",
+      "born": "1905",
+      "notes": ""
+    },
+    {
+      "id": "cem-8",
+      "name": "Anna",
+      "age": "4",
+      "died": "1907-01-12",
+      "relation": "granddaughter",
+      "location": "Sec22 lot 125 4W-N",
+      "born": "1903",
+      "notes": "Route"
+    },
+    {
+      "id": "cem-9",
+      "name": "Roger J.",
+      "age": "72",
+      "died": "1972-05-10",
+      "relation": "grandson",
+      "location": "Sec22 lot 125 3W-N",
+      "born": "1900",
+      "notes": "Rochester,Monroe"
+    },
+    {
+      "id": "cem-10",
+      "name": "Alice",
+      "age": "31",
+      "died": "1918-10-24",
+      "relation": "granddaughter",
+      "location": "Sec22 lot 125 2W-N",
+      "born": "1887",
+      "notes": ""
+    },
+    {
+      "id": "cem-11",
+      "name": "Hugh",
+      "age": "85",
+      "died": "1935-09-12",
+      "relation": "son",
+      "location": "Sec22 lot 125 2W-S",
+      "born": "1850",
+      "notes": "Mt Hope"
+    },
+    {
+      "id": "cem-12",
+      "name": "Henry",
+      "age": "?",
+      "died": "1904-06-24",
+      "relation": "father",
+      "location": "SecJ lot234 4N",
+      "born": "?",
+      "notes": ""
+    },
+    {
+      "id": "cem-13",
+      "name": "Bridget",
+      "age": "76",
+      "died": "1904-04-29",
+      "relation": "mother",
+      "location": "SecJ lot234 5N",
+      "born": "1828",
+      "notes": "Holy Sepulchre"
+    },
+    {
+      "id": "cem-14",
+      "name": "Julia \"Lulu\" Sackett",
+      "age": "37",
+      "died": "1911-06-15",
+      "relation": "daughter",
+      "location": "SecJ lot234 7N",
+      "born": "1874",
+      "notes": ""
+    },
+    {
+      "id": "cem-15",
+      "name": "Johanna M. Salley",
+      "age": "77",
+      "died": "1932-07-16",
+      "relation": "daughter",
+      "location": "SecJ lot234 3N",
+      "born": "1855",
+      "notes": ""
+    },
+    {
+      "id": "cem-16",
+      "name": "Joseph",
+      "age": "19days",
+      "died": "5/1/1873",
+      "relation": "",
+      "location": "SecC lot245 2NH",
+      "born": "1873",
+      "notes": "Avon,Livingston"
+    },
+    {
+      "id": "cem-17",
+      "name": "Hugh",
+      "age": "57",
+      "died": "11/22/1878",
+      "relation": "",
+      "location": "SecC lot245 4N",
+      "born": "1821",
+      "notes": "St Agnes"
+    },
+    {
+      "id": "cem-18",
+      "name": "Catherine",
+      "age": "53",
+      "died": "9/9/1890",
+      "relation": "",
+      "location": "SecC lot245 5N",
+      "born": "1837",
+      "notes": ""
+    },
+    {
+      "id": "cem-19",
+      "name": "Adrian Sister",
+      "age": "76",
+      "died": "1964-04-04",
+      "relation": "",
+      "location": "SS2 lot4C grave 4",
+      "born": "1888",
+      "notes": "Bath,Steuben"
+    },
+    {
+      "id": "cem-22",
+      "name": "St Mary's Corning per their site",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Corning,Steuben"
+    },
+    {
+      "id": "cem-23",
+      "name": "WIXTED, Henry J, 1859-1927",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "St Marys"
+    },
+    {
+      "id": "cem-24",
+      "name": "WIXTED, Mary A, 1860-1942",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": ""
+    },
+    {
+      "id": "cem-25",
+      "name": "WIXTED, James T, 1886-1942",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Leyden,Oneida"
+    },
+    {
+      "id": "cem-26",
+      "name": "WIXTED Vincent D. 1900-1977",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Locust Grove,Lord Cemetery"
+    },
+    {
+      "id": "cem-27",
+      "name": "WIXTED Thomas A. 1896-1967",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": ""
+    },
+    {
+      "id": "cem-28",
+      "name": "WIXTED, John Joseph, 1861-1927",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Fulton,Oswego"
+    },
+    {
+      "id": "cem-29",
+      "name": "Colton-WIXTED, Joanna, 1863-1942",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Mt Adnah"
+    },
+    {
+      "id": "cem-30",
+      "name": "Wixted-GRIMALDI , Gertrude V., 1895-1984",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": ""
+    },
+    {
+      "id": "cem-31",
+      "name": "WIXTED John 1899-1900",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Back to Rochester"
+    },
+    {
+      "id": "cem-32",
+      "name": "WIXTED, Raymond Jose, 1902-1973",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": ""
+    },
+    {
+      "id": "cem-33",
+      "name": "WIXTED, Margaret C   , 1901-1984",
+      "age": "",
+      "died": "",
+      "relation": "",
+      "location": "",
+      "born": "",
+      "notes": "Sites"
+    }
+  ],
+  "heritage": {
+    "katie": {
+      "english": 0.25,
+      "german": 0.25,
+      "irish": 0.125,
+      "swedish": 0.125,
+      "mexican": 0.25
+    },
+    "kevin": {
+      "english": 0.375,
+      "german": 0.125,
+      "irish": 0.25,
+      "swedish": 0.25
+    }
+  }
+}
