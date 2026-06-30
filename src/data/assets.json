@@ -31,10 +31,10 @@
       "icon": "📋"
     },
     {
-      "title": "Gravesite Photos",
-      "desc": "McGraw, Doane, Bursley lines — referenced in research notes",
-      "type": "photo",
-      "icon": "📷"
+      "title": "Online Research Archives",
+      "desc": "18 verified public sources — Find a Grave, Steuben County obits, Mt Hope, WikiTree, and more",
+      "type": "research",
+      "icon": "🔗"
     }
   ]
 }

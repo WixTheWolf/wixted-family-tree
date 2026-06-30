@@ -1,7 +1,7 @@
 interface Props {
-  active: "explore" | "directory" | "stories" | "cemetery";
-  onChange: (view: "explore" | "directory" | "stories" | "cemetery") => void;
-  counts: { people: number; stories: number; cemetery: number };
+  active: "explore" | "directory" | "stories" | "cemetery" | "archives";
+  onChange: (view: "explore" | "directory" | "stories" | "cemetery" | "archives") => void;
+  counts: { people: number; stories: number; cemetery: number; archives: number };
 }
 
 const TABS = [
@@ -9,6 +9,7 @@ const TABS = [
   { id: "directory" as const, label: "Directory", icon: "📖" },
   { id: "stories" as const, label: "Stories", icon: "📜" },
   { id: "cemetery" as const, label: "Cemetery", icon: "🪦" },
+  { id: "archives" as const, label: "Archives", icon: "🔗" },
 ];
 
 export default function AppNav({ active, onChange, counts }: Props) {
@@ -16,6 +17,7 @@ export default function AppNav({ active, onChange, counts }: Props) {
     if (id === "directory") return counts.people;
     if (id === "stories") return counts.stories;
     if (id === "cemetery") return counts.cemetery;
+    if (id === "archives") return counts.archives;
     return null;
   };
 
@@ -38,16 +40,16 @@ export default function AppNav({ active, onChange, counts }: Props) {
       <style>{`
         .app-nav {
           display: flex; gap: 6px; flex-wrap: wrap;
-          padding: 4px; background: rgba(0,0,0,0.03);
+          padding: 4px; background: rgba(255,255,255,0.03);
           border-radius: 14px; border: 1px solid var(--border);
         }
         .app-nav-tab {
           display: flex; align-items: center; gap: 8px;
-          padding: 10px 18px; border-radius: 10px;
-          font-size: 14px; font-weight: 500; color: var(--text-secondary);
+          padding: 10px 16px; border-radius: 10px;
+          font-size: 13px; font-weight: 500; color: var(--text-secondary);
           transition: all 0.2s;
         }
-        .app-nav-tab:hover { color: var(--text); background: rgba(255,255,255,0.6); }
+        .app-nav-tab:hover { color: var(--text); background: rgba(255,255,255,0.04); }
         .app-nav-tab.active {
           background: var(--bg-elevated); color: var(--text);
           box-shadow: var(--shadow-sm);
@@ -55,12 +57,12 @@ export default function AppNav({ active, onChange, counts }: Props) {
         .app-nav-icon { font-size: 16px; }
         .app-nav-count {
           font-size: 11px; font-weight: 600; padding: 2px 7px;
-          border-radius: 980px; background: rgba(0,113,227,0.08);
-          color: var(--accent);
+          border-radius: 980px; background: rgba(201, 162, 39, 0.12);
+          color: var(--accent-bright);
         }
-        @media (max-width: 640px) {
+        @media (max-width: 720px) {
           .app-nav-tab span:nth-child(2) { display: none; }
-          .app-nav-tab { padding: 10px 14px; }
+          .app-nav-tab { padding: 10px 12px; }
         }
       `}</style>
     </nav>

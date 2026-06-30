@@ -4,14 +4,18 @@ import assets from "../data/assets.json";
 interface Props {
   onViewCemetery: () => void;
   onViewStories: () => void;
+  onViewArchives?: () => void;
 }
 
-export default function MediaStrip({ onViewCemetery, onViewStories }: Props) {
+export default function MediaStrip({ onViewCemetery, onViewStories, onViewArchives }: Props) {
   const docs = assets.documents;
 
   const actions: Record<string, () => void> = {
     cemetery: onViewCemetery,
     research: onViewStories,
+    census: onViewArchives ?? onViewStories,
+    photo: onViewArchives ?? onViewCemetery,
+    spreadsheet: onViewArchives ?? onViewStories,
   };
 
   return (

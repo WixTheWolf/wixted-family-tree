@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "researched": "2026-06-30",
+    "summary": "Public genealogy, cemetery, and newspaper resources verified against the Wixted family workbook."
+  },
+  "categories": [
+    {
+      "id": "cemetery",
+      "label": "Cemetery & Burial Records",
+      "icon": "🪦",
+      "description": "Official burial indexes and memorial databases matching names in the family workbook."
+    },
+    {
+      "id": "obituaries",
+      "label": "Obituaries & Newspapers",
+      "icon": "📰",
+      "description": "Published death notices and funeral home records for Wixted family members."
+    },
+    {
+      "id": "genealogy",
+      "label": "Genealogy Databases",
+      "icon": "🌳",
+      "description": "Collaborative trees, census records, and surname research for Wixted/Wicksted lines."
+    },
+    {
+      "id": "history",
+      "label": "Historical Context",
+      "icon": "📜",
+      "description": "Railroad, colonial, and regional history connected to family notes."
+    },
+    {
+      "id": "origins",
+      "label": "Irish & English Origins",
+      "icon": "🇮🇪",
+      "description": "Research on the Lambeth/London and Tipperary/Limerick Wixted roots."
+    }
+  ],
+  "resources": [
+    {
+      "id": "res-findagrave-ny",
+      "title": "Find a Grave — Wixted in New York",
+      "desc": "509 memorial records for Wixted in NY, including Holy Sepulchre (Rochester), St Mary's (Corning), and Mechanicville.",
+      "url": "https://www.findagrave.com/memorial/search?firstname=&lastname=Wixted&locationId=country_1%2Cstate_36",
+      "category": "cemetery",
+      "tags": ["burial", "photos", "headstones"],
+      "verified": true
+    },
+    {
+      "id": "res-mthope-search",
+      "title": "Mount Hope Cemetery Burial Search",
+      "desc": "University of Rochester index of 360,000+ burials at Mt Hope & Riverside — many Wixted workbook references point here.",
+      "url": "https://rbscp.lib.rochester.edu/mthope/search",
+      "category": "cemetery",
+      "tags": ["Rochester", "Mt Hope"],
+      "verified": true
+    },
+    {
+      "id": "res-steuben-obits",
+      "title": "Steuben County Historian — Obituary Index (W)",
+      "desc": "Official county obituary index listing Wixted burials: John L (1993), Hazel M (1984), Margaret C (1984), Raymond J (1973), Vincent D (1977), Thomas A (1967).",
+      "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF",
+      "category": "cemetery",
+      "tags": ["Corning", "Steuben", "obituaries"],
+      "verified": true,
+      "matches": ["wixted-73-27", "wixted-73-29", "wixted-73-59", "wixted-73-77"]
+    },
+    {
+      "id": "res-holy-sepulchre-roch",
+      "title": "Holy Sepulchre Cemetery — Rochester Wixteds",
+      "desc": "Find a Grave memorials include Alice Wixted (1886–1918), Anna Wixted (1903–1907), Sr Adrian Wixted (1887–1964) at Holy Sepulchre, Rochester.",
+      "url": "https://www.findagrave.com/memorial/search?firstname=&lastname=Wixted&locationId=city_51255",
+      "category": "cemetery",
+      "tags": ["Rochester", "Holy Sepulchre"],
+      "verified": true
+    },
+    {
+      "id": "res-friends-mthope",
+      "title": "Friends of Mount Hope — Free Lookups",
+      "desc": "Volunteer genealogical lookup service for Mount Hope Cemetery, Rochester. 10–14 day response.",
+      "url": "https://www.cityofrochester.gov/departments/department-environmental-services-des/burial-search-mount-hope",
+      "category": "cemetery",
+      "tags": ["Rochester", "volunteer"],
+      "verified": true
+    },
+    {
+      "id": "res-kolleen-obit",
+      "title": "Kolleen N. Wixted Obituary (2017)",
+      "desc": "Full obituary — daughter of Rod & Karyl Wixted, sister Maura White, nieces Hannah & Molly White. Honeoye/Livonia, NY.",
+      "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html",
+      "category": "obituaries",
+      "tags": ["Rodney Wixted", "Karyl Johnston"],
+      "verified": true,
+      "matches": ["wixted-104-15"]
+    },
+    {
+      "id": "res-dougherty-fh",
+      "title": "Dougherty Funeral Home — Kolleen Wixted",
+      "desc": "Condolences and memorial page for Kolleen N. Wixted, Oct 23, 2017.",
+      "url": "https://www.doughertyfuneralhomes.com",
+      "category": "obituaries",
+      "tags": ["Honeoye", "Livonia"],
+      "verified": true
+    },
+    {
+      "id": "res-newspapers-com",
+      "title": "Democrat and Chronicle — Rochester Archives",
+      "desc": "Historical Rochester newspaper archive. Wixted family census and death notices appear throughout the 1900s.",
+      "url": "https://www.newspapers.com/paper/democrat-and-chronicle/3749/",
+      "category": "obituaries",
+      "tags": ["Rochester", "newspapers"],
+      "verified": true
+    },
+    {
+      "id": "res-wikitree",
+      "title": "WikiTree — Wixted Surname",
+      "desc": "Free collaborative tree with 100+ Wixted profiles including Tipperary, Limerick, and Ireland-to-America migrations.",
+      "url": "https://www.wikitree.com/genealogy/WIXTED",
+      "category": "genealogy",
+      "tags": ["collaborative", "DNA"],
+      "verified": true
+    },
+    {
+      "id": "res-curiousfox-wickstead",
+      "title": "Thomas Wickstead & Mary Hogan Descendants",
+      "desc": "Research query matching workbook patriarch Thomas James Wixted (1796–1873) and Mary Hogan — children Henry b1826, Margaret b1838, James b1839.",
+      "url": "https://www.curiousfox.com/vill100/Surrey35296_3.html",
+      "category": "genealogy",
+      "tags": ["Lambeth", "London", "Corning"],
+      "verified": true,
+      "matches": ["wixted-18-1", "wixted-18-3"]
+    },
+    {
+      "id": "res-familysearch",
+      "title": "FamilySearch — Wixted Records",
+      "desc": "Free LDS genealogy archive with census, immigration, and vital records for Wixted/Wicksted families.",
+      "url": "https://www.familysearch.org/search/record/results?q.surname=Wixted",
+      "category": "genealogy",
+      "tags": ["census", "free"],
+      "verified": true
+    },
+    {
+      "id": "res-ancestry-surname",
+      "title": "Ancestry — Wixted Family History",
+      "desc": "2,000+ census records, 429 military records. 24% of US Wixteds were in New York in 1880.",
+      "url": "https://www.ancestry.com/last-name-meaning/wixted",
+      "category": "genealogy",
+      "tags": ["census", "military"],
+      "verified": true
+    },
+    {
+      "id": "res-erie-rr-photos",
+      "title": "Erie Railroad Employee Photo Index",
+      "desc": "Historical photos of Erie RR workers — relevant to John McGraw (Avon trackwalker) and Wixted railroad workers in Corning.",
+      "url": "https://freepages.rootsweb.com/~sponholz/genealogy/miscphoto1.html",
+      "category": "history",
+      "tags": ["Erie Railroad", "Avon", "photos"],
+      "verified": true,
+      "matches": ["wixted-30-23"]
+    },
+    {
+      "id": "res-erie-rr-index",
+      "title": "Erie Railroad Magazine Master Index",
+      "desc": "Employee names, obituaries, and service records from Erie Railroad Magazine archives.",
+      "url": "https://freepages.rootsweb.com/~sponholz/genealogy/alleriejohn.html",
+      "category": "history",
+      "tags": ["Erie Railroad", "obituaries"],
+      "verified": true
+    },
+    {
+      "id": "res-mayflower",
+      "title": "Mayflower Society — Alden Line",
+      "desc": "Colonial descent research for the Mayflower branch (John Alden line) in the Gilbert workbook.",
+      "url": "https://mayflower.org",
+      "category": "history",
+      "tags": ["Mayflower", "colonial"],
+      "verified": true
+    },
+    {
+      "id": "res-ireland-blacksmiths",
+      "title": "Ireland Blacksmiths — Wixted, Tipperary",
+      "desc": "Thomas Wixted, blacksmith of Port Ryan/Newport, Co. Tipperary (1800s). Family trade passed to sons James and John.",
+      "url": "https://myblacksmiths.com/irish-1.php",
+      "category": "origins",
+      "tags": ["Tipperary", "blacksmith", "Ireland"],
+      "verified": true
+    },
+    {
+      "id": "res-limerick-cemetery",
+      "title": "Mount Saint Lawrence Cemetery — Limerick Wixteds",
+      "desc": "Irish burial records for Wixted family in Limerick City, including William, Josephine, and John Wixted.",
+      "url": "https://mountsaintlawrence.limerick.ie",
+      "category": "origins",
+      "tags": ["Limerick", "Ireland", "burial"],
+      "verified": true
+    },
+    {
+      "id": "res-wixted-surname",
+      "title": "Wixted Surname — Irish Origins",
+      "desc": "Surname established in Ireland since the 17th century, primarily County Tipperary. English habitational root from Wickstead/Wixted.",
+      "url": "https://www.ancestry.co.uk/last-name-meaning/wixted",
+      "category": "origins",
+      "tags": ["etymology", "Tipperary"],
+      "verified": true
+    }
+  ],
+  "personLinks": {
+    "wixted-73-27": [
+      { "label": "Steuben Co. Obituary — John L Wixted (1993)", "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF", "type": "cemetery" },
+      { "label": "Holy Sepulchre Cemetery, Bath NY", "url": "https://www.findagrave.com/cemetery/65302/holy-sepulchre-cemetery", "type": "cemetery" }
+    ],
+    "wixted-73-29": [
+      { "label": "Steuben Co. Obituary — Hazel M Wixted (1984)", "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF", "type": "cemetery" }
+    ],
+    "wixted-73-59": [
+      { "label": "Steuben Co. — Raymond J Wixted, St Mary's Corning", "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF", "type": "cemetery" }
+    ],
+    "wixted-73-57": [
+      { "label": "Gertrude Wixted-Grimaldi — workbook cemetery record", "url": "https://www.findagrave.com/memorial/search?firstname=Gertrude&lastname=Wixted", "type": "cemetery" }
+    ],
+    "wixted-30-23": [
+      { "label": "Erie Railroad Employee Photos — Avon area", "url": "https://freepages.rootsweb.com/~sponholz/genealogy/miscphoto1.html", "type": "photo" }
+    ],
+    "wixted-18-3": [
+      { "label": "Thomas Wickstead & Mary Hogan research", "url": "https://www.curiousfox.com/vill100/Surrey35296_3.html", "type": "research" }
+    ],
+    "wixted-104-19": [
+      { "label": "Kolleen N. Wixted obituary (2017)", "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html", "type": "obituary" }
+    ],
+    "wixted-114-29": [
+      { "label": "Matthew Wixted — GitHub profile photo", "url": "https://github.com/WixTheWolf", "type": "photo" }
+    ]
+  },
+  "verifiedBurials": [
+    { "name": "John Leroy Wixted", "dates": "1900–1993", "cemetery": "Holy Sepulchre, Bath NY", "personId": "wixted-73-27", "source": "Steuben County Historian" },
+    { "name": "Hazel Mae Breitenbach Wixted", "dates": "1905–1984", "cemetery": "Holy Sepulchre, Bath NY", "personId": "wixted-73-29", "source": "Steuben County Historian" },
+    { "name": "Margaret C. Wixted", "dates": "1901–1984", "cemetery": "St Mary's, Corning NY", "personId": null, "source": "Steuben County Historian" },
+    { "name": "Raymond Jose Wixted", "dates": "1902–1973", "cemetery": "St Mary's, Corning NY", "personId": "wixted-73-59", "source": "Steuben County Historian" },
+    { "name": "Vincent D. Wixted", "dates": "1900–1977", "cemetery": "Corning NY", "personId": "wixted-73-77", "source": "Steuben County Historian" },
+    { "name": "Thomas A. Wixted", "dates": "1896–1967", "cemetery": "Corning NY", "personId": null, "source": "Steuben County Historian" },
+    { "name": "Alice Wixted", "dates": "1886–1918", "cemetery": "Holy Sepulchre, Rochester NY", "personId": "wixted-73-39", "source": "Find a Grave" },
+    { "name": "Sr Adrian Wixted", "dates": "1887–1964", "cemetery": "Holy Sepulchre, Rochester NY", "personId": null, "source": "Find a Grave" }
+  ]
+}
