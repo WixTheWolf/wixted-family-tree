@@ -183,6 +183,19 @@
       "uploadedBy": "Family",
       "addedAt": "2026-06-30",
       "source": "site"
+    },
+    {
+      "id": "seed-dan-matthew-alexander-baseball",
+      "personId": "wixted-114-29",
+      "relatedPersonIds": ["wixted-104-31", "wixted-114-35"],
+      "title": "Dan, Matthew & Alexander — WIXTED #22 & #44",
+      "type": "photo",
+      "url": "/assets/people/wixted-114-29/dan-matthew-alexander-baseball-mid90s.jpg",
+      "previewUrl": "/assets/people/wixted-114-29/dan-matthew-alexander-baseball-mid90s.jpg",
+      "caption": "Mid-1990s (est.). Daniel \"Dan\" Scott Wixted (#44, Fire Hawks) with nephews Matthew Scott Wixted (#22, Cubs, blue) and Alexander Daniel Wixted (#22, Padres). Front and back jersey view — Southern California.",
+      "uploadedBy": "Family",
+      "addedAt": "2026-06-30",
+      "source": "site"
     }
   ],
   "documents": [

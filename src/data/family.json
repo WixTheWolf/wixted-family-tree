@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 19,
+    "storyCount": 20,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2584,7 +2584,8 @@
       "dates": "",
       "notes": [
         "03/12/59-",
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Dan\""
       ],
       "col": 31,
       "row": 104,
@@ -2609,6 +2610,10 @@
         {
           "category": "marriage",
           "text": "Wedding photo with brother Kevin Paul Wixted (early 1980s)"
+        },
+        {
+          "category": "general",
+          "text": "Known as \"Dan\""
         }
       ],
       "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
@@ -3054,6 +3059,10 @@
         {
           "category": "general",
           "text": "Age today is 38.7"
+        },
+        {
+          "category": "media",
+          "text": "Baseball photo with Uncle Dan & Alexander, mid-1990s (#22 Cubs)"
         }
       ],
       "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca 38.7 years",
@@ -3170,6 +3179,10 @@
         {
           "category": "general",
           "text": "Age today is 33.6"
+        },
+        {
+          "category": "media",
+          "text": "Baseball photo with Uncle Dan & Matthew, mid-1990s (#22 Padres)"
         }
       ],
       "searchText": "alexander daniel wixted 11/20/1992– wixted orange, ca 11/20/92- orange,ca 33.6 years",
@@ -16229,6 +16242,20 @@
     }
   },
   "stories": [
+    {
+      "id": "story-dan-matthew-alexander-baseball",
+      "title": "Dan, Matthew & Alexander — Baseball, Mid-1990s",
+      "body": "A composite print shows Daniel \"Dan\" Scott Wixted (#44, Fire Hawks hockey-style jersey) with his nephews Matthew Scott Wixted (#22, blue Cubs jersey, glasses) and Alexander Daniel Wixted (#22, navy Padres jersey) — front and back views so the WIXTED name is visible on all three uniforms. Southern California driveway, mid-1990s: Matthew would have been about 8–10 (b. Oct 1987) and Alexander about 3–5 (b. Nov 1992). Dan is Matthew's uncle (Kevin's brother); Matthew and Alexander are brothers, sons of Kevin Paul and Angela Maxine Wixted of the Whittier/Orange County generation.",
+      "personIds": [
+        "wixted-114-29",
+        "wixted-104-31",
+        "wixted-114-35",
+        "wixted-104-37"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "childhood"],
+      "source": "family-photo"
+    },
     {
       "id": "story-bruce-sr-young",
       "title": "Bruce Wixted Sr. — Formal Portrait",
