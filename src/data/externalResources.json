@@ -930,9 +930,19 @@
         "label": "Whittier Area Genealogical Society",
         "url": "https://wagswhittier.org/",
         "type": "research"
+      },
+      {
+        "label": "Whittier Area Genealogical Society",
+        "url": "https://wagswhittier.org/",
+        "type": "research"
       }
     ],
     "wixted-104-33": [
+      {
+        "label": "LA County marriage records (1986)",
+        "url": "https://apps.lavote.net/BDM",
+        "type": "research"
+      },
       {
         "label": "LA County marriage records (1986)",
         "url": "https://apps.lavote.net/BDM",
@@ -995,11 +1005,6 @@
         "label": "John Tracy — California public records (Veripages)",
         "url": "https://veripages.com/name/John/Tracy/CA/",
         "type": "research"
-      },
-      {
-        "label": "Katrina Irene Tracy — Spokeo relative cluster",
-        "url": "https://www.spokeo.com/Katrina-Tracy",
-        "type": "research"
       }
     ],
     "tracy-104-23": [
@@ -1011,6 +1016,13 @@
       {
         "label": "4420 San Andreas Ave — Radaris directory",
         "url": "https://radaris.com/p/Irene/Tracy/",
+        "type": "research"
+      }
+    ],
+    "tracy-105-23": [
+      {
+        "label": "Katrina Irene Tracy — Spokeo public records",
+        "url": "https://www.spokeo.com/Katrina-Tracy",
         "type": "research"
       }
     ]

@@ -23,6 +23,10 @@ JOHN = "tracy-104-25"
 ANNE = "tracy-104-27"
 EDUARDO = "tracy-104-29"
 IRENE = "tracy-104-23"
+ADAM = "tracy-105-21"
+KATRINA = "tracy-105-23"
+COLLEEN = "tracy-105-25"
+JAMES = "tracy-105-27"
 CHILDREN = [BRIAN, JOHN, ANNE, MARY]
 SAN_ANDREAS = "4420 San Andreas Ave, Los Angeles, CA 90065"
 SIBLING_IDS = CHILDREN
@@ -113,8 +117,8 @@ def apply_tracy_family(data: dict) -> dict:
                 "Distinct from motivational speaker Brian Tracy (b. 1944, Solana Beach)",
                 SAN_ANDREAS,
                 "Phone (323) 842-7451 (public directory; shared with Irene Leyva Tracy)",
-                "Spouse: Irene Leyva Tracy (b. 4 Nov 1958, Los Angeles Co.)",
-                "Public directories link to John Tracy, Catherine Tracy, Katrina Irene Tracy",
+                "Married Irene Leyva Tracy (b. 4 Nov 1958, Los Angeles Co.)",
+                "Children: Adam Tracy and Katrina Irene Tracy",
                 "Not in CA Birth Index under Tracy + mother Martin (free search)",
                 "Nephew of Joan Marie (Tracy) Jeisi",
             ],
@@ -126,6 +130,7 @@ def apply_tracy_family(data: dict) -> dict:
             "motherId": KATIE,
             "recordType": "person",
             "spouseIds": [IRENE],
+            "childIds": [ADAM, KATRINA],
             "siblingIds": [JOHN, ANNE, MARY],
             "searchText": "brian g tracy tracy san andreas 90065 bryan irene leyva september 1957",
         },
@@ -139,7 +144,7 @@ def apply_tracy_family(data: dict) -> dict:
                 SAN_ANDREAS,
                 "Also known as Irene L / Irene V Leyva / Irene Leyvatracy",
                 "Phone (323) 842-7450–7451 (public directory, San Andreas address)",
-                "Public directories link to Brian, John, and Catherine Tracy",
+                "Children: Adam Tracy and Katrina Irene Tracy",
             ],
             "col": 23,
             "row": 104,
@@ -147,6 +152,7 @@ def apply_tracy_family(data: dict) -> dict:
             "generation": 8,
             "recordType": "person",
             "spouseIds": [BRIAN],
+            "childIds": [ADAM, KATRINA],
             "birthDate": "1958-11-04",
             "searchText": "irene leyva tracy brian san andreas los angeles 90065 november 1958",
         },
@@ -157,9 +163,9 @@ def apply_tracy_family(data: dict) -> dict:
             "notes": [
                 "Second sibling — Brian, John, Anne, Mary Joan",
                 "Research: b. ~April 1959, Los Angeles Co., age 67 (OpenDataUSA)",
-                "Associated with Brian at 4420 San Andreas Ave in public directories (Spokeo/Radaris)",
+                "Married Colleen Tracy",
+                "Child: James Tracy",
                 "Son of John \"Jack\" Tracy and Katie (Martin) Tracy",
-                "Public records link to Mary Wixted via Katrina Irene Tracy (~b. 1986, Spokeo)",
                 "Not Spencer Tracy's son (1924–2007) or Boeing executive John J. Tracy (b. 1954)",
                 "Not in CA Birth Index under Tracy + mother Martin (free search)",
             ],
@@ -170,6 +176,8 @@ def apply_tracy_family(data: dict) -> dict:
             "parentId": JACK,
             "motherId": KATIE,
             "recordType": "person",
+            "spouseIds": [COLLEEN],
+            "childIds": [JAMES],
             "siblingIds": [BRIAN, ANNE, MARY],
             "searchText": "john tracy tracy sibling brian anne mary joan whittier jack katie martin",
         },
@@ -215,6 +223,77 @@ def apply_tracy_family(data: dict) -> dict:
             "recordType": "person",
             "spouseIds": [ANNE],
             "searchText": "eduardo e davalos tracy anne rowland heights barroso 91748",
+        },
+        {
+            "id": ADAM,
+            "name": "Adam Tracy",
+            "dates": "",
+            "notes": [
+                "Son of Brian G Tracy and Irene Leyva Tracy",
+                "Nephew of John, Anne, and Mary Joan Tracy",
+            ],
+            "col": 21,
+            "row": 105,
+            "branch": "tracy",
+            "generation": 7,
+            "parentId": BRIAN,
+            "motherId": IRENE,
+            "recordType": "person",
+            "siblingIds": [KATRINA],
+            "searchText": "adam tracy brian irene leyva son tracy",
+        },
+        {
+            "id": KATRINA,
+            "name": "Katrina Irene Tracy",
+            "dates": "",
+            "notes": [
+                "Daughter of Brian G Tracy and Irene Leyva Tracy",
+                "Research: b. ~1986–1987 (public records, Spokeo)",
+                "Niece of John, Anne, and Mary Joan Tracy",
+            ],
+            "col": 23,
+            "row": 105,
+            "branch": "tracy",
+            "generation": 7,
+            "parentId": BRIAN,
+            "motherId": IRENE,
+            "recordType": "person",
+            "siblingIds": [ADAM],
+            "searchText": "katrina irene tracy brian irene leyva daughter tracy",
+        },
+        {
+            "id": COLLEEN,
+            "name": "Colleen Tracy",
+            "dates": "",
+            "notes": [
+                "Wife of John Tracy",
+                "Mother of James Tracy",
+            ],
+            "col": 25,
+            "row": 105,
+            "branch": "tracy",
+            "generation": 8,
+            "recordType": "person",
+            "spouseIds": [JOHN],
+            "childIds": [JAMES],
+            "searchText": "colleen tracy john tracy wife james",
+        },
+        {
+            "id": JAMES,
+            "name": "James Tracy",
+            "dates": "",
+            "notes": [
+                "Son of John Tracy and Colleen Tracy",
+                "Nephew of Brian, Anne, and Mary Joan Tracy",
+            ],
+            "col": 27,
+            "row": 105,
+            "branch": "tracy",
+            "generation": 7,
+            "parentId": JOHN,
+            "motherId": COLLEEN,
+            "recordType": "person",
+            "searchText": "james tracy john colleen son tracy",
         },
     ]
 
@@ -269,9 +348,9 @@ def apply_tracy_family(data: dict) -> dict:
 
     for bid in data["branches"]:
         if bid["id"] == "tracy":
-            bid["count"] = 11
+            bid["count"] = 15
             bid["desc"] = (
-                "Mary Joan Tracy line — Walter & Cecelia to Jack, Katie Martin, and four children"
+                "Mary Joan Tracy line — Jack, Katie Martin, four siblings, and next generation"
             )
 
     data["meta"]["personCount"] = len(
@@ -293,10 +372,15 @@ def apply_tracy_family(data: dict) -> dict:
             "nieces Anne Davalos and Mary Wixted and nephew Bryan/Brian Tracy. "
             "Anne E (Tracy) Davalos is associated with Rowland Heights, CA in public records (~b. May 1960), "
             "married to Eduardo E Davalos — co-owners of 18984 Barroso St since May 2004. "
+            "Brian and Irene Tracy have two children: Adam and Katrina Irene Tracy. "
+            "John and Colleen Tracy have one child: James Tracy. "
             "Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through "
             "granddaughter Sedona Tracy Wixted."
         ),
-        "personIds": [MARY, JACK, KATIE, BRIAN, IRENE, JOHN, ANNE, EDUARDO, JOAN, WALTER, CECELIA, "wixted-121-31"],
+        "personIds": [
+            MARY, JACK, KATIE, BRIAN, IRENE, ADAM, KATRINA, JOHN, COLLEEN, JAMES,
+            ANNE, EDUARDO, JOAN, WALTER, CECELIA, "wixted-121-31",
+        ],
         "branch": "tracy",
         "tags": ["family-history", "ancestry", "research"],
         "source": "family-update",
@@ -328,12 +412,15 @@ def apply_tracy_family(data: dict) -> dict:
             "Tracy; nieces Anne Davalos and Mary Wixted). Public records cluster Brian Gerard Tracy "
             "(b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San Andreas Ave, Los "
             "Angeles 90065. Irene Leyva Tracy (b. 4 Nov 1958) shares the address and phone (323) 842-7451. "
-            "Spokeo/Radaris link Katrina Irene Tracy (~b. 1986) and Catherine Tracy to the cluster and "
-            "Mary Wixted — relationships unverified. Anne (b. May 1960, LA Co.) and Mary Joan (7 Jul 1961, "
+            "Brian and Irene have children Adam and Katrina Irene Tracy; John and Colleen have son James Tracy. "
+            "Anne (b. May 1960, LA Co.) and Mary Joan (7 Jul 1961, "
             "Whittier) fit sibling spacing; neither in free CA Birth Index as Tracy + mother Martin. Anne "
             "lives in Rowland Heights with Eduardo E Davalos (18984 Barroso St)."
         ),
-        "personIds": [BRIAN, IRENE, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, WALTER, CECELIA, JOAN],
+        "personIds": [
+            BRIAN, IRENE, ADAM, KATRINA, JOHN, COLLEEN, JAMES,
+            ANNE, EDUARDO, MARY, JACK, KATIE, WALTER, CECELIA, JOAN,
+        ],
         "branch": "tracy",
         "tags": ["research", "family-history", "public-records"],
         "source": "research",
@@ -347,8 +434,8 @@ def apply_tracy_family(data: dict) -> dict:
             "nieces Anne Davalos & Mary Wixted; nephew Bryan/Brian Tracy). Anne E Davalos (b. May 1960, "
             "LA Co.) + Eduardo E Davalos at 18984 Barroso St, Rowland Heights (property records, May 2004). "
             "Brian Gerard Tracy (b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San "
-            "Andreas Ave, Los Angeles 90065 with Irene Leyva Tracy (b. 4 Nov 1958). Spokeo/Radaris link "
-            "Katrina Irene Tracy (~b. 1986) and Catherine Tracy to Mary Wixted — unverified. Mary Joan's "
+            "Andreas Ave, Los Angeles 90065 with Irene Leyva Tracy (b. 4 Nov 1958). Family confirmed "
+            "Brian & Irene's children Adam and Katrina; John & Colleen's son James. Mary Joan's "
             "birth (7 Jul 1961, Whittier) and Daniel Wixted marriage (28 Jun 1986) from family workbook. "
             "What public access did NOT resolve without paid/vital certificates: Jack Tracy birth/death, "
             "Katie (Martin) Tracy's parents, Jack & Katie marriage date, exact birth certificates for "
@@ -358,7 +445,10 @@ def apply_tracy_family(data: dict) -> dict:
             "Next steps: LA County Registrar-Recorder (Norwalk); WAGS Whittier History Room; FamilySearch "
             "NJ Tracy/McDonough."
         ),
-        "personIds": [BRIAN, IRENE, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, JOAN, WALTER, CECELIA],
+        "personIds": [
+            BRIAN, IRENE, ADAM, KATRINA, JOHN, COLLEEN, JAMES,
+            ANNE, EDUARDO, MARY, JACK, KATIE, JOAN, WALTER, CECELIA,
+        ],
         "branch": "tracy",
         "tags": ["research", "public-records", "audit"],
         "source": "public-records",
@@ -533,18 +623,16 @@ def apply_tracy_external(ext: dict) -> dict:
             "type": "research",
         },
     ]
-    links[JOHN] = [
-        {
-            "label": "John Tracy — California public records (Veripages)",
-            "url": "https://veripages.com/name/John/Tracy/CA/",
-            "type": "research",
-        },
-        {
-            "label": "Katrina Irene Tracy — Spokeo relative cluster",
-            "url": "https://www.spokeo.com/Katrina-Tracy",
-            "type": "research",
-        },
-    ]
+    links[JOHN] = [{
+        "label": "John Tracy — California public records (Veripages)",
+        "url": "https://veripages.com/name/John/Tracy/CA/",
+        "type": "research",
+    }]
+    links[KATRINA] = [{
+        "label": "Katrina Irene Tracy — Spokeo public records",
+        "url": "https://www.spokeo.com/Katrina-Tracy",
+        "type": "research",
+    }]
     links[IRENE] = [
         {
             "label": "Irene Leyva Tracy — OpenDataUSA (b. 4 Nov 1958)",
