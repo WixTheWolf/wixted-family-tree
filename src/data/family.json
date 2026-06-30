@@ -5,8 +5,8 @@
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
-    "personCount": 633,
-    "storyCount": 27,
+    "personCount": 634,
+    "storyCount": 28,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -73,7 +73,7 @@
       "id": "tracy",
       "label": "Tracy",
       "desc": "Mary Joan Tracy line — Walter & Cecelia to Jack, Katie Martin, and four children",
-      "count": 10
+      "count": 11
     },
     {
       "id": "jess",
@@ -2630,10 +2630,11 @@
       "name": "John \"Jack\" Tracy",
       "dates": "",
       "notes": [
-        "Whittier / Rowland Heights, CA area",
+        "Whittier / Rowland Heights / Los Angeles, CA area",
         "Also known as John \"Jack\" Tracy",
         "Son of Walter & Cecelia (McDonough) Tracy (inferred via sister Joan Jeisi obituary)",
         "Father of Brian, John, Anne, and Mary Joan Tracy",
+        "Public access: no obituary, birth, or marriage index hit for Jack + Katie Martin (LA County)",
         "Family services: White Emerson Mortuary (Whittier) & Rowland Heights parishes"
       ],
       "col": 31,
@@ -2674,7 +2675,8 @@
       "notes": [
         "Maiden name: Martin",
         "Mother of Brian, John, Anne, and Mary Joan Tracy",
-        "Whittier, CA area"
+        "Whittier, CA area",
+        "Public access: parents unknown; no Katie Martin + Jack Tracy marriage in free indexes"
       ],
       "col": 33,
       "row": 103,
@@ -2712,7 +2714,8 @@
         "Youngest sibling — Brian, John, Anne, Mary Joan",
         "m. Daniel Scott Wixted, Jun 28 1986",
         "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy",
-        "Niece of Joan Marie (Tracy) Jeisi"
+        "Niece of Joan Marie (Tracy) Jeisi",
+        "Not in California Birth Index as Mary Joan Tracy (workbook is primary source)"
       ],
       "col": 33,
       "row": 104,
@@ -16294,13 +16297,19 @@
     },
     {
       "id": "tracy-104-21",
-      "name": "Brian Tracy",
+      "name": "Brian G Tracy",
       "dates": "",
       "notes": [
         "Oldest sibling — Brian, John, Anne, Mary Joan",
         "Also recorded as Bryan Tracy (Joan Jeisi 2014 obituary)",
-        "Nephew of Joan Marie (Tracy) Jeisi",
-        "Whittier / Rowland Heights, CA area"
+        "Research: Brian Gerard Tracy, b. September 1957, Los Angeles Co. (public records)",
+        "Distinct from motivational speaker Brian Tracy (b. 1944, Solana Beach)",
+        "4420 San Andreas Ave, Los Angeles, CA 90065",
+        "Phone (323) 842-7451 (public directory; shared with Irene Leyva Tracy)",
+        "Spouse: Irene Leyva Tracy (b. 4 Nov 1958, Los Angeles Co.)",
+        "Public directories link to John Tracy, Catherine Tracy, Katrina Irene Tracy",
+        "Not in CA Birth Index under Tracy + mother Martin (free search)",
+        "Nephew of Joan Marie (Tracy) Jeisi"
       ],
       "col": 21,
       "row": 104,
@@ -16314,7 +16323,10 @@
         "tracy-104-27",
         "wixted-104-33"
       ],
-      "searchText": "brian tracy tracy oldest sibling bryan tracy nephew joan jeisi whittier"
+      "searchText": "brian g tracy tracy san andreas 90065 bryan irene leyva september 1957",
+      "spouseIds": [
+        "tracy-104-23"
+      ]
     },
     {
       "id": "tracy-104-25",
@@ -16322,9 +16334,12 @@
       "dates": "",
       "notes": [
         "Second sibling — Brian, John, Anne, Mary Joan",
+        "Research: b. ~April 1959, Los Angeles Co., age 67 (OpenDataUSA)",
+        "Associated with Brian at 4420 San Andreas Ave in public directories (Spokeo/Radaris)",
         "Son of John \"Jack\" Tracy and Katie (Martin) Tracy",
-        "Whittier, CA area",
-        "Not the actor Spencer Tracy's son (different John Tracy family)"
+        "Public records link to Mary Wixted via Katrina Irene Tracy (~b. 1986, Spokeo)",
+        "Not Spencer Tracy's son (1924–2007) or Boeing executive John J. Tracy (b. 1954)",
+        "Not in CA Birth Index under Tracy + mother Martin (free search)"
       ],
       "col": 25,
       "row": 104,
@@ -16348,9 +16363,10 @@
         "Third sibling — Brian, John, Anne, Mary Joan",
         "Married name: Davalos",
         "Rowland Heights, CA — 18984 Barroso St (public property records)",
-        "Research: b. ~May 1960, Los Angeles Co. (public records, unverified)",
-        "Spouse: Eduardo E Davalos (same address, property records)",
+        "Research: b. May 1960, Los Angeles Co., age 66 (OpenDataUSA)",
+        "Spouse: Eduardo E Davalos (same address; married per public records)",
         "Property co-owned May 2004 (BlockShopper / LA County assessor)",
+        "Not in CA Birth Index as Anne Tracy (free search)",
         "Niece of Joan Marie (Tracy) Jeisi (2014 obituary)"
       ],
       "col": 27,
@@ -16389,6 +16405,29 @@
         "tracy-104-27"
       ],
       "searchText": "eduardo e davalos tracy anne rowland heights barroso 91748"
+    },
+    {
+      "id": "tracy-104-23",
+      "name": "Irene Leyva Tracy",
+      "dates": "",
+      "notes": [
+        "Wife of Brian G Tracy (public records)",
+        "Research: b. 4 Nov 1958, Los Angeles Co. (OpenDataUSA / Radaris)",
+        "4420 San Andreas Ave, Los Angeles, CA 90065",
+        "Also known as Irene L / Irene V Leyva / Irene Leyvatracy",
+        "Phone (323) 842-7450–7451 (public directory, San Andreas address)",
+        "Public directories link to Brian, John, and Catherine Tracy"
+      ],
+      "col": 23,
+      "row": 104,
+      "branch": "tracy",
+      "generation": 8,
+      "recordType": "person",
+      "spouseIds": [
+        "tracy-104-21"
+      ],
+      "birthDate": "1958-11-04",
+      "searchText": "irene leyva tracy brian san andreas los angeles 90065 november 1958"
     }
   ],
   "cemetery": [
@@ -16698,12 +16737,13 @@
     {
       "id": "story-tracy-line",
       "title": "The Tracy Line — Jack, Katie & Four Children",
-      "body": "Mary Joan (Tracy) Wixted (b. 7 Jul 1961, Whittier, CA) is the youngest of four siblings: Brian Tracy (oldest), John Tracy, Anne (Tracy) Davalos, and Mary Joan. Their parents are John \"Jack\" Tracy and Katie (Martin) Tracy of the Whittier area. Research links the Tracy line to Walter Tracy and Cecelia (McDonough) Tracy of New Jersey through Joan Marie (Tracy) Jeisi (1924–2014), Jack's sister — her 2014 obituary names nieces Anne Davalos and Mary Wixted and nephew Bryan/Brian Tracy. Anne E (Tracy) Davalos is associated with Rowland Heights, CA in public records (~b. May 1960), married to Eduardo E Davalos — co-owners of 18984 Barroso St since May 2004. Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through granddaughter Sedona Tracy Wixted.",
+      "body": "Mary Joan (Tracy) Wixted (b. 7 Jul 1961, Whittier, CA) is the youngest of four siblings: Brian G Tracy (oldest), John Tracy, Anne (Tracy) Davalos, and Mary Joan. Their parents are John \"Jack\" Tracy and Katie (Martin) Tracy of the Whittier area. Research links the Tracy line to Walter Tracy and Cecelia (McDonough) Tracy of New Jersey through Joan Marie (Tracy) Jeisi (1924–2014), Jack's sister — her 2014 obituary names nieces Anne Davalos and Mary Wixted and nephew Bryan/Brian Tracy. Anne E (Tracy) Davalos is associated with Rowland Heights, CA in public records (~b. May 1960), married to Eduardo E Davalos — co-owners of 18984 Barroso St since May 2004. Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through granddaughter Sedona Tracy Wixted.",
       "personIds": [
         "wixted-104-33",
         "tracy-103-31",
         "tracy-103-33",
         "tracy-104-21",
+        "tracy-104-23",
         "tracy-104-25",
         "tracy-104-27",
         "tracy-104-29",
@@ -17092,9 +17132,10 @@
     {
       "id": "story-tracy-siblings-research",
       "title": "Tracy Siblings — Research Notes",
-      "body": "Family order (oldest to youngest): Brian Tracy, John Tracy, Anne E (Tracy) Davalos, Mary Joan (Tracy) Wixted. Confirmed by family and corroborated by Joan Jeisi's 2014 obituary (nephew Bryan Tracy; nieces Anne Davalos and Mary Wixted). Brian is also spelled Bryan in that obituary. Anne is linked to Rowland Heights, CA (18984 Barroso St) with husband Eduardo E Davalos per public property records; approximate birth May 1960, Los Angeles County. Mary Joan's birth (7 Jul 1961, Whittier) and marriage to Daniel Wixted (28 Jun 1986) are documented in the family workbook. Walter & Cecelia (McDonough) Tracy are confirmed as Joan Jeisi's parents (NJ, 1924); Jack Tracy is inferred as Joan's brother. Birth dates for Brian and John remain unverified — LA County Registrar or WAGS Whittier vital index may hold records.",
+      "body": "Family order (oldest to youngest): Brian G Tracy, John Tracy, Anne E (Tracy) Davalos, Mary Joan (Tracy) Wixted. Confirmed by family and Joan Jeisi's 2014 obituary (nephew Bryan Tracy; nieces Anne Davalos and Mary Wixted). Public records cluster Brian Gerard Tracy (b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San Andreas Ave, Los Angeles 90065. Irene Leyva Tracy (b. 4 Nov 1958) shares the address and phone (323) 842-7451. Spokeo/Radaris link Katrina Irene Tracy (~b. 1986) and Catherine Tracy to the cluster and Mary Wixted — relationships unverified. Anne (b. May 1960, LA Co.) and Mary Joan (7 Jul 1961, Whittier) fit sibling spacing; neither in free CA Birth Index as Tracy + mother Martin. Anne lives in Rowland Heights with Eduardo E Davalos (18984 Barroso St).",
       "personIds": [
         "tracy-104-21",
+        "tracy-104-23",
         "tracy-104-25",
         "tracy-104-27",
         "tracy-104-29",
@@ -17108,7 +17149,8 @@
       "branch": "tracy",
       "tags": [
         "research",
-        "family-history"
+        "family-history",
+        "public-records"
       ],
       "source": "research"
     },
@@ -17129,6 +17171,31 @@
         "research",
         "family-history",
         "public-records"
+      ],
+      "source": "public-records"
+    },
+    {
+      "id": "story-tracy-public-access-audit",
+      "title": "Tracy Line — Public Access Research Audit",
+      "body": "What free public sources confirmed: Joan Jeisi obituary (Walter/Cecelia Tracy, NJ 1924; nieces Anne Davalos & Mary Wixted; nephew Bryan/Brian Tracy). Anne E Davalos (b. May 1960, LA Co.) + Eduardo E Davalos at 18984 Barroso St, Rowland Heights (property records, May 2004). Brian Gerard Tracy (b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San Andreas Ave, Los Angeles 90065 with Irene Leyva Tracy (b. 4 Nov 1958). Spokeo/Radaris link Katrina Irene Tracy (~b. 1986) and Catherine Tracy to Mary Wixted — unverified. Mary Joan's birth (7 Jul 1961, Whittier) and Daniel Wixted marriage (28 Jun 1986) from family workbook. What public access did NOT resolve without paid/vital certificates: Jack Tracy birth/death, Katie (Martin) Tracy's parents, Jack & Katie marriage date, exact birth certificates for Brian/John/Anne in the California Birth Index (no Tracy + Martin mother matches; Mary Joan not indexed under that name), Daniel & Mary Joan Wixted in the 1960–1985 CA marriage index (1986 is after index cutoff), Walter/Cecelia Tracy NJ census without paid FamilySearch depth. Next steps: LA County Registrar-Recorder (Norwalk); WAGS Whittier History Room; FamilySearch NJ Tracy/McDonough.",
+      "personIds": [
+        "tracy-104-21",
+        "tracy-104-23",
+        "tracy-104-25",
+        "tracy-104-27",
+        "tracy-104-29",
+        "wixted-104-33",
+        "tracy-103-31",
+        "tracy-103-33",
+        "tracy-103-29",
+        "tracy-102-29",
+        "tracy-102-31"
+      ],
+      "branch": "tracy",
+      "tags": [
+        "research",
+        "public-records",
+        "audit"
       ],
       "source": "public-records"
     }

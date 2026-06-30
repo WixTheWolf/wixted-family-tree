@@ -3,7 +3,7 @@
     "researched": "2026-06-30",
     "summary": "Public genealogy, cemetery, library, and social media resources verified against the Wixted family workbook.",
     "stats": {
-      "resources": 41,
+      "resources": 43,
       "documentAssets": 14,
       "verifiedBurials": 8,
       "personLinks": 12
@@ -54,6 +54,34 @@
     }
   ],
   "resources": [
+    {
+      "id": "res-ca-marriage-index-fs",
+      "title": "California Marriage Index 1960–1985 — FamilySearch Wiki",
+      "desc": "Guide to CA marriage records; 1986 Daniel/Mary Joan marriage requires LA County Registrar (post-index).",
+      "url": "https://www.familysearch.org/en/wiki/How_to_Find_California_Marriage_Records",
+      "category": "genealogy",
+      "tags": [
+        "Tracy",
+        "Wixted",
+        "marriage",
+        "California"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-ca-birth-index",
+      "title": "California Birth Index (1905–1995) — Free Search",
+      "desc": "Free statewide birth index; no Tracy+Martin sibling matches found for this family in public search.",
+      "url": "https://californiabirthindex.org/",
+      "category": "genealogy",
+      "tags": [
+        "Tracy",
+        "birth",
+        "California",
+        "Los Angeles"
+      ],
+      "verified": true
+    },
     {
       "id": "res-la-county-assessor",
       "title": "LA County Assessor — Property Records",
@@ -897,9 +925,19 @@
         "label": "Whittier Area Genealogical Society",
         "url": "https://wagswhittier.org/",
         "type": "research"
+      },
+      {
+        "label": "Whittier Area Genealogical Society",
+        "url": "https://wagswhittier.org/",
+        "type": "research"
       }
     ],
     "wixted-104-33": [
+      {
+        "label": "LA County marriage records (1986)",
+        "url": "https://apps.lavote.net/BDM",
+        "type": "research"
+      },
       {
         "label": "LA County marriage records (1986)",
         "url": "https://apps.lavote.net/BDM",
@@ -921,6 +959,11 @@
         "label": "18984 Barroso St property record (Rowland Heights)",
         "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
         "type": "research"
+      },
+      {
+        "label": "Anne E Davalos — OpenDataUSA (b. May 1960, LA Co.)",
+        "url": "https://opendatausa.com/anne-davalos",
+        "type": "research"
       }
     ],
     "tracy-104-21": [
@@ -928,12 +971,46 @@
         "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
         "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
         "type": "obituary"
+      },
+      {
+        "label": "4420 San Andreas Ave — Veripages directory",
+        "url": "https://veripages.com/name/Brian/Tracy/CA/",
+        "type": "research"
+      },
+      {
+        "label": "Brian G Tracy — ufind.name San Andreas directory",
+        "url": "https://ufind.name/Brian+Tracy",
+        "type": "research"
       }
     ],
     "tracy-104-29": [
       {
         "label": "Rowland Heights property — 18984 Barroso St",
         "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+        "type": "research"
+      }
+    ],
+    "tracy-104-25": [
+      {
+        "label": "John Tracy — California public records (Veripages)",
+        "url": "https://veripages.com/name/John/Tracy/CA/",
+        "type": "research"
+      },
+      {
+        "label": "Katrina Irene Tracy — Spokeo relative cluster",
+        "url": "https://www.spokeo.com/Katrina-Tracy",
+        "type": "research"
+      }
+    ],
+    "tracy-104-23": [
+      {
+        "label": "Irene Leyva Tracy — OpenDataUSA (b. 4 Nov 1958)",
+        "url": "https://opendatausa.com/irene-leyva",
+        "type": "research"
+      },
+      {
+        "label": "4420 San Andreas Ave — Radaris directory",
+        "url": "https://radaris.com/p/Irene/Tracy/",
         "type": "research"
       }
     ]

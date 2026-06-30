@@ -22,7 +22,9 @@ BRIAN = "tracy-104-21"
 JOHN = "tracy-104-25"
 ANNE = "tracy-104-27"
 EDUARDO = "tracy-104-29"
+IRENE = "tracy-104-23"
 CHILDREN = [BRIAN, JOHN, ANNE, MARY]
+SAN_ANDREAS = "4420 San Andreas Ave, Los Angeles, CA 90065"
 SIBLING_IDS = CHILDREN
 
 
@@ -102,13 +104,19 @@ def apply_tracy_family(data: dict) -> dict:
         },
         {
             "id": BRIAN,
-            "name": "Brian Tracy",
+            "name": "Brian G Tracy",
             "dates": "",
             "notes": [
                 "Oldest sibling — Brian, John, Anne, Mary Joan",
                 "Also recorded as Bryan Tracy (Joan Jeisi 2014 obituary)",
+                "Research: Brian Gerard Tracy, b. September 1957, Los Angeles Co. (public records)",
+                "Distinct from motivational speaker Brian Tracy (b. 1944, Solana Beach)",
+                SAN_ANDREAS,
+                "Phone (323) 842-7451 (public directory; shared with Irene Leyva Tracy)",
+                "Spouse: Irene Leyva Tracy (b. 4 Nov 1958, Los Angeles Co.)",
+                "Public directories link to John Tracy, Catherine Tracy, Katrina Irene Tracy",
+                "Not in CA Birth Index under Tracy + mother Martin (free search)",
                 "Nephew of Joan Marie (Tracy) Jeisi",
-                "Whittier / Rowland Heights, CA area",
             ],
             "col": 21,
             "row": 104,
@@ -117,8 +125,30 @@ def apply_tracy_family(data: dict) -> dict:
             "parentId": JACK,
             "motherId": KATIE,
             "recordType": "person",
+            "spouseIds": [IRENE],
             "siblingIds": [JOHN, ANNE, MARY],
-            "searchText": "brian tracy tracy oldest sibling bryan tracy nephew joan jeisi whittier",
+            "searchText": "brian g tracy tracy san andreas 90065 bryan irene leyva september 1957",
+        },
+        {
+            "id": IRENE,
+            "name": "Irene Leyva Tracy",
+            "dates": "",
+            "notes": [
+                "Wife of Brian G Tracy (public records)",
+                "Research: b. 4 Nov 1958, Los Angeles Co. (OpenDataUSA / Radaris)",
+                SAN_ANDREAS,
+                "Also known as Irene L / Irene V Leyva / Irene Leyvatracy",
+                "Phone (323) 842-7450–7451 (public directory, San Andreas address)",
+                "Public directories link to Brian, John, and Catherine Tracy",
+            ],
+            "col": 23,
+            "row": 104,
+            "branch": "tracy",
+            "generation": 8,
+            "recordType": "person",
+            "spouseIds": [BRIAN],
+            "birthDate": "1958-11-04",
+            "searchText": "irene leyva tracy brian san andreas los angeles 90065 november 1958",
         },
         {
             "id": JOHN,
@@ -126,9 +156,12 @@ def apply_tracy_family(data: dict) -> dict:
             "dates": "",
             "notes": [
                 "Second sibling — Brian, John, Anne, Mary Joan",
+                "Research: b. ~April 1959, Los Angeles Co., age 67 (OpenDataUSA)",
+                "Associated with Brian at 4420 San Andreas Ave in public directories (Spokeo/Radaris)",
                 "Son of John \"Jack\" Tracy and Katie (Martin) Tracy",
-                "Whittier, CA area",
-                "Not the actor Spencer Tracy's son (different John Tracy family)",
+                "Public records link to Mary Wixted via Katrina Irene Tracy (~b. 1986, Spokeo)",
+                "Not Spencer Tracy's son (1924–2007) or Boeing executive John J. Tracy (b. 1954)",
+                "Not in CA Birth Index under Tracy + mother Martin (free search)",
             ],
             "col": 25,
             "row": 104,
@@ -148,9 +181,10 @@ def apply_tracy_family(data: dict) -> dict:
                 "Third sibling — Brian, John, Anne, Mary Joan",
                 "Married name: Davalos",
                 "Rowland Heights, CA — 18984 Barroso St (public property records)",
-                "Research: b. ~May 1960, Los Angeles Co. (public records, unverified)",
-                "Spouse: Eduardo E Davalos (same address, property records)",
+                "Research: b. May 1960, Los Angeles Co., age 66 (OpenDataUSA)",
+                "Spouse: Eduardo E Davalos (same address; married per public records)",
                 "Property co-owned May 2004 (BlockShopper / LA County assessor)",
+                "Not in CA Birth Index as Anne Tracy (free search)",
                 "Niece of Joan Marie (Tracy) Jeisi (2014 obituary)",
             ],
             "col": 27,
@@ -192,10 +226,11 @@ def apply_tracy_family(data: dict) -> dict:
     jack["motherId"] = CECELIA
     jack["siblingIds"] = [JOAN]
     jack["notes"] = [
-        "Whittier / Rowland Heights, CA area",
+        "Whittier / Rowland Heights / Los Angeles, CA area",
         "Also known as John \"Jack\" Tracy",
         "Son of Walter & Cecelia (McDonough) Tracy (inferred via sister Joan Jeisi obituary)",
         "Father of Brian, John, Anne, and Mary Joan Tracy",
+        "Public access: no obituary, birth, or marriage index hit for Jack + Katie Martin (LA County)",
         "Family services: White Emerson Mortuary (Whittier) & Rowland Heights parishes",
     ]
     jack["childIds"] = CHILDREN
@@ -208,6 +243,7 @@ def apply_tracy_family(data: dict) -> dict:
         "Maiden name: Martin",
         "Mother of Brian, John, Anne, and Mary Joan Tracy",
         "Whittier, CA area",
+        "Public access: parents unknown; no Katie Martin + Jack Tracy marriage in free indexes",
     ]
     katie["childIds"] = CHILDREN
 
@@ -219,6 +255,7 @@ def apply_tracy_family(data: dict) -> dict:
         "m. Daniel Scott Wixted, Jun 28 1986",
         "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy",
         "Niece of Joan Marie (Tracy) Jeisi",
+        "Not in California Birth Index as Mary Joan Tracy (workbook is primary source)",
     ]
     mary["siblingIds"] = [BRIAN, JOHN, ANNE]
     mary["searchText"] = (
@@ -232,7 +269,7 @@ def apply_tracy_family(data: dict) -> dict:
 
     for bid in data["branches"]:
         if bid["id"] == "tracy":
-            bid["count"] = 10
+            bid["count"] = 11
             bid["desc"] = (
                 "Mary Joan Tracy line — Walter & Cecelia to Jack, Katie Martin, and four children"
             )
@@ -249,7 +286,7 @@ def apply_tracy_family(data: dict) -> dict:
         "title": "The Tracy Line — Jack, Katie & Four Children",
         "body": (
             "Mary Joan (Tracy) Wixted (b. 7 Jul 1961, Whittier, CA) is the youngest of four siblings: "
-            "Brian Tracy (oldest), John Tracy, Anne (Tracy) Davalos, and Mary Joan. "
+            "Brian G Tracy (oldest), John Tracy, Anne (Tracy) Davalos, and Mary Joan. "
             "Their parents are John \"Jack\" Tracy and Katie (Martin) Tracy of the Whittier area. "
             "Research links the Tracy line to Walter Tracy and Cecelia (McDonough) Tracy of New Jersey "
             "through Joan Marie (Tracy) Jeisi (1924–2014), Jack's sister — her 2014 obituary names "
@@ -259,7 +296,7 @@ def apply_tracy_family(data: dict) -> dict:
             "Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through "
             "granddaughter Sedona Tracy Wixted."
         ),
-        "personIds": [MARY, JACK, KATIE, BRIAN, JOHN, ANNE, EDUARDO, JOAN, WALTER, CECELIA, "wixted-121-31"],
+        "personIds": [MARY, JACK, KATIE, BRIAN, IRENE, JOHN, ANNE, EDUARDO, JOAN, WALTER, CECELIA, "wixted-121-31"],
         "branch": "tracy",
         "tags": ["family-history", "ancestry", "research"],
         "source": "family-update",
@@ -286,21 +323,45 @@ def apply_tracy_family(data: dict) -> dict:
         "id": "story-tracy-siblings-research",
         "title": "Tracy Siblings — Research Notes",
         "body": (
-            "Family order (oldest to youngest): Brian Tracy, John Tracy, Anne E (Tracy) Davalos, "
-            "Mary Joan (Tracy) Wixted. Confirmed by family and corroborated by Joan Jeisi's 2014 obituary "
-            "(nephew Bryan Tracy; nieces Anne Davalos and Mary Wixted). Brian is also spelled Bryan in "
-            "that obituary. Anne is linked to Rowland Heights, CA (18984 Barroso St) with husband "
-            "Eduardo E Davalos per public property records; approximate birth May 1960, Los Angeles County. "
-            "Mary Joan's birth (7 Jul 1961, Whittier) and marriage to Daniel Wixted (28 Jun 1986) are "
-            "documented in the family workbook. Walter & Cecelia (McDonough) Tracy are confirmed as "
-            "Joan Jeisi's parents (NJ, 1924); Jack Tracy is inferred as Joan's brother. "
-            "Birth dates for Brian and John remain unverified — LA County Registrar or WAGS Whittier "
-            "vital index may hold records."
+            "Family order (oldest to youngest): Brian G Tracy, John Tracy, Anne E (Tracy) Davalos, "
+            "Mary Joan (Tracy) Wixted. Confirmed by family and Joan Jeisi's 2014 obituary (nephew Bryan "
+            "Tracy; nieces Anne Davalos and Mary Wixted). Public records cluster Brian Gerard Tracy "
+            "(b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San Andreas Ave, Los "
+            "Angeles 90065. Irene Leyva Tracy (b. 4 Nov 1958) shares the address and phone (323) 842-7451. "
+            "Spokeo/Radaris link Katrina Irene Tracy (~b. 1986) and Catherine Tracy to the cluster and "
+            "Mary Wixted — relationships unverified. Anne (b. May 1960, LA Co.) and Mary Joan (7 Jul 1961, "
+            "Whittier) fit sibling spacing; neither in free CA Birth Index as Tracy + mother Martin. Anne "
+            "lives in Rowland Heights with Eduardo E Davalos (18984 Barroso St)."
         ),
-        "personIds": [BRIAN, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, WALTER, CECELIA, JOAN],
+        "personIds": [BRIAN, IRENE, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, WALTER, CECELIA, JOAN],
         "branch": "tracy",
-        "tags": ["research", "family-history"],
+        "tags": ["research", "family-history", "public-records"],
         "source": "research",
+    }
+
+    by_id["story-tracy-public-access-audit"] = {
+        "id": "story-tracy-public-access-audit",
+        "title": "Tracy Line — Public Access Research Audit",
+        "body": (
+            "What free public sources confirmed: Joan Jeisi obituary (Walter/Cecelia Tracy, NJ 1924; "
+            "nieces Anne Davalos & Mary Wixted; nephew Bryan/Brian Tracy). Anne E Davalos (b. May 1960, "
+            "LA Co.) + Eduardo E Davalos at 18984 Barroso St, Rowland Heights (property records, May 2004). "
+            "Brian Gerard Tracy (b. Sep 1957, LA Co.) and John Tracy (b. ~Apr 1959, LA Co.) at 4420 San "
+            "Andreas Ave, Los Angeles 90065 with Irene Leyva Tracy (b. 4 Nov 1958). Spokeo/Radaris link "
+            "Katrina Irene Tracy (~b. 1986) and Catherine Tracy to Mary Wixted — unverified. Mary Joan's "
+            "birth (7 Jul 1961, Whittier) and Daniel Wixted marriage (28 Jun 1986) from family workbook. "
+            "What public access did NOT resolve without paid/vital certificates: Jack Tracy birth/death, "
+            "Katie (Martin) Tracy's parents, Jack & Katie marriage date, exact birth certificates for "
+            "Brian/John/Anne in the California Birth Index (no Tracy + Martin mother matches; Mary Joan "
+            "not indexed under that name), Daniel & Mary Joan Wixted in the 1960–1985 CA marriage index "
+            "(1986 is after index cutoff), Walter/Cecelia Tracy NJ census without paid FamilySearch depth. "
+            "Next steps: LA County Registrar-Recorder (Norwalk); WAGS Whittier History Room; FamilySearch "
+            "NJ Tracy/McDonough."
+        ),
+        "personIds": [BRIAN, IRENE, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, JOAN, WALTER, CECELIA],
+        "branch": "tracy",
+        "tags": ["research", "public-records", "audit"],
+        "source": "public-records",
     }
 
     by_id["story-anne-eduardo-davalos"] = {
@@ -384,6 +445,24 @@ def apply_tracy_external(ext: dict) -> dict:
             "verified": True,
         },
         {
+            "id": "res-ca-birth-index",
+            "title": "California Birth Index (1905–1995) — Free Search",
+            "desc": "Free statewide birth index; no Tracy+Martin sibling matches found for this family in public search.",
+            "url": "https://californiabirthindex.org/",
+            "category": "genealogy",
+            "tags": ["Tracy", "birth", "California", "Los Angeles"],
+            "verified": True,
+        },
+        {
+            "id": "res-ca-marriage-index-fs",
+            "title": "California Marriage Index 1960–1985 — FamilySearch Wiki",
+            "desc": "Guide to CA marriage records; 1986 Daniel/Mary Joan marriage requires LA County Registrar (post-index).",
+            "url": "https://www.familysearch.org/en/wiki/How_to_Find_California_Marriage_Records",
+            "category": "genealogy",
+            "tags": ["Tracy", "Wixted", "marriage", "California"],
+            "verified": True,
+        },
+        {
             "id": "res-la-county-assessor",
             "title": "LA County Assessor — Property Records",
             "desc": "Search ownership history for Rowland Heights properties (e.g. Anne & Eduardo Davalos, 18984 Barroso St).",
@@ -426,17 +505,58 @@ def apply_tracy_external(ext: dict) -> dict:
             "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
             "type": "research",
         },
+        {
+            "label": "Anne E Davalos — OpenDataUSA (b. May 1960, LA Co.)",
+            "url": "https://opendatausa.com/anne-davalos",
+            "type": "research",
+        },
     ]
     links[EDUARDO] = [{
         "label": "Rowland Heights property — 18984 Barroso St",
         "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
         "type": "research",
     }]
-    links[BRIAN] = [{
-        "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
-        "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
-        "type": "obituary",
-    }]
+    links[BRIAN] = [
+        {
+            "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
+            "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+            "type": "obituary",
+        },
+        {
+            "label": "4420 San Andreas Ave — Veripages directory",
+            "url": "https://veripages.com/name/Brian/Tracy/CA/",
+            "type": "research",
+        },
+        {
+            "label": "Brian G Tracy — ufind.name San Andreas directory",
+            "url": "https://ufind.name/Brian+Tracy",
+            "type": "research",
+        },
+    ]
+    links[JOHN] = [
+        {
+            "label": "John Tracy — California public records (Veripages)",
+            "url": "https://veripages.com/name/John/Tracy/CA/",
+            "type": "research",
+        },
+        {
+            "label": "Katrina Irene Tracy — Spokeo relative cluster",
+            "url": "https://www.spokeo.com/Katrina-Tracy",
+            "type": "research",
+        },
+    ]
+    links[IRENE] = [
+        {
+            "label": "Irene Leyva Tracy — OpenDataUSA (b. 4 Nov 1958)",
+            "url": "https://opendatausa.com/irene-leyva",
+            "type": "research",
+        },
+        {
+            "label": "4420 San Andreas Ave — Radaris directory",
+            "url": "https://radaris.com/p/Irene/Tracy/",
+            "type": "research",
+        },
+    ]
     return ext
 
 
