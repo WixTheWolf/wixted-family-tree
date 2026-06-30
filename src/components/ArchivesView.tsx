@@ -38,8 +38,8 @@ export default function ArchivesView({ people, onSelectPerson }: Props) {
         <div>
           <h2>Research Archives</h2>
           <p>
-            {data.resources.length} verified public sources discovered online — cemetery indexes,
-            obituaries, genealogy databases, and historical records matching the family workbook.
+            {data.resources.length} verified public sources and {(data.documentAssets ?? []).length} cataloged
+            photos/documents — cemetery indexes, obituaries, genealogy databases, libraries, and historical records.
           </p>
         </div>
         <span className="archives-date">Researched {data.meta.researched}</span>
@@ -114,6 +114,67 @@ export default function ArchivesView({ people, onSelectPerson }: Props) {
           );
         })}
       </div>
+
+      <section className="assets-section">
+        <h3>Discovered Photos & Documents</h3>
+        <p className="burials-intro">
+          {(data.documentAssets ?? []).length} public assets cataloged — each links to the source page. Private family photos are noted but not published.
+        </p>
+        <div className="assets-grid">
+          {(data.documentAssets ?? []).map((a) => {
+            const linked = (a.personIds ?? [])
+              .map((id) => people.find((p) => p.id === id))
+              .filter(Boolean) as Person[];
+
+            const cardBody = (
+              <>
+                <div className="asset-top">
+                  <span className="asset-type">{a.type}</span>
+                  <span className={`asset-status status-${a.status}`}>{a.status}</span>
+                </div>
+                <h4>{a.title}</h4>
+                <p className="asset-source">{a.source} · {a.format}</p>
+                {linked.length > 0 && (
+                  <div className="archive-people">
+                    {linked.map((p) => (
+                      <button key={p.id} onClick={() => onSelectPerson(p)}>
+                        {p.name.split(" ").slice(-2).join(" ")}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {a.url ? <span className="archive-link">View source →</span> : null}
+              </>
+            );
+
+            return a.url ? (
+              <motion.a
+                key={a.id}
+                href={a.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="asset-card"
+                whileHover={{ y: -3, borderColor: "var(--border-accent)" }}
+              >
+                {cardBody}
+              </motion.a>
+            ) : (
+              <div key={a.id} className="asset-card private">{cardBody}</div>
+            );
+          })}
+        </div>
+      </section>
+
+      {(data.researchGaps ?? []).length > 0 && (
+        <section className="gaps-section">
+          <h3>Not Found Online (Research Gaps)</h3>
+          <ul className="gaps-list">
+            {data.researchGaps.map((g) => (
+              <li key={g}>{g}</li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="burials-section">
         <h3>Verified Burials from Public Records</h3>
@@ -265,6 +326,48 @@ export default function ArchivesView({ people, onSelectPerson }: Props) {
           font-size: 12px; font-weight: 500; color: var(--accent);
           white-space: nowrap;
         }
+        .assets-section { margin-top: 8px; }
+        .assets-section h3 {
+          font-family: var(--font-display); font-size: 20px; font-weight: 600;
+        }
+        .assets-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 12px;
+        }
+        .asset-card {
+          display: flex; flex-direction: column; padding: 18px;
+          background: var(--bg-glass); border: 1px solid var(--border);
+          border-radius: var(--radius-sm); text-decoration: none; color: inherit;
+          transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .asset-card:hover { box-shadow: var(--shadow-md); }
+        .asset-card.private { opacity: 0.75; }
+        .asset-top {
+          display: flex; justify-content: space-between; align-items: center;
+          margin-bottom: 8px;
+        }
+        .asset-type {
+          font-size: 10px; font-weight: 600; text-transform: uppercase;
+          letter-spacing: 0.08em; color: var(--accent-secondary);
+        }
+        .asset-status {
+          font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+        }
+        .status-public { background: rgba(80, 200, 120, 0.12); color: #50c878; }
+        .status-partial { background: rgba(201, 162, 39, 0.12); color: var(--accent-bright); }
+        .status-private { background: rgba(255,255,255,0.06); color: var(--text-tertiary); }
+        .asset-card h4 { font-size: 14px; font-weight: 600; line-height: 1.35; margin-bottom: 6px; }
+        .asset-source { font-size: 12px; color: var(--text-tertiary); flex: 1; }
+        .gaps-section { margin-top: 8px; }
+        .gaps-section h3 {
+          font-family: var(--font-display); font-size: 20px; font-weight: 600;
+        }
+        .gaps-list {
+          margin-top: 12px; padding-left: 20px;
+          font-size: 14px; color: var(--text-secondary); line-height: 1.7;
+        }
+        .gaps-list li { margin-bottom: 6px; }
         @media (max-width: 768px) {
           .archives-header { flex-direction: column; }
         }
