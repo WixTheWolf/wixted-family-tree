@@ -292,6 +292,7 @@ function AppContent() {
         relatives={relatives}
         stories={data.stories ?? []}
         branches={data.branches}
+        heritage={data.heritage}
         onClose={closeDetail}
         onSelectRelative={selectPerson}
       />

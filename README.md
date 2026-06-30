@@ -12,7 +12,7 @@ An interactive genealogy explorer for the Wixted family, built from research dat
 - **Cemetery explorer** with headstone records and burial locations
 - **Person detail panels** with categorized notes, stories, cemetery records, and relatives
 - **Deep links** — share any person via `/person/:id`
-- **Heritage charts** for Katie and Kevin
+- **Heritage charts** for Matthew, Kevin, and Katie (Mexican heritage is Katie’s Amor-line only, via Uncle Kevin’s wife Angela)
 
 ## Development
 
@@ -35,6 +35,7 @@ Family data is extracted from the source Excel workbook (`sources/Wixted Family 
 pip install -r scripts/requirements.txt
 python scripts/extract_data.py   # Excel → family.json
 python scripts/enrich_data.py    # Clean, categorize, build stories
+python scripts/apply_workbook_sync.py  # Matthew-line corrections from workbook
 ```
 
 ## Site Sections

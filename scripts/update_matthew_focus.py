@@ -303,13 +303,16 @@ def main():
     ]
 
     data["heritage"] = {
-        "matthew": data["heritage"].get("matthew", {
-            "english": 0.25, "german": 0.25, "irish": 0.125,
-            "swedish": 0.125, "mexican": 0.25,
-        }),
+        "matthew": {
+            "english": 0.375, "german": 0.125, "irish": 0.25, "swedish": 0.25,
+        },
         "kevin": data["heritage"].get("kevin", {
             "english": 0.375, "german": 0.125, "irish": 0.25, "swedish": 0.25,
         }),
+        "katie": {
+            "english": 0.25, "german": 0.25, "irish": 0.125,
+            "swedish": 0.125, "mexican": 0.25,
+        },
     }
 
     # ── Ancestry story ──

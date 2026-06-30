@@ -5,10 +5,12 @@ import { getBranchLabel } from "../utils/people";
 import { getPersonAge, filterDisplayNotes } from "../utils/ages";
 import PersonAvatar from "./PersonAvatar";
 import PersonGallery from "./PersonGallery";
+import HeritageChart from "./HeritageChart";
 import externalResources from "../data/externalResources.json";
 import { useContributions } from "../context/ContributionsContext";
 import { useCloudAssets } from "../context/CloudAssetsContext";
 import { getPersonAssets } from "../utils/assets";
+import { getHeritageKey } from "../utils/heritage";
 
 interface Props {
   person: Person | null;
@@ -16,6 +18,7 @@ interface Props {
   relatives: Person[];
   stories: Story[];
   branches: Branch[];
+  heritage?: Record<string, Record<string, number>>;
   onClose: () => void;
   onSelectRelative: (p: Person) => void;
 }
@@ -26,6 +29,7 @@ export default function PersonDetail({
   relatives,
   stories,
   branches,
+  heritage,
   onClose,
   onSelectRelative,
 }: Props) {
@@ -56,6 +60,8 @@ export default function PersonDetail({
 
   const sortedCategories = NOTE_ORDER.filter((c) => noteGroups.has(c));
   const age = person ? getPersonAge(person) : null;
+  const heritageKey = person ? getHeritageKey(person) : null;
+  const personHeritage = heritageKey && heritage ? heritage[heritageKey] : null;
 
   function relativeRole(r: Person): string {
     if (!person) return "";
@@ -113,6 +119,12 @@ export default function PersonDetail({
                   <span className="detail-badge muted">{filterDisplayNotes(person.notes).length} notes</span>
                 )}
               </div>
+
+              {personHeritage && (
+                <section className="detail-section">
+                  <HeritageChart heritage={personHeritage} name={person.name.split(" ")[0]} />
+                </section>
+              )}
 
               {sortedCategories.length > 0 && (
                 <section className="detail-section">

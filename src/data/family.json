@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Wixted Family Tree",
-    "version": "v9.5",
+    "version": "v9.5+workbook-sync",
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
@@ -2085,7 +2085,15 @@
       "id": "wixted-91-29",
       "name": "Bruce John Wixted",
       "dates": "04/03/33-03/11/95 (62)",
-      "notes": [],
+      "notes": [
+        "04/03/33-03/11/95 (62)",
+        "SS117-22-6934",
+        "Tech Mfg Executive",
+        "Rochester,NY",
+        "Rancho Mirage, CA",
+        "Divorced Evelyn 7/30/75",
+        "c1940 Roch 6 629 Thurston"
+      ],
       "col": 29,
       "row": 91,
       "branch": "wixted",
@@ -2093,18 +2101,28 @@
       "parentId": "wixted-77-17",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 93.2 years",
+      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 04/03/33-03/11/95 (62) ss117-22-6934 tech mfg executive rochester,ny rancho mirage, ca divorced evelyn 7/30/75 c1940 roch 6 629 thurston 93.2 years",
       "birthDate": "1933-04-03",
-      "age": "93.2 years"
+      "age": "93.2 years",
+      "spouseIds": [
+        "wixted-91-31"
+      ],
+      "childIds": [
+        "wixted-104-21",
+        "wixted-104-27",
+        "wixted-104-31",
+        "wixted-104-37"
+      ]
     },
     {
       "id": "wixted-91-31",
       "name": "Evelyn Ruth Jones",
-      "dates": "SS112-24-1440",
+      "dates": "08/27/32-12/15/88 (56)",
       "notes": [
-        "08/27/32-12/15/88 (56)",
+        "SS112-24-1440",
         "Librarian",
-        "Rochester,NY"
+        "Rochester,NY",
+        "Fairhaven Mem Santa Ana, CA — m. 12/8/1951"
       ],
       "col": 31,
       "row": 91,
@@ -2125,9 +2143,18 @@
           "text": "Rochester,NY"
         }
       ],
-      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny 93.8 years",
+      "searchText": "evelyn ruth jones 08/27/32-12/15/88 (56) wixted ss112-24-1440 librarian rochester,ny fairhaven mem santa ana, ca — m. 12/8/1951 93.8 years",
       "birthDate": "1932-08-27",
-      "age": "93.8 years"
+      "age": "93.8 years",
+      "spouseIds": [
+        "wixted-91-29"
+      ],
+      "childIds": [
+        "wixted-104-21",
+        "wixted-104-27",
+        "wixted-104-31",
+        "wixted-104-37"
+      ]
     },
     {
       "id": "wixted-91-43",
@@ -2400,7 +2427,7 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-29",
+      "parentId": "wixted-91-29",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2418,7 +2445,8 @@
       ],
       "searchText": "bruce john wixted  wixted 05/15/52- rochester,ny 74.1 years",
       "birthDate": "1952-05-15",
-      "age": "74.1 years"
+      "age": "74.1 years",
+      "motherId": "wixted-91-31"
     },
     {
       "id": "wixted-104-23",
@@ -2496,7 +2524,7 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-29",
+      "parentId": "wixted-91-29",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2514,7 +2542,8 @@
       ],
       "searchText": "lynn louise wixted  wixted 09/05/54- rochester,ny 71.8 years",
       "birthDate": "1954-09-05",
-      "age": "71.8 years"
+      "age": "71.8 years",
+      "motherId": "wixted-91-31"
     },
     {
       "id": "wixted-104-29",
@@ -2551,10 +2580,11 @@
     {
       "id": "wixted-104-31",
       "name": "Daniel Scott Wixted",
-      "dates": "",
+      "dates": "03/12/1959–",
       "notes": [
         "03/12/59-",
-        "Rochester,NY"
+        "Rochester,NY",
+        "m. Mary Joan Tracy, Jun 28 1986"
       ],
       "col": 31,
       "row": 104,
@@ -2577,7 +2607,7 @@
           "text": "Age today is 67.3"
         }
       ],
-      "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
+      "searchText": "daniel scott wixted 03/12/1959– wixted 03/12/59- rochester,ny m. mary joan tracy, jun 28 1986 67.2 years",
       "birthDate": "1959-03-12",
       "spouseIds": [
         "wixted-104-33"
@@ -2595,7 +2625,8 @@
       "dates": "",
       "notes": [
         "07/07/61-",
-        "Whittier,CA"
+        "Whittier,CA",
+        "m. Daniel Scott Wixted, Jun 28 1986"
       ],
       "col": 33,
       "row": 104,
@@ -2616,7 +2647,7 @@
           "text": "Age today is 65.0"
         }
       ],
-      "searchText": "mary joan (tracy) wixted  wixted 07/07/61- whittier,ca 64.9 years",
+      "searchText": "mary joan (tracy) wixted  wixted 07/07/61- whittier,ca m. daniel scott wixted, jun 28 1986 64.9 years",
       "birthDate": "1961-07-07",
       "spouseIds": [
         "wixted-104-31"
@@ -2695,7 +2726,10 @@
       "spouseIds": [
         "wixted-104-39"
       ],
-      "age": "70.2 years"
+      "age": "70.2 years",
+      "childIds": [
+        "wixted-114-39"
+      ]
     },
     {
       "id": "wixted-104-39",
@@ -2703,13 +2737,14 @@
       "dates": "12/17/1954–",
       "notes": [
         "12/17/54-",
-        "Long Beach, CA"
+        "Long Beach, CA",
+        "See Amor page — Mexican heritage via Amor line",
+        "m. Kevin Paul Wixted, May 29 1993 · div. Dec 2005"
       ],
       "col": 39,
       "row": 104,
-      "branch": "wixted",
+      "branch": "amor",
       "generation": 8,
-      "parentId": "wixted-100-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2717,12 +2752,15 @@
           "text": "12/17/54-"
         }
       ],
-      "searchText": "angela maxine amor 12/17/1954– wixted 12/17/54- long beach, ca 71.5 years",
+      "searchText": "angela maxine amor 12/17/1954– amor 12/17/54- long beach, ca see amor page — mexican heritage via amor line m. kevin paul wixted, may 29 1993 · div. dec 2005 71.5 years",
       "birthDate": "1954-12-17",
       "spouseIds": [
         "wixted-104-37"
       ],
-      "age": "71.5 years"
+      "age": "71.5 years",
+      "childIds": [
+        "wixted-114-39"
+      ]
     },
     {
       "id": "wixted-104-41",
@@ -3349,7 +3387,8 @@
       "name": "Katie Alyson Wixted",
       "dates": "09/27/1993–",
       "notes": [
-        "09/27/93-"
+        "09/27/93-",
+        "Mission Viejo, CA"
       ],
       "col": 39,
       "row": 114,
@@ -3362,9 +3401,11 @@
           "text": "09/27/93-"
         }
       ],
-      "searchText": "katie alyson wixted 09/27/1993– wixted 09/27/93- 32.8 years",
+      "searchText": "katie alyson wixted 09/27/1993– wixted 09/27/93- mission viejo, ca 32.8 years",
       "birthDate": "1993-09-27",
-      "age": "32.8 years"
+      "age": "32.8 years",
+      "parentId": "wixted-104-37",
+      "motherId": "wixted-104-39"
     },
     {
       "id": "wixted-114-41",
@@ -16366,17 +16407,23 @@
   ],
   "heritage": {
     "matthew": {
-      "english": 0.25,
-      "german": 0.25,
-      "irish": 0.125,
-      "swedish": 0.125,
-      "mexican": 0.25
+      "english": 0.375,
+      "german": 0.125,
+      "irish": 0.25,
+      "swedish": 0.25
     },
     "kevin": {
       "english": 0.375,
       "german": 0.125,
       "irish": 0.25,
       "swedish": 0.25
+    },
+    "katie": {
+      "english": 0.25,
+      "german": 0.25,
+      "irish": 0.125,
+      "swedish": 0.125,
+      "mexican": 0.25
     }
   },
   "stories": [
@@ -16393,7 +16440,10 @@
         "cumming-114-25"
       ],
       "branch": "wixted",
-      "tags": ["family-history", "marriage"],
+      "tags": [
+        "family-history",
+        "marriage"
+      ],
       "source": "family-update"
     },
     {
@@ -16412,7 +16462,11 @@
         "wixted-18-1"
       ],
       "branch": "wixted",
-      "tags": ["ancestry", "migration", "family-history"],
+      "tags": [
+        "ancestry",
+        "migration",
+        "family-history"
+      ],
       "source": "research"
     },
     {
