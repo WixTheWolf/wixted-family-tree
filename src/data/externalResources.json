@@ -1,7 +1,13 @@
 {
   "meta": {
     "researched": "2026-06-30",
-    "summary": "Public genealogy, cemetery, and newspaper resources verified against the Wixted family workbook."
+    "summary": "Public genealogy, cemetery, library, and social media resources verified against the Wixted family workbook.",
+    "stats": {
+      "resources": 32,
+      "documentAssets": 14,
+      "verifiedBurials": 8,
+      "personLinks": 12
+    }
   },
   "categories": [
     {
@@ -33,6 +39,18 @@
       "label": "Irish & English Origins",
       "icon": "🇮🇪",
       "description": "Research on the Lambeth/London and Tipperary/Limerick Wixted roots."
+    },
+    {
+      "id": "libraries",
+      "label": "Libraries & Local Archives",
+      "icon": "🏛️",
+      "description": "County historians, historical societies, and library collections holding Wixted-area records."
+    },
+    {
+      "id": "photos",
+      "label": "Photos & Scanned Documents",
+      "icon": "📷",
+      "description": "Publicly hosted baptism records, census scans, headstone photos, and profile images."
     }
   ],
   "resources": [
@@ -90,7 +108,7 @@
       "category": "obituaries",
       "tags": ["Rodney Wixted", "Karyl Johnston"],
       "verified": true,
-      "matches": ["wixted-104-15"]
+      "matches": ["wixted-104-19", "wixted-91-21"]
     },
     {
       "id": "res-dougherty-fh",
@@ -112,11 +130,38 @@
     },
     {
       "id": "res-wikitree",
-      "title": "WikiTree — Wixted Surname",
-      "desc": "Free collaborative tree with 100+ Wixted profiles including Tipperary, Limerick, and Ireland-to-America migrations.",
+      "title": "WikiTree — Wixted Surname (342 profiles)",
+      "desc": "Free collaborative tree with scanned baptism records, marriage certs, census images, and Ellis Island documents uploaded by researchers.",
       "url": "https://www.wikitree.com/genealogy/WIXTED",
       "category": "genealogy",
-      "tags": ["collaborative", "DNA"],
+      "tags": ["collaborative", "DNA", "scanned docs"],
+      "verified": true
+    },
+    {
+      "id": "res-wikitree-john-1815",
+      "title": "WikiTree — John Wixted 1815 Baptism (Tipperary)",
+      "desc": "Two scanned baptism images from Englishtown, Newport, Co. Tipperary — father William Wixted, mother Ellen Flynn.",
+      "url": "https://www.wikitree.com/wiki/Wixted-3",
+      "category": "photos",
+      "tags": ["baptism", "Tipperary", "1815"],
+      "verified": true
+    },
+    {
+      "id": "res-wikitree-ellen-duffy",
+      "title": "WikiTree — Ellen (Wixted) Duffy (1876–)",
+      "desc": "4 scanned documents: NLI baptism record, 1900 Troy NY census page, 1905 Buffalo census household, and family photo ca. 1900.",
+      "url": "https://www.wikitree.com/wiki/Wixted-18",
+      "category": "photos",
+      "tags": ["census", "Limerick", "Buffalo"],
+      "verified": true
+    },
+    {
+      "id": "res-wikitree-john-1874",
+      "title": "WikiTree — John Wixted (1874–1968, Limerick)",
+      "desc": "Birth record 1874, marriage to Mary Hickey 1903, and death certificate 1968 — all scanned from Irish civil registration.",
+      "url": "https://www.wikitree.com/wiki/Wixted-332",
+      "category": "photos",
+      "tags": ["birth", "marriage", "death", "Limerick"],
       "verified": true
     },
     {
@@ -201,7 +246,260 @@
       "category": "origins",
       "tags": ["etymology", "Tipperary"],
       "verified": true
+    },
+    {
+      "id": "res-archive-cheshire-1613",
+      "title": "Internet Archive — Cheshire Visitation Pedigrees (1613)",
+      "desc": "Scanned heraldic visitation records documenting Wicksted/Wixsted gentry of Cheshire — contextual origin of the surname before Ireland.",
+      "url": "https://archive.org/details/pedigreesmadeatv00stge",
+      "category": "origins",
+      "tags": ["pedigree", "Cheshire", "1613"],
+      "verified": true,
+      "matches": ["wixted-18-3"]
+    },
+    {
+      "id": "res-ireland-census-1911",
+      "title": "National Archives of Ireland — 1911 Census (Tipperary Wixteds)",
+      "desc": "William Wixted household, Curraghduff, Killoscully, Co. Tipperary — sons John, daughters Annie & Margaret.",
+      "url": "http://www.census.nationalarchives.ie/pages/1911/Tipperary/Killoscully/Curraghduff/821697/",
+      "category": "origins",
+      "tags": ["census", "Tipperary", "1911"],
+      "verified": true
+    },
+    {
+      "id": "res-steuben-historical",
+      "title": "Steuben County Historical Society — Bath NY",
+      "desc": "Genealogical records, census index, burial records, newspapers 1831–1960 on microfilm, probate abstracts 1790–1900. Family genealogy files on shelves 3–14.",
+      "url": "https://www.steubenhistoricalsociety.org/",
+      "category": "libraries",
+      "tags": ["Bath", "microfilm", "probate"],
+      "verified": true
+    },
+    {
+      "id": "res-steuben-historian",
+      "title": "Steuben County Historian — Family Genealogy Files",
+      "desc": "Public-submitted family files with trees, letters, and newspaper clippings. Obituary index PDF and burial records. Phone: (607) 664-2199.",
+      "url": "https://www.steubencountyny.gov/190/Historian",
+      "category": "libraries",
+      "tags": ["Corning", "genealogy files"],
+      "verified": true
+    },
+    {
+      "id": "res-corning-historical",
+      "title": "Corning Painted Post Historical Society",
+      "desc": "Benjamin Patterson Inn museum — local Corning history, railroad era, and Steuben County research. Phone: (607) 937-5281.",
+      "url": "https://corningnyhistory.com/",
+      "category": "libraries",
+      "tags": ["Corning", "museum"],
+      "verified": true
+    },
+    {
+      "id": "res-sscl-genealogy",
+      "title": "Southeast Steuben County Library — Local History",
+      "desc": "Area newspapers on microfiche from 1840s, HeritageQuest census access (1790–1940), and NYS Historic Newspapers for Painted Post region.",
+      "url": "https://ssclibrary.org/services/local-history-genealogy/",
+      "category": "libraries",
+      "tags": ["Corning", "newspapers", "HeritageQuest"],
+      "verified": true
+    },
+    {
+      "id": "res-nys-historic-newspapers",
+      "title": "NYS Historic Newspapers",
+      "desc": "1.4M+ digitized NY newspaper pages — search for Wixted obituaries, Corning/Rochester mentions. Steuben: Painted Post Times, Wayland Advance.",
+      "url": "https://nyshistoricnewspapers.org/",
+      "category": "obituaries",
+      "tags": ["newspapers", "free", "Steuben"],
+      "verified": true
+    },
+    {
+      "id": "res-rochester-genealogical",
+      "title": "Rochester Genealogical Society",
+      "desc": "Monroe County research resources — cemetery lookups, vital records guidance, and local history for Rochester Wixted lines.",
+      "url": "https://www.rootsweb.com/~nyrgs/",
+      "category": "libraries",
+      "tags": ["Rochester", "Monroe County"],
+      "verified": true
+    },
+    {
+      "id": "res-st-marys-corning",
+      "title": "St Mary's Cemetery — Corning Wixteds",
+      "desc": "Find a Grave memorials for Raymond J, Margaret C, and other Corning-area Wixted burials referenced in Steuben obituary index.",
+      "url": "https://www.findagrave.com/cemetery/65448/st-marys-cemetery",
+      "category": "cemetery",
+      "tags": ["Corning", "St Mary's"],
+      "verified": true,
+      "matches": ["wixted-73-59"]
+    },
+    {
+      "id": "res-matthew-flickr",
+      "title": "Matt Wixted Photography — Flickr",
+      "desc": "592 photos on Flickr (Los Angeles, joined 2011). Album currently private — profile confirms Matt Wixted Photography identity.",
+      "url": "https://www.flickr.com/photos/mwixted1/",
+      "category": "photos",
+      "tags": ["Matthew Wixted", "photography"],
+      "verified": true,
+      "matches": ["wixted-114-29"]
+    },
+    {
+      "id": "res-matthew-linkedin",
+      "title": "Matt Wixted — LinkedIn (California)",
+      "desc": "Creative video producer and photographer — Matt Wixted Photography since 2012, Anaheim CA. Professional headshots and media production.",
+      "url": "https://www.linkedin.com/in/matt-wixted-09b06719",
+      "category": "photos",
+      "tags": ["Matthew Wixted", "California"],
+      "verified": true,
+      "matches": ["wixted-114-29"]
     }
+  ],
+  "documentAssets": [
+    {
+      "id": "asset-matthew-github",
+      "title": "Matthew Scott Wixted — Profile Photo",
+      "type": "photo",
+      "format": "image",
+      "source": "GitHub",
+      "url": "https://github.com/WixTheWolf",
+      "personIds": ["wixted-114-29"],
+      "status": "public"
+    },
+    {
+      "id": "asset-john-1815-baptism",
+      "title": "John Wixted Baptism Record (29 Jun 1815, Tipperary)",
+      "type": "baptism",
+      "format": "scan",
+      "source": "WikiTree / RootsIreland",
+      "url": "https://www.wikitree.com/wiki/Wixted-3",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-ellen-baptism",
+      "title": "Ellen Wixtead Baptism Record (9 Jan 1876, Limerick)",
+      "type": "baptism",
+      "format": "scan",
+      "source": "WikiTree / NLI",
+      "url": "https://www.wikitree.com/wiki/Wixted-18",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-ellen-census-1905",
+      "title": "Wixted & Duffy Household — 1905 NY State Census, Buffalo",
+      "type": "census",
+      "format": "scan",
+      "source": "WikiTree",
+      "url": "https://www.wikitree.com/wiki/Wixted-18",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-john-limerick-birth",
+      "title": "John Wixtead Birth Record (1874, Murroe, Limerick)",
+      "type": "birth",
+      "format": "scan",
+      "source": "WikiTree / Irish Civil Registration",
+      "url": "https://www.wikitree.com/wiki/Wixted-332",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-john-limerick-marriage",
+      "title": "John Wixted & Mary Hickey Marriage (27 Jul 1903, Limerick)",
+      "type": "marriage",
+      "format": "scan",
+      "source": "WikiTree",
+      "url": "https://www.wikitree.com/wiki/Wixted-332",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-john-limerick-death",
+      "title": "John Wixted Death Certificate (Jan 1968, Limerick)",
+      "type": "death",
+      "format": "scan",
+      "source": "WikiTree",
+      "url": "https://www.wikitree.com/wiki/Wixted-332",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-cheshire-visitation",
+      "title": "Cheshire Herald's Visitation Pedigrees (1613) — Wicksted family",
+      "type": "pedigree",
+      "format": "book scan",
+      "source": "Internet Archive",
+      "url": "https://archive.org/details/pedigreesmadeatv00stge",
+      "personIds": ["wixted-18-3"],
+      "status": "public"
+    },
+    {
+      "id": "asset-tipperary-census-1911",
+      "title": "William Wixted Household — 1911 Ireland Census, Killoscully",
+      "type": "census",
+      "format": "web record",
+      "source": "National Archives of Ireland",
+      "url": "http://www.census.nationalarchives.ie/pages/1911/Tipperary/Killoscully/Curraghduff/821697/",
+      "personIds": [],
+      "status": "public"
+    },
+    {
+      "id": "asset-kolleen-obit",
+      "title": "Kolleen N. Wixted Obituary (23 Oct 2017)",
+      "type": "obituary",
+      "format": "article",
+      "source": "Genesee Valley Penny Saver",
+      "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html",
+      "personIds": ["wixted-104-19"],
+      "status": "public"
+    },
+    {
+      "id": "asset-steuben-obit-index",
+      "title": "Steuben County Obituary Index — W section (PDF)",
+      "type": "index",
+      "format": "PDF",
+      "source": "Steuben County Historian",
+      "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF",
+      "personIds": ["wixted-73-27", "wixted-73-29", "wixted-73-59", "wixted-73-77"],
+      "status": "public"
+    },
+    {
+      "id": "asset-erie-rr-photos",
+      "title": "Erie Railroad Employee Photographs",
+      "type": "photo",
+      "format": "photo index",
+      "source": "RootsWeb / Sponholz collection",
+      "url": "https://freepages.rootsweb.com/~sponholz/genealogy/miscphoto1.html",
+      "personIds": ["wixted-30-23"],
+      "status": "public"
+    },
+    {
+      "id": "asset-findagrave-ny",
+      "title": "Find a Grave — 509 NY Wixted Memorials (headstone photos)",
+      "type": "headstone",
+      "format": "photo collection",
+      "source": "Find a Grave",
+      "url": "https://www.findagrave.com/memorial/search?firstname=&lastname=Wixted&locationId=country_1%2Cstate_36",
+      "personIds": ["wixted-73-39"],
+      "status": "partial"
+    },
+    {
+      "id": "asset-workbook-graves",
+      "title": "Private Gravesite Photos (McGraw, Doane, Bursley lines)",
+      "type": "headstone",
+      "format": "private research",
+      "source": "Family workbook notes",
+      "url": "",
+      "personIds": [],
+      "status": "private"
+    }
+  ],
+  "researchGaps": [
+    "No public obituary found online for Bruce John Wixted (1933–1995, Rochester) — may require Newspapers.com or Democrat and Chronicle microfilm at SSCL.",
+    "Original Wixted Family v9.5 Excel workbook is not published online.",
+    "Matthew Wixted Flickr account (592 photos) has no public albums visible.",
+    "No dedicated Wixted family Facebook group or public Instagram archive located.",
+    "Gravesite photos referenced in Gilbert/McGraw/Doane/Bursley workbook notes remain in private family research only.",
+    "nyheritage.org returned no Wixted-specific digital collections."
   ],
   "personLinks": {
     "wixted-73-27": [
@@ -214,6 +512,13 @@
     "wixted-73-59": [
       { "label": "Steuben Co. — Raymond J Wixted, St Mary's Corning", "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF", "type": "cemetery" }
     ],
+    "wixted-73-39": [
+      { "label": "Find a Grave — Alice Wixted memorials (Rochester)", "url": "https://www.findagrave.com/memorial/search?firstname=Alice&lastname=Wixted&locationId=city_51255", "type": "cemetery" },
+      { "label": "Holy Sepulchre Cemetery, Rochester", "url": "https://www.findagrave.com/cemetery/64887/holy-sepulchre-cemetery", "type": "cemetery" }
+    ],
+    "wixted-73-77": [
+      { "label": "Steuben Co. Obituary — Vincent D Wixted (1977)", "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF", "type": "cemetery" }
+    ],
     "wixted-73-57": [
       { "label": "Gertrude Wixted-Grimaldi — workbook cemetery record", "url": "https://www.findagrave.com/memorial/search?firstname=Gertrude&lastname=Wixted", "type": "cemetery" }
     ],
@@ -221,13 +526,22 @@
       { "label": "Erie Railroad Employee Photos — Avon area", "url": "https://freepages.rootsweb.com/~sponholz/genealogy/miscphoto1.html", "type": "photo" }
     ],
     "wixted-18-3": [
-      { "label": "Thomas Wickstead & Mary Hogan research", "url": "https://www.curiousfox.com/vill100/Surrey35296_3.html", "type": "research" }
+      { "label": "Thomas Wickstead & Mary Hogan research", "url": "https://www.curiousfox.com/vill100/Surrey35296_3.html", "type": "research" },
+      { "label": "Cheshire Visitation Pedigrees (1613) — Internet Archive", "url": "https://archive.org/details/pedigreesmadeatv00stge", "type": "research" }
+    ],
+    "wixted-91-21": [
+      { "label": "Kolleen N. Wixted obituary — daughter (2017)", "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html", "type": "obituary" }
+    ],
+    "wixted-91-29": [
+      { "label": "Democrat and Chronicle — search Bruce Wixted 1995", "url": "https://www.newspapers.com/paper/democrat-and-chronicle/3749/", "type": "obituary" }
     ],
     "wixted-104-19": [
       { "label": "Kolleen N. Wixted obituary (2017)", "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html", "type": "obituary" }
     ],
     "wixted-114-29": [
-      { "label": "Matthew Wixted — GitHub profile photo", "url": "https://github.com/WixTheWolf", "type": "photo" }
+      { "label": "Matthew Wixted — GitHub profile photo", "url": "https://github.com/WixTheWolf", "type": "photo" },
+      { "label": "Matt Wixted Photography — Flickr", "url": "https://www.flickr.com/photos/mwixted1/", "type": "photo" },
+      { "label": "Matt Wixted — LinkedIn", "url": "https://www.linkedin.com/in/matt-wixted-09b06719", "type": "photo" }
     ]
   },
   "verifiedBurials": [

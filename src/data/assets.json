@@ -32,9 +32,15 @@
     },
     {
       "title": "Online Research Archives",
-      "desc": "18 verified public sources — Find a Grave, Steuben County obits, Mt Hope, WikiTree, and more",
+      "desc": "32 verified sources + 14 cataloged photos/docs from WikiTree, Find a Grave, libraries",
       "type": "research",
       "icon": "🔗"
+    },
+    {
+      "title": "WikiTree Scanned Records",
+      "desc": "Baptism certs, marriage records, census pages for Irish Wixted lines",
+      "type": "photo",
+      "icon": "📷"
     }
   ]
 }
