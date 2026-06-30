@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { SearchResult } from "../types";
+import PersonAvatar from "./PersonAvatar";
 
 interface Props {
   query: string;
@@ -26,27 +27,33 @@ const TYPE_ICONS: Record<string, string> = {
 
 export default function SearchBar({ query, onQueryChange, results, onSelect, onClose }: Props) {
   const listRef = useRef<HTMLDivElement>(null);
-  const activeIndex = useRef(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    activeIndex.current = 0;
+    setActiveIndex(0);
   }, [query, results]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (!results.length) return;
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      activeIndex.current = Math.min(activeIndex.current + 1, results.length - 1);
-      listRef.current?.children[activeIndex.current]?.scrollIntoView({ block: "nearest" });
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      activeIndex.current = Math.max(activeIndex.current - 1, 0);
-      listRef.current?.children[activeIndex.current]?.scrollIntoView({ block: "nearest" });
-    } else if (e.key === "Enter" && results[activeIndex.current]) {
-      onSelect(results[activeIndex.current]);
-    } else if (e.key === "Escape") {
+    if (e.key === "Escape") {
       onQueryChange("");
       onClose();
+      return;
+    }
+
+    if (!results.length) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      const nextIndex = Math.min(activeIndex + 1, results.length - 1);
+      setActiveIndex(nextIndex);
+      listRef.current?.children[nextIndex]?.scrollIntoView({ block: "nearest" });
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      const nextIndex = Math.max(activeIndex - 1, 0);
+      setActiveIndex(nextIndex);
+      listRef.current?.children[nextIndex]?.scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter" && results[activeIndex]) {
+      onSelect(results[activeIndex]);
     }
   };
 
@@ -83,11 +90,24 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
             transition={{ duration: 0.2 }}
             ref={listRef}
           >
-            {results.map((r) => (
-              <button key={`${r.type}-${r.id}`} className="search-result" onClick={() => onSelect(r)}>
+            {results.map((r, index) => (
+              <motion.button
+                key={`${r.type}-${r.id}`}
+                className={`search-result ${index === activeIndex ? "active" : ""}`}
+                onClick={() => onSelect(r)}
+                onMouseEnter={() => setActiveIndex(index)}
+                initial={{ opacity: 0, x: -8 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.18, delay: Math.min(index * 0.018, 0.14) }}
+              >
+                {r.type === "person" && r.person ? (
+                  <PersonAvatar person={r.person} size={42} />
+                ) : (
+                  <span className="search-result-icon">{TYPE_ICONS[r.type]}</span>
+                )}
                 <div className="search-result-left">
                   <span className="search-result-type">
-                    {TYPE_ICONS[r.type]} {TYPE_LABELS[r.type]}
+                    {TYPE_LABELS[r.type]}
                   </span>
                   <span className="search-result-name">{r.title}</span>
                   {r.snippet && <span className="search-result-snippet">{r.snippet}</span>}
@@ -96,7 +116,7 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
                   {r.branch && <span className="search-result-branch">{r.branch}</span>}
                   {r.subtitle && <span className="search-result-dates">{r.subtitle}</span>}
                 </div>
-              </button>
+              </motion.button>
             ))}
           </motion.div>
         )}
@@ -120,7 +140,8 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
           transition: box-shadow 0.2s, border-color 0.2s;
         }
         .search-bar:focus-within {
-          box-shadow: var(--shadow-md); border-color: rgba(0,113,227,0.3);
+          box-shadow: var(--shadow-md), 0 0 0 3px rgba(201,162,39,0.08);
+          border-color: var(--border-accent);
         }
         .search-bar svg { color: var(--text-tertiary); flex-shrink: 0; }
         .search-bar input {
@@ -143,10 +164,28 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
         .search-result {
           display: flex; justify-content: space-between; align-items: flex-start;
           width: 100%; padding: 12px 18px; text-align: left; gap: 12px;
-          transition: background 0.15s; border-bottom: 1px solid var(--border);
+          transition: background 0.15s, border-color 0.15s;
+          border-bottom: 1px solid var(--border);
+          border-left: 2px solid transparent;
         }
         .search-result:last-child { border-bottom: none; }
-        .search-result:hover { background: rgba(0,113,227,0.06); }
+        .search-result:hover, .search-result.active {
+          background:
+            linear-gradient(90deg, rgba(201,162,39,0.12), rgba(74,158,255,0.06));
+          border-left-color: var(--accent);
+        }
+        .search-result-icon {
+          width: 42px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          border-radius: 14px;
+          background: rgba(255,255,255,0.055);
+          border: 1px solid var(--border);
+          font-size: 18px;
+        }
         .search-result-left { flex: 1; min-width: 0; }
         .search-result-type {
           display: block; font-size: 10px; font-weight: 600;

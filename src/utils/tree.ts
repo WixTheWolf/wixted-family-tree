@@ -1,7 +1,7 @@
 import type { Person, TreeNode } from "../types";
 
-const CARD_W = 200;
-const CARD_H = 88;
+const CARD_W = 230;
+const CARD_H = 104;
 const GAP_X = 32;
 const GAP_Y = 120;
 
@@ -89,8 +89,10 @@ export function flattenTree(roots: TreeNode[]): TreeNode[] {
   return result;
 }
 
-export function getConnections(roots: TreeNode[]): { x1: number; y1: number; x2: number; y2: number }[] {
-  const lines: { x1: number; y1: number; x2: number; y2: number }[] = [];
+export function getConnections(
+  roots: TreeNode[]
+): { x1: number; y1: number; x2: number; y2: number; fromId: string; toId: string }[] {
+  const lines: { x1: number; y1: number; x2: number; y2: number; fromId: string; toId: string }[] = [];
   function walk(n: TreeNode) {
     for (const c of n.children) {
       lines.push({
@@ -98,6 +100,8 @@ export function getConnections(roots: TreeNode[]): { x1: number; y1: number; x2:
         y1: n.y + CARD_H,
         x2: c.x + CARD_W / 2,
         y2: c.y,
+        fromId: n.person.id,
+        toId: c.person.id,
       });
       walk(c);
     }
