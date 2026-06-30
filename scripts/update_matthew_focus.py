@@ -19,6 +19,8 @@ BRUCE_CUMMING_ID = "cumming-114-23"
 MONIQUE_CUMMING_ID = "cumming-114-25"
 DANIEL_ID = "wixted-104-31"
 MARY_JOAN_ID = "wixted-104-33"
+JACK_TRACY_ID = "tracy-103-31"
+KATIE_TRACY_ID = "tracy-103-33"
 RYAN_ID = "wixted-114-31"
 KYLIE_ID = "wixted-114-33"
 ALEX_ID = "wixted-114-35"
@@ -212,9 +214,51 @@ def main():
 
     mary_joan = by_id[MARY_JOAN_ID]
     mary_joan["name"] = "Mary Joan (Tracy) Wixted"
-    mary_joan.pop("parentId", None)
+    mary_joan["branch"] = "tracy"
+    mary_joan["parentId"] = JACK_TRACY_ID
+    mary_joan["motherId"] = KATIE_TRACY_ID
     mary_joan["spouseIds"] = [DANIEL_ID]
     mary_joan["childIds"] = SIBLING_IDS
+    if not any("Jack" in n for n in mary_joan.get("notes", [])):
+        mary_joan["notes"].append(
+            'Daughter of John "Jack" Tracy and Katie (Martin) Tracy'
+        )
+
+    jack = by_id.get(JACK_TRACY_ID)
+    if not jack:
+        jack = {
+            "id": JACK_TRACY_ID,
+            "name": 'John "Jack" Tracy',
+            "col": 31,
+            "row": 103,
+            "branch": "tracy",
+            "generation": 9,
+            "recordType": "person",
+        }
+        people.append(jack)
+        by_id[JACK_TRACY_ID] = jack
+    jack["name"] = 'John "Jack" Tracy'
+    jack["notes"] = ["Whittier, CA area", "Father of Mary Joan (Tracy) Wixted"]
+    jack["spouseIds"] = [KATIE_TRACY_ID]
+    jack["childIds"] = [MARY_JOAN_ID]
+
+    katie_tracy = by_id.get(KATIE_TRACY_ID)
+    if not katie_tracy:
+        katie_tracy = {
+            "id": KATIE_TRACY_ID,
+            "name": "Katie (Martin) Tracy",
+            "col": 33,
+            "row": 103,
+            "branch": "tracy",
+            "generation": 9,
+            "recordType": "person",
+        }
+        people.append(katie_tracy)
+        by_id[KATIE_TRACY_ID] = katie_tracy
+    katie_tracy["name"] = "Katie (Martin) Tracy"
+    katie_tracy["notes"] = ["Maiden name: Martin", "Mother of Mary Joan (Tracy) Wixted"]
+    katie_tracy["spouseIds"] = [JACK_TRACY_ID]
+    katie_tracy["childIds"] = [MARY_JOAN_ID]
 
     # Reclassify mis-parsed location parent
     bad_parent = by_id.get("wixted-109-39")
