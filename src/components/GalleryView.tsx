@@ -78,7 +78,8 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
     <div className="gallery-view">
       <div className="gallery-header">
         <div>
-          <h2>Family Gallery</h2>
+          <p className="section-eyebrow">Gallery</p>
+          <h2 className="section-title" style={{ fontSize: "clamp(28px, 4vw, 40px)" }}>Family photos</h2>
           <p>
             Browse all photos and documents across the tree — site assets, cloud uploads
             {cloudAvailable ? " (live)" : " (enable Vercel Blob to sync)"}, and local browser saves.
@@ -221,7 +222,7 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
           display: flex; justify-content: space-between; align-items: flex-start; gap: 24px;
         }
         .gallery-header h2 {
-          font-family: var(--font-display); font-size: 28px; font-weight: 700;
+          font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.03em;
         }
         .gallery-header p {
           font-size: 15px; color: var(--text-secondary); line-height: 1.6;
@@ -233,21 +234,21 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
         }
         .gallery-stats span {
           padding: 4px 10px; border-radius: 6px;
-          background: var(--bg-glass); border: 1px solid var(--border);
+          background: var(--bg-card); border: 1px solid var(--border);
         }
         .gallery-toolbar { display: flex; flex-direction: column; gap: 10px; }
         .gallery-search {
-          padding: 12px 16px; border-radius: 10px; font-size: 14px;
-          background: var(--bg-glass); border: 1px solid var(--border); color: var(--text);
+          padding: 14px 18px; border-radius: var(--radius-pill); font-size: 15px;
+          background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
         }
         .gallery-filters { display: flex; flex-wrap: wrap; gap: 6px; }
         .gallery-filters button {
-          padding: 6px 14px; border-radius: 980px; font-size: 12px; font-weight: 500;
-          color: var(--text-secondary); background: var(--bg-glass); border: 1px solid var(--border);
+          padding: 8px 16px; border-radius: var(--radius-pill); font-size: 13px; font-weight: 500;
+          color: var(--text-secondary); background: var(--bg-card); border: 1px solid var(--border);
         }
         .gallery-filters button.active {
-          background: rgba(201, 162, 39, 0.12); color: var(--accent-bright);
-          border-color: var(--border-accent);
+          background: var(--bg-elevated); color: var(--text);
+          border-color: var(--border-strong);
         }
         .gallery-grid {
           display: grid;
@@ -256,11 +257,11 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
         }
         .gallery-card {
           text-align: left; border-radius: 12px; overflow: hidden;
-          border: 1px solid var(--border); background: var(--bg-glass);
-          transition: border-color 0.15s, transform 0.15s;
+          border: 1px solid var(--border); background: var(--bg-card);
+          transition: border-color 0.15s, transform 0.2s var(--ease-out-expo);
         }
         .gallery-card:hover {
-          border-color: var(--border-accent); transform: translateY(-3px);
+          border-color: var(--border-strong); transform: translateY(-4px);
         }
         .gallery-card-thumb {
           position: relative; aspect-ratio: 4/3; background: rgba(0,0,0,0.25);

@@ -249,10 +249,11 @@ def main():
     df_cem = pd.read_excel(source, sheet_name="Cemetery", header=None)
     cemetery = parse_cemetery(df_cem)
 
-    # Katie heritage
+    # Heritage from workbook Katie sheet — Mexican is Katie/Angela Amor line only
     heritage = {
-        "katie": {"english": 0.25, "german": 0.25, "irish": 0.125, "swedish": 0.125, "mexican": 0.25},
+        "matthew": {"english": 0.375, "german": 0.125, "irish": 0.25, "swedish": 0.25},
         "kevin": {"english": 0.375, "german": 0.125, "irish": 0.25, "swedish": 0.25},
+        "katie": {"english": 0.25, "german": 0.25, "irish": 0.125, "swedish": 0.125, "mexican": 0.25},
     }
 
     out = {

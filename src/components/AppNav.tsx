@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Props {
   active: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute";
   onChange: (view: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute") => void;
@@ -12,13 +14,13 @@ interface Props {
 }
 
 const TABS = [
-  { id: "explore" as const, label: "Family Tree", icon: "🌳" },
-  { id: "directory" as const, label: "Directory", icon: "📖" },
-  { id: "gallery" as const, label: "Gallery", icon: "🖼️" },
-  { id: "stories" as const, label: "Stories", icon: "📜" },
-  { id: "cemetery" as const, label: "Cemetery", icon: "🪦" },
-  { id: "archives" as const, label: "Archives", icon: "🔗" },
-  { id: "contribute" as const, label: "Contribute", icon: "📤" },
+  { id: "explore" as const, label: "Tree" },
+  { id: "directory" as const, label: "Directory" },
+  { id: "gallery" as const, label: "Gallery" },
+  { id: "stories" as const, label: "Stories" },
+  { id: "cemetery" as const, label: "Cemetery" },
+  { id: "archives" as const, label: "Archives" },
+  { id: "contribute" as const, label: "Add photos" },
 ];
 
 export default function AppNav({ active, onChange, counts }: Props) {
@@ -33,47 +35,90 @@ export default function AppNav({ active, onChange, counts }: Props) {
   };
 
   return (
-    <nav className="app-nav">
-      {TABS.map((tab) => (
-        <button
-          key={tab.id}
-          className={`app-nav-tab ${active === tab.id ? "active" : ""}`}
-          onClick={() => onChange(tab.id)}
-        >
-          <span className="app-nav-icon">{tab.icon}</span>
-          <span>{tab.label}</span>
-          {countFor(tab.id) !== null && (
-            <span className="app-nav-count">{countFor(tab.id)}</span>
-          )}
-        </button>
-      ))}
+    <nav className="app-nav" aria-label="Main sections">
+      <div className="app-nav-scroll">
+        {TABS.map((tab) => {
+          const isActive = active === tab.id;
+          const count = countFor(tab.id);
+          return (
+            <button
+              key={tab.id}
+              type="button"
+              className={`app-nav-tab ${isActive ? "active" : ""}`}
+              onClick={() => onChange(tab.id)}
+            >
+              {isActive && (
+                <motion.span
+                  className="app-nav-pill"
+                  layoutId="nav-pill"
+                  transition={{ type: "spring", stiffness: 500, damping: 38 }}
+                />
+              )}
+              <span className="app-nav-label">{tab.label}</span>
+              {count !== null && count > 0 && (
+                <span className="app-nav-count">{count}</span>
+              )}
+            </button>
+          );
+        })}
+      </div>
 
       <style>{`
         .app-nav {
-          display: flex; gap: 6px; flex-wrap: wrap;
-          padding: 4px; background: rgba(255,255,255,0.03);
-          border-radius: 14px; border: 1px solid var(--border);
+          position: sticky;
+          top: var(--header-h);
+          z-index: 100;
+          background: rgba(0, 0, 0, 0.85);
+          backdrop-filter: saturate(180%) blur(20px);
+          -webkit-backdrop-filter: saturate(180%) blur(20px);
+          border-bottom: 1px solid var(--border);
+          margin: 0 -24px;
+          padding: 0 24px;
         }
+        .app-nav-scroll {
+          display: flex;
+          gap: 4px;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 10px 0;
+        }
+        .app-nav-scroll::-webkit-scrollbar { display: none; }
         .app-nav-tab {
-          display: flex; align-items: center; gap: 8px;
-          padding: 10px 16px; border-radius: 10px;
-          font-size: 13px; font-weight: 500; color: var(--text-secondary);
-          transition: all 0.2s;
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 18px;
+          border-radius: var(--radius-pill);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--text-secondary);
+          white-space: nowrap;
+          scroll-snap-align: start;
+          flex-shrink: 0;
         }
-        .app-nav-tab:hover { color: var(--text); background: rgba(255,255,255,0.04); }
-        .app-nav-tab.active {
-          background: var(--bg-elevated); color: var(--text);
-          box-shadow: var(--shadow-sm);
+        .app-nav-tab:hover { color: var(--text); }
+        .app-nav-tab.active { color: var(--text); }
+        .app-nav-pill {
+          position: absolute;
+          inset: 0;
+          background: var(--bg-elevated);
+          border: 1px solid var(--border-strong);
+          border-radius: var(--radius-pill);
+          z-index: -1;
         }
-        .app-nav-icon { font-size: 16px; }
+        .app-nav-label { position: relative; }
         .app-nav-count {
-          font-size: 11px; font-weight: 600; padding: 2px 7px;
-          border-radius: 980px; background: rgba(201, 162, 39, 0.12);
-          color: var(--accent-bright);
-        }
-        @media (max-width: 720px) {
-          .app-nav-tab span:nth-child(2) { display: none; }
-          .app-nav-tab { padding: 10px 12px; }
+          position: relative;
+          font-size: 11px;
+          font-weight: 600;
+          padding: 2px 8px;
+          border-radius: var(--radius-pill);
+          background: rgba(255, 149, 0, 0.15);
+          color: var(--accent);
         }
       `}</style>
     </nav>

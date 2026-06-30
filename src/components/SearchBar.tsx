@@ -17,13 +17,6 @@ const TYPE_LABELS: Record<string, string> = {
   location: "Location",
 };
 
-const TYPE_ICONS: Record<string, string> = {
-  person: "👤",
-  story: "📜",
-  cemetery: "🪦",
-  location: "📍",
-};
-
 export default function SearchBar({ query, onQueryChange, results, onSelect, onClose }: Props) {
   const listRef = useRef<HTMLDivElement>(null);
   const activeIndex = useRef(0);
@@ -86,9 +79,7 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
             {results.map((r) => (
               <button key={`${r.type}-${r.id}`} className="search-result" onClick={() => onSelect(r)}>
                 <div className="search-result-left">
-                  <span className="search-result-type">
-                    {TYPE_ICONS[r.type]} {TYPE_LABELS[r.type]}
-                  </span>
+                  <span className="search-result-type">{TYPE_LABELS[r.type]}</span>
                   <span className="search-result-name">{r.title}</span>
                   {r.snippet && <span className="search-result-snippet">{r.snippet}</span>}
                 </div>
@@ -111,54 +102,60 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
       </AnimatePresence>
 
       <style>{`
-        .search-wrapper { position: relative; width: 100%; max-width: 560px; }
+        .search-wrapper { position: relative; width: 100%; max-width: 480px; }
         .search-bar {
-          display: flex; align-items: center; gap: 10px;
-          background: var(--bg-elevated); border: 1px solid var(--border);
-          border-radius: 980px; padding: 10px 18px;
-          box-shadow: var(--shadow-sm);
-          transition: box-shadow 0.2s, border-color 0.2s;
+          display: flex; align-items: center; gap: 12px;
+          background: var(--bg-card);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-pill);
+          padding: 12px 20px;
+          transition: border-color 0.2s, box-shadow 0.2s;
         }
         .search-bar:focus-within {
-          box-shadow: var(--shadow-md); border-color: rgba(0,113,227,0.3);
+          border-color: var(--border-strong);
+          box-shadow: 0 0 0 4px rgba(255, 149, 0, 0.12);
         }
         .search-bar svg { color: var(--text-tertiary); flex-shrink: 0; }
         .search-bar input {
           flex: 1; border: none; outline: none; background: transparent;
-          font-size: 17px; color: var(--text);
+          font-size: 17px; color: var(--text); letter-spacing: -0.01em;
         }
         .search-bar input::placeholder { color: var(--text-tertiary); }
         .search-clear {
           display: flex; align-items: center; justify-content: center;
-          width: 24px; height: 24px; border-radius: 50%;
+          width: 28px; height: 28px; border-radius: 50%;
           color: var(--text-tertiary); transition: background 0.15s;
         }
-        .search-clear:hover { background: rgba(0,0,0,0.06); }
+        .search-clear:hover { background: var(--bg-hover); color: var(--text); }
         .search-results {
-          position: absolute; top: calc(100% + 8px); left: 0; right: 0;
-          background: var(--bg-elevated); border-radius: var(--radius-sm);
-          box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+          position: absolute; top: calc(100% + 10px); left: 0; right: 0;
+          background: var(--bg-surface);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow-lg);
+          border: 1px solid var(--border);
           overflow: hidden; z-index: 100; max-height: 420px; overflow-y: auto;
         }
         .search-result {
           display: flex; justify-content: space-between; align-items: flex-start;
-          width: 100%; padding: 12px 18px; text-align: left; gap: 12px;
-          transition: background 0.15s; border-bottom: 1px solid var(--border);
+          width: 100%; padding: 14px 20px; text-align: left; gap: 12px;
+          transition: background 0.15s;
+          border-bottom: 1px solid var(--border);
         }
         .search-result:last-child { border-bottom: none; }
-        .search-result:hover { background: rgba(0,113,227,0.06); }
+        .search-result:hover { background: var(--bg-hover); }
         .search-result-left { flex: 1; min-width: 0; }
         .search-result-type {
-          display: block; font-size: 10px; font-weight: 600;
+          display: block; font-size: 11px; font-weight: 600;
           text-transform: uppercase; letter-spacing: 0.06em;
-          color: var(--text-tertiary); margin-bottom: 2px;
+          color: var(--text-tertiary); margin-bottom: 4px;
         }
         .search-result-name {
-          display: block; font-size: 15px; font-weight: 500; color: var(--text);
+          display: block; font-size: 16px; font-weight: 600; color: var(--text);
+          letter-spacing: -0.01em;
         }
         .search-result-snippet {
-          display: block; font-size: 12px; color: var(--text-tertiary);
-          margin-top: 3px;
+          display: block; font-size: 13px; color: var(--text-tertiary);
+          margin-top: 4px;
           white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         }
         .search-result-right { text-align: right; flex-shrink: 0; }
@@ -166,10 +163,10 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
           display: block; font-size: 11px; font-weight: 600;
           color: var(--accent); margin-bottom: 2px;
         }
-        .search-result-dates { font-size: 12px; color: var(--text-tertiary); }
+        .search-result-dates { font-size: 13px; color: var(--text-tertiary); }
         .search-empty {
-          padding: 20px; text-align: center;
-          font-size: 14px; color: var(--text-tertiary);
+          padding: 24px; text-align: center;
+          font-size: 15px; color: var(--text-tertiary);
         }
       `}</style>
     </div>

@@ -17,9 +17,16 @@ import FamilyOrbit from "./components/FamilyOrbit";
 import ArchivesView from "./components/ArchivesView";
 import ContributeView from "./components/ContributeView";
 import GalleryView from "./components/GalleryView";
+import SiteHeader from "./components/SiteHeader";
 import AncestorJourney from "./components/AncestorJourney";
 import MediaStrip from "./components/MediaStrip";
+import FeaturedStories from "./components/FeaturedStories";
+import HeritageOverview from "./components/HeritageOverview";
+import MigrationMap from "./components/MigrationMap";
+import ArchivesPreview from "./components/ArchivesPreview";
+import SiteFooter from "./components/SiteFooter";
 import externalResources from "./data/externalResources.json";
+import type { Story } from "./types";
 import { useCloudAssets } from "./context/CloudAssetsContext";
 import { useContributions } from "./context/ContributionsContext";
 import { getAllAssets } from "./utils/assets";
@@ -98,16 +105,51 @@ function AppContent() {
   const hasTree = activeBranch === "wixted";
   const focusLine = data.meta.focusLine;
 
+  const goGallery = () => {
+    setAppView("gallery");
+    scrollToExplore();
+  };
+
+  const goStories = () => {
+    setAppView("stories");
+    scrollToExplore();
+  };
+
+  const goArchives = () => {
+    setAppView("archives");
+    scrollToExplore();
+  };
+
+  const handleFeaturedStory = useCallback(
+    (story: Story) => {
+      if (story.personIds[0]) {
+        const p = findPersonById(data, story.personIds[0]);
+        if (p) selectPerson(p);
+        else goStories();
+      } else goStories();
+    },
+    [selectPerson]
+  );
+
+  const matthewHeritage = data.heritage?.matthew ?? {};
+
   return (
     <div className="app">
-      <header className="app-header">
+      <SiteHeader
+        onExplore={scrollToExplore}
+        onGallery={goGallery}
+        onStories={goStories}
+        onArchives={goArchives}
+      />
+
+      <header className="app-hero">
         <HeroSection
           person={rootPerson}
-          heritage={data.heritage.matthew ?? data.heritage.katie}
           personCount={data.meta.personCount ?? allPeople.length}
           storyCount={data.stories?.length ?? 0}
-          branchCount={data.branches.length}
+          galleryCount={galleryCount}
           onExplore={scrollToExplore}
+          onGallery={goGallery}
         />
 
         <div className="search-row">
@@ -122,39 +164,59 @@ function AppContent() {
 
         <AnimatePresence>
           {showOrbit && (
-            <motion.div
+            <motion.section
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               className="orbit-section"
             >
               <div className="orbit-header">
-                <h2>Matthew's Family</h2>
-                <button onClick={() => setShowOrbit(false)} aria-label="Hide family circle">✕</button>
+                <div>
+                  <p className="section-eyebrow">Inner circle</p>
+                  <h2 className="orbit-title">Matthew&apos;s family</h2>
+                </div>
+                <button type="button" className="orbit-dismiss" onClick={() => setShowOrbit(false)}>
+                  Hide
+                </button>
               </div>
               <FamilyOrbit root={rootPerson} family={innerCircle} onSelect={selectPerson} />
-            </motion.div>
+            </motion.section>
           )}
         </AnimatePresence>
 
         {!showOrbit && (
-          <button className="show-orbit-btn" onClick={() => setShowOrbit(true)}>
-            Show Matthew's Family
+          <button type="button" className="show-orbit-btn" onClick={() => setShowOrbit(true)}>
+            Show inner circle
           </button>
         )}
 
         <MediaStrip
           onViewCemetery={() => { setAppView("cemetery"); scrollToExplore(); }}
-          onViewStories={() => { setAppView("stories"); scrollToExplore(); }}
-          onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
+          onViewStories={goStories}
+          onViewArchives={goArchives}
           onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
-          onViewGallery={() => { setAppView("gallery"); scrollToExplore(); }}
+          onViewGallery={goGallery}
         />
 
-        <AncestorJourney
-          peopleById={peopleById}
-          onSelectPerson={selectPerson}
+        <HeritageOverview
+          heritage={matthewHeritage}
+          note="English, Irish, Swedish, and German through the Wixted and Jones lines. No Mexican component — that enters through Uncle Kevin's ex-wife Angela's Amor/Montez line (cousin Katie's chart)."
         />
+
+        <MigrationMap />
+
+        <FeaturedStories
+          stories={data.stories ?? []}
+          onViewAll={goStories}
+          onSelectStory={handleFeaturedStory}
+        />
+
+        <ArchivesPreview
+          resources={externalResources.resources}
+          onViewAll={goArchives}
+        />
+
+        <AncestorJourney peopleById={peopleById} onSelectPerson={selectPerson} />
       </header>
 
       <main className="main" ref={mainRef}>
@@ -270,11 +332,12 @@ function AppContent() {
         </AnimatePresence>
       </main>
 
-      <footer className="footer">
-        <span>Wixted Family Tree {data.meta.version}</span>
-        <span>Updated {data.meta.updated}</span>
-        <span>Curated for {data.meta.focus}</span>
-      </footer>
+      <SiteFooter
+        version={data.meta.version}
+        updated={data.meta.updated}
+        focus={data.meta.focus}
+        resourceCount={externalResources.resources.length}
+      />
 
       <PersonDetail
         person={selected}
@@ -282,76 +345,108 @@ function AppContent() {
         relatives={relatives}
         stories={data.stories ?? []}
         branches={data.branches}
+        heritage={data.heritage}
         onClose={closeDetail}
         onSelectRelative={selectPerson}
       />
 
       <style>{`
-        .app { min-height: 100vh; display: flex; flex-direction: column; }
-        .app-header { position: relative; }
+        .app { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); }
+        .app-hero { position: relative; }
         .search-row {
           display: flex; justify-content: center;
-          padding: 0 48px 20px;
+          padding: 0 24px 48px;
+          margin-top: -24px;
         }
         .orbit-section {
-          padding: 0 48px 24px; max-width: 1200px; margin: 0 auto; width: 100%;
+          padding: 0 24px 48px; max-width: 1280px; margin: 0 auto; width: 100%;
           overflow: hidden;
         }
         .orbit-header {
-          display: flex; justify-content: space-between; align-items: center;
-          margin-bottom: 8px;
+          display: flex; justify-content: space-between; align-items: flex-end;
+          margin-bottom: 20px;
         }
-        .orbit-header h2 {
-          font-family: var(--font-display); font-size: 20px; font-weight: 600;
+        .orbit-title {
+          font-size: clamp(24px, 3vw, 32px);
+          font-weight: 700;
+          letter-spacing: -0.03em;
+          margin-top: 8px;
+        }
+        .orbit-dismiss {
+          padding: 8px 16px;
+          font-size: 14px;
+          font-weight: 500;
           color: var(--text-secondary);
+          border-radius: var(--radius-pill);
+          border: 1px solid var(--border);
+          transition: background 0.2s, color 0.2s;
         }
-        .orbit-header button {
-          color: var(--text-tertiary); font-size: 14px; padding: 4px 8px;
-          border-radius: 6px; transition: background 0.15s;
+        .orbit-dismiss:hover {
+          background: var(--bg-elevated);
+          color: var(--text);
         }
-        .orbit-header button:hover { background: var(--bg-glass); }
         .show-orbit-btn {
-          display: block; margin: 0 auto 16px;
-          padding: 8px 20px; font-size: 13px; color: var(--accent);
-          border: 1px solid var(--border-accent); border-radius: 980px;
+          display: block; margin: 0 auto 32px;
+          padding: 12px 24px; font-size: 14px; font-weight: 600;
+          color: var(--accent-link);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-pill);
+          transition: background 0.2s;
         }
+        .show-orbit-btn:hover { background: rgba(41, 151, 255, 0.1); }
         .main {
-          flex: 1; padding: 0 48px 32px;
-          display: flex; flex-direction: column; gap: 16px;
+          flex: 1;
+          max-width: 1280px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 24px 48px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
         }
-        .view-content { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+        .view-content { flex: 1; display: flex; flex-direction: column; gap: 20px; }
         .main-header {
           display: flex; justify-content: space-between; align-items: flex-end;
+          padding-top: 8px;
         }
         .main-header h2 {
-          font-family: var(--font-display);
-          font-size: 28px; font-weight: 700;
+          font-size: clamp(28px, 4vw, 40px);
+          font-weight: 700;
+          letter-spacing: -0.03em;
         }
-        .branch-desc { font-size: 15px; color: var(--text-secondary); margin-top: 4px; }
+        .branch-desc { font-size: 17px; color: var(--text-secondary); margin-top: 6px; letter-spacing: -0.01em; }
         .view-toggle {
-          display: flex; gap: 2px; background: var(--bg-glass);
-          border-radius: 10px; padding: 3px; border: 1px solid var(--border);
+          display: flex; gap: 2px;
+          background: var(--bg-card);
+          border-radius: var(--radius-pill);
+          padding: 4px;
+          border: 1px solid var(--border);
         }
         .view-toggle button {
-          padding: 6px 16px; border-radius: 8px; font-size: 13px;
-          font-weight: 500; color: var(--text-secondary); transition: all 0.2s;
+          padding: 8px 20px;
+          border-radius: var(--radius-pill);
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--text-secondary);
+          transition: all 0.2s;
         }
         .view-toggle button.active {
-          background: var(--bg-elevated); color: var(--accent-bright);
-          box-shadow: var(--shadow-sm);
+          background: var(--bg-elevated);
+          color: var(--text);
         }
         .main-content { flex: 1; min-height: 0; }
         .footer {
-          display: flex; justify-content: center; gap: 24px;
-          padding: 24px; font-size: 12px; color: var(--text-tertiary);
+          display: flex; justify-content: center; flex-wrap: wrap; gap: 16px 32px;
+          padding: 32px 24px;
+          font-size: 12px;
+          color: var(--text-tertiary);
           border-top: 1px solid var(--border);
         }
         @media (max-width: 768px) {
-          .search-row { padding: 0 20px 16px; }
-          .orbit-section { padding: 0 20px 20px; }
-          .main { padding: 0 20px 24px; }
-          .main-header { flex-direction: column; align-items: flex-start; gap: 12px; }
-          .footer { flex-direction: column; align-items: center; gap: 8px; }
+          .search-row { padding: 0 16px 32px; }
+          .orbit-section { padding: 0 16px 32px; }
+          .main { padding: 0 16px 32px; }
+          .main-header { flex-direction: column; align-items: flex-start; gap: 16px; }
         }
       `}</style>
     </div>

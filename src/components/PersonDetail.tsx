@@ -5,10 +5,12 @@ import { getBranchLabel } from "../utils/people";
 import { getPersonAge, filterDisplayNotes } from "../utils/ages";
 import PersonAvatar from "./PersonAvatar";
 import PersonGallery from "./PersonGallery";
+import HeritageChart from "./HeritageChart";
 import externalResources from "../data/externalResources.json";
 import { useContributions } from "../context/ContributionsContext";
 import { useCloudAssets } from "../context/CloudAssetsContext";
 import { getPersonAssets } from "../utils/assets";
+import { getHeritageKey } from "../utils/heritage";
 
 interface Props {
   person: Person | null;
@@ -16,6 +18,7 @@ interface Props {
   relatives: Person[];
   stories: Story[];
   branches: Branch[];
+  heritage?: Record<string, Record<string, number>>;
   onClose: () => void;
   onSelectRelative: (p: Person) => void;
 }
@@ -26,6 +29,7 @@ export default function PersonDetail({
   relatives,
   stories,
   branches,
+  heritage,
   onClose,
   onSelectRelative,
 }: Props) {
@@ -56,6 +60,8 @@ export default function PersonDetail({
 
   const sortedCategories = NOTE_ORDER.filter((c) => noteGroups.has(c));
   const age = person ? getPersonAge(person) : null;
+  const heritageKey = person ? getHeritageKey(person) : null;
+  const personHeritage = heritageKey && heritage ? heritage[heritageKey] : null;
 
   function relativeRole(r: Person): string {
     if (!person) return "";
@@ -113,6 +119,12 @@ export default function PersonDetail({
                   <span className="detail-badge muted">{filterDisplayNotes(person.notes).length} notes</span>
                 )}
               </div>
+
+              {personHeritage && (
+                <section className="detail-section">
+                  <HeritageChart heritage={personHeritage} name={person.name.split(" ")[0]} />
+                </section>
+              )}
 
               {sortedCategories.length > 0 && (
                 <section className="detail-section">
@@ -203,22 +215,23 @@ export default function PersonDetail({
 
           <style>{`
             .detail-backdrop {
-              position: fixed; inset: 0; background: rgba(0,0,0,0.2);
-              backdrop-filter: blur(4px); z-index: 200;
+              position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+              backdrop-filter: blur(12px); z-index: 200;
             }
             .detail-panel {
               position: fixed; top: 0; right: 0; bottom: 0; width: 440px;
-              max-width: 90vw; background: var(--bg-elevated);
+              max-width: 90vw; background: var(--bg-surface);
+              border-left: 1px solid var(--border);
               box-shadow: var(--shadow-lg); z-index: 201;
               overflow-y: auto;
             }
+            .detail-close:hover { background: var(--bg-hover); }
             .detail-close {
               position: absolute; top: 16px; right: 16px; z-index: 1;
-              width: 32px; height: 32px; border-radius: 50%;
+              width: 36px; height: 36px; border-radius: 50%;
               display: flex; align-items: center; justify-content: center;
               color: var(--text-tertiary); transition: background 0.15s;
             }
-            .detail-close:hover { background: rgba(0,0,0,0.06); }
             .detail-content { padding: 48px 32px 32px; }
             .detail-top {
               display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px;
@@ -228,23 +241,23 @@ export default function PersonDetail({
               letter-spacing: 0.06em; color: var(--accent); margin-bottom: 8px;
             }
             .detail-content h2 {
-              font-size: 28px; font-weight: 700; letter-spacing: -0.02em;
-              line-height: 1.2; color: var(--text);
+              font-size: 28px; font-weight: 700; letter-spacing: -0.03em;
+              line-height: 1.15; color: var(--text);
             }
             .detail-dates {
               font-size: 17px; color: var(--text-secondary); margin-top: 8px;
             }
             .detail-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
             .detail-badge {
-              display: inline-block; padding: 4px 12px; border-radius: 980px;
-              background: rgba(201, 162, 39, 0.12); color: var(--accent);
+              display: inline-block; padding: 4px 12px; border-radius: var(--radius-pill);
+              background: rgba(255, 149, 0, 0.12); color: var(--accent);
               font-size: 13px; font-weight: 500;
             }
             .detail-badge.muted {
-              background: var(--bg-glass); color: var(--text-tertiary);
+              background: var(--bg-card); color: var(--text-tertiary);
             }
             .detail-badge.focus {
-              background: rgba(201, 162, 39, 0.15); color: var(--accent-bright);
+              background: rgba(255, 149, 0, 0.2); color: var(--accent-hover);
             }
             .detail-section { margin-top: 32px; }
             .detail-section h3 {
@@ -285,7 +298,7 @@ export default function PersonDetail({
               text-align: left; transition: border-color 0.15s, background 0.15s;
             }
             .relative-chip:hover {
-              border-color: rgba(0,113,227,0.3); background: rgba(0,113,227,0.04);
+              border-color: var(--border-strong); background: var(--bg-hover);
             }
             .relative-chip span:first-child { font-size: 14px; font-weight: 500; display: block; }
             .relative-branch {
@@ -303,8 +316,8 @@ export default function PersonDetail({
               transition: border-color 0.15s, background 0.15s;
             }
             .external-link:hover {
-              border-color: rgba(74, 158, 255, 0.35);
-              background: rgba(74, 158, 255, 0.06);
+              border-color: var(--border-strong);
+              background: var(--bg-hover);
             }
             .external-type {
               font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
