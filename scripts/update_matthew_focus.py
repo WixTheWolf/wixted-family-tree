@@ -21,7 +21,7 @@ KATIE_ID = "wixted-114-39"
 SEDONA_ID = "wixted-121-31"
 BRUCE_CHILD_ID = "wixted-121-33"
 
-SIBLING_IDS = [MATTHEW_ID, RYAN_ID, ALEX_ID, KATIE_ID]
+SIBLING_IDS = [MATTHEW_ID, RYAN_ID, ALEX_ID]
 
 FOCUS_IDS = [
     MATTHEW_ID, DANIEL_ID, MARY_JOAN_ID, RYAN_ID, KYLIE_ID, ALEX_ID, KATIE_ID,
@@ -121,11 +121,10 @@ def main():
         bad_parent["recordType"] = "location"
         bad_parent.pop("parentId", None)
 
-    # ── Siblings ──
+    # ── Siblings (Ryan & Alexander) ──
     for pid, bdate, loc in [
         (RYAN_ID, "1989-06-16", "Whittier, CA"),
         (ALEX_ID, "1992-11-20", "Orange, CA"),
-        (KATIE_ID, "1993-09-27", None),
     ]:
         p = by_id[pid]
         p["parentId"] = DANIEL_ID

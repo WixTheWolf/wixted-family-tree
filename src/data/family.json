@@ -2579,8 +2579,7 @@
       "childIds": [
         "wixted-114-29",
         "wixted-114-31",
-        "wixted-114-35",
-        "wixted-114-39"
+        "wixted-114-35"
       ],
       "age": "67.2 years"
     },
@@ -2619,8 +2618,7 @@
       "childIds": [
         "wixted-114-29",
         "wixted-114-31",
-        "wixted-114-35",
-        "wixted-114-39"
+        "wixted-114-35"
       ],
       "age": "64.9 years"
     },
@@ -3175,7 +3173,6 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-104-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3184,7 +3181,6 @@
         }
       ],
       "searchText": "katie alyson wixted 09/27/1993– wixted 09/27/93- 32.8 years",
-      "motherId": "wixted-104-33",
       "birthDate": "1993-09-27",
       "age": "32.8 years"
     },
