@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "focusPersonId": "wixted-114-29",
+    "title": "Matthew Scott Wixted — Wixted Line",
+    "summary": "From Tipperary blacksmiths and Lambeth, London to Corning & Rochester, New York — then California.",
+    "migrations": [
+      { "year": "1796", "from": "Lambeth, London", "to": "Corning area, NY", "label": "Thomas James Wixted arrives in America" },
+      { "year": "1963", "from": "Rochester, NY", "to": "Phoenix, AZ", "label": "Bruce & Evelyn Wixted relocate west" },
+      { "year": "1971", "from": "Phoenix, AZ", "to": "Orange County, CA", "label": "Family settles in Southern California" }
+    ]
+  },
+  "generations": [
+    {
+      "era": "California",
+      "eraColor": "#e8a849",
+      "personId": "wixted-114-29",
+      "name": "Matthew Scott Wixted",
+      "dates": "b. 10 Oct 1987",
+      "role": "You · Generation 10",
+      "location": "Whittier, California",
+      "detail": "Born in Whittier, CA. Center of this family tree — four siblings in the Kevin & Angela Wixted family."
+    },
+    {
+      "era": "California",
+      "eraColor": "#e8a849",
+      "personId": "wixted-104-37",
+      "name": "Kevin Paul Wixted",
+      "dates": "b. 14 Apr 1956",
+      "role": "Father",
+      "location": "Rochester, NY → California",
+      "detail": "Born in Rochester, New York. Married Angela Maxine Amor, 29 May 1993 (div. Dec 2005). Raised the Whittier, CA generation."
+    },
+    {
+      "era": "California",
+      "eraColor": "#e8a849",
+      "personId": "wixted-104-39",
+      "name": "Angela Maxine Amor",
+      "dates": "b. 17 Dec 1954",
+      "role": "Mother · Amor line",
+      "location": "Long Beach, California",
+      "detail": "Born in Long Beach, CA. The Amor family branch connects Matthew to California roots on his mother's side."
+    },
+    {
+      "era": "New York",
+      "eraColor": "#4a9eff",
+      "personId": "wixted-91-29",
+      "name": "Bruce John Wixted",
+      "dates": "1933 – 11 Mar 1995",
+      "role": "Grandfather · Wixted line",
+      "location": "Rochester, New York",
+      "detail": "Born in Rochester, NY. With wife Evelyn Ruth Jones, moved the family to Phoenix, AZ (1963) and Orange County, CA (1971). A librarian's son who carried the Wixted name west."
+    },
+    {
+      "era": "New York",
+      "eraColor": "#4a9eff",
+      "personId": "wixted-91-31",
+      "name": "Evelyn Ruth Jones",
+      "dates": "1932 – 15 Dec 1988",
+      "role": "Grandmother",
+      "location": "Rochester, New York",
+      "detail": "Rochester librarian (SSN 112-24-1440). Raised four children before the 1963 migration west with Bruce Wixted."
+    },
+    {
+      "era": "Corning",
+      "eraColor": "#7eb8a4",
+      "personId": "wixted-49-25",
+      "name": "Henry Joseph Wixted",
+      "dates": "1866 – 30 Dec 1942",
+      "role": "2nd great-grandfather",
+      "location": "Corning, Steuben County, NY",
+      "detail": "Corning-born Wixted. Erie Railroad era — a 1915 newspaper noted an electrical accident. Census records trace him from age 4 (1870) through 1880 in Corning."
+    },
+    {
+      "era": "Corning",
+      "eraColor": "#7eb8a4",
+      "personId": "wixted-30-29",
+      "name": "Henry Wixted",
+      "dates": "1823 – 1893",
+      "role": "3rd great-grandfather",
+      "location": "Corning, New York",
+      "detail": "Documented across Corning censuses 1855–1880. Son of Thomas James Wixted and Mary Hogan, who emigrated from Lambeth, London."
+    },
+    {
+      "era": "London",
+      "eraColor": "#b07aff",
+      "personId": "wixted-18-3",
+      "name": "Thomas James Wixted",
+      "dates": "1796 – Sep 1873",
+      "role": "Patriarch · 4th great-grandfather",
+      "location": "Lambeth, London → America",
+      "detail": "Born 1796, died Lambeth, London 1873. Workbook patriarch of the American Wixted line. Research links to Wickstead/Wixsted gentry of Cheshire, England."
+    },
+    {
+      "era": "London",
+      "eraColor": "#b07aff",
+      "personId": "wixted-18-1",
+      "name": "Mary Hogan",
+      "dates": "1800 – Sep 1873",
+      "role": "Patriarch's wife",
+      "location": "Lambeth, London",
+      "detail": "Irish-born wife of Thomas James Wixted. Together they bridge the London emigration and the Corning, NY settlement."
+    },
+    {
+      "era": "Ireland",
+      "eraColor": "#50c878",
+      "personId": null,
+      "name": "Wixted of Tipperary",
+      "dates": "17th c. – present",
+      "role": "Surname origins",
+      "location": "Newport & Englishtown, Co. Tipperary",
+      "detail": "The Wixted name is established in Ireland since the 1600s, chiefly Tipperary. WikiTree documents John Wixted's 1815 baptism at Englishtown — blacksmith trade passed father to son."
+    }
+  ],
+  "researchNotes": [
+    "Corning censuses (1855–1930) anchor the NY Wixted line across five generations.",
+    "Steuben County obituary index lists John L, Hazel M, Raymond J, and Vincent D Wixted — Corning & Bath burials.",
+    "Bruce & Evelyn's 1963 Rochester→Phoenix→Orange County migration explains Matthew's California roots.",
+    "Thomas James Wixted (1796) is the workbook gateway to English Wickstead pedigrees and Irish Tipperary records."
+  ]
+}
