@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 15,
+    "storyCount": 20,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2053,7 +2053,8 @@
       "name": "Rodney Henri Wixted",
       "dates": "03/14/1946",
       "notes": [
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Rod\""
       ],
       "col": 21,
       "row": 91,
@@ -2068,6 +2069,10 @@
         },
         {
           "category": "general",
+          "text": "Known as \"Rod\""
+        },
+        {
+          "category": "general",
           "text": "Age today is 80.3"
         }
       ],
@@ -2079,17 +2084,35 @@
       "id": "wixted-91-29",
       "name": "Bruce John Wixted",
       "dates": "04/03/33-03/11/95 (62)",
-      "notes": [],
+      "notes": [
+        "m. Evelyn Ruth Jones, 8 Dec 1951"
+      ],
       "col": 29,
       "row": 91,
       "branch": "wixted",
       "generation": 6,
       "parentId": "wixted-77-17",
       "recordType": "person",
-      "categorizedNotes": [],
-      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 93.2 years",
+      "categorizedNotes": [
+        {
+          "category": "marriage",
+          "text": "m. Evelyn Ruth Jones, 8 Dec 1951"
+        },
+        {
+          "category": "media",
+          "text": "Formal portrait as young man, circa 1950–1951"
+        }
+      ],
+      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted m. evelyn ruth jones, 8 dec 1951 93.2 years",
       "birthDate": "1933-04-03",
-      "age": "93.2 years"
+      "age": "93.2 years",
+      "spouseIds": [
+        "wixted-91-31"
+      ],
+      "childIds": [
+        "wixted-104-37",
+        "wixted-104-31"
+      ]
     },
     {
       "id": "wixted-91-31",
@@ -2098,7 +2121,8 @@
       "notes": [
         "08/27/32-12/15/88 (56)",
         "Librarian",
-        "Rochester,NY"
+        "Rochester,NY",
+        "m. Bruce John Wixted, 8 Dec 1951"
       ],
       "col": 31,
       "row": 91,
@@ -2117,11 +2141,18 @@
         {
           "category": "location",
           "text": "Rochester,NY"
+        },
+        {
+          "category": "marriage",
+          "text": "m. Bruce John Wixted, 8 Dec 1951"
         }
       ],
-      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny 93.8 years",
+      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny m. bruce john wixted, 8 dec 1951 93.8 years",
       "birthDate": "1932-08-27",
-      "age": "93.8 years"
+      "age": "93.8 years",
+      "spouseIds": [
+        "wixted-91-29"
+      ]
     },
     {
       "id": "wixted-91-43",
@@ -2388,7 +2419,8 @@
       "dates": "",
       "notes": [
         "05/15/52-",
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Bo\""
       ],
       "col": 21,
       "row": 104,
@@ -2404,6 +2436,10 @@
         {
           "category": "location",
           "text": "Rochester,NY"
+        },
+        {
+          "category": "general",
+          "text": "Known as \"Bo\""
         },
         {
           "category": "general",
@@ -2548,13 +2584,15 @@
       "dates": "",
       "notes": [
         "03/12/59-",
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Dan\""
       ],
       "col": 31,
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-31",
+      "parentId": "wixted-91-29",
+      "motherId": "wixted-91-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2568,6 +2606,14 @@
         {
           "category": "general",
           "text": "Age today is 67.3"
+        },
+        {
+          "category": "marriage",
+          "text": "Wedding photo with brother Kevin Paul Wixted (early 1980s)"
+        },
+        {
+          "category": "general",
+          "text": "Known as \"Dan\""
         }
       ],
       "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
@@ -2666,6 +2712,10 @@
         {
           "category": "marriage",
           "text": "m.May 29 1993 Div Dec 2005"
+        },
+        {
+          "category": "media",
+          "text": "Baby photo July 1956 with Rod and Bo"
         }
       ],
       "searchText": "kevin paul wixted 04/14/1956– wixted 04/14/56- rochester,ny m.may 29 1993 div dec 2005 m. angela maxine amor, may 29 1993 · div. dec 2005 70.2 years",
@@ -3009,6 +3059,10 @@
         {
           "category": "general",
           "text": "Age today is 38.7"
+        },
+        {
+          "category": "media",
+          "text": "Baseball photo with Uncle Dan & Alexander, mid-1990s (#22 Cubs)"
         }
       ],
       "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca 38.7 years",
@@ -3125,6 +3179,10 @@
         {
           "category": "general",
           "text": "Age today is 33.6"
+        },
+        {
+          "category": "media",
+          "text": "Baseball photo with Uncle Dan & Matthew, mid-1990s (#22 Padres)"
         }
       ],
       "searchText": "alexander daniel wixted 11/20/1992– wixted orange, ca 11/20/92- orange,ca 33.6 years",
@@ -16184,6 +16242,79 @@
     }
   },
   "stories": [
+    {
+      "id": "story-dan-matthew-alexander-baseball",
+      "title": "Dan, Matthew & Alexander — Baseball, Mid-1990s",
+      "body": "A composite print shows Daniel \"Dan\" Scott Wixted (#44, Fire Hawks hockey-style jersey) with his nephews Matthew Scott Wixted (#22, blue Cubs jersey, glasses) and Alexander Daniel Wixted (#22, navy Padres jersey) — front and back views so the WIXTED name is visible on all three uniforms. Southern California driveway, mid-1990s: Matthew would have been about 8–10 (b. Oct 1987) and Alexander about 3–5 (b. Nov 1992). Dan is Matthew's uncle (Kevin's brother); Matthew and Alexander are brothers, sons of Kevin Paul and Angela Maxine Wixted of the Whittier/Orange County generation.",
+      "personIds": [
+        "wixted-114-29",
+        "wixted-104-31",
+        "wixted-114-35",
+        "wixted-104-37"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "childhood"],
+      "source": "family-photo"
+    },
+    {
+      "id": "story-bruce-sr-young",
+      "title": "Bruce Wixted Sr. — Formal Portrait",
+      "body": "A close-up black-and-white portrait of Bruce John Wixted Sr. (b. 3 Apr 1933) in his late teens — short dark hair combed to the side, light suit jacket with wide lapels, white shirt, and patterned necktie. At the right edge of the frame, Evelyn Ruth Jones appears in formal dress with drop earrings, suggesting a wedding, dance, or similar occasion.\n\nTimeframe estimate: circa 1950–1951, possibly December 1951 when Bruce and Evelyn married (he was 18, she was 19). The wide-lapel suit and flash-lit indoor setting match late-1940s/early-1950s formal photography — earlier than the casual mid-1950s outdoor portrait and well before baby Kevin in July 1956. Bruce would become grandfather to Matthew Scott Wixted and carry the Wixted name west to Arizona (1963) and California (1971).",
+      "personIds": [
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-104-37",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "marriage"],
+      "source": "family-photo"
+    },
+    {
+      "id": "story-bruce-evelyn-young",
+      "title": "Bruce & Evelyn — Rochester, Mid-1950s",
+      "body": "Bruce John Wixted (b. 3 Apr 1933) and Evelyn Ruth Jones (b. 27 Aug 1932) pose together outdoors in a square-format black-and-white portrait. Evelyn wears a dark dress with a white sailor collar and carries a white handbag; Bruce wears a short-sleeved knit polo and pleated trousers with a crew cut — hallmarks of mid-1950s Rochester style.\n\nTimeframe estimate: circa 1954–1957, most likely 1955 or early 1956. The couple married 8 December 1951, when Bruce was 18 and Evelyn was 19. In this portrait they appear in their early twenties, a few years into marriage and before the July 1956 photo of baby Kevin. The square negative and outdoor railing setting match the same era as other family prints from the Rochester years, before Bruce and Evelyn moved the family to Phoenix, AZ in 1963 and Orange County, CA in 1971. Evelyn worked as a Rochester librarian; together they raised the Kevin & Daniel generation.",
+      "personIds": [
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-104-37",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "marriage", "migration"],
+      "source": "family-photo"
+    },
+    {
+      "id": "story-kevin-baby-jul56",
+      "title": "Baby Kevin — July 1956",
+      "body": "A square-format print stamped JUL • 56 on the margin captures Kevin Paul Wixted at about three months old — born 14 April 1956 in Rochester, NY. He lies swaddled in a patterned blanket in the foreground while two older boys look on: Rod (Rodney Henri Wixted) in a light suit jacket and Bo (Bruce Wixted) in a dark shirt, grinning at the camera. The scene is a Rochester living room with a 1950s television, horizontal blinds, and floral curtains — a flash-lit family moment from the year Matthew Scott Wixted's father was born.",
+      "personIds": [
+        "wixted-104-37",
+        "wixted-91-21",
+        "wixted-104-21",
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "childhood"],
+      "source": "family-photo"
+    },
+    {
+      "id": "story-daniel-wedding",
+      "title": "Daniel & Kevin — Wedding Day",
+      "body": "Daniel Scott Wixted (b. 12 Mar 1959, Rochester, NY) and his older brother Kevin Paul Wixted (b. 14 Apr 1956) on Daniel's wedding day, early 1980s. Daniel wears an all-white tuxedo with a floral boutonniere; Kevin stands beside him in a gray-blue tuxedo with bowtie, arm around his brother's shoulder. Both are sons of Bruce John Wixted and Evelyn Ruth Jones — the Rochester Wixted line that later migrated west to Arizona and California. Kevin is Matthew Scott Wixted's father; Daniel is Matthew's uncle.",
+      "personIds": [
+        "wixted-104-31",
+        "wixted-104-37",
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "marriage", "photo"],
+      "source": "family-photo"
+    },
     {
       "id": "story-matthew-ancestry",
       "title": "Matthew's Wixted Line — Ireland to California",

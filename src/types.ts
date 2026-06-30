@@ -125,6 +125,7 @@ export interface FamilyAsset {
   caption?: string;
   uploadedBy?: string;
   addedAt?: string;
+  photoDate?: string;
   source: "site" | "local" | "cloud";
   mimeType?: string;
 }

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { AssetType, FamilyAsset, Person } from "../types";
 import { useCloudAssets } from "../context/CloudAssetsContext";
 import { useContributions } from "../context/ContributionsContext";
-import { getAllAssets } from "../utils/assets";
+import { getAllAssets, sortAssetsByPhotoDate } from "../utils/assets";
 
 interface Props {
   people: Person[];
@@ -53,17 +53,18 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return allAssets.filter((a) => {
+    const list = allAssets.filter((a) => {
       if (typeFilter !== "all" && a.type !== typeFilter) return false;
       if (sourceFilter !== "all" && a.source !== sourceFilter) return false;
       if (!q) return true;
       const person = peopleById.get(a.personId);
-      const haystack = [a.title, a.caption, a.personName, person?.name]
+      const haystack = [a.title, a.caption, a.personName, person?.name, a.photoDate]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
       return haystack.includes(q);
     });
+    return sortAssetsByPhotoDate(list);
   }, [allAssets, typeFilter, sourceFilter, query, peopleById]);
 
   const stats = useMemo(() => ({
@@ -155,6 +156,7 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
                 </div>
                 <div className="gallery-card-body">
                   <strong>{asset.title}</strong>
+                  {asset.photoDate && <span className="gallery-date">{asset.photoDate}</span>}
                   {person && (
                     <span className="gallery-person" onClick={(e) => { e.stopPropagation(); onSelectPerson(person); }}>
                       {person.name}
@@ -196,6 +198,7 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
               )}
               <div className="lb-meta">
                 <strong>{lightbox.title}</strong>
+                {lightbox.photoDate && <p className="lb-date">Photo date: {lightbox.photoDate}</p>}
                 {lightbox.caption && <p>{lightbox.caption}</p>}
                 <div className="lb-actions">
                   {peopleById.get(lightbox.personId) && (
@@ -280,6 +283,10 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
         .gallery-card-body strong {
           display: block; font-size: 13px; line-height: 1.35; margin-bottom: 4px;
         }
+        .gallery-date {
+          display: block; font-size: 11px; color: var(--accent-gold, #e8a849);
+          font-variant-numeric: tabular-nums; margin-bottom: 4px;
+        }
         .gallery-person {
           display: block; font-size: 12px; color: var(--accent-secondary);
           margin-bottom: 4px; cursor: pointer;
@@ -315,6 +322,7 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
         .lb-doc a { color: var(--accent); font-size: 14px; }
         .lb-meta { padding: 16px 20px; border-top: 1px solid var(--border); }
         .lb-meta p { font-size: 13px; color: var(--text-secondary); margin-top: 6px; }
+        .lb-date { font-size: 12px; color: var(--accent-gold, #e8a849); margin-top: 4px; }
         .lb-actions {
           display: flex; justify-content: space-between; align-items: center;
           margin-top: 12px; font-size: 12px; color: var(--text-tertiary);
