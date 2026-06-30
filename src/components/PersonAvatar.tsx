@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import type { Person } from "../types";
 import { getPersonAge } from "../utils/ages";
 import { getPersonPhoto } from "../utils/assets";
+import { useCloudAssets } from "../context/CloudAssetsContext";
 import { useContributions } from "../context/ContributionsContext";
 
 const COLORS = [
@@ -26,10 +27,11 @@ interface Props {
 
 export default function PersonAvatar({ person, size = 48, className = "" }: Props) {
   const { contributions } = useContributions();
+  const { cloudAssets } = useCloudAssets();
 
   const photo = useMemo(
-    () => getPersonPhoto(person.id, contributions),
-    [person.id, contributions]
+    () => getPersonPhoto(person.id, contributions, cloudAssets),
+    [person.id, contributions, cloudAssets]
   );
 
   const colorIdx = useMemo(() => {

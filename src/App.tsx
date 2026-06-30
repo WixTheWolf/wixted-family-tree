@@ -16,9 +16,12 @@ import HeroSection from "./components/HeroSection";
 import FamilyOrbit from "./components/FamilyOrbit";
 import ArchivesView from "./components/ArchivesView";
 import ContributeView from "./components/ContributeView";
+import GalleryView from "./components/GalleryView";
 import MediaStrip from "./components/MediaStrip";
 import externalResources from "./data/externalResources.json";
+import { useCloudAssets } from "./context/CloudAssetsContext";
 import { useContributions } from "./context/ContributionsContext";
+import { getAllAssets } from "./utils/assets";
 import { getPeople, getBranchPeople, getRelatives, getInnerCircle } from "./utils/people";
 import { searchAll, findPersonById } from "./utils/search";
 
@@ -31,11 +34,16 @@ function AppContent() {
   const navigate = useNavigate();
   const { personId } = useParams();
   const { contributions } = useContributions();
+  const { cloudAssets } = useCloudAssets();
+  const galleryCount = useMemo(
+    () => getAllAssets(contributions, cloudAssets).length,
+    [contributions, cloudAssets]
+  );
   const mainRef = useRef<HTMLElement>(null);
   const [activeBranch, setActiveBranch] = useState("wixted");
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
-  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives" | "contribute">("explore");
+  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute">("explore");
   const [showOrbit, setShowOrbit] = useState(true);
 
   const selected = useMemo(
@@ -134,6 +142,7 @@ function AppContent() {
           onViewStories={() => { setAppView("stories"); scrollToExplore(); }}
           onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
           onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
+          onViewGallery={() => { setAppView("gallery"); scrollToExplore(); }}
         />
       </header>
 
@@ -146,6 +155,7 @@ function AppContent() {
             stories: data.stories?.length ?? 0,
             cemetery: data.cemetery.length,
             archives: externalResources.resources.length,
+            gallery: galleryCount,
             contributions: contributions.length,
           }}
         />
@@ -236,6 +246,10 @@ function AppContent() {
 
             {appView === "archives" && (
               <ArchivesView people={allPeople} onSelectPerson={selectPerson} />
+            )}
+
+            {appView === "gallery" && (
+              <GalleryView people={allPeople} onSelectPerson={selectPerson} />
             )}
 
             {appView === "contribute" && (

@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import type { AssetType, ContributionDraft } from "../types";
+import { useCloudAssets } from "./CloudAssetsContext";
 import {
   deleteContribution,
   exportContributionPackage,
@@ -25,10 +26,16 @@ interface AddContributionInput {
   file: File;
 }
 
+interface AddContributionResult {
+  destination: "cloud" | "local";
+  fallback?: boolean;
+}
+
 interface ContributionsContextValue {
   contributions: ContributionDraft[];
   loading: boolean;
-  addContribution: (input: AddContributionInput) => Promise<void>;
+  cloudAvailable: boolean;
+  addContribution: (input: AddContributionInput) => Promise<AddContributionResult>;
   removeContribution: (id: string) => Promise<void>;
   exportAll: () => Promise<void>;
   refresh: () => Promise<void>;
@@ -37,6 +44,7 @@ interface ContributionsContextValue {
 const ContributionsContext = createContext<ContributionsContextValue | null>(null);
 
 export function ContributionsProvider({ children }: { children: ReactNode }) {
+  const { uploadCloud, cloudAvailable } = useCloudAssets();
   const [contributions, setContributions] = useState<ContributionDraft[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -54,7 +62,14 @@ export function ContributionsProvider({ children }: { children: ReactNode }) {
   }, [refresh]);
 
   const addContribution = useCallback(
-    async (input: AddContributionInput) => {
+    async (input: AddContributionInput): Promise<AddContributionResult> => {
+      if (cloudAvailable) {
+        const result = await uploadCloud(input);
+        if (result.ok) {
+          return { destination: "cloud" };
+        }
+      }
+
       const draft: ContributionDraft = {
         id: `local-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
         personId: input.personId,
@@ -70,8 +85,9 @@ export function ContributionsProvider({ children }: { children: ReactNode }) {
       };
       await saveContribution(draft);
       await refresh();
+      return { destination: "local", fallback: cloudAvailable };
     },
-    [refresh]
+    [cloudAvailable, uploadCloud, refresh]
   );
 
   const removeContribution = useCallback(
@@ -89,8 +105,16 @@ export function ContributionsProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo(
-    () => ({ contributions, loading, addContribution, removeContribution, exportAll, refresh }),
-    [contributions, loading, addContribution, removeContribution, exportAll, refresh]
+    () => ({
+      contributions,
+      loading,
+      cloudAvailable,
+      addContribution,
+      removeContribution,
+      exportAll,
+      refresh,
+    }),
+    [contributions, loading, cloudAvailable, addContribution, removeContribution, exportAll, refresh]
   );
 
   return (
