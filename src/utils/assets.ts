@@ -51,12 +51,28 @@ export function contributionToAsset(d: ContributionDraft): FamilyAsset {
   };
 }
 
+function dedupeAssets(items: FamilyAsset[]): FamilyAsset[] {
+  const seen = new Set<string>();
+  return items.filter((a) => {
+    const key = `${a.personId}:${a.url}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export function getPersonPhoto(
   personId: string,
-  localContributions: ContributionDraft[] = []
+  localContributions: ContributionDraft[] = [],
+  cloudAssets: FamilyAsset[] = []
 ): string | null {
   const profile = assets.people[personId]?.photo;
   if (profile) return profile;
+
+  const cloudPhoto = cloudAssets.find(
+    (a) => a.personId === personId && a.type === "photo"
+  );
+  if (cloudPhoto) return cloudPhoto.url;
 
   const localPhoto = localContributions.find(
     (c) => c.personId === personId && c.type === "photo"
@@ -71,18 +87,20 @@ export function getPersonPhoto(
 
 export function getPersonAssets(
   personId: string,
-  localContributions: ContributionDraft[] = []
+  localContributions: ContributionDraft[] = [],
+  cloudAssets: FamilyAsset[] = []
 ): FamilyAsset[] {
   const staticForPerson = getStaticGallery().filter((a) => a.personId === personId);
+  const cloudForPerson = cloudAssets.filter((a) => a.personId === personId);
   const localForPerson = localContributions
     .filter((c) => c.personId === personId)
     .map(contributionToAsset);
 
   const profilePhoto = assets.people[personId]?.photo;
-  const hasProfileInGallery = staticForPerson.some((a) => a.url === profilePhoto);
+  const merged = dedupeAssets([...staticForPerson, ...cloudForPerson, ...localForPerson]);
 
-  const merged = [...staticForPerson, ...localForPerson];
-  if (profilePhoto && !hasProfileInGallery) {
+  const hasProfile = merged.some((a) => a.url === profilePhoto);
+  if (profilePhoto && !hasProfile) {
     merged.unshift({
       id: `profile-${personId}`,
       personId,
@@ -96,13 +114,19 @@ export function getPersonAssets(
   return merged;
 }
 
-export function getAllAssets(localContributions: ContributionDraft[] = []): FamilyAsset[] {
+export function getAllAssets(
+  localContributions: ContributionDraft[] = [],
+  cloudAssets: FamilyAsset[] = []
+): FamilyAsset[] {
   const personIds = new Set<string>();
   getStaticGallery().forEach((a) => personIds.add(a.personId));
+  cloudAssets.forEach((a) => personIds.add(a.personId));
   localContributions.forEach((c) => personIds.add(c.personId));
   Object.keys(assets.people).forEach((id) => personIds.add(id));
 
-  return [...personIds].flatMap((id) => getPersonAssets(id, localContributions));
+  return dedupeAssets(
+    [...personIds].flatMap((id) => getPersonAssets(id, localContributions, cloudAssets))
+  );
 }
 
 export { assets as staticAssetsManifest };

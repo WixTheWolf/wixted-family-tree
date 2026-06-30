@@ -1,12 +1,20 @@
 interface Props {
-  active: "explore" | "directory" | "stories" | "cemetery" | "archives" | "contribute";
-  onChange: (view: "explore" | "directory" | "stories" | "cemetery" | "archives" | "contribute") => void;
-  counts: { people: number; stories: number; cemetery: number; archives: number; contributions?: number };
+  active: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute";
+  onChange: (view: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute") => void;
+  counts: {
+    people: number;
+    stories: number;
+    cemetery: number;
+    archives: number;
+    gallery?: number;
+    contributions?: number;
+  };
 }
 
 const TABS = [
   { id: "explore" as const, label: "Family Tree", icon: "🌳" },
   { id: "directory" as const, label: "Directory", icon: "📖" },
+  { id: "gallery" as const, label: "Gallery", icon: "🖼️" },
   { id: "stories" as const, label: "Stories", icon: "📜" },
   { id: "cemetery" as const, label: "Cemetery", icon: "🪦" },
   { id: "archives" as const, label: "Archives", icon: "🔗" },
@@ -19,6 +27,7 @@ export default function AppNav({ active, onChange, counts }: Props) {
     if (id === "stories") return counts.stories;
     if (id === "cemetery") return counts.cemetery;
     if (id === "archives") return counts.archives;
+    if (id === "gallery") return counts.gallery ?? null;
     if (id === "contribute") return counts.contributions ?? null;
     return null;
   };

@@ -38,6 +38,12 @@
       "icon": "🔗"
     },
     {
+      "title": "Family Gallery",
+      "desc": "Browse all photos & documents — site, cloud, and local uploads",
+      "type": "photo",
+      "icon": "🖼️"
+    },
+    {
       "title": "Upload Family Assets",
       "desc": "Add photos, headstones, obituaries & documents — link to any person",
       "type": "photo",

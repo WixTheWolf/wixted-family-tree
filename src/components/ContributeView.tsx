@@ -2,6 +2,7 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import type { AssetType, Person } from "../types";
 import { useContributions } from "../context/ContributionsContext";
+import { useCloudAssets } from "../context/CloudAssetsContext";
 import { getAllAssets, getStaticGallery } from "../utils/assets";
 import { suggestedFileName } from "../utils/contributionStore";
 import PersonAvatar from "./PersonAvatar";
@@ -21,8 +22,9 @@ const ASSET_TYPES: { id: AssetType; label: string; icon: string }[] = [
 ];
 
 export default function ContributeView({ people, onSelectPerson }: Props) {
-  const { contributions, loading, addContribution, removeContribution, exportAll } =
+  const { contributions, loading, cloudAvailable, addContribution, removeContribution, exportAll } =
     useContributions();
+  const { cloudAssets } = useCloudAssets();
   const fileRef = useRef<HTMLInputElement>(null);
   const [dragOver, setDragOver] = useState(false);
   const [personQuery, setPersonQuery] = useState("");
@@ -49,7 +51,7 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
   }, [people, personQuery]);
 
   const siteGalleryCount = getStaticGallery().length;
-  const allAssets = getAllAssets(contributions);
+  const allAssets = getAllAssets(contributions, cloudAssets);
 
   const resetForm = useCallback(() => {
     setPendingFile(null);
@@ -91,7 +93,7 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
     setSubmitting(true);
     setMessage(null);
     try {
-      await addContribution({
+      const result = await addContribution({
         personId: selectedPerson.id,
         personName: selectedPerson.name,
         title: title.trim() || pendingFile.name,
@@ -100,7 +102,14 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
         uploadedBy,
         file: pendingFile,
       });
-      setMessage(`Saved "${title || pendingFile.name}" for ${selectedPerson.name} — visible in this browser.`);
+      const label = title || pendingFile.name;
+      if (result.destination === "cloud") {
+        setMessage(`Published "${label}" for ${selectedPerson.name} — live for everyone in the Gallery.`);
+      } else if (result.fallback) {
+        setMessage(`Cloud upload unavailable — saved "${label}" locally. Export or enable Vercel Blob to publish.`);
+      } else {
+        setMessage(`Saved "${label}" for ${selectedPerson.name} — visible in this browser.`);
+      }
       resetForm();
     } catch {
       setMessage("Could not save the file. Try a smaller image or different browser.");
@@ -115,14 +124,18 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
         <div>
           <h2>Contribute Photos & Documents</h2>
           <p>
-            Upload family photos, headstones, obituaries, and research documents. Files save locally
-            in your browser instantly, then export a package to add permanently to the site.
+            Upload family photos, headstones, obituaries, and research documents.
+            {cloudAvailable
+              ? " Cloud upload is active — files publish live to the Gallery for everyone."
+              : " Files save locally in your browser; export a package or enable Vercel Blob to publish live."}
           </p>
         </div>
         <div className="contribute-stats">
           <span>{siteGalleryCount} on site</span>
+          <span>{cloudAssets.length} cloud</span>
           <span>{contributions.length} local</span>
-          <span>{allAssets.length} total visible</span>
+          <span>{allAssets.length} total</span>
+          {cloudAvailable && <span className="cloud-live">☁️ Live</span>}
         </div>
       </div>
 
@@ -238,7 +251,7 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
             disabled={submitting || !selectedPerson || !pendingFile}
             onClick={onSubmit}
           >
-            {submitting ? "Saving…" : "Save to this browser"}
+            {submitting ? "Uploading…" : cloudAvailable ? "Publish to Gallery" : "Save to this browser"}
           </button>
         </section>
 
@@ -322,6 +335,10 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
         .contribute-stats span {
           padding: 4px 10px; border-radius: 6px;
           background: var(--bg-glass); border: 1px solid var(--border);
+        }
+        .cloud-live {
+          color: var(--accent-secondary) !important;
+          border-color: rgba(74, 158, 255, 0.35) !important;
         }
         .contribute-layout {
           display: grid; grid-template-columns: 1fr 340px; gap: 20px; align-items: start;

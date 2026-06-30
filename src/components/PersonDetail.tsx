@@ -7,6 +7,7 @@ import PersonAvatar from "./PersonAvatar";
 import PersonGallery from "./PersonGallery";
 import externalResources from "../data/externalResources.json";
 import { useContributions } from "../context/ContributionsContext";
+import { useCloudAssets } from "../context/CloudAssetsContext";
 import { getPersonAssets } from "../utils/assets";
 
 interface Props {
@@ -29,6 +30,7 @@ export default function PersonDetail({
   onSelectRelative,
 }: Props) {
   const { contributions } = useContributions();
+  const { cloudAssets } = useCloudAssets();
 
   const cemMatch = person
     ? cemetery.filter((c) => {
@@ -46,7 +48,7 @@ export default function PersonDetail({
     ? (externalResources.personLinks as Record<string, { label: string; url: string; type: string }[]>)[person.id] ?? []
     : [];
 
-  const personAssets = person ? getPersonAssets(person.id, contributions) : [];
+  const personAssets = person ? getPersonAssets(person.id, contributions, cloudAssets) : [];
 
   const noteGroups = person?.categorizedNotes
     ? groupNotes(person.categorizedNotes)

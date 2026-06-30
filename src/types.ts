@@ -125,7 +125,7 @@ export interface FamilyAsset {
   caption?: string;
   uploadedBy?: string;
   addedAt?: string;
-  source: "site" | "local";
+  source: "site" | "local" | "cloud";
   mimeType?: string;
 }
 
