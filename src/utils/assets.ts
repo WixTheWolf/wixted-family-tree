@@ -12,6 +12,7 @@ interface StaticGalleryEntry {
   caption?: string;
   uploadedBy?: string;
   addedAt?: string;
+  photoDate?: string;
   source?: string;
   status?: string;
 }
@@ -43,8 +44,17 @@ export function getStaticGallery(): FamilyAsset[] {
       caption: g.caption,
       uploadedBy: g.uploadedBy,
       addedAt: g.addedAt,
+      photoDate: g.photoDate,
       source: "site",
     }));
+}
+
+export function sortAssetsByPhotoDate(items: FamilyAsset[]): FamilyAsset[] {
+  return [...items].sort((a, b) => {
+    const da = a.photoDate ?? a.addedAt ?? "";
+    const db = b.photoDate ?? b.addedAt ?? "";
+    return db.localeCompare(da);
+  });
 }
 
 export function getPendingUploads(): Array<{
@@ -154,8 +164,10 @@ export function getAllAssets(
   localContributions.forEach((c) => personIds.add(c.personId));
   Object.keys(assets.people).forEach((id) => personIds.add(id));
 
-  return dedupeAssets(
-    [...personIds].flatMap((id) => getPersonAssets(id, localContributions, cloudAssets))
+  return sortAssetsByPhotoDate(
+    dedupeAssets(
+      [...personIds].flatMap((id) => getPersonAssets(id, localContributions, cloudAssets))
+    )
   );
 }
 

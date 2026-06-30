@@ -80,6 +80,7 @@ export default function PersonGallery({ assets }: Props) {
                 <div className="gallery-meta-row">
                   <span>{lightbox.type}</span>
                   {lightbox.uploadedBy && <span>by {lightbox.uploadedBy}</span>}
+                  {lightbox.photoDate && <span>{lightbox.photoDate}</span>}
                   {lightbox.addedAt && <span>{lightbox.addedAt}</span>}
                   {lightbox.source === "local" && <span className="local-tag">Saved in this browser</span>}
                 </div>
