@@ -104,32 +104,30 @@ export default function HeroSection({
           className="hero-cta"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
         >
           <button type="button" className="btn-primary" onClick={onExplore}>
-            Explore the tree
+            Open family tree
           </button>
           <button type="button" className="btn-secondary" onClick={onGallery}>
-            View gallery →
+            Gallery
           </button>
         </motion.div>
 
         <motion.div
-          className="hero-stats"
+          className="hero-meta"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.45, duration: 0.8 }}
+          transition={{ delay: 0.35, duration: 0.7 }}
         >
           {[
-            { label: "Patriarch", value: "1796", sub: "Thomas James Wixted" },
-            { label: "Migration", value: "1963", sub: "Rochester → Phoenix" },
-            { label: "Home", value: "CA", sub: "Whittier generation" },
-          ].map((stat) => (
-            <div key={stat.label} className="hero-stat">
-              <span className="hero-stat-value">{stat.value}</span>
-              <span className="hero-stat-label">{stat.label}</span>
-              <span className="hero-stat-sub">{stat.sub}</span>
-            </div>
+            { label: "Relatives", value: String(personCount) },
+            { label: "Stories", value: String(storyCount) },
+            { label: "Photos", value: String(galleryCount) },
+          ].map((chip) => (
+            <span key={chip.label} className="hero-chip">
+              <strong>{chip.value}</strong> {chip.label}
+            </span>
           ))}
         </motion.div>
       </div>
@@ -141,13 +139,13 @@ export default function HeroSection({
       <style>{`
         .hero {
           position: relative;
-          min-height: calc(100vh - var(--header-h));
+          min-height: min(88vh, 820px);
           margin-top: var(--header-h);
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 48px 24px 80px;
+          padding: 56px 24px 48px;
           overflow: hidden;
         }
         .hero-photo {
@@ -212,7 +210,7 @@ export default function HeroSection({
           line-height: 1.02;
         }
         .hero-accent {
-          background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+          background: linear-gradient(135deg, var(--text) 0%, var(--accent-link) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -235,49 +233,28 @@ export default function HeroSection({
         .hero-cta {
           display: flex;
           flex-wrap: wrap;
-          gap: 12px 20px;
+          gap: 12px 16px;
           justify-content: center;
-          margin-bottom: 56px;
+          margin-bottom: 28px;
         }
-        .hero-stats {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 16px;
-          max-width: 720px;
-          margin: 0 auto;
+        .hero-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: center;
         }
-        .hero-stat {
-          padding: 20px 16px;
-          background: var(--bg-card);
-          border: 1px solid var(--border);
-          border-radius: var(--radius);
-          text-align: center;
-          transition: transform 0.3s var(--ease-out-expo), border-color 0.2s;
-        }
-        .hero-stat:hover {
-          transform: translateY(-4px);
-          border-color: var(--border-strong);
-        }
-        .hero-stat-value {
-          display: block;
-          font-size: 28px;
-          font-weight: 700;
-          letter-spacing: -0.03em;
-          margin-bottom: 4px;
-        }
-        .hero-stat-label {
-          display: block;
-          font-size: 11px;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0.06em;
-          color: var(--text-tertiary);
-        }
-        .hero-stat-sub {
-          display: block;
-          font-size: 12px;
+        .hero-chip {
+          padding: 8px 14px;
+          font-size: 13px;
           color: var(--text-secondary);
-          margin-top: 6px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-pill);
+        }
+        .hero-chip strong {
+          color: var(--text);
+          font-weight: 600;
+          margin-right: 4px;
         }
         .hero-scroll {
           position: absolute;
@@ -294,9 +271,9 @@ export default function HeroSection({
           animation: scroll-hint 2s ease-in-out infinite;
         }
         @media (max-width: 640px) {
-          .hero-stats { grid-template-columns: 1fr; }
           .hero-dot { display: none; }
           .hero-tagline span { display: block; margin: 4px 0; }
+          .hero { min-height: auto; padding-bottom: 32px; }
         }
       `}</style>
     </section>

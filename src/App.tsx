@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, useNavigate, useParams } from "react-rout
 import { motion, AnimatePresence } from "framer-motion";
 import familyData from "./data/family.json";
 import type { Person, FamilyData, SearchResult } from "./types";
-import SearchBar from "./components/SearchBar";
 import BranchNav from "./components/BranchNav";
 import TreeView from "./components/TreeView";
 import GridView from "./components/GridView";
@@ -19,7 +18,8 @@ import ContributeView from "./components/ContributeView";
 import GalleryView from "./components/GalleryView";
 import SiteHeader from "./components/SiteHeader";
 import AncestorJourney from "./components/AncestorJourney";
-import MediaStrip from "./components/MediaStrip";
+import QuickAccessHub from "./components/QuickAccessHub";
+import type { AppView } from "./components/QuickAccessHub";
 import FeaturedStories from "./components/FeaturedStories";
 import HeraldrySection from "./components/HeraldrySection";
 import HeritageOverview from "./components/HeritageOverview";
@@ -52,7 +52,7 @@ function AppContent() {
   const [activeBranch, setActiveBranch] = useState("wixted");
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
-  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute">("explore");
+  const [appView, setAppView] = useState<AppView>("explore");
   const [showOrbit, setShowOrbit] = useState(true);
 
   const peopleById = useMemo(
@@ -102,24 +102,23 @@ function AppContent() {
   const closeDetail = useCallback(() => navigate("/"), [navigate]);
   const scrollToExplore = () => mainRef.current?.scrollIntoView({ behavior: "smooth" });
 
+  const navigateTo = useCallback((view: AppView) => {
+    setAppView(view);
+    scrollToExplore();
+  }, []);
+
+  const goHome = useCallback(() => {
+    closeDetail();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [closeDetail]);
+
   const activeBranchMeta = data.branches.find((b) => b.id === activeBranch);
   const hasTree = activeBranch === "wixted";
   const focusLine = data.meta.focusLine;
 
-  const goGallery = () => {
-    setAppView("gallery");
-    scrollToExplore();
-  };
-
-  const goStories = () => {
-    setAppView("stories");
-    scrollToExplore();
-  };
-
-  const goArchives = () => {
-    setAppView("archives");
-    scrollToExplore();
-  };
+  const goGallery = () => navigateTo("gallery");
+  const goStories = () => navigateTo("stories");
+  const goArchives = () => navigateTo("archives");
 
   const handleFeaturedStory = useCallback(
     (story: Story) => {
@@ -137,10 +136,14 @@ function AppContent() {
   return (
     <div className="app">
       <SiteHeader
-        onExplore={scrollToExplore}
-        onGallery={goGallery}
-        onStories={goStories}
-        onArchives={goArchives}
+        activeView={appView}
+        onNavigate={navigateTo}
+        onHome={goHome}
+        query={searchQuery}
+        onQueryChange={setSearchQuery}
+        searchResults={searchResults}
+        onSearchSelect={handleSearchSelect}
+        onSearchClose={() => setSearchQuery("")}
       />
 
       <header className="app-hero">
@@ -153,15 +156,21 @@ function AppContent() {
           onGallery={goGallery}
         />
 
-        <div className="search-row">
-          <SearchBar
-            query={searchQuery}
-            onQueryChange={setSearchQuery}
-            results={searchResults}
-            onSelect={handleSearchSelect}
-            onClose={() => setSearchQuery("")}
-          />
-        </div>
+        <QuickAccessHub
+          counts={{
+            people: data.meta.personCount ?? allPeople.length,
+            stories: data.stories?.length ?? 0,
+            cemetery: data.cemetery.length,
+            archives: externalResources.resources.length,
+            gallery: galleryCount,
+            contributions: contributions.length,
+          }}
+          onNavigate={navigateTo}
+          onInnerCircle={() => {
+            setShowOrbit(true);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        />
 
         <AnimatePresence>
           {showOrbit && (
@@ -191,14 +200,6 @@ function AppContent() {
           </button>
         )}
 
-        <MediaStrip
-          onViewCemetery={() => { setAppView("cemetery"); scrollToExplore(); }}
-          onViewStories={goStories}
-          onViewArchives={goArchives}
-          onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
-          onViewGallery={goGallery}
-        />
-
         <HeritageOverview
           heritage={matthewHeritage}
           note="English, Irish, Swedish, and German through the Wixted and Jones lines. No Mexican component — that enters through Uncle Kevin's ex-wife Angela's Amor/Montez line (cousin Katie's chart)."
@@ -222,7 +223,12 @@ function AppContent() {
         <AncestorJourney peopleById={peopleById} onSelectPerson={selectPerson} />
       </header>
 
-      <main className="main" ref={mainRef}>
+      <main className="main" ref={mainRef} id="explore">
+        <div className="main-intro">
+          <h2 className="main-intro-title">Family tree</h2>
+          <p className="main-intro-lede">Select a branch, then tap any person for details.</p>
+        </div>
+
         <AppNav
           active={appView}
           onChange={setAppView}
@@ -356,13 +362,8 @@ function AppContent() {
       <style>{`
         .app { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); }
         .app-hero { position: relative; }
-        .search-row {
-          display: flex; justify-content: center;
-          padding: 0 24px 48px;
-          margin-top: -24px;
-        }
         .orbit-section {
-          padding: 0 24px 48px; max-width: 1280px; margin: 0 auto; width: 100%;
+          padding: 0 24px 56px; max-width: var(--content-max); margin: 0 auto; width: 100%;
           overflow: hidden;
         }
         .orbit-header {
@@ -399,13 +400,25 @@ function AppContent() {
         .show-orbit-btn:hover { background: rgba(41, 151, 255, 0.1); }
         .main {
           flex: 1;
-          max-width: 1280px;
+          max-width: var(--content-max);
           width: 100%;
           margin: 0 auto;
-          padding: 0 24px 48px;
+          padding: 48px 24px 64px;
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 28px;
+          border-top: 1px solid var(--border);
+        }
+        .main-intro { padding-top: 8px; }
+        .main-intro-title {
+          font-size: clamp(28px, 4vw, 36px);
+          font-weight: 600;
+          letter-spacing: -0.03em;
+        }
+        .main-intro-lede {
+          margin-top: 8px;
+          font-size: 17px;
+          color: var(--text-secondary);
         }
         .view-content { flex: 1; display: flex; flex-direction: column; gap: 20px; }
         .main-header {
@@ -446,9 +459,8 @@ function AppContent() {
           border-top: 1px solid var(--border);
         }
         @media (max-width: 768px) {
-          .search-row { padding: 0 16px 32px; }
-          .orbit-section { padding: 0 16px 32px; }
-          .main { padding: 0 16px 32px; }
+          .orbit-section { padding: 0 16px 40px; }
+          .main { padding: 40px 16px 48px; }
           .main-header { flex-direction: column; align-items: flex-start; gap: 16px; }
         }
       `}</style>

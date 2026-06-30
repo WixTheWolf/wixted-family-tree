@@ -935,9 +935,19 @@
         "label": "Whittier Area Genealogical Society",
         "url": "https://wagswhittier.org/",
         "type": "research"
+      },
+      {
+        "label": "Whittier Area Genealogical Society",
+        "url": "https://wagswhittier.org/",
+        "type": "research"
       }
     ],
     "wixted-104-33": [
+      {
+        "label": "LA County marriage records (1986)",
+        "url": "https://apps.lavote.net/BDM",
+        "type": "research"
+      },
       {
         "label": "LA County marriage records (1986)",
         "url": "https://apps.lavote.net/BDM",

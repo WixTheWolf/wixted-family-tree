@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import type { AppView } from "./QuickAccessHub";
 
 interface Props {
-  active: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute";
-  onChange: (view: "explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute") => void;
+  active: AppView;
+  onChange: (view: AppView) => void;
   counts: {
     people: number;
     stories: number;
@@ -13,19 +14,19 @@ interface Props {
   };
 }
 
-const TABS = [
-  { id: "explore" as const, label: "Tree" },
-  { id: "directory" as const, label: "Directory" },
-  { id: "gallery" as const, label: "Gallery" },
-  { id: "stories" as const, label: "Stories" },
-  { id: "cemetery" as const, label: "Cemetery" },
-  { id: "archives" as const, label: "Archives" },
-  { id: "contribute" as const, label: "Add photos" },
+const TABS: { id: AppView; label: string }[] = [
+  { id: "explore", label: "Tree" },
+  { id: "directory", label: "Directory" },
+  { id: "gallery", label: "Gallery" },
+  { id: "stories", label: "Stories" },
+  { id: "cemetery", label: "Cemetery" },
+  { id: "archives", label: "Archives" },
+  { id: "contribute", label: "Add photos" },
 ];
 
 export default function AppNav({ active, onChange, counts }: Props) {
-  const countFor = (id: string) => {
-    if (id === "directory") return counts.people;
+  const countFor = (id: AppView) => {
+    if (id === "directory" || id === "explore") return counts.people;
     if (id === "stories") return counts.stories;
     if (id === "cemetery") return counts.cemetery;
     if (id === "archives") return counts.archives;
@@ -35,7 +36,7 @@ export default function AppNav({ active, onChange, counts }: Props) {
   };
 
   return (
-    <nav className="app-nav" aria-label="Main sections">
+    <nav className="app-nav" aria-label="Section tabs">
       <div className="app-nav-scroll">
         {TABS.map((tab) => {
           const isActive = active === tab.id;
@@ -51,7 +52,7 @@ export default function AppNav({ active, onChange, counts }: Props) {
                 <motion.span
                   className="app-nav-pill"
                   layoutId="nav-pill"
-                  transition={{ type: "spring", stiffness: 500, damping: 38 }}
+                  transition={{ type: "spring", stiffness: 520, damping: 40 }}
                 />
               )}
               <span className="app-nav-label">{tab.label}</span>
@@ -66,34 +67,33 @@ export default function AppNav({ active, onChange, counts }: Props) {
       <style>{`
         .app-nav {
           position: sticky;
-          top: var(--header-h);
-          z-index: 100;
-          background: rgba(0, 0, 0, 0.85);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: saturate(180%) blur(20px);
-          border-bottom: 1px solid var(--border);
-          margin: 0 -24px;
-          padding: 0 24px;
+          top: calc(var(--header-h) + 8px);
+          z-index: 90;
+          background: rgba(0, 0, 0, 0.72);
+          backdrop-filter: saturate(180%) blur(16px);
+          -webkit-backdrop-filter: saturate(180%) blur(16px);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-pill);
+          margin: 0 -4px;
+          padding: 4px;
         }
         .app-nav-scroll {
           display: flex;
-          gap: 4px;
+          gap: 2px;
           overflow-x: auto;
           scroll-snap-type: x mandatory;
           scrollbar-width: none;
-          max-width: 1280px;
-          margin: 0 auto;
-          padding: 10px 0;
+          padding: 2px;
         }
         .app-nav-scroll::-webkit-scrollbar { display: none; }
         .app-nav-tab {
           position: relative;
           display: flex;
           align-items: center;
-          gap: 8px;
-          padding: 10px 18px;
+          gap: 6px;
+          padding: 10px 16px;
           border-radius: var(--radius-pill);
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
           color: var(--text-secondary);
           white-space: nowrap;
@@ -106,19 +106,18 @@ export default function AppNav({ active, onChange, counts }: Props) {
           position: absolute;
           inset: 0;
           background: var(--bg-elevated);
-          border: 1px solid var(--border-strong);
           border-radius: var(--radius-pill);
           z-index: -1;
         }
         .app-nav-label { position: relative; }
         .app-nav-count {
           position: relative;
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 600;
-          padding: 2px 8px;
+          padding: 2px 7px;
           border-radius: var(--radius-pill);
-          background: rgba(255, 149, 0, 0.15);
-          color: var(--accent);
+          background: rgba(41, 151, 255, 0.15);
+          color: var(--accent-link);
         }
       `}</style>
     </nav>

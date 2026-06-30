@@ -8,6 +8,7 @@ interface Props {
   results: SearchResult[];
   onSelect: (r: SearchResult) => void;
   onClose: () => void;
+  variant?: "default" | "header";
 }
 
 const TYPE_LABELS: Record<string, string> = {
@@ -17,7 +18,7 @@ const TYPE_LABELS: Record<string, string> = {
   location: "Location",
 };
 
-export default function SearchBar({ query, onQueryChange, results, onSelect, onClose }: Props) {
+export default function SearchBar({ query, onQueryChange, results, onSelect, onClose, variant = "default" }: Props) {
   const listRef = useRef<HTMLDivElement>(null);
   const activeIndex = useRef(0);
 
@@ -44,7 +45,7 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
   };
 
   return (
-    <div className="search-wrapper">
+    <div className={`search-wrapper ${variant === "header" ? "search-wrapper--header" : ""}`}>
       <div className="search-bar">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="11" cy="11" r="8" />
@@ -103,6 +104,11 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
 
       <style>{`
         .search-wrapper { position: relative; width: 100%; max-width: 480px; }
+        .search-wrapper--header { max-width: none; }
+        .search-wrapper--header .search-bar {
+          background: var(--bg-elevated);
+          box-shadow: var(--shadow-md);
+        }
         .search-bar {
           display: flex; align-items: center; gap: 12px;
           background: var(--bg-card);
@@ -112,8 +118,8 @@ export default function SearchBar({ query, onQueryChange, results, onSelect, onC
           transition: border-color 0.2s, box-shadow 0.2s;
         }
         .search-bar:focus-within {
-          border-color: var(--border-strong);
-          box-shadow: 0 0 0 4px rgba(255, 149, 0, 0.12);
+          border-color: var(--border-accent);
+          box-shadow: 0 0 0 4px var(--accent-glow);
         }
         .search-bar svg { color: var(--text-tertiary); flex-shrink: 0; }
         .search-bar input {
