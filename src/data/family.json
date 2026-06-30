@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 18,
+    "storyCount": 19,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2097,6 +2097,10 @@
         {
           "category": "marriage",
           "text": "m. Evelyn Ruth Jones, 8 Dec 1951"
+        },
+        {
+          "category": "media",
+          "text": "Formal portrait as young man, circa 1950–1951"
         }
       ],
       "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted m. evelyn ruth jones, 8 dec 1951 93.2 years",
@@ -16225,6 +16229,20 @@
     }
   },
   "stories": [
+    {
+      "id": "story-bruce-sr-young",
+      "title": "Bruce Wixted Sr. — Formal Portrait",
+      "body": "A close-up black-and-white portrait of Bruce John Wixted Sr. (b. 3 Apr 1933) in his late teens — short dark hair combed to the side, light suit jacket with wide lapels, white shirt, and patterned necktie. At the right edge of the frame, Evelyn Ruth Jones appears in formal dress with drop earrings, suggesting a wedding, dance, or similar occasion.\n\nTimeframe estimate: circa 1950–1951, possibly December 1951 when Bruce and Evelyn married (he was 18, she was 19). The wide-lapel suit and flash-lit indoor setting match late-1940s/early-1950s formal photography — earlier than the casual mid-1950s outdoor portrait and well before baby Kevin in July 1956. Bruce would become grandfather to Matthew Scott Wixted and carry the Wixted name west to Arizona (1963) and California (1971).",
+      "personIds": [
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-104-37",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "marriage"],
+      "source": "family-photo"
+    },
     {
       "id": "story-bruce-evelyn-young",
       "title": "Bruce & Evelyn — Rochester, Mid-1950s",

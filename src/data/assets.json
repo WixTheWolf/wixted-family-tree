@@ -170,6 +170,19 @@
       "uploadedBy": "Family",
       "addedAt": "2026-06-30",
       "source": "site"
+    },
+    {
+      "id": "seed-bruce-sr-young-formal",
+      "personId": "wixted-91-29",
+      "relatedPersonIds": ["wixted-91-31"],
+      "title": "Bruce Wixted Sr. — Young Man (Formal Portrait)",
+      "type": "photo",
+      "url": "/assets/people/wixted-91-29/bruce-sr-young-formal.jpg",
+      "previewUrl": "/assets/people/wixted-91-29/bruce-sr-young-formal.jpg",
+      "caption": "Bruce John Wixted Sr. in his late teens, light suit and patterned tie. Evelyn Ruth Jones at frame right in formal dress — likely wedding or dance, circa 1950–1951 (est.). Matthew's grandfather before the Rochester family years.",
+      "uploadedBy": "Family",
+      "addedAt": "2026-06-30",
+      "source": "site"
     }
   ],
   "documents": [
