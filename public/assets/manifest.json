@@ -1,0 +1,40 @@
+{
+  "people": {
+    "wixted-114-29": {
+      "photo": "https://avatars.githubusercontent.com/u/198108406?v=4",
+      "role": "focus"
+    }
+  },
+  "documents": [
+    {
+      "title": "Family Workbook",
+      "desc": "Wixted Family v9.5 research spreadsheet",
+      "type": "spreadsheet",
+      "icon": "\ud83d\udcca"
+    },
+    {
+      "title": "Cemetery Records",
+      "desc": "28 headstone records across NY, CA, and beyond",
+      "type": "cemetery",
+      "icon": "\ud83e\udea6"
+    },
+    {
+      "title": "Colonial History Docs",
+      "desc": "Gilbert line research \u2014 Mayflower & New Haven",
+      "type": "research",
+      "icon": "\ud83d\udcdc"
+    },
+    {
+      "title": "Census References",
+      "desc": "92 family members with census citations",
+      "type": "census",
+      "icon": "\ud83d\udccb"
+    },
+    {
+      "title": "Gravesite Photos",
+      "desc": "Referenced in McGraw, Doane, Bursley lines",
+      "type": "photo",
+      "icon": "\ud83d\udcf7"
+    }
+  ]
+}

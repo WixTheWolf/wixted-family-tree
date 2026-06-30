@@ -26,6 +26,13 @@ export interface Person {
   branch: string;
   generation?: number;
   parentId?: string;
+  motherId?: string;
+  spouseIds?: string[];
+  exSpouseIds?: string[];
+  childIds?: string[];
+  birthDate?: string;
+  age?: string;
+  isFocus?: boolean;
   recordType?: RecordType;
   categorizedNotes?: CategorizedNote[];
   searchText?: string;
@@ -76,6 +83,8 @@ export interface FamilyData {
     enriched?: boolean;
     personCount?: number;
     storyCount?: number;
+    rootPersonId?: string;
+    focusLine?: string[];
   };
   branches: Branch[];
   people: Person[];

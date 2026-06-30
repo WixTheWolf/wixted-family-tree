@@ -4,10 +4,11 @@ import type { Person } from "../types";
 interface Props {
   people: Person[];
   selectedId: string | null;
+  focusLine?: string[];
   onSelect: (p: Person) => void;
 }
 
-export default function GridView({ people, selectedId, onSelect }: Props) {
+export default function GridView({ people, selectedId, focusLine, onSelect }: Props) {
   const sorted = [...people].sort((a, b) => (a.generation ?? 0) - (b.generation ?? 0) || a.col - b.col);
 
   return (
@@ -15,7 +16,7 @@ export default function GridView({ people, selectedId, onSelect }: Props) {
       {sorted.map((p, i) => (
         <motion.button
           key={p.id}
-          className={`grid-card ${selectedId === p.id ? "selected" : ""}`}
+          className={`grid-card ${selectedId === p.id ? "selected" : ""} ${focusLine?.includes(p.id) ? "focus-line" : ""} ${p.isFocus ? "is-focus" : ""}`}
           onClick={() => onSelect(p)}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,13 +43,19 @@ export default function GridView({ people, selectedId, onSelect }: Props) {
           border: 1.5px solid var(--border); box-shadow: var(--shadow-sm);
           transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
         }
+        .grid-card.focus-line, .grid-card.is-focus {
+          border-color: var(--border-accent);
+        }
+        .grid-card.is-focus {
+          background: rgba(201, 162, 39, 0.06);
+        }
         .grid-card:hover {
-          box-shadow: var(--shadow-md); border-color: rgba(0,113,227,0.2);
+          box-shadow: var(--shadow-md); border-color: var(--border-accent);
           transform: translateY(-2px);
         }
         .grid-card.selected {
           border-color: var(--accent);
-          box-shadow: 0 0 0 3px rgba(0,113,227,0.15), var(--shadow-md);
+          box-shadow: 0 0 0 3px var(--accent-glow), var(--shadow-md);
         }
         .grid-card-name {
           font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.3;

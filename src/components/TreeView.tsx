@@ -7,10 +7,11 @@ interface Props {
   people: Person[];
   selectedId: string | null;
   highlightId: string | null;
+  focusLine?: string[];
   onSelect: (p: Person) => void;
 }
 
-export default function TreeView({ people, selectedId, highlightId, onSelect }: Props) {
+export default function TreeView({ people, selectedId, highlightId, focusLine, onSelect }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [pan, setPan] = useState({ x: 40, y: 40 });
   const [zoom, setZoom] = useState(1);
@@ -91,6 +92,7 @@ export default function TreeView({ people, selectedId, highlightId, onSelect }: 
             y={n.y}
             selected={selectedId === n.person.id}
             highlighted={highlightId === n.person.id}
+            onFocusLine={focusLine?.includes(n.person.id) ?? false}
             onClick={() => onSelect(n.person)}
           />
         ))}
@@ -99,7 +101,7 @@ export default function TreeView({ people, selectedId, highlightId, onSelect }: 
       <style>{`
         .tree-container {
           position: relative; flex: 1; overflow: hidden;
-          background: radial-gradient(ellipse at 50% 0%, rgba(0,113,227,0.03) 0%, transparent 60%);
+          background: radial-gradient(ellipse at 50% 0%, rgba(201,162,39,0.06) 0%, transparent 60%);
           border-radius: var(--radius); border: 1px solid var(--border);
           min-height: 500px;
         }
