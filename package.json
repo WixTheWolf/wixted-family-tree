@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "data:enrich": "python3 scripts/enrich_data.py"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.18",
