@@ -1,4 +1,5 @@
 import { useRef, useState, useCallback, useEffect } from "react";
+import { motion } from "framer-motion";
 import type { Person } from "../types";
 import { buildTree, layoutForest, flattenTree, getConnections, getTreeBounds } from "../utils/tree";
 import PersonCard from "./PersonCard";
@@ -22,6 +23,10 @@ export default function TreeView({ people, selectedId, highlightId, focusLine, o
   const nodes = flattenTree(roots);
   const lines = getConnections(roots);
   const bounds = getTreeBounds(roots);
+  const focusPeople = new Set(focusLine ?? []);
+  const focusEdges = new Set(
+    (focusLine ?? []).slice(1).map((id, idx) => `${focusLine?.[idx]}-${id}`)
+  );
 
   const handleWheel = useCallback((e: WheelEvent) => {
     e.preventDefault();
@@ -75,15 +80,38 @@ export default function TreeView({ people, selectedId, highlightId, focusLine, o
       <svg
         width={bounds.width * zoom + 80}
         height={bounds.height * zoom + 80}
+        className="tree-canvas"
         style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`, transformOrigin: "0 0" }}
       >
-        {lines.map((l, i) => (
-          <path
+        <defs>
+          <linearGradient id="tree-line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgba(201, 162, 39, 0.9)" />
+            <stop offset="100%" stopColor="rgba(74, 158, 255, 0.72)" />
+          </linearGradient>
+          <filter id="tree-line-glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        {lines.map((l, i) => {
+          const isFocusEdge = focusEdges.has(`${l.fromId}-${l.toId}`);
+          const touchesSelected = selectedId === l.fromId || selectedId === l.toId;
+
+          return (
+            <motion.path
             key={i}
             d={`M${l.x1},${l.y1} C${l.x1},${l.y1 + 40} ${l.x2},${l.y2 - 40} ${l.x2},${l.y2}`}
-            fill="none" stroke="rgba(0,0,0,0.1)" strokeWidth="1.5"
+            fill="none"
+            className={`tree-line ${isFocusEdge ? "focus" : ""} ${touchesSelected ? "selected" : ""}`}
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: isFocusEdge ? 1 : touchesSelected ? 0.9 : 0.42 }}
+            transition={{ duration: 0.55, delay: Math.min(i * 0.012, 0.35), ease: "easeOut" }}
           />
-        ))}
+          );
+        })}
         {nodes.map((n) => (
           <PersonCard
             key={n.person.id}
@@ -92,7 +120,7 @@ export default function TreeView({ people, selectedId, highlightId, focusLine, o
             y={n.y}
             selected={selectedId === n.person.id}
             highlighted={highlightId === n.person.id}
-            onFocusLine={focusLine?.includes(n.person.id) ?? false}
+            onFocusLine={focusPeople.has(n.person.id)}
             onClick={() => onSelect(n.person)}
           />
         ))}
@@ -101,9 +129,29 @@ export default function TreeView({ people, selectedId, highlightId, focusLine, o
       <style>{`
         .tree-container {
           position: relative; flex: 1; overflow: hidden;
-          background: radial-gradient(ellipse at 50% 0%, rgba(201,162,39,0.06) 0%, transparent 60%);
+          background:
+            radial-gradient(ellipse at 20% 0%, rgba(201,162,39,0.12) 0%, transparent 44%),
+            radial-gradient(ellipse at 80% 28%, rgba(74,158,255,0.08) 0%, transparent 50%),
+            linear-gradient(180deg, rgba(255,255,255,0.025), transparent 38%);
           border-radius: var(--radius); border: 1px solid var(--border);
-          min-height: 500px;
+          min-height: 540px;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--shadow-sm);
+        }
+        .tree-canvas { overflow: visible; }
+        .tree-line {
+          stroke: rgba(232, 197, 71, 0.36);
+          stroke-width: 1.75;
+          stroke-linecap: round;
+          vector-effect: non-scaling-stroke;
+        }
+        .tree-line.selected {
+          stroke: rgba(74, 158, 255, 0.68);
+          stroke-width: 2.25;
+        }
+        .tree-line.focus {
+          stroke: url(#tree-line-gradient);
+          stroke-width: 3;
+          filter: url(#tree-line-glow);
         }
         .tree-controls {
           position: absolute; bottom: 16px; right: 16px; z-index: 10;
@@ -117,7 +165,7 @@ export default function TreeView({ people, selectedId, highlightId, focusLine, o
           display: flex; align-items: center; justify-content: center;
           transition: background 0.15s, color 0.15s;
         }
-        .tree-controls button:hover { background: rgba(0,0,0,0.05); color: var(--text); }
+        .tree-controls button:hover { background: rgba(201,162,39,0.1); color: var(--text); }
         .tree-empty {
           flex: 1; display: flex; align-items: center; justify-content: center;
           color: var(--text-tertiary); font-size: 17px;
