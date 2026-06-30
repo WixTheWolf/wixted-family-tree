@@ -6,20 +6,18 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 14,
+    "storyCount": 15,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
       "wixted-104-37",
       "wixted-104-39",
-      "wixted-114-31",
-      "wixted-114-33",
-      "wixted-114-35",
-      "wixted-114-39",
-      "wixted-121-31",
-      "wixted-121-33",
-      "wixted-104-21",
-      "wixted-91-31"
+      "wixted-91-29",
+      "wixted-91-31",
+      "wixted-49-25",
+      "wixted-30-29",
+      "wixted-18-3",
+      "wixted-18-1"
     ]
   },
   "branches": [
@@ -2649,7 +2647,8 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-31",
+      "parentId": "wixted-91-29",
+      "motherId": "wixted-91-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -16185,6 +16184,25 @@
     }
   },
   "stories": [
+    {
+      "id": "story-matthew-ancestry",
+      "title": "Matthew's Wixted Line — Ireland to California",
+      "body": "Matthew Scott Wixted (b. 1987, Whittier, CA) descends from the Corning & Rochester, NY Wixteds. His father Kevin Paul Wixted (b. 1956, Rochester) and mother Angela Maxine Amor (b. 1954, Long Beach) raised the California generation. Grandfather Bruce John Wixted (1933–1995) and grandmother Evelyn Ruth Jones (1932–1988), a Rochester librarian, moved the family to Phoenix, AZ in 1963 and Orange County, CA in 1971. The Wixted name in America traces to Thomas James Wixted (1796–1873) and Mary Hogan of Lambeth, London — with earlier Irish roots in Tipperary. Henry Wixted (1823–1893) and Henry Joseph Wixted (1866–1942) appear across Corning censuses for five decades.",
+      "personIds": [
+        "wixted-114-29",
+        "wixted-104-37",
+        "wixted-104-39",
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-49-25",
+        "wixted-30-29",
+        "wixted-18-3",
+        "wixted-18-1"
+      ],
+      "branch": "wixted",
+      "tags": ["ancestry", "migration", "family-history"],
+      "source": "research"
+    },
     {
       "id": "story-ryan-kylie",
       "title": "Ryan & Kylie Wixted",

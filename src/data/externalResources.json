@@ -3,7 +3,7 @@
     "researched": "2026-06-30",
     "summary": "Public genealogy, cemetery, library, and social media resources verified against the Wixted family workbook.",
     "stats": {
-      "resources": 32,
+      "resources": 30,
       "documentAssets": 14,
       "verifiedBurials": 8,
       "personLinks": 12
@@ -329,26 +329,6 @@
       "tags": ["Corning", "St Mary's"],
       "verified": true,
       "matches": ["wixted-73-59"]
-    },
-    {
-      "id": "res-matthew-flickr",
-      "title": "Matt Wixted Photography — Flickr",
-      "desc": "592 photos on Flickr (Los Angeles, joined 2011). Album currently private — profile confirms Matt Wixted Photography identity.",
-      "url": "https://www.flickr.com/photos/mwixted1/",
-      "category": "photos",
-      "tags": ["Matthew Wixted", "photography"],
-      "verified": true,
-      "matches": ["wixted-114-29"]
-    },
-    {
-      "id": "res-matthew-linkedin",
-      "title": "Matt Wixted — LinkedIn (California)",
-      "desc": "Creative video producer and photographer — Matt Wixted Photography since 2012, Anaheim CA. Professional headshots and media production.",
-      "url": "https://www.linkedin.com/in/matt-wixted-09b06719",
-      "category": "photos",
-      "tags": ["Matthew Wixted", "California"],
-      "verified": true,
-      "matches": ["wixted-114-29"]
     }
   ],
   "documentAssets": [
@@ -496,7 +476,7 @@
   "researchGaps": [
     "No public obituary found online for Bruce John Wixted (1933–1995, Rochester) — may require Newspapers.com or Democrat and Chronicle microfilm at SSCL.",
     "Original Wixted Family v9.5 Excel workbook is not published online.",
-    "Matthew Wixted Flickr account (592 photos) has no public albums visible.",
+    "Matthew Wixted Flickr/LinkedIn profiles excluded per family preference.",
     "No dedicated Wixted family Facebook group or public Instagram archive located.",
     "Gravesite photos referenced in Gilbert/McGraw/Doane/Bursley workbook notes remain in private family research only.",
     "nyheritage.org returned no Wixted-specific digital collections."
@@ -539,9 +519,7 @@
       { "label": "Kolleen N. Wixted obituary (2017)", "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html", "type": "obituary" }
     ],
     "wixted-114-29": [
-      { "label": "Matthew Wixted — GitHub profile photo", "url": "https://github.com/WixTheWolf", "type": "photo" },
-      { "label": "Matt Wixted Photography — Flickr", "url": "https://www.flickr.com/photos/mwixted1/", "type": "photo" },
-      { "label": "Matt Wixted — LinkedIn", "url": "https://www.linkedin.com/in/matt-wixted-09b06719", "type": "photo" }
+      { "label": "Matthew Wixted — profile photo source", "url": "https://github.com/WixTheWolf", "type": "photo" }
     ]
   },
   "verifiedBurials": [

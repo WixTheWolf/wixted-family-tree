@@ -17,6 +17,7 @@ import FamilyOrbit from "./components/FamilyOrbit";
 import ArchivesView from "./components/ArchivesView";
 import ContributeView from "./components/ContributeView";
 import GalleryView from "./components/GalleryView";
+import AncestorJourney from "./components/AncestorJourney";
 import MediaStrip from "./components/MediaStrip";
 import externalResources from "./data/externalResources.json";
 import { useCloudAssets } from "./context/CloudAssetsContext";
@@ -45,6 +46,11 @@ function AppContent() {
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
   const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives" | "gallery" | "contribute">("explore");
   const [showOrbit, setShowOrbit] = useState(true);
+
+  const peopleById = useMemo(
+    () => new Map(allPeople.map((p) => [p.id, p])),
+    []
+  );
 
   const selected = useMemo(
     () => (personId ? findPersonById(data, personId) ?? null : null),
@@ -123,7 +129,7 @@ function AppContent() {
               className="orbit-section"
             >
               <div className="orbit-header">
-                <h2>Matthew's Circle</h2>
+                <h2>Matthew's Family</h2>
                 <button onClick={() => setShowOrbit(false)} aria-label="Hide family circle">✕</button>
               </div>
               <FamilyOrbit root={rootPerson} family={innerCircle} onSelect={selectPerson} />
@@ -133,7 +139,7 @@ function AppContent() {
 
         {!showOrbit && (
           <button className="show-orbit-btn" onClick={() => setShowOrbit(true)}>
-            Show Matthew's Circle
+            Show Matthew's Family
           </button>
         )}
 
@@ -143,6 +149,11 @@ function AppContent() {
           onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
           onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
           onViewGallery={() => { setAppView("gallery"); scrollToExplore(); }}
+        />
+
+        <AncestorJourney
+          peopleById={peopleById}
+          onSelectPerson={selectPerson}
         />
       </header>
 
