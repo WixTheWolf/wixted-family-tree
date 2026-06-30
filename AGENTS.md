@@ -18,4 +18,4 @@ This is a Vite + React + TypeScript single-page genealogy app ("Wixted Family Tr
 
 ### Data regeneration (rarely needed)
 
-The `scripts/*.py` data pipeline (`npm run data:enrich`, `data:update`) regenerates JSON from an Excel workbook that is NOT committed (`sources/` only has a README). Requires `pip install -r scripts/requirements.txt`. Not required for normal development since the generated JSON is already committed.
+- Data regeneration (rarely needed): `pip install -r scripts/requirements.txt` then `python3 scripts/extract_data.py` and `python3 scripts/enrich_data.py`. After extraction, **always run** `python3 scripts/update_matthew_focus.py` — it applies curated Wixted parent links, reclassifies mis-parsed locations, and refreshes living-person ages. The raw Excel `parentId` links are approximate and must not be used without this step.

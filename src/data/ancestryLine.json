@@ -48,7 +48,7 @@
       "dates": "1933 – 11 Mar 1995",
       "role": "Grandfather · Wixted line",
       "location": "Rochester, New York",
-      "detail": "Born in Rochester, NY. With wife Evelyn Ruth Jones, moved the family to Phoenix, AZ (1963) and Orange County, CA (1971). A librarian's son who carried the Wixted name west."
+      "detail": "Born in Rochester, NY. With wife Evelyn Ruth Jones, moved the family to Phoenix, AZ (1963) and Orange County, CA (1971). Son of John Leroy Wixted; carried the Wixted name west."
     },
     {
       "era": "New York",
@@ -59,6 +59,16 @@
       "role": "Grandmother",
       "location": "Rochester, New York",
       "detail": "Rochester librarian (SSN 112-24-1440). Raised four children before the 1963 migration west with Bruce Wixted."
+    },
+    {
+      "era": "New York",
+      "eraColor": "#4a9eff",
+      "personId": "wixted-73-27",
+      "name": "John Leroy Wixted",
+      "dates": "1900 – Sep 1993",
+      "role": "Great-grandfather · Wixted line",
+      "location": "Corning → Rochester, New York",
+      "detail": "Born in Corning, raised in Rochester. Census records from 1910 Avon through 1930 Rochester. Father of Bruce John Wixted; Steuben County obituary index confirms b. 1900, d. 1993."
     },
     {
       "era": "Corning",
@@ -114,6 +124,7 @@
   "researchNotes": [
     "Corning censuses (1855–1930) anchor the NY Wixted line across five generations.",
     "Steuben County obituary index lists John L, Hazel M, Raymond J, and Vincent D Wixted — Corning & Bath burials.",
+    "John Leroy Wixted (1900–1993) links the Rochester generation to Corning-born Henry Joseph Wixted.",
     "Bruce & Evelyn's 1963 Rochester→Phoenix→Orange County migration explains Matthew's California roots.",
     "Thomas James Wixted (1796) is the workbook gateway to English Wickstead pedigrees and Irish Tipperary records."
   ]

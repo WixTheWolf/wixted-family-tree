@@ -24,6 +24,7 @@ import { useCloudAssets } from "./context/CloudAssetsContext";
 import { useContributions } from "./context/ContributionsContext";
 import { getAllAssets } from "./utils/assets";
 import { getPeople, getBranchPeople, getRelatives, getInnerCircle } from "./utils/people";
+import { getPatrilineTreePeople } from "./utils/tree";
 import { searchAll, findPersonById } from "./utils/search";
 
 const data = familyData as FamilyData;
@@ -67,6 +68,14 @@ function AppContent() {
   }, [selected]);
 
   const branchPeople = useMemo(() => getBranchPeople(data, activeBranch), [activeBranch]);
+  const treePeople = useMemo(() => {
+    if (activeBranch !== "wixted") return branchPeople;
+    return getPatrilineTreePeople(
+      branchPeople,
+      ROOT_ID,
+      data.meta.patriarchRootId ?? "wixted-18-3"
+    );
+  }, [activeBranch, branchPeople]);
   const searchResults = useMemo(() => searchAll(data, searchQuery), [searchQuery]);
   const relatives = useMemo(() => (selected ? getRelatives(selected, allPeople) : []), [selected]);
 
@@ -210,10 +219,11 @@ function AppContent() {
                 <div className="main-content">
                   {hasTree && viewMode === "tree" ? (
                     <TreeView
-                      people={branchPeople}
+                      people={treePeople}
                       selectedId={selected?.id ?? null}
                       highlightId={selected?.id ?? null}
                       focusLine={focusLine}
+                      treeRootId={data.meta.patriarchRootId ?? "wixted-18-3"}
                       onSelect={selectPerson}
                     />
                   ) : (

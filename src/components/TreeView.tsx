@@ -1,6 +1,13 @@
 import { useRef, useState, useCallback, useEffect } from "react";
 import type { Person } from "../types";
-import { buildTree, layoutForest, flattenTree, getConnections, getTreeBounds } from "../utils/tree";
+import {
+  buildTree,
+  buildDescendantTree,
+  layoutForest,
+  flattenTree,
+  getConnections,
+  getTreeBounds,
+} from "../utils/tree";
 import PersonCard from "./PersonCard";
 
 interface Props {
@@ -8,17 +15,27 @@ interface Props {
   selectedId: string | null;
   highlightId: string | null;
   focusLine?: string[];
+  treeRootId?: string;
   onSelect: (p: Person) => void;
 }
 
-export default function TreeView({ people, selectedId, highlightId, focusLine, onSelect }: Props) {
+export default function TreeView({
+  people,
+  selectedId,
+  highlightId,
+  focusLine,
+  treeRootId,
+  onSelect,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [pan, setPan] = useState({ x: 40, y: 40 });
   const [zoom, setZoom] = useState(1);
   const [dragging, setDragging] = useState(false);
   const dragStart = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
 
-  const roots = layoutForest(buildTree(people));
+  const roots = layoutForest(
+    treeRootId ? buildDescendantTree(treeRootId, people) : buildTree(people)
+  );
   const nodes = flattenTree(roots);
   const lines = getConnections(roots);
   const bounds = getTreeBounds(roots);

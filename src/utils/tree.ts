@@ -5,6 +5,59 @@ const CARD_H = 88;
 const GAP_X = 32;
 const GAP_Y = 120;
 
+/** People in the curated patriline subtree (ancestors of root + their descendants). */
+export function getPatrilineTreePeople(
+  people: Person[],
+  rootId: string,
+  patriarchId?: string
+): Person[] {
+  const byId = new Map(people.map((p) => [p.id, p]));
+  const included = new Set<string>();
+
+  let cur: string | undefined = rootId;
+  while (cur && byId.has(cur)) {
+    included.add(cur);
+    const person: Person = byId.get(cur)!;
+    cur = person.parentId;
+    if (person.motherId) included.add(person.motherId);
+    for (const sid of person.spouseIds ?? []) included.add(sid);
+  }
+
+  if (patriarchId) included.add(patriarchId);
+
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const p of people) {
+      if (p.parentId && included.has(p.parentId) && !included.has(p.id)) {
+        included.add(p.id);
+        changed = true;
+      }
+      if (p.motherId && included.has(p.motherId) && !included.has(p.id)) {
+        included.add(p.id);
+        changed = true;
+      }
+    }
+  }
+
+  return people.filter((p) => included.has(p.id));
+}
+
+export function buildDescendantTree(rootId: string, people: Person[]): TreeNode[] {
+  const byId = new Map(people.map((p) => [p.id, p]));
+  const root = byId.get(rootId);
+  if (!root) return buildTree(people);
+
+  function makeNode(person: Person): TreeNode {
+    const kids = people
+      .filter((p) => p.parentId === person.id || p.motherId === person.id)
+      .sort((a, b) => a.col - b.col || a.name.localeCompare(b.name));
+    return { person, children: kids.map(makeNode), x: 0, y: 0 };
+  }
+
+  return [makeNode(root)];
+}
+
 export function buildTree(people: Person[]): TreeNode[] {
   const byId = new Map(people.map((p) => [p.id, p]));
   const childrenOf = new Map<string, Person[]>();

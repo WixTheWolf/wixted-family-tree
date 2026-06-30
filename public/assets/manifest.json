@@ -10,37 +10,31 @@
       "title": "Family Workbook",
       "desc": "Wixted Family v9.5 research spreadsheet",
       "type": "spreadsheet",
-      "icon": "📊"
+      "icon": "\ud83d\udcca"
     },
     {
       "title": "Cemetery Records",
       "desc": "28 headstone records across NY, CA, and beyond",
       "type": "cemetery",
-      "icon": "🪦"
+      "icon": "\ud83e\udea6"
     },
     {
       "title": "Colonial History Docs",
-      "desc": "Gilbert line — Mayflower & New Haven",
+      "desc": "Gilbert line research \u2014 Mayflower & New Haven",
       "type": "research",
-      "icon": "📜"
+      "icon": "\ud83d\udcdc"
     },
     {
       "title": "Census References",
       "desc": "92 family members with census citations",
       "type": "census",
-      "icon": "📋"
+      "icon": "\ud83d\udccb"
     },
     {
-      "title": "Online Research Archives",
-      "desc": "32 sources + 14 cataloged photos/docs",
-      "type": "research",
-      "icon": "🔗"
-    },
-    {
-      "title": "WikiTree Scanned Records",
-      "desc": "Baptism certs, marriage records, census pages",
+      "title": "Gravesite Photos",
+      "desc": "Referenced in McGraw, Doane, Bursley lines",
       "type": "photo",
-      "icon": "📷"
+      "icon": "\ud83d\udcf7"
     }
   ]
 }

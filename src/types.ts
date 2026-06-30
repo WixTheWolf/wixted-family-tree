@@ -84,6 +84,7 @@ export interface FamilyData {
     personCount?: number;
     storyCount?: number;
     rootPersonId?: string;
+    patriarchRootId?: string;
     focusLine?: string[];
   };
   branches: Branch[];

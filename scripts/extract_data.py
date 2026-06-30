@@ -166,6 +166,7 @@ def parse_generation_rows(df, branch_id):
 
 
 def link_generations(people):
+    """Nearest-column parent linking — approximate only. Run update_matthew_focus.py for curated Wixted links."""
     if not people:
         return people
     rows = sorted(set(p["row"] for p in people))
