@@ -6,11 +6,11 @@ interface Props {
 }
 
 const COLORS: Record<string, string> = {
-  english: "#0071e3",
-  german: "#bf5af2",
-  irish: "#34c759",
-  swedish: "#ff9500",
-  mexican: "#ff3b30",
+  english: "#4a9eff",
+  german: "#b07aff",
+  irish: "#50c878",
+  swedish: "#ff9f43",
+  mexican: "#e85d75",
 };
 
 const LABELS: Record<string, string> = {
@@ -50,27 +50,23 @@ export default function HeritageChart({ heritage, name }: Props) {
       </div>
 
       <style>{`
-        .heritage { margin-top: 8px; }
+        .heritage { margin-top: 0; }
         .heritage h3 {
-          font-size: 13px; font-weight: 600; text-transform: uppercase;
-          letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 12px;
+          font-size: 12px; font-weight: 600; text-transform: uppercase;
+          letter-spacing: 0.08em; color: var(--text-tertiary); margin-bottom: 12px;
         }
         .heritage-bar {
-          display: flex; height: 8px; border-radius: 4px; overflow: hidden;
+          display: flex; height: 10px; border-radius: 5px; overflow: hidden;
           background: var(--border);
         }
-        .heritage-segment {
-          height: 100%; transform-origin: left;
-        }
+        .heritage-segment { height: 100%; transform-origin: left; }
         .heritage-legend {
-          display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;
+          display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;
         }
         .heritage-item {
-          display: flex; align-items: center; gap: 6px; font-size: 13px;
+          display: flex; align-items: center; gap: 6px; font-size: 12px;
         }
-        .heritage-dot {
-          width: 8px; height: 8px; border-radius: 50%;
-        }
+        .heritage-dot { width: 8px; height: 8px; border-radius: 50%; }
         .heritage-label { color: var(--text-secondary); }
         .heritage-pct { color: var(--text-tertiary); font-weight: 500; }
       `}</style>

@@ -2,11 +2,25 @@
   "meta": {
     "title": "Wixted Family Tree",
     "version": "v9.5",
-    "updated": "2022-05-29",
-    "focus": "Katie Alyson Wixted",
+    "updated": "2026-06-30",
+    "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 13
+    "storyCount": 14,
+    "rootPersonId": "wixted-114-29",
+    "focusLine": [
+      "wixted-114-29",
+      "wixted-104-37",
+      "wixted-104-39",
+      "wixted-114-31",
+      "wixted-114-33",
+      "wixted-114-35",
+      "wixted-114-39",
+      "wixted-121-31",
+      "wixted-121-33",
+      "wixted-104-21",
+      "wixted-91-31"
+    ]
   },
   "branches": [
     {
@@ -160,7 +174,9 @@
           "text": "Corning, NY"
         }
       ],
-      "searchText": "patrick donovan 1804-12/4/1884 (90) wixted corning, ny"
+      "searchText": "patrick donovan 1804-12/4/1884 (90) wixted corning, ny 141.5 years",
+      "birthDate": "1884-12-04",
+      "age": "141.5 years"
     },
     {
       "id": "wixted-30-1",
@@ -174,7 +190,9 @@
       "parentId": "wixted-18-1",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "henry britt 4/20/1838-2/22/1927 (89) wixted"
+      "searchText": "henry britt 4/20/1838-2/22/1927 (89) wixted 188.2 years",
+      "birthDate": "1838-04-20",
+      "age": "188.2 years"
     },
     {
       "id": "wixted-30-3",
@@ -188,7 +206,9 @@
       "parentId": "wixted-18-3",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "margaret wicksted 8/14/1838-9/8/1902 (64) wixted"
+      "searchText": "margaret wicksted 8/14/1838-9/8/1902 (64) wixted 187.8 years",
+      "birthDate": "1838-08-14",
+      "age": "187.8 years"
     },
     {
       "id": "wixted-30-23",
@@ -229,7 +249,9 @@
           "text": "c1900 Avon 64"
         }
       ],
-      "searchText": "john mcgraw 3/1836(1935?)-10/15/1907 (72) wixted erie rr trackwalker gravesite photo c1870 avon 33 c1880 avon 43 c1900 avon 64"
+      "searchText": "john mcgraw 3/1836(1935?)-10/15/1907 (72) wixted erie rr trackwalker gravesite photo c1870 avon 33 c1880 avon 43 c1900 avon 64 118.7 years",
+      "birthDate": "1907-10-15",
+      "age": "118.7 years"
     },
     {
       "id": "wixted-30-29",
@@ -311,7 +333,9 @@
           "text": "c1880 Corning 50"
         }
       ],
-      "searchText": "bridget donovan 1830-4/26/1904 (74) wixted c1855 corning 28 c1860 corning 30 c1865 corning 35 c1870 corning 40 c1880 corning 50"
+      "searchText": "bridget donovan 1830-4/26/1904 (74) wixted c1855 corning 28 c1860 corning 30 c1865 corning 35 c1870 corning 40 c1880 corning 50 122.2 years",
+      "birthDate": "1904-04-26",
+      "age": "122.2 years"
     },
     {
       "id": "wixted-30-33",
@@ -364,7 +388,9 @@
       "parentId": "wixted-30-1",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "margaret kelly 8/8/1874-11/27/1936 (62) wixted"
+      "searchText": "margaret kelly 8/8/1874-11/27/1936 (62) wixted 151.8 years",
+      "birthDate": "1874-08-08",
+      "age": "151.8 years"
     },
     {
       "id": "wixted-49-3",
@@ -378,7 +404,9 @@
       "parentId": "wixted-30-3",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "john britt 8/24/1869-9/19/1947 (78) wixted"
+      "searchText": "john britt 8/24/1869-9/19/1947 (78) wixted 156.8 years",
+      "birthDate": "1869-08-24",
+      "age": "156.8 years"
     },
     {
       "id": "wixted-49-9",
@@ -419,7 +447,9 @@
           "text": "c1880 Avon 12"
         }
       ],
-      "searchText": "john h mcgraw jr 3/13/1868-5/23/1954 (86) wixted spanish-am war vet in lumber business,lived in sfo, seattle c1870 avon 2 c1880 avon 12"
+      "searchText": "john h mcgraw jr 3/13/1868-5/23/1954 (86) wixted spanish-am war vet in lumber business,lived in sfo, seattle c1870 avon 2 c1880 avon 12 158.2 years",
+      "birthDate": "1868-03-13",
+      "age": "158.2 years"
     },
     {
       "id": "wixted-49-13",
@@ -440,7 +470,9 @@
           "text": "c1880 Avon 8"
         }
       ],
-      "searchText": "william w mcgraw 1872-1/24/1941 (69) wixted c1880 avon 8"
+      "searchText": "william w mcgraw 1872-1/24/1941 (69) wixted c1880 avon 8 85.4 years",
+      "birthDate": "1941-01-24",
+      "age": "85.4 years"
     },
     {
       "id": "wixted-49-17",
@@ -497,7 +529,9 @@
           "text": "c1880 Avon 10"
         }
       ],
-      "searchText": "margaret a. mcgraw 1870-2/26/1953 (83) wixted c1870 avon 3/12 c1880 avon 10"
+      "searchText": "margaret a. mcgraw 1870-2/26/1953 (83) wixted c1870 avon 3/12 c1880 avon 10 73.3 years",
+      "birthDate": "1953-02-26",
+      "age": "73.3 years"
     },
     {
       "id": "wixted-49-25",
@@ -543,7 +577,9 @@
           "text": "c1880 Corning 13"
         }
       ],
-      "searchText": "henry(2) joseph wixted 8/7/1866-12/30/1942 (76) wixted (1915 article about sueing because he will lose his) hand from electrical accident read obit c1870 corning 4 c1880 corning 13"
+      "searchText": "henry(2) joseph wixted 8/7/1866-12/30/1942 (76) wixted (1915 article about sueing because he will lose his) hand from electrical accident read obit c1870 corning 4 c1880 corning 13 159.8 years",
+      "birthDate": "1866-08-07",
+      "age": "159.8 years"
     },
     {
       "id": "wixted-49-31",
@@ -584,7 +620,9 @@
           "text": "c1880 Corning 27"
         }
       ],
-      "searchText": "hugh m wixted  a rr fireman 10/1850-9/9/1935 see obit wixted c1855 corning 6 c1860 corning 9 c1865 corning 14 c1870 corning 20 c1880 corning 27"
+      "searchText": "hugh m wixted  a rr fireman 10/1850-9/9/1935 see obit wixted c1855 corning 6 c1860 corning 9 c1865 corning 14 c1870 corning 20 c1880 corning 27 90.8 years",
+      "birthDate": "1935-09-09",
+      "age": "90.8 years"
     },
     {
       "id": "wixted-49-33",
@@ -598,7 +636,9 @@
       "parentId": "wixted-30-33",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "julia m. mcavoy 3/1860-2/17/1927 wixted"
+      "searchText": "julia m. mcavoy 3/1860-2/17/1927 wixted 99.3 years",
+      "birthDate": "1927-02-17",
+      "age": "99.3 years"
     },
     {
       "id": "wixted-49-35",
@@ -691,7 +731,9 @@
           "text": "c1870 Corning 16"
         }
       ],
-      "searchText": "johanna wixted-salley 1855-7/14/1932 wixted c1860 corning 6 c1865 corning 10 c1870 corning 16"
+      "searchText": "johanna wixted-salley 1855-7/14/1932 wixted c1860 corning 6 c1865 corning 10 c1870 corning 16 93.9 years",
+      "birthDate": "1932-07-14",
+      "age": "93.9 years"
     },
     {
       "id": "wixted-49-41",
@@ -712,7 +754,9 @@
           "text": "RR Engineer"
         }
       ],
-      "searchText": "james j salley 7/26/1852-7/26/1924 wixted rr engineer"
+      "searchText": "james j salley 7/26/1852-7/26/1924 wixted rr engineer 173.9 years",
+      "birthDate": "1852-07-26",
+      "age": "173.9 years"
     },
     {
       "id": "wixted-49-43",
@@ -820,7 +864,9 @@
           "text": "c1880 Corning 18"
         }
       ],
-      "searchText": "john joseph wixted 10/1/1862-4/9/1927 wixted conducter 1909 221 w 1st conductor c1865 corning 4 c1870 corning 9 c1880 corning 18"
+      "searchText": "john joseph wixted 10/1/1862-4/9/1927 wixted conducter 1909 221 w 1st conductor c1865 corning 4 c1870 corning 9 c1880 corning 18 163.7 years",
+      "birthDate": "1862-10-01",
+      "age": "163.7 years"
     },
     {
       "id": "wixted-49-67",
@@ -946,7 +992,9 @@
       "parentId": "wixted-54-5",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "william ambrose fenelon 10/25/1904-12/6/1986 (82) wixted"
+      "searchText": "william ambrose fenelon 10/25/1904-12/6/1986 (82) wixted 121.7 years",
+      "birthDate": "1904-10-25",
+      "age": "121.7 years"
     },
     {
       "id": "wixted-73-3",
@@ -960,7 +1008,9 @@
       "parentId": "wixted-54-5",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "veronica britt 6/13/1905- wixted"
+      "searchText": "veronica britt 6/13/1905- wixted 121.0 years",
+      "birthDate": "1905-06-13",
+      "age": "121.0 years"
     },
     {
       "id": "wixted-73-19",
@@ -1051,7 +1101,9 @@
           "text": "c1930 Roch 24 1081 GPB"
         }
       ],
-      "searchText": "ethel mary wixted-vadas 1/7/1905-1/10/1993 (88) wixted ss 072-30-2770 c1910 avon 5 c1920 roch 15 c1925 roch 20 c1930 roch 24 1081 gpb"
+      "searchText": "ethel mary wixted-vadas 1/7/1905-1/10/1993 (88) wixted ss 072-30-2770 c1910 avon 5 c1920 roch 15 c1925 roch 20 c1930 roch 24 1081 gpb 121.4 years",
+      "birthDate": "1905-01-07",
+      "age": "121.4 years"
     },
     {
       "id": "wixted-73-25",
@@ -1148,7 +1200,9 @@
           "text": "c1930 Roch 30"
         }
       ],
-      "searchText": "john leroy wixted 3/13/1900-9/1993 (93) wixted ss128-09-5338 have draft card registration c1910 avon 10 c1920 roch 19 1922 roch 12 kensington c1925 roch 25 c1930 roch 30"
+      "searchText": "john leroy wixted 3/13/1900-9/1993 (93) wixted ss128-09-5338 have draft card registration c1910 avon 10 c1920 roch 19 1922 roch 12 kensington c1925 roch 25 c1930 roch 30 126.2 years",
+      "birthDate": "1900-03-13",
+      "age": "126.2 years"
     },
     {
       "id": "wixted-73-29",
@@ -1174,7 +1228,9 @@
           "text": "c1930 Roch 24"
         }
       ],
-      "searchText": "hazel mae breitenbach ss104-07-4721 wixted 11/6/05-5/84 (79) c1930 roch 24"
+      "searchText": "hazel mae breitenbach ss104-07-4721 wixted 11/6/05-5/84 (79) c1930 roch 24 20.6 years",
+      "birthDate": "2005-11-06",
+      "age": "20.6 years"
     },
     {
       "id": "wixted-73-33",
@@ -1224,7 +1280,9 @@
           "text": "1922 Roch 5 Terry"
         }
       ],
-      "searchText": "roger s wixted 6/18/1899-5/7/1972 (73) wixted ss104-07-4572 c1900 roch 1 c1910 roch 10 c1920 roch 20 c1925 roch 25 c1930 roch 30 1922 roch 5 terry"
+      "searchText": "roger s wixted 6/18/1899-5/7/1972 (73) wixted ss104-07-4572 c1900 roch 1 c1910 roch 10 c1920 roch 20 c1925 roch 25 c1930 roch 30 1922 roch 5 terry 127.0 years",
+      "birthDate": "1899-06-18",
+      "age": "127.0 years"
     },
     {
       "id": "wixted-73-35",
@@ -1274,7 +1332,9 @@
           "text": "1922 Roch 5 Terry"
         }
       ],
-      "searchText": "teresa gertrude 10/6/1891-11/5/1966 (75) wixted ss120-32-6440 teacher c1900 roch 8 c1910 roch 18 c1920 roch 27 1909 newspaper article c1930 roch 38 with dad 1922 roch 5 terry"
+      "searchText": "teresa gertrude 10/6/1891-11/5/1966 (75) wixted ss120-32-6440 teacher c1900 roch 8 c1910 roch 18 c1920 roch 27 1909 newspaper article c1930 roch 38 with dad 1922 roch 5 terry 134.7 years",
+      "birthDate": "1891-10-06",
+      "age": "134.7 years"
     },
     {
       "id": "wixted-73-37",
@@ -1299,7 +1359,9 @@
           "text": "c1930 Roch 42 with Hugh"
         }
       ],
-      "searchText": "edward peter kummer 1/21/1888-10/9/1967 wixted ss128-09-6631 c1930 roch 42 with hugh"
+      "searchText": "edward peter kummer 1/21/1888-10/9/1967 wixted ss128-09-6631 c1930 roch 42 with hugh 138.4 years",
+      "birthDate": "1888-01-21",
+      "age": "138.4 years"
     },
     {
       "id": "wixted-73-39",
@@ -1319,7 +1381,9 @@
           "text": "c1910 Roch 23"
         }
       ],
-      "searchText": "alice m. 9/1886-10/22/1918 (32) wixted c1910 roch 23"
+      "searchText": "alice m. 9/1886-10/22/1918 (32) wixted c1910 roch 23 107.7 years",
+      "birthDate": "1918-10-22",
+      "age": "107.7 years"
     },
     {
       "id": "wixted-73-41",
@@ -1389,7 +1453,9 @@
           "text": "c1910 Roch 13"
         }
       ],
-      "searchText": "frances john wixted 6/14/1896-12/8/1973 wixted ss104-05-2177 have draft registration c1900 roch 3 c1910 roch 13"
+      "searchText": "frances john wixted 6/14/1896-12/8/1973 wixted ss104-05-2177 have draft registration c1900 roch 3 c1910 roch 13 130.0 years",
+      "birthDate": "1896-06-14",
+      "age": "130.0 years"
     },
     {
       "id": "wixted-73-45",
@@ -1409,7 +1475,9 @@
           "text": "grave \"Lulu Sackett\""
         }
       ],
-      "searchText": "julia cecilia salley 11/5/1873-6/13/1911 wixted grave \"lulu sackett\""
+      "searchText": "julia cecilia salley 11/5/1873-6/13/1911 wixted grave \"lulu sackett\" 152.6 years",
+      "birthDate": "1873-11-05",
+      "age": "152.6 years"
     },
     {
       "id": "wixted-73-47",
@@ -1435,7 +1503,9 @@
       "generation": 4,
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "frances winifred salley 1881-6/24/1906 wixted"
+      "searchText": "frances winifred salley 1881-6/24/1906 wixted 120.0 years",
+      "birthDate": "1906-06-24",
+      "age": "120.0 years"
     },
     {
       "id": "wixted-73-51",
@@ -1540,7 +1610,9 @@
           "text": "c1930 Corning 33 w/mom"
         }
       ],
-      "searchText": "gertrude wixted-grimaldi 3/8/1895-3/11/1984 wixted 1901-1978 c1900 corning 5 c1910 corning 15 c1920 corning 24 c1930 corning 33 w/mom"
+      "searchText": "gertrude wixted-grimaldi 3/8/1895-3/11/1984 wixted 1901-1978 c1900 corning 5 c1910 corning 15 c1920 corning 24 c1930 corning 33 w/mom 131.2 years",
+      "birthDate": "1895-03-08",
+      "age": "131.2 years"
     },
     {
       "id": "wixted-73-59",
@@ -1570,7 +1642,9 @@
           "text": "c1930 Syracuse"
         }
       ],
-      "searchText": "raymond jose wixted 2/18/1902-11/20/1973 wixted c1910 corning 8 c1920 corning 18 c1930 syracuse"
+      "searchText": "raymond jose wixted 2/18/1902-11/20/1973 wixted c1910 corning 8 c1920 corning 18 c1930 syracuse 124.3 years",
+      "birthDate": "1902-02-18",
+      "age": "124.3 years"
     },
     {
       "id": "wixted-73-61",
@@ -1685,7 +1759,9 @@
           "text": "c1915 Corning 28 101 Lexington"
         }
       ],
-      "searchText": "james thomas 7/10/1886- wixted carpenter / have draft registration c1892 corning 6 c1900 corning 13 c1905 corning 18 c1910 corning 22 1909 101 lexington brakeman c1915 corning 28 101 lexington"
+      "searchText": "james thomas 7/10/1886- wixted carpenter / have draft registration c1892 corning 6 c1900 corning 13 c1905 corning 18 c1910 corning 22 1909 101 lexington brakeman c1915 corning 28 101 lexington 139.9 years",
+      "birthDate": "1886-07-10",
+      "age": "139.9 years"
     },
     {
       "id": "wixted-73-71",
@@ -1725,7 +1801,9 @@
           "text": "1909 101 Lexington glass worker"
         }
       ],
-      "searchText": "henry(4) j wixted 8/31/1889- wixted c1892 corning 3 c1900 corning 10 c1905 corning 15 c1910 corning 20 1909 101 lexington glass worker"
+      "searchText": "henry(4) j wixted 8/31/1889- wixted c1892 corning 3 c1900 corning 10 c1905 corning 15 c1910 corning 20 1909 101 lexington glass worker 136.8 years",
+      "birthDate": "1889-08-31",
+      "age": "136.8 years"
     },
     {
       "id": "wixted-73-73",
@@ -1795,7 +1873,9 @@
           "text": "1921 Elmira 244 Birchwood"
         }
       ],
-      "searchText": "vincent depaul 9/14/1899-6/1977 wixted c1900 corning 0 c1905 corning 5 c1910 corning 11 c1915 corning 15 101 lexington 1921 elmira 244 birchwood"
+      "searchText": "vincent depaul 9/14/1899-6/1977 wixted c1900 corning 0 c1905 corning 5 c1910 corning 11 c1915 corning 15 101 lexington 1921 elmira 244 birchwood 126.8 years",
+      "birthDate": "1899-09-14",
+      "age": "126.8 years"
     },
     {
       "id": "wixted-77-15",
@@ -1898,7 +1978,9 @@
           "text": "Yarraville,Aust"
         }
       ],
-      "searchText": "margot helena fenelon 7/28/1944- wixted yarraville,aust"
+      "searchText": "margot helena fenelon 7/28/1944- wixted yarraville,aust 81.9 years",
+      "birthDate": "1944-07-28",
+      "age": "81.9 years"
     },
     {
       "id": "wixted-91-15",
@@ -1946,8 +2028,7 @@
       "name": "Karyl Jean Johnston",
       "dates": "7/9/1952-",
       "notes": [
-        "Rochester,NY",
-        "Age today is 74.0"
+        "Rochester,NY"
       ],
       "col": 19,
       "row": 91,
@@ -1965,15 +2046,16 @@
           "text": "Age today is 74.0"
         }
       ],
-      "searchText": "karyl jean johnston 7/9/1952- wixted rochester,ny age today is 74.0"
+      "searchText": "karyl jean johnston 7/9/1952- wixted rochester,ny 73.9 years",
+      "birthDate": "1952-07-09",
+      "age": "73.9 years"
     },
     {
       "id": "wixted-91-21",
       "name": "Rodney Henri Wixted",
       "dates": "03/14/1946",
       "notes": [
-        "Rochester,NY",
-        "Age today is 80.3"
+        "Rochester,NY"
       ],
       "col": 21,
       "row": 91,
@@ -1991,7 +2073,9 @@
           "text": "Age today is 80.3"
         }
       ],
-      "searchText": "rodney henri wixted 03/14/1946 wixted rochester,ny age today is 80.3"
+      "searchText": "rodney henri wixted 03/14/1946 wixted rochester,ny 80.2 years",
+      "birthDate": "1946-03-14",
+      "age": "80.2 years"
     },
     {
       "id": "wixted-91-29",
@@ -2005,7 +2089,9 @@
       "parentId": "wixted-77-17",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted"
+      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 93.2 years",
+      "birthDate": "1933-04-03",
+      "age": "93.2 years"
     },
     {
       "id": "wixted-91-31",
@@ -2035,7 +2121,9 @@
           "text": "Rochester,NY"
         }
       ],
-      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny"
+      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny 93.8 years",
+      "birthDate": "1932-08-27",
+      "age": "93.8 years"
     },
     {
       "id": "wixted-91-43",
@@ -2061,7 +2149,9 @@
       "generation": 6,
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "frances helen sackett 3/19/1908-4/25/1998 wixted"
+      "searchText": "frances helen sackett 3/19/1908-4/25/1998 wixted 118.2 years",
+      "birthDate": "1908-03-19",
+      "age": "118.2 years"
     },
     {
       "id": "wixted-91-47",
@@ -2134,7 +2224,9 @@
           "text": "c1930 Corning 15"
         }
       ],
-      "searchText": "john colton marx 12/25/1914-2/17/1999 wixted c1920 corning 5 c1925 corning 10 c1930 corning 15"
+      "searchText": "john colton marx 12/25/1914-2/17/1999 wixted c1920 corning 5 c1925 corning 10 c1930 corning 15 111.5 years",
+      "birthDate": "1914-12-25",
+      "age": "111.5 years"
     },
     {
       "id": "wixted-91-57",
@@ -2185,7 +2277,9 @@
           "text": "Divorced 7/30/75"
         }
       ],
-      "searchText": "rancho mirage,ca  wixted divorced 7/30/75"
+      "searchText": "rancho mirage,ca  wixted divorced 7/30/75 50.9 years",
+      "birthDate": "1975-07-30",
+      "age": "50.9 years"
     },
     {
       "id": "wixted-100-31",
@@ -2199,7 +2293,9 @@
       "parentId": "wixted-91-31",
       "recordType": "person",
       "categorizedNotes": [],
-      "searchText": "fairhaven mem santa ana,ca married 12/8/1951 wixted"
+      "searchText": "fairhaven mem santa ana,ca married 12/8/1951 wixted 74.5 years",
+      "birthDate": "1951-12-08",
+      "age": "74.5 years"
     },
     {
       "id": "wixted-104-15",
@@ -2224,7 +2320,9 @@
           "text": "Boston,Mass"
         }
       ],
-      "searchText": "glenn dayton white  wixted 12/12/80- boston,mass"
+      "searchText": "glenn dayton white  wixted 12/12/80- boston,mass 45.5 years",
+      "birthDate": "1980-12-12",
+      "age": "45.5 years"
     },
     {
       "id": "wixted-104-17",
@@ -2232,8 +2330,7 @@
       "dates": "",
       "notes": [
         "1/15/79-",
-        "Canandaigua,NY",
-        "Age today is 47.5"
+        "Canandaigua,NY"
       ],
       "col": 17,
       "row": 104,
@@ -2255,7 +2352,9 @@
           "text": "Age today is 47.5"
         }
       ],
-      "searchText": "maura rachelle wixted  wixted 1/15/79- canandaigua,ny age today is 47.5"
+      "searchText": "maura rachelle wixted  wixted 1/15/79- canandaigua,ny 47.4 years",
+      "birthDate": "1979-01-15",
+      "age": "47.4 years"
     },
     {
       "id": "wixted-104-19",
@@ -2281,7 +2380,9 @@
           "text": "Honeoye,NY"
         }
       ],
-      "searchText": "kolleen n. wixted 4/4/75-10/23/2017 wixted canandaigua,ny honeoye,ny"
+      "searchText": "kolleen n. wixted 4/4/75-10/23/2017 wixted canandaigua,ny honeoye,ny 51.2 years",
+      "birthDate": "1975-04-04",
+      "age": "51.2 years"
     },
     {
       "id": "wixted-104-21",
@@ -2289,8 +2390,7 @@
       "dates": "",
       "notes": [
         "05/15/52-",
-        "Rochester,NY",
-        "Age today is 74.2"
+        "Rochester,NY"
       ],
       "col": 21,
       "row": 104,
@@ -2312,7 +2412,9 @@
           "text": "Age today is 74.2"
         }
       ],
-      "searchText": "bruce john wixted  wixted 05/15/52- rochester,ny age today is 74.2"
+      "searchText": "bruce john wixted  wixted 05/15/52- rochester,ny 74.1 years",
+      "birthDate": "1952-05-15",
+      "age": "74.1 years"
     },
     {
       "id": "wixted-104-23",
@@ -2320,8 +2422,7 @@
       "dates": "",
       "notes": [
         "04/12/53-",
-        "E.St.Louis,Ill",
-        "Age today is 73.3"
+        "E.St.Louis,Ill"
       ],
       "col": 23,
       "row": 104,
@@ -2343,7 +2444,9 @@
           "text": "Age today is 73.3"
         }
       ],
-      "searchText": "mimi colliflower  wixted 04/12/53- e.st.louis,ill age today is 73.3"
+      "searchText": "mimi colliflower  wixted 04/12/53- e.st.louis,ill 73.2 years",
+      "birthDate": "1953-04-12",
+      "age": "73.2 years"
     },
     {
       "id": "wixted-104-25",
@@ -2351,8 +2454,7 @@
       "dates": "",
       "notes": [
         "07/20/54-",
-        "Redbud,Ill",
-        "Age today is 72.0"
+        "Redbud,Ill"
       ],
       "col": 25,
       "row": 104,
@@ -2374,7 +2476,9 @@
           "text": "Age today is 72.0"
         }
       ],
-      "searchText": "roger miller  wixted 07/20/54- redbud,ill age today is 72.0"
+      "searchText": "roger miller  wixted 07/20/54- redbud,ill 71.9 years",
+      "birthDate": "1954-07-20",
+      "age": "71.9 years"
     },
     {
       "id": "wixted-104-27",
@@ -2382,8 +2486,7 @@
       "dates": "",
       "notes": [
         "09/05/54-",
-        "Rochester,NY",
-        "Age today is 71.9"
+        "Rochester,NY"
       ],
       "col": 27,
       "row": 104,
@@ -2405,7 +2508,9 @@
           "text": "Age today is 71.9"
         }
       ],
-      "searchText": "lynn louise wixted  wixted 09/05/54- rochester,ny age today is 71.9"
+      "searchText": "lynn louise wixted  wixted 09/05/54- rochester,ny 71.8 years",
+      "birthDate": "1954-09-05",
+      "age": "71.8 years"
     },
     {
       "id": "wixted-104-29",
@@ -2413,8 +2518,7 @@
       "dates": "",
       "notes": [
         "09/30/61-",
-        "Columbus,OH",
-        "Age today is 64.8"
+        "Columbus,OH"
       ],
       "col": 29,
       "row": 104,
@@ -2436,7 +2540,9 @@
           "text": "Age today is 64.8"
         }
       ],
-      "searchText": "david warren holland  wixted 09/30/61- columbus,oh age today is 64.8"
+      "searchText": "david warren holland  wixted 09/30/61- columbus,oh 64.8 years",
+      "birthDate": "1961-09-30",
+      "age": "64.8 years"
     },
     {
       "id": "wixted-104-31",
@@ -2444,8 +2550,7 @@
       "dates": "",
       "notes": [
         "03/12/59-",
-        "Rochester,NY",
-        "Age today is 67.3"
+        "Rochester,NY"
       ],
       "col": 31,
       "row": 104,
@@ -2467,7 +2572,9 @@
           "text": "Age today is 67.3"
         }
       ],
-      "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny age today is 67.3"
+      "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
+      "birthDate": "1959-03-12",
+      "age": "67.2 years"
     },
     {
       "id": "wixted-104-33",
@@ -2475,8 +2582,7 @@
       "dates": "",
       "notes": [
         "07/07/61-",
-        "Whittier,CA",
-        "Age today is 65.0"
+        "Whittier,CA"
       ],
       "col": 33,
       "row": 104,
@@ -2498,15 +2604,16 @@
           "text": "Age today is 65.0"
         }
       ],
-      "searchText": "mary joan tracy  wixted 07/07/61- whittier,ca age today is 65.0"
+      "searchText": "mary joan tracy  wixted 07/07/61- whittier,ca 64.9 years",
+      "birthDate": "1961-07-07",
+      "age": "64.9 years"
     },
     {
       "id": "wixted-104-35",
       "name": "Irina Alekseeva",
       "dates": "01/14/1968-",
       "notes": [
-        "Umert,Russia",
-        "Age today is 58.5"
+        "Umert,Russia"
       ],
       "col": 35,
       "row": 104,
@@ -2524,17 +2631,19 @@
           "text": "Age today is 58.5"
         }
       ],
-      "searchText": "irina alekseeva 01/14/1968- wixted umert,russia age today is 58.5"
+      "searchText": "irina alekseeva 01/14/1968- wixted umert,russia 58.4 years",
+      "birthDate": "1968-01-14",
+      "age": "58.4 years"
     },
     {
       "id": "wixted-104-37",
       "name": "Kevin Paul Wixted",
-      "dates": "",
+      "dates": "04/14/1956–",
       "notes": [
         "04/14/56-",
         "Rochester,NY",
-        "Age today is 70.3",
-        "m.May 29 1993 Div Dec 2005"
+        "m.May 29 1993 Div Dec 2005",
+        "m. Angela Maxine Amor, May 29 1993 · div. Dec 2005"
       ],
       "col": 37,
       "row": 104,
@@ -2560,14 +2669,20 @@
           "text": "m.May 29 1993 Div Dec 2005"
         }
       ],
-      "searchText": "kevin paul wixted  wixted 04/14/56- rochester,ny age today is 70.3 m.may 29 1993 div dec 2005"
+      "searchText": "kevin paul wixted 04/14/1956– wixted 04/14/56- rochester,ny m.may 29 1993 div dec 2005 m. angela maxine amor, may 29 1993 · div. dec 2005 70.2 years",
+      "birthDate": "1956-04-14",
+      "spouseIds": [
+        "wixted-104-39"
+      ],
+      "age": "70.2 years"
     },
     {
       "id": "wixted-104-39",
       "name": "Angela Maxine Amor",
-      "dates": "",
+      "dates": "12/17/1954–",
       "notes": [
-        "12/17/54-"
+        "12/17/54-",
+        "Long Beach, CA"
       ],
       "col": 39,
       "row": 104,
@@ -2581,7 +2696,12 @@
           "text": "12/17/54-"
         }
       ],
-      "searchText": "angela maxine amor  wixted 12/17/54-"
+      "searchText": "angela maxine amor 12/17/1954– wixted 12/17/54- long beach, ca 71.5 years",
+      "birthDate": "1954-12-17",
+      "spouseIds": [
+        "wixted-104-37"
+      ],
+      "age": "71.5 years"
     },
     {
       "id": "wixted-104-41",
@@ -2602,7 +2722,9 @@
           "text": "09/20/43-"
         }
       ],
-      "searchText": "richard king nordquist  wixted 09/20/43-"
+      "searchText": "richard king nordquist  wixted 09/20/43- 82.8 years",
+      "birthDate": "1943-09-20",
+      "age": "82.8 years"
     },
     {
       "id": "wixted-104-45",
@@ -2641,8 +2763,7 @@
       "row": 109,
       "branch": "wixted",
       "generation": 9,
-      "parentId": "wixted-104-39",
-      "recordType": "person",
+      "recordType": "location",
       "categorizedNotes": [
         {
           "category": "general",
@@ -2695,7 +2816,9 @@
           "text": "Rochesster,NY"
         }
       ],
-      "searchText": "hannah rachelle white  wixted 7/21/09- rochesster,ny"
+      "searchText": "hannah rachelle white  wixted 7/21/09- rochesster,ny 16.9 years",
+      "birthDate": "2009-07-21",
+      "age": "16.9 years"
     },
     {
       "id": "wixted-114-13",
@@ -2715,15 +2838,16 @@
           "text": "Rochester,NY"
         }
       ],
-      "searchText": "molly dayton white 6/8/2013 6:45am 7lb3oz wixted rochester,ny"
+      "searchText": "molly dayton white 6/8/2013 6:45am 7lb3oz wixted rochester,ny 13.0 years",
+      "birthDate": "2013-06-08",
+      "age": "13.0 years"
     },
     {
       "id": "wixted-114-15",
       "name": "Timothy James Fitz",
       "dates": "8/13/1985-",
       "notes": [
-        "York,PA",
-        "Age today is 40.9"
+        "York,PA"
       ],
       "col": 15,
       "row": 114,
@@ -2740,7 +2864,9 @@
           "text": "Age today is 40.9"
         }
       ],
-      "searchText": "timothy james fitz 8/13/1985- wixted york,pa age today is 40.9"
+      "searchText": "timothy james fitz 8/13/1985- wixted york,pa 40.8 years",
+      "birthDate": "1985-08-13",
+      "age": "40.8 years"
     },
     {
       "id": "wixted-114-17",
@@ -2748,8 +2874,7 @@
       "dates": "",
       "notes": [
         "11/23/81-",
-        "Paris,France",
-        "Age today is 44.6"
+        "Paris,France"
       ],
       "col": 17,
       "row": 114,
@@ -2770,7 +2895,9 @@
           "text": "Age today is 44.6"
         }
       ],
-      "searchText": "amanda rose wixted  wixted 11/23/81- paris,france age today is 44.6"
+      "searchText": "amanda rose wixted  wixted 11/23/81- paris,france 44.6 years",
+      "birthDate": "1981-11-23",
+      "age": "44.6 years"
     },
     {
       "id": "wixted-114-19",
@@ -2790,7 +2917,9 @@
           "text": "Farmington,NM"
         }
       ],
-      "searchText": "elizabeth anne myers 11/10/1985- wixted farmington,nm"
+      "searchText": "elizabeth anne myers 11/10/1985- wixted farmington,nm 40.6 years",
+      "birthDate": "1985-11-10",
+      "age": "40.6 years"
     },
     {
       "id": "wixted-114-21",
@@ -2798,8 +2927,7 @@
       "dates": "",
       "notes": [
         "10/30/83-",
-        "Kuwait",
-        "Age today is 42.7"
+        "Kuwait"
       ],
       "col": 21,
       "row": 114,
@@ -2820,7 +2948,9 @@
           "text": "Age today is 42.7"
         }
       ],
-      "searchText": "brody joseph wixted  wixted 10/30/83- kuwait age today is 42.7"
+      "searchText": "brody joseph wixted  wixted 10/30/83- kuwait 42.7 years",
+      "birthDate": "1983-10-30",
+      "age": "42.7 years"
     },
     {
       "id": "wixted-114-25",
@@ -2828,8 +2958,7 @@
       "dates": "",
       "notes": [
         "11/09/77-",
-        "Flagstaff,AZ",
-        "Age today is 48.7"
+        "Flagstaff,AZ"
       ],
       "col": 25,
       "row": 114,
@@ -2850,22 +2979,24 @@
           "text": "Age today is 48.7"
         }
       ],
-      "searchText": "andrew william miller  wixted 11/09/77- flagstaff,az age today is 48.7"
+      "searchText": "andrew william miller  wixted 11/09/77- flagstaff,az 48.6 years",
+      "birthDate": "1977-11-09",
+      "age": "48.6 years"
     },
     {
       "id": "wixted-114-29",
-      "name": "Mathew Scott Wixted",
-      "dates": "",
+      "name": "Matthew Scott Wixted",
+      "dates": "10/10/1987–",
       "notes": [
         "10/10/87-",
         "Whittier,CA",
-        "Age today is 38.7"
+        "Whittier, CA"
       ],
       "col": 29,
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-109-39",
+      "parentId": "wixted-104-37",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2881,23 +3012,27 @@
           "text": "Age today is 38.7"
         }
       ],
-      "searchText": "mathew scott wixted  wixted 10/10/87- whittier,ca age today is 38.7"
+      "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca 38.7 years",
+      "birthDate": "1987-10-10",
+      "motherId": "wixted-104-39",
+      "isFocus": true,
+      "age": "38.7 years"
     },
     {
       "id": "wixted-114-31",
       "name": "Ryan Patrick Wixted",
-      "dates": "",
+      "dates": "06/16/1989–",
       "notes": [
+        "Whittier, CA",
         "06/16/89-",
         "Whittier,CA",
-        "Age today is 37.1",
-        "m Octorber 13, 2018"
+        "m. Kylie Renee, October 13, 2018 · divorced"
       ],
       "col": 31,
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-109-39",
+      "parentId": "wixted-104-37",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2917,21 +3052,30 @@
           "text": "m Octorber 13, 2018"
         }
       ],
-      "searchText": "ryan patrick wixted  wixted 06/16/89- whittier,ca age today is 37.1 m octorber 13, 2018"
+      "searchText": "ryan patrick wixted 06/16/1989– wixted whittier, ca 06/16/89- whittier,ca m. kylie renee, october 13, 2018 · divorced 37.0 years",
+      "motherId": "wixted-104-39",
+      "birthDate": "1989-06-16",
+      "exSpouseIds": [
+        "wixted-114-33"
+      ],
+      "childIds": [
+        "wixted-121-31",
+        "wixted-121-33"
+      ],
+      "age": "37.0 years"
     },
     {
       "id": "wixted-114-33",
       "name": "Kylie Renee Wixted",
-      "dates": "1992-08-21 00:00:00",
+      "dates": "08/21/1992–",
       "notes": [
         "Placentia, CA",
-        "Age today 29"
+        "m. Ryan Patrick Wixted, October 13, 2018 · divorced"
       ],
       "col": 33,
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-109-39",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2943,22 +3087,32 @@
           "text": "Age today 29"
         }
       ],
-      "searchText": "kylie renee wixted 1992-08-21 00:00:00 wixted placentia, ca age today 29"
+      "searchText": "kylie renee wixted 08/21/1992– wixted placentia, ca m. ryan patrick wixted, october 13, 2018 · divorced 33.8 years",
+      "birthDate": "1992-08-21",
+      "spouseIds": [],
+      "exSpouseIds": [
+        "wixted-114-31"
+      ],
+      "childIds": [
+        "wixted-121-31",
+        "wixted-121-33"
+      ],
+      "age": "33.8 years"
     },
     {
       "id": "wixted-114-35",
       "name": "Alexander Daniel Wixted",
-      "dates": "",
+      "dates": "11/20/1992–",
       "notes": [
+        "Orange, CA",
         "11/20/92-",
-        "Orange,CA",
-        "Age today is 33.6"
+        "Orange,CA"
       ],
       "col": 35,
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-109-39",
+      "parentId": "wixted-104-37",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2974,7 +3128,10 @@
           "text": "Age today is 33.6"
         }
       ],
-      "searchText": "alexander daniel wixted  wixted 11/20/92- orange,ca age today is 33.6"
+      "searchText": "alexander daniel wixted 11/20/1992– wixted orange, ca 11/20/92- orange,ca 33.6 years",
+      "motherId": "wixted-104-39",
+      "birthDate": "1992-11-20",
+      "age": "33.6 years"
     },
     {
       "id": "wixted-114-37",
@@ -2993,7 +3150,7 @@
     {
       "id": "wixted-114-39",
       "name": "Katie Alyson Wixted",
-      "dates": "09/27/93-",
+      "dates": "09/27/1993–",
       "notes": [
         "09/27/93-"
       ],
@@ -3001,7 +3158,7 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-109-39",
+      "parentId": "wixted-104-37",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3009,15 +3166,17 @@
           "text": "09/27/93-"
         }
       ],
-      "searchText": "katie alyson wixted 09/27/93- wixted 09/27/93-"
+      "searchText": "katie alyson wixted 09/27/1993– wixted 09/27/93- 32.8 years",
+      "motherId": "wixted-104-39",
+      "birthDate": "1993-09-27",
+      "age": "32.8 years"
     },
     {
       "id": "wixted-114-41",
       "name": "Jessica Michele Nordquist",
       "dates": "",
       "notes": [
-        "05/11/81-",
-        "Age today is 45.2"
+        "05/11/81-"
       ],
       "col": 41,
       "row": 114,
@@ -3035,7 +3194,9 @@
           "text": "Age today is 45.2"
         }
       ],
-      "searchText": "jessica michele nordquist  wixted 05/11/81- age today is 45.2"
+      "searchText": "jessica michele nordquist  wixted 05/11/81- 45.1 years",
+      "birthDate": "1981-05-11",
+      "age": "45.1 years"
     },
     {
       "id": "wixted-114-45",
@@ -3063,8 +3224,7 @@
       "name": "Ruby Polaris Wixted",
       "dates": "3/27/2015-",
       "notes": [
-        "Austin,TX",
-        "Age today is 11.3"
+        "Austin,TX"
       ],
       "col": 17,
       "row": 121,
@@ -3082,18 +3242,16 @@
           "text": "Age today is 11.3"
         }
       ],
-      "searchText": "ruby polaris wixted 3/27/2015- wixted austin,tx age today is 11.3"
+      "searchText": "ruby polaris wixted 3/27/2015- wixted austin,tx 11.2 years",
+      "birthDate": "2015-03-27",
+      "age": "11.2 years"
     },
     {
       "id": "wixted-121-19",
       "name": "Brigham Alexander",
       "dates": "",
       "notes": [
-        "7/13/04-",
-        "Age today is 22.0",
-        "2015-03-27 00:00:00",
-        "2021-11-06 00:00:00",
-        "1906-08-12 00:00:00"
+        "7/13/04-"
       ],
       "col": 19,
       "row": 121,
@@ -3123,15 +3281,15 @@
           "text": "1906-08-12 00:00:00"
         }
       ],
-      "searchText": "brigham alexander  wixted 7/13/04- age today is 22.0 2015-03-27 00:00:00 2021-11-06 00:00:00 1906-08-12 00:00:00"
+      "searchText": "brigham alexander  wixted 7/13/04- 21.9 years",
+      "birthDate": "2004-07-13",
+      "age": "21.9 years"
     },
     {
       "id": "wixted-121-21",
       "name": "Tatum Isabelle",
       "dates": "5/9/2007-",
-      "notes": [
-        "Age today is 19.2"
-      ],
+      "notes": [],
       "col": 21,
       "row": 121,
       "branch": "wixted",
@@ -3144,15 +3302,16 @@
           "text": "Age today is 19.2"
         }
       ],
-      "searchText": "tatum isabelle 5/9/2007- wixted age today is 19.2"
+      "searchText": "tatum isabelle 5/9/2007- wixted 19.1 years",
+      "birthDate": "2007-05-09",
+      "age": "19.1 years"
     },
     {
       "id": "wixted-121-23",
       "name": "Beckham Augustine",
       "dates": "",
       "notes": [
-        "7/3/09-",
-        "Age today is 17.0"
+        "7/3/09-"
       ],
       "col": 23,
       "row": 121,
@@ -3170,15 +3329,16 @@
           "text": "Age today is 17.0"
         }
       ],
-      "searchText": "beckham augustine  wixted 7/3/09- age today is 17.0"
+      "searchText": "beckham augustine  wixted 7/3/09- 16.9 years",
+      "birthDate": "2009-07-03",
+      "age": "16.9 years"
     },
     {
       "id": "wixted-121-25",
       "name": "Tegan Evangeline",
       "dates": "",
       "notes": [
-        "8/11/11-",
-        "Age today is 14.9"
+        "8/11/11-"
       ],
       "col": 25,
       "row": 121,
@@ -3196,15 +3356,16 @@
           "text": "Age today is 14.9"
         }
       ],
-      "searchText": "tegan evangeline  wixted 8/11/11- age today is 14.9"
+      "searchText": "tegan evangeline  wixted 8/11/11- 14.8 years",
+      "birthDate": "2011-08-11",
+      "age": "14.8 years"
     },
     {
       "id": "wixted-121-27",
       "name": "Tessa Emeline",
       "dates": "",
       "notes": [
-        "4/11/14-",
-        "Age today is 12.2"
+        "4/11/14-"
       ],
       "col": 27,
       "row": 121,
@@ -3222,15 +3383,16 @@
           "text": "Age today is 12.2"
         }
       ],
-      "searchText": "tessa emeline  wixted 4/11/14- age today is 12.2"
+      "searchText": "tessa emeline  wixted 4/11/14- 12.2 years",
+      "birthDate": "2014-04-11",
+      "age": "12.2 years"
     },
     {
       "id": "wixted-121-31",
       "name": "Sedona Tracy Wixted",
-      "dates": "2019-08-24 00:00:00",
+      "dates": "08/24/2019–",
       "notes": [
-        "Orange, CA",
-        "Agee today 2"
+        "Orange, CA"
       ],
       "col": 31,
       "row": 121,
@@ -3248,21 +3410,23 @@
           "text": "Agee today 2"
         }
       ],
-      "searchText": "sedona tracy wixted 2019-08-24 00:00:00 wixted orange, ca agee today 2"
+      "searchText": "sedona tracy wixted 08/24/2019– wixted orange, ca 6.8 years",
+      "birthDate": "2019-08-24",
+      "motherId": "wixted-114-33",
+      "age": "6.8 years"
     },
     {
       "id": "wixted-121-33",
       "name": "Bruce William Wixted",
-      "dates": "2021-07-24 00:00:00",
+      "dates": "07/24/2021–",
       "notes": [
-        "Orange, CA",
-        "Age today 10 months"
+        "Orange, CA"
       ],
       "col": 33,
       "row": 121,
       "branch": "wixted",
       "generation": 11,
-      "parentId": "wixted-114-33",
+      "parentId": "wixted-114-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3274,15 +3438,17 @@
           "text": "Age today 10 months"
         }
       ],
-      "searchText": "bruce william wixted 2021-07-24 00:00:00 wixted orange, ca age today 10 months"
+      "searchText": "bruce william wixted 07/24/2021– wixted orange, ca 4.9 years",
+      "birthDate": "2021-07-24",
+      "motherId": "wixted-114-33",
+      "age": "4.9 years"
     },
     {
       "id": "wixted-121-37",
       "name": "Scout Evelyn Bundy",
       "dates": "5/8/2022-",
       "notes": [
-        "Tucson,AZ",
-        "Age today is 4.1"
+        "Tucson,AZ"
       ],
       "col": 37,
       "row": 121,
@@ -3300,7 +3466,9 @@
           "text": "Age today is 4.1"
         }
       ],
-      "searchText": "scout evelyn bundy 5/8/2022- wixted tucson,az age today is 4.1"
+      "searchText": "scout evelyn bundy 5/8/2022- wixted tucson,az 4.1 years",
+      "birthDate": "2022-05-08",
+      "age": "4.1 years"
     },
     {
       "id": "wixted-141-19",
@@ -3370,7 +3538,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "anders parsson 2/23/1739-1/20/1801 evelyn applekulla,rumskulla.kalmar,swe rumskulla.kalmar,swe"
+      "searchText": "anders parsson 2/23/1739-1/20/1801 evelyn applekulla,rumskulla.kalmar,swe rumskulla.kalmar,swe 287.3 years",
+      "birthDate": "1739-02-23",
+      "age": "287.3 years"
     },
     {
       "id": "evelyn-12-7",
@@ -3395,7 +3565,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "kersten bengtsdotter 1738-5/14/1771 evelyn hylta,rumskulla.kalmar,swe rumskulla.kalmar,swe"
+      "searchText": "kersten bengtsdotter 1738-5/14/1771 evelyn hylta,rumskulla.kalmar,swe rumskulla.kalmar,swe 255.1 years",
+      "birthDate": "1771-05-14",
+      "age": "255.1 years"
     },
     {
       "id": "evelyn-12-11",
@@ -3420,7 +3592,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "sara nilsdotter 1734-4/26/1788 evelyn hylta,rumskulla.kalmar,swe rumskulla.kalmar,swe"
+      "searchText": "sara nilsdotter 1734-4/26/1788 evelyn hylta,rumskulla.kalmar,swe rumskulla.kalmar,swe 238.2 years",
+      "birthDate": "1788-04-26",
+      "age": "238.2 years"
     },
     {
       "id": "evelyn-19-7",
@@ -3445,7 +3619,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "anders andersson 1/19/1760-7/5/1844 (84) evelyn applekulla,rumskulla.kalmar,swe rumskulla.kalmar,swe"
+      "searchText": "anders andersson 1/19/1760-7/5/1844 (84) evelyn applekulla,rumskulla.kalmar,swe rumskulla.kalmar,swe 266.4 years",
+      "birthDate": "1760-01-19",
+      "age": "266.4 years"
     },
     {
       "id": "evelyn-19-9",
@@ -3470,7 +3646,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "catharina persdotter 10/12/1760-5/19/1834 evelyn hylta,rumskulla.kalmar,swe applekulla,rumskulla.kalmar,swe"
+      "searchText": "catharina persdotter 10/12/1760-5/19/1834 evelyn hylta,rumskulla.kalmar,swe applekulla,rumskulla.kalmar,swe 265.7 years",
+      "birthDate": "1760-10-12",
+      "age": "265.7 years"
     },
     {
       "id": "evelyn-26-5",
@@ -3490,7 +3668,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "gabriel persson 3/8/1775-6/18/1812 (37) evelyn rumskulla.kalmar,swe"
+      "searchText": "gabriel persson 3/8/1775-6/18/1812 (37) evelyn rumskulla.kalmar,swe 251.2 years",
+      "birthDate": "1775-03-08",
+      "age": "251.2 years"
     },
     {
       "id": "evelyn-26-7",
@@ -3515,7 +3695,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "cristina andersdotter 5/12/1785-5/7/1841 (55) evelyn hult,rumskulla.kalmar,swe rumskulla.kalmar,swe"
+      "searchText": "cristina andersdotter 5/12/1785-5/7/1841 (55) evelyn hult,rumskulla.kalmar,swe rumskulla.kalmar,swe 241.1 years",
+      "birthDate": "1785-05-12",
+      "age": "241.1 years"
     },
     {
       "id": "evelyn-26-9",
@@ -3528,7 +3710,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "johannes samuelsson cristina remarried 2/2/1814 evelyn"
+      "searchText": "johannes samuelsson cristina remarried 2/2/1814 evelyn 212.3 years",
+      "birthDate": "1814-02-02",
+      "age": "212.3 years"
     },
     {
       "id": "evelyn-26-15",
@@ -3571,7 +3755,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "sara catherina gabrielsdotter 4/29/1807-11/4/1864 (57) evelyn rumskulla.kalmar,swe hassleby,jonkoping,swe carl johan petersson 9/12/1831-"
+      "searchText": "sara catherina gabrielsdotter 4/29/1807-11/4/1864 (57) evelyn rumskulla.kalmar,swe hassleby,jonkoping,swe carl johan petersson 9/12/1831- 219.2 years",
+      "birthDate": "1807-04-29",
+      "age": "219.2 years"
     },
     {
       "id": "evelyn-33-7",
@@ -3596,7 +3782,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "peter jonsson 5/24/1794-2/4/1847 (52) evelyn swe hassleby,jonkoping,swe"
+      "searchText": "peter jonsson 5/24/1794-2/4/1847 (52) evelyn swe hassleby,jonkoping,swe 232.1 years",
+      "birthDate": "1794-05-24",
+      "age": "232.1 years"
     },
     {
       "id": "evelyn-33-17",
@@ -3621,7 +3809,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "caroline l calkins 1835-4/7/1911 evelyn c1875 phelps 40 died in rochester"
+      "searchText": "caroline l calkins 1835-4/7/1911 evelyn c1875 phelps 40 died in rochester 115.2 years",
+      "birthDate": "1911-04-07",
+      "age": "115.2 years"
     },
     {
       "id": "evelyn-39-15",
@@ -3634,7 +3824,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 4,
-      "searchText": "riverview cem phelps  evelyn cemetery burial location"
+      "searchText": "riverview cem phelps  evelyn"
     },
     {
       "id": "evelyn-39-17",
@@ -3647,7 +3837,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 4,
-      "searchText": "riverview cem phelps  evelyn cemetery burial location"
+      "searchText": "riverview cem phelps  evelyn"
     },
     {
       "id": "evelyn-42-7",
@@ -3667,7 +3857,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "peter august petersson 9/19/1833- evelyn hassleby,jonkoping,swe"
+      "searchText": "peter august petersson 9/19/1833- evelyn hassleby,jonkoping,swe 192.8 years",
+      "birthDate": "1833-09-19",
+      "age": "192.8 years"
     },
     {
       "id": "evelyn-42-9",
@@ -3692,7 +3884,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "kristina maria bornholm 7/3/1838-10/1896 (57) evelyn vetlanda,jonkoping,swe hassleby,jonkoping,swe"
+      "searchText": "kristina maria bornholm 7/3/1838-10/1896 (57) evelyn vetlanda,jonkoping,swe hassleby,jonkoping,swe 187.9 years",
+      "birthDate": "1838-07-03",
+      "age": "187.9 years"
     },
     {
       "id": "evelyn-42-11",
@@ -3783,7 +3977,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "bror august l. bornholm 10/2/1863-1/18/1953 evelyn"
+      "searchText": "bror august l. bornholm 10/2/1863-1/18/1953 evelyn 162.7 years",
+      "birthDate": "1863-10-02",
+      "age": "162.7 years"
     },
     {
       "id": "evelyn-53-7",
@@ -3796,7 +3992,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "selma maria petersdotter 1/19/1866-1932 (gravestone) (66) evelyn"
+      "searchText": "selma maria petersdotter 1/19/1866-1932 (gravestone) (66) evelyn 160.4 years",
+      "birthDate": "1866-01-19",
+      "age": "160.4 years"
     },
     {
       "id": "evelyn-53-9",
@@ -3844,7 +4042,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "nellie beatrice fanton nov 1873-10/28/1957 (84) evelyn cancer pancreas c1875 phelps 1  8/12  (??'s daughter) c1880 geneva ny 6 with mom c1900 gorham ny 24"
+      "searchText": "nellie beatrice fanton nov 1873-10/28/1957 (84) evelyn cancer pancreas c1875 phelps 1  8/12  (??'s daughter) c1880 geneva ny 6 with mom c1900 gorham ny 24 68.7 years",
+      "birthDate": "1957-10-28",
+      "age": "68.7 years"
     },
     {
       "id": "evelyn-53-13",
@@ -3874,7 +4074,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "charles albert gilbert 9/15/1869-4/6/1949 (80) evelyn cerebral hemmorage d. 154 penhurst st. c1900 gorham ny 30"
+      "searchText": "charles albert gilbert 9/15/1869-4/6/1949 (80) evelyn cerebral hemmorage d. 154 penhurst st. c1900 gorham ny 30 156.8 years",
+      "birthDate": "1869-09-15",
+      "age": "156.8 years"
     },
     {
       "id": "evelyn-69-11",
@@ -3887,7 +4089,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "mt hope rochester  evelyn cemetery burial location"
+      "searchText": "mt hope rochester  evelyn"
     },
     {
       "id": "evelyn-69-13",
@@ -3900,7 +4102,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "mt hope rochester m. 1898-99 evelyn cemetery burial location"
+      "searchText": "mt hope rochester m. 1898-99 evelyn"
     },
     {
       "id": "evelyn-72-1",
@@ -3926,7 +4128,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "martin fritiof tobias leby* 2/1/1889-7/27/1984 (95) evelyn"
+      "searchText": "martin fritiof tobias leby* 2/1/1889-7/27/1984 (95) evelyn 137.3 years",
+      "birthDate": "1889-02-01",
+      "age": "137.3 years"
     },
     {
       "id": "evelyn-72-5",
@@ -3939,7 +4143,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "karl hilmer elde* 3/6/1889-8/21/1971 (82) evelyn"
+      "searchText": "karl hilmer elde* 3/6/1889-8/21/1971 (82) evelyn 137.2 years",
+      "birthDate": "1889-03-06",
+      "age": "137.2 years"
     },
     {
       "id": "evelyn-72-7",
@@ -3952,7 +4158,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "selma lydia maria* 10/11/1894-7/28/1973 (78) evelyn"
+      "searchText": "selma lydia maria* 10/11/1894-7/28/1973 (78) evelyn 131.7 years",
+      "birthDate": "1894-10-11",
+      "age": "131.7 years"
     },
     {
       "id": "evelyn-72-9",
@@ -3997,7 +4205,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "jonas fritiof emanuel jones * 1/8/1893-10/1962 (69) evelyn ss104-07-4667 c1910 jamestown,ny 17 c1920 roch 27 w/fontaine family c1925 roch 32 w/grace c1930 roch 37 c1940 roch 47"
+      "searchText": "jonas fritiof emanuel jones * 1/8/1893-10/1962 (69) evelyn ss104-07-4667 c1910 jamestown,ny 17 c1920 roch 27 w/fontaine family c1925 roch 32 w/grace c1930 roch 37 c1940 roch 47 133.4 years",
+      "birthDate": "1893-01-08",
+      "age": "133.4 years"
     },
     {
       "id": "evelyn-72-11",
@@ -4047,7 +4257,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "grace louise gilbert ss116-20-2710 evelyn 10/8/99 - 9/26/49 (49) c1900 gorham ny 7/12 c1910 rochester ny 10 c1920 rochester ny 20 c1920 roch 25 w/emanuel c1930 roch 30 c1940 roch 38"
+      "searchText": "grace louise gilbert ss116-20-2710 evelyn 10/8/99 - 9/26/49 (49) c1900 gorham ny 7/12 c1910 rochester ny 10 c1920 rochester ny 20 c1920 roch 25 w/emanuel c1930 roch 30 c1940 roch 38 26.7 years",
+      "birthDate": "1999-10-08",
+      "age": "26.7 years"
     },
     {
       "id": "evelyn-85-9",
@@ -4060,7 +4272,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "mt hope rochester,ny  evelyn cemetery burial location"
+      "searchText": "mt hope rochester,ny  evelyn"
     },
     {
       "id": "evelyn-85-11",
@@ -4080,7 +4292,7 @@
         }
       ],
       "generation": 9,
-      "searchText": "mt hope rochester,ny  evelyn came to roch in 1903 cemetery burial location"
+      "searchText": "mt hope rochester,ny  evelyn came to roch in 1903"
     },
     {
       "id": "ev-gilbert-5-13",
@@ -4150,7 +4362,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "benjamin bonnell 1/7/1590-7/1655 gilbert london, eng"
+      "searchText": "benjamin bonnell 1/7/1590-7/1655 gilbert london, eng 436.4 years",
+      "birthDate": "1590-01-07",
+      "age": "436.4 years"
     },
     {
       "id": "ev-gilbert-11-15",
@@ -4195,7 +4409,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "benjamin wilmot 1589-10/7/1669 gilbert history doc"
+      "searchText": "benjamin wilmot 1589-10/7/1669 gilbert history doc 356.7 years",
+      "birthDate": "1669-10-07",
+      "age": "356.7 years"
     },
     {
       "id": "ev-gilbert-11-19",
@@ -4208,7 +4424,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 1,
-      "searchText": "ann ladd 1593-10/7/1668 gilbert"
+      "searchText": "ann ladd 1593-10/7/1668 gilbert 357.7 years",
+      "birthDate": "1668-10-07",
+      "age": "357.7 years"
     },
     {
       "id": "ev-gilbert-11-29",
@@ -4221,7 +4439,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 1,
-      "searchText": "sir john done 1575-4/14/1629 gilbert"
+      "searchText": "sir john done 1575-4/14/1629 gilbert 397.2 years",
+      "birthDate": "1629-04-14",
+      "age": "397.2 years"
     },
     {
       "id": "ev-gilbert-16-17",
@@ -4246,7 +4466,7 @@
         }
       ],
       "generation": 2,
-      "searchText": "new haven, conn  gilbert rev. isaac whitehead history doc cemetery burial location"
+      "searchText": "new haven, conn  gilbert rev. isaac whitehead history doc"
     },
     {
       "id": "ev-gilbert-16-19",
@@ -4259,7 +4479,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "new haven, conn  gilbert cemetery burial location"
+      "searchText": "new haven, conn  gilbert"
     },
     {
       "id": "ev-gilbert-16-29",
@@ -4297,7 +4517,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "william bonnell (bunnell) 1610-8/18/1669 gilbert came 1630, ship \"james\" history doc"
+      "searchText": "william bonnell (bunnell) 1610-8/18/1669 gilbert came 1630, ship \"james\" history doc 356.8 years",
+      "birthDate": "1669-08-18",
+      "age": "356.8 years"
     },
     {
       "id": "ev-gilbert-19-15",
@@ -4443,7 +4665,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "sir knight deacon john doane 1590-2/21/1685 gilbert gravestone photo came to plymouth 1629 via holland"
+      "searchText": "sir knight deacon john doane 1590-2/21/1685 gilbert gravestone photo came to plymouth 1629 via holland 341.3 years",
+      "birthDate": "1685-02-21",
+      "age": "341.3 years"
     },
     {
       "id": "ev-gilbert-24-15",
@@ -4456,7 +4680,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 4,
-      "searchText": "new haven, conn  gilbert cemetery burial location"
+      "searchText": "new haven, conn  gilbert"
     },
     {
       "id": "ev-gilbert-24-17",
@@ -4469,7 +4693,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 4,
-      "searchText": "new haven, conn  gilbert cemetery burial location"
+      "searchText": "new haven, conn  gilbert"
     },
     {
       "id": "ev-gilbert-25-13",
@@ -4482,7 +4706,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "new haven, conn  gilbert cemetery burial location"
+      "searchText": "new haven, conn  gilbert"
     },
     {
       "id": "ev-gilbert-25-15",
@@ -4495,7 +4719,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "new haven, conn  gilbert cemetery burial location"
+      "searchText": "new haven, conn  gilbert"
     },
     {
       "id": "ev-gilbert-29-13",
@@ -4515,7 +4739,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "nathaniel bonnel 1648-1711 or 3/12/1696 gilbert history doc"
+      "searchText": "nathaniel bonnel 1648-1711 or 3/12/1696 gilbert history doc 330.2 years",
+      "birthDate": "1696-03-12",
+      "age": "330.2 years"
     },
     {
       "id": "ev-gilbert-29-15",
@@ -4535,7 +4761,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "susannah whitehead 9/5/1650-2/13/1733 gilbert history doc"
+      "searchText": "susannah whitehead 9/5/1650-2/13/1733 gilbert history doc 375.8 years",
+      "birthDate": "1650-09-05",
+      "age": "375.8 years"
     },
     {
       "id": "ev-gilbert-29-17",
@@ -4548,7 +4776,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "john searing 1648-9/8/1712 gilbert"
+      "searchText": "john searing 1648-9/8/1712 gilbert 313.8 years",
+      "birthDate": "1712-09-08",
+      "age": "313.8 years"
     },
     {
       "id": "ev-gilbert-29-19",
@@ -4614,7 +4844,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "deacon shubael dimmock 9/14/1644-10/29/1732 gilbert barnstable,mass"
+      "searchText": "deacon shubael dimmock 9/14/1644-10/29/1732 gilbert barnstable,mass 381.8 years",
+      "birthDate": "1644-09-14",
+      "age": "381.8 years"
     },
     {
       "id": "ev-gilbert-29-27",
@@ -4639,7 +4871,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "joanna bursley 3/1/1644-5/8/1727 gilbert gravestone photo barnstable,mass"
+      "searchText": "joanna bursley 3/1/1644-5/8/1727 gilbert gravestone photo barnstable,mass 382.2 years",
+      "birthDate": "1644-03-01",
+      "age": "382.2 years"
     },
     {
       "id": "ev-gilbert-29-29",
@@ -4652,7 +4886,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "deacon daniel doane sr 11/28/1636-12/20/1712 gilbert"
+      "searchText": "deacon daniel doane sr 11/28/1636-12/20/1712 gilbert 389.6 years",
+      "birthDate": "1636-11-28",
+      "age": "389.6 years"
     },
     {
       "id": "ev-gilbert-29-31",
@@ -4677,7 +4913,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "hepzibah cole 4/16/1649-1712 gilbert 2nd wife eastham,barnstable,mass"
+      "searchText": "hepzibah cole 4/16/1649-1712 gilbert 2nd wife eastham,barnstable,mass 377.2 years",
+      "birthDate": "1649-04-16",
+      "age": "377.2 years"
     },
     {
       "id": "ev-gilbert-31-17",
@@ -4775,7 +5013,7 @@
         }
       ],
       "generation": 9,
-      "searchText": "new haven, conn  gilbert elizabethtown,nj cemetery burial location"
+      "searchText": "new haven, conn  gilbert elizabethtown,nj"
     },
     {
       "id": "ev-gilbert-33-15",
@@ -4795,7 +5033,7 @@
         }
       ],
       "generation": 9,
-      "searchText": "new haven, conn m. 1/3/1665 new haven gilbert elizabethtown,nj cemetery burial location"
+      "searchText": "new haven, conn m. 1/3/1665 new haven gilbert elizabethtown,nj"
     },
     {
       "id": "ev-gilbert-34-25",
@@ -4808,7 +5046,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 10,
-      "searchText": "mansfield center olde cem ct  gilbert cemetery burial location"
+      "searchText": "mansfield center olde cem ct  gilbert"
     },
     {
       "id": "ev-gilbert-34-27",
@@ -4821,7 +5059,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 10,
-      "searchText": "mansfield center olde cem ct m. 4/1663 gilbert cemetery burial location"
+      "searchText": "mansfield center olde cem ct m. 4/1663 gilbert"
     },
     {
       "id": "ev-gilbert-38-9",
@@ -4884,7 +5122,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 11,
-      "searchText": "joseph bonnell 1684-3/14/1747 gilbert"
+      "searchText": "joseph bonnell 1684-3/14/1747 gilbert 279.2 years",
+      "birthDate": "1747-03-14",
+      "age": "279.2 years"
     },
     {
       "id": "ev-gilbert-38-15",
@@ -4909,7 +5149,9 @@
         }
       ],
       "generation": 11,
-      "searchText": "nathaniel bonnell 1669-9/4/1736 gilbert history doc gravestone photo"
+      "searchText": "nathaniel bonnell 1669-9/4/1736 gilbert history doc gravestone photo 289.8 years",
+      "birthDate": "1736-09-04",
+      "age": "289.8 years"
     },
     {
       "id": "ev-gilbert-38-17",
@@ -4967,7 +5209,9 @@
         }
       ],
       "generation": 11,
-      "searchText": "mary morse 9/19/1659-8/23/1725 gilbert 2nd wife"
+      "searchText": "mary morse 9/19/1659-8/23/1725 gilbert 2nd wife 366.8 years",
+      "birthDate": "1659-09-19",
+      "age": "366.8 years"
     },
     {
       "id": "ev-gilbert-38-23",
@@ -4992,7 +5236,9 @@
         }
       ],
       "generation": 11,
-      "searchText": "timothy dimmock 3/8/1668- gilbert barnstable,mass ashford, ct"
+      "searchText": "timothy dimmock 3/8/1668- gilbert barnstable,mass ashford, ct 358.2 years",
+      "birthDate": "1668-03-08",
+      "age": "358.2 years"
     },
     {
       "id": "ev-gilbert-38-25",
@@ -5067,7 +5313,7 @@
         }
       ],
       "generation": 12,
-      "searchText": "new providence pres cem nj  gilbert newbury,mass elizabethtown, nj cemetery burial location"
+      "searchText": "new providence pres cem nj  gilbert newbury,mass elizabethtown, nj"
     },
     {
       "id": "ev-gilbert-42-13",
@@ -5125,7 +5371,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "henry lacy 1681-7/16/1768 gilbert salem, mass morristown, nj"
+      "searchText": "henry lacy 1681-7/16/1768 gilbert salem, mass morristown, nj 257.9 years",
+      "birthDate": "1768-07-16",
+      "age": "257.9 years"
     },
     {
       "id": "ev-gilbert-47-13",
@@ -5150,7 +5398,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "hannah morehouse 10/7/1694-8/21/1727 gilbert fairfield, conn elizabethtown, nj"
+      "searchText": "hannah morehouse 10/7/1694-8/21/1727 gilbert fairfield, conn elizabethtown, nj 331.7 years",
+      "birthDate": "1694-10-07",
+      "age": "331.7 years"
     },
     {
       "id": "ev-gilbert-47-15",
@@ -5163,7 +5413,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 14,
-      "searchText": "capt nathaniel bonnell 1696-11/18/1763  grave photo gilbert"
+      "searchText": "capt nathaniel bonnell 1696-11/18/1763  grave photo gilbert 262.6 years",
+      "birthDate": "1763-11-18",
+      "age": "262.6 years"
     },
     {
       "id": "ev-gilbert-47-17",
@@ -5183,7 +5435,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "hannah bonnell 1694-6/19/1736 gilbert elizabethtown, nj"
+      "searchText": "hannah bonnell 1694-6/19/1736 gilbert elizabethtown, nj 290.0 years",
+      "birthDate": "1736-06-19",
+      "age": "290.0 years"
     },
     {
       "id": "ev-gilbert-47-19",
@@ -5223,7 +5477,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "john dimick 1/3/1705-6/23/1789 gilbert mansfield,conn"
+      "searchText": "john dimick 1/3/1705-6/23/1789 gilbert mansfield,conn 321.4 years",
+      "birthDate": "1705-01-03",
+      "age": "321.4 years"
     },
     {
       "id": "ev-gilbert-47-25",
@@ -5243,7 +5499,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "hannah kendall (kindall) 7/24/1707-8/23/1790 (83) gilbert woburn,mass"
+      "searchText": "hannah kendall (kindall) 7/24/1707-8/23/1790 (83) gilbert woburn,mass 318.9 years",
+      "birthDate": "1707-07-24",
+      "age": "318.9 years"
     },
     {
       "id": "ev-gilbert-51-23",
@@ -5256,7 +5514,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 15,
-      "searchText": "four corners cem sullivan,nh  gilbert cemetery burial location"
+      "searchText": "four corners cem sullivan,nh  gilbert"
     },
     {
       "id": "ev-gilbert-51-25",
@@ -5269,7 +5527,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 15,
-      "searchText": "four corners cem sullivan,nh m. 10/10/1728 gilbert cemetery burial location"
+      "searchText": "four corners cem sullivan,nh m. 10/10/1728 gilbert"
     },
     {
       "id": "ev-gilbert-55-15",
@@ -5289,7 +5547,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "abraham lacy 1722-6/2/1777 gilbert elizabethtown,nj"
+      "searchText": "abraham lacy 1722-6/2/1777 gilbert elizabethtown,nj 249.0 years",
+      "birthDate": "1777-06-02",
+      "age": "249.0 years"
     },
     {
       "id": "ev-gilbert-55-17",
@@ -5309,7 +5569,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "rachel broadwell 1725-7/9/1784 gilbert elizabethtown,nj"
+      "searchText": "rachel broadwell 1725-7/9/1784 gilbert elizabethtown,nj 241.9 years",
+      "birthDate": "1784-07-09",
+      "age": "241.9 years"
     },
     {
       "id": "ev-gilbert-55-23",
@@ -5339,7 +5601,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "isaac dimmick 7/3/1743-4/21/1807 gilbert moved to nh 1769 then returned to ashford willington,conn"
+      "searchText": "isaac dimmick 7/3/1743-4/21/1807 gilbert moved to nh 1769 then returned to ashford willington,conn 282.9 years",
+      "birthDate": "1743-07-03",
+      "age": "282.9 years"
     },
     {
       "id": "ev-gilbert-55-25",
@@ -5434,7 +5698,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "abraham lacy 10/6/1755-10/16/1827 (72) gilbert elizabethtown,nj burns,ny"
+      "searchText": "abraham lacy 10/6/1755-10/16/1827 (72) gilbert elizabethtown,nj burns,ny 270.7 years",
+      "birthDate": "1755-10-06",
+      "age": "270.7 years"
     },
     {
       "id": "ev-gilbert-64-17",
@@ -5454,7 +5720,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "susannah wyllis(willis) 11/1/1754-4/4/1832 (78) gilbert bridgewater,mass"
+      "searchText": "susannah wyllis(willis) 11/1/1754-4/4/1832 (78) gilbert bridgewater,mass 271.6 years",
+      "birthDate": "1754-11-01",
+      "age": "271.6 years"
     },
     {
       "id": "ev-gilbert-64-19",
@@ -5474,7 +5742,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "john dimmick 1772-6/23/1842 gilbert mass"
+      "searchText": "john dimmick 1772-6/23/1842 gilbert mass 184.0 years",
+      "birthDate": "1842-06-23",
+      "age": "184.0 years"
     },
     {
       "id": "ev-gilbert-64-21",
@@ -5514,7 +5784,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "isaac dimmick 7/12/1770- gilbert next door neighbor to"
+      "searchText": "isaac dimmick 7/12/1770- gilbert next door neighbor to 255.9 years",
+      "birthDate": "1770-07-12",
+      "age": "255.9 years"
     },
     {
       "id": "ev-gilbert-64-25",
@@ -5534,7 +5806,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "elizabeth brewer 1779-4/26/1861 (81) gilbert next door neighbor to"
+      "searchText": "elizabeth brewer 1779-4/26/1861 (81) gilbert next door neighbor to 165.2 years",
+      "birthDate": "1861-04-26",
+      "age": "165.2 years"
     },
     {
       "id": "ev-gilbert-69-23",
@@ -5580,7 +5854,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 19,
-      "searchText": "wood cem ossian,ny  gilbert cemetery burial location"
+      "searchText": "wood cem ossian,ny  gilbert"
     },
     {
       "id": "ev-gilbert-72-23",
@@ -5605,7 +5879,7 @@
         }
       ],
       "generation": 19,
-      "searchText": "wood cem ossian ny  gilbert jacob 1/15/1819+ cemetery burial location"
+      "searchText": "wood cem ossian ny  gilbert jacob 1/15/1819+"
     },
     {
       "id": "ev-gilbert-72-25",
@@ -5618,7 +5892,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 19,
-      "searchText": "wood cem ossian ny  gilbert cemetery burial location"
+      "searchText": "wood cem ossian ny  gilbert"
     },
     {
       "id": "ev-gilbert-76-3",
@@ -5691,7 +5965,9 @@
         }
       ],
       "generation": 20,
-      "searchText": "john gilbert 9/24/1776-8/19/1843 (67) gilbert m.susan, then susan died, m. sister sally ossian,ny"
+      "searchText": "john gilbert 9/24/1776-8/19/1843 (67) gilbert m.susan, then susan died, m. sister sally ossian,ny 249.8 years",
+      "birthDate": "1776-09-24",
+      "age": "249.8 years"
     },
     {
       "id": "ev-gilbert-76-15",
@@ -5716,7 +5992,9 @@
         }
       ],
       "generation": 20,
-      "searchText": "sally lacy 9/24/1781-3/8/1861 (67) gilbert elizabethtown,nj sparta,ny"
+      "searchText": "sally lacy 9/24/1781-3/8/1861 (67) gilbert elizabethtown,nj sparta,ny 244.8 years",
+      "birthDate": "1781-09-24",
+      "age": "244.8 years"
     },
     {
       "id": "ev-gilbert-76-17",
@@ -5761,7 +6039,9 @@
         }
       ],
       "generation": 20,
-      "searchText": "elias dimmick 12/1804-4/23/1882 gilbert look at neighbors on 1850 census conn"
+      "searchText": "elias dimmick 12/1804-4/23/1882 gilbert look at neighbors on 1850 census conn 144.2 years",
+      "birthDate": "1882-04-23",
+      "age": "144.2 years"
     },
     {
       "id": "ev-gilbert-76-29",
@@ -5786,7 +6066,9 @@
         }
       ],
       "generation": 20,
-      "searchText": "john washington dimmick 8/29/1798-11/12/1884 (86) gilbert carpenter neighbor to"
+      "searchText": "john washington dimmick 8/29/1798-11/12/1884 (86) gilbert carpenter neighbor to 227.8 years",
+      "birthDate": "1798-08-29",
+      "age": "227.8 years"
     },
     {
       "id": "ev-gilbert-76-31",
@@ -5806,7 +6088,9 @@
         }
       ],
       "generation": 20,
-      "searchText": "cynthia lucretia payne 3/5/1810-9/25/1899 gilbert neighbor to"
+      "searchText": "cynthia lucretia payne 3/5/1810-9/25/1899 gilbert neighbor to 216.2 years",
+      "birthDate": "1810-03-05",
+      "age": "216.2 years"
     },
     {
       "id": "ev-gilbert-81-29",
@@ -5846,7 +6130,9 @@
         }
       ],
       "generation": 21,
-      "searchText": "elias dimmick in 1850 m. 9/30/1828 in ossian gilbert hinsdale, mass"
+      "searchText": "elias dimmick in 1850 m. 9/30/1828 in ossian gilbert hinsdale, mass 197.8 years",
+      "birthDate": "1828-09-30",
+      "age": "197.8 years"
     },
     {
       "id": "ev-gilbert-83-9",
@@ -5859,7 +6145,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 22,
-      "searchText": "rose cem, green tsp,gallia,ohio  gilbert cemetery burial location"
+      "searchText": "rose cem, green tsp,gallia,ohio  gilbert"
     },
     {
       "id": "ev-gilbert-83-17",
@@ -5872,7 +6158,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 22,
-      "searchText": "wood cem,ossian,ny  gilbert cemetery burial location"
+      "searchText": "wood cem,ossian,ny  gilbert"
     },
     {
       "id": "ev-gilbert-83-19",
@@ -5885,7 +6171,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 22,
-      "searchText": "wood cem ossian,ny  gilbert cemetery burial location"
+      "searchText": "wood cem ossian,ny  gilbert"
     },
     {
       "id": "ev-gilbert-83-29",
@@ -5898,7 +6184,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 22,
-      "searchText": "oak knoll cem,princeton,mn to mn 1852-1856 w. henry gilbert cemetery burial location"
+      "searchText": "oak knoll cem,princeton,mn to mn 1852-1856 w. henry gilbert"
     },
     {
       "id": "ev-gilbert-83-31",
@@ -5911,7 +6197,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 22,
-      "searchText": "oak knoll cem,princeton,mn m. 9/30/1828 in ossian gilbert cemetery burial location"
+      "searchText": "oak knoll cem,princeton,mn m. 9/30/1828 in ossian gilbert"
     },
     {
       "id": "ev-gilbert-87-9",
@@ -6003,7 +6289,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 23,
-      "searchText": "nathaniel c. 1/16/1833-9/10/1886 (53) gilbert"
+      "searchText": "nathaniel c. 1/16/1833-9/10/1886 (53) gilbert 193.4 years",
+      "birthDate": "1833-01-16",
+      "age": "193.4 years"
     },
     {
       "id": "ev-gilbert-87-25",
@@ -6016,7 +6304,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 23,
-      "searchText": "ruel loomis dimmick 5/18/1835-10/10/1926 (91) gilbert"
+      "searchText": "ruel loomis dimmick 5/18/1835-10/10/1926 (91) gilbert 191.1 years",
+      "birthDate": "1835-05-18",
+      "age": "191.1 years"
     },
     {
       "id": "ev-gilbert-87-29",
@@ -6041,7 +6331,9 @@
         }
       ],
       "generation": 23,
-      "searchText": "david d. 1838-7/6/1915 gilbert wife: mary elizabeth cole. moulder at geo sweet in cumminsville"
+      "searchText": "david d. 1838-7/6/1915 gilbert wife: mary elizabeth cole. moulder at geo sweet in cumminsville 110.9 years",
+      "birthDate": "1915-07-06",
+      "age": "110.9 years"
     },
     {
       "id": "ev-gilbert-87-31",
@@ -6061,7 +6353,9 @@
         }
       ],
       "generation": 23,
-      "searchText": "henry glennara dimmick 8/22/1829-1/6/1911 gilbert neighbor to"
+      "searchText": "henry glennara dimmick 8/22/1829-1/6/1911 gilbert neighbor to 196.8 years",
+      "birthDate": "1829-08-22",
+      "age": "196.8 years"
     },
     {
       "id": "ev-gilbert-92-9",
@@ -6112,7 +6406,7 @@
         }
       ],
       "generation": 25,
-      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny almond,ny cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny almond,ny"
     },
     {
       "id": "ev-gilbert-93-23",
@@ -6142,7 +6436,7 @@
         }
       ],
       "generation": 25,
-      "searchText": "green mount cem dansville  gilbert sec s-upper ossian, ny dansville,ny cemetery burial location"
+      "searchText": "green mount cem dansville  gilbert sec s-upper ossian, ny dansville,ny"
     },
     {
       "id": "ev-gilbert-93-25",
@@ -6172,7 +6466,7 @@
         }
       ],
       "generation": 25,
-      "searchText": "green mount cem dansville  gilbert sec e ossian, ny buffalo,ny cemetery burial location"
+      "searchText": "green mount cem dansville  gilbert sec e ossian, ny buffalo,ny"
     },
     {
       "id": "ev-gilbert-93-31",
@@ -6220,7 +6514,7 @@
         }
       ],
       "generation": 26,
-      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny rochester,ny lambert 'bert' smith 6/22/1856- cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny rochester,ny lambert 'bert' smith 6/22/1856-"
     },
     {
       "id": "ev-gilbert-94-13",
@@ -6245,7 +6539,7 @@
         }
       ],
       "generation": 26,
-      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny sparta,ny - mt hope rochester cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert ossian,ny sparta,ny - mt hope rochester"
     },
     {
       "id": "ev-gilbert-94-29",
@@ -6270,7 +6564,7 @@
         }
       ],
       "generation": 26,
-      "searchText": "green mount cemetery  gilbert wadsworth,ny dansville,ny cemetery burial location"
+      "searchText": "green mount cemetery  gilbert wadsworth,ny dansville,ny"
     },
     {
       "id": "ev-gilbert-101-7",
@@ -6283,7 +6577,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 27,
-      "searchText": "seymour oliver gilbert 8/6/1864-1/1935 (70) gilbert"
+      "searchText": "seymour oliver gilbert 8/6/1864-1/1935 (70) gilbert 161.8 years",
+      "birthDate": "1864-08-06",
+      "age": "161.8 years"
     },
     {
       "id": "ev-gilbert-101-11",
@@ -6323,7 +6619,9 @@
         }
       ],
       "generation": 27,
-      "searchText": "sarah jane gilbert smith 3/12/1859-12/3/1905 (46) gilbert children: scott h. 1882-1933 oscar 1886-1905 martin monroe 1892-1975 bessie a. 1894-1906"
+      "searchText": "sarah jane gilbert smith 3/12/1859-12/3/1905 (46) gilbert children: scott h. 1882-1933 oscar 1886-1905 martin monroe 1892-1975 bessie a. 1894-1906 167.2 years",
+      "birthDate": "1859-03-12",
+      "age": "167.2 years"
     },
     {
       "id": "ev-gilbert-101-13",
@@ -6358,7 +6656,9 @@
         }
       ],
       "generation": 27,
-      "searchText": "nellie beatrice fanton nov 1873-10/28/1957 (84) gilbert cancer pancreas c1900 gorham ny 24 c1910 rochester ny 34 c1915 rochester ny 42"
+      "searchText": "nellie beatrice fanton nov 1873-10/28/1957 (84) gilbert cancer pancreas c1900 gorham ny 24 c1910 rochester ny 34 c1915 rochester ny 42 68.7 years",
+      "birthDate": "1957-10-28",
+      "age": "68.7 years"
     },
     {
       "id": "ev-gilbert-101-15",
@@ -6398,7 +6698,9 @@
         }
       ],
       "generation": 27,
-      "searchText": "charles albert gilbert sep 15 1869-4/6/1949 (80) gilbert cerebral hemmorage d. 154 penhurst st. c1900 gorham ny 30 c1910 rochester ny 35 c1915 rochester ny 42"
+      "searchText": "charles albert gilbert sep 15 1869-4/6/1949 (80) gilbert cerebral hemmorage d. 154 penhurst st. c1900 gorham ny 30 c1910 rochester ny 35 c1915 rochester ny 42 77.2 years",
+      "birthDate": "1949-04-06",
+      "age": "77.2 years"
     },
     {
       "id": "ev-gilbert-101-17",
@@ -6476,7 +6778,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 28,
-      "searchText": "erwin cemetery springwater,ny  gilbert cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert"
     },
     {
       "id": "ev-gilbert-116-11",
@@ -6501,7 +6803,7 @@
         }
       ],
       "generation": 28,
-      "searchText": "erwin cemetery springwater  gilbert springwater,ny sparta,ny cemetery burial location"
+      "searchText": "erwin cemetery springwater  gilbert springwater,ny sparta,ny"
     },
     {
       "id": "ev-gilbert-117-5",
@@ -6521,7 +6823,7 @@
         }
       ],
       "generation": 29,
-      "searchText": "erwin cemetery springwater,ny  gilbert children cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert children"
     },
     {
       "id": "ev-gilbert-117-7",
@@ -6541,7 +6843,7 @@
         }
       ],
       "generation": 29,
-      "searchText": "erwin cemetery springwater,ny  gilbert sparta,ny cemetery burial location"
+      "searchText": "erwin cemetery springwater,ny  gilbert sparta,ny"
     },
     {
       "id": "ev-gilbert-119-13",
@@ -6554,7 +6856,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 30,
-      "searchText": "mt hope rochester  gilbert cemetery burial location"
+      "searchText": "mt hope rochester  gilbert"
     },
     {
       "id": "ev-gilbert-119-15",
@@ -6567,7 +6869,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 30,
-      "searchText": "mt hope rochester m. 1898-99 gilbert cemetery burial location"
+      "searchText": "mt hope rochester m. 1898-99 gilbert"
     },
     {
       "id": "ev-gilbert-122-7",
@@ -6592,7 +6894,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "laura esidean morrell harriet mae 1888-7/21/1976 gilbert george lester1890-5/20/1959 martin evert 1892-5/12/1974"
+      "searchText": "laura esidean morrell harriet mae 1888-7/21/1976 gilbert george lester1890-5/20/1959 martin evert 1892-5/12/1974 49.9 years",
+      "birthDate": "1976-07-21",
+      "age": "49.9 years"
     },
     {
       "id": "ev-gilbert-122-9",
@@ -6617,7 +6921,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "jonas fritiof emanuel jones 1/8/1893-10/1962 (69) gilbert ss104-07-4667 ramsberg,gullered,sweden"
+      "searchText": "jonas fritiof emanuel jones 1/8/1893-10/1962 (69) gilbert ss104-07-4667 ramsberg,gullered,sweden 133.4 years",
+      "birthDate": "1893-01-08",
+      "age": "133.4 years"
     },
     {
       "id": "ev-gilbert-122-11",
@@ -6657,7 +6963,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "grace louise gilbert 10/8/1899 - 9/26/1949 (50) gilbert ss116-20-2710 c1900 gorham ny 7/12 c1910 rochester ny 10 c1915 rochester ny 15 c1920 rochester ny 20"
+      "searchText": "grace louise gilbert 10/8/1899 - 9/26/1949 (50) gilbert ss116-20-2710 c1900 gorham ny 7/12 c1910 rochester ny 10 c1915 rochester ny 15 c1920 rochester ny 20 126.7 years",
+      "birthDate": "1899-10-08",
+      "age": "126.7 years"
     },
     {
       "id": "ev-gilbert-122-13",
@@ -6702,7 +7010,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "florence a. gilbert 6/11/1911-10/8/1980 (69) gilbert ss104-10-1316 stenographer c1915 rochester ny 4 c1920 rochester ny 8 w/parents c1930 rochester ny 18 w/parents 1951 383 flint roch"
+      "searchText": "florence a. gilbert 6/11/1911-10/8/1980 (69) gilbert ss104-10-1316 stenographer c1915 rochester ny 4 c1920 rochester ny 8 w/parents c1930 rochester ny 18 w/parents 1951 383 flint roch 115.0 years",
+      "birthDate": "1911-06-11",
+      "age": "115.0 years"
     },
     {
       "id": "ev-gilbert-122-15",
@@ -6737,7 +7047,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "robert alon curtiss 3/27/1907-10/17/1962 (55) gilbert electrician (electrocuted) enlisted 12/11/1943 sgt. army 1951 383 flint roch"
+      "searchText": "robert alon curtiss 3/27/1907-10/17/1962 (55) gilbert electrician (electrocuted) enlisted 12/11/1943 sgt. army 1951 383 flint roch 119.2 years",
+      "birthDate": "1907-03-27",
+      "age": "119.2 years"
     },
     {
       "id": "ev-gilbert-122-17",
@@ -6772,7 +7084,9 @@
         }
       ],
       "generation": 31,
-      "searchText": "leroy c. gilbert (roy) 4/6/1903-12/29/1998 (95) gilbert col us army c1910 rochester ny 7 c1915 rochester ny 12 c1920 rochester ny 16"
+      "searchText": "leroy c. gilbert (roy) 4/6/1903-12/29/1998 (95) gilbert col us army c1910 rochester ny 7 c1915 rochester ny 12 c1920 rochester ny 16 123.2 years",
+      "birthDate": "1903-04-06",
+      "age": "123.2 years"
     },
     {
       "id": "ev-gilbert-126-5",
@@ -6792,7 +7106,7 @@
         }
       ],
       "generation": 32,
-      "searchText": "in erwin and kiehle cem in  gilbert sparta,ny cemetery burial location"
+      "searchText": "in erwin and kiehle cem in  gilbert sparta,ny"
     },
     {
       "id": "ev-gilbert-126-7",
@@ -6822,7 +7136,9 @@
         }
       ],
       "generation": 32,
-      "searchText": "nina ethel cudd (henrietta, nc) milo william 11/3/1894-3/2/1997 gilbert laverna emma hynes 11/16/1896-4/6/1991 seymour adelbert \"dee\" 1/16/1898-3/20/1983 freeman eli 7/30/1900-9/13/1993"
+      "searchText": "nina ethel cudd (henrietta, nc) milo william 11/3/1894-3/2/1997 gilbert laverna emma hynes 11/16/1896-4/6/1991 seymour adelbert \"dee\" 1/16/1898-3/20/1983 freeman eli 7/30/1900-9/13/1993 131.6 years",
+      "birthDate": "1894-11-03",
+      "age": "131.6 years"
     },
     {
       "id": "ev-gilbert-134-9",
@@ -6835,7 +7151,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 33,
-      "searchText": "mt hope rochester  gilbert cemetery burial location"
+      "searchText": "mt hope rochester  gilbert"
     },
     {
       "id": "ev-gilbert-134-11",
@@ -6855,7 +7171,7 @@
         }
       ],
       "generation": 33,
-      "searchText": "mt hope rochester  gilbert came to roch in 1903 cemetery burial location"
+      "searchText": "mt hope rochester  gilbert came to roch in 1903"
     },
     {
       "id": "ev-gilbert-134-13",
@@ -6868,7 +7184,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 33,
-      "searchText": "mt hope riverside,rochester  gilbert cemetery burial location"
+      "searchText": "mt hope riverside,rochester  gilbert"
     },
     {
       "id": "ev-gilbert-134-15",
@@ -6881,7 +7197,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 33,
-      "searchText": "mt hope riverside,rochester  gilbert cemetery burial location"
+      "searchText": "mt hope riverside,rochester  gilbert"
     },
     {
       "id": "ev-gilbert-134-17",
@@ -6914,7 +7230,9 @@
         }
       ],
       "generation": 34,
-      "searchText": "bruce j wixted 4/3/1933-3/11/1995 gilbert rochester,ny"
+      "searchText": "bruce j wixted 4/3/1933-3/11/1995 gilbert rochester,ny 93.2 years",
+      "birthDate": "1933-04-03",
+      "age": "93.2 years"
     },
     {
       "id": "ev-gilbert-138-9",
@@ -6939,7 +7257,9 @@
         }
       ],
       "generation": 34,
-      "searchText": "evelyn ruth jones librarian ss112-24-1440 gilbert 08/27/32-12/15/88 (56) rochester,ny"
+      "searchText": "evelyn ruth jones librarian ss112-24-1440 gilbert 08/27/32-12/15/88 (56) rochester,ny 93.8 years",
+      "birthDate": "1932-08-27",
+      "age": "93.8 years"
     },
     {
       "id": "ev-gilbert-138-11",
@@ -6964,7 +7284,9 @@
         }
       ],
       "generation": 34,
-      "searchText": "russell leroy curtiss 11/1943-1/22/2003 (60) gilbert rochester,ny d. albion,ny"
+      "searchText": "russell leroy curtiss 11/1943-1/22/2003 (60) gilbert rochester,ny d. albion,ny 23.4 years",
+      "birthDate": "2003-01-22",
+      "age": "23.4 years"
     },
     {
       "id": "ev-gilbert-138-13",
@@ -7035,7 +7357,9 @@
         }
       ],
       "generation": 34,
-      "searchText": "robert hart curtiss 1941- gilbert 5/21/1941-6/14/2006 in biggsville,il"
+      "searchText": "robert hart curtiss 1941- gilbert 5/21/1941-6/14/2006 in biggsville,il 85.1 years",
+      "birthDate": "1941-05-21",
+      "age": "85.1 years"
     },
     {
       "id": "ev-gilbert-138-21",
@@ -7396,7 +7720,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "peter breitenbach 7/5/1840-2/15/1887 (47) breitenbach suicide 1878 port of ny 38 freilaubersheim,germ poughkeepsie,ny"
+      "searchText": "peter breitenbach 7/5/1840-2/15/1887 (47) breitenbach suicide 1878 port of ny 38 freilaubersheim,germ poughkeepsie,ny 185.9 years",
+      "birthDate": "1840-07-05",
+      "age": "185.9 years"
     },
     {
       "id": "breitenbach-18-15",
@@ -7436,7 +7762,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "elizabeth breitenbach 1/12/1841-5/28/1918 (77) breitenbach 1878 port of ny 37 c1900 roch 59 buried in mt hope rochester freilaubersheim,germ rochester,ny"
+      "searchText": "elizabeth breitenbach 1/12/1841-5/28/1918 (77) breitenbach 1878 port of ny 37 c1900 roch 59 buried in mt hope rochester freilaubersheim,germ rochester,ny 185.4 years",
+      "birthDate": "1841-01-12",
+      "age": "185.4 years"
     },
     {
       "id": "breitenbach-30-1",
@@ -7449,7 +7777,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 3,
-      "searchText": "auguste louise friederike behm 6/4/1877-1939 breitenbach"
+      "searchText": "auguste louise friederike behm 6/4/1877-1939 breitenbach 149.0 years",
+      "birthDate": "1877-06-04",
+      "age": "149.0 years"
     },
     {
       "id": "breitenbach-30-9",
@@ -7475,7 +7805,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 3,
-      "searchText": "adam jr 6/1878-2/1/1953 breitenbach"
+      "searchText": "adam jr 6/1878-2/1/1953 breitenbach 73.3 years",
+      "birthDate": "1953-02-01",
+      "age": "73.3 years"
     },
     {
       "id": "breitenbach-30-13",
@@ -7510,7 +7842,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) breitenbach ss 062-28-9393 sometimes averilla c1900 roch 18 c1910 roch 28"
+      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) breitenbach ss 062-28-9393 sometimes averilla c1900 roch 18 c1910 roch 28 144.2 years",
+      "birthDate": "1882-04-10",
+      "age": "144.2 years"
     },
     {
       "id": "breitenbach-30-15",
@@ -7555,7 +7889,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "john breitenbach 8/15/1881-4/8/1924 (42) breitenbach (britenbach per 1920 census) shoemaker brietenbach per mt hope peritonitas st mary's hosp c1900 roch 18 c1910 roch 28"
+      "searchText": "john breitenbach 8/15/1881-4/8/1924 (42) breitenbach (britenbach per 1920 census) shoemaker brietenbach per mt hope peritonitas st mary's hosp c1900 roch 18 c1910 roch 28 144.8 years",
+      "birthDate": "1881-08-15",
+      "age": "144.8 years"
     },
     {
       "id": "breitenbach-30-21",
@@ -7643,7 +7979,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "peter breitenbach 7/31/1873-10/7/1936 (63) breitenbach 1878 port of ny 4"
+      "searchText": "peter breitenbach 7/31/1873-10/7/1936 (63) breitenbach 1878 port of ny 4 152.8 years",
+      "birthDate": "1873-07-31",
+      "age": "152.8 years"
     },
     {
       "id": "breitenbach-30-31",
@@ -7656,7 +7994,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 3,
-      "searchText": "alma silen 1878-12/11/1942 (64) breitenbach"
+      "searchText": "alma silen 1878-12/11/1942 (64) breitenbach 83.5 years",
+      "birthDate": "1942-12-11",
+      "age": "83.5 years"
     },
     {
       "id": "breitenbach-30-41",
@@ -7699,7 +8039,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "wheatfield cem  breitenbach all born in wheatfield,ny frederick 5/13/1898- louis 4/16/1897- cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach all born in wheatfield,ny frederick 5/13/1898- louis 4/16/1897-"
     },
     {
       "id": "breitenbach-42-3",
@@ -7724,7 +8064,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "wheatfield cem  breitenbach fred 1898- cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach fred 1898-"
     },
     {
       "id": "breitenbach-42-9",
@@ -7744,7 +8084,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "wheatfield cem  breitenbach william 1901- cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach william 1901-"
     },
     {
       "id": "breitenbach-42-11",
@@ -7764,7 +8104,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "wheatfield cem  breitenbach arrived 1884 cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach arrived 1884"
     },
     {
       "id": "breitenbach-42-15",
@@ -7777,7 +8117,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 4,
-      "searchText": "mt hope rochester m. 5/2/1905 breitenbach cemetery burial location"
+      "searchText": "mt hope rochester m. 5/2/1905 breitenbach"
     },
     {
       "id": "breitenbach-42-17",
@@ -7802,7 +8142,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "prob mt hope  breitenbach herman & anna prob mt hope cemetery burial location"
+      "searchText": "prob mt hope  breitenbach herman & anna prob mt hope"
     },
     {
       "id": "breitenbach-42-29",
@@ -7832,7 +8172,7 @@
         }
       ],
       "generation": 4,
-      "searchText": "mt hope rochester  breitenbach roy 3/21/1904-2/1979 ralph 7/31/1915-5/1971 alma elizabeth 7/13/1917- cemetery burial location"
+      "searchText": "mt hope rochester  breitenbach roy 3/21/1904-2/1979 ralph 7/31/1915-5/1971 alma elizabeth 7/13/1917-"
     },
     {
       "id": "breitenbach-46-11",
@@ -7852,7 +8192,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "adam e. breitenbach 1/1900-8/28/1978 breitenbach tonawanda,ny"
+      "searchText": "adam e. breitenbach 1/1900-8/28/1978 breitenbach tonawanda,ny 47.8 years",
+      "birthDate": "1978-08-28",
+      "age": "47.8 years"
     },
     {
       "id": "breitenbach-46-13",
@@ -7882,7 +8224,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "hazel mae breitenbach ss104-07-4721 breitenbach 11/6/05-5/84 (79) c1910 roch 4 rochester,ny"
+      "searchText": "hazel mae breitenbach ss104-07-4721 breitenbach 11/6/05-5/84 (79) c1910 roch 4 rochester,ny 20.6 years",
+      "birthDate": "2005-11-06",
+      "age": "20.6 years"
     },
     {
       "id": "breitenbach-46-15",
@@ -7907,7 +8251,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "john leroy wixted 3/13/1900-9/1993 (93) breitenbach ss128-09-5338 avon,ny"
+      "searchText": "john leroy wixted 3/13/1900-9/1993 (93) breitenbach ss128-09-5338 avon,ny 126.2 years",
+      "birthDate": "1900-03-13",
+      "age": "126.2 years"
     },
     {
       "id": "breitenbach-46-23",
@@ -7920,7 +8266,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "ruth m. schultz 1893-9/24/1985 (93) breitenbach"
+      "searchText": "ruth m. schultz 1893-9/24/1985 (93) breitenbach 40.8 years",
+      "birthDate": "1985-09-24",
+      "age": "40.8 years"
     },
     {
       "id": "breitenbach-46-25",
@@ -7940,7 +8288,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "herbert j. wahl 9/23/1897-8/13/1975 breitenbach rochester,ny"
+      "searchText": "herbert j. wahl 9/23/1897-8/13/1975 breitenbach rochester,ny 128.8 years",
+      "birthDate": "1897-09-23",
+      "age": "128.8 years"
     },
     {
       "id": "breitenbach-46-27",
@@ -7965,7 +8315,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "mable a. breitenbach 3/30/1899-3/3/1965 (66) breitenbach poughkeepsie rochester,ny"
+      "searchText": "mable a. breitenbach 3/30/1899-3/3/1965 (66) breitenbach poughkeepsie rochester,ny 127.2 years",
+      "birthDate": "1899-03-30",
+      "age": "127.2 years"
     },
     {
       "id": "breitenbach-46-35",
@@ -8029,7 +8381,7 @@
         }
       ],
       "generation": 6,
-      "searchText": "wheatfield cem  breitenbach 1900 rochester census elizabeth cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach 1900 rochester census elizabeth"
     },
     {
       "id": "breitenbach-55-11",
@@ -8042,7 +8394,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "wheatfield cem  breitenbach cemetery burial location"
+      "searchText": "wheatfield cem  breitenbach"
     },
     {
       "id": "breitenbach-55-21",
@@ -8055,7 +8407,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "mt hope roch  breitenbach cemetery burial location"
+      "searchText": "mt hope roch  breitenbach"
     },
     {
       "id": "breitenbach-55-23",
@@ -8068,7 +8420,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "mt hope roch  breitenbach cemetery burial location"
+      "searchText": "mt hope roch  breitenbach"
     },
     {
       "id": "breitenbach-55-25",
@@ -8101,7 +8453,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "vern breitenbach 10/9/1923- breitenbach"
+      "searchText": "vern breitenbach 10/9/1923- breitenbach 102.7 years",
+      "birthDate": "1923-10-09",
+      "age": "102.7 years"
     },
     {
       "id": "breitenbach-58-27",
@@ -8126,7 +8480,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "doris jean wahl 3/10/1935- breitenbach rochester,ny deisinger"
+      "searchText": "doris jean wahl 3/10/1935- breitenbach rochester,ny deisinger 91.2 years",
+      "birthDate": "1935-03-10",
+      "age": "91.2 years"
     },
     {
       "id": "breitenbach-66-13",
@@ -8178,7 +8534,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "mt hope d.10/7/1936 breitenbach cemetery burial location"
+      "searchText": "mt hope d.10/7/1936 breitenbach"
     },
     {
       "id": "breitenbach-69-1",
@@ -8234,7 +8590,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "peter breitenbach d.10/7/1936 breitenbach age 63 sw 25 r270 removed to irondequoit 5/14/1943"
+      "searchText": "peter breitenbach d.10/7/1936 breitenbach age 63 sw 25 r270 removed to irondequoit 5/14/1943 89.7 years",
+      "birthDate": "1936-10-07",
+      "age": "89.7 years"
     },
     {
       "id": "breitenbach-70-1",
@@ -8362,7 +8720,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "john clark(e) i 1590/1595-5/2/1676 (81) clark uffington,shropshire,eng milford, ct"
+      "searchText": "john clark(e) i 1590/1595-5/2/1676 (81) clark uffington,shropshire,eng milford, ct 350.1 years",
+      "birthDate": "1676-05-02",
+      "age": "350.1 years"
     },
     {
       "id": "clark-12-7",
@@ -8375,7 +8735,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 0,
-      "searchText": "mary elizabeth coleley 1616-1/22/1678 (62) clark"
+      "searchText": "mary elizabeth coleley 1616-1/22/1678 (62) clark 348.4 years",
+      "birthDate": "1678-01-22",
+      "age": "348.4 years"
     },
     {
       "id": "clark-12-13",
@@ -8450,7 +8812,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "matthew grinnell 1602-11/10/1643 (41) clark arrived 1639 macon,ain,rhone-alpes,fr portsmouth,ri"
+      "searchText": "matthew grinnell 1602-11/10/1643 (41) clark arrived 1639 macon,ain,rhone-alpes,fr portsmouth,ri 382.6 years",
+      "birthDate": "1643-11-10",
+      "age": "382.6 years"
     },
     {
       "id": "clark-12-19",
@@ -8488,7 +8852,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 0,
-      "searchText": "john alden 1599-9/12/1687 (88) clark"
+      "searchText": "john alden 1599-9/12/1687 (88) clark 338.8 years",
+      "birthDate": "1687-09-12",
+      "age": "338.8 years"
     },
     {
       "id": "clark-12-23",
@@ -8508,7 +8874,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "priscila sarah mullins 1601-2/5/1688 (87) clark of,dorking,surrey,eng"
+      "searchText": "priscila sarah mullins 1601-2/5/1688 (87) clark of,dorking,surrey,eng 338.3 years",
+      "birthDate": "1688-02-05",
+      "age": "338.3 years"
     },
     {
       "id": "clark-15-7",
@@ -8598,7 +8966,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "william comstock 7/4/1595-1683 clark culmstock,devenshire,eng"
+      "searchText": "william comstock 7/4/1595-1683 clark culmstock,devenshire,eng 430.9 years",
+      "birthDate": "1595-07-04",
+      "age": "430.9 years"
     },
     {
       "id": "clark-19-7",
@@ -8618,7 +8988,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "elizabeth daniels 1/8/1608-1665 clark culmstock,devenshire,eng"
+      "searchText": "elizabeth daniels 1/8/1608-1665 clark culmstock,devenshire,eng 418.4 years",
+      "birthDate": "1608-01-08",
+      "age": "418.4 years"
     },
     {
       "id": "clark-19-9",
@@ -8638,7 +9010,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "john clark(e) ii 2/21/1630-9/21-1677 (47) clark herdfordshire, eng"
+      "searchText": "john clark(e) ii 2/21/1630-9/21-1677 (47) clark herdfordshire, eng 396.3 years",
+      "birthDate": "1630-02-21",
+      "age": "396.3 years"
     },
     {
       "id": "clark-19-11",
@@ -8663,7 +9037,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "rebecca porter 9/16/1630-1/9/1682 (52) clark felstead, essex,eng d.saybrook,ct"
+      "searchText": "rebecca porter 9/16/1630-1/9/1682 (52) clark felstead, essex,eng d.saybrook,ct 395.8 years",
+      "birthDate": "1630-09-16",
+      "age": "395.8 years"
     },
     {
       "id": "clark-19-13",
@@ -8683,7 +9059,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "william beaumont 1608 -2/4/1608or 1609 clark saybrook,ct"
+      "searchText": "william beaumont 1608 -2/4/1608or 1609 clark saybrook,ct 418.3 years",
+      "birthDate": "1608-02-04",
+      "age": "418.3 years"
     },
     {
       "id": "clark-19-15",
@@ -8708,7 +9086,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "lydia danforth 1625-8/16/1686 clark framlington,sufflk,eng saybrook,ct"
+      "searchText": "lydia danforth 1625-8/16/1686 clark framlington,sufflk,eng saybrook,ct 339.8 years",
+      "birthDate": "1686-08-16",
+      "age": "339.8 years"
     },
     {
       "id": "clark-19-17",
@@ -8783,7 +9163,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "elizabeth alden 1624-1717 (93) clark plymouth,mass john 10/4/1645 elizabeth 4/24/1647"
+      "searchText": "elizabeth alden 1624-1717 (93) clark plymouth,mass john 10/4/1645 elizabeth 4/24/1647 380.7 years",
+      "birthDate": "1645-10-04",
+      "age": "380.7 years"
     },
     {
       "id": "clark-19-23",
@@ -8813,7 +9195,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "william pa(d)bodie 1620-12/13/1707 (87) clark stalbans,hartford,eng martha 2/24/165x priscilla 1/15/1654"
+      "searchText": "william pa(d)bodie 1620-12/13/1707 (87) clark stalbans,hartford,eng martha 2/24/165x priscilla 1/15/1654 318.5 years",
+      "birthDate": "1707-12-13",
+      "age": "318.5 years"
     },
     {
       "id": "clark-23-17",
@@ -8859,7 +9243,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "hannah norton 1648-1/18/1710 (62) clark weymouth,mass"
+      "searchText": "hannah norton 1648-1/18/1710 (62) clark weymouth,mass 316.4 years",
+      "birthDate": "1710-01-18",
+      "age": "316.4 years"
     },
     {
       "id": "clark-27-3",
@@ -8904,7 +9290,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "john pratt 2/20/1644 clark hartford,ct"
+      "searchText": "john pratt 2/20/1644 clark hartford,ct 382.3 years",
+      "birthDate": "1644-02-20",
+      "age": "382.3 years"
     },
     {
       "id": "clark-27-7",
@@ -8924,7 +9312,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "sarah jones 2/20/1644 clark hartford,ct"
+      "searchText": "sarah jones 2/20/1644 clark hartford,ct 382.3 years",
+      "birthDate": "1644-02-20",
+      "age": "382.3 years"
     },
     {
       "id": "clark-27-9",
@@ -8944,7 +9334,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "edward shipton 1628-9/15/1697 clark saybrook,ct"
+      "searchText": "edward shipton 1628-9/15/1697 clark saybrook,ct 328.8 years",
+      "birthDate": "1697-09-15",
+      "age": "328.8 years"
     },
     {
       "id": "clark-27-11",
@@ -8979,7 +9371,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "elizabeth comstock 1633-7/15/1659 clark saybrook,ct abigail (2nd wife) 1667 chester,ct"
+      "searchText": "elizabeth comstock 1633-7/15/1659 clark saybrook,ct abigail (2nd wife) 1667 chester,ct 366.9 years",
+      "birthDate": "1659-07-15",
+      "age": "366.9 years"
     },
     {
       "id": "clark-27-13",
@@ -9004,7 +9398,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "john clark(e) iii 11/17/1655-2/17/1735 (80) clark saybrook,ct m.9/17/1684"
+      "searchText": "john clark(e) iii 11/17/1655-2/17/1735 (80) clark saybrook,ct m.9/17/1684 370.6 years",
+      "birthDate": "1655-11-17",
+      "age": "370.6 years"
     },
     {
       "id": "clark-27-15",
@@ -9024,7 +9420,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "rebekah beaumont 9/17/1659-4/3/1742 (83) clark saybrook,ct"
+      "searchText": "rebekah beaumont 9/17/1659-4/3/1742 (83) clark saybrook,ct 366.8 years",
+      "birthDate": "1659-09-17",
+      "age": "366.8 years"
     },
     {
       "id": "clark-27-17",
@@ -9049,7 +9447,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "daniel grinnell 1665-1/7/1740 (75) clark portsmouth,newport,ri d.saybrook,ct"
+      "searchText": "daniel grinnell 1665-1/7/1740 (75) clark portsmouth,newport,ri d.saybrook,ct 286.4 years",
+      "birthDate": "1740-01-07",
+      "age": "286.4 years"
     },
     {
       "id": "clark-27-19",
@@ -9074,7 +9474,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "lydia pabodie 4/3/1667-7/13/1748 (81) clark duxbury,plymouth,mass d.saybrook,ct"
+      "searchText": "lydia pabodie 4/3/1667-7/13/1748 (81) clark duxbury,plymouth,mass d.saybrook,ct 359.2 years",
+      "birthDate": "1667-04-03",
+      "age": "359.2 years"
     },
     {
       "id": "clark-34-1",
@@ -9094,7 +9496,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "hannah williams 1/10/1680 clark saybrook,ct"
+      "searchText": "hannah williams 1/10/1680 clark saybrook,ct 346.4 years",
+      "birthDate": "1680-01-10",
+      "age": "346.4 years"
     },
     {
       "id": "clark-34-3",
@@ -9114,7 +9518,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "john pratt jr 9/5/1671 clark lyme,ct"
+      "searchText": "john pratt jr 9/5/1671 clark lyme,ct 354.8 years",
+      "birthDate": "1671-09-05",
+      "age": "354.8 years"
     },
     {
       "id": "clark-34-5",
@@ -9134,7 +9540,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "elizabeth shipman 5/1652-7/31/1701 clark saybrook,ct"
+      "searchText": "elizabeth shipman 5/1652-7/31/1701 clark saybrook,ct 324.8 years",
+      "birthDate": "1701-07-31",
+      "age": "324.8 years"
     },
     {
       "id": "clark-34-7",
@@ -9154,7 +9562,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "william shipman 6/6/1656-9/9/1725 clark saybrook,ct"
+      "searchText": "william shipman 6/6/1656-9/9/1725 clark saybrook,ct 370.0 years",
+      "birthDate": "1656-06-06",
+      "age": "370.0 years"
     },
     {
       "id": "clark-34-9",
@@ -9199,7 +9609,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "edward shipman 2/15/1654-12/30/1711 (57) clark saybrook,ct chester,ct abigail 1689- deborah 1691- benjamin 1693-1726 lydia 1693-"
+      "searchText": "edward shipman 2/15/1654-12/30/1711 (57) clark saybrook,ct chester,ct abigail 1689- deborah 1691- benjamin 1693-1726 lydia 1693- 372.3 years",
+      "birthDate": "1654-02-15",
+      "age": "372.3 years"
     },
     {
       "id": "clark-34-13",
@@ -9224,7 +9636,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "joseph clark(e) 1/23/1692 clark saybrook,ct m.9/25/1712"
+      "searchText": "joseph clark(e) 1/23/1692 clark saybrook,ct m.9/25/1712 334.4 years",
+      "birthDate": "1692-01-23",
+      "age": "334.4 years"
     },
     {
       "id": "clark-34-15",
@@ -9244,7 +9658,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "lydia grinnell 4/3/1693-7/13/1748 (55) clark duxbury,plymouth,mass"
+      "searchText": "lydia grinnell 4/3/1693-7/13/1748 (55) clark duxbury,plymouth,mass 333.2 years",
+      "birthDate": "1693-04-03",
+      "age": "333.2 years"
     },
     {
       "id": "clark-34-21",
@@ -9269,7 +9685,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "daniel merwin 1687-4/11/1766 clark millford,conn durham,conn"
+      "searchText": "daniel merwin 1687-4/11/1766 clark millford,conn durham,conn 260.2 years",
+      "birthDate": "1766-04-11",
+      "age": "260.2 years"
     },
     {
       "id": "clark-34-23",
@@ -9294,7 +9712,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "sarah botsford 8/10/1683-9/23/1764 clark millford,conn durham,conn"
+      "searchText": "sarah botsford 8/10/1683-9/23/1764 clark millford,conn durham,conn 342.8 years",
+      "birthDate": "1683-08-10",
+      "age": "342.8 years"
     },
     {
       "id": "clark-34-25",
@@ -9314,7 +9734,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "james wells 11/27/1668-12/27/1744 clark haddam,conn"
+      "searchText": "james wells 11/27/1668-12/27/1744 clark haddam,conn 357.6 years",
+      "birthDate": "1668-11-27",
+      "age": "357.6 years"
     },
     {
       "id": "clark-34-27",
@@ -9339,7 +9761,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "rebecca selden 2/12/1678-7/6/1764 clark hadley,mass haddam,conn"
+      "searchText": "rebecca selden 2/12/1678-7/6/1764 clark hadley,mass haddam,conn 348.3 years",
+      "birthDate": "1678-02-12",
+      "age": "348.3 years"
     },
     {
       "id": "clark-40-1",
@@ -9359,7 +9783,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "thomas pratt 4/23/1701 clark saybrook,ct"
+      "searchText": "thomas pratt 4/23/1701 clark saybrook,ct 325.2 years",
+      "birthDate": "1701-04-23",
+      "age": "325.2 years"
     },
     {
       "id": "clark-40-3",
@@ -9372,7 +9798,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 6,
-      "searchText": "jerusha beckwith 8/10/1709 clark"
+      "searchText": "jerusha beckwith 8/10/1709 clark 316.8 years",
+      "birthDate": "1709-08-10",
+      "age": "316.8 years"
     },
     {
       "id": "clark-40-13",
@@ -9427,7 +9855,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "joseph clark 1/25/1713-11/13/1753 (40) clark saybrook,ct"
+      "searchText": "joseph clark 1/25/1713-11/13/1753 (40) clark saybrook,ct 313.4 years",
+      "birthDate": "1713-01-25",
+      "age": "313.4 years"
     },
     {
       "id": "clark-40-23",
@@ -9452,7 +9882,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "daniel merwin 9/15/1714-5/15/1758 clark millford,conn durham,conn"
+      "searchText": "daniel merwin 9/15/1714-5/15/1758 clark millford,conn durham,conn 311.8 years",
+      "birthDate": "1714-09-15",
+      "age": "311.8 years"
     },
     {
       "id": "clark-40-25",
@@ -9477,7 +9909,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "elizabeth wells 2/9/1713-10/29/1739 clark haddam,conn durham,conn"
+      "searchText": "elizabeth wells 2/9/1713-10/29/1739 clark haddam,conn durham,conn 313.3 years",
+      "birthDate": "1713-02-09",
+      "age": "313.3 years"
     },
     {
       "id": "clark-46-3",
@@ -9507,7 +9941,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "thomas pratt, jr 1740-3/3/1818 (78) clark saybrook,ct d.saybrook,ct m.2/16/1767"
+      "searchText": "thomas pratt, jr 1740-3/3/1818 (78) clark saybrook,ct d.saybrook,ct m.2/16/1767 208.2 years",
+      "birthDate": "1818-03-03",
+      "age": "208.2 years"
     },
     {
       "id": "clark-46-5",
@@ -9532,7 +9968,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "ruth wilcox 2/5/1742-11/15/1819 (77) clark saybrook,ct d.saybrook"
+      "searchText": "ruth wilcox 2/5/1742-11/15/1819 (77) clark saybrook,ct d.saybrook 284.3 years",
+      "birthDate": "1742-02-05",
+      "age": "284.3 years"
     },
     {
       "id": "clark-46-15",
@@ -9572,7 +10010,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "reuben clark 1734-12/18/1812 (78) clark chester,ct d.chester,ct m.12/3/1759 rev. john clark 9/8/1766-7/8/1835"
+      "searchText": "reuben clark 1734-12/18/1812 (78) clark chester,ct d.chester,ct m.12/3/1759 rev. john clark 9/8/1766-7/8/1835 213.5 years",
+      "birthDate": "1812-12-18",
+      "age": "213.5 years"
     },
     {
       "id": "clark-46-17",
@@ -9607,7 +10047,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "elizabeth truby 1738-8/21/1778 (40) clark chester,ct d.chester,ct isabella ? 2nd wife?"
+      "searchText": "elizabeth truby 1738-8/21/1778 (40) clark chester,ct d.chester,ct isabella ? 2nd wife? 247.8 years",
+      "birthDate": "1778-08-21",
+      "age": "247.8 years"
     },
     {
       "id": "clark-46-23",
@@ -9632,7 +10074,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "james merwin 10/19/1739-2/13/1790 (51) clark durham,ct d.haddem,ct"
+      "searchText": "james merwin 10/19/1739-2/13/1790 (51) clark durham,ct d.haddem,ct 286.7 years",
+      "birthDate": "1739-10-19",
+      "age": "286.7 years"
     },
     {
       "id": "clark-46-25",
@@ -9652,7 +10096,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "martha smith 1738-8/2/1808 (70) clark d.haddem,ct"
+      "searchText": "martha smith 1738-8/2/1808 (70) clark d.haddem,ct 217.8 years",
+      "birthDate": "1808-08-02",
+      "age": "217.8 years"
     },
     {
       "id": "clark-54-13",
@@ -9687,7 +10133,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "chloe pratt 12/1/1773-8/27/1813 (40) clark saybrook,ct d. pt leyden,ny john anson 2/4/1805 reuben pratt 8/6/1807"
+      "searchText": "chloe pratt 12/1/1773-8/27/1813 (40) clark saybrook,ct d. pt leyden,ny john anson 2/4/1805 reuben pratt 8/6/1807 252.5 years",
+      "birthDate": "1773-12-01",
+      "age": "252.5 years"
     },
     {
       "id": "clark-54-23",
@@ -9717,7 +10165,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "heman merwin 8/1/1767-2/15/1844 clark haddem,ct d. belfast,ny m.5/6/1790"
+      "searchText": "heman merwin 8/1/1767-2/15/1844 clark haddem,ct d. belfast,ny m.5/6/1790 258.8 years",
+      "birthDate": "1767-08-01",
+      "age": "258.8 years"
     },
     {
       "id": "clark-54-25",
@@ -9730,7 +10180,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "anna brooks 11/25/1770-11/17/1809 clark"
+      "searchText": "anna brooks 11/25/1770-11/17/1809 clark 255.6 years",
+      "birthDate": "1770-11-25",
+      "age": "255.6 years"
     },
     {
       "id": "clark-58-15",
@@ -9765,7 +10217,9 @@
         }
       ],
       "generation": 9,
-      "searchText": "locust grove,lord  leyden,lewis  clark elizabeth 4/18/1792 roxana 7/17/1798 ruth 3/16/1801 all b. saybrook,ct"
+      "searchText": "locust grove,lord  leyden,lewis  clark elizabeth 4/18/1792 roxana 7/17/1798 ruth 3/16/1801 all b. saybrook,ct 234.2 years",
+      "birthDate": "1792-04-18",
+      "age": "234.2 years"
     },
     {
       "id": "clark-58-17",
@@ -9813,7 +10267,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "john collins 1801-9/7/1883 (83) clark have photograph came from yorkshire eng 1831 d.whitby,can"
+      "searchText": "john collins 1801-9/7/1883 (83) clark have photograph came from yorkshire eng 1831 d.whitby,can 142.8 years",
+      "birthDate": "1883-09-07",
+      "age": "142.8 years"
     },
     {
       "id": "clark-62-9",
@@ -9853,7 +10309,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "sarah fowler 1806-8/25/1889 (83) clark buried in oshawa,ontario,can came from yorkshire eng 1831 d.whitby,can fam fr ct"
+      "searchText": "sarah fowler 1806-8/25/1889 (83) clark buried in oshawa,ontario,can came from yorkshire eng 1831 d.whitby,can fam fr ct 136.8 years",
+      "birthDate": "1889-08-25",
+      "age": "136.8 years"
     },
     {
       "id": "clark-62-17",
@@ -9866,7 +10324,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 10,
-      "searchText": "charles william clark 3/13/1796-11/18/1880 (84) clark"
+      "searchText": "charles william clark 3/13/1796-11/18/1880 (84) clark 230.2 years",
+      "birthDate": "1796-03-13",
+      "age": "230.2 years"
     },
     {
       "id": "clark-62-19",
@@ -9891,7 +10351,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "anna merwin 11/19/1795-after 6/1880 clark have photograph buried in foster plot"
+      "searchText": "anna merwin 11/19/1795-after 6/1880 clark have photograph buried in foster plot 230.6 years",
+      "birthDate": "1795-11-19",
+      "age": "230.6 years"
     },
     {
       "id": "clark-67-11",
@@ -9917,7 +10379,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 11,
-      "searchText": "mt adnah,fulton m. 1/30/1817 clark"
+      "searchText": "mt adnah,fulton m. 1/30/1817 clark 209.4 years",
+      "birthDate": "1817-01-30",
+      "age": "209.4 years"
     },
     {
       "id": "clark-67-19",
@@ -9955,7 +10419,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) clark c1900 roch 54 pickering,canada"
+      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) clark c1900 roch 54 pickering,canada 180.2 years",
+      "birthDate": "1846-03-15",
+      "age": "180.2 years"
     },
     {
       "id": "clark-71-15",
@@ -9980,7 +10446,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) clark watchmaker/jeweler c1900 roch 77"
+      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) clark watchmaker/jeweler c1900 roch 77 203.1 years",
+      "birthDate": "1823-05-23",
+      "age": "203.1 years"
     },
     {
       "id": "clark-71-17",
@@ -10045,7 +10513,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "philander merwin clark 4/5/1819-7/5/1878 (59) clark leyden,ny"
+      "searchText": "philander merwin clark 4/5/1819-7/5/1878 (59) clark leyden,ny 207.2 years",
+      "birthDate": "1819-04-05",
+      "age": "207.2 years"
     },
     {
       "id": "clark-71-23",
@@ -10065,7 +10535,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "anselm heman clark 12/6/1826-4/7/1908 (82) clark leyden,ny"
+      "searchText": "anselm heman clark 12/6/1826-4/7/1908 (82) clark leyden,ny 199.5 years",
+      "birthDate": "1826-12-06",
+      "age": "199.5 years"
     },
     {
       "id": "clark-71-25",
@@ -10085,7 +10557,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "chloe ann clark 1830-7/22/1910 (80) clark leyden,ny"
+      "searchText": "chloe ann clark 1830-7/22/1910 (80) clark leyden,ny 115.9 years",
+      "birthDate": "1910-07-22",
+      "age": "115.9 years"
     },
     {
       "id": "clark-71-27",
@@ -10105,7 +10579,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "john dorland foster 6/3/1826-6/23/1913 (87) clark leyden,ny"
+      "searchText": "john dorland foster 6/3/1826-6/23/1913 (87) clark leyden,ny 200.0 years",
+      "birthDate": "1826-06-03",
+      "age": "200.0 years"
     },
     {
       "id": "clark-85-5",
@@ -10118,7 +10594,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 13,
-      "searchText": "theresa hermes 6/30/1887 clark"
+      "searchText": "theresa hermes 6/30/1887 clark 139.0 years",
+      "birthDate": "1887-06-30",
+      "age": "139.0 years"
     },
     {
       "id": "clark-85-7",
@@ -10138,7 +10616,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "reuben victor clark 2/7/1877- clark omemee,canada"
+      "searchText": "reuben victor clark 2/7/1877- clark omemee,canada 149.3 years",
+      "birthDate": "1877-02-07",
+      "age": "149.3 years"
     },
     {
       "id": "clark-85-9",
@@ -10173,7 +10653,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "bertha clark-barber 10/26/1884-6/2/1971 (87) clark 4 children mrs. frank l. barber c1900 roch 15 omemee,canada"
+      "searchText": "bertha clark-barber 10/26/1884-6/2/1971 (87) clark 4 children mrs. frank l. barber c1900 roch 15 omemee,canada 141.7 years",
+      "birthDate": "1884-10-26",
+      "age": "141.7 years"
     },
     {
       "id": "clark-85-11",
@@ -10218,7 +10700,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "nellie grant clark 5/13/1872-12/13/1951 (79) clark 4 children omemee,canada"
+      "searchText": "nellie grant clark 5/13/1872-12/13/1951 (79) clark 4 children omemee,canada 154.1 years",
+      "birthDate": "1872-05-13",
+      "age": "154.1 years"
     },
     {
       "id": "clark-85-15",
@@ -10238,7 +10722,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "annie may clark 1874-01/05/1877 (3) clark omemee,canada"
+      "searchText": "annie may clark 1874-01/05/1877 (3) clark omemee,canada 149.4 years",
+      "birthDate": "1877-01-05",
+      "age": "149.4 years"
     },
     {
       "id": "clark-85-17",
@@ -10273,7 +10759,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) clark ss 062-28-9393 c1900 roch 18 c1910 roch 28 omemee,ont,canada"
+      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) clark ss 062-28-9393 c1900 roch 18 c1910 roch 28 omemee,ont,canada 144.2 years",
+      "birthDate": "1882-04-10",
+      "age": "144.2 years"
     },
     {
       "id": "clark-85-19",
@@ -10293,7 +10781,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "john breitenbach 8/15/1881 clark (shoemaker)"
+      "searchText": "john breitenbach 8/15/1881 clark (shoemaker) 144.8 years",
+      "birthDate": "1881-08-15",
+      "age": "144.8 years"
     },
     {
       "id": "clark-85-21",
@@ -10318,7 +10808,9 @@
         }
       ],
       "generation": 13,
-      "searchText": "william frederick clark 11/11/1853-7/25/1905 (52) clark have photo whitby,ont,can"
+      "searchText": "william frederick clark 11/11/1853-7/25/1905 (52) clark have photo whitby,ont,can 172.6 years",
+      "birthDate": "1853-11-11",
+      "age": "172.6 years"
     },
     {
       "id": "clark-85-23",
@@ -10434,7 +10926,9 @@
         }
       ],
       "generation": 15,
-      "searchText": "george alanson clark 2/2/1880-12/15/1887 (7) clark omemee,canada"
+      "searchText": "george alanson clark 2/2/1880-12/15/1887 (7) clark omemee,canada 146.3 years",
+      "birthDate": "1880-02-02",
+      "age": "146.3 years"
     },
     {
       "id": "clark-88-27",
@@ -10467,7 +10961,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "agnes teresa warden 9/27/1898-1/23/1948 clark buffalo,ny"
+      "searchText": "agnes teresa warden 9/27/1898-1/23/1948 clark buffalo,ny 127.8 years",
+      "birthDate": "1898-09-27",
+      "age": "127.8 years"
     },
     {
       "id": "clark-98-13",
@@ -10487,7 +10983,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "ernest eugene herrick 7/16/1897-2/9/1981 (83) clark rochester,ny"
+      "searchText": "ernest eugene herrick 7/16/1897-2/9/1981 (83) clark rochester,ny 128.9 years",
+      "birthDate": "1897-07-16",
+      "age": "128.9 years"
     },
     {
       "id": "clark-98-17",
@@ -10517,7 +11015,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "hazel mae breitenbach 11/6/1905-5/1984 (79) clark ss104-07-4721 rochester,ny hazel is 1/1024th french"
+      "searchText": "hazel mae breitenbach 11/6/1905-5/1984 (79) clark ss104-07-4721 rochester,ny hazel is 1/1024th french 120.6 years",
+      "birthDate": "1905-11-06",
+      "age": "120.6 years"
     },
     {
       "id": "collins-5-5",
@@ -10537,7 +11037,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "john collins 1801-9/7/1883 (83) collins d.whitby,can"
+      "searchText": "john collins 1801-9/7/1883 (83) collins d.whitby,can 142.8 years",
+      "birthDate": "1883-09-07",
+      "age": "142.8 years"
     },
     {
       "id": "collins-5-7",
@@ -10557,7 +11059,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "sarah fowler 1806-8/25/1889 (83) collins d.whitby,can"
+      "searchText": "sarah fowler 1806-8/25/1889 (83) collins d.whitby,can 136.8 years",
+      "birthDate": "1889-08-25",
+      "age": "136.8 years"
     },
     {
       "id": "collins-10-1",
@@ -10620,7 +11124,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "george collins 3/26/1842-1876 (34) collins susan 1870- pickering,can"
+      "searchText": "george collins 3/26/1842-1876 (34) collins susan 1870- pickering,can 184.2 years",
+      "birthDate": "1842-03-26",
+      "age": "184.2 years"
     },
     {
       "id": "collins-10-7",
@@ -10655,7 +11161,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "christiana collins-peters 2/1/1839-1923 (84) collins 4 children judson 6/1871- pickering,can"
+      "searchText": "christiana collins-peters 2/1/1839-1923 (84) collins 4 children judson 6/1871- pickering,can 187.3 years",
+      "birthDate": "1839-02-01",
+      "age": "187.3 years"
     },
     {
       "id": "collins-10-9",
@@ -10755,7 +11263,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) collins pickering,canada"
+      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) collins pickering,canada 180.2 years",
+      "birthDate": "1846-03-15",
+      "age": "180.2 years"
     },
     {
       "id": "collins-10-17",
@@ -10768,7 +11278,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 1,
-      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) collins"
+      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) collins 203.1 years",
+      "birthDate": "1823-05-23",
+      "age": "203.1 years"
     },
     {
       "id": "collins-16-1",
@@ -10794,7 +11306,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "william edmund collins 4/24/1868-1948 (80) collins"
+      "searchText": "william edmund collins 4/24/1868-1948 (80) collins 158.2 years",
+      "birthDate": "1868-04-24",
+      "age": "158.2 years"
     },
     {
       "id": "collins-16-9",
@@ -10819,7 +11333,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "john adouliam 2/9/1875-1939 collins pickering,can daughter"
+      "searchText": "john adouliam 2/9/1875-1939 collins pickering,can daughter 151.3 years",
+      "birthDate": "1875-02-09",
+      "age": "151.3 years"
     },
     {
       "id": "collins-22-1",
@@ -10890,7 +11406,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "robert alvin collins 9/8/1932-6/30/1997 (65) collins cowboy 3 children"
+      "searchText": "robert alvin collins 9/8/1932-6/30/1997 (65) collins cowboy 3 children 93.8 years",
+      "birthDate": "1932-09-08",
+      "age": "93.8 years"
     },
     {
       "id": "amor-4-23",
@@ -11000,7 +11518,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "rev michael ziegler 1684-10/29/1765 (80) amor arrived 1709 baden-wurttemberg,germany skippack,pa"
+      "searchText": "rev michael ziegler 1684-10/29/1765 (80) amor arrived 1709 baden-wurttemberg,germany skippack,pa 260.7 years",
+      "birthDate": "1765-10-29",
+      "age": "260.7 years"
     },
     {
       "id": "amor-12-23",
@@ -11033,7 +11553,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 1,
-      "searchText": "dielman kolb jr 5/10/1691-12/28/1756 (65) amor"
+      "searchText": "dielman kolb jr 5/10/1691-12/28/1756 (65) amor 335.1 years",
+      "birthDate": "1691-05-10",
+      "age": "335.1 years"
     },
     {
       "id": "amor-20-9",
@@ -11059,7 +11581,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "magkalena bieri 1/3/1732-9/8/1796 amor"
+      "searchText": "magkalena bieri 1/3/1732-9/8/1796 amor 294.4 years",
+      "birthDate": "1732-01-03",
+      "age": "294.4 years"
     },
     {
       "id": "amor-20-15",
@@ -11098,7 +11622,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "anna moyer reiff 11/7/1722-1/9/1798 (75) amor"
+      "searchText": "anna moyer reiff 11/7/1722-1/9/1798 (75) amor 303.6 years",
+      "birthDate": "1722-11-07",
+      "age": "303.6 years"
     },
     {
       "id": "amor-20-25",
@@ -11143,7 +11669,7 @@
         }
       ],
       "generation": 3,
-      "searchText": "kimmel cem jonesboro,illinois  amor wiesbaden,germany jonesboro,illinois cemetery burial location"
+      "searchText": "kimmel cem jonesboro,illinois  amor wiesbaden,germany jonesboro,illinois"
     },
     {
       "id": "amor-23-21",
@@ -11156,7 +11682,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 3,
-      "searchText": "lower salford monnonite cem  amor cemetery burial location"
+      "searchText": "lower salford monnonite cem  amor"
     },
     {
       "id": "amor-24-9",
@@ -11266,7 +11792,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "barbara hunsaker 5/6/1754-7/27/1788 (34) amor manchester,pa lancaster,pa"
+      "searchText": "barbara hunsaker 5/6/1754-7/27/1788 (34) amor manchester,pa lancaster,pa 272.1 years",
+      "birthDate": "1754-05-06",
+      "age": "272.1 years"
     },
     {
       "id": "amor-29-17",
@@ -11305,7 +11833,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "abraham detweiler 9/13/1752-2/26/1818 (65) amor"
+      "searchText": "abraham detweiler 9/13/1752-2/26/1818 (65) amor 273.8 years",
+      "birthDate": "1752-09-13",
+      "age": "273.8 years"
     },
     {
       "id": "amor-29-23",
@@ -11318,7 +11848,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "elizabeth ziegler 1750-5/21/1836 amor"
+      "searchText": "elizabeth ziegler 1750-5/21/1836 amor 190.1 years",
+      "birthDate": "1836-05-21",
+      "age": "190.1 years"
     },
     {
       "id": "amor-32-21",
@@ -11338,7 +11870,7 @@
         }
       ],
       "generation": 6,
-      "searchText": "lower skippack mennonite cem  amor skippack,penn cemetery burial location"
+      "searchText": "lower skippack mennonite cem  amor skippack,penn"
     },
     {
       "id": "amor-32-23",
@@ -11358,7 +11890,7 @@
         }
       ],
       "generation": 6,
-      "searchText": "lower skippack mennonite cem  amor skippack,penn cemetery burial location"
+      "searchText": "lower skippack mennonite cem  amor skippack,penn"
     },
     {
       "id": "amor-38-7",
@@ -11404,7 +11936,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "martin treichler baer sr 11/6/1772-6/13/1842 amor"
+      "searchText": "martin treichler baer sr 11/6/1772-6/13/1842 amor 253.6 years",
+      "birthDate": "1772-11-06",
+      "age": "253.6 years"
     },
     {
       "id": "amor-38-17",
@@ -11424,7 +11958,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "catherine hunsaker gingerich 9/1783-3/6/1849 (65) amor preston,waterloo,ontario,canada"
+      "searchText": "catherine hunsaker gingerich 9/1783-3/6/1849 (65) amor preston,waterloo,ontario,canada 177.2 years",
+      "birthDate": "1849-03-06",
+      "age": "177.2 years"
     },
     {
       "id": "amor-38-19",
@@ -11437,7 +11973,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "cornelius peaaebecker 12/8/1770-6/22/1855 (84) amor"
+      "searchText": "cornelius peaaebecker 12/8/1770-6/22/1855 (84) amor 255.5 years",
+      "birthDate": "1770-12-08",
+      "age": "255.5 years"
     },
     {
       "id": "amor-38-21",
@@ -11450,7 +11988,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "anna dettweiler 11/16/1775-10/27/1855 (79) amor"
+      "searchText": "anna dettweiler 11/16/1775-10/27/1855 (79) amor 250.6 years",
+      "birthDate": "1775-11-16",
+      "age": "250.6 years"
     },
     {
       "id": "amor-41-9",
@@ -11463,7 +12003,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "mount airy-leftwich cem m. 2/12/1765 amor cemetery burial location"
+      "searchText": "mount airy-leftwich cem m. 2/12/1765 amor"
     },
     {
       "id": "amor-41-19",
@@ -11488,7 +12028,7 @@
         }
       ],
       "generation": 8,
-      "searchText": "wanner mennonite cemetery  amor anna \"nancy\" detweiler pannabecker 4/23/1812-2/16/1875 cemetery burial location"
+      "searchText": "wanner mennonite cemetery  amor anna \"nancy\" detweiler pannabecker 4/23/1812-2/16/1875"
     },
     {
       "id": "amor-41-21",
@@ -11501,7 +12041,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "wanner mennonite cemetery  amor cemetery burial location"
+      "searchText": "wanner mennonite cemetery  amor"
     },
     {
       "id": "amor-42-9",
@@ -11514,7 +12054,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "bedford co,va m. 2/12/1765 amor"
+      "searchText": "bedford co,va m. 2/12/1765 amor 261.3 years",
+      "birthDate": "1765-02-12",
+      "age": "261.3 years"
     },
     {
       "id": "amor-42-15",
@@ -11559,7 +12101,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "lockey leftwich 1/1/1767-11/29/1853 (86) amor col. david sauders cemetery bedford,va"
+      "searchText": "lockey leftwich 1/1/1767-11/29/1853 (86) amor col. david sauders cemetery bedford,va 259.4 years",
+      "birthDate": "1767-01-01",
+      "age": "259.4 years"
     },
     {
       "id": "amor-46-9",
@@ -11589,7 +12133,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "col david saunders 2/1761-9/29/1845 (81) amor col. david sauders cemetery hanover,va bedford,va"
+      "searchText": "col david saunders 2/1761-9/29/1845 (81) amor col. david sauders cemetery hanover,va bedford,va 180.8 years",
+      "birthDate": "1845-09-29",
+      "age": "180.8 years"
     },
     {
       "id": "amor-46-17",
@@ -11602,7 +12148,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 10,
-      "searchText": "rev john g baer sr 5/15/1804-12/24/1894 amor"
+      "searchText": "rev john g baer sr 5/15/1804-12/24/1894 amor 222.1 years",
+      "birthDate": "1804-05-15",
+      "age": "222.1 years"
     },
     {
       "id": "amor-49-17",
@@ -11627,7 +12175,7 @@
         }
       ],
       "generation": 11,
-      "searchText": "wanner mennonite cemetery  amor preston,waterloo,ontario,canada hespeler,waterloo,ontario,can cemetery burial location"
+      "searchText": "wanner mennonite cemetery  amor preston,waterloo,ontario,canada hespeler,waterloo,ontario,can"
     },
     {
       "id": "amor-49-19",
@@ -11652,7 +12200,7 @@
         }
       ],
       "generation": 11,
-      "searchText": "wanner mennonite cemetery m. 2/11/1827 amor hespeler,waterloo,ontario,canada preston,waterloo,ontario,canada cemetery burial location"
+      "searchText": "wanner mennonite cemetery m. 2/11/1827 amor hespeler,waterloo,ontario,canada preston,waterloo,ontario,canada"
     },
     {
       "id": "amor-49-23",
@@ -11712,7 +12260,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "angelina anzoletta m. warwick 6/10/1806-11/27/1871 amor amherst,va bedford,va lucy c. 1837- leanor m. 1839- david j. w. 1841-"
+      "searchText": "angelina anzoletta m. warwick 6/10/1806-11/27/1871 amor amherst,va bedford,va lucy c. 1837- leanor m. 1839- david j. w. 1841- 220.0 years",
+      "birthDate": "1806-06-10",
+      "age": "220.0 years"
     },
     {
       "id": "amor-54-9",
@@ -11732,7 +12282,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "david saunders 1/30/1794-2/1850 amor bedford,va"
+      "searchText": "david saunders 1/30/1794-2/1850 amor bedford,va 232.4 years",
+      "birthDate": "1794-01-30",
+      "age": "232.4 years"
     },
     {
       "id": "amor-54-17",
@@ -11772,7 +12324,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "david pannebecker baer 12/5/1828-5/6/1907 amor waterloo,ontario,canada croswell, sanilac,michigan edward baer 1854- william h baer 1858- nataniel baer 1859-1938"
+      "searchText": "david pannebecker baer 12/5/1828-5/6/1907 amor waterloo,ontario,canada croswell, sanilac,michigan edward baer 1854- william h baer 1858- nataniel baer 1859-1938 197.5 years",
+      "birthDate": "1828-12-05",
+      "age": "197.5 years"
     },
     {
       "id": "amor-54-19",
@@ -11797,7 +12351,9 @@
         }
       ],
       "generation": 12,
-      "searchText": "susannah groh witmer baer 1/28/1833-5/14/1880 amor hespeler,waterloo,ontario,canada colbourne,huron,ontario,canada"
+      "searchText": "susannah groh witmer baer 1/28/1833-5/14/1880 amor hespeler,waterloo,ontario,canada colbourne,huron,ontario,canada 193.4 years",
+      "birthDate": "1833-01-28",
+      "age": "193.4 years"
     },
     {
       "id": "amor-54-21",
@@ -11935,7 +12491,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 13,
-      "searchText": "abram warwick saunders feb/1834-7/10/1903 amor"
+      "searchText": "abram warwick saunders feb/1834-7/10/1903 amor 122.9 years",
+      "birthDate": "1903-07-10",
+      "age": "122.9 years"
     },
     {
       "id": "amor-61-19",
@@ -12085,7 +12643,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "justice goeble saunders 6/6/1893-6/28/1957 amor manager of chain store neb 1910, mich in 1920 &1930 mich 1930 census"
+      "searchText": "justice goeble saunders 6/6/1893-6/28/1957 amor manager of chain store neb 1910, mich in 1920 &1930 mich 1930 census 133.0 years",
+      "birthDate": "1893-06-06",
+      "age": "133.0 years"
     },
     {
       "id": "amor-73-13",
@@ -12098,7 +12658,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 14,
-      "searchText": "william bryan saunders 10/1/1896-10/5/1958 amor"
+      "searchText": "william bryan saunders 10/1/1896-10/5/1958 amor 129.7 years",
+      "birthDate": "1896-10-01",
+      "age": "129.7 years"
     },
     {
       "id": "amor-73-15",
@@ -12168,7 +12730,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "virgil saunders 3/221899-8/7/1964 (65) amor listed as a son 1910 a.w. gone in 1910 neb 1920 census c1940 430 cherry long beach"
+      "searchText": "virgil saunders 3/221899-8/7/1964 (65) amor listed as a son 1910 a.w. gone in 1910 neb 1920 census c1940 430 cherry long beach 61.8 years",
+      "birthDate": "1964-08-07",
+      "age": "61.8 years"
     },
     {
       "id": "amor-73-19",
@@ -12198,7 +12762,9 @@
         }
       ],
       "generation": 14,
-      "searchText": "harry clinton stanley baer 5/27/1900-10/4/1966 amor photographer ss438-46-4535 c1940 430 cherry long beach"
+      "searchText": "harry clinton stanley baer 5/27/1900-10/4/1966 amor photographer ss438-46-4535 c1940 430 cherry long beach 126.1 years",
+      "birthDate": "1900-05-27",
+      "age": "126.1 years"
     },
     {
       "id": "amor-73-21",
@@ -12264,7 +12830,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 15,
-      "searchText": "mil grave-memphis nat cem  amor cemetery burial location"
+      "searchText": "mil grave-memphis nat cem  amor"
     },
     {
       "id": "amor-85-9",
@@ -12277,7 +12843,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 15,
-      "searchText": "military grave-memphis nat cem  amor cemetery burial location"
+      "searchText": "military grave-memphis nat cem  amor"
     },
     {
       "id": "amor-85-19",
@@ -12393,7 +12959,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "benjamin aloysius guggemos 12/29/1927-2001 (74) amor c1940 430 cherry long beach"
+      "searchText": "benjamin aloysius guggemos 12/29/1927-2001 (74) amor c1940 430 cherry long beach 98.5 years",
+      "birthDate": "1927-12-29",
+      "age": "98.5 years"
     },
     {
       "id": "amor-89-13",
@@ -12418,7 +12986,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "barbara l.  guggenmos 7/18/1923- amor nebraska lenny"
+      "searchText": "barbara l.  guggenmos 7/18/1923- amor nebraska lenny 102.9 years",
+      "birthDate": "1923-07-18",
+      "age": "102.9 years"
     },
     {
       "id": "amor-89-15",
@@ -12456,7 +13026,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "phillip arbiso iii 7/28/1929-3/11/2011 (81) amor mother's maiden name acosta orange, ca"
+      "searchText": "phillip arbiso iii 7/28/1929-3/11/2011 (81) amor mother's maiden name acosta orange, ca 96.9 years",
+      "birthDate": "1929-07-28",
+      "age": "96.9 years"
     },
     {
       "id": "amor-89-19",
@@ -12481,7 +13053,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "maxine baer  amor 03/07/36- c1940 430 cherry long beach"
+      "searchText": "maxine baer  amor 03/07/36- c1940 430 cherry long beach 90.2 years",
+      "birthDate": "1936-03-07",
+      "age": "90.2 years"
     },
     {
       "id": "amor-89-21",
@@ -12506,7 +13080,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "roy luiz amor ss525-42-5403 amor 04/15/27-03/27/79 (52) auto mechanic"
+      "searchText": "roy luiz amor ss525-42-5403 amor 04/15/27-03/27/79 (52) auto mechanic -10 months",
+      "birthDate": "2027-04-15",
+      "age": "-10 months"
     },
     {
       "id": "amor-89-23",
@@ -12526,7 +13102,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "edward e. amor 3/9/1924-5/3/1984 (60) amor ss525-34-8096"
+      "searchText": "edward e. amor 3/9/1924-5/3/1984 (60) amor ss525-34-8096 102.2 years",
+      "birthDate": "1924-03-09",
+      "age": "102.2 years"
     },
     {
       "id": "amor-89-25",
@@ -12556,7 +13134,9 @@
         }
       ],
       "generation": 16,
-      "searchText": "bertha may frisby 6/7/1928-1/16/1998 amor marceline, missouri honolulu,hi edward"
+      "searchText": "bertha may frisby 6/7/1928-1/16/1998 amor marceline, missouri honolulu,hi edward 98.0 years",
+      "birthDate": "1928-06-07",
+      "age": "98.0 years"
     },
     {
       "id": "amor-94-19",
@@ -12576,7 +13156,9 @@
         }
       ],
       "generation": 17,
-      "searchText": "long beach,ca m. 8/23/1980 amor michelle"
+      "searchText": "long beach,ca m. 8/23/1980 amor michelle 45.8 years",
+      "birthDate": "1980-08-23",
+      "age": "45.8 years"
     },
     {
       "id": "amor-94-21",
@@ -12589,7 +13171,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 17,
-      "searchText": "las cruces,nm m. 10/2/1952 amor"
+      "searchText": "las cruces,nm m. 10/2/1952 amor 73.7 years",
+      "birthDate": "1952-10-02",
+      "age": "73.7 years"
     },
     {
       "id": "amor-98-15",
@@ -12609,7 +13193,9 @@
         }
       ],
       "generation": 18,
-      "searchText": "richard king nordquist  amor 09/20/43-"
+      "searchText": "richard king nordquist  amor 09/20/43- 82.8 years",
+      "birthDate": "1943-09-20",
+      "age": "82.8 years"
     },
     {
       "id": "amor-98-17",
@@ -12629,7 +13215,9 @@
         }
       ],
       "generation": 18,
-      "searchText": "angela maxine amor  amor 12/17/54-"
+      "searchText": "angela maxine amor  amor 12/17/54- 71.5 years",
+      "birthDate": "1954-12-17",
+      "age": "71.5 years"
     },
     {
       "id": "amor-98-21",
@@ -12649,7 +13237,9 @@
         }
       ],
       "generation": 18,
-      "searchText": "roy amor  amor 07/13/53-"
+      "searchText": "roy amor  amor 07/13/53- 72.9 years",
+      "birthDate": "1953-07-13",
+      "age": "72.9 years"
     },
     {
       "id": "amor-102-15",
@@ -12774,7 +13364,9 @@
         }
       ],
       "generation": 21,
-      "searchText": "jessica michele nordquist  amor 05/11/81- harry baer b. 3/10/1895 per maxine in calif deaths index 5/27/1900-10/7/1966"
+      "searchText": "jessica michele nordquist  amor 05/11/81- harry baer b. 3/10/1895 per maxine in calif deaths index 5/27/1900-10/7/1966 45.1 years",
+      "birthDate": "1981-05-11",
+      "age": "45.1 years"
     },
     {
       "id": "amor-106-21",
@@ -12794,7 +13386,9 @@
         }
       ],
       "generation": 21,
-      "searchText": "kristen skylar amor  amor 10/20/94-"
+      "searchText": "kristen skylar amor  amor 10/20/94- 31.7 years",
+      "birthDate": "1994-10-20",
+      "age": "31.7 years"
     },
     {
       "id": "jess-5-13",
@@ -12905,7 +13499,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "charles anshanslin 4/10/1862- nordquist zurich,switzerland"
+      "searchText": "charles anshanslin 4/10/1862- nordquist zurich,switzerland 164.2 years",
+      "birthDate": "1862-04-10",
+      "age": "164.2 years"
     },
     {
       "id": "jess-11-15",
@@ -12925,7 +13521,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "maria wyssmann 1/31/1857-1/29/1937 nordquist berne,switzerland"
+      "searchText": "maria wyssmann 1/31/1857-1/29/1937 nordquist berne,switzerland 169.3 years",
+      "birthDate": "1857-01-31",
+      "age": "169.3 years"
     },
     {
       "id": "jess-24-3",
@@ -12938,7 +13536,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 2,
-      "searchText": "sarah callihan 1/5/1889- nordquist"
+      "searchText": "sarah callihan 1/5/1889- nordquist 137.4 years",
+      "birthDate": "1889-01-05",
+      "age": "137.4 years"
     },
     {
       "id": "jess-24-5",
@@ -12963,7 +13563,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "frederick stephen callahan 1/20/1880-7/1965 nordquist c1900 new york 20 c1910 new york 26"
+      "searchText": "frederick stephen callahan 1/20/1880-7/1965 nordquist c1900 new york 20 c1910 new york 26 146.4 years",
+      "birthDate": "1880-01-20",
+      "age": "146.4 years"
     },
     {
       "id": "jess-24-7",
@@ -12998,7 +13600,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "alfred james callahan 7/23/1882-1/21/1982 nordquist c1900 new york 17 c1910 new york 26 anna c1910 new york 23 with callahan family and edward jr 3"
+      "searchText": "alfred james callahan 7/23/1882-1/21/1982 nordquist c1900 new york 17 c1910 new york 26 anna c1910 new york 23 with callahan family and edward jr 3 143.9 years",
+      "birthDate": "1882-07-23",
+      "age": "143.9 years"
     },
     {
       "id": "jess-24-9",
@@ -13023,7 +13627,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "edward francis callahan 6/27/1884-5/4/1982 nordquist c1900 new york 14 c1910 new york 23"
+      "searchText": "edward francis callahan 6/27/1884-5/4/1982 nordquist c1900 new york 14 c1910 new york 23 142.0 years",
+      "birthDate": "1884-06-27",
+      "age": "142.0 years"
     },
     {
       "id": "jess-24-11",
@@ -13068,7 +13674,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "charles herbert callahan 8/1/1892-1/25/1969 nordquist ss 453-56-4081 c1900 new york 8 c1910 new york 17 c1920 wichita 27 1919 wichita 901 litchfield ave c1930 wichita 37 3915 edgemont"
+      "searchText": "charles herbert callahan 8/1/1892-1/25/1969 nordquist ss 453-56-4081 c1900 new york 8 c1910 new york 17 c1920 wichita 27 1919 wichita 901 litchfield ave c1930 wichita 37 3915 edgemont 133.8 years",
+      "birthDate": "1892-08-01",
+      "age": "133.8 years"
     },
     {
       "id": "jess-24-13",
@@ -13103,7 +13711,9 @@
         }
       ],
       "generation": 2,
-      "searchText": "martha rose anshanslin 6/21/1898-5/24/1985 nordquist ss 456-17-4984 c1920 wichita 25 1919 wichita 901 litchfield ave c1930 wichita 32 3915 edgemont"
+      "searchText": "martha rose anshanslin 6/21/1898-5/24/1985 nordquist ss 456-17-4984 c1920 wichita 25 1919 wichita 901 litchfield ave c1930 wichita 32 3915 edgemont 128.0 years",
+      "birthDate": "1898-06-21",
+      "age": "128.0 years"
     },
     {
       "id": "jess-24-17",
@@ -13259,7 +13869,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 5,
-      "searchText": "ralph joseph hindelang 2/2/1923-9/17/1983 nordquist"
+      "searchText": "ralph joseph hindelang 2/2/1923-9/17/1983 nordquist 103.3 years",
+      "birthDate": "1923-02-02",
+      "age": "103.3 years"
     },
     {
       "id": "jess-44-5",
@@ -13294,7 +13906,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "peggy jean callahan 5/6/1921-11/15/1997 nordquist c1925 wichita 3 c1930 wichita 8 3915 edgemont c1940 sanant 18 110 e magnolia wichita,kansas"
+      "searchText": "peggy jean callahan 5/6/1921-11/15/1997 nordquist c1925 wichita 3 c1930 wichita 8 3915 edgemont c1940 sanant 18 110 e magnolia wichita,kansas 105.1 years",
+      "birthDate": "1921-05-06",
+      "age": "105.1 years"
     },
     {
       "id": "jess-44-7",
@@ -13324,7 +13938,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "elaine h callahan 1925-6/12/2011 nordquist c1930 wichita 4.5 3915 edgemont c1940 sanant 13 110 e magnolia wichita,kansas"
+      "searchText": "elaine h callahan 1925-6/12/2011 nordquist c1930 wichita 4.5 3915 edgemont c1940 sanant 13 110 e magnolia wichita,kansas 15.0 years",
+      "birthDate": "2011-06-12",
+      "age": "15.0 years"
     },
     {
       "id": "jess-44-9",
@@ -13359,7 +13975,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "stanley e callahan 4/16/1924-7/5/1944 nordquist c1925 wichita 1 c1930 wichita 6 3915 edgemont c1940 sanant 15 110 e magnolia wichita,kansas"
+      "searchText": "stanley e callahan 4/16/1924-7/5/1944 nordquist c1925 wichita 1 c1930 wichita 6 3915 edgemont c1940 sanant 15 110 e magnolia wichita,kansas 102.2 years",
+      "birthDate": "1924-04-16",
+      "age": "102.2 years"
     },
     {
       "id": "jess-44-11",
@@ -13379,7 +13997,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "jonne forde perry 2/6/1912-3/1/1991 nordquist palacios,tx"
+      "searchText": "jonne forde perry 2/6/1912-3/1/1991 nordquist palacios,tx 114.3 years",
+      "birthDate": "1912-02-06",
+      "age": "114.3 years"
     },
     {
       "id": "jess-44-13",
@@ -13464,7 +14084,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "richard king nordquist sr 8/16/1917-3/22/1943 nordquist mia wwii tech sgt 5'5\" 132lb c1920 marquette 2.5 c1930 marquette 12 c1940 marquette 23 1940 enlisted us army aircorp marquette,michigan"
+      "searchText": "richard king nordquist sr 8/16/1917-3/22/1943 nordquist mia wwii tech sgt 5'5\" 132lb c1920 marquette 2.5 c1930 marquette 12 c1940 marquette 23 1940 enlisted us army aircorp marquette,michigan 108.8 years",
+      "birthDate": "1917-08-16",
+      "age": "108.8 years"
     },
     {
       "id": "jess-44-17",
@@ -13509,7 +14131,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "eric nordquist 7/4/1892- nordquist c1910 marquette 17 c1920 marquette 27 c1930 marquette 37 c1940 marquette 38? boiler maker-railroad finland"
+      "searchText": "eric nordquist 7/4/1892- nordquist c1910 marquette 17 c1920 marquette 27 c1930 marquette 37 c1940 marquette 38? boiler maker-railroad finland 133.9 years",
+      "birthDate": "1892-07-04",
+      "age": "133.9 years"
     },
     {
       "id": "jess-44-21",
@@ -13700,7 +14324,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "linda perry 10/5/1951-11/30/2013 nordquist"
+      "searchText": "linda perry 10/5/1951-11/30/2013 nordquist 74.7 years",
+      "birthDate": "1951-10-05",
+      "age": "74.7 years"
     },
     {
       "id": "jess-59-7",
@@ -13726,7 +14352,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "patti carol perry 11/28/1954- nordquist"
+      "searchText": "patti carol perry 11/28/1954- nordquist 71.6 years",
+      "birthDate": "1954-11-28",
+      "age": "71.6 years"
     },
     {
       "id": "jess-59-11",
@@ -13746,7 +14374,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "randal carle perry 4/8/1949- nordquist div. marcy 4/7/1889"
+      "searchText": "randal carle perry 4/8/1949- nordquist div. marcy 4/7/1889 77.2 years",
+      "birthDate": "1949-04-08",
+      "age": "77.2 years"
     },
     {
       "id": "jess-59-15",
@@ -13772,7 +14402,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "richard king nordquist jr 9/20/1943- nordquist"
+      "searchText": "richard king nordquist jr 9/20/1943- nordquist 82.8 years",
+      "birthDate": "1943-09-20",
+      "age": "82.8 years"
     },
     {
       "id": "jess-59-19",
@@ -13785,7 +14417,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 7,
-      "searchText": "angela maxine amor 12/17/1954- nordquist"
+      "searchText": "angela maxine amor 12/17/1954- nordquist 71.5 years",
+      "birthDate": "1954-12-17",
+      "age": "71.5 years"
     },
     {
       "id": "jess-59-21",
@@ -13810,7 +14444,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "kevin p wixted 4/14/1956- nordquist rochester,ny hero"
+      "searchText": "kevin p wixted 4/14/1956- nordquist rochester,ny hero 70.2 years",
+      "birthDate": "1956-04-14",
+      "age": "70.2 years"
     },
     {
       "id": "jess-59-23",
@@ -13905,7 +14541,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "richard m nordquist 2/28/1937-4/8/2012 nordquist us navy c1940 marquette 3 marquette,michigan negaunee,michigan in park cemetery"
+      "searchText": "richard m nordquist 2/28/1937-4/8/2012 nordquist us navy c1940 marquette 3 marquette,michigan negaunee,michigan in park cemetery 89.3 years",
+      "birthDate": "1937-02-28",
+      "age": "89.3 years"
     },
     {
       "id": "jess-59-29",
@@ -14008,7 +14646,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "san antonio,tx m.1/11/1980 nordquist father"
+      "searchText": "san antonio,tx m.1/11/1980 nordquist father 46.4 years",
+      "birthDate": "1980-01-11",
+      "age": "46.4 years"
     },
     {
       "id": "jess-65-19",
@@ -14041,7 +14681,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "jessica michele nordquist 5/11/1981- nordquist"
+      "searchText": "jessica michele nordquist 5/11/1981- nordquist 45.1 years",
+      "birthDate": "1981-05-11",
+      "age": "45.1 years"
     },
     {
       "id": "jess-71-19",
@@ -14054,7 +14696,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "katie alyson wixted 9/27/1993- nordquist"
+      "searchText": "katie alyson wixted 9/27/1993- nordquist 32.8 years",
+      "birthDate": "1993-09-27",
+      "age": "32.8 years"
     },
     {
       "id": "from-ireland-8-1",
@@ -14132,7 +14776,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 0,
-      "searchText": "all saints,southhamton,eng  mayflower cemetery burial location"
+      "searchText": "all saints,southhamton,eng  mayflower"
     },
     {
       "id": "mayflower-6-6",
@@ -14182,7 +14826,7 @@
         }
       ],
       "generation": 0,
-      "searchText": "all saints,southhamton,eng  mayflower stafford,eng of,dorking,surrey,eng stalbans,hartford,eng portsmouth,newport,ri saybrook,conn chester,conn conn cemetery burial location"
+      "searchText": "all saints,southhamton,eng  mayflower stafford,eng of,dorking,surrey,eng stalbans,hartford,eng portsmouth,newport,ri saybrook,conn chester,conn conn"
     },
     {
       "id": "mayflower-7-1",
@@ -14208,7 +14852,7 @@
       "recordType": "location",
       "categorizedNotes": [],
       "generation": 1,
-      "searchText": "all saints,southhamton,eng  mayflower cemetery burial location"
+      "searchText": "all saints,southhamton,eng  mayflower"
     },
     {
       "id": "mayflower-7-5",
@@ -14663,7 +15307,9 @@
         }
       ],
       "generation": 0,
-      "searchText": "nicholas danforth 1510-2/17/1585 or 1586 danforth framlingham,sufflk,eng anne 1561- johane 1563-1578 margaret 1565- olive 1567- elizabeth 1569-"
+      "searchText": "nicholas danforth 1510-2/17/1585 or 1586 danforth framlingham,sufflk,eng anne 1561- johane 1563-1578 margaret 1565- olive 1567- elizabeth 1569- 441.3 years",
+      "birthDate": "1585-02-17",
+      "age": "441.3 years"
     },
     {
       "id": "danforth-16-7",
@@ -14703,7 +15349,9 @@
         }
       ],
       "generation": 1,
-      "searchText": "thomas danforth 1560-9/7/1621 danforth framlingham,sufflk,eng"
+      "searchText": "thomas danforth 1560-9/7/1621 danforth framlingham,sufflk,eng 404.8 years",
+      "birthDate": "1621-09-07",
+      "age": "404.8 years"
     },
     {
       "id": "danforth-22-7",
@@ -14798,7 +15446,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "william beaumont 1608 -2/4/1698or 1699 danforth saybrook,ct"
+      "searchText": "william beaumont 1608 -2/4/1698or 1699 danforth saybrook,ct 328.3 years",
+      "birthDate": "1698-02-04",
+      "age": "328.3 years"
     },
     {
       "id": "danforth-35-7",
@@ -14828,7 +15478,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "lydia danforth 1625-8/16/1686 danforth came to us in 1634 framlington,sufflk,eng saybrook,ct"
+      "searchText": "lydia danforth 1625-8/16/1686 danforth came to us in 1634 framlington,sufflk,eng saybrook,ct 339.8 years",
+      "birthDate": "1686-08-16",
+      "age": "339.8 years"
     },
     {
       "id": "danforth-35-9",
@@ -14848,7 +15500,9 @@
         }
       ],
       "generation": 3,
-      "searchText": "samuel danforth 10/17/1626-11/19/1674 danforth framlington,sufflk,eng"
+      "searchText": "samuel danforth 10/17/1626-11/19/1674 danforth framlington,sufflk,eng 399.7 years",
+      "birthDate": "1626-10-17",
+      "age": "399.7 years"
     },
     {
       "id": "danforth-42-5",
@@ -14873,7 +15527,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "john clark(e) 11/17/1655-2/17/1735 (80) danforth saybrook,ct m.9/17/1684"
+      "searchText": "john clark(e) 11/17/1655-2/17/1735 (80) danforth saybrook,ct m.9/17/1684 370.6 years",
+      "birthDate": "1655-11-17",
+      "age": "370.6 years"
     },
     {
       "id": "danforth-42-7",
@@ -14893,7 +15549,9 @@
         }
       ],
       "generation": 4,
-      "searchText": "rebekah beaumont 9/17/1659-4/3/1742 (83) danforth saybrook,ct"
+      "searchText": "rebekah beaumont 9/17/1659-4/3/1742 (83) danforth saybrook,ct 366.8 years",
+      "birthDate": "1659-09-17",
+      "age": "366.8 years"
     },
     {
       "id": "danforth-48-5",
@@ -14918,7 +15576,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "joseph clark(e) 1/23/1692 danforth saybrook,ct m.9/25/1712"
+      "searchText": "joseph clark(e) 1/23/1692 danforth saybrook,ct m.9/25/1712 334.4 years",
+      "birthDate": "1692-01-23",
+      "age": "334.4 years"
     },
     {
       "id": "danforth-48-7",
@@ -14938,7 +15598,9 @@
         }
       ],
       "generation": 5,
-      "searchText": "lydia grinnell 4/3/1693-7/13/1748 (55) danforth duxbury,plymouth,mass"
+      "searchText": "lydia grinnell 4/3/1693-7/13/1748 (55) danforth duxbury,plymouth,mass 333.2 years",
+      "birthDate": "1693-04-03",
+      "age": "333.2 years"
     },
     {
       "id": "danforth-54-5",
@@ -14958,7 +15620,9 @@
         }
       ],
       "generation": 6,
-      "searchText": "joseph clark 1/25/1713-11/13/1753 (40) danforth saybrook,ct"
+      "searchText": "joseph clark 1/25/1713-11/13/1753 (40) danforth saybrook,ct 313.4 years",
+      "birthDate": "1713-01-25",
+      "age": "313.4 years"
     },
     {
       "id": "danforth-54-7",
@@ -15018,7 +15682,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "reuben clark 1734-12/18/1812 (78) danforth chester,ct d.chster,ct m.12/3/1759 rev. john clark 9/8/1766-7/8/1835"
+      "searchText": "reuben clark 1734-12/18/1812 (78) danforth chester,ct d.chster,ct m.12/3/1759 rev. john clark 9/8/1766-7/8/1835 213.5 years",
+      "birthDate": "1812-12-18",
+      "age": "213.5 years"
     },
     {
       "id": "danforth-60-7",
@@ -15043,7 +15709,9 @@
         }
       ],
       "generation": 7,
-      "searchText": "elizabeth truby 1738-8/21/1778 (40) danforth chester,ct d.chster,ct"
+      "searchText": "elizabeth truby 1738-8/21/1778 (40) danforth chester,ct d.chster,ct 247.8 years",
+      "birthDate": "1778-08-21",
+      "age": "247.8 years"
     },
     {
       "id": "danforth-73-5",
@@ -15056,7 +15724,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 8,
-      "searchText": "charles william clark 3/13/1796-11/18/1880 (84) danforth"
+      "searchText": "charles william clark 3/13/1796-11/18/1880 (84) danforth 230.2 years",
+      "birthDate": "1796-03-13",
+      "age": "230.2 years"
     },
     {
       "id": "danforth-73-7",
@@ -15081,7 +15751,9 @@
         }
       ],
       "generation": 8,
-      "searchText": "anna merwin 11/19/1795-after 6/1880 danforth have photograph buried in foster plot"
+      "searchText": "anna merwin 11/19/1795-after 6/1880 danforth have photograph buried in foster plot 230.6 years",
+      "birthDate": "1795-11-19",
+      "age": "230.6 years"
     },
     {
       "id": "danforth-78-5",
@@ -15094,7 +15766,9 @@
       "recordType": "person",
       "categorizedNotes": [],
       "generation": 9,
-      "searchText": "mt adnah,fulton m. 1/30/1817 danforth"
+      "searchText": "mt adnah,fulton m. 1/30/1817 danforth 209.4 years",
+      "birthDate": "1817-01-30",
+      "age": "209.4 years"
     },
     {
       "id": "danforth-78-7",
@@ -15127,7 +15801,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) danforth watchmaker/jeweler"
+      "searchText": "james alanson clark 5/23/1823-8/10/1906 (83) danforth watchmaker/jeweler 203.1 years",
+      "birthDate": "1823-05-23",
+      "age": "203.1 years"
     },
     {
       "id": "danforth-82-7",
@@ -15147,7 +15823,9 @@
         }
       ],
       "generation": 10,
-      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) danforth pickering,canada"
+      "searchText": "sarah collins 3/15/1846-2/13/1925 (79) danforth pickering,canada 180.2 years",
+      "birthDate": "1846-03-15",
+      "age": "180.2 years"
     },
     {
       "id": "danforth-91-5",
@@ -15182,7 +15860,9 @@
         }
       ],
       "generation": 11,
-      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) danforth ss 062-28-9393 omemee,ont,canada d. syracuse,ny sometimes averilla"
+      "searchText": "dollie avarilla clark 4/10/1882-jan 1969 (87) danforth ss 062-28-9393 omemee,ont,canada d. syracuse,ny sometimes averilla 144.2 years",
+      "birthDate": "1882-04-10",
+      "age": "144.2 years"
     },
     {
       "id": "danforth-91-7",
@@ -15202,7 +15882,9 @@
         }
       ],
       "generation": 11,
-      "searchText": "john breitenbach 8/15/1881 danforth (shoemaker)"
+      "searchText": "john breitenbach 8/15/1881 danforth (shoemaker) 144.8 years",
+      "birthDate": "1881-08-15",
+      "age": "144.8 years"
     }
   ],
   "cemetery": [
@@ -15488,7 +16170,7 @@
     }
   ],
   "heritage": {
-    "katie": {
+    "matthew": {
       "english": 0.25,
       "german": 0.25,
       "irish": 0.125,
@@ -15503,6 +16185,23 @@
     }
   },
   "stories": [
+    {
+      "id": "story-ryan-kylie",
+      "title": "Ryan & Kylie Wixted",
+      "body": "Ryan Patrick Wixted and Kylie Renee were married on October 13, 2018. They are now divorced. Their children are Sedona Tracy Wixted (b. August 24, 2019) and Bruce William Wixted (b. July 24, 2021), both born in Orange, CA.",
+      "personIds": [
+        "wixted-114-31",
+        "wixted-114-33",
+        "wixted-121-31",
+        "wixted-121-33"
+      ],
+      "branch": "wixted",
+      "tags": [
+        "family-history",
+        "marriage"
+      ],
+      "source": "family-update"
+    },
     {
       "id": "story-1",
       "title": "Margaret Brown  (not related)",
