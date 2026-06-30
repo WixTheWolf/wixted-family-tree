@@ -1,59 +1,85 @@
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
+import { BrowserRouter, Routes, Route, useNavigate, useParams } from "react-router-dom";
 import familyData from "./data/family.json";
-import type { Person, FamilyData } from "./types";
+import type { Person, FamilyData, SearchResult } from "./types";
 import SearchBar from "./components/SearchBar";
 import BranchNav from "./components/BranchNav";
 import TreeView from "./components/TreeView";
 import GridView from "./components/GridView";
 import PersonDetail from "./components/PersonDetail";
 import HeritageChart from "./components/HeritageChart";
+import AppNav from "./components/AppNav";
+import DirectoryView from "./components/DirectoryView";
+import StoriesView from "./components/StoriesView";
+import CemeteryView from "./components/CemeteryView";
+import { getPeople, getBranchPeople, getRelatives } from "./utils/people";
+import { searchAll, findPersonById } from "./utils/search";
 
 const data = familyData as FamilyData;
+const allPeople = getPeople(data);
 
-export default function App() {
+function AppContent() {
+  const navigate = useNavigate();
+  const { personId } = useParams();
   const [activeBranch, setActiveBranch] = useState("wixted");
-  const [selected, setSelected] = useState<Person | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
+  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery">("explore");
+
+  const selected = useMemo(
+    () => (personId ? findPersonById(data, personId) ?? null : null),
+    [personId]
+  );
+
+  useEffect(() => {
+    if (selected) {
+      setActiveBranch(selected.branch);
+      setViewMode(selected.branch === "wixted" ? "tree" : "grid");
+    }
+  }, [selected]);
 
   const branchPeople = useMemo(
-    () => data.people.filter((p) => p.branch === activeBranch),
+    () => getBranchPeople(data, activeBranch),
     [activeBranch]
   );
 
-  const searchResults = useMemo(() => {
-    if (searchQuery.length < 2) return [];
-    const q = searchQuery.toLowerCase();
-    return data.people.filter(
-      (p) =>
-        p.name.toLowerCase().includes(q) ||
-        p.dates.toLowerCase().includes(q) ||
-        p.notes.some((n) => n.toLowerCase().includes(q))
-    );
-  }, [searchQuery]);
+  const searchResults = useMemo(
+    () => searchAll(data, searchQuery),
+    [searchQuery]
+  );
 
-  const relatives = useMemo(() => {
-    if (!selected) return [];
-    const related: Person[] = [];
-    if (selected.parentId) {
-      const parent = data.people.find((p) => p.id === selected.parentId);
-      if (parent) related.push(parent);
-    }
-    const children = data.people.filter((p) => p.parentId === selected.id);
-    related.push(...children);
-    const siblings = data.people.filter(
-      (p) => p.parentId === selected.parentId && p.id !== selected.id && selected.parentId
-    );
-    related.push(...siblings);
-    return related;
-  }, [selected]);
+  const relatives = useMemo(
+    () => (selected ? getRelatives(selected, allPeople) : []),
+    [selected]
+  );
 
-  const handleSearchSelect = useCallback((p: Person) => {
-    setActiveBranch(p.branch);
-    setSelected(p);
-    setSearchQuery("");
-    setViewMode(p.branch === "wixted" ? "tree" : "grid");
-  }, []);
+  const selectPerson = useCallback(
+    (p: Person) => {
+      navigate(`/person/${p.id}`);
+      setAppView("explore");
+    },
+    [navigate]
+  );
+
+  const handleSearchSelect = useCallback(
+    (r: SearchResult) => {
+      setSearchQuery("");
+      if (r.type === "person" && r.person) {
+        selectPerson(r.person);
+      } else if (r.type === "story" && r.story?.personIds[0]) {
+        const p = findPersonById(data, r.story.personIds[0]);
+        if (p) selectPerson(p);
+        else setAppView("stories");
+      } else if (r.type === "cemetery") {
+        setAppView("cemetery");
+      } else if (r.type === "location") {
+        setAppView("cemetery");
+      }
+    },
+    [selectPerson]
+  );
+
+  const closeDetail = useCallback(() => navigate("/"), [navigate]);
 
   const activeBranchMeta = data.branches.find((b) => b.id === activeBranch);
   const hasTree = activeBranch === "wixted";
@@ -64,7 +90,9 @@ export default function App() {
         <div>
           <h1>{data.meta.title}</h1>
           <p className="hero-sub">
-            Explore {data.people.length} ancestors across {data.branches.length} family branches.
+            Explore {data.meta.personCount ?? allPeople.length} ancestors across{" "}
+            {data.branches.length} family branches — with {(data.stories ?? []).length} stories
+            and {data.cemetery.length} cemetery records.
             <span className="hero-focus"> Focused on {data.meta.focus}.</span>
           </p>
         </div>
@@ -86,74 +114,114 @@ export default function App() {
       </header>
 
       <main className="main">
-        <div className="main-header">
-          <div className="main-header-left">
-            <h2>{activeBranchMeta?.label}</h2>
-            <p className="branch-desc">{activeBranchMeta?.desc}</p>
-          </div>
-          <div className="view-toggle">
-            {hasTree && (
-              <>
-                <button
-                  className={viewMode === "tree" ? "active" : ""}
-                  onClick={() => setViewMode("tree")}
-                >
-                  Tree
-                </button>
-                <button
-                  className={viewMode === "grid" ? "active" : ""}
-                  onClick={() => setViewMode("grid")}
-                >
-                  Grid
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-
-        <BranchNav
-          branches={data.branches}
-          active={activeBranch}
-          onSelect={(id) => {
-            setActiveBranch(id);
-            setSelected(null);
-            setViewMode(id === "wixted" ? "tree" : "grid");
+        <AppNav
+          active={appView}
+          onChange={setAppView}
+          counts={{
+            people: data.meta.personCount ?? allPeople.length,
+            stories: data.stories?.length ?? 0,
+            cemetery: data.cemetery.length,
           }}
         />
 
-        <div className="main-content">
-          {hasTree && viewMode === "tree" ? (
-            <TreeView
-              people={branchPeople}
-              selectedId={selected?.id ?? null}
-              highlightId={searchQuery ? null : selected?.id ?? null}
-              onSelect={setSelected}
+        {appView === "explore" && (
+          <>
+            <div className="main-header">
+              <div className="main-header-left">
+                <h2>{activeBranchMeta?.label}</h2>
+                <p className="branch-desc">{activeBranchMeta?.desc}</p>
+              </div>
+              <div className="view-toggle">
+                {hasTree && (
+                  <>
+                    <button
+                      className={viewMode === "tree" ? "active" : ""}
+                      onClick={() => setViewMode("tree")}
+                    >
+                      Tree
+                    </button>
+                    <button
+                      className={viewMode === "grid" ? "active" : ""}
+                      onClick={() => setViewMode("grid")}
+                    >
+                      Grid
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+
+            <BranchNav
+              branches={data.branches}
+              active={activeBranch}
+              onSelect={(id) => {
+                setActiveBranch(id);
+                closeDetail();
+                setViewMode(id === "wixted" ? "tree" : "grid");
+              }}
             />
-          ) : (
-            <GridView
-              people={branchPeople}
-              selectedId={selected?.id ?? null}
-              onSelect={setSelected}
-            />
-          )}
-        </div>
+
+            <div className="main-content">
+              {hasTree && viewMode === "tree" ? (
+                <TreeView
+                  people={branchPeople}
+                  selectedId={selected?.id ?? null}
+                  highlightId={null}
+                  onSelect={selectPerson}
+                />
+              ) : (
+                <GridView
+                  people={branchPeople}
+                  selectedId={selected?.id ?? null}
+                  onSelect={selectPerson}
+                />
+              )}
+            </div>
+          </>
+        )}
+
+        {appView === "directory" && (
+          <DirectoryView
+            people={allPeople}
+            branches={data.branches}
+            selectedId={selected?.id ?? null}
+            onSelect={selectPerson}
+          />
+        )}
+
+        {appView === "stories" && (
+          <StoriesView
+            stories={data.stories ?? []}
+            branches={data.branches}
+            people={allPeople}
+            onSelectPerson={selectPerson}
+          />
+        )}
+
+        {appView === "cemetery" && (
+          <CemeteryView
+            cemetery={data.cemetery}
+            locationRefs={data.locationRefs ?? []}
+            people={allPeople}
+            onSelectPerson={selectPerson}
+          />
+        )}
       </main>
 
       <footer className="footer">
         <span>Wixted Family Tree {data.meta.version}</span>
         <span>Updated {data.meta.updated}</span>
-        <span>{data.cemetery.length} cemetery records</span>
+        <span>{allPeople.length} people · {(data.stories ?? []).length} stories</span>
       </footer>
 
       <PersonDetail
         person={selected}
         cemetery={data.cemetery}
         relatives={relatives}
-        onClose={() => setSelected(null)}
-        onSelectRelative={(p) => {
-          setActiveBranch(p.branch);
-          setSelected(p);
-        }}
+        stories={data.stories ?? []}
+        branches={data.branches}
+        onClose={closeDetail}
+        onSelectRelative={selectPerson}
       />
 
       <style>{`
@@ -171,7 +239,7 @@ export default function App() {
         }
         .hero-sub {
           font-size: 19px; color: var(--text-secondary); margin-top: 12px;
-          line-height: 1.5; max-width: 600px; margin-left: auto; margin-right: auto;
+          line-height: 1.5; max-width: 680px; margin-left: auto; margin-right: auto;
         }
         .hero-focus { color: var(--accent); -webkit-text-fill-color: var(--accent); }
         .hero-actions {
@@ -221,5 +289,16 @@ export default function App() {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppContent />} />
+        <Route path="/person/:personId" element={<AppContent />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

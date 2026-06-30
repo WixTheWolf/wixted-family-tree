@@ -1,21 +1,44 @@
 import { motion, AnimatePresence } from "framer-motion";
-import type { Person, CemeteryRecord } from "../types";
+import type { Person, CemeteryRecord, Story, Branch } from "../types";
+import { NOTE_LABELS, NOTE_ORDER, groupNotes } from "../utils/notes";
+import { getBranchLabel } from "../utils/people";
 
 interface Props {
   person: Person | null;
   cemetery: CemeteryRecord[];
   relatives: Person[];
+  stories: Story[];
+  branches: Branch[];
   onClose: () => void;
   onSelectRelative: (p: Person) => void;
 }
 
-export default function PersonDetail({ person, cemetery, relatives, onClose, onSelectRelative }: Props) {
+export default function PersonDetail({
+  person,
+  cemetery,
+  relatives,
+  stories,
+  branches,
+  onClose,
+  onSelectRelative,
+}: Props) {
   const cemMatch = person
-    ? cemetery.filter((c) =>
-        person.name.toLowerCase().includes(c.name.toLowerCase()) ||
-        c.name.toLowerCase().includes(person.name.split(" ")[0].toLowerCase())
-      )
+    ? cemetery.filter((c) => {
+        const first = person.name.split(/[\s\-]+/)[0].toLowerCase();
+        const clow = c.name.toLowerCase();
+        return clow.includes(first) || person.name.toLowerCase().includes(clow.split(/[\s,]+/)[0]);
+      })
     : [];
+
+  const personStories = person
+    ? stories.filter((s) => s.personIds.includes(person.id))
+    : [];
+
+  const noteGroups = person?.categorizedNotes
+    ? groupNotes(person.categorizedNotes)
+    : new Map();
+
+  const sortedCategories = NOTE_ORDER.filter((c) => noteGroups.has(c));
 
   return (
     <AnimatePresence>
@@ -42,33 +65,58 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
             </button>
 
             <div className="detail-content">
+              <div className="detail-branch">{getBranchLabel(branches, person.branch)}</div>
               <h2>{person.name}</h2>
               {person.dates && <p className="detail-dates">{person.dates}</p>}
 
-              {person.generation !== undefined && (
-                <div className="detail-badge">Generation {person.generation + 1}</div>
+              <div className="detail-badges">
+                {person.generation !== undefined && (
+                  <span className="detail-badge">Generation {person.generation + 1}</span>
+                )}
+                {person.notes.length > 0 && (
+                  <span className="detail-badge muted">{person.notes.length} research notes</span>
+                )}
+              </div>
+
+              {sortedCategories.length > 0 && (
+                <section className="detail-section">
+                  <h3>Research Notes</h3>
+                  {sortedCategories.map((cat) => (
+                    <div key={cat} className="note-group">
+                      <h4>{NOTE_LABELS[cat]}</h4>
+                      <ul>
+                        {noteGroups.get(cat)!.map((n: string, i: number) => (
+                          <li key={i}>{n}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </section>
               )}
 
-              {person.notes.length > 0 && (
+              {personStories.length > 0 && (
                 <section className="detail-section">
-                  <h3>Notes</h3>
-                  <ul>
-                    {person.notes.map((n, i) => (
-                      <li key={i}>{n}</li>
-                    ))}
-                  </ul>
+                  <h3>Stories</h3>
+                  {personStories.map((s) => (
+                    <div key={s.id} className="story-snippet">
+                      <div className="story-snippet-title">{s.title}</div>
+                      <p>{s.body}</p>
+                    </div>
+                  ))}
                 </section>
               )}
 
               {cemMatch.length > 0 && (
                 <section className="detail-section">
-                  <h3>Cemetery</h3>
+                  <h3>Cemetery Records</h3>
                   {cemMatch.map((c) => (
                     <div key={c.id} className="cem-card">
                       <div className="cem-name">{c.name}</div>
                       {c.location && <div className="cem-loc">{c.location}</div>}
                       {c.died && <div className="cem-date">Died: {c.died}</div>}
+                      {c.born && <div className="cem-date">Born: {c.born}</div>}
                       {c.relation && <div className="cem-rel">{c.relation}</div>}
+                      {c.notes && <div className="cem-rel">{c.notes}</div>}
                     </div>
                   ))}
                 </section>
@@ -76,11 +124,14 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
 
               {relatives.length > 0 && (
                 <section className="detail-section">
-                  <h3>Related</h3>
+                  <h3>Family Connections</h3>
                   <div className="relatives-list">
                     {relatives.map((r) => (
                       <button key={r.id} className="relative-chip" onClick={() => onSelectRelative(r)}>
-                        <span>{r.name}</span>
+                        <div>
+                          <span>{r.name}</span>
+                          <span className="relative-branch">{getBranchLabel(branches, r.branch)}</span>
+                        </div>
                         {r.dates && <span className="relative-dates">{r.dates}</span>}
                       </button>
                     ))}
@@ -96,7 +147,7 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
               backdrop-filter: blur(4px); z-index: 200;
             }
             .detail-panel {
-              position: fixed; top: 0; right: 0; bottom: 0; width: 400px;
+              position: fixed; top: 0; right: 0; bottom: 0; width: 440px;
               max-width: 90vw; background: var(--bg-elevated);
               box-shadow: var(--shadow-lg); z-index: 201;
               overflow-y: auto;
@@ -109,6 +160,10 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
             }
             .detail-close:hover { background: rgba(0,0,0,0.06); }
             .detail-content { padding: 48px 32px 32px; }
+            .detail-branch {
+              font-size: 12px; font-weight: 600; text-transform: uppercase;
+              letter-spacing: 0.06em; color: var(--accent); margin-bottom: 8px;
+            }
             .detail-content h2 {
               font-size: 28px; font-weight: 700; letter-spacing: -0.02em;
               line-height: 1.2; color: var(--text);
@@ -116,22 +171,38 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
             .detail-dates {
               font-size: 17px; color: var(--text-secondary); margin-top: 8px;
             }
+            .detail-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
             .detail-badge {
-              display: inline-block; margin-top: 16px;
+              display: inline-block;
               padding: 4px 12px; border-radius: 980px;
               background: rgba(0,113,227,0.08); color: var(--accent);
               font-size: 13px; font-weight: 500;
+            }
+            .detail-badge.muted {
+              background: rgba(0,0,0,0.04); color: var(--text-tertiary);
             }
             .detail-section { margin-top: 32px; }
             .detail-section h3 {
               font-size: 13px; font-weight: 600; text-transform: uppercase;
               letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 12px;
             }
-            .detail-section ul { list-style: none; }
-            .detail-section li {
-              font-size: 15px; color: var(--text-secondary); line-height: 1.5;
-              padding: 8px 0; border-bottom: 1px solid var(--border);
+            .note-group { margin-bottom: 16px; }
+            .note-group h4 {
+              font-size: 12px; font-weight: 600; color: var(--text-secondary);
+              margin-bottom: 6px;
             }
+            .note-group ul { list-style: none; }
+            .note-group li {
+              font-size: 14px; color: var(--text-secondary); line-height: 1.5;
+              padding: 6px 0; border-bottom: 1px solid var(--border);
+            }
+            .story-snippet {
+              padding: 14px; border-radius: var(--radius-sm);
+              background: var(--bg); border: 1px solid var(--border);
+              margin-bottom: 8px;
+            }
+            .story-snippet-title { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+            .story-snippet p { font-size: 13px; color: var(--text-secondary); line-height: 1.55; }
             .cem-card {
               padding: 14px; border-radius: var(--radius-sm);
               background: var(--bg); border: 1px solid var(--border);
@@ -151,7 +222,11 @@ export default function PersonDetail({ person, cemetery, relatives, onClose, onS
             .relative-chip:hover {
               border-color: rgba(0,113,227,0.3); background: rgba(0,113,227,0.04);
             }
-            .relative-chip span:first-child { font-size: 14px; font-weight: 500; }
+            .relative-chip span:first-child { font-size: 14px; font-weight: 500; display: block; }
+            .relative-branch {
+              font-size: 10px; color: var(--text-tertiary); font-weight: 500;
+              text-transform: uppercase; letter-spacing: 0.04em;
+            }
             .relative-dates { font-size: 12px; color: var(--text-tertiary); }
           `}</style>
         </>

@@ -3,7 +3,8 @@ import json
 import re
 from pathlib import Path
 
-SOURCE = Path(r"C:\Users\Matt\OneDrive - Flavor Factory\Documents\Wixted Family 05-29-2022.xls")
+SOURCE = Path(__file__).parent.parent / "sources" / "Wixted Family 05-29-2022.xls"
+FALLBACK_SOURCE = Path(r"C:\Users\Matt\OneDrive - Flavor Factory\Documents\Wixted Family 05-29-2022.xls")
 OUT = Path(__file__).parent.parent / "src" / "data" / "family.json"
 
 SKIP_PATTERNS = [
@@ -63,6 +64,15 @@ def is_date_line(text: str) -> bool:
     return bool(re.search(r"[\-/]", text) or re.search(r"\(\d+\)", text))
 
 
+NOT_NAME_PATTERNS = [
+    r"\bcem\b", r"cemetery", r"mt hope", r"all saints", r"riverview cem",
+    r"new haven,\s*conn", r"civil war co", r"family tree goes back",
+    r"moved with", r"\(not related\)", r"green mount", r"erwin cemetery",
+    r"wanner mennonite", r"kimmel cem", r"mansfield center", r"wood cem",
+    r"in erwin and kiehle cem",
+]
+
+
 def is_likely_name(text: str) -> bool:
     if should_skip(text):
         return False
@@ -71,6 +81,12 @@ def is_likely_name(text: str) -> bool:
     if not re.search(r"[A-Za-z]{2,}", text):
         return False
     if re.match(r"^\d", text):
+        return False
+    low = text.lower()
+    for pat in NOT_NAME_PATTERNS:
+        if re.search(pat, low):
+            return False
+    if text.endswith(" to") or text.endswith(" and"):
         return False
     if "Wixted" in text or "McGraw" in text or "Wicksted" in text:
         return True
@@ -202,12 +218,23 @@ def parse_cemetery(df):
     return records
 
 
+def resolve_source() -> Path:
+    if SOURCE.exists():
+        return SOURCE
+    if FALLBACK_SOURCE.exists():
+        return FALLBACK_SOURCE
+    raise FileNotFoundError(
+        f"Source workbook not found. Place it at {SOURCE} or {FALLBACK_SOURCE}"
+    )
+
+
 def main():
+    source = resolve_source()
     all_people = []
     branch_meta = []
 
     for bid, meta in BRANCHES.items():
-        df = pd.read_excel(SOURCE, sheet_name=meta["sheet"], header=None)
+        df = pd.read_excel(source, sheet_name=meta["sheet"], header=None)
         people = parse_generation_rows(df, bid)
         if bid == "wixted":
             people = link_generations(people)
@@ -219,7 +246,7 @@ def main():
             "count": len(people),
         })
 
-    df_cem = pd.read_excel(SOURCE, sheet_name="Cemetery", header=None)
+    df_cem = pd.read_excel(source, sheet_name="Cemetery", header=None)
     cemetery = parse_cemetery(df_cem)
 
     # Katie heritage

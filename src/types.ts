@@ -1,3 +1,21 @@
+export type RecordType = "person" | "location" | "narrative";
+export type NoteCategory =
+  | "census"
+  | "death"
+  | "research"
+  | "media"
+  | "immigration"
+  | "marriage"
+  | "occupation"
+  | "location"
+  | "narrative"
+  | "general";
+
+export interface CategorizedNote {
+  category: NoteCategory;
+  text: string;
+}
+
 export interface Person {
   id: string;
   name: string;
@@ -8,6 +26,27 @@ export interface Person {
   branch: string;
   generation?: number;
   parentId?: string;
+  recordType?: RecordType;
+  categorizedNotes?: CategorizedNote[];
+  searchText?: string;
+}
+
+export interface Story {
+  id: string;
+  title: string;
+  body: string;
+  personIds: string[];
+  branch: string;
+  tags: string[];
+  source: string;
+}
+
+export interface LocationRef {
+  id: string;
+  name: string;
+  branch: string;
+  notes: string[];
+  relatedPersonIds: string[];
 }
 
 export interface CemeteryRecord {
@@ -34,11 +73,16 @@ export interface FamilyData {
     version: string;
     updated: string;
     focus: string;
+    enriched?: boolean;
+    personCount?: number;
+    storyCount?: number;
   };
   branches: Branch[];
   people: Person[];
   cemetery: CemeteryRecord[];
   heritage: Record<string, Record<string, number>>;
+  stories?: Story[];
+  locationRefs?: LocationRef[];
 }
 
 export interface TreeNode {
@@ -46,4 +90,16 @@ export interface TreeNode {
   children: TreeNode[];
   x: number;
   y: number;
+}
+
+export interface SearchResult {
+  type: "person" | "story" | "cemetery" | "location";
+  id: string;
+  title: string;
+  subtitle: string;
+  branch?: string;
+  snippet?: string;
+  person?: Person;
+  story?: Story;
+  cemetery?: CemeteryRecord;
 }
