@@ -26,6 +26,14 @@ export default function HeroSection({
 
   return (
     <section className="hero">
+      <div
+        className="hero-photo"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "url(https://www.wikitree.com/photo.php/6/64/Wixted-3.png)",
+        }}
+      />
       <div className="hero-gradient" aria-hidden />
       <div className="hero-grid" aria-hidden />
 
@@ -131,6 +139,15 @@ export default function HeroSection({
           padding: 48px 24px 80px;
           overflow: hidden;
         }
+        .hero-photo {
+          position: absolute;
+          inset: 0;
+          background-size: cover;
+          background-position: center 30%;
+          opacity: 0.14;
+          filter: saturate(0.6) sepia(0.25);
+          pointer-events: none;
+        }
         .hero-gradient {
           position: absolute;
           inset: 0;
@@ -171,8 +188,9 @@ export default function HeroSection({
           margin-bottom: 16px;
         }
         .hero-title-block h1 {
+          font-family: var(--font-display);
           font-size: clamp(40px, 8vw, 72px);
-          font-weight: 700;
+          font-weight: 600;
           letter-spacing: -0.04em;
           line-height: 1.02;
         }

@@ -119,6 +119,47 @@
       "addedAt": "2026-06-30",
       "source": "site",
       "status": "pending"
+    },
+    {
+      "id": "seed-painted-hills-bath",
+      "personId": "wixted-73-27",
+      "title": "Holy Sepulchre Cemetery — Bath, Steuben County",
+      "type": "headstone",
+      "url": "http://www.paintedhills.org/STEUBEN/HolySepulcherCem.htm",
+      "caption": "Workbook reference — John & Hazel Wixted burial index (Painted Hills NYGenWeb)",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-caronia-ellis",
+      "personId": "wixted-91-31",
+      "title": "SS Caronia — Jonas Jones Ellis Island 1908",
+      "type": "document",
+      "url": "https://www.libertyellisfoundation.org/passenger",
+      "caption": "Swedish immigration — Liverpool to New York, Nov 1908. Evelyn line ancestor.",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-oaxaca-marriage",
+      "personId": "wixted-104-39",
+      "title": "Montez/Rivera Marriage — Jaltepec, Oaxaca 1895",
+      "type": "research",
+      "url": "https://www.familysearch.org/search/catalog/1703998",
+      "caption": "Mexican heritage via Angela Amor line — not Matthew's Wixted line",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-hero-tipperary",
+      "personId": "wixted-18-3",
+      "title": "Irish Wixted Origins — Tipperary Baptism Scan",
+      "type": "photo",
+      "url": "https://www.wikitree.com/photo.php/6/64/Wixted-3.png",
+      "previewUrl": "https://www.wikitree.com/photo.php/6/64/Wixted-3.png",
+      "caption": "John Wixted baptism, Englishtown, Co. Tipperary 1815 — site hero background",
+      "addedAt": "2026-06-30",
+      "source": "site"
     }
   ],
   "documents": [
@@ -148,7 +189,7 @@
     },
     {
       "title": "Online Research Archives",
-      "desc": "32 verified sources + 14 cataloged photos/docs from WikiTree, Find a Grave, libraries",
+      "desc": "34 verified sources + 15 cataloged photos/docs",
       "type": "research",
       "icon": "🔗"
     },

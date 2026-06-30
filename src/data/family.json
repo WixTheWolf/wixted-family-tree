@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 625,
-    "storyCount": 16,
+    "storyCount": 23,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2738,8 +2738,8 @@
       "notes": [
         "12/17/54-",
         "Long Beach, CA",
-        "See Amor page — Mexican heritage via Amor line",
-        "m. Kevin Paul Wixted, May 29 1993 · div. Dec 2005"
+        "m. Kevin Paul Wixted, May 29 1993 · div. Dec 2005",
+        "Amor surname is French; Mexican heritage via Montez/Rivera (Oaxaca, 1895)"
       ],
       "col": 39,
       "row": 104,
@@ -16428,6 +16428,114 @@
   },
   "stories": [
     {
+      "id": "story-sacred-heart-hainesport",
+      "title": "Sacred Heart Cemetery — Hainesport, NJ Wixteds",
+      "body": "Irish-born collateral Wixted burials documented in the workbook: John W. Wixted (1824–1902), Sarah W. Wixted (1829–1894), and Thomas J. Wixted (1854–1915) — all buried at Sacred Heart Cemetery, Hainesport, New Jersey (gravesite photos referenced in workbook).",
+      "personIds": [
+        "wixted-18-3"
+      ],
+      "branch": "from-ireland",
+      "tags": [
+        "cemetery",
+        "Ireland",
+        "New Jersey"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-catherine-rochester-saloon",
+      "title": "Catherine Wixted — Rochester Saloon Keeper (1880s)",
+      "body": "Rochester city directories and censuses document a Catherine Wixted cluster: 1880 census — Catherine, 41, Ireland, saloon keeper; 1882 directory — Catherine, 59 West Ave, saloon; Julia C. renter, stitcher; Mary, forewoman; 1890 directory — Catherine Wixted, 50 Seward; Mary L Wixted, stenographer. Further research may link this branch to the Corning Wixted line.",
+      "personIds": [
+        "wixted-18-3"
+      ],
+      "branch": "wixted",
+      "tags": [
+        "census",
+        "research",
+        "Rochester"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-phillip-short-1681",
+      "title": "Phillip Short — Massachusetts 1681",
+      "body": "In 1875, Nellie B. Fanton and her single mother Arvilla lived with the Short family. Mrs Caroline Calkings-Short was Arvilla's cousin. The Gilbert/Evelyn research line traces back to Phillip Short of Massachusetts, 1681.",
+      "personIds": [
+        "wixted-91-31"
+      ],
+      "branch": "ev-gilbert",
+      "tags": [
+        "colonial",
+        "family-history"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-amor-heritage-french-mexican",
+      "title": "Amor Line — French Surname, Mexican via Montez/Rivera",
+      "body": "The Amor surname is French, not Mexican — Joseph E. Amor's father came from France. Mexican heritage in the Kevin/Angela branch enters through Vincenta Rivera and the Montez line: Marriage of Jesus and Vincenta, 6 December 1895, Santa Maria Magdalena, Magdalena Jaltepec, Oaxaca, Mexico. This 25% Mexican component appears in Katie Alyson Wixted's heritage chart, not in the Daniel/Matthew Wixted line.",
+      "personIds": [
+        "wixted-104-39",
+        "wixted-114-39"
+      ],
+      "branch": "amor",
+      "tags": [
+        "ancestry",
+        "heritage",
+        "research"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-jonas-caronia-1908",
+      "title": "Jonas F. E. Jones — SS Caronia, Ellis Island 1908",
+      "body": "From the ship manifest of the SS Caronia: departed Liverpool November 7, 1908 (age 15), arrived New York November 15, 1908. Born Ramsberg, Sweden; last residence Hassleby, Sweden. Destination Jamestown, New York. Friend Leander Johnsson at 142 Prospect Ave, Jamestown. Traveling with $30.",
+      "personIds": [
+        "wixted-91-31"
+      ],
+      "branch": "evelyn",
+      "tags": [
+        "immigration",
+        "Swedish",
+        "Ellis Island"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-evelyn-adoption-dna",
+      "title": "Evelyn Jones — Adoption Mystery & DNA",
+      "body": "Workbook notes speculated that Evelyn Ruth Jones was possibly adopted based on her looks — Emanuel Jones was 39 and Grace Gilbert 33 when she was born, late for a first child in that era. DNA analysis of descendants (Bo and Kevin at 15–20% Swedish) confirmed she was not adopted; the Swedish line through Jonas F. E. Jones is genuine.",
+      "personIds": [
+        "wixted-91-31"
+      ],
+      "branch": "evelyn",
+      "tags": [
+        "ancestry",
+        "research",
+        "DNA"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
+      "id": "story-sarah-mcgraw-bequest",
+      "title": "Sarah McGraw's $10,000 Bequest (1957)",
+      "body": "Sarah McGraw, who never married, willed her nephew John Leroy Wixted $10,000 in 1957. John and his wife Hazel later bought a house in Avon, New York — and then bought a Buick for Evelyn and Bruce Wixted. Family notes also record that Hazel Wixted and Emanuel Jones received their Social Security cards on the exact same day (November 25, 1936), with SS numbers only 54 apart.",
+      "personIds": [
+        "wixted-73-27",
+        "wixted-73-29",
+        "wixted-91-29",
+        "wixted-91-31"
+      ],
+      "branch": "wixted",
+      "tags": [
+        "family-history",
+        "narrative",
+        "research"
+      ],
+      "source": "excel-workbook-v9.5"
+    },
+    {
       "id": "story-matthew-christine",
       "title": "Matthew & Christine Wixted",
       "body": "Matthew Scott Wixted and Christine Kimberly (Cumming) Wixted were married on June 14, 2025. Christine was born January 28, 1991 in Brea, California, where she was raised. She is the daughter of Robert \"Bob\" Cumming and Monica (d. when Christine was 16). Her siblings are Bruce Cumming and Monique (d. May 2020, Brea, CA).",
@@ -16506,8 +16614,8 @@
     },
     {
       "id": "story-2",
-      "title": "Bruce & Evelyn Wixted moved with 4 kids from Rochester,NY to",
-      "body": "Bruce & Evelyn Wixted moved with 4 kids from Rochester,NY to Phoenix,AZ in 1963 Then to Orange,Orange County, CA in 1971 In 1975 they divorced & Bruce married Carol",
+      "title": "Bruce & Evelyn — Rochester to California",
+      "body": "Bruce & Evelyn Wixted moved with 4 kids from Rochester, NY to Phoenix, AZ in 1963. Then to Orange County, CA in 1971. In 1975 they divorced and Bruce married Carol.",
       "personIds": [
         "wixted-18-3",
         "wixted-30-29",

@@ -20,7 +20,13 @@ import GalleryView from "./components/GalleryView";
 import SiteHeader from "./components/SiteHeader";
 import AncestorJourney from "./components/AncestorJourney";
 import MediaStrip from "./components/MediaStrip";
+import FeaturedStories from "./components/FeaturedStories";
+import HeritageOverview from "./components/HeritageOverview";
+import MigrationMap from "./components/MigrationMap";
+import ArchivesPreview from "./components/ArchivesPreview";
+import SiteFooter from "./components/SiteFooter";
 import externalResources from "./data/externalResources.json";
+import type { Story } from "./types";
 import { useCloudAssets } from "./context/CloudAssetsContext";
 import { useContributions } from "./context/ContributionsContext";
 import { getAllAssets } from "./utils/assets";
@@ -104,9 +110,37 @@ function AppContent() {
     scrollToExplore();
   };
 
+  const goStories = () => {
+    setAppView("stories");
+    scrollToExplore();
+  };
+
+  const goArchives = () => {
+    setAppView("archives");
+    scrollToExplore();
+  };
+
+  const handleFeaturedStory = useCallback(
+    (story: Story) => {
+      if (story.personIds[0]) {
+        const p = findPersonById(data, story.personIds[0]);
+        if (p) selectPerson(p);
+        else goStories();
+      } else goStories();
+    },
+    [selectPerson]
+  );
+
+  const matthewHeritage = data.heritage?.matthew ?? {};
+
   return (
     <div className="app">
-      <SiteHeader onExplore={scrollToExplore} onGallery={goGallery} />
+      <SiteHeader
+        onExplore={scrollToExplore}
+        onGallery={goGallery}
+        onStories={goStories}
+        onArchives={goArchives}
+      />
 
       <header className="app-hero">
         <HeroSection
@@ -158,10 +192,28 @@ function AppContent() {
 
         <MediaStrip
           onViewCemetery={() => { setAppView("cemetery"); scrollToExplore(); }}
-          onViewStories={() => { setAppView("stories"); scrollToExplore(); }}
-          onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
+          onViewStories={goStories}
+          onViewArchives={goArchives}
           onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
           onViewGallery={goGallery}
+        />
+
+        <HeritageOverview
+          heritage={matthewHeritage}
+          note="English, Irish, Swedish, and German through the Wixted and Jones lines. No Mexican component — that enters through Uncle Kevin's ex-wife Angela's Amor/Montez line (cousin Katie's chart)."
+        />
+
+        <MigrationMap />
+
+        <FeaturedStories
+          stories={data.stories ?? []}
+          onViewAll={goStories}
+          onSelectStory={handleFeaturedStory}
+        />
+
+        <ArchivesPreview
+          resources={externalResources.resources}
+          onViewAll={goArchives}
         />
 
         <AncestorJourney peopleById={peopleById} onSelectPerson={selectPerson} />
@@ -280,11 +332,12 @@ function AppContent() {
         </AnimatePresence>
       </main>
 
-      <footer className="footer">
-        <span>Wixted Family Tree {data.meta.version}</span>
-        <span>Updated {data.meta.updated}</span>
-        <span>Curated for {data.meta.focus}</span>
-      </footer>
+      <SiteFooter
+        version={data.meta.version}
+        updated={data.meta.updated}
+        focus={data.meta.focus}
+        resourceCount={externalResources.resources.length}
+      />
 
       <PersonDetail
         person={selected}
