@@ -7,10 +7,12 @@ interface StaticGalleryEntry {
   title: string;
   type: string;
   url: string;
+  previewUrl?: string;
   caption?: string;
   uploadedBy?: string;
   addedAt?: string;
   source?: string;
+  status?: string;
 }
 
 interface StaticAssets {
@@ -22,17 +24,30 @@ interface StaticAssets {
 const assets = staticAssets as StaticAssets;
 
 export function getStaticGallery(): FamilyAsset[] {
-  return (assets.gallery ?? []).map((g) => ({
-    id: g.id,
-    personId: g.personId,
-    title: g.title,
-    type: g.type as FamilyAsset["type"],
-    url: g.url,
-    caption: g.caption,
-    uploadedBy: g.uploadedBy,
-    addedAt: g.addedAt,
-    source: "site",
-  }));
+  return (assets.gallery ?? [])
+    .filter((g) => g.url && g.status !== "pending")
+    .map((g) => ({
+      id: g.id,
+      personId: g.personId,
+      title: g.title,
+      type: g.type as FamilyAsset["type"],
+      url: g.previewUrl || g.url,
+      caption: g.caption,
+      uploadedBy: g.uploadedBy,
+      addedAt: g.addedAt,
+      source: "site",
+    }));
+}
+
+export function getPendingUploads(): Array<{
+  id: string;
+  personId: string;
+  title: string;
+  caption?: string;
+}> {
+  return (assets.gallery ?? [])
+    .filter((g) => g.status === "pending" || !g.url)
+    .map(({ id, personId, title, caption }) => ({ id, personId, title, caption }));
 }
 
 export function contributionToAsset(d: ContributionDraft): FamilyAsset {

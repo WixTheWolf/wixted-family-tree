@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { getGalleryManifest, saveGalleryManifest, type GalleryEntry } from "./_lib/galleryManifest";
+import { verifyUploadAuth } from "./_lib/auth";
 
 export const config = {
   api: { bodyParser: { sizeLimit: "12mb" } },
@@ -24,6 +25,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (!process.env.BLOB_READ_WRITE_TOKEN) {
     return res.status(503).json({ error: "Cloud storage not configured", code: "NO_BLOB" });
+  }
+
+  if (!verifyUploadAuth(req)) {
+    return res.status(401).json({ error: "Family upload key required", code: "AUTH_REQUIRED" });
   }
 
   try {

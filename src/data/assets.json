@@ -5,7 +5,122 @@
       "role": "focus"
     }
   },
-  "gallery": [],
+  "gallery": [
+    {
+      "id": "seed-matthew-photo",
+      "personId": "wixted-114-29",
+      "title": "Matthew Scott Wixted — Profile Photo",
+      "type": "photo",
+      "url": "https://avatars.githubusercontent.com/u/198108406?v=4",
+      "caption": "GitHub profile photo — family site focus person",
+      "uploadedBy": "WixTheWolf",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-kolleen-obit",
+      "personId": "wixted-104-19",
+      "title": "Kolleen N. Wixted Obituary (23 Oct 2017)",
+      "type": "obituary",
+      "url": "https://www.gvpennysaver.com/passages/kolleen-n-wixted-october-23-2017/article_5fc5d950-b9a9-11e7-8b5f-c7739fb7fec3.html",
+      "caption": "Genesee Valley Penny Saver — daughter of Rod & Karyl Wixted, Honeoye/Livonia NY",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-john-leroy-steuben",
+      "personId": "wixted-73-27",
+      "title": "John Leroy Wixted — Steuben County Obituary Index",
+      "type": "document",
+      "url": "https://www.steubencountyny.gov/DocumentCenter/View/732/W-Waaland-to-Wythe-PDF",
+      "caption": "Official county obituary index entry (1993). Holy Sepulchre, Bath NY.",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-alice-findagrave",
+      "personId": "wixted-73-39",
+      "title": "Alice M. Wixted (1886–1918) — Holy Sepulchre Rochester",
+      "type": "headstone",
+      "url": "https://www.findagrave.com/memorial/search?firstname=Alice&lastname=Wixted&locationId=city_51255",
+      "caption": "Find a Grave memorial search — Rochester Holy Sepulchre Cemetery",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-bruce-obit-search",
+      "personId": "wixted-91-29",
+      "title": "Bruce John Wixted (1933–1995) — Newspaper Archive Search",
+      "type": "obituary",
+      "url": "https://www.newspapers.com/paper/democrat-and-chronicle/3749/",
+      "caption": "Priority upload: scan obituary from Democrat and Chronicle, Rochester NY (Mar 1995)",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-thomas-cheshire-pedigree",
+      "personId": "wixted-18-3",
+      "title": "Cheshire Visitation Pedigrees (1613) — Wicksted Origins",
+      "type": "document",
+      "url": "https://archive.org/details/pedigreesmadeatv00stge",
+      "caption": "Internet Archive scan — English Wicksted/Wixsted gentry before Lambeth line",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-thomas-curiousfox",
+      "personId": "wixted-18-3",
+      "title": "Thomas Wickstead & Mary Hogan — Lambeth Research",
+      "type": "research",
+      "url": "https://www.curiousfox.com/vill100/Surrey35296_3.html",
+      "caption": "Patriarch Thomas James Wixted (1796–1873) and Mary Hogan descendant research",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-wikitree-baptism-tipperary",
+      "personId": "wixted-18-3",
+      "title": "John Wixted Baptism Record (1815, Tipperary)",
+      "type": "census",
+      "url": "https://www.wikitree.com/photo.php/6/64/Wixted-3.png",
+      "previewUrl": "https://www.wikitree.com/photo.php/6/64/Wixted-3.png",
+      "caption": "WikiTree scan — Englishtown, Newport, Co. Tipperary. Irish Wixted origins.",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-wikitree-limerick-birth",
+      "personId": "wixted-18-1",
+      "title": "John Wixtead Birth Record (1874, Limerick)",
+      "type": "census",
+      "url": "https://www.wikitree.com/photo.php/c/c5/Wixtead-2.png",
+      "previewUrl": "https://www.wikitree.com/photo.php/c/c5/Wixtead-2.png",
+      "caption": "WikiTree scan — Cappanahanna, Murroe, Co. Limerick birth registration",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-erie-rr-photos",
+      "personId": "wixted-30-23",
+      "title": "Erie Railroad Employee Photo Index",
+      "type": "photo",
+      "url": "https://freepages.rootsweb.com/~sponholz/genealogy/miscphoto1.html",
+      "caption": "Historical Erie RR worker photos — Avon/Corning area, relevant to McGraw trackwalker line",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-gravesite-priority",
+      "personId": "wixted-30-23",
+      "title": "Priority: Private Gravesite Photos (McGraw, Doane, Bursley)",
+      "type": "headstone",
+      "url": "",
+      "caption": "Referenced in family workbook notes — upload via Contribute tab when available",
+      "addedAt": "2026-06-30",
+      "source": "site",
+      "status": "pending"
+    }
+  ],
   "documents": [
     {
       "title": "Family Workbook",

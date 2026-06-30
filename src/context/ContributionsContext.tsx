@@ -29,6 +29,8 @@ interface AddContributionInput {
 interface AddContributionResult {
   destination: "cloud" | "local";
   fallback?: boolean;
+  error?: string;
+  code?: string;
 }
 
 interface ContributionsContextValue {
@@ -67,6 +69,9 @@ export function ContributionsProvider({ children }: { children: ReactNode }) {
         const result = await uploadCloud(input);
         if (result.ok) {
           return { destination: "cloud" };
+        }
+        if (result.code === "AUTH_REQUIRED") {
+          return { destination: "local", error: result.error, code: result.code };
         }
       }
 

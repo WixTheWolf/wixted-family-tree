@@ -18,6 +18,7 @@ const TYPE_FILTERS: { id: AssetType | "all"; label: string }[] = [
   { id: "document", label: "Documents" },
   { id: "census", label: "Census" },
   { id: "other", label: "Other" },
+  { id: "research", label: "Research" },
 ];
 
 const SOURCE_LABELS: Record<FamilyAsset["source"], string> = {
