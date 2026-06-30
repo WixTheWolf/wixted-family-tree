@@ -5,8 +5,8 @@
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
-    "personCount": 621,
-    "storyCount": 15,
+    "personCount": 625,
+    "storyCount": 16,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -62,6 +62,12 @@
       "label": "Amor",
       "desc": "Amor family research",
       "count": 83
+    },
+    {
+      "id": "cumming",
+      "label": "Cumming",
+      "desc": "Christine Cumming line — Brea, California",
+      "count": 5
     },
     {
       "id": "jess",
@@ -2999,27 +3005,176 @@
       "age": "48.6 years"
     },
     {
-      "id": "wixted-114-27",
-      "name": "Christine Kimberly (Cumming) Wixted",
+      "id": "cumming-107-25",
+      "name": "Robert \"Bob\" Cumming",
       "dates": "",
       "notes": [
-        "Maiden name: Cumming"
+        "Brea, CA",
+        "Father of Christine, Bruce, and Monique"
+      ],
+      "col": 25,
+      "row": 107,
+      "branch": "cumming",
+      "generation": 9,
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "location",
+          "text": "Brea, CA"
+        },
+        {
+          "category": "general",
+          "text": "Father of Christine, Bruce, and Monique"
+        }
+      ],
+      "searchText": "robert \"bob\" cumming cumming brea, ca father of christine, bruce, and monique",
+      "spouseIds": [
+        "cumming-107-27"
+      ],
+      "childIds": [
+        "wixted-114-27",
+        "cumming-114-23",
+        "cumming-114-25"
+      ]
+    },
+    {
+      "id": "cumming-107-27",
+      "name": "Monica Cumming",
+      "dates": "–~2007",
+      "notes": [
+        "Brea, CA",
+        "d. when Christine was 16 (~2007)"
+      ],
+      "col": 27,
+      "row": 107,
+      "branch": "cumming",
+      "generation": 9,
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "location",
+          "text": "Brea, CA"
+        },
+        {
+          "category": "death",
+          "text": "d. when Christine was 16 (~2007)"
+        }
+      ],
+      "searchText": "monica cumming –~2007 cumming brea, ca d. when christine was 16 (~2007)",
+      "spouseIds": [
+        "cumming-107-25"
+      ],
+      "childIds": [
+        "wixted-114-27",
+        "cumming-114-23",
+        "cumming-114-25"
+      ]
+    },
+    {
+      "id": "wixted-114-27",
+      "name": "Christine Kimberly (Cumming) Wixted",
+      "dates": "01/28/1991–",
+      "notes": [
+        "01/28/91-",
+        "Brea, CA",
+        "Born and raised in Brea, CA",
+        "Maiden name: Cumming",
+        "m. Matthew Scott Wixted, 14 Jun 2025"
       ],
       "col": 27,
       "row": 114,
-      "branch": "wixted",
+      "branch": "cumming",
       "generation": 10,
+      "parentId": "cumming-107-25",
+      "motherId": "cumming-107-27",
       "recordType": "person",
       "categorizedNotes": [
         {
           "category": "general",
+          "text": "01/28/91-"
+        },
+        {
+          "category": "location",
+          "text": "Brea, CA"
+        },
+        {
+          "category": "general",
+          "text": "Born and raised in Brea, CA"
+        },
+        {
+          "category": "general",
           "text": "Maiden name: Cumming"
+        },
+        {
+          "category": "marriage",
+          "text": "m. Matthew Scott Wixted, 14 Jun 2025"
         }
       ],
-      "searchText": "christine kimberly (cumming) wixted wixted maiden name: cumming",
+      "searchText": "christine kimberly (cumming) wixted 01/28/1991– cumming 01/28/91- brea, ca born and raised in brea, ca m. matthew scott wixted, 14 jun 2025 35.4 years",
+      "birthDate": "1991-01-28",
       "spouseIds": [
         "wixted-114-29"
-      ]
+      ],
+      "age": "35.4 years"
+    },
+    {
+      "id": "cumming-114-23",
+      "name": "Bruce Cumming",
+      "dates": "",
+      "notes": [
+        "Brea, CA",
+        "Brother of Christine"
+      ],
+      "col": 23,
+      "row": 114,
+      "branch": "cumming",
+      "generation": 10,
+      "parentId": "cumming-107-25",
+      "motherId": "cumming-107-27",
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "location",
+          "text": "Brea, CA"
+        },
+        {
+          "category": "general",
+          "text": "Brother of Christine"
+        }
+      ],
+      "searchText": "bruce cumming cumming brea, ca brother of christine"
+    },
+    {
+      "id": "cumming-114-25",
+      "name": "Monique Cumming",
+      "dates": "–05/2020",
+      "notes": [
+        "Brea, CA",
+        "d. May 2020, Brea, CA",
+        "Sister of Christine"
+      ],
+      "col": 25,
+      "row": 114,
+      "branch": "cumming",
+      "generation": 10,
+      "parentId": "cumming-107-25",
+      "motherId": "cumming-107-27",
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "location",
+          "text": "Brea, CA"
+        },
+        {
+          "category": "death",
+          "text": "d. May 2020, Brea, CA"
+        },
+        {
+          "category": "general",
+          "text": "Sister of Christine"
+        }
+      ],
+      "searchText": "monique cumming –05/2020 cumming brea, ca d. may 2020, brea, ca sister of christine"
     },
     {
       "id": "wixted-114-29",
@@ -3029,7 +3184,7 @@
         "10/10/87-",
         "Whittier,CA",
         "Whittier, CA",
-        "m. Christine Kimberly (Cumming) Wixted"
+        "m. Christine Kimberly (Cumming) Wixted, 14 Jun 2025"
       ],
       "col": 29,
       "row": 114,
@@ -3051,7 +3206,7 @@
           "text": "Age today is 38.7"
         }
       ],
-      "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca m. christine kimberly (cumming) wixted 38.7 years",
+      "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca m. christine kimberly (cumming) wixted, 14 jun 2025 38.7 years",
       "birthDate": "1987-10-10",
       "motherId": "wixted-104-33",
       "spouseIds": [
@@ -16225,6 +16380,22 @@
     }
   },
   "stories": [
+    {
+      "id": "story-matthew-christine",
+      "title": "Matthew & Christine Wixted",
+      "body": "Matthew Scott Wixted and Christine Kimberly (Cumming) Wixted were married on June 14, 2025. Christine was born January 28, 1991 in Brea, California, where she was raised. She is the daughter of Robert \"Bob\" Cumming and Monica (d. when Christine was 16). Her siblings are Bruce Cumming and Monique (d. May 2020, Brea, CA).",
+      "personIds": [
+        "wixted-114-29",
+        "wixted-114-27",
+        "cumming-107-25",
+        "cumming-107-27",
+        "cumming-114-23",
+        "cumming-114-25"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "marriage"],
+      "source": "family-update"
+    },
     {
       "id": "story-matthew-ancestry",
       "title": "Matthew's Wixted Line — Ireland to California",

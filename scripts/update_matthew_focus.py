@@ -13,6 +13,10 @@ TODAY = date.today()
 
 MATTHEW_ID = "wixted-114-29"
 CHRISTINE_ID = "wixted-114-27"
+BOB_CUMMING_ID = "cumming-107-25"
+MONICA_CUMMING_ID = "cumming-107-27"
+BRUCE_CUMMING_ID = "cumming-114-23"
+MONIQUE_CUMMING_ID = "cumming-114-25"
 DANIEL_ID = "wixted-104-31"
 MARY_JOAN_ID = "wixted-104-33"
 RYAN_ID = "wixted-114-31"
@@ -103,29 +107,101 @@ def main():
     matthew["motherId"] = MARY_JOAN_ID
     matthew["spouseIds"] = [CHRISTINE_ID]
     matthew["isFocus"] = True
-    if not any("Christine" in n for n in matthew["notes"]):
-        matthew["notes"].append("m. Christine Kimberly (Cumming) Wixted")
+    matthew["notes"] = [
+        n for n in matthew["notes"]
+        if not n.startswith("m. Christine")
+    ]
+    matthew["notes"].append("m. Christine Kimberly (Cumming) Wixted, 14 Jun 2025")
 
-    # ── Christine (spouse) ──
+    # ── Christine & Cumming family ──
     christine = by_id.get(CHRISTINE_ID)
     if not christine:
         christine = {
             "id": CHRISTINE_ID,
             "name": "Christine Kimberly (Cumming) Wixted",
-            "dates": "",
-            "notes": ["Maiden name: Cumming"],
             "col": 27,
             "row": 114,
-            "branch": "wixted",
+            "branch": "cumming",
             "generation": 10,
             "recordType": "person",
-            "categorizedNotes": [{"category": "general", "text": "Maiden name: Cumming"}],
-            "searchText": "christine kimberly (cumming) wixted wixted maiden name: cumming",
         }
         people.append(christine)
         by_id[CHRISTINE_ID] = christine
     christine["name"] = "Christine Kimberly (Cumming) Wixted"
+    christine["dates"] = "01/28/1991–"
+    christine["birthDate"] = "1991-01-28"
+    christine["branch"] = "cumming"
+    christine["parentId"] = BOB_CUMMING_ID
+    christine["motherId"] = MONICA_CUMMING_ID
     christine["spouseIds"] = [MATTHEW_ID]
+    christine["notes"] = [
+        "01/28/91-",
+        "Brea, CA",
+        "Born and raised in Brea, CA",
+        "Maiden name: Cumming",
+        "m. Matthew Scott Wixted, 14 Jun 2025",
+    ]
+
+    bob = by_id.get(BOB_CUMMING_ID)
+    if not bob:
+        bob = {
+            "id": BOB_CUMMING_ID,
+            "name": 'Robert "Bob" Cumming',
+            "col": 25,
+            "row": 107,
+            "branch": "cumming",
+            "generation": 9,
+            "recordType": "person",
+        }
+        people.append(bob)
+        by_id[BOB_CUMMING_ID] = bob
+    bob["name"] = 'Robert "Bob" Cumming'
+    bob["notes"] = ["Brea, CA", "Father of Christine, Bruce, and Monique"]
+    bob["spouseIds"] = [MONICA_CUMMING_ID]
+    bob["childIds"] = [CHRISTINE_ID, BRUCE_CUMMING_ID, MONIQUE_CUMMING_ID]
+
+    monica = by_id.get(MONICA_CUMMING_ID)
+    if not monica:
+        monica = {
+            "id": MONICA_CUMMING_ID,
+            "name": "Monica Cumming",
+            "col": 27,
+            "row": 107,
+            "branch": "cumming",
+            "generation": 9,
+            "recordType": "person",
+        }
+        people.append(monica)
+        by_id[MONICA_CUMMING_ID] = monica
+    monica["name"] = "Monica Cumming"
+    monica["dates"] = "–~2007"
+    monica["notes"] = ["Brea, CA", "d. when Christine was 16 (~2007)"]
+    monica["spouseIds"] = [BOB_CUMMING_ID]
+    monica["childIds"] = [CHRISTINE_ID, BRUCE_CUMMING_ID, MONIQUE_CUMMING_ID]
+
+    for cid, cname, cdates, cnotes in [
+        (BRUCE_CUMMING_ID, "Bruce Cumming", "", ["Brea, CA", "Brother of Christine"]),
+        (MONIQUE_CUMMING_ID, "Monique Cumming", "–05/2020", [
+            "Brea, CA", "d. May 2020, Brea, CA", "Sister of Christine",
+        ]),
+    ]:
+        person = by_id.get(cid)
+        if not person:
+            person = {
+                "id": cid,
+                "col": 23 if cid == BRUCE_CUMMING_ID else 25,
+                "row": 114,
+                "branch": "cumming",
+                "generation": 10,
+                "recordType": "person",
+            }
+            people.append(person)
+            by_id[cid] = person
+        person["name"] = cname
+        person["dates"] = cdates
+        person["notes"] = cnotes
+        person["parentId"] = BOB_CUMMING_ID
+        person["motherId"] = MONICA_CUMMING_ID
 
     # ── Daniel & Mary Joan (parents) ──
     daniel = by_id[DANIEL_ID]
@@ -260,7 +336,27 @@ def main():
         "tags": ["ancestry", "migration", "family-history"],
         "source": "research",
     }
-    stories = [s for s in stories if s.get("id") not in ("story-matthew-ancestry", "story-ryan-kylie")]
+    stories = [s for s in stories if s.get("id") not in (
+        "story-matthew-ancestry", "story-ryan-kylie", "story-matthew-christine",
+    )]
+
+    christine_story = {
+        "id": "story-matthew-christine",
+        "title": "Matthew & Christine Wixted",
+        "body": (
+            'Matthew Scott Wixted and Christine Kimberly (Cumming) Wixted were married on June 14, 2025. '
+            "Christine was born January 28, 1991 in Brea, California, where she was raised. "
+            'She is the daughter of Robert "Bob" Cumming and Monica (d. when Christine was 16). '
+            "Her siblings are Bruce Cumming and Monique (d. May 2020, Brea, CA)."
+        ),
+        "personIds": [
+            MATTHEW_ID, CHRISTINE_ID, BOB_CUMMING_ID, MONICA_CUMMING_ID,
+            BRUCE_CUMMING_ID, MONIQUE_CUMMING_ID,
+        ],
+        "branch": "wixted",
+        "tags": ["family-history", "marriage"],
+        "source": "family-update",
+    }
 
     divorce_story = {
         "id": "story-ryan-kylie",
@@ -276,6 +372,7 @@ def main():
         "source": "family-update",
     }
     stories.insert(0, divorce_story)
+    stories.insert(0, christine_story)
     stories.insert(0, ancestry_story)
     data["stories"] = stories
     data["meta"]["storyCount"] = len(stories)
