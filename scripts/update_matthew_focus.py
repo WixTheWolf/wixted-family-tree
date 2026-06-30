@@ -12,8 +12,8 @@ ASSETS = Path(__file__).parent.parent / "public" / "assets" / "manifest.json"
 TODAY = date.today()
 
 MATTHEW_ID = "wixted-114-29"
-KEVIN_ID = "wixted-104-37"
-ANGELA_ID = "wixted-104-39"
+DANIEL_ID = "wixted-104-31"
+MARY_JOAN_ID = "wixted-104-33"
 RYAN_ID = "wixted-114-31"
 KYLIE_ID = "wixted-114-33"
 ALEX_ID = "wixted-114-35"
@@ -21,8 +21,10 @@ KATIE_ID = "wixted-114-39"
 SEDONA_ID = "wixted-121-31"
 BRUCE_CHILD_ID = "wixted-121-33"
 
+SIBLING_IDS = [MATTHEW_ID, RYAN_ID, ALEX_ID, KATIE_ID]
+
 FOCUS_IDS = [
-    MATTHEW_ID, KEVIN_ID, ANGELA_ID, RYAN_ID, KYLIE_ID, ALEX_ID, KATIE_ID,
+    MATTHEW_ID, DANIEL_ID, MARY_JOAN_ID, RYAN_ID, KYLIE_ID, ALEX_ID, KATIE_ID,
     SEDONA_ID, BRUCE_CHILD_ID, "wixted-104-21", "wixted-91-31",
 ]
 
@@ -96,27 +98,22 @@ def main():
     matthew["birthDate"] = "1987-10-10"
     matthew["notes"] = strip_stale_age_notes(matthew["notes"]) + ["Whittier, CA"]
     matthew["notes"] = list(dict.fromkeys(matthew["notes"]))
-    matthew["parentId"] = KEVIN_ID
-    matthew["motherId"] = ANGELA_ID
+    matthew["parentId"] = DANIEL_ID
+    matthew["motherId"] = MARY_JOAN_ID
     matthew["isFocus"] = True
 
-    # ── Kevin & Angela (parents) ──
-    kevin = by_id[KEVIN_ID]
-    kevin["dates"] = "04/14/1956–"
-    kevin["birthDate"] = "1956-04-14"
-    kevin["notes"] = strip_stale_age_notes(kevin["notes"])
-    kevin["notes"] = [n for n in kevin["notes"] if "div" not in n.lower() or "1993" in n]
-    if not any("Rochester" in n for n in kevin["notes"]):
-        kevin["notes"].insert(0, "Rochester, NY")
-    kevin["spouseIds"] = [ANGELA_ID]
-    kevin["notes"].append("m. Angela Maxine Amor, May 29 1993 · div. Dec 2005")
+    # ── Daniel & Mary Joan (parents) ──
+    daniel = by_id[DANIEL_ID]
+    daniel["parentId"] = "wixted-91-29"
+    daniel["motherId"] = "wixted-91-31"
+    daniel["spouseIds"] = [MARY_JOAN_ID]
+    daniel["childIds"] = SIBLING_IDS
 
-    angela = by_id[ANGELA_ID]
-    angela["dates"] = "12/17/1954–"
-    angela["birthDate"] = "1954-12-17"
-    angela["notes"] = strip_stale_age_notes(angela["notes"])
-    angela["spouseIds"] = [KEVIN_ID]
-    angela["notes"].append("Long Beach, CA")
+    mary_joan = by_id[MARY_JOAN_ID]
+    mary_joan["name"] = "Mary Joan (Tracy) Wixted"
+    mary_joan.pop("parentId", None)
+    mary_joan["spouseIds"] = [DANIEL_ID]
+    mary_joan["childIds"] = SIBLING_IDS
 
     # Reclassify mis-parsed location parent
     bad_parent = by_id.get("wixted-109-39")
@@ -131,8 +128,8 @@ def main():
         (KATIE_ID, "1993-09-27", None),
     ]:
         p = by_id[pid]
-        p["parentId"] = KEVIN_ID
-        p["motherId"] = ANGELA_ID
+        p["parentId"] = DANIEL_ID
+        p["motherId"] = MARY_JOAN_ID
         bd = date.fromisoformat(bdate)
         p["birthDate"] = bdate
         p["dates"] = format_dates(bd)
@@ -199,10 +196,14 @@ def main():
     data["meta"]["focus"] = "Matthew Scott Wixted"
     data["meta"]["rootPersonId"] = MATTHEW_ID
     data["meta"]["updated"] = TODAY.isoformat()
-    data["meta"]["focusLine"] = FOCUS_IDS
+    data["meta"]["focusLine"] = [
+        MATTHEW_ID, DANIEL_ID, MARY_JOAN_ID,
+        "wixted-91-29", "wixted-91-31",
+        "wixted-49-25", "wixted-30-29", "wixted-18-3", "wixted-18-1",
+    ]
 
     data["heritage"] = {
-        "matthew": data["heritage"].get("katie", {
+        "matthew": data["heritage"].get("matthew", {
             "english": 0.25, "german": 0.25, "irish": 0.125,
             "swedish": 0.125, "mexican": 0.25,
         }),
@@ -211,8 +212,32 @@ def main():
         }),
     }
 
-    # ── Ryan/Kylie divorce story ──
+    # ── Ancestry story ──
     stories = data.get("stories", [])
+    ancestry_story = {
+        "id": "story-matthew-ancestry",
+        "title": "Matthew's Wixted Line — Ireland to California",
+        "body": (
+            "Matthew Scott Wixted (b. 1987, Whittier, CA) descends from the Corning & Rochester, NY Wixteds. "
+            "His father Daniel Scott Wixted (b. 1959, Rochester) and mother Mary Joan (Tracy) Wixted "
+            "(b. 1961, Whittier) raised the California generation. Grandfather Bruce John Wixted (1933–1995) "
+            "and grandmother Evelyn Ruth Jones (1932–1988), a Rochester librarian, moved the family to Phoenix, "
+            "AZ in 1963 and Orange County, CA in 1971. The Wixted name in America traces to Thomas James Wixted "
+            "(1796–1873) and Mary Hogan of Lambeth, London — with earlier Irish roots in Tipperary. "
+            "Henry Wixted (1823–1893) and Henry Joseph Wixted (1866–1942) appear across Corning censuses "
+            "for five decades."
+        ),
+        "personIds": [
+            MATTHEW_ID, DANIEL_ID, MARY_JOAN_ID,
+            "wixted-91-29", "wixted-91-31",
+            "wixted-49-25", "wixted-30-29", "wixted-18-3", "wixted-18-1",
+        ],
+        "branch": "wixted",
+        "tags": ["ancestry", "migration", "family-history"],
+        "source": "research",
+    }
+    stories = [s for s in stories if s.get("id") not in ("story-matthew-ancestry", "story-ryan-kylie")]
+
     divorce_story = {
         "id": "story-ryan-kylie",
         "title": "Ryan & Kylie Wixted",
@@ -226,8 +251,8 @@ def main():
         "tags": ["family-history", "marriage"],
         "source": "family-update",
     }
-    stories = [s for s in stories if s.get("id") != "story-ryan-kylie"]
     stories.insert(0, divorce_story)
+    stories.insert(0, ancestry_story)
     data["stories"] = stories
     data["meta"]["storyCount"] = len(stories)
 
@@ -256,6 +281,7 @@ def main():
 
     print(f"Updated focus: {data['meta']['focus']}")
     print(f"Matthew age: {by_id[MATTHEW_ID].get('age')}")
+    print(f"Parents: {by_id[DANIEL_ID]['name']} + {by_id[MARY_JOAN_ID]['name']}")
     print(f"Sedona age: {by_id[SEDONA_ID].get('age')}")
     print(f"Bruce age: {by_id[BRUCE_CHILD_ID].get('age')}")
     print(f"Ryan/Kylie divorce story added")

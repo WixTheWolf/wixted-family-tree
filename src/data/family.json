@@ -10,8 +10,8 @@
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
-      "wixted-104-37",
-      "wixted-104-39",
+      "wixted-104-31",
+      "wixted-104-33",
       "wixted-91-29",
       "wixted-91-31",
       "wixted-49-25",
@@ -2554,7 +2554,8 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-31",
+      "parentId": "wixted-91-29",
+      "motherId": "wixted-91-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2572,11 +2573,20 @@
       ],
       "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
       "birthDate": "1959-03-12",
+      "spouseIds": [
+        "wixted-104-33"
+      ],
+      "childIds": [
+        "wixted-114-29",
+        "wixted-114-31",
+        "wixted-114-35",
+        "wixted-114-39"
+      ],
       "age": "67.2 years"
     },
     {
       "id": "wixted-104-33",
-      "name": "Mary Joan Tracy",
+      "name": "Mary Joan (Tracy) Wixted",
       "dates": "",
       "notes": [
         "07/07/61-",
@@ -2586,7 +2596,6 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2602,8 +2611,17 @@
           "text": "Age today is 65.0"
         }
       ],
-      "searchText": "mary joan tracy  wixted 07/07/61- whittier,ca 64.9 years",
+      "searchText": "mary joan (tracy) wixted  wixted 07/07/61- whittier,ca 64.9 years",
       "birthDate": "1961-07-07",
+      "spouseIds": [
+        "wixted-104-31"
+      ],
+      "childIds": [
+        "wixted-114-29",
+        "wixted-114-31",
+        "wixted-114-35",
+        "wixted-114-39"
+      ],
       "age": "64.9 years"
     },
     {
@@ -2995,7 +3013,7 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-104-37",
+      "parentId": "wixted-104-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3013,7 +3031,7 @@
       ],
       "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca 38.7 years",
       "birthDate": "1987-10-10",
-      "motherId": "wixted-104-39",
+      "motherId": "wixted-104-33",
       "isFocus": true,
       "age": "38.7 years"
     },
@@ -3031,7 +3049,7 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-104-37",
+      "parentId": "wixted-104-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3052,7 +3070,7 @@
         }
       ],
       "searchText": "ryan patrick wixted 06/16/1989– wixted whittier, ca 06/16/89- whittier,ca m. kylie renee, october 13, 2018 · divorced 37.0 years",
-      "motherId": "wixted-104-39",
+      "motherId": "wixted-104-33",
       "birthDate": "1989-06-16",
       "exSpouseIds": [
         "wixted-114-33"
@@ -3111,7 +3129,7 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-104-37",
+      "parentId": "wixted-104-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3128,7 +3146,7 @@
         }
       ],
       "searchText": "alexander daniel wixted 11/20/1992– wixted orange, ca 11/20/92- orange,ca 33.6 years",
-      "motherId": "wixted-104-39",
+      "motherId": "wixted-104-33",
       "birthDate": "1992-11-20",
       "age": "33.6 years"
     },
@@ -3157,7 +3175,7 @@
       "row": 114,
       "branch": "wixted",
       "generation": 10,
-      "parentId": "wixted-104-37",
+      "parentId": "wixted-104-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -3166,7 +3184,7 @@
         }
       ],
       "searchText": "katie alyson wixted 09/27/1993– wixted 09/27/93- 32.8 years",
-      "motherId": "wixted-104-39",
+      "motherId": "wixted-104-33",
       "birthDate": "1993-09-27",
       "age": "32.8 years"
     },
@@ -16187,11 +16205,11 @@
     {
       "id": "story-matthew-ancestry",
       "title": "Matthew's Wixted Line — Ireland to California",
-      "body": "Matthew Scott Wixted (b. 1987, Whittier, CA) descends from the Corning & Rochester, NY Wixteds. His father Kevin Paul Wixted (b. 1956, Rochester) and mother Angela Maxine Amor (b. 1954, Long Beach) raised the California generation. Grandfather Bruce John Wixted (1933–1995) and grandmother Evelyn Ruth Jones (1932–1988), a Rochester librarian, moved the family to Phoenix, AZ in 1963 and Orange County, CA in 1971. The Wixted name in America traces to Thomas James Wixted (1796–1873) and Mary Hogan of Lambeth, London — with earlier Irish roots in Tipperary. Henry Wixted (1823–1893) and Henry Joseph Wixted (1866–1942) appear across Corning censuses for five decades.",
+      "body": "Matthew Scott Wixted (b. 1987, Whittier, CA) descends from the Corning & Rochester, NY Wixteds. His father Daniel Scott Wixted (b. 1959, Rochester) and mother Mary Joan (Tracy) Wixted (b. 1961, Whittier) raised the California generation. Grandfather Bruce John Wixted (1933–1995) and grandmother Evelyn Ruth Jones (1932–1988), a Rochester librarian, moved the family to Phoenix, AZ in 1963 and Orange County, CA in 1971. The Wixted name in America traces to Thomas James Wixted (1796–1873) and Mary Hogan of Lambeth, London — with earlier Irish roots in Tipperary. Henry Wixted (1823–1893) and Henry Joseph Wixted (1866–1942) appear across Corning censuses for five decades.",
       "personIds": [
         "wixted-114-29",
-        "wixted-104-37",
-        "wixted-104-39",
+        "wixted-104-31",
+        "wixted-104-33",
         "wixted-91-29",
         "wixted-91-31",
         "wixted-49-25",
