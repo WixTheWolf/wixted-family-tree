@@ -222,7 +222,7 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
           display: flex; justify-content: space-between; align-items: flex-start; gap: 24px;
         }
         .gallery-header h2 {
-          font-family: var(--font-display); font-size: 28px; font-weight: 700;
+          font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.03em;
         }
         .gallery-header p {
           font-size: 15px; color: var(--text-secondary); line-height: 1.6;
