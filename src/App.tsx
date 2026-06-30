@@ -21,6 +21,7 @@ import SiteHeader from "./components/SiteHeader";
 import AncestorJourney from "./components/AncestorJourney";
 import MediaStrip from "./components/MediaStrip";
 import FeaturedStories from "./components/FeaturedStories";
+import HeraldrySection from "./components/HeraldrySection";
 import HeritageOverview from "./components/HeritageOverview";
 import MigrationMap from "./components/MigrationMap";
 import ArchivesPreview from "./components/ArchivesPreview";
@@ -202,6 +203,8 @@ function AppContent() {
           heritage={matthewHeritage}
           note="English, Irish, Swedish, and German through the Wixted and Jones lines. No Mexican component — that enters through Uncle Kevin's ex-wife Angela's Amor/Montez line (cousin Katie's chart)."
         />
+
+        <HeraldrySection />
 
         <MigrationMap />
 

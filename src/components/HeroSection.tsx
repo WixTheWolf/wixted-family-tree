@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import type { Person } from "../types";
 import PersonAvatar from "./PersonAvatar";
+import WickstedArms from "./WickstedArms";
 import { getPersonAge } from "../utils/ages";
 
 interface Props {
@@ -38,13 +39,23 @@ export default function HeroSection({
       <div className="hero-grid" aria-hidden />
 
       <div className="hero-content">
+        <motion.div
+          className="hero-crest"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          aria-hidden
+        >
+          <WickstedArms size={72} showCrest />
+        </motion.div>
+
         <motion.p
           className="hero-eyebrow"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.04, ease: [0.16, 1, 0.3, 1] }}
         >
-          Ten generations · Ireland to California
+          Wicksted of Nantwich · Ten generations · Ireland to California
         </motion.p>
 
         <motion.div
@@ -153,7 +164,8 @@ export default function HeroSection({
           inset: 0;
           background:
             radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255, 149, 0, 0.12) 0%, transparent 55%),
-            radial-gradient(ellipse 40% 30% at 80% 20%, rgba(41, 151, 255, 0.06) 0%, transparent 50%);
+            radial-gradient(ellipse 40% 30% at 80% 20%, rgba(26, 58, 107, 0.14) 0%, transparent 50%),
+            radial-gradient(ellipse 35% 25% at 15% 25%, rgba(197, 160, 89, 0.08) 0%, transparent 45%);
           pointer-events: none;
         }
         .hero-grid {
@@ -171,6 +183,11 @@ export default function HeroSection({
           max-width: 980px;
           width: 100%;
           text-align: center;
+        }
+        .hero-crest {
+          margin-bottom: 8px;
+          opacity: 0.92;
+          filter: drop-shadow(0 12px 32px rgba(26, 58, 107, 0.35));
         }
         .hero-eyebrow {
           font-size: 14px;
