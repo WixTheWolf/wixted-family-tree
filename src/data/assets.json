@@ -3,6 +3,9 @@
     "wixted-114-29": {
       "photo": "https://avatars.githubusercontent.com/u/198108406?v=4",
       "role": "focus"
+    },
+    "wixted-104-31": {
+      "photo": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg"
     }
   },
   "gallery": [
@@ -119,6 +122,19 @@
       "addedAt": "2026-06-30",
       "source": "site",
       "status": "pending"
+    },
+    {
+      "id": "seed-daniel-kevin-wedding",
+      "personId": "wixted-104-31",
+      "relatedPersonIds": ["wixted-104-37"],
+      "title": "Daniel & Kevin Wixted — Daniel's Wedding Day",
+      "type": "photo",
+      "url": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg",
+      "previewUrl": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg",
+      "caption": "Brothers Daniel Scott Wixted (white tuxedo, groom) and Kevin Paul Wixted (gray-blue tuxedo), early 1980s — Daniel's wedding day. Sons of Bruce John & Evelyn Ruth Jones Wixted, Rochester NY line.",
+      "uploadedBy": "Family",
+      "addedAt": "2026-06-30",
+      "source": "site"
     }
   ],
   "documents": [

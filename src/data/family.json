@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 15,
+    "storyCount": 16,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2089,7 +2089,11 @@
       "categorizedNotes": [],
       "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 93.2 years",
       "birthDate": "1933-04-03",
-      "age": "93.2 years"
+      "age": "93.2 years",
+      "childIds": [
+        "wixted-104-37",
+        "wixted-104-31"
+      ]
     },
     {
       "id": "wixted-91-31",
@@ -2554,7 +2558,8 @@
       "row": 104,
       "branch": "wixted",
       "generation": 8,
-      "parentId": "wixted-100-31",
+      "parentId": "wixted-91-29",
+      "motherId": "wixted-91-31",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2568,6 +2573,10 @@
         {
           "category": "general",
           "text": "Age today is 67.3"
+        },
+        {
+          "category": "marriage",
+          "text": "Wedding photo with brother Kevin Paul Wixted (early 1980s)"
         }
       ],
       "searchText": "daniel scott wixted  wixted 03/12/59- rochester,ny 67.2 years",
@@ -16184,6 +16193,21 @@
     }
   },
   "stories": [
+    {
+      "id": "story-daniel-wedding",
+      "title": "Daniel & Kevin — Wedding Day",
+      "body": "Daniel Scott Wixted (b. 12 Mar 1959, Rochester, NY) and his older brother Kevin Paul Wixted (b. 14 Apr 1956) on Daniel's wedding day, early 1980s. Daniel wears an all-white tuxedo with a floral boutonniere; Kevin stands beside him in a gray-blue tuxedo with bowtie, arm around his brother's shoulder. Both are sons of Bruce John Wixted and Evelyn Ruth Jones — the Rochester Wixted line that later migrated west to Arizona and California. Kevin is Matthew Scott Wixted's father; Daniel is Matthew's uncle.",
+      "personIds": [
+        "wixted-104-31",
+        "wixted-104-37",
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "marriage", "photo"],
+      "source": "family-photo"
+    },
     {
       "id": "story-matthew-ancestry",
       "title": "Matthew's Wixted Line — Ireland to California",

@@ -4,6 +4,7 @@ import type { ContributionDraft, FamilyAsset } from "../types";
 interface StaticGalleryEntry {
   id: string;
   personId: string;
+  relatedPersonIds?: string[];
   title: string;
   type: string;
   url: string;
@@ -13,6 +14,13 @@ interface StaticGalleryEntry {
   addedAt?: string;
   source?: string;
   status?: string;
+}
+
+function galleryEntryMatchesPerson(entry: StaticGalleryEntry, personId: string): boolean {
+  return (
+    entry.personId === personId ||
+    (entry.relatedPersonIds ?? []).includes(personId)
+  );
 }
 
 interface StaticAssets {
@@ -94,10 +102,10 @@ export function getPersonPhoto(
   );
   if (localPhoto) return URL.createObjectURL(localPhoto.blob);
 
-  const staticPhoto = getStaticGallery().find(
-    (a) => a.personId === personId && a.type === "photo"
-  );
-  return staticPhoto?.url ?? null;
+  const staticPhoto = (assets.gallery ?? [])
+    .filter((g) => g.url && g.status !== "pending")
+    .find((g) => galleryEntryMatchesPerson(g, personId) && g.type === "photo");
+  return staticPhoto ? staticPhoto.previewUrl || staticPhoto.url : null;
 }
 
 export function getPersonAssets(
@@ -105,7 +113,10 @@ export function getPersonAssets(
   localContributions: ContributionDraft[] = [],
   cloudAssets: FamilyAsset[] = []
 ): FamilyAsset[] {
-  const staticForPerson = getStaticGallery().filter((a) => a.personId === personId);
+  const staticForPerson = getStaticGallery().filter((a) => {
+    const entry = (assets.gallery ?? []).find((g) => g.id === a.id);
+    return entry ? galleryEntryMatchesPerson(entry, personId) : a.personId === personId;
+  });
   const cloudForPerson = cloudAssets.filter((a) => a.personId === personId);
   const localForPerson = localContributions
     .filter((c) => c.personId === personId)
@@ -134,7 +145,11 @@ export function getAllAssets(
   cloudAssets: FamilyAsset[] = []
 ): FamilyAsset[] {
   const personIds = new Set<string>();
-  getStaticGallery().forEach((a) => personIds.add(a.personId));
+  getStaticGallery().forEach((a) => {
+    personIds.add(a.personId);
+    const entry = (assets.gallery ?? []).find((g) => g.id === a.id);
+    entry?.relatedPersonIds?.forEach((id) => personIds.add(id));
+  });
   cloudAssets.forEach((a) => personIds.add(a.personId));
   localContributions.forEach((c) => personIds.add(c.personId));
   Object.keys(assets.people).forEach((id) => personIds.add(id));
