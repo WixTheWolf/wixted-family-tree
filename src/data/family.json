@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 16,
+    "storyCount": 17,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2053,7 +2053,8 @@
       "name": "Rodney Henri Wixted",
       "dates": "03/14/1946",
       "notes": [
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Rod\""
       ],
       "col": 21,
       "row": 91,
@@ -2065,6 +2066,10 @@
         {
           "category": "location",
           "text": "Rochester,NY"
+        },
+        {
+          "category": "general",
+          "text": "Known as \"Rod\""
         },
         {
           "category": "general",
@@ -2392,7 +2397,8 @@
       "dates": "",
       "notes": [
         "05/15/52-",
-        "Rochester,NY"
+        "Rochester,NY",
+        "Known as \"Bo\""
       ],
       "col": 21,
       "row": 104,
@@ -2408,6 +2414,10 @@
         {
           "category": "location",
           "text": "Rochester,NY"
+        },
+        {
+          "category": "general",
+          "text": "Known as \"Bo\""
         },
         {
           "category": "general",
@@ -2675,6 +2685,10 @@
         {
           "category": "marriage",
           "text": "m.May 29 1993 Div Dec 2005"
+        },
+        {
+          "category": "media",
+          "text": "Baby photo July 1956 with Rod and Bo"
         }
       ],
       "searchText": "kevin paul wixted 04/14/1956– wixted 04/14/56- rochester,ny m.may 29 1993 div dec 2005 m. angela maxine amor, may 29 1993 · div. dec 2005 70.2 years",
@@ -16193,6 +16207,22 @@
     }
   },
   "stories": [
+    {
+      "id": "story-kevin-baby-jul56",
+      "title": "Baby Kevin — July 1956",
+      "body": "A square-format print stamped JUL • 56 on the margin captures Kevin Paul Wixted at about three months old — born 14 April 1956 in Rochester, NY. He lies swaddled in a patterned blanket in the foreground while two older boys look on: Rod (Rodney Henri Wixted) in a light suit jacket and Bo (Bruce Wixted) in a dark shirt, grinning at the camera. The scene is a Rochester living room with a 1950s television, horizontal blinds, and floral curtains — a flash-lit family moment from the year Matthew Scott Wixted's father was born.",
+      "personIds": [
+        "wixted-104-37",
+        "wixted-91-21",
+        "wixted-104-21",
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "childhood"],
+      "source": "family-photo"
+    },
     {
       "id": "story-daniel-wedding",
       "title": "Daniel & Kevin — Wedding Day",

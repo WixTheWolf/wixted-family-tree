@@ -6,6 +6,9 @@
     },
     "wixted-104-31": {
       "photo": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg"
+    },
+    "wixted-104-37": {
+      "photo": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg"
     }
   },
   "gallery": [
@@ -132,6 +135,19 @@
       "url": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg",
       "previewUrl": "/assets/people/wixted-104-31/daniel-kevin-wedding.jpg",
       "caption": "Brothers Daniel Scott Wixted (white tuxedo, groom) and Kevin Paul Wixted (gray-blue tuxedo), early 1980s — Daniel's wedding day. Sons of Bruce John & Evelyn Ruth Jones Wixted, Rochester NY line.",
+      "uploadedBy": "Family",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-kevin-baby-jul56",
+      "personId": "wixted-104-37",
+      "relatedPersonIds": ["wixted-91-21", "wixted-104-21"],
+      "title": "Baby Kevin with Rod and Bo — July 1956",
+      "type": "photo",
+      "url": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg",
+      "previewUrl": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg",
+      "caption": "July 1956 (date stamp JUL • 56). Kevin Paul Wixted (~3 months old) with Rod (Rodney Henri Wixted) and Bo (Bruce Wixted). Rochester living room — vintage TV, floral curtains. Matthew Scott Wixted's father as an infant.",
       "uploadedBy": "Family",
       "addedAt": "2026-06-30",
       "source": "site"
