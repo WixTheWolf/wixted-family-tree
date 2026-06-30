@@ -1,19 +1,27 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { getGalleryManifest } from "./_lib/galleryManifest";
+import { isAuthRequired } from "./_lib/auth";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "GET") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
-    return res.status(200).json({ available: false, entries: [] });
+  const blobAvailable = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+
+  if (!blobAvailable) {
+    return res.status(200).json({
+      available: false,
+      authRequired: isAuthRequired(),
+      entries: [],
+    });
   }
 
   try {
     const manifest = await getGalleryManifest();
     return res.status(200).json({
       available: true,
+      authRequired: isAuthRequired(),
       entries: manifest.entries,
     });
   } catch (err) {

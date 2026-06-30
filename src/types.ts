@@ -113,7 +113,7 @@ export interface SearchResult {
   cemetery?: CemeteryRecord;
 }
 
-export type AssetType = "photo" | "document" | "headstone" | "obituary" | "census" | "other";
+export type AssetType = "photo" | "document" | "headstone" | "obituary" | "census" | "other" | "research";
 
 export interface FamilyAsset {
   id: string;

@@ -1,4 +1,5 @@
 import type { AssetType, FamilyAsset } from "../types";
+import { uploadAuthHeaders } from "./uploadAuth";
 
 export interface CloudGalleryEntry {
   id: string;
@@ -15,6 +16,7 @@ export interface CloudGalleryEntry {
 
 export interface CloudGalleryResponse {
   available: boolean;
+  authRequired?: boolean;
   entries: CloudGalleryEntry[];
 }
 
@@ -57,7 +59,10 @@ export async function uploadToCloud(input: CloudUploadInput): Promise<CloudUploa
   try {
     const res = await fetch("/api/upload", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...uploadAuthHeaders(),
+      },
       body: JSON.stringify({
         personId: input.personId,
         personName: input.personName,
@@ -103,6 +108,6 @@ export function cloudEntryToAsset(entry: CloudGalleryEntry): FamilyAsset {
 }
 
 export async function checkCloudAvailable(): Promise<boolean> {
-  const { available } = await fetchCloudGallery();
-  return available;
+  const data = await fetchCloudGallery();
+  return data.available;
 }

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import type { AssetType, Person } from "../types";
 import { useContributions } from "../context/ContributionsContext";
 import { useCloudAssets } from "../context/CloudAssetsContext";
-import { getAllAssets, getStaticGallery } from "../utils/assets";
+import { getAllAssets, getPendingUploads, getStaticGallery } from "../utils/assets";
 import { suggestedFileName } from "../utils/contributionStore";
 import PersonAvatar from "./PersonAvatar";
 
@@ -19,12 +19,20 @@ const ASSET_TYPES: { id: AssetType; label: string; icon: string }[] = [
   { id: "document", label: "Document / Letter", icon: "📄" },
   { id: "census", label: "Census / Record", icon: "📋" },
   { id: "other", label: "Other", icon: "📎" },
+  { id: "research", label: "Research Link", icon: "🔗" },
 ];
 
 export default function ContributeView({ people, onSelectPerson }: Props) {
   const { contributions, loading, cloudAvailable, addContribution, removeContribution, exportAll } =
     useContributions();
-  const { cloudAssets } = useCloudAssets();
+  const { cloudAssets, authStatus, unlockUpload, lockUpload } = useCloudAssets();
+  const [familyKey, setFamilyKey] = useState("");
+  const [unlockError, setUnlockError] = useState<string | null>(null);
+  const [unlocking, setUnlocking] = useState(false);
+
+  const pendingUploads = useMemo(() => getPendingUploads(), []);
+  const needsAuth = authStatus.authRequired && !authStatus.authenticated && cloudAvailable;
+  const canCloudPublish = cloudAvailable && (!authStatus.authRequired || authStatus.authenticated);
   const fileRef = useRef<HTMLInputElement>(null);
   const [dragOver, setDragOver] = useState(false);
   const [personQuery, setPersonQuery] = useState("");
@@ -85,6 +93,18 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
     [handleFile]
   );
 
+  const handleUnlock = async () => {
+    setUnlocking(true);
+    setUnlockError(null);
+    const ok = await unlockUpload(familyKey);
+    setUnlocking(false);
+    if (!ok) {
+      setUnlockError("Invalid family upload key. Contact the site admin.");
+    } else {
+      setFamilyKey("");
+    }
+  };
+
   const onSubmit = async () => {
     if (!selectedPerson || !pendingFile) {
       setMessage("Choose a family member and a file to upload.");
@@ -105,6 +125,8 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
       const label = title || pendingFile.name;
       if (result.destination === "cloud") {
         setMessage(`Published "${label}" for ${selectedPerson.name} — live for everyone in the Gallery.`);
+      } else if (result.code === "AUTH_REQUIRED") {
+        setMessage("Family upload key required for cloud publish. Enter your key below, or save locally.");
       } else if (result.fallback) {
         setMessage(`Cloud upload unavailable — saved "${label}" locally. Export or enable Vercel Blob to publish.`);
       } else {
@@ -135,9 +157,39 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
           <span>{cloudAssets.length} cloud</span>
           <span>{contributions.length} local</span>
           <span>{allAssets.length} total</span>
-          {cloudAvailable && <span className="cloud-live">☁️ Live</span>}
+          {cloudAvailable && authStatus.authenticated && <span className="cloud-live">🔓 Authorized</span>}
         </div>
       </div>
+
+      {needsAuth && (
+        <section className="auth-gate">
+          <div>
+            <h3>🔒 Family upload key required</h3>
+            <p>Cloud publishing is restricted to family members. Enter the upload key shared by Matthew or the site admin.</p>
+          </div>
+          <div className="auth-row">
+            <input
+              type="password"
+              className="field-input"
+              placeholder="Family upload key"
+              value={familyKey}
+              onChange={(e) => setFamilyKey(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleUnlock()}
+            />
+            <button type="button" className="submit-btn auth-btn" disabled={unlocking || !familyKey.trim()} onClick={handleUnlock}>
+              {unlocking ? "Checking…" : "Unlock cloud upload"}
+            </button>
+          </div>
+          {unlockError && <p className="auth-error">{unlockError}</p>}
+        </section>
+      )}
+
+      {authStatus.authenticated && authStatus.authRequired && (
+        <div className="auth-banner">
+          <span>🔓 Cloud upload unlocked for this session</span>
+          <button type="button" onClick={lockUpload}>Lock</button>
+        </div>
+      )}
 
       <div className="contribute-layout">
         <section className="contribute-form">
@@ -251,11 +303,32 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
             disabled={submitting || !selectedPerson || !pendingFile}
             onClick={onSubmit}
           >
-            {submitting ? "Uploading…" : cloudAvailable ? "Publish to Gallery" : "Save to this browser"}
+            {submitting ? "Uploading…" : canCloudPublish ? "Publish to Gallery" : "Save to this browser"}
           </button>
         </section>
 
         <aside className="contribute-side">
+          {pendingUploads.length > 0 && (
+            <section className="side-card priority-card">
+              <h3>Still needed ({pendingUploads.length})</h3>
+              <ul className="priority-list">
+                {pendingUploads.map((p) => {
+                  const person = people.find((x) => x.id === p.personId);
+                  return (
+                    <li key={p.id}>
+                      <strong>{p.title}</strong>
+                      {p.caption && <span>{p.caption}</span>}
+                      {person && (
+                        <button type="button" onClick={() => onSelectPerson(person)}>
+                          → {person.name.split(" ").slice(-2).join(" ")}
+                        </button>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          )}
           <section className="side-card">
             <h3>Your local uploads ({contributions.length})</h3>
             <p className="side-desc">
@@ -293,7 +366,17 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
           </section>
 
           <section className="side-card steps">
-            <h3>Publish to the live site</h3>
+            <h3>Cloud setup (Vercel)</h3>
+            <ol>
+              <li>Vercel → Storage → Create <strong>Blob</strong> store</li>
+              <li>Add env <code>FAMILY_UPLOAD_KEY</code> (family password)</li>
+              <li>Redeploy — Contribute shows <strong>☁️ Live</strong></li>
+              <li>Or export locally → <code>scripts/ingest_contribution.py</code></li>
+            </ol>
+          </section>
+
+          <section className="side-card steps">
+            <h3>Publish via export</h3>
             <ol>
               <li>Upload and review assets here</li>
               <li>Click <strong>Export package</strong> — downloads files + manifest JSON</li>
@@ -339,6 +422,31 @@ export default function ContributeView({ people, onSelectPerson }: Props) {
         .cloud-live {
           color: var(--accent-secondary) !important;
           border-color: rgba(74, 158, 255, 0.35) !important;
+        }
+        .auth-gate {
+          padding: 20px 24px; border-radius: var(--radius-sm);
+          background: rgba(232, 93, 117, 0.06); border: 1px solid rgba(232, 93, 117, 0.25);
+        }
+        .auth-gate h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+        .auth-gate p { font-size: 13px; color: var(--text-secondary); margin-bottom: 14px; }
+        .auth-row { display: flex; gap: 10px; flex-wrap: wrap; }
+        .auth-row .field-input { flex: 1; min-width: 200px; }
+        .auth-btn { width: auto; padding: 10px 20px; margin-top: 0; }
+        .auth-error { margin-top: 10px; font-size: 13px; color: #e85d75; }
+        .auth-banner {
+          display: flex; justify-content: space-between; align-items: center;
+          padding: 10px 16px; border-radius: 8px;
+          background: rgba(80, 200, 120, 0.08); border: 1px solid rgba(80, 200, 120, 0.2);
+          font-size: 13px; color: #50c878;
+        }
+        .auth-banner button { font-size: 12px; color: var(--text-tertiary); }
+        .priority-card li {
+          margin-bottom: 12px; font-size: 13px; color: var(--text-secondary); line-height: 1.5;
+        }
+        .priority-card li strong { display: block; color: var(--text); margin-bottom: 4px; }
+        .priority-card li span { display: block; font-size: 12px; color: var(--text-tertiary); }
+        .priority-card li button {
+          margin-top: 6px; font-size: 12px; color: var(--accent); font-weight: 600;
         }
         .contribute-layout {
           display: grid; grid-template-columns: 1fr 340px; gap: 20px; align-items: start;
