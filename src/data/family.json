@@ -5,8 +5,8 @@
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
-    "personCount": 627,
-    "storyCount": 24,
+    "personCount": 632,
+    "storyCount": 26,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -72,8 +72,8 @@
     {
       "id": "tracy",
       "label": "Tracy",
-      "desc": "Mary Joan Tracy line — Jack & Katie Martin Tracy",
-      "count": 3
+      "desc": "Mary Joan Tracy line — Walter & Cecelia to Jack, Katie Martin, and four children",
+      "count": 9
     },
     {
       "id": "jess",
@@ -2631,7 +2631,9 @@
       "dates": "",
       "notes": [
         "Whittier, CA area",
-        "Father of Mary Joan (Tracy) Wixted"
+        "Also known as John \"Jack\" Tracy",
+        "Son of Walter & Cecelia (McDonough) Tracy (research via Joan Jeisi obituary)",
+        "Father of Brian, John, Anne, and Mary Joan Tracy"
       ],
       "col": 31,
       "row": 103,
@@ -2648,12 +2650,20 @@
           "text": "Father of Mary Joan (Tracy) Wixted"
         }
       ],
-      "searchText": "john \"jack\" tracy tracy whittier, ca area father of mary joan (tracy) wixted",
+      "searchText": "john \"jack\" tracy tracy whittier walter cecelia mcDonough brian john anne mary joan",
       "spouseIds": [
         "tracy-103-33"
       ],
       "childIds": [
+        "tracy-104-21",
+        "tracy-104-25",
+        "tracy-104-27",
         "wixted-104-33"
+      ],
+      "parentId": "tracy-102-29",
+      "motherId": "tracy-102-31",
+      "siblingIds": [
+        "tracy-103-29"
       ]
     },
     {
@@ -2662,7 +2672,8 @@
       "dates": "",
       "notes": [
         "Maiden name: Martin",
-        "Mother of Mary Joan (Tracy) Wixted"
+        "Mother of Brian, John, Anne, and Mary Joan Tracy",
+        "Whittier, CA area"
       ],
       "col": 33,
       "row": 103,
@@ -2684,6 +2695,9 @@
         "tracy-103-31"
       ],
       "childIds": [
+        "tracy-104-21",
+        "tracy-104-25",
+        "tracy-104-27",
         "wixted-104-33"
       ]
     },
@@ -2694,8 +2708,10 @@
       "notes": [
         "07/07/61-",
         "Whittier,CA",
+        "Youngest sibling — Brian, John, Anne, Mary Joan",
         "m. Daniel Scott Wixted, Jun 28 1986",
-        "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy"
+        "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy",
+        "Niece of Joan Marie (Tracy) Jeisi"
       ],
       "col": 33,
       "row": 104,
@@ -2722,7 +2738,7 @@
           "text": "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy"
         }
       ],
-      "searchText": "mary joan (tracy) wixted tracy 07/07/61- whittier,ca m. daniel scott wixted, jun 28 1986 daughter of john \"jack\" tracy and katie (martin) tracy 64.9 years",
+      "searchText": "mary joan (tracy) wixted tracy youngest sibling brian john anne whittier daniel wixted 1986",
       "birthDate": "1961-07-07",
       "spouseIds": [
         "wixted-104-31"
@@ -2732,7 +2748,12 @@
         "wixted-114-31",
         "wixted-114-35"
       ],
-      "age": "64.9 years"
+      "age": "64.9 years",
+      "siblingIds": [
+        "tracy-104-21",
+        "tracy-104-25",
+        "tracy-104-27"
+      ]
     },
     {
       "id": "wixted-104-35",
@@ -16196,6 +16217,149 @@
       "searchText": "john breitenbach 8/15/1881 danforth (shoemaker) 144.8 years",
       "birthDate": "1881-08-15",
       "age": "144.8 years"
+    },
+    {
+      "id": "tracy-102-29",
+      "name": "Walter Tracy",
+      "dates": "",
+      "notes": [
+        "New Jersey origins (per daughter Joan's obituary)",
+        "Married Cecelia (McDonough) Tracy",
+        "Research: likely grandfather of Mary Joan (Tracy) Wixted"
+      ],
+      "col": 29,
+      "row": 102,
+      "branch": "tracy",
+      "generation": 10,
+      "recordType": "person",
+      "spouseIds": [
+        "tracy-102-31"
+      ],
+      "childIds": [
+        "tracy-103-29",
+        "tracy-103-31"
+      ],
+      "searchText": "walter tracy tracy new jersey origins cecelia mcDonough grandfather mary joan tracy wixted"
+    },
+    {
+      "id": "tracy-102-31",
+      "name": "Cecelia (McDonough) Tracy",
+      "dates": "",
+      "notes": [
+        "Maiden name: McDonough",
+        "New Jersey origins (per daughter Joan's obituary)",
+        "Research: likely grandmother of Mary Joan (Tracy) Wixted"
+      ],
+      "col": 31,
+      "row": 102,
+      "branch": "tracy",
+      "generation": 10,
+      "recordType": "person",
+      "spouseIds": [
+        "tracy-102-29"
+      ],
+      "childIds": [
+        "tracy-103-29",
+        "tracy-103-31"
+      ],
+      "searchText": "cecelia (mcDonough) tracy tracy maiden name mcDonough new jersey grandmother mary joan"
+    },
+    {
+      "id": "tracy-103-29",
+      "name": "Joan Marie (Tracy) Jeisi",
+      "dates": "10/28/1924–04/08/2014",
+      "notes": [
+        "Born New Jersey to Walter & Cecelia (McDonough) Tracy",
+        "Died Rowland Heights, CA — age 89",
+        "Sister of John \"Jack\" Tracy (research)",
+        "Aunt of Brian, John, Anne, and Mary Joan Tracy",
+        "Services: White Emerson Mortuary, Whittier · Queen of Heaven Cemetery, Rowland Heights"
+      ],
+      "col": 29,
+      "row": 103,
+      "branch": "tracy",
+      "generation": 9,
+      "parentId": "tracy-102-29",
+      "motherId": "tracy-102-31",
+      "recordType": "person",
+      "birthDate": "1924-10-28",
+      "searchText": "joan marie (tracy) jeisi 10/28/1924–04/08/2014 tracy rowland heights white emerson whittier",
+      "siblingIds": [
+        "tracy-103-31"
+      ]
+    },
+    {
+      "id": "tracy-104-21",
+      "name": "Brian Tracy",
+      "dates": "",
+      "notes": [
+        "Oldest sibling — Brian, John, Anne, Mary Joan",
+        "Also recorded as Bryan Tracy (Joan Jeisi 2014 obituary)",
+        "Nephew of Joan Marie (Tracy) Jeisi",
+        "Whittier / Rowland Heights, CA area"
+      ],
+      "col": 21,
+      "row": 104,
+      "branch": "tracy",
+      "generation": 8,
+      "parentId": "tracy-103-31",
+      "motherId": "tracy-103-33",
+      "recordType": "person",
+      "siblingIds": [
+        "tracy-104-25",
+        "tracy-104-27",
+        "wixted-104-33"
+      ],
+      "searchText": "brian tracy tracy oldest sibling bryan tracy nephew joan jeisi whittier"
+    },
+    {
+      "id": "tracy-104-25",
+      "name": "John Tracy",
+      "dates": "",
+      "notes": [
+        "Second sibling — Brian, John, Anne, Mary Joan",
+        "Son of John \"Jack\" Tracy and Katie (Martin) Tracy",
+        "Whittier, CA area",
+        "Not the actor Spencer Tracy's son (different John Tracy family)"
+      ],
+      "col": 25,
+      "row": 104,
+      "branch": "tracy",
+      "generation": 8,
+      "parentId": "tracy-103-31",
+      "motherId": "tracy-103-33",
+      "recordType": "person",
+      "siblingIds": [
+        "tracy-104-21",
+        "tracy-104-27",
+        "wixted-104-33"
+      ],
+      "searchText": "john tracy tracy sibling brian anne mary joan whittier jack katie martin"
+    },
+    {
+      "id": "tracy-104-27",
+      "name": "Anne (Tracy) Davalos",
+      "dates": "",
+      "notes": [
+        "Third sibling — Brian, John, Anne, Mary Joan",
+        "Married name: Davalos",
+        "Rowland Heights, CA (18984 Barroso St — public records)",
+        "Research: b. ~May 1960, Los Angeles Co. (public records, unverified)",
+        "Niece of Joan Marie (Tracy) Jeisi (2014 obituary)"
+      ],
+      "col": 27,
+      "row": 104,
+      "branch": "tracy",
+      "generation": 8,
+      "parentId": "tracy-103-31",
+      "motherId": "tracy-103-33",
+      "recordType": "person",
+      "siblingIds": [
+        "tracy-104-21",
+        "tracy-104-25",
+        "wixted-104-33"
+      ],
+      "searchText": "anne (tracy) davalos tracy rowland heights sibling mary joan whittier barroso"
     }
   ],
   "cemetery": [
@@ -16504,17 +16668,26 @@
   "stories": [
     {
       "id": "story-tracy-line",
-      "title": "The Tracy Line — Jack & Katie Martin",
-      "body": "Mary Joan (Tracy) Wixted was born July 7, 1961 in Whittier, California. She is the daughter of John \"Jack\" Tracy and Katie (Martin) Tracy. Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name lives on in the family through granddaughter Sedona Tracy Wixted.",
+      "title": "The Tracy Line — Jack, Katie & Four Children",
+      "body": "Mary Joan (Tracy) Wixted (b. 7 Jul 1961, Whittier, CA) is the youngest of four siblings: Brian Tracy (oldest), John Tracy, Anne (Tracy) Davalos, and Mary Joan. Their parents are John \"Jack\" Tracy and Katie (Martin) Tracy of the Whittier area. Research links the Tracy line to Walter Tracy and Cecelia (McDonough) Tracy of New Jersey through Joan Marie (Tracy) Jeisi (1924–2014), Jack's sister — her 2014 obituary names nieces Anne Davalos and Mary Wixted and nephew Bryan/Brian Tracy. Anne Davalos is associated with Rowland Heights, CA in public records (~b. May 1960). Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through granddaughter Sedona Tracy Wixted.",
       "personIds": [
         "wixted-104-33",
         "tracy-103-31",
         "tracy-103-33",
-        "wixted-104-31",
+        "tracy-104-21",
+        "tracy-104-25",
+        "tracy-104-27",
+        "tracy-103-29",
+        "tracy-102-29",
+        "tracy-102-31",
         "wixted-121-31"
       ],
       "branch": "tracy",
-      "tags": ["family-history", "ancestry"],
+      "tags": [
+        "family-history",
+        "ancestry",
+        "research"
+      ],
       "source": "family-update"
     },
     {
@@ -16864,6 +17037,46 @@
         "biography"
       ],
       "source": "excel-notes"
+    },
+    {
+      "id": "story-joan-tracy-jeisi",
+      "title": "Joan Marie (Tracy) Jeisi — Aunt of the Whittier Tracys",
+      "body": "Joan Marie Jeisi was born Joan Marie Tracy on October 28, 1924 in New Jersey to Walter and Cecelia (McDonough) Tracy. She died April 8, 2014 in Rowland Heights, California, at age 89. Her obituary (White Emerson Mortuary, Whittier) lists surviving nieces Anne Davalos and Mary Wixted and nephew Bryan Tracy — confirming the Tracy siblings of Mary Joan's generation. Mass was held at St. Elizabeth Ann Seton Catholic Church, Rowland Heights; burial at Queen of Heaven Cemetery.",
+      "personIds": [
+        "tracy-103-29",
+        "tracy-102-29",
+        "tracy-102-31",
+        "tracy-103-31",
+        "tracy-104-27",
+        "tracy-104-21",
+        "wixted-104-33"
+      ],
+      "branch": "tracy",
+      "tags": [
+        "obituary",
+        "research",
+        "family-history"
+      ],
+      "source": "public-records"
+    },
+    {
+      "id": "story-tracy-siblings-research",
+      "title": "Tracy Siblings — Research Notes",
+      "body": "Family order (oldest to youngest): Brian Tracy, John Tracy, Anne (Tracy) Davalos, Mary Joan (Tracy) Wixted. Confirmed by family and corroborated by Joan Jeisi's 2014 obituary (nephew Bryan Tracy; nieces Anne Davalos and Mary Wixted). Brian is also spelled Bryan in that obituary. Anne is linked to Rowland Heights, CA (18984 Barroso St) in public records; approximate birth May 1960, Los Angeles County. Mary Joan's birth (7 Jul 1961, Whittier) and marriage to Daniel Wixted (28 Jun 1986) are documented in the family workbook. Birth dates for Brian and John remain unverified — LA County Registrar or WAGS Whittier vital index may hold records.",
+      "personIds": [
+        "tracy-104-21",
+        "tracy-104-25",
+        "tracy-104-27",
+        "wixted-104-33",
+        "tracy-103-31",
+        "tracy-103-33"
+      ],
+      "branch": "tracy",
+      "tags": [
+        "research",
+        "family-history"
+      ],
+      "source": "research"
     }
   ],
   "locationRefs": [

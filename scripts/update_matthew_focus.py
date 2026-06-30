@@ -224,41 +224,24 @@ def main():
             'Daughter of John "Jack" Tracy and Katie (Martin) Tracy'
         )
 
-    jack = by_id.get(JACK_TRACY_ID)
-    if not jack:
-        jack = {
-            "id": JACK_TRACY_ID,
-            "name": 'John "Jack" Tracy',
-            "col": 31,
-            "row": 103,
-            "branch": "tracy",
-            "generation": 9,
-            "recordType": "person",
-        }
-        people.append(jack)
-        by_id[JACK_TRACY_ID] = jack
-    jack["name"] = 'John "Jack" Tracy'
-    jack["notes"] = ["Whittier, CA area", "Father of Mary Joan (Tracy) Wixted"]
-    jack["spouseIds"] = [KATIE_TRACY_ID]
-    jack["childIds"] = [MARY_JOAN_ID]
-
-    katie_tracy = by_id.get(KATIE_TRACY_ID)
-    if not katie_tracy:
-        katie_tracy = {
-            "id": KATIE_TRACY_ID,
-            "name": "Katie (Martin) Tracy",
-            "col": 33,
-            "row": 103,
-            "branch": "tracy",
-            "generation": 9,
-            "recordType": "person",
-        }
-        people.append(katie_tracy)
-        by_id[KATIE_TRACY_ID] = katie_tracy
-    katie_tracy["name"] = "Katie (Martin) Tracy"
-    katie_tracy["notes"] = ["Maiden name: Martin", "Mother of Mary Joan (Tracy) Wixted"]
-    katie_tracy["spouseIds"] = [JACK_TRACY_ID]
-    katie_tracy["childIds"] = [MARY_JOAN_ID]
+    for tid, tname, tcol in [
+        (JACK_TRACY_ID, 'John "Jack" Tracy', 31),
+        (KATIE_TRACY_ID, "Katie (Martin) Tracy", 33),
+    ]:
+        if tid not in by_id:
+            person = {
+                "id": tid,
+                "name": tname,
+                "col": tcol,
+                "row": 103,
+                "branch": "tracy",
+                "generation": 9,
+                "recordType": "person",
+            }
+            people.append(person)
+            by_id[tid] = person
+        by_id[tid]["name"] = tname
+        by_id[tid]["spouseIds"] = [KATIE_TRACY_ID if tid == JACK_TRACY_ID else JACK_TRACY_ID]
 
     # Reclassify mis-parsed location parent
     bad_parent = by_id.get("wixted-109-39")
@@ -326,6 +309,12 @@ def main():
                 p["birthDate"] = birth.isoformat()
             p["age"] = compute_age(birth)
             p["notes"] = strip_stale_age_notes(p.get("notes", []))
+
+    # Tracy siblings (Brian, John, Anne, Mary Joan) + extended research
+    from tracy_family_update import apply_tracy_family
+
+    apply_tracy_family(data)
+    by_id = {p["id"]: p for p in people}
 
     # Rebuild search text for updated people
     branch_labels = {b["id"]: b["label"] for b in data["branches"]}

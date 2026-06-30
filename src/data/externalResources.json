@@ -3,7 +3,7 @@
     "researched": "2026-06-30",
     "summary": "Public genealogy, cemetery, library, and social media resources verified against the Wixted family workbook.",
     "stats": {
-      "resources": 34,
+      "resources": 40,
       "documentAssets": 14,
       "verifiedBurials": 8,
       "personLinks": 12
@@ -54,6 +54,87 @@
     }
   ],
   "resources": [
+    {
+      "id": "res-st-elizabeth-seton-rh",
+      "title": "St. Elizabeth Ann Seton Catholic Church — Rowland Heights",
+      "desc": "Mass location for Joan Jeisi funeral (2014); Tracy family Whittier/Rowland Heights parish connections.",
+      "url": "https://setonchurch.org/",
+      "category": "research",
+      "tags": [
+        "Tracy",
+        "Rowland Heights",
+        "Jeisi"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-queen-of-heaven-cemetery",
+      "title": "Queen of Heaven Cemetery — Rowland Heights",
+      "desc": "Burial place of Joan Marie (Tracy) Jeisi (2014). Tracy family services in Rowland Heights/Whittier area.",
+      "url": "https://www.findagrave.com/cemetery/2287424/queen-of-heaven-cemetery-and-mausoleum",
+      "category": "cemetery",
+      "tags": [
+        "Tracy",
+        "Jeisi",
+        "Rowland Heights"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-la-county-vitals",
+      "title": "LA County Registrar — Marriage & Birth Records",
+      "desc": "Official source for Daniel & Mary Joan Wixted marriage (Jun 28 1986) and Tracy birth records.",
+      "url": "https://apps.lavote.net/BDM",
+      "category": "genealogy",
+      "tags": [
+        "Los Angeles",
+        "marriage",
+        "Tracy",
+        "Wixted"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-whittier-vitals-index",
+      "title": "Whittier Vital Records Index (1888–1957)",
+      "desc": "WAGS abstracted births, marriages, deaths from Whittier newspapers — Whittier Public Library History Room.",
+      "url": "https://localhistory.whittierlibrary.org/collections/genealogy",
+      "category": "libraries",
+      "tags": [
+        "Whittier",
+        "marriage",
+        "Tracy"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-wags-whittier",
+      "title": "Whittier Area Genealogical Society (WAGS)",
+      "desc": "Local research assistance for Whittier and southeastern LA County families since 1981.",
+      "url": "https://wagswhittier.org/",
+      "category": "libraries",
+      "tags": [
+        "Whittier",
+        "Tracy",
+        "Wixted",
+        "LA County"
+      ],
+      "verified": true
+    },
+    {
+      "id": "res-joan-jeisi-obit",
+      "title": "Joan Marie (Tracy) Jeisi Obituary (2014)",
+      "desc": "White Emerson Mortuary, Whittier — confirms Tracy siblings Anne Davalos, Mary Wixted, and Bryan Tracy.",
+      "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+      "category": "obituaries",
+      "tags": [
+        "Tracy",
+        "Whittier",
+        "Rowland Heights",
+        "Jeisi"
+      ],
+      "verified": true
+    },
     {
       "id": "res-mexico-oaxaca-records",
       "title": "FamilySearch — Oaxaca, Mexico Catholic Records",
@@ -783,6 +864,41 @@
         "label": "Oaxaca Catholic Records — Montez/Rivera",
         "url": "https://www.familysearch.org/search/catalog/1703998",
         "type": "research"
+      }
+    ],
+    "tracy-103-29": [
+      {
+        "label": "Joan Jeisi obituary — White Emerson Mortuary",
+        "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+        "type": "obituary"
+      }
+    ],
+    "tracy-103-31": [
+      {
+        "label": "Whittier Area Genealogical Society",
+        "url": "https://wagswhittier.org/",
+        "type": "research"
+      }
+    ],
+    "wixted-104-33": [
+      {
+        "label": "LA County marriage records (1986)",
+        "url": "https://apps.lavote.net/BDM",
+        "type": "research"
+      }
+    ],
+    "tracy-104-27": [
+      {
+        "label": "Joan Jeisi obituary (lists niece Anne Davalos)",
+        "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+        "type": "obituary"
+      }
+    ],
+    "tracy-104-21": [
+      {
+        "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
+        "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+        "type": "obituary"
       }
     ]
   },

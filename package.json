@@ -10,7 +10,8 @@
     "data:enrich": "python3 scripts/enrich_data.py",
     "data:update": "python3 scripts/update_matthew_focus.py",
     "data:sync": "python3 scripts/apply_workbook_sync.py",
-    "data:enrich-workbook": "python3 scripts/enrich_from_workbook.py"
+    "data:enrich-workbook": "python3 scripts/enrich_from_workbook.py",
+    "data:tracy": "python3 scripts/tracy_family_update.py"
   },
   "dependencies": {
     "@vercel/blob": "^2.5.0",
