@@ -78,7 +78,8 @@ export default function GalleryView({ people, onSelectPerson }: Props) {
     <div className="gallery-view">
       <div className="gallery-header">
         <div>
-          <h2>Family Gallery</h2>
+          <p className="section-eyebrow">Gallery</p>
+          <h2 className="section-title" style={{ fontSize: "clamp(28px, 4vw, 40px)" }}>Family photos</h2>
           <p>
             Browse all photos and documents across the tree — site assets, cloud uploads
             {cloudAvailable ? " (live)" : " (enable Vercel Blob to sync)"}, and local browser saves.

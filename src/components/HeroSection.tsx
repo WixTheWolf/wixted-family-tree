@@ -1,213 +1,267 @@
 import { motion } from "framer-motion";
 import type { Person } from "../types";
 import PersonAvatar from "./PersonAvatar";
-import HeritageChart from "./HeritageChart";
 import { getPersonAge } from "../utils/ages";
 
 interface Props {
   person: Person;
-  heritage: Record<string, number>;
   personCount: number;
   storyCount: number;
-  branchCount: number;
+  galleryCount: number;
   onExplore: () => void;
+  onGallery: () => void;
 }
 
 export default function HeroSection({
   person,
-  heritage,
   personCount,
   storyCount,
-  branchCount,
+  galleryCount,
   onExplore,
+  onGallery,
 }: Props) {
   const age = getPersonAge(person);
-  const location = person.notes.find((n) => /Whittier|CA|California/i.test(n)) ?? "Whittier, California";
+  const location =
+    person.notes.find((n) => /Whittier|CA|California/i.test(n)) ?? "Whittier, California";
 
   return (
     <section className="hero">
-      <div className="hero-bg" aria-hidden />
-      <div className="hero-inner">
+      <div className="hero-gradient" aria-hidden />
+      <div className="hero-grid" aria-hidden />
+
+      <div className="hero-content">
+        <motion.p
+          className="hero-eyebrow"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        >
+          Ten generations · Ireland to California
+        </motion.p>
+
         <motion.div
-          className="hero-main"
+          className="hero-title-block"
+          initial={{ opacity: 0, y: 32 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <PersonAvatar person={person} size={88} />
+          <h1>
+            {person.name.split(" ").map((word, i) => (
+              <span key={i} className={i === person.name.split(" ").length - 1 ? "hero-accent" : ""}>
+                {word}{" "}
+              </span>
+            ))}
+          </h1>
+        </motion.div>
+
+        <motion.p
+          className="hero-tagline"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="hero-profile-row">
-            <div className="hero-avatar-stack">
-              <PersonAvatar person={person} size={112} />
-              <div className="hero-ring" />
-            </div>
-            <div>
-              <p className="hero-kicker">Wixted Family · Ten Generations</p>
-              <h1>{person.name}</h1>
-              <div className="hero-facts">
-                {age && <span>{age}</span>}
-                <span>{location}</span>
-                <span>Wixted → Amor lines</span>
-              </div>
-            </div>
-          </div>
+          {age && <span>{age}</span>}
+          {location}
+          <span className="hero-dot">·</span>
+          {personCount} relatives
+          <span className="hero-dot">·</span>
+          {storyCount} stories
+          <span className="hero-dot">·</span>
+          {galleryCount} photos
+        </motion.p>
 
-          <p className="hero-lede">
-            From <strong>Lambeth, London</strong> and <strong>Tipperary, Ireland</strong> to
-            <strong> Corning & Rochester, New York</strong> — and west to
-            <strong> Southern California</strong>. Explore {personCount} relatives, {storyCount} stories,
-            and a direct line back to patriarch <em>Thomas James Wixted</em> (1796).
-          </p>
+        <motion.p
+          className="hero-lede"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+        >
+          Tipperary to Lambeth. Corning to Rochester. Phoenix to Whittier.
+          One family line — built to explore, not just to read.
+        </motion.p>
 
-          <div className="hero-actions">
-            <motion.button
-              className="hero-btn primary"
-              onClick={onExplore}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Explore ancestors
-            </motion.button>
-            <span className="hero-stat-inline">{branchCount} branches · NY to CA</span>
-          </div>
+        <motion.div
+          className="hero-cta"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <button type="button" className="btn-primary" onClick={onExplore}>
+            Explore the tree
+          </button>
+          <button type="button" className="btn-secondary" onClick={onGallery}>
+            View gallery →
+          </button>
         </motion.div>
 
         <motion.div
-          className="hero-aside"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
+          className="hero-stats"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.45, duration: 0.8 }}
         >
-          <div className="hero-map-card">
-            <span className="hero-map-label">Migration arc</span>
-            <div className="hero-map-route">
-              <span>Ireland</span>
-              <span className="hero-map-arrow">→</span>
-              <span>London</span>
-              <span className="hero-map-arrow">→</span>
-              <span>Corning</span>
-              <span className="hero-map-arrow">→</span>
-              <span>Rochester</span>
-              <span className="hero-map-arrow">→</span>
-              <span>California</span>
+          {[
+            { label: "Patriarch", value: "1796", sub: "Thomas James Wixted" },
+            { label: "Migration", value: "1963", sub: "Rochester → Phoenix" },
+            { label: "Home", value: "CA", sub: "Whittier generation" },
+          ].map((stat) => (
+            <div key={stat.label} className="hero-stat">
+              <span className="hero-stat-value">{stat.value}</span>
+              <span className="hero-stat-label">{stat.label}</span>
+              <span className="hero-stat-sub">{stat.sub}</span>
             </div>
-            <p className="hero-map-note">
-              Bruce & Evelyn Wixted moved Rochester → Phoenix (1963) → Orange County (1971),
-              bringing the Wixted name to Matthew's generation in Whittier.
-            </p>
-          </div>
-          <div className="hero-heritage-wrap">
-            <HeritageChart heritage={heritage} name="Matthew" />
-          </div>
+          ))}
         </motion.div>
       </div>
+
+      <button type="button" className="hero-scroll" onClick={onExplore} aria-label="Scroll to explore">
+        <span className="hero-scroll-line" />
+      </button>
 
       <style>{`
         .hero {
           position: relative;
-          padding: 56px 48px 40px;
+          min-height: calc(100vh - var(--header-h));
+          margin-top: var(--header-h);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 48px 24px 80px;
           overflow: hidden;
         }
-        .hero-bg {
-          position: absolute; inset: 0;
+        .hero-gradient {
+          position: absolute;
+          inset: 0;
           background:
-            radial-gradient(ellipse 70% 60% at 20% 0%, rgba(201, 162, 39, 0.12) 0%, transparent 55%),
-            radial-gradient(ellipse 50% 40% at 90% 20%, rgba(74, 158, 255, 0.08) 0%, transparent 50%),
-            linear-gradient(180deg, rgba(15, 22, 36, 0.4) 0%, transparent 100%);
+            radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255, 149, 0, 0.12) 0%, transparent 55%),
+            radial-gradient(ellipse 40% 30% at 80% 20%, rgba(41, 151, 255, 0.06) 0%, transparent 50%);
           pointer-events: none;
         }
-        .hero-inner {
+        .hero-grid {
+          position: absolute;
+          inset: 0;
+          background-image:
+            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+          background-size: 64px 64px;
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 70%);
+          pointer-events: none;
+        }
+        .hero-content {
           position: relative;
-          max-width: 1200px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: 1.1fr 0.9fr;
-          gap: 48px;
-          align-items: start;
+          max-width: 980px;
+          width: 100%;
+          text-align: center;
         }
-        .hero-profile-row {
-          display: flex; gap: 28px; align-items: center;
-          margin-bottom: 28px;
-        }
-        .hero-avatar-stack { position: relative; flex-shrink: 0; }
-        .hero-ring {
-          position: absolute; inset: -8px;
-          border-radius: 50%;
-          border: 1px solid rgba(201, 162, 39, 0.45);
-          animation: pulse-glow 4s ease-in-out infinite;
-        }
-        .hero-kicker {
-          font-size: 11px; font-weight: 700; text-transform: uppercase;
-          letter-spacing: 0.16em; color: var(--accent);
-          margin-bottom: 10px;
-        }
-        .hero-main h1 {
-          font-family: var(--font-display);
-          font-size: clamp(36px, 5vw, 52px);
+        .hero-eyebrow {
+          font-size: 14px;
           font-weight: 600;
-          line-height: 1.08;
-          letter-spacing: -0.03em;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: var(--accent);
+          margin-bottom: 20px;
         }
-        .hero-facts {
-          display: flex; flex-wrap: wrap; gap: 8px 16px;
-          margin-top: 14px; font-size: 14px; color: var(--text-secondary);
+        .hero-title-block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+          margin-bottom: 16px;
         }
-        .hero-facts span:not(:last-child)::after {
-          content: "·"; margin-left: 16px; color: var(--text-tertiary);
+        .hero-title-block h1 {
+          font-size: clamp(40px, 8vw, 72px);
+          font-weight: 700;
+          letter-spacing: -0.04em;
+          line-height: 1.02;
         }
+        .hero-accent {
+          background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .hero-tagline {
+          font-size: clamp(15px, 2vw, 19px);
+          color: var(--text-secondary);
+          margin-bottom: 20px;
+          letter-spacing: -0.01em;
+        }
+        .hero-dot { margin: 0 10px; opacity: 0.4; }
         .hero-lede {
-          font-size: 17px; line-height: 1.75;
-          color: var(--text-secondary); max-width: 580px;
+          font-size: clamp(17px, 2.2vw, 21px);
+          line-height: 1.45;
+          color: var(--text-secondary);
+          max-width: 640px;
+          margin: 0 auto 36px;
+          letter-spacing: -0.02em;
         }
-        .hero-lede strong { color: var(--text); font-weight: 600; }
-        .hero-lede em { color: var(--accent-bright); font-style: normal; }
-        .hero-actions {
-          display: flex; align-items: center; gap: 20px;
-          margin-top: 32px;
+        .hero-cta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px 20px;
+          justify-content: center;
+          margin-bottom: 56px;
         }
-        .hero-btn.primary {
-          padding: 14px 32px;
-          background: var(--accent);
-          color: #0a0e17;
-          font-weight: 700; font-size: 15px;
-          border-radius: 980px;
-          box-shadow: 0 8px 32px var(--accent-glow);
+        .hero-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+          max-width: 720px;
+          margin: 0 auto;
         }
-        .hero-stat-inline {
-          font-size: 13px; color: var(--text-tertiary);
-        }
-        .hero-aside { display: flex; flex-direction: column; gap: 16px; }
-        .hero-map-card {
-          padding: 24px;
-          background: var(--bg-glass);
+        .hero-stat {
+          padding: 20px 16px;
+          background: var(--bg-card);
           border: 1px solid var(--border);
-          border-radius: 20px;
-          backdrop-filter: blur(16px);
+          border-radius: var(--radius);
+          text-align: center;
+          transition: transform 0.3s var(--ease-out-expo), border-color 0.2s;
         }
-        .hero-map-label {
-          font-size: 10px; font-weight: 700; text-transform: uppercase;
-          letter-spacing: 0.12em; color: var(--text-tertiary);
+        .hero-stat:hover {
+          transform: translateY(-4px);
+          border-color: var(--border-strong);
         }
-        .hero-map-route {
-          display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
-          margin: 14px 0; font-size: 13px; font-weight: 600;
-          color: var(--accent-bright);
+        .hero-stat-value {
+          display: block;
+          font-size: 28px;
+          font-weight: 700;
+          letter-spacing: -0.03em;
+          margin-bottom: 4px;
         }
-        .hero-map-arrow { color: var(--text-tertiary); font-weight: 400; }
-        .hero-map-note {
-          font-size: 13px; line-height: 1.6; color: var(--text-secondary);
+        .hero-stat-label {
+          display: block;
+          font-size: 11px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          color: var(--text-tertiary);
         }
-        .hero-heritage-wrap {
-          padding: 20px;
-          background: var(--bg-glass);
-          border: 1px solid var(--border);
-          border-radius: 20px;
+        .hero-stat-sub {
+          display: block;
+          font-size: 12px;
+          color: var(--text-secondary);
+          margin-top: 6px;
         }
-        @media (max-width: 960px) {
-          .hero { padding: 40px 20px 28px; }
-          .hero-inner { grid-template-columns: 1fr; gap: 32px; }
-          .hero-profile-row { flex-direction: column; text-align: center; }
-          .hero-facts { justify-content: center; }
-          .hero-lede { max-width: none; }
-          .hero-actions { justify-content: center; flex-wrap: wrap; }
+        .hero-scroll {
+          position: absolute;
+          bottom: 32px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 12px;
+        }
+        .hero-scroll-line {
+          display: block;
+          width: 1px;
+          height: 40px;
+          background: linear-gradient(to bottom, var(--text-tertiary), transparent);
+          animation: scroll-hint 2s ease-in-out infinite;
+        }
+        @media (max-width: 640px) {
+          .hero-stats { grid-template-columns: 1fr; }
+          .hero-dot { display: none; }
+          .hero-tagline span { display: block; margin: 4px 0; }
         }
       `}</style>
     </section>
