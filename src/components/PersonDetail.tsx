@@ -4,7 +4,10 @@ import { NOTE_LABELS, NOTE_ORDER, groupNotes } from "../utils/notes";
 import { getBranchLabel } from "../utils/people";
 import { getPersonAge, filterDisplayNotes } from "../utils/ages";
 import PersonAvatar from "./PersonAvatar";
+import PersonGallery from "./PersonGallery";
 import externalResources from "../data/externalResources.json";
+import { useContributions } from "../context/ContributionsContext";
+import { getPersonAssets } from "../utils/assets";
 
 interface Props {
   person: Person | null;
@@ -25,6 +28,8 @@ export default function PersonDetail({
   onClose,
   onSelectRelative,
 }: Props) {
+  const { contributions } = useContributions();
+
   const cemMatch = person
     ? cemetery.filter((c) => {
         const first = person.name.split(/[\s\-]+/)[0].toLowerCase();
@@ -40,6 +45,8 @@ export default function PersonDetail({
   const externalLinks = person
     ? (externalResources.personLinks as Record<string, { label: string; url: string; type: string }[]>)[person.id] ?? []
     : [];
+
+  const personAssets = person ? getPersonAssets(person.id, contributions) : [];
 
   const noteGroups = person?.categorizedNotes
     ? groupNotes(person.categorizedNotes)
@@ -168,6 +175,8 @@ export default function PersonDetail({
                   </div>
                 </section>
               )}
+
+              <PersonGallery assets={personAssets} />
 
               {relatives.length > 0 && (
                 <section className="detail-section">

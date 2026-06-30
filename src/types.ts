@@ -112,3 +112,33 @@ export interface SearchResult {
   story?: Story;
   cemetery?: CemeteryRecord;
 }
+
+export type AssetType = "photo" | "document" | "headstone" | "obituary" | "census" | "other";
+
+export interface FamilyAsset {
+  id: string;
+  personId: string;
+  personName?: string;
+  title: string;
+  type: AssetType;
+  url: string;
+  caption?: string;
+  uploadedBy?: string;
+  addedAt?: string;
+  source: "site" | "local";
+  mimeType?: string;
+}
+
+export interface ContributionDraft {
+  id: string;
+  personId: string;
+  personName: string;
+  title: string;
+  type: AssetType;
+  caption: string;
+  uploadedBy: string;
+  fileName: string;
+  mimeType: string;
+  blob: Blob;
+  createdAt: string;
+}

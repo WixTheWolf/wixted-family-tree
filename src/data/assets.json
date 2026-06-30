@@ -5,6 +5,7 @@
       "role": "focus"
     }
   },
+  "gallery": [],
   "documents": [
     {
       "title": "Family Workbook",
@@ -37,10 +38,10 @@
       "icon": "🔗"
     },
     {
-      "title": "WikiTree Scanned Records",
-      "desc": "Baptism certs, marriage records, census pages for Irish Wixted lines",
+      "title": "Upload Family Assets",
+      "desc": "Add photos, headstones, obituaries & documents — link to any person",
       "type": "photo",
-      "icon": "📷"
+      "icon": "📤"
     }
   ]
 }
