@@ -1,3 +1,5 @@
+import WickstedArms from "./WickstedArms";
+
 interface Props {
   onExplore: () => void;
   onGallery: () => void;
@@ -10,7 +12,9 @@ export default function SiteHeader({ onExplore, onGallery, onStories, onArchives
     <header className="site-header">
       <div className="site-header-inner">
         <a href="/" className="site-logo" aria-label="Wixted Family home">
-          <span className="site-logo-mark">W</span>
+          <span className="site-logo-mark">
+            <WickstedArms size={28} />
+          </span>
           <span className="site-logo-text">Wixted</span>
         </a>
 
@@ -57,11 +61,15 @@ export default function SiteHeader({ onExplore, onGallery, onStories, onArchives
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 15px;
-          font-weight: 700;
-          background: var(--accent);
-          color: #000;
-          border-radius: 8px;
+          overflow: hidden;
+          border-radius: 6px;
+          background: rgba(244, 241, 234, 0.95);
+          box-shadow: 0 0 0 1px rgba(197, 160, 89, 0.35);
+        }
+        .site-logo-mark svg {
+          width: 22px;
+          height: auto;
+          margin-top: 2px;
         }
         .site-logo-text {
           font-size: 17px;

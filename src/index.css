@@ -35,6 +35,10 @@
   --bg-glass: rgba(29, 29, 31, 0.72);
   --heritage-gold: #c9a227;
   --heritage-sage: #4a5d4a;
+  --herald-argent: #f4f1ea;
+  --herald-azure: #1a3a6b;
+  --herald-or: #c5a059;
+  --herald-sable: #1a1a1a;
   --font-display: "Fraunces", "Georgia", "Times New Roman", serif;
   --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
