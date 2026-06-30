@@ -15,8 +15,10 @@ import CemeteryView from "./components/CemeteryView";
 import HeroSection from "./components/HeroSection";
 import FamilyOrbit from "./components/FamilyOrbit";
 import ArchivesView from "./components/ArchivesView";
+import ContributeView from "./components/ContributeView";
 import MediaStrip from "./components/MediaStrip";
 import externalResources from "./data/externalResources.json";
+import { useContributions } from "./context/ContributionsContext";
 import { getPeople, getBranchPeople, getRelatives, getInnerCircle } from "./utils/people";
 import { searchAll, findPersonById } from "./utils/search";
 
@@ -28,11 +30,12 @@ const rootPerson = findPersonById(data, ROOT_ID)!;
 function AppContent() {
   const navigate = useNavigate();
   const { personId } = useParams();
+  const { contributions } = useContributions();
   const mainRef = useRef<HTMLElement>(null);
   const [activeBranch, setActiveBranch] = useState("wixted");
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
-  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives">("explore");
+  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives" | "contribute">("explore");
   const [showOrbit, setShowOrbit] = useState(true);
 
   const selected = useMemo(
@@ -130,6 +133,7 @@ function AppContent() {
           onViewCemetery={() => { setAppView("cemetery"); scrollToExplore(); }}
           onViewStories={() => { setAppView("stories"); scrollToExplore(); }}
           onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
+          onViewContribute={() => { setAppView("contribute"); scrollToExplore(); }}
         />
       </header>
 
@@ -142,6 +146,7 @@ function AppContent() {
             stories: data.stories?.length ?? 0,
             cemetery: data.cemetery.length,
             archives: externalResources.resources.length,
+            contributions: contributions.length,
           }}
         />
 
@@ -231,6 +236,10 @@ function AppContent() {
 
             {appView === "archives" && (
               <ArchivesView people={allPeople} onSelectPerson={selectPerson} />
+            )}
+
+            {appView === "contribute" && (
+              <ContributeView people={allPeople} onSelectPerson={selectPerson} />
             )}
           </motion.div>
         </AnimatePresence>

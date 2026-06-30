@@ -5,17 +5,18 @@ interface Props {
   onViewCemetery: () => void;
   onViewStories: () => void;
   onViewArchives?: () => void;
+  onViewContribute?: () => void;
 }
 
-export default function MediaStrip({ onViewCemetery, onViewStories, onViewArchives }: Props) {
+export default function MediaStrip({ onViewCemetery, onViewStories, onViewArchives, onViewContribute }: Props) {
   const docs = assets.documents;
 
   const actions: Record<string, () => void> = {
     cemetery: onViewCemetery,
-    research: onViewStories,
+    research: onViewArchives ?? onViewStories,
     census: onViewArchives ?? onViewStories,
-    photo: onViewArchives ?? onViewCemetery,
-    spreadsheet: onViewArchives ?? onViewStories,
+    photo: onViewContribute ?? onViewArchives ?? onViewCemetery,
+    spreadsheet: onViewContribute ?? onViewArchives ?? onViewStories,
   };
 
   return (

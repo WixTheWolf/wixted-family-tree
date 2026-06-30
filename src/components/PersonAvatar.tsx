@@ -1,7 +1,8 @@
 import { useMemo } from "react";
 import type { Person } from "../types";
 import { getPersonAge } from "../utils/ages";
-import manifest from "../data/assets.json";
+import { getPersonPhoto } from "../utils/assets";
+import { useContributions } from "../context/ContributionsContext";
 
 const COLORS = [
   "#c9a227", "#4a9eff", "#e85d75", "#50c878", "#b07aff", "#ff9f43", "#26c6da",
@@ -24,10 +25,12 @@ interface Props {
 }
 
 export default function PersonAvatar({ person, size = 48, className = "" }: Props) {
-  const photo = useMemo(() => {
-    const entry = (manifest.people as Record<string, { photo?: string }>)[person.id];
-    return entry?.photo ?? null;
-  }, [person.id]);
+  const { contributions } = useContributions();
+
+  const photo = useMemo(
+    () => getPersonPhoto(person.id, contributions),
+    [person.id, contributions]
+  );
 
   const colorIdx = useMemo(() => {
     let hash = 0;
