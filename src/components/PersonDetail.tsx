@@ -4,6 +4,7 @@ import { NOTE_LABELS, NOTE_ORDER, groupNotes } from "../utils/notes";
 import { getBranchLabel } from "../utils/people";
 import { getPersonAge, filterDisplayNotes } from "../utils/ages";
 import PersonAvatar from "./PersonAvatar";
+import externalResources from "../data/externalResources.json";
 
 interface Props {
   person: Person | null;
@@ -34,6 +35,10 @@ export default function PersonDetail({
 
   const personStories = person
     ? stories.filter((s) => s.personIds.includes(person.id))
+    : [];
+
+  const externalLinks = person
+    ? (externalResources.personLinks as Record<string, { label: string; url: string; type: string }[]>)[person.id] ?? []
     : [];
 
   const noteGroups = person?.categorizedNotes
@@ -141,6 +146,26 @@ export default function PersonDetail({
                       {c.notes && <div className="cem-rel">{c.notes}</div>}
                     </div>
                   ))}
+                </section>
+              )}
+
+              {externalLinks.length > 0 && (
+                <section className="detail-section">
+                  <h3>Online Records</h3>
+                  <div className="external-links">
+                    {externalLinks.map((link) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="external-link"
+                      >
+                        <span>{link.label}</span>
+                        <span className="external-type">{link.type}</span>
+                      </a>
+                    ))}
+                  </div>
                 </section>
               )}
 
@@ -257,6 +282,23 @@ export default function PersonDetail({
               text-transform: uppercase; letter-spacing: 0.04em;
             }
             .relative-dates { font-size: 12px; color: var(--text-tertiary); }
+            .external-links { display: flex; flex-direction: column; gap: 8px; }
+            .external-link {
+              display: flex; justify-content: space-between; align-items: center;
+              padding: 12px 14px; border-radius: var(--radius-sm);
+              background: var(--bg); border: 1px solid var(--border);
+              text-decoration: none; color: var(--accent-secondary);
+              font-size: 14px; font-weight: 500;
+              transition: border-color 0.15s, background 0.15s;
+            }
+            .external-link:hover {
+              border-color: rgba(74, 158, 255, 0.35);
+              background: rgba(74, 158, 255, 0.06);
+            }
+            .external-type {
+              font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
+              color: var(--text-tertiary);
+            }
           `}</style>
         </>
       )}

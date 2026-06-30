@@ -14,7 +14,9 @@ import StoriesView from "./components/StoriesView";
 import CemeteryView from "./components/CemeteryView";
 import HeroSection from "./components/HeroSection";
 import FamilyOrbit from "./components/FamilyOrbit";
+import ArchivesView from "./components/ArchivesView";
 import MediaStrip from "./components/MediaStrip";
+import externalResources from "./data/externalResources.json";
 import { getPeople, getBranchPeople, getRelatives, getInnerCircle } from "./utils/people";
 import { searchAll, findPersonById } from "./utils/search";
 
@@ -30,7 +32,7 @@ function AppContent() {
   const [activeBranch, setActiveBranch] = useState("wixted");
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"tree" | "grid">("tree");
-  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery">("explore");
+  const [appView, setAppView] = useState<"explore" | "directory" | "stories" | "cemetery" | "archives">("explore");
   const [showOrbit, setShowOrbit] = useState(true);
 
   const selected = useMemo(
@@ -127,6 +129,7 @@ function AppContent() {
         <MediaStrip
           onViewCemetery={() => { setAppView("cemetery"); scrollToExplore(); }}
           onViewStories={() => { setAppView("stories"); scrollToExplore(); }}
+          onViewArchives={() => { setAppView("archives"); scrollToExplore(); }}
         />
       </header>
 
@@ -138,6 +141,7 @@ function AppContent() {
             people: data.meta.personCount ?? allPeople.length,
             stories: data.stories?.length ?? 0,
             cemetery: data.cemetery.length,
+            archives: externalResources.resources.length,
           }}
         />
 
@@ -223,6 +227,10 @@ function AppContent() {
                 people={allPeople}
                 onSelectPerson={selectPerson}
               />
+            )}
+
+            {appView === "archives" && (
+              <ArchivesView people={allPeople} onSelectPerson={selectPerson} />
             )}
           </motion.div>
         </AnimatePresence>
