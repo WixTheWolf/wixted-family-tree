@@ -9,6 +9,12 @@
     },
     "wixted-104-37": {
       "photo": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg"
+    },
+    "wixted-91-29": {
+      "photo": "/assets/people/wixted-91-29/bruce-evelyn-couple.jpg"
+    },
+    "wixted-91-31": {
+      "photo": "/assets/people/wixted-91-29/bruce-evelyn-couple.jpg"
     }
   },
   "gallery": [
@@ -148,6 +154,19 @@
       "url": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg",
       "previewUrl": "/assets/people/wixted-104-37/kevin-baby-jul56-rod-bo.jpg",
       "caption": "July 1956 (date stamp JUL • 56). Kevin Paul Wixted (~3 months old) with Rod (Rodney Henri Wixted) and Bo (Bruce Wixted). Rochester living room — vintage TV, floral curtains. Matthew Scott Wixted's father as an infant.",
+      "uploadedBy": "Family",
+      "addedAt": "2026-06-30",
+      "source": "site"
+    },
+    {
+      "id": "seed-bruce-evelyn-couple",
+      "personId": "wixted-91-29",
+      "relatedPersonIds": ["wixted-91-31"],
+      "title": "Bruce & Evelyn Wixted — Young Couple",
+      "type": "photo",
+      "url": "/assets/people/wixted-91-29/bruce-evelyn-couple.jpg",
+      "previewUrl": "/assets/people/wixted-91-29/bruce-evelyn-couple.jpg",
+      "caption": "Bruce John Wixted and Evelyn Ruth Jones, circa 1954–1957 (est.). Square-format Rochester portrait — Evelyn in a sailor-collar dress, Bruce in a knit polo. Married 8 Dec 1951; Kevin born Apr 1956. Likely early married years before the 1963 move west.",
       "uploadedBy": "Family",
       "addedAt": "2026-06-30",
       "source": "site"

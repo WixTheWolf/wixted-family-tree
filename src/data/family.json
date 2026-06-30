@@ -6,7 +6,7 @@
     "focus": "Matthew Scott Wixted",
     "enriched": true,
     "personCount": 620,
-    "storyCount": 17,
+    "storyCount": 18,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -2084,17 +2084,27 @@
       "id": "wixted-91-29",
       "name": "Bruce John Wixted",
       "dates": "04/03/33-03/11/95 (62)",
-      "notes": [],
+      "notes": [
+        "m. Evelyn Ruth Jones, 8 Dec 1951"
+      ],
       "col": 29,
       "row": 91,
       "branch": "wixted",
       "generation": 6,
       "parentId": "wixted-77-17",
       "recordType": "person",
-      "categorizedNotes": [],
-      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted 93.2 years",
+      "categorizedNotes": [
+        {
+          "category": "marriage",
+          "text": "m. Evelyn Ruth Jones, 8 Dec 1951"
+        }
+      ],
+      "searchText": "bruce john wixted 04/03/33-03/11/95 (62) wixted m. evelyn ruth jones, 8 dec 1951 93.2 years",
       "birthDate": "1933-04-03",
       "age": "93.2 years",
+      "spouseIds": [
+        "wixted-91-31"
+      ],
       "childIds": [
         "wixted-104-37",
         "wixted-104-31"
@@ -2107,7 +2117,8 @@
       "notes": [
         "08/27/32-12/15/88 (56)",
         "Librarian",
-        "Rochester,NY"
+        "Rochester,NY",
+        "m. Bruce John Wixted, 8 Dec 1951"
       ],
       "col": 31,
       "row": 91,
@@ -2126,11 +2137,18 @@
         {
           "category": "location",
           "text": "Rochester,NY"
+        },
+        {
+          "category": "marriage",
+          "text": "m. Bruce John Wixted, 8 Dec 1951"
         }
       ],
-      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny 93.8 years",
+      "searchText": "evelyn ruth jones ss112-24-1440 wixted 08/27/32-12/15/88 (56) librarian rochester,ny m. bruce john wixted, 8 dec 1951 93.8 years",
       "birthDate": "1932-08-27",
-      "age": "93.8 years"
+      "age": "93.8 years",
+      "spouseIds": [
+        "wixted-91-29"
+      ]
     },
     {
       "id": "wixted-91-43",
@@ -16207,6 +16225,20 @@
     }
   },
   "stories": [
+    {
+      "id": "story-bruce-evelyn-young",
+      "title": "Bruce & Evelyn — Rochester, Mid-1950s",
+      "body": "Bruce John Wixted (b. 3 Apr 1933) and Evelyn Ruth Jones (b. 27 Aug 1932) pose together outdoors in a square-format black-and-white portrait. Evelyn wears a dark dress with a white sailor collar and carries a white handbag; Bruce wears a short-sleeved knit polo and pleated trousers with a crew cut — hallmarks of mid-1950s Rochester style.\n\nTimeframe estimate: circa 1954–1957, most likely 1955 or early 1956. The couple married 8 December 1951, when Bruce was 18 and Evelyn was 19. In this portrait they appear in their early twenties, a few years into marriage and before the July 1956 photo of baby Kevin. The square negative and outdoor railing setting match the same era as other family prints from the Rochester years, before Bruce and Evelyn moved the family to Phoenix, AZ in 1963 and Orange County, CA in 1971. Evelyn worked as a Rochester librarian; together they raised the Kevin & Daniel generation.",
+      "personIds": [
+        "wixted-91-29",
+        "wixted-91-31",
+        "wixted-104-37",
+        "wixted-114-29"
+      ],
+      "branch": "wixted",
+      "tags": ["family-history", "photo", "marriage", "migration"],
+      "source": "family-photo"
+    },
     {
       "id": "story-kevin-baby-jul56",
       "title": "Baby Kevin — July 1956",
