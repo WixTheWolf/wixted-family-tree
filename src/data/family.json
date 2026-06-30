@@ -5,8 +5,8 @@
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
-    "personCount": 625,
-    "storyCount": 23,
+    "personCount": 627,
+    "storyCount": 24,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
       "wixted-114-29",
@@ -68,6 +68,12 @@
       "label": "Cumming",
       "desc": "Christine Cumming line — Brea, California",
       "count": 5
+    },
+    {
+      "id": "tracy",
+      "label": "Tracy",
+      "desc": "Mary Joan Tracy line — Jack & Katie Martin Tracy",
+      "count": 3
     },
     {
       "id": "jess",
@@ -2620,18 +2626,83 @@
       "age": "67.2 years"
     },
     {
+      "id": "tracy-103-31",
+      "name": "John \"Jack\" Tracy",
+      "dates": "",
+      "notes": [
+        "Whittier, CA area",
+        "Father of Mary Joan (Tracy) Wixted"
+      ],
+      "col": 31,
+      "row": 103,
+      "branch": "tracy",
+      "generation": 9,
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "location",
+          "text": "Whittier, CA area"
+        },
+        {
+          "category": "general",
+          "text": "Father of Mary Joan (Tracy) Wixted"
+        }
+      ],
+      "searchText": "john \"jack\" tracy tracy whittier, ca area father of mary joan (tracy) wixted",
+      "spouseIds": [
+        "tracy-103-33"
+      ],
+      "childIds": [
+        "wixted-104-33"
+      ]
+    },
+    {
+      "id": "tracy-103-33",
+      "name": "Katie (Martin) Tracy",
+      "dates": "",
+      "notes": [
+        "Maiden name: Martin",
+        "Mother of Mary Joan (Tracy) Wixted"
+      ],
+      "col": 33,
+      "row": 103,
+      "branch": "tracy",
+      "generation": 9,
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "general",
+          "text": "Maiden name: Martin"
+        },
+        {
+          "category": "general",
+          "text": "Mother of Mary Joan (Tracy) Wixted"
+        }
+      ],
+      "searchText": "katie (martin) tracy tracy maiden name: martin mother of mary joan (tracy) wixted",
+      "spouseIds": [
+        "tracy-103-31"
+      ],
+      "childIds": [
+        "wixted-104-33"
+      ]
+    },
+    {
       "id": "wixted-104-33",
       "name": "Mary Joan (Tracy) Wixted",
       "dates": "",
       "notes": [
         "07/07/61-",
         "Whittier,CA",
-        "m. Daniel Scott Wixted, Jun 28 1986"
+        "m. Daniel Scott Wixted, Jun 28 1986",
+        "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy"
       ],
       "col": 33,
       "row": 104,
-      "branch": "wixted",
+      "branch": "tracy",
       "generation": 8,
+      "parentId": "tracy-103-31",
+      "motherId": "tracy-103-33",
       "recordType": "person",
       "categorizedNotes": [
         {
@@ -2643,11 +2714,15 @@
           "text": "Whittier,CA"
         },
         {
+          "category": "marriage",
+          "text": "m. Daniel Scott Wixted, Jun 28 1986"
+        },
+        {
           "category": "general",
-          "text": "Age today is 65.0"
+          "text": "Daughter of John \"Jack\" Tracy and Katie (Martin) Tracy"
         }
       ],
-      "searchText": "mary joan (tracy) wixted  wixted 07/07/61- whittier,ca m. daniel scott wixted, jun 28 1986 64.9 years",
+      "searchText": "mary joan (tracy) wixted tracy 07/07/61- whittier,ca m. daniel scott wixted, jun 28 1986 daughter of john \"jack\" tracy and katie (martin) tracy 64.9 years",
       "birthDate": "1961-07-07",
       "spouseIds": [
         "wixted-104-31"
@@ -16427,6 +16502,21 @@
     }
   },
   "stories": [
+    {
+      "id": "story-tracy-line",
+      "title": "The Tracy Line — Jack & Katie Martin",
+      "body": "Mary Joan (Tracy) Wixted was born July 7, 1961 in Whittier, California. She is the daughter of John \"Jack\" Tracy and Katie (Martin) Tracy. Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name lives on in the family through granddaughter Sedona Tracy Wixted.",
+      "personIds": [
+        "wixted-104-33",
+        "tracy-103-31",
+        "tracy-103-33",
+        "wixted-104-31",
+        "wixted-121-31"
+      ],
+      "branch": "tracy",
+      "tags": ["family-history", "ancestry"],
+      "source": "family-update"
+    },
     {
       "id": "story-sacred-heart-hainesport",
       "title": "Sacred Heart Cemetery — Hainesport, NJ Wixteds",
