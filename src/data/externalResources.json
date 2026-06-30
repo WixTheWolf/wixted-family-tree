@@ -3,7 +3,7 @@
     "researched": "2026-06-30",
     "summary": "Public genealogy, cemetery, library, and social media resources verified against the Wixted family workbook.",
     "stats": {
-      "resources": 40,
+      "resources": 41,
       "documentAssets": 14,
       "verifiedBurials": 8,
       "personLinks": 12
@@ -54,6 +54,20 @@
     }
   ],
   "resources": [
+    {
+      "id": "res-la-county-assessor",
+      "title": "LA County Assessor — Property Records",
+      "desc": "Search ownership history for Rowland Heights properties (e.g. Anne & Eduardo Davalos, 18984 Barroso St).",
+      "url": "https://portal.assessor.lacounty.gov/",
+      "category": "genealogy",
+      "tags": [
+        "Rowland Heights",
+        "Davalos",
+        "Tracy",
+        "property"
+      ],
+      "verified": true
+    },
     {
       "id": "res-st-elizabeth-seton-rh",
       "title": "St. Elizabeth Ann Seton Catholic Church — Rowland Heights",
@@ -878,9 +892,19 @@
         "label": "Whittier Area Genealogical Society",
         "url": "https://wagswhittier.org/",
         "type": "research"
+      },
+      {
+        "label": "Whittier Area Genealogical Society",
+        "url": "https://wagswhittier.org/",
+        "type": "research"
       }
     ],
     "wixted-104-33": [
+      {
+        "label": "LA County marriage records (1986)",
+        "url": "https://apps.lavote.net/BDM",
+        "type": "research"
+      },
       {
         "label": "LA County marriage records (1986)",
         "url": "https://apps.lavote.net/BDM",
@@ -892,6 +916,11 @@
         "label": "Joan Jeisi obituary (lists niece Anne Davalos)",
         "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
         "type": "obituary"
+      },
+      {
+        "label": "18984 Barroso St property record (Rowland Heights)",
+        "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+        "type": "research"
       }
     ],
     "tracy-104-21": [
@@ -899,6 +928,13 @@
         "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
         "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
         "type": "obituary"
+      }
+    ],
+    "tracy-104-29": [
+      {
+        "label": "Rowland Heights property — 18984 Barroso St",
+        "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+        "type": "research"
       }
     ]
   },

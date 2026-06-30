@@ -21,6 +21,7 @@ JOAN = "tracy-103-29"
 BRIAN = "tracy-104-21"
 JOHN = "tracy-104-25"
 ANNE = "tracy-104-27"
+EDUARDO = "tracy-104-29"
 CHILDREN = [BRIAN, JOHN, ANNE, MARY]
 SIBLING_IDS = CHILDREN
 
@@ -46,7 +47,8 @@ def apply_tracy_family(data: dict) -> dict:
             "notes": [
                 "New Jersey origins (per daughter Joan's obituary)",
                 "Married Cecelia (McDonough) Tracy",
-                "Research: likely grandfather of Mary Joan (Tracy) Wixted",
+                "Confirmed father of Joan Marie (Tracy) Jeisi (1924 obituary, 2014 death)",
+                "Research: likely also father of John \"Jack\" Tracy",
             ],
             "col": 29,
             "row": 102,
@@ -64,7 +66,8 @@ def apply_tracy_family(data: dict) -> dict:
             "notes": [
                 "Maiden name: McDonough",
                 "New Jersey origins (per daughter Joan's obituary)",
-                "Research: likely grandmother of Mary Joan (Tracy) Wixted",
+                "Confirmed mother of Joan Marie (Tracy) Jeisi",
+                "Research: likely also mother of John \"Jack\" Tracy",
             ],
             "col": 31,
             "row": 102,
@@ -94,6 +97,7 @@ def apply_tracy_family(data: dict) -> dict:
             "motherId": CECELIA,
             "recordType": "person",
             "birthDate": "1924-10-28",
+            "deathDate": "2014-04-08",
             "searchText": "joan marie (tracy) jeisi 10/28/1924–04/08/2014 tracy rowland heights white emerson whittier",
         },
         {
@@ -138,13 +142,15 @@ def apply_tracy_family(data: dict) -> dict:
         },
         {
             "id": ANNE,
-            "name": "Anne (Tracy) Davalos",
+            "name": "Anne E (Tracy) Davalos",
             "dates": "",
             "notes": [
                 "Third sibling — Brian, John, Anne, Mary Joan",
                 "Married name: Davalos",
-                "Rowland Heights, CA (18984 Barroso St — public records)",
+                "Rowland Heights, CA — 18984 Barroso St (public property records)",
                 "Research: b. ~May 1960, Los Angeles Co. (public records, unverified)",
+                "Spouse: Eduardo E Davalos (same address, property records)",
+                "Property co-owned May 2004 (BlockShopper / LA County assessor)",
                 "Niece of Joan Marie (Tracy) Jeisi (2014 obituary)",
             ],
             "col": 27,
@@ -154,8 +160,27 @@ def apply_tracy_family(data: dict) -> dict:
             "parentId": JACK,
             "motherId": KATIE,
             "recordType": "person",
+            "spouseIds": [EDUARDO],
             "siblingIds": [BRIAN, JOHN, MARY],
-            "searchText": "anne (tracy) davalos tracy rowland heights sibling mary joan whittier barroso",
+            "searchText": "anne e (tracy) davalos tracy rowland heights barroso eduardo sibling mary joan",
+        },
+        {
+            "id": EDUARDO,
+            "name": "Eduardo E Davalos",
+            "dates": "",
+            "notes": [
+                "Husband of Anne E (Tracy) Davalos (research)",
+                "Rowland Heights, CA — 18984 Barroso St",
+                "Co-owner with Anne E Davalos since May 2004 (public property records)",
+                "Whittier/Rowland Heights Tracy family connection via marriage",
+            ],
+            "col": 29,
+            "row": 104,
+            "branch": "tracy",
+            "generation": 8,
+            "recordType": "person",
+            "spouseIds": [ANNE],
+            "searchText": "eduardo e davalos tracy anne rowland heights barroso 91748",
         },
     ]
 
@@ -167,10 +192,11 @@ def apply_tracy_family(data: dict) -> dict:
     jack["motherId"] = CECELIA
     jack["siblingIds"] = [JOAN]
     jack["notes"] = [
-        "Whittier, CA area",
+        "Whittier / Rowland Heights, CA area",
         "Also known as John \"Jack\" Tracy",
-        "Son of Walter & Cecelia (McDonough) Tracy (research via Joan Jeisi obituary)",
+        "Son of Walter & Cecelia (McDonough) Tracy (inferred via sister Joan Jeisi obituary)",
         "Father of Brian, John, Anne, and Mary Joan Tracy",
+        "Family services: White Emerson Mortuary (Whittier) & Rowland Heights parishes",
     ]
     jack["childIds"] = CHILDREN
     jack["searchText"] = (
@@ -206,7 +232,7 @@ def apply_tracy_family(data: dict) -> dict:
 
     for bid in data["branches"]:
         if bid["id"] == "tracy":
-            bid["count"] = 9
+            bid["count"] = 10
             bid["desc"] = (
                 "Mary Joan Tracy line — Walter & Cecelia to Jack, Katie Martin, and four children"
             )
@@ -228,11 +254,12 @@ def apply_tracy_family(data: dict) -> dict:
             "Research links the Tracy line to Walter Tracy and Cecelia (McDonough) Tracy of New Jersey "
             "through Joan Marie (Tracy) Jeisi (1924–2014), Jack's sister — her 2014 obituary names "
             "nieces Anne Davalos and Mary Wixted and nephew Bryan/Brian Tracy. "
-            "Anne Davalos is associated with Rowland Heights, CA in public records (~b. May 1960). "
+            "Anne E (Tracy) Davalos is associated with Rowland Heights, CA in public records (~b. May 1960), "
+            "married to Eduardo E Davalos — co-owners of 18984 Barroso St since May 2004. "
             "Mary Joan married Daniel Scott Wixted on June 28, 1986. The Tracy name continues through "
             "granddaughter Sedona Tracy Wixted."
         ),
-        "personIds": [MARY, JACK, KATIE, BRIAN, JOHN, ANNE, JOAN, WALTER, CECELIA, "wixted-121-31"],
+        "personIds": [MARY, JACK, KATIE, BRIAN, JOHN, ANNE, EDUARDO, JOAN, WALTER, CECELIA, "wixted-121-31"],
         "branch": "tracy",
         "tags": ["family-history", "ancestry", "research"],
         "source": "family-update",
@@ -259,19 +286,40 @@ def apply_tracy_family(data: dict) -> dict:
         "id": "story-tracy-siblings-research",
         "title": "Tracy Siblings — Research Notes",
         "body": (
-            "Family order (oldest to youngest): Brian Tracy, John Tracy, Anne (Tracy) Davalos, "
+            "Family order (oldest to youngest): Brian Tracy, John Tracy, Anne E (Tracy) Davalos, "
             "Mary Joan (Tracy) Wixted. Confirmed by family and corroborated by Joan Jeisi's 2014 obituary "
             "(nephew Bryan Tracy; nieces Anne Davalos and Mary Wixted). Brian is also spelled Bryan in "
-            "that obituary. Anne is linked to Rowland Heights, CA (18984 Barroso St) in public records; "
-            "approximate birth May 1960, Los Angeles County. Mary Joan's birth (7 Jul 1961, Whittier) and "
-            "marriage to Daniel Wixted (28 Jun 1986) are documented in the family workbook. "
+            "that obituary. Anne is linked to Rowland Heights, CA (18984 Barroso St) with husband "
+            "Eduardo E Davalos per public property records; approximate birth May 1960, Los Angeles County. "
+            "Mary Joan's birth (7 Jul 1961, Whittier) and marriage to Daniel Wixted (28 Jun 1986) are "
+            "documented in the family workbook. Walter & Cecelia (McDonough) Tracy are confirmed as "
+            "Joan Jeisi's parents (NJ, 1924); Jack Tracy is inferred as Joan's brother. "
             "Birth dates for Brian and John remain unverified — LA County Registrar or WAGS Whittier "
             "vital index may hold records."
         ),
-        "personIds": [BRIAN, JOHN, ANNE, MARY, JACK, KATIE],
+        "personIds": [BRIAN, JOHN, ANNE, EDUARDO, MARY, JACK, KATIE, WALTER, CECELIA, JOAN],
         "branch": "tracy",
         "tags": ["research", "family-history"],
         "source": "research",
+    }
+
+    by_id["story-anne-eduardo-davalos"] = {
+        "id": "story-anne-eduardo-davalos",
+        "title": "Anne & Eduardo Davalos — Rowland Heights",
+        "body": (
+            "Anne E (Tracy) Davalos, third of the Tracy siblings, appears in Joan Marie (Tracy) Jeisi's "
+            "2014 obituary as a surviving niece alongside Mary Wixted. Public records associate Anne with "
+            "Rowland Heights, California (~b. May 1960, Los Angeles County) and list Eduardo E Davalos as "
+            "her spouse at 18984 Barroso St, Rowland Heights, CA 91748. Property records show Anne and "
+            "Eduardo as co-owners of the Barroso Street residence since May 2004. This places the Davalos "
+            "branch in the same Whittier–Rowland Heights corridor where Joan Jeisi's funeral was held "
+            "(White Emerson Mortuary, Whittier; St. Elizabeth Ann Seton Church and Queen of Heaven Cemetery, "
+            "Rowland Heights)."
+        ),
+        "personIds": [ANNE, EDUARDO, JOAN, JACK, KATIE, MARY],
+        "branch": "tracy",
+        "tags": ["research", "family-history", "public-records"],
+        "source": "public-records",
     }
 
     data["stories"] = list(by_id.values())
@@ -335,6 +383,15 @@ def apply_tracy_external(ext: dict) -> dict:
             "tags": ["Tracy", "Rowland Heights", "Jeisi"],
             "verified": True,
         },
+        {
+            "id": "res-la-county-assessor",
+            "title": "LA County Assessor — Property Records",
+            "desc": "Search ownership history for Rowland Heights properties (e.g. Anne & Eduardo Davalos, 18984 Barroso St).",
+            "url": "https://portal.assessor.lacounty.gov/",
+            "category": "genealogy",
+            "tags": ["Rowland Heights", "Davalos", "Tracy", "property"],
+            "verified": True,
+        },
     ]
     existing = {r["id"] for r in ext["resources"]}
     for r in new_res:
@@ -358,10 +415,22 @@ def apply_tracy_external(ext: dict) -> dict:
         "url": "https://apps.lavote.net/BDM",
         "type": "research",
     }]
-    links[ANNE] = [{
-        "label": "Joan Jeisi obituary (lists niece Anne Davalos)",
-        "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
-        "type": "obituary",
+    links[ANNE] = [
+        {
+            "label": "Joan Jeisi obituary (lists niece Anne Davalos)",
+            "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
+            "type": "obituary",
+        },
+        {
+            "label": "18984 Barroso St property record (Rowland Heights)",
+            "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+            "type": "research",
+        },
+    ]
+    links[EDUARDO] = [{
+        "label": "Rowland Heights property — 18984 Barroso St",
+        "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+        "type": "research",
     }]
     links[BRIAN] = [{
         "label": "Joan Jeisi obituary (lists nephew Bryan Tracy)",
@@ -381,6 +450,18 @@ def apply_tracy_assets(assets: dict) -> dict:
             "type": "obituary",
             "url": "https://www.whiteemerson.com/obituaries/joan-marie-jeisi",
             "caption": "Confirms Tracy siblings — nieces Anne Davalos & Mary Wixted, nephew Bryan Tracy",
+            "addedAt": date.today().isoformat(),
+            "source": "site",
+        })
+    gid2 = "seed-davalos-rowland-heights"
+    if gid2 not in {g["id"] for g in assets["gallery"]}:
+        assets["gallery"].append({
+            "id": gid2,
+            "personId": ANNE,
+            "title": "Anne & Eduardo Davalos — Rowland Heights Property",
+            "type": "research",
+            "url": "https://blockshopper.com/ca/los-angeles-county/rowland-heights-cdp/property/8272029028/18984-barroso-street",
+            "caption": "18984 Barroso St — Anne E & Eduardo E Davalos, co-owners since May 2004",
             "addedAt": date.today().isoformat(),
             "source": "site",
         })
