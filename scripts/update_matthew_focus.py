@@ -12,6 +12,7 @@ ASSETS = Path(__file__).parent.parent / "public" / "assets" / "manifest.json"
 TODAY = date.today()
 
 MATTHEW_ID = "wixted-114-29"
+CHRISTINE_ID = "wixted-114-27"
 DANIEL_ID = "wixted-104-31"
 MARY_JOAN_ID = "wixted-104-33"
 RYAN_ID = "wixted-114-31"
@@ -100,7 +101,31 @@ def main():
     matthew["notes"] = list(dict.fromkeys(matthew["notes"]))
     matthew["parentId"] = DANIEL_ID
     matthew["motherId"] = MARY_JOAN_ID
+    matthew["spouseIds"] = [CHRISTINE_ID]
     matthew["isFocus"] = True
+    if not any("Christine" in n for n in matthew["notes"]):
+        matthew["notes"].append("m. Christine Kimberly (Cumming) Wixted")
+
+    # ── Christine (spouse) ──
+    christine = by_id.get(CHRISTINE_ID)
+    if not christine:
+        christine = {
+            "id": CHRISTINE_ID,
+            "name": "Christine Kimberly (Cumming) Wixted",
+            "dates": "",
+            "notes": ["Maiden name: Cumming"],
+            "col": 27,
+            "row": 114,
+            "branch": "wixted",
+            "generation": 10,
+            "recordType": "person",
+            "categorizedNotes": [{"category": "general", "text": "Maiden name: Cumming"}],
+            "searchText": "christine kimberly (cumming) wixted wixted maiden name: cumming",
+        }
+        people.append(christine)
+        by_id[CHRISTINE_ID] = christine
+    christine["name"] = "Christine Kimberly (Cumming) Wixted"
+    christine["spouseIds"] = [MATTHEW_ID]
 
     # ── Daniel & Mary Joan (parents) ──
     daniel = by_id[DANIEL_ID]

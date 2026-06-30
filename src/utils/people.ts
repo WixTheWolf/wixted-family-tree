@@ -59,6 +59,9 @@ export function getInnerCircle(rootId: string, allPeople: Person[]): Person[] {
   collect(root.parentId);
   collect(root.motherId);
 
+  for (const id of root.spouseIds ?? []) collect(id);
+  for (const id of root.exSpouseIds ?? []) collect(id);
+
   for (const p of allPeople) {
     if (p.parentId === root.parentId && p.id !== root.id && root.parentId) ids.add(p.id);
   }

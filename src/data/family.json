@@ -5,7 +5,7 @@
     "updated": "2026-06-30",
     "focus": "Matthew Scott Wixted",
     "enriched": true,
-    "personCount": 620,
+    "personCount": 621,
     "storyCount": 15,
     "rootPersonId": "wixted-114-29",
     "focusLine": [
@@ -2999,13 +2999,37 @@
       "age": "48.6 years"
     },
     {
+      "id": "wixted-114-27",
+      "name": "Christine Kimberly (Cumming) Wixted",
+      "dates": "",
+      "notes": [
+        "Maiden name: Cumming"
+      ],
+      "col": 27,
+      "row": 114,
+      "branch": "wixted",
+      "generation": 10,
+      "recordType": "person",
+      "categorizedNotes": [
+        {
+          "category": "general",
+          "text": "Maiden name: Cumming"
+        }
+      ],
+      "searchText": "christine kimberly (cumming) wixted wixted maiden name: cumming",
+      "spouseIds": [
+        "wixted-114-29"
+      ]
+    },
+    {
       "id": "wixted-114-29",
       "name": "Matthew Scott Wixted",
       "dates": "10/10/1987–",
       "notes": [
         "10/10/87-",
         "Whittier,CA",
-        "Whittier, CA"
+        "Whittier, CA",
+        "m. Christine Kimberly (Cumming) Wixted"
       ],
       "col": 29,
       "row": 114,
@@ -3027,9 +3051,12 @@
           "text": "Age today is 38.7"
         }
       ],
-      "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca 38.7 years",
+      "searchText": "matthew scott wixted 10/10/1987– wixted 10/10/87- whittier,ca whittier, ca m. christine kimberly (cumming) wixted 38.7 years",
       "birthDate": "1987-10-10",
       "motherId": "wixted-104-33",
+      "spouseIds": [
+        "wixted-114-27"
+      ],
       "isFocus": true,
       "age": "38.7 years"
     },
