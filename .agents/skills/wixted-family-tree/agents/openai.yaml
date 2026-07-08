@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wixted Family Tree"
+  short_description: "Repo-specific patterns and workflows for wixted-family-tree"
+  default_prompt: "Use the wixted-family-tree repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
