@@ -21,6 +21,14 @@ npm install
 npm run dev
 ```
 
+## Video
+
+A Remotion video of the family tree lives in [`video/`](video/README.md):
+
+```bash
+cd video && npm install && npm run dev
+```
+
 ## Build
 
 ```bash
