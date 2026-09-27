@@ -1,0 +1,1931 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TheraBreath Flavor Playbook</title>
+<meta name="description" content="Expand what fresh can feel like. An innovation workshop by The Flavor Factory for TheraBreath, Princeton NJ, November 9, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,200..700,0..100;1,9..144,200..700,0..100&family=Hanken+Grotesk:wght@300..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ==========================================================================
+   TheraBreath Flavor Playbook — master design language
+   One continuous "rinse": a live fluid field sits behind every scene and
+   changes temperature/colour as the story moves between worlds.
+   ========================================================================== */
+:root{
+  color-scheme: light;
+  --ink:#0A1A2F;            /* deep navy ink, text on light worlds          */
+  --paper:#F2F7F9;          /* cool paper, never cream                      */
+  --thera:#1D4E9E;          /* TheraBreath blue (swap for official spec)    */
+  --thera-deep:#0B2A5E;
+  --thera-sky:#8DB8F0;
+  --frost:#EAF2F6;          /* text on dark worlds                          */
+  --coral:#E8745E;          /* caution only: overreach / novelty            */
+
+  --fg:var(--ink);
+  --fg-soft:rgba(10,26,47,.64);
+  --fg-faint:rgba(10,26,47,.38);
+  --line:rgba(10,26,47,.14);
+  --glass:rgba(255,255,255,.52);
+  --glass-edge:rgba(255,255,255,.7);
+  --brand:var(--thera);
+
+  --f-display:"Fraunces", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --gut:clamp(16px, 4.4vw, 72px);
+  --s1:8px; --s2:16px; --s3:24px; --s4:40px; --s5:64px; --s6:104px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --ease-io:cubic-bezier(.65,0,.35,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--fg);
+  font-family:var(--f-body); font-size:clamp(16px, 1.05vw + 6px, 19px); line-height:1.55;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img,svg,canvas{max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--thera-sky);outline-offset:3px;border-radius:4px}
+[hidden]{display:none!important}
+
+/* ---------- the living field ---------- */
+#fluid{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;pointer-events:none;
+  background:linear-gradient(160deg,#F3F8FA,#D6E8EF 55%,#A9CFE0)}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.35;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+/* ---------- type ---------- */
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-soft);font-weight:500;display:flex;gap:12px;align-items:center}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+.d{font-family:var(--f-display);font-weight:300;letter-spacing:-.025em;line-height:.98;margin:0;text-wrap:balance;
+  font-variation-settings:"opsz" 144, "SOFT" 50}
+.d em{font-style:italic;font-variation-settings:"opsz" 144, "SOFT" 100}
+.d-xxl{font-size:clamp(52px, 9.6vw, 184px)}
+.d-xl{font-size:clamp(44px, 6.6vw, 124px)}
+.d-l{font-size:clamp(36px, 4.6vw, 84px)}
+.d-m{font-size:clamp(28px, 2.9vw, 50px);line-height:1.05}
+.d-s{font-size:clamp(22px, 1.9vw, 32px);line-height:1.12;letter-spacing:-.015em}
+.lede{font-size:clamp(18px, 1.35vw + 6px, 26px);line-height:1.42;color:var(--fg-soft);max-width:34ch;margin:0;text-wrap:pretty;font-weight:350}
+.body{max-width:58ch;color:var(--fg-soft);margin:0}
+.small{font-size:14px;line-height:1.5;color:var(--fg-soft)}
+
+/* ---------- scenes ---------- */
+.scene{position:relative;z-index:2;min-height:100vh;padding-block:clamp(96px, 13vh, 150px);padding-inline:var(--gut)}
+[data-tone="dark"]{--fg:var(--frost);--fg-soft:rgba(234,242,246,.7);--fg-faint:rgba(234,242,246,.4);--line:rgba(234,242,246,.18);
+  --glass:rgba(6,16,30,.42);--glass-edge:rgba(234,242,246,.16);--brand:var(--thera-sky);color:var(--fg)}
+[data-tone="light"]{--fg:var(--ink);--fg-soft:rgba(10,26,47,.64);--fg-faint:rgba(10,26,47,.38);--line:rgba(10,26,47,.14);
+  --glass:rgba(255,255,255,.52);--glass-edge:rgba(255,255,255,.72);--brand:var(--thera);color:var(--fg)}
+.wrap{max-width:1440px;margin-inline:auto;width:100%}
+.stack{display:flex;flex-direction:column;gap:var(--s3)}
+.pane{background:var(--glass);border:1px solid var(--glass-edge);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border-radius:22px}
+
+/* reveal: only hidden once JS has confirmed it can reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.08s}.js .rv.d2{transition-delay:.16s}.js .rv.d3{transition-delay:.24s}.js .rv.d4{transition-delay:.32s}
+
+/* ---------- chrome: nav + rail ---------- */
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:calc(env(safe-area-inset-top,0px) + 18px) var(--gut) 18px;color:var(--ink);transition:color .6s var(--ease);pointer-events:none}
+.nav > *{pointer-events:auto}
+body[data-tone="dark"] .nav{color:var(--frost)}
+.lockup{display:flex;align-items:baseline;gap:12px;white-space:nowrap}
+.lockup .tb{font-family:var(--f-body);font-weight:750;letter-spacing:-.02em;font-size:19px}
+.lockup .tb b{font-weight:400}
+.lockup .x{font-family:var(--f-display);font-weight:300;opacity:.5}
+.lockup .ff{font-family:var(--f-display);font-style:italic;font-size:17px;font-variation-settings:"opsz" 24,"SOFT" 100}
+.nav-r{display:flex;align-items:center;gap:18px}
+.chapter{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;min-width:12ch;text-align:right}
+.chip-btn{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:8px 12px;border:1px solid currentColor;border-radius:99px;opacity:.8;transition:opacity .3s}
+.chip-btn:hover{opacity:1}
+.rail{position:fixed;z-index:50;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:18px;color:var(--ink);transition:color .6s var(--ease)}
+body[data-tone="dark"] .rail{color:var(--frost)}
+.rail .ph{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
+.rail .ph-l{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.2em;opacity:0;transition:opacity .4s}
+.rail:hover .ph-l{opacity:.45}
+.rail .ph.on .ph-l{opacity:.95}
+.rail a{color:inherit;display:block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.22;transition:all .4s var(--ease);position:relative}
+.rail a.on{opacity:1;transform:scale(1.5)}
+.rail a span{position:absolute;right:16px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:0;pointer-events:none;transition:opacity .3s}
+.rail a:hover span{opacity:1}
+.keys{transition:opacity .6s;position:fixed;z-index:50;left:var(--gut);bottom:calc(env(safe-area-inset-bottom,0px) + 16px);font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.45;color:var(--ink)}
+body[data-tone="dark"] .keys{color:var(--frost)}
+.progress{position:fixed;z-index:51;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--thera-sky),#E6F04A,#86B394)}
+
+/* ======================= 01 OPENING ======================= */
+.open{display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vh,48px);overflow:hidden}
+.breath{position:absolute;left:50%;top:46%;width:min(78vw,900px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.65),rgba(255,255,255,0) 62%);animation:breathe 10s var(--ease-io) infinite}
+.breath::before,.breath::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(29,78,158,.18)}
+.breath::after{inset:12%;border-color:rgba(29,78,158,.1)}
+@keyframes breathe{0%,100%{transform:translate(-50%,-50%) scale(.86);opacity:.75}40%{transform:translate(-50%,-50%) scale(1.06);opacity:1}}
+.open h1{position:relative}
+.fresh{font-style:italic;display:inline-block;padding-right:.08em;
+  background:linear-gradient(100deg,#1D4E9E 0%,#5FB6D9 22%,#B7D94A 42%,#6FAE8A 60%,#1D4E9E 80%,#5FB6D9 100%);background-size:250% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:freshflow 14s linear infinite, freshsoft 10s var(--ease-io) infinite}
+@keyframes freshflow{to{background-position:-250% 0}}
+@keyframes freshsoft{0%,100%{font-variation-settings:"opsz" 144,"SOFT" 0,"wght" 300}40%{font-variation-settings:"opsz" 144,"SOFT" 100,"wght" 420}}
+.open-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.open-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+.tune{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft);display:flex;gap:10px;align-items:center;min-height:1.5em}
+.tune b{font-weight:500;color:var(--fg);transition:opacity .5s}
+.agenda{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);margin-top:8px}
+.agenda div{padding:14px 16px 0 0;display:flex;flex-direction:column;gap:4px}
+.agenda .mono{color:var(--fg)}
+.agenda small{font-size:13px;color:var(--fg-soft)}
+.agenda .t{font-family:var(--f-mono);font-size:11px;color:var(--fg-faint);letter-spacing:.08em}
+.cue{display:flex;align-items:center;gap:12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-soft)}
+.cue i{width:1px;height:44px;background:linear-gradient(var(--fg-soft),transparent);display:block;animation:cue 2.6s var(--ease-io) infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* ======================= 02 OPPORTUNITY (sticky scrolly) ======================= */
+.opp{padding:0;min-height:0;height:300vh}
+.sticky{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:40px;padding-inline:var(--gut);overflow:hidden}
+.opp-steps{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:0;max-width:520px}
+.opp-steps li{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:16px 0;border-top:1px solid var(--line);opacity:.35;transition:opacity .6s var(--ease)}
+.opp-steps li.on{opacity:1}
+.opp-steps .mono{padding-top:5px;color:var(--brand)}
+.opp-steps h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:clamp(22px,1.8vw,30px);letter-spacing:-.015em}
+.opp-steps p{margin:4px 0 0;font-size:15px;color:var(--fg-soft)}
+.orbit{position:relative;width:min(44vw,640px);aspect-ratio:1;justify-self:center}
+.orbit .ring{position:absolute;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) scale(.6);opacity:0;transition:transform 1.2s var(--ease),opacity 1.2s var(--ease)}
+.orbit .ring.on{transform:translate(-50%,-50%) scale(1);opacity:1}
+.orbit .r1{width:44%;height:44%;background:radial-gradient(circle,rgba(29,78,158,.16),rgba(29,78,158,.05) 70%);border:1.5px solid rgba(29,78,158,.55)}
+.orbit .r2{width:70%;height:70%;border:1px solid rgba(29,78,158,.32);background:radial-gradient(circle,transparent 60%,rgba(183,217,74,.12))}
+.orbit .r3{width:96%;height:96%;border:1px dashed rgba(29,78,158,.3)}
+.orbit .rl{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--thera);background:rgba(242,247,249,.85);padding:3px 8px;border-radius:99px;white-space:nowrap}
+.orbit .r1 .rl{bottom:-12px}.orbit .r2 .rl{bottom:-12px}.orbit .r3 .rl{bottom:-12px}
+.orbit .bottle-wrap{position:absolute;left:50%;top:50%;width:17%;transform:translate(-50%,-52%);filter:drop-shadow(0 30px 30px rgba(11,42,94,.22))}
+.verb{position:absolute;font-family:var(--f-display);font-style:italic;font-size:clamp(16px,1.5vw,24px);color:var(--thera-deep);transform:translate(-50%,-50%) scale(.8);opacity:0;transition:all .9s var(--ease);font-variation-settings:"opsz" 36,"SOFT" 100;white-space:nowrap}
+.verb.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.verb::before{content:"";position:absolute;left:50%;top:-12px;width:5px;height:5px;border-radius:50%;background:#B7D94A;transform:translateX(-50%)}
+
+/* ======================= 03 SIGNALS ======================= */
+.sig-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:clamp(40px,6vh,72px)}
+.signals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.sig{position:relative;padding:22px 22px 26px;display:flex;flex-direction:column;gap:12px;min-height:440px;transition:transform .6s var(--ease)}
+.sig:hover{transform:translateY(-6px)}
+.sig .vis{height:170px;border-radius:14px;position:relative;overflow:hidden;margin-bottom:8px}
+.sig .word{font-family:var(--f-display);font-size:clamp(34px,3vw,52px);font-weight:300;letter-spacing:-.03em;line-height:1}
+.sig h3{margin:0;font-size:15px;font-weight:650;letter-spacing:.01em}
+.sig p{margin:0;font-size:15px;color:var(--fg-soft)}
+.sig .seen{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--fg-soft)}
+.sig .seen b{font-family:var(--f-mono);font-weight:500;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;display:block;color:var(--fg);margin-bottom:4px}
+/* signal mini-visuals */
+.v-beauty{background:linear-gradient(160deg,#F6ECEA,#E7EEF3)}
+.v-beauty i{position:absolute;left:50%;width:62%;height:26%;border-radius:40%;transform:translateX(-50%);border:1px solid rgba(255,255,255,.9);
+  background:linear-gradient(90deg,rgba(255,255,255,.75),rgba(255,255,255,.25));backdrop-filter:blur(4px);box-shadow:0 10px 24px rgba(120,90,90,.12);animation:layer 7s var(--ease-io) infinite}
+.v-beauty i:nth-child(1){top:14%;animation-delay:0s}.v-beauty i:nth-child(2){top:37%;animation-delay:-2.3s;background:linear-gradient(90deg,rgba(236,200,190,.6),rgba(255,255,255,.2))}.v-beauty i:nth-child(3){top:60%;animation-delay:-4.6s;background:linear-gradient(90deg,rgba(180,210,225,.6),rgba(255,255,255,.2))}
+@keyframes layer{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-46%) translateY(-6px)}}
+.v-flavor{background:#F3F1EC;display:grid;grid-template-columns:repeat(8,1fr);gap:5px;padding:14px}
+.v-flavor i{border-radius:50%;aspect-ratio:1;animation:pop 6s var(--ease-io) infinite}
+@keyframes pop{0%,100%{transform:scale(.72)}50%{transform:scale(1)}}
+.v-sense{background:linear-gradient(180deg,#E3F1F8,#F5FAFC)}
+.v-sense svg{position:absolute;inset:0;width:100%;height:100%}
+.v-sense path{fill:none;stroke-width:1.5;stroke-linecap:round}
+.v-well{background:linear-gradient(180deg,#F7EFE3,#EAF0F4)}
+.v-well .sun{position:absolute;left:50%;bottom:-85%;width:100%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px dashed rgba(10,26,47,.25)}
+.v-well .dot{position:absolute;left:50%;bottom:-85%;width:100%;aspect-ratio:1;transform:translateX(-50%);animation:spin 16s linear infinite}
+.v-well .dot::after{content:"";position:absolute;left:50%;top:-9px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle,#F6C66B,#F09A5A);box-shadow:0 0 30px #F6C66B;transform:translateX(-50%)}
+@keyframes spin{from{transform:translateX(-50%) rotate(-70deg)}to{transform:translateX(-50%) rotate(290deg)}}
+.shorthand{display:flex;justify-content:center;gap:clamp(14px,3vw,48px);margin-top:clamp(40px,7vh,80px);font-family:var(--f-display);font-size:clamp(24px,3vw,48px);font-weight:300;letter-spacing:-.02em;flex-wrap:wrap}
+.shorthand span:nth-child(even){opacity:.3}
+
+/* ======================= 04 MAP ======================= */
+.map-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:28px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.filt{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border-radius:99px;border:1px solid var(--line);color:var(--fg-soft);transition:all .3s}
+.filt:hover{color:var(--fg)}
+.filt.on{background:var(--fg);color:#07101E;border-color:var(--fg)}
+.map-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px;align-items:stretch}
+.map-stage{position:relative;width:100%;aspect-ratio:144/54}
+.map-stage canvas{position:absolute;inset:0;width:100%;height:100%}
+.hot{position:absolute;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;transition:opacity .4s}
+.hot::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--c,#E6F04A);box-shadow:0 0 0 4px rgba(255,255,255,.08),0 0 18px var(--c,#E6F04A);transition:transform .3s}
+.hot::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--c,#E6F04A);opacity:0;animation:ping 3s var(--ease) infinite}
+.hot:hover::before,.hot.on::before{transform:scale(1.5)}
+.hot.dim{opacity:.18}
+.hot .lab{position:absolute;left:22px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg);opacity:.0;transition:opacity .3s;pointer-events:none;text-shadow:0 1px 8px #07101E}
+.hot:hover .lab,.hot.on .lab{opacity:1}
+.hot.home::before{background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.12),0 0 22px #fff}
+.hot.home .lab{opacity:.85}
+@keyframes ping{0%{transform:scale(.5);opacity:.8}100%{transform:scale(2.2);opacity:0}}
+.map-card{padding:26px;display:flex;flex-direction:column;gap:14px;min-height:100%}
+.map-card .sw{height:120px;border-radius:14px;position:relative;overflow:hidden}
+.map-card .sw::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.45),transparent 50%)}
+.map-card h3{margin:0;font-family:var(--f-display);font-weight:300;font-size:40px;letter-spacing:-.02em;line-height:1}
+.map-card .cue-l{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg);line-height:1.6}
+.map-card .teach{font-family:var(--f-display);font-style:italic;font-size:22px;line-height:1.25;font-variation-settings:"opsz" 36,"SOFT" 100;margin:0}
+.map-card .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:99px;border:1px solid var(--line);color:var(--fg-soft);white-space:nowrap}
+.map-note{margin-top:18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* ======================= 05 ANCHOR / SPECTRUM ======================= */
+.anchor-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(40px,7vh,80px)}
+.spectrum{position:relative;padding-top:170px;user-select:none;touch-action:none}
+.spec-bar{position:relative;height:88px;border-radius:99px;overflow:hidden;
+  background:linear-gradient(90deg,#DDE9EE 0%,#CFE6DE 28%,#BFE3D1 35%,#E7F1B9 52%,#F7DCC3 66%,#F2B6A6 76%,#E8745E 100%)}
+.spec-zone{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(10,26,47,.55)}
+.spec-zone.sweet{justify-content:flex-start;padding-left:22px;left:28%;width:44%;border-left:1px solid rgba(10,26,47,.25);border-right:1px solid rgba(10,26,47,.25);background:rgba(255,255,255,.35);color:var(--ink)}
+.spec-ends{display:flex;justify-content:space-between;margin-top:14px}
+.spec-ends .d-s{font-style:italic}
+.spec-tick{position:absolute;bottom:100px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer}
+.spec-tick span{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;writing-mode:vertical-rl;transform:rotate(180deg);color:var(--fg-soft);transition:color .3s}
+.spec-tick i{width:1px;height:18px;background:var(--fg-faint)}
+.spec-tick.on span{color:var(--fg)}
+.spec-handle{position:absolute;top:170px;height:88px;width:88px;transform:translateX(-50%);display:grid;place-items:center;cursor:grab;z-index:3}
+.spec-handle:active{cursor:grabbing}
+.spec-orb{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,rgba(255,255,255,.4) 45%,rgba(255,255,255,.1));border:1px solid rgba(255,255,255,.9);box-shadow:0 14px 40px rgba(10,26,47,.22),inset 0 -8px 20px rgba(29,78,158,.18);backdrop-filter:blur(6px)}
+.spec-read{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start;margin-top:36px}
+.spec-read .d-m{min-height:2.2em}
+.formula{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:18px;align-items:center}
+.formula .f{padding:24px;text-align:left;display:flex;flex-direction:column;gap:6px;min-height:150px}
+.formula .op{font-family:var(--f-display);font-size:48px;font-weight:200;opacity:.5}
+.formula .f .d-s{font-size:clamp(20px,1.6vw,28px)}
+
+/* ======================= 06 WHITE SPACE (instrument) ======================= */
+.ws-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,80px);align-items:center}
+.ws-ctrl{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 20px}
+.ws-btn{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:99px;border:1px solid var(--line);color:var(--fg-soft);transition:all .3s}
+.ws-btn:hover{color:var(--fg)}
+.ws-btn.on{background:var(--frost);color:#0B1626;border-color:var(--frost)}
+.ws-btn.warn.on{background:var(--coral);border-color:var(--coral);color:#fff}
+.ws-read{min-height:170px;display:flex;flex-direction:column;gap:10px}
+.ws-read .d-s{min-height:2.3em}
+.instrument{width:100%;max-width:640px;justify-self:center;overflow:visible}
+.instrument text{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;fill:var(--fg-soft)}
+.instrument .big{font-family:var(--f-body);font-size:13px;letter-spacing:.02em;text-transform:none;fill:var(--fg);font-weight:600}
+
+/* ======================= 07 PLATFORMS ======================= */
+.plat-intro{display:flex;flex-direction:column;justify-content:center;gap:40px}
+.plat-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.plat-index a{padding:20px 20px 0 0;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px}
+.plat-index a:hover .d-s{font-style:italic}
+.plat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,96px);align-items:center}
+.plat .num{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--fg-soft)}
+.plat h2{margin:14px 0 18px}
+.plat .def{font-family:var(--f-display);font-weight:300;font-size:clamp(22px,2vw,34px);line-height:1.2;max-width:24ch;margin:0 0 28px;font-variation-settings:"opsz" 48,"SOFT" 80}
+.plat dl{display:grid;grid-template-columns:110px 1fr;gap:10px 18px;margin:0;max-width:520px;font-size:15px}
+.plat dt{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft);padding-top:3px}
+.plat dd{margin:0}
+.plat-vis{position:relative;width:100%;max-width:600px;aspect-ratio:1;justify-self:center}
+/* new fresh orbit */
+.nf-core{position:absolute;left:50%;top:50%;width:26%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff,#CFEFE3 45%,#7CC7AE);box-shadow:0 0 80px rgba(124,199,174,.6);display:grid;place-items:center;text-align:center}
+.nf-core span{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#0A3A2C}
+.nf-ring{position:absolute;inset:4%;border-radius:50%;border:1px solid rgba(10,26,47,.14)}
+.nf-ring.b{inset:20%}
+.nf-s{position:absolute;left:50%;top:50%;width:0;height:0}
+.nf-s b{position:absolute;display:flex;flex-direction:column;align-items:center;gap:6px;transform:translate(-50%,-50%)}
+.nf-s i{display:block;width:clamp(34px,4.4vw,60px);aspect-ratio:1;border-radius:50%;box-shadow:inset 0 -6px 14px rgba(0,0,0,.12),0 10px 26px rgba(10,26,47,.12)}
+.nf-s em{font-style:normal;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);white-space:nowrap;background:rgba(255,255,255,.7);padding:2px 6px;border-radius:99px}
+@keyframes rot{to{transform:rotate(360deg)}}
+/* sensory proof waveform */
+.wave svg{width:100%;height:100%;overflow:visible}
+.wave .ln{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.6s var(--ease)}
+.wave.in .ln{stroke-dashoffset:0}
+.wave .ln.b{transition-delay:.4s}.wave .ln.c{transition-delay:.8s}
+.wave text{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;fill:var(--fg-soft)}
+.wave .scan{animation:scan 6s linear infinite}
+@keyframes scan{from{transform:translateX(0)}to{transform:translateX(480px)}}
+/* ritual dial */
+.dial{position:absolute;inset:6%;border-radius:50%;
+  background:conic-gradient(from 180deg,#1B2240 0deg,#2B3A6E 50deg,#F2B89A 90deg,#FBE3B8 120deg,#DDEFF7 180deg,#FBE9C8 240deg,#F09A7A 275deg,#5A4C86 300deg,#1B2240 340deg);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 30px 80px rgba(60,40,80,.18)}
+.dial::after{content:"";position:absolute;inset:18%;border-radius:50%;background:rgba(248,240,232,.9);backdrop-filter:blur(8px);box-shadow:inset 0 0 0 1px rgba(10,26,47,.08)}
+.dial-center{position:absolute;inset:26%;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;color:var(--ink)}
+.dial-center .t{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em}
+.dial-center .n{font-family:var(--f-display);font-size:clamp(24px,2.4vw,40px);font-weight:300;letter-spacing:-.02em;line-height:1}
+.dial-center .f{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--thera)}
+.dial-center .l{font-size:14px;color:rgba(10,26,47,.64);max-width:22ch}
+.moment{position:absolute;z-index:3;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center}
+.moment::before{content:"";width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(10,26,47,.18);transition:all .3s}
+.moment.on::before{width:18px;height:18px;background:var(--ink);box-shadow:0 0 0 5px rgba(255,255,255,.8)}
+.moment span{position:absolute;top:calc(100% - 4px);font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;white-space:nowrap;color:var(--ink);background:rgba(255,255,255,.75);padding:1px 6px;border-radius:99px}
+/* elevated pyramid */
+.pyr svg{width:100%;height:100%;overflow:visible}
+.pyr text{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;fill:rgba(250,236,220,.7)}
+.pyr .pn{font-family:var(--f-display);font-size:21px;letter-spacing:-.01em;text-transform:none;fill:#FAECDC;font-weight:300}
+
+/* ======================= 08 CONCEPTS ======================= */
+.six{display:flex;flex-direction:column;justify-content:center;gap:48px}
+.six-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.6vw,24px)}
+.six-row a{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:inherit}
+.six-row .lensmini{aspect-ratio:1;border-radius:50%;overflow:hidden;position:relative;box-shadow:0 20px 50px rgba(10,26,47,.14);transition:transform .6s var(--ease)}
+.six-row a:hover .lensmini{transform:translateY(-8px) scale(1.03)}
+.six-row .nm{font-family:var(--f-display);font-size:clamp(16px,1.35vw,22px);line-height:1.1;letter-spacing:-.01em}
+.six-row .mono{font-size:10px;color:var(--fg-soft)}
+.six-rule{display:flex;align-items:center;gap:20px;font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-soft)}
+.six-rule i{flex:1;height:1px;background:var(--line)}
+.concept{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,5vw,96px);align-items:center}
+.lens{position:relative;width:100%;max-width:680px;aspect-ratio:1;justify-self:center}
+.lens canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;box-shadow:0 40px 120px rgba(10,26,47,.25)}
+.lens::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4),inset 0 30px 60px rgba(255,255,255,.18)}
+.lens .bottle-wrap{position:absolute;right:-2%;bottom:-4%;width:22%;z-index:2;filter:drop-shadow(0 24px 30px rgba(0,0,0,.28))}
+.c-meta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.status{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;padding:6px 11px;border-radius:99px;border:1px solid var(--line);display:inline-flex;gap:8px;align-items:center}
+.status::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.concept h2{margin:18px 0 14px}
+.kw{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft);line-height:1.8}
+.feels{font-family:var(--f-display);font-style:italic;font-weight:300;font-size:clamp(22px,2vw,32px);line-height:1.22;margin:24px 0 28px;max-width:26ch;font-variation-settings:"opsz" 48,"SOFT" 100}
+.arc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-bottom:26px;position:relative}
+.arc::before{content:"";position:absolute;left:0;right:0;top:5px;height:1px;background:linear-gradient(90deg,var(--fg-faint),var(--fg-soft),var(--fg-faint))}
+.arc div{padding:22px 16px 0 0;position:relative;font-size:14.5px;line-height:1.4}
+.arc div::before{content:"";position:absolute;left:0;top:0;width:11px;height:11px;border-radius:50%;background:var(--acc,#fff);box-shadow:0 0 14px var(--acc,#fff)}
+.arc b{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--fg-soft);margin-bottom:5px}
+.c-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;border-top:1px solid var(--line);padding-top:20px}
+.c-foot h4{margin:0 0 6px;font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--fg-soft)}
+.c-foot p{margin:0;font-size:14px;line-height:1.5}
+.c-foot .tags{display:flex;gap:6px;flex-wrap:wrap}
+.wild{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:40px;align-items:start}
+.wild-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.wild-card{padding:22px;display:flex;flex-direction:column;gap:10px}
+.wild-card .sw{height:84px;border-radius:12px}
+.wild-card h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:26px;letter-spacing:-.015em}
+
+.concept.rev > .lens{order:2}
+@media (max-width:860px){.concept.rev > .lens{order:0}}
+
+/* ======================= 09 TASTING ======================= */
+.taste-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:40px}
+.timeline{position:relative;display:grid;grid-template-columns:1fr 1.5fr 1.5fr 1fr;gap:0;margin-bottom:18px}
+.tl{position:relative;padding:18px 18px 18px 0;border-top:2px solid var(--line);transition:border-color .4s}
+.tl.on{border-color:var(--thera)}
+.tl .mono{color:var(--thera)}
+.tl h3{margin:8px 0 4px;font-family:var(--f-display);font-weight:400;font-size:clamp(22px,1.9vw,32px);letter-spacing:-.015em}
+.tl p{margin:0;font-size:14px;color:var(--fg-soft)}
+.tl-head{position:absolute;top:-7px;left:0;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--thera);box-shadow:0 0 0 5px rgba(29,78,158,.18);transition:left .25s linear;opacity:0}
+.tl-head.run{opacity:1}
+.timer{display:flex;gap:16px;align-items:center;margin-bottom:40px;flex-wrap:wrap}
+.timer .clock{font-family:var(--f-mono);font-size:28px;letter-spacing:.04em;font-variant-numeric:tabular-nums;min-width:4.2ch}
+.btn{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding:12px 18px;border-radius:99px;background:var(--fg);color:var(--paper);transition:transform .3s var(--ease),opacity .3s}
+[data-tone="dark"] .btn{color:#0A1A2F}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.score-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;align-items:start}
+.scorecard{padding:26px}
+.samples{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px}
+.sample{padding:10px 14px;border-radius:12px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:92px;transition:all .3s;text-align:left}
+.sample .code{font-family:var(--f-mono);font-size:18px;letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.sample .sn{font-size:11.5px;color:var(--fg-soft);white-space:nowrap}
+.sample.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.sample.on .sn{color:rgba(242,247,249,.7)}
+.sample .done{font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;color:var(--thera)}
+.sample.on .done{color:#B7D94A}
+.dims{display:flex;flex-direction:column}
+.dim{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.dim label{font-size:15px}
+.dim label small{display:block;font-size:12px;color:var(--fg-soft)}
+.dots{display:flex;gap:6px}
+.dots button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);font-family:var(--f-mono);font-size:12px;color:var(--fg-soft);transition:all .25s}
+.dots button:hover{border-color:var(--fg)}
+.dots button.on{background:var(--thera);border-color:var(--thera);color:#fff}
+.oneword{display:flex;gap:12px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
+.oneword input{flex:1;min-width:0;border:0;border-bottom:1px solid var(--line);background:transparent;padding:8px 0;font-family:var(--f-display);font-style:italic;font-size:22px}
+.oneword input:focus{outline:none;border-color:var(--thera)}
+.board{padding:26px;display:flex;flex-direction:column;gap:14px}
+.bar-row{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr) 44px;gap:12px;align-items:center;font-size:14px}
+.bar-row .track{height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar-row .fill{height:100%;border-radius:99px;transition:width .8s var(--ease)}
+.bar-row .v{font-family:var(--f-mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.bar-row.empty{opacity:.45}
+.board-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+
+/* ======================= 10 DECISION ======================= */
+.dec-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:center}
+.venn{position:relative;width:100%;max-width:620px;aspect-ratio:1;justify-self:center}
+.venn .c{position:absolute;width:58%;aspect-ratio:1;border-radius:50%;mix-blend-mode:screen;display:flex;padding:9%;box-sizing:border-box}
+.venn .c span{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--frost)}
+.venn .c1{left:21%;top:2%;background:radial-gradient(circle,rgba(141,184,240,.42),rgba(141,184,240,.14));border:1px solid rgba(141,184,240,.6);justify-content:center;align-items:flex-start}
+.venn .c2{left:2%;top:36%;background:radial-gradient(circle,rgba(134,179,148,.42),rgba(134,179,148,.14));border:1px solid rgba(134,179,148,.6);align-items:flex-end}
+.venn .c3{left:40%;top:36%;background:radial-gradient(circle,rgba(230,240,74,.3),rgba(230,240,74,.1));border:1px solid rgba(230,240,74,.5);align-items:flex-end;justify-content:flex-end}
+.venn .core{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);font-family:var(--f-display);font-style:italic;font-size:clamp(18px,1.8vw,28px);color:#fff;text-shadow:0 0 30px rgba(255,255,255,.6);pointer-events:none}
+.vdot{position:absolute;transform:translate(-50%,-50%);transition:left 1s var(--ease),top 1s var(--ease);display:flex;flex-direction:column;align-items:center;gap:4px;z-index:3;pointer-events:none}
+.vdot i{width:14px;height:14px;border-radius:50%;background:var(--c);box-shadow:0 0 16px var(--c);border:2px solid rgba(255,255,255,.8)}
+.vdot.adv i{width:20px;height:20px;box-shadow:0 0 0 5px rgba(255,255,255,.18),0 0 24px var(--c)}
+.vdot.wait{flex-direction:row;transform:translate(-7px,-50%);gap:8px}
+.vdot span{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:var(--frost);text-shadow:0 1px 6px #0A1A2F}
+.checks{display:flex;flex-direction:column;gap:0;margin-top:28px}
+.chk{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.chk .nm{font-family:var(--f-display);font-size:22px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.chk .nm i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.pills{display:flex;gap:6px}
+.pill{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 10px;border-radius:99px;border:1px solid var(--line);color:var(--fg-soft);transition:all .25s}
+.pill.on{background:var(--frost);color:#0A1A2F;border-color:var(--frost)}
+.adv-btn{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:99px;border:1px dashed var(--fg-faint);color:var(--fg-soft);transition:all .25s;white-space:nowrap}
+.adv-btn.on{background:#E6F04A;border:1px solid #E6F04A;color:#0A1A2F}
+.dec-count{display:flex;gap:18px;align-items:baseline;margin-top:22px;flex-wrap:wrap}
+.dec-count .n{font-family:var(--f-display);font-size:56px;font-weight:200;line-height:1}
+.plat-pick{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.three-q{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:clamp(40px,6vh,64px)}
+.three-q div{border-top:1px solid var(--line);padding-top:16px}
+.three-q .d-s{margin:6px 0}
+.three-q p{margin:0;font-size:14.5px;color:var(--fg-soft)}
+
+/* ======================= 11 TRAVEL ======================= */
+.travel{min-height:auto}
+.travel-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:stretch}
+.kit{padding:24px;display:flex;flex-direction:column;gap:12px}
+.kit svg{width:100%;height:auto;display:block}
+.kit h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:30px;letter-spacing:-.015em}
+.fold .pa,.fold .pc{transition:transform 1.2s var(--ease);transform-box:fill-box}
+.fold .pa{transform-origin:100% 50%}.fold .pc{transform-origin:0% 50%}
+.kit.folded .fold .pa{transform:scaleX(-.02)}.kit.folded .fold .pc{transform:scaleX(-.02)}
+
+/* ======================= 12 ASSIGN ======================= */
+.assign{display:flex;flex-direction:column;gap:clamp(36px,6vh,64px)}
+.arcflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.arcflow div{padding:14px 12px 0 0;border-top:2px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.arcflow div.on{border-color:#E6F04A}
+.arcflow .d-s{font-weight:300}
+.arcflow div:not(.on) .d-s{opacity:.55}
+.short{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:22px;align-items:start}
+.short .col{padding:24px;display:flex;flex-direction:column;gap:14px}
+.short h3{margin:0;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--fg-soft);display:flex;justify-content:space-between}
+.slot{display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid var(--line)}
+.slot .d-s{font-weight:300}
+.slot.empty .d-s{opacity:.4;font-style:italic}
+.lead-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.3fr) minmax(0,.8fr);gap:14px;align-items:end;padding:16px 0;border-top:1px solid var(--line)}
+.lead-row .d-s{font-weight:300;display:flex;align-items:center;gap:10px}
+.lead-row .d-s i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+.field input,.field select{width:100%;min-width:0;background:transparent;border:0;border-bottom:1px solid var(--line);padding:7px 0;font-size:15px;color:var(--fg)}
+.field select option{color:#0A1A2F}
+.field input:focus,.field select:focus{outline:none;border-color:#E6F04A}
+.finale{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:36px}
+.toast{position:fixed;z-index:80;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;background:#0A1A2F;color:#fff;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;border-radius:99px;transition:all .4s var(--ease);pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ======================= STUDIO NOTES overlay ======================= */
+.notes{position:fixed;inset:0;z-index:90;background:rgba(242,247,249,.97);backdrop-filter:blur(20px);overflow:auto;padding:calc(env(safe-area-inset-top,0px) + 80px) var(--gut) 80px;color:var(--ink)}
+.notes .wrap{max-width:1180px}
+.notes h2{margin:0 0 10px}
+.notes section{padding:40px 0;border-top:1px solid rgba(10,26,47,.14);display:grid;grid-template-columns:220px minmax(0,1fr);gap:32px}
+.notes section > h3{margin:0;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:rgba(10,26,47,.6)}
+.notes p,.notes li{max-width:70ch;color:rgba(10,26,47,.78)}
+.notes ul{padding-left:18px;margin:0}
+.notes .close{position:fixed;top:calc(env(safe-area-inset-top,0px) + 20px);right:var(--gut);z-index:91}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.swatches div{border-radius:12px;overflow:hidden;border:1px solid rgba(10,26,47,.1);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em}
+.swatches i{display:block;height:64px}
+.swatches span{display:block;padding:8px 10px}
+.board-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.frame{border:1px solid rgba(10,26,47,.14);border-radius:12px;overflow:hidden;background:#fff}
+.frame i{display:block;aspect-ratio:16/10}
+.frame div{padding:10px 12px;font-size:13px;line-height:1.35}
+.frame b{display:block;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(10,26,47,.55);font-weight:500;margin-bottom:3px}
+.frame em{display:block;font-family:var(--f-display);font-size:13px;color:var(--thera);margin-top:4px}
+.specimen{display:flex;flex-direction:column;gap:12px}
+
+@media (min-width:1101px){.scene,.sticky{padding-right:calc(var(--gut) + 36px)}}
+/* ======================= responsive ======================= */
+@media (max-width:1100px){
+  .signals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .map-grid{grid-template-columns:minmax(0,1fr)}
+  .travel-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .travel-grid > :first-child{grid-column:1/-1}
+  .six-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .rail{display:none}
+}
+@media (max-width:860px){
+  .sig-head,.map-head,.taste-head,.spec-read,.ws-grid,.plat,.concept,.dec-grid,.score-grid,.short,.wild,.open-foot{grid-template-columns:minmax(0,1fr)}
+  .opp{height:auto}
+  .sticky{position:relative;height:auto;grid-template-columns:minmax(0,1fr);padding-block:110px 80px}
+  .orbit{width:min(88vw,520px)}
+  .orbit .ring,.verb{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  .opp-steps li{opacity:1}
+  .formula{grid-template-columns:minmax(0,1fr)}
+  .formula .op{text-align:center;line-height:.6}
+  .agenda,.plat-index,.arcflow,.three-q{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wild-row,.travel-grid{grid-template-columns:minmax(0,1fr)}
+  .timeline{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .lead-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .lead-row > :first-child{grid-column:1/-1}
+  .arc{grid-template-columns:minmax(0,1fr)}
+  .arc::before{display:none}
+  .c-foot{grid-template-columns:minmax(0,1fr)}
+  .chapter,.keys{display:none}
+  .lockup .ff{display:none}.lockup .x{display:none}
+  .notes section{grid-template-columns:minmax(0,1fr)}
+  .spec-tick span{font-size:9px}
+}
+@media (max-width:520px){
+  .signals,.six-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dots button{width:30px;height:30px}
+  .dim{grid-template-columns:minmax(0,1fr)}
+  .bar-row{grid-template-columns:minmax(0,96px) minmax(0,1fr) 36px}
+  .chk{grid-template-columns:minmax(0,1fr)}
+  .spec-tick span{display:none}
+  .nav-r .chip-btn.fs{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+}
+/* printable takeaway */
+@media print{
+  #fluid,.grain,.nav,.rail,.keys,.progress,.cue,.timer,.board-actions,.notes .close{display:none!important}
+  body{background:#fff}
+  .scene{min-height:auto;break-before:page;padding-block:40px}
+  [data-tone="dark"]{background:#0A1A2F;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .opp{height:auto}.sticky{position:relative;height:auto}
+  .js .rv{opacity:1!important;transform:none!important}
+  .orbit .ring,.verb{opacity:1!important;transform:translate(-50%,-50%) scale(1)!important}
+  .opp-steps li{opacity:1}
+  .pane{backdrop-filter:none;background:rgba(255,255,255,.9)}
+  [data-tone="dark"] .pane{background:rgba(255,255,255,.06)}
+}
+</style>
+</head>
+<body data-tone="light">
+<canvas id="fluid" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <!-- Wordmark is typeset as a stand-in: drop in the official TheraBreath logo SVG here -->
+  <a class="lockup" href="#open" style="color:inherit;text-decoration:none" aria-label="TheraBreath Flavor Playbook, back to start">
+    <span class="tb">Thera<b>Breath</b></span><span class="x">×</span><span class="ff">The Flavor Factory</span>
+  </a>
+  <div class="nav-r">
+    <span class="chapter" id="chapter">Frame</span>
+    <button class="chip-btn" id="notesBtn" type="button">Studio notes</button>
+    <button class="chip-btn fs" id="fsBtn" type="button">Present</button>
+  </div>
+</header>
+<nav class="rail" id="rail" aria-label="Chapters"></nav>
+<div class="keys" aria-hidden="true">← → move · N notes · F present</div>
+
+<main>
+
+<!-- ============ 01 OPENING ============ -->
+<section class="scene open" id="open" data-world="open" data-tone="light" data-phase="Frame" data-title="Expand" data-stop>
+  <div class="breath" aria-hidden="true"></div>
+  <div class="wrap open-top">
+    <span class="eyebrow rv">TheraBreath Flavor Playbook</span>
+    <span class="eyebrow rv d1">Princeton, NJ · Monday, November 9, 2026</span>
+  </div>
+  <div class="wrap">
+    <h1 class="d d-xxl rv d1">Expand what <span class="fresh">fresh</span><br>can feel like.</h1>
+  </div>
+  <div class="wrap open-foot">
+    <div class="stack">
+      <p class="lede rv d2">A working session to choose the platforms and concepts worth developing next for TheraBreath.</p>
+      <div class="tune rv d3" aria-live="off">Fresh can feel <b id="tune">cool</b></div>
+    </div>
+    <div class="cue rv d4"><i></i>Scroll to begin</div>
+  </div>
+  <div class="wrap">
+    <div class="agenda rv d3">
+      <div><span class="mono">Frame</span><small>Where fresh could go</small><span class="t">0:00 – 0:35</span></div>
+      <div><span class="mono">Taste</span><small>Six concepts, the whole rinse</small><span class="t">0:35 – 1:20</span></div>
+      <div><span class="mono">Choose</span><small>Three checks, three leads</small><span class="t">1:20 – 1:45</span></div>
+      <div><span class="mono">Assign</span><small>One owner per test</small><span class="t">1:45 – 2:00</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 OPPORTUNITY ============ -->
+<section class="scene opp" id="opportunity" data-world="opp" data-tone="light" data-phase="Frame" data-title="Opportunity" data-stop>
+  <div class="sticky">
+    <div>
+      <span class="eyebrow">The opportunity</span>
+      <h2 class="d d-l" style="margin-top:22px">The benefit is familiar.<br><em>The flavor can do more.</em></h2>
+      <ol class="opp-steps" id="oppSteps">
+        <li class="on"><span class="mono">01</span><div><h3>Trust</h3><p>TheraBreath already owns gentle, effective, non-burning freshness. That stays at the center.</p></div></li>
+        <li><span class="mono">02</span><div><h3>Character</h3><p>Flavor gives people a reason to notice the product and remember it.</p></div></li>
+        <li><span class="mono">03</span><div><h3>Repeat use</h3><p>An experience people enjoy is one they choose again tomorrow.</p></div></li>
+      </ol>
+    </div>
+    <div class="orbit" id="orbit" aria-hidden="true">
+      <div class="ring r3"><span class="rl">Repeat use</span></div>
+      <div class="ring r2"><span class="rl">Character</span></div>
+      <div class="ring r1 on"><span class="rl">Trust</span></div>
+      <div class="bottle-wrap" data-bottle="classic"></div>
+      <span class="verb" style="left:50%;top:0%">notice</span>
+      <span class="verb" style="left:96%;top:36%">remember</span>
+      <span class="verb" style="left:80%;top:92%">choose</span>
+      <span class="verb" style="left:18%;top:92%">enjoy</span>
+      <span class="verb" style="left:4%;top:36%">come back</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SIGNALS ============ -->
+<section class="scene" id="signals" data-world="signals" data-tone="light" data-phase="Frame" data-title="Signals" data-stop>
+  <div class="wrap">
+    <div class="sig-head">
+      <div>
+        <span class="eyebrow rv">The world around TheraBreath</span>
+        <h2 class="d d-l rv d1" style="margin-top:22px">What people call <em>fresh</em> is changing.</h2>
+      </div>
+      <p class="body rv d2">Four signals from outside oral care are reshaping what people expect a rinse to feel like.</p>
+    </div>
+    <div class="signals">
+      <article class="sig pane rv">
+        <div class="vis v-beauty"><i></i><i></i><i></i></div>
+        <div class="word">Beauty</div>
+        <h3>Personal-care rituals</h3>
+        <p>Oral care is joining the skincare shelf as one more step in a self-care routine.</p>
+        <div class="seen"><b>Seen in</b>Layered skincare routines, bathroom “shelfies”, oral care sold beside serums.</div>
+      </article>
+      <article class="sig pane rv d1">
+        <div class="vis v-flavor" id="vFlavor"></div>
+        <div class="word">Flavor</div>
+        <h3>A broader vocabulary</h3>
+        <p>People now taste yuzu, shiso and cardamom in drinks, snacks and wellness shots every week.</p>
+        <div class="seen"><b>Seen in</b>Zero-proof bars, functional beverages, global menus, fine fragrance.</div>
+      </article>
+      <article class="sig pane rv d2">
+        <div class="vis v-sense"><svg viewBox="0 0 300 170" preserveAspectRatio="none" id="vSense"></svg></div>
+        <div class="word">Sensation</div>
+        <h3>Sensory proof</h3>
+        <p>People want an effect they can feel and describe, which is how they know it works.</p>
+        <div class="seen"><b>Seen in</b>Cooling skincare, tingling lip products, “you can feel it working” claims.</div>
+      </article>
+      <article class="sig pane rv d3">
+        <div class="vis v-well"><div class="sun"></div><div class="dot"></div></div>
+        <div class="word">Trust</div>
+        <h3>Everyday wellness</h3>
+        <p>Products earn a place in the day: morning energy, midday reset, evening calm.</p>
+        <div class="seen"><b>Seen in</b>Sleep and hydration rituals, adaptogen drinks, “night” versions of everything.</div>
+      </article>
+    </div>
+    <div class="shorthand rv"><span>Beauty</span><span>·</span><span>Flavor</span><span>·</span><span>Sensation</span><span>·</span><span>Trust</span></div>
+  </div>
+</section>
+
+<!-- ============ 04 MAP ============ -->
+<section class="scene" id="map" data-world="map" data-tone="dark" data-phase="Frame" data-title="Flavor map" data-stop>
+  <div class="wrap">
+    <div class="map-head">
+      <div>
+        <span class="eyebrow rv">World flavor culture</span>
+        <h2 class="d d-l rv d1" style="margin-top:22px">Flavor culture is much bigger than <em>mint.</em></h2>
+      </div>
+      <p class="body rv d2">Where today’s freshness cues are coming from. This is a vocabulary to borrow from, not a launch list. Tap a point.</p>
+    </div>
+    <div class="filters rv" id="mapFilters" role="group" aria-label="Filter by platform">
+      <button class="filt on" data-f="all" type="button">All signals</button>
+      <button class="filt" data-f="newfresh" type="button">New Fresh</button>
+      <button class="filt" data-f="sensory" type="button">Sensory Proof</button>
+      <button class="filt" data-f="ritual" type="button">Ritual by Time</button>
+      <button class="filt" data-f="elevated" type="button">Elevated Escape</button>
+    </div>
+    <div class="map-grid">
+      <div class="map-stage rv" id="mapStage"><canvas id="mapCanvas" aria-label="Dot map of the world showing flavor cue regions"></canvas></div>
+      <aside class="map-card pane rv d1" id="mapCard" aria-live="polite"></aside>
+    </div>
+    <div class="map-note">
+      <span class="small">Every line runs back to Princeton: each cue gets translated for one room and one brand.</span>
+      <span class="mono" style="color:var(--fg-soft)">12 regions · 4 platforms · 1 room</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 ANCHOR ============ -->
+<section class="scene" id="anchor" data-world="anchor" data-tone="light" data-phase="Frame" data-title="Portfolio" data-stop>
+  <div class="wrap anchor-grid">
+    <div>
+      <span class="eyebrow rv">Portfolio reality</span>
+      <h2 class="d d-xl rv d1" style="margin-top:22px">Mint is an anchor,<br><em>not the whole map.</em></h2>
+    </div>
+    <div class="spectrum rv" id="spectrum">
+      <div id="specTicks"></div>
+      <div class="spec-bar">
+        <div class="spec-zone" style="left:0;width:28%">Expected</div>
+        <div class="spec-zone sweet">Worth remembering</div>
+        <div class="spec-zone" style="left:72%;width:28%;color:rgba(255,255,255,.9)">Novelty</div>
+      </div>
+      <div class="spec-handle" id="specHandle" role="slider" tabindex="0" aria-label="Familiar to exploratory" aria-valuemin="0" aria-valuemax="100" aria-valuenow="48"><div class="spec-orb"></div></div>
+      <div class="spec-ends"><span class="d d-s">Familiar</span><span class="d d-s">Exploratory</span></div>
+      <div class="spec-read">
+        <div><span class="mono" id="specZone" style="color:var(--thera)">Worth remembering</span><div class="d d-m" id="specName" style="margin-top:10px">Arctic Yuzu</div></div>
+        <p class="body" id="specLine">Familiar enough to trust, different enough to remember.</p>
+      </div>
+    </div>
+    <div class="formula">
+      <div class="f pane rv"><span class="mono" style="color:var(--thera)">Keep</span><span class="d d-s">One familiar freshness cue</span><span class="small">Cooling, clean finish, a thread of mint.</span></div>
+      <div class="op" aria-hidden="true">+</div>
+      <div class="f pane rv d1"><span class="mono" style="color:var(--thera)">Change</span><span class="d d-s">One thing people notice</span><span class="small">A fruit, a botanical, a warmth, a moment.</span></div>
+      <div class="op" aria-hidden="true">=</div>
+      <div class="f pane rv d2"><span class="mono" style="color:var(--thera)">Get</span><span class="d d-s">Familiar · Fresh · Distinct</span><span class="small">Something people trust and still talk about.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 WHITE SPACE ============ -->
+<section class="scene" id="whitespace" data-world="ws" data-tone="dark" data-phase="Frame" data-title="White space" data-stop>
+  <div class="wrap ws-grid">
+    <div>
+      <span class="eyebrow rv">The white space</span>
+      <h2 class="d d-l rv d1" style="margin-top:22px">Stretch one dimension <em>at a time.</em></h2>
+      <p class="body rv d2" style="margin-top:22px">Each spoke runs from what oral care usually is (center) to where it could go (edge). Classic mint sits near the center on every spoke. Good concepts pull hard on one or two.</p>
+      <div class="ws-ctrl rv d3" id="wsCtrl" role="group" aria-label="Choose a concept to plot"></div>
+      <div class="ws-read" id="wsRead" aria-live="polite"></div>
+    </div>
+    <svg class="instrument rv" id="instrument" viewBox="-80 -40 680 620" role="img" aria-label="Sensory instrument with seven spokes"></svg>
+  </div>
+</section>
+
+<!-- ============ 07 PLATFORMS ============ -->
+<section class="scene plat-intro" id="platforms" data-world="platintro" data-tone="light" data-phase="Frame" data-title="Platforms" data-stop>
+  <div class="wrap stack" style="gap:40px">
+    <span class="eyebrow rv">Four innovation platforms</span>
+    <h2 class="d d-xl rv d1">Build worlds,<br><em>not one-off flavors.</em></h2>
+    <p class="lede rv d2">Each platform is a territory TheraBreath could own over several launches. Every concept belongs to at least one.</p>
+    <div class="plat-index rv d3">
+      <a href="#p-newfresh"><span class="mono">I</span><span class="d d-s">New Fresh</span><span class="small">Fresh beyond mint</span></a>
+      <a href="#p-sensory"><span class="mono">II</span><span class="d d-s">Sensory Proof</span><span class="small">Fresh you can feel</span></a>
+      <a href="#p-ritual"><span class="mono">III</span><span class="d d-s">Ritual by Time</span><span class="small">Fresh for the moment</span></a>
+      <a href="#p-elevated"><span class="mono">IV</span><span class="d d-s">Elevated Escape</span><span class="small">Fresh as a small luxury</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="p-newfresh" data-world="p-newfresh" data-tone="light" data-phase="Frame" data-title="New Fresh" data-stop>
+  <div class="wrap plat">
+    <div>
+      <span class="num rv">PLATFORM I</span>
+      <h2 class="d d-xl rv d1">New Fresh</h2>
+      <p class="def rv d2">Expand what fresh tastes like, well beyond peppermint.</p>
+      <dl class="rv d3">
+        <dt>Cues</dt><dd>Bright fruit, citrus peel, tea, cool greens, soft herbs, botanicals.</dd>
+        <dt>Promise</dt><dd>The same clean TheraBreath finish, arrived at by a new route.</dd>
+        <dt>Concepts</dt><dd>Arctic Yuzu · Green Tea Cucumber · Grapefruit Rose Mint</dd>
+      </dl>
+    </div>
+    <div class="plat-vis rv" aria-hidden="true">
+      <div class="nf-ring" id="nfA"></div>
+      <div class="nf-ring b" id="nfB"></div>
+      <div class="nf-core"><span>Mint<br>anchor</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="p-sensory" data-world="p-sensory" data-tone="dark" data-phase="Frame" data-title="Sensory Proof" data-stop>
+  <div class="wrap plat">
+    <div>
+      <span class="num rv">PLATFORM II</span>
+      <h2 class="d d-xl rv d1">Sensory Proof</h2>
+      <p class="def rv d2">Flavor and sensation that make freshness something you can feel happening.</p>
+      <dl class="rv d3">
+        <dt>Cues</dt><dd>Cooling bloom, bright top note, contrast, a flavor that evolves, a long clean finish.</dd>
+        <dt>Guardrail</dt><dd>Intensity without burn. TheraBreath’s gentleness is the proof point, never the trade-off.</dd>
+        <dt>Concepts</dt><dd>Arctic Yuzu · Ginger Lime</dd>
+      </dl>
+    </div>
+    <div class="plat-vis wave rv" id="wave" aria-hidden="true">
+      <svg viewBox="0 0 520 520">
+        <defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#9FE8FF" stop-opacity="0"/><stop offset=".5" stop-color="#9FE8FF" stop-opacity=".22"/><stop offset="1" stop-color="#9FE8FF" stop-opacity="0"/></linearGradient></defs>
+        <g transform="translate(20,60)">
+          <line x1="0" y1="360" x2="480" y2="360" stroke="rgba(234,242,246,.3)"/>
+          <line x1="0" y1="0" x2="0" y2="360" stroke="rgba(234,242,246,.15)"/>
+          <text x="0" y="386">0s</text><text x="104" y="386">5s</text><text x="300" y="386">30s</text><text x="440" y="386">60s+</text>
+          <text x="0" y="-18">Intensity through the rinse</text>
+          <rect class="scan" x="-60" y="0" width="60" height="360" fill="url(#wg)"/>
+          <path class="ln a" stroke="#E6F04A" d="M0,350 C40,340 60,70 110,60 S190,190 260,240 S400,300 480,320"/>
+          <path class="ln b" stroke="#9FE8FF" d="M0,355 C80,350 120,230 200,120 S330,80 380,130 S450,210 480,220"/>
+          <path class="ln c" stroke="#FFFFFF" stroke-dasharray="4 7" d="M0,358 C120,356 200,330 280,290 S420,180 480,170"/>
+          <circle cx="110" cy="60" r="5" fill="#E6F04A"/><text x="124" y="56" style="fill:#E6F04A">Bright opening</text>
+          <circle cx="330" cy="92" r="5" fill="#9FE8FF"/><text x="344" y="88" style="fill:#9FE8FF">Cooling bloom</text>
+          <circle cx="480" cy="170" r="5" fill="#fff"/><text x="376" y="160" style="fill:#fff">Clean linger</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="p-ritual" data-world="p-ritual" data-tone="light" data-phase="Frame" data-title="Ritual by Time" data-stop>
+  <div class="wrap plat">
+    <div>
+      <span class="num rv">PLATFORM III</span>
+      <h2 class="d d-xl rv d1">Ritual by Time</h2>
+      <p class="def rv d2">Different moments of the day call for different kinds of fresh.</p>
+      <dl class="rv d3">
+        <dt>Cues</dt><dd>Morning lift, midday reset, after coffee, before going out, wind-down.</dd>
+        <dt>Promise</dt><dd>Oral care that behaves like a personal ritual, not a chore.</dd>
+        <dt>Concepts</dt><dd>Green Tea Cucumber · Ginger Lime · Chamomile Vanilla Mint</dd>
+      </dl>
+    </div>
+    <div class="plat-vis rv" id="dialWrap">
+      <div class="dial" aria-hidden="true"></div>
+      <div class="dial-center" aria-live="polite"><span class="t" id="dT">6:30</span><span class="n" id="dN">Wake</span><span class="f" id="dF">Arctic Yuzu</span><span class="l" id="dL">A bright, cold start.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="p-elevated" data-world="p-elevated" data-tone="dark" data-phase="Frame" data-title="Elevated Escape" data-stop>
+  <div class="wrap plat">
+    <div>
+      <span class="num rv">PLATFORM IV</span>
+      <h2 class="d d-xl rv d1">Elevated Escape</h2>
+      <p class="def rv d2">Premium flavor worlds borrowed from fragrance, spa, tea and zero-proof bars.</p>
+      <dl class="rv d3">
+        <dt>Cues</dt><dd>Fragrance structure, hospitality, culinary pairings, global botanicals.</dd>
+        <dt>Promise</dt><dd>A small daily luxury that is still unmistakably clean and alcohol-free.</dd>
+        <dt>Concepts</dt><dd>Grapefruit Rose Mint · Pear Cardamom Mint</dd>
+      </dl>
+    </div>
+    <div class="plat-vis pyr rv" aria-hidden="true">
+      <svg viewBox="0 0 520 520">
+        <defs>
+          <linearGradient id="py1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7D8B8" stop-opacity=".55"/><stop offset="1" stop-color="#C99A6B" stop-opacity=".25"/></linearGradient>
+          <linearGradient id="py2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9A6A0" stop-opacity=".4"/><stop offset="1" stop-color="#8E5A52" stop-opacity=".25"/></linearGradient>
+          <linearGradient id="py3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FB9A6" stop-opacity=".35"/><stop offset="1" stop-color="#2C3A33" stop-opacity=".35"/></linearGradient>
+        </defs>
+        <polygon points="190,40 250,170 130,170" fill="url(#py1)" stroke="rgba(250,236,220,.5)"/>
+        <polygon points="126,178 254,178 313,308 67,308" fill="url(#py2)" stroke="rgba(250,236,220,.4)"/>
+        <polygon points="63,316 317,316 377,446 3,446" fill="url(#py3)" stroke="rgba(250,236,220,.35)"/>
+        <text x="270" y="112">Top · opening</text><text class="pn" x="270" y="140">grapefruit, pear</text>
+        <text x="332" y="240">Heart · development</text><text class="pn" x="332" y="268">rose, cardamom</text>
+        <text x="392" y="372">Base · finish</text><text class="pn" x="392" y="400">clean mint</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CONCEPTS ============ -->
+<section class="scene six" id="concepts" data-world="six" data-tone="light" data-phase="Taste" data-title="Six concepts" data-stop>
+  <div class="wrap stack" style="gap:44px">
+    <span class="eyebrow rv">Future flavor concepts</span>
+    <h2 class="d d-xl rv d1">Six enter.<br><em>Three advance.</em></h2>
+    <div class="six-row rv d2" id="sixRow"></div>
+    <div class="six-rule rv d3"><span>The room decides</span><i></i><span>Today</span></div>
+  </div>
+</section>
+<div id="conceptScenes"></div>
+
+<section class="scene" id="wildcards" data-world="wild" data-tone="light" data-phase="Taste" data-title="Wildcards" data-stop style="min-height:auto">
+  <div class="wrap wild">
+    <div>
+      <span class="eyebrow rv">In our pocket</span>
+      <h2 class="d d-m rv d1" style="margin-top:18px">Three studio wildcards, if the room wants to push further.</h2>
+    </div>
+    <div class="wild-row" id="wildRow"></div>
+  </div>
+</section>
+
+<!-- ============ 09 TASTING ============ -->
+<section class="scene" id="tasting" data-world="taste" data-tone="light" data-phase="Taste" data-title="Tasting" data-stop>
+  <div class="wrap">
+    <div class="taste-head">
+      <div>
+        <span class="eyebrow rv">The tasting</span>
+        <h2 class="d d-l rv d1" style="margin-top:22px">Taste the whole rinse,<br><em>not just the flavor.</em></h2>
+      </div>
+      <p class="body rv d2">“Do I like it?” is one question out of four. Follow each sample from the first second to tomorrow morning.</p>
+    </div>
+    <div class="timeline rv" id="timeline">
+      <div class="tl-head" id="tlHead"></div>
+      <div class="tl" data-s="0"><span class="mono">0 – 5 s</span><h3>Opening</h3><p>What happens immediately?</p></div>
+      <div class="tl" data-s="1"><span class="mono">5 – 60 s</span><h3>Development</h3><p>How does it evolve while rinsing?</p></div>
+      <div class="tl" data-s="2"><span class="mono">1 – 3 min</span><h3>Finish</h3><p>What remains after you spit?</p></div>
+      <div class="tl" data-s="3"><span class="mono">Tomorrow</span><h3>Repeat</h3><p>Would I use this again?</p></div>
+    </div>
+    <div class="timer rv">
+      <button class="btn" id="rinseBtn" type="button">Start guided rinse</button>
+      <span class="clock" id="clock">0:00</span>
+      <span class="small" id="rinseCue">Everyone sips together. We call out each stage.</span>
+    </div>
+    <div class="score-grid">
+      <div class="scorecard pane rv">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+          <span class="mono" style="color:var(--fg-soft)">Room score · blind codes</span>
+          <button class="chip-btn" id="revealBtn" type="button" style="font-size:10px">Reveal names</button>
+        </div>
+        <div class="samples" id="samples" role="tablist" aria-label="Samples"></div>
+        <div class="dims" id="dims"></div>
+        <div class="oneword"><span class="mono" style="color:var(--fg-soft)">One word</span><input id="oneWord" type="text" placeholder="…" maxlength="28" aria-label="One word for this sample"></div>
+      </div>
+      <div class="board pane rv d1">
+        <span class="mono" style="color:var(--fg-soft)">Live board · average of seven</span>
+        <div id="boardRows" style="display:flex;flex-direction:column;gap:12px"></div>
+        <div class="board-actions">
+          <button class="btn ghost" id="copyScores" type="button">Copy scores</button>
+          <button class="btn ghost" id="resetScores" type="button">Clear</button>
+        </div>
+        <p class="small" style="margin:0">Scores stay on this device. Nothing is sent anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 DECISION ============ -->
+<section class="scene" id="decide" data-world="decide" data-tone="dark" data-phase="Choose" data-title="Decide" data-stop>
+  <div class="wrap">
+    <span class="eyebrow rv">Decision framework</span>
+    <h2 class="d d-l rv d1" style="margin:22px 0 40px">Brand Fit × Technical Reality × <em>Consumer Desire</em></h2>
+    <div class="three-q rv d2">
+      <div><span class="mono" style="color:#8DB8F0">01 · Brand</span><div class="d d-s">Does it fit the brand?</div><p>Could TheraBreath credibly own this, gentle and dentist-formulated?</p></div>
+      <div><span class="mono" style="color:#86B394">02 · Technical</span><div class="d d-s">Can we make it?</div><p>Will the flavor hold up in TheraBreath’s oxidizing, alcohol-free system over shelf life?</p></div>
+      <div><span class="mono" style="color:#E6F04A">03 · Consumer</span><div class="d d-s">Will people choose it?</div><p>Is it appealing, easy to understand, different, and something people will buy again?</p></div>
+    </div>
+    <div class="dec-grid">
+      <div class="venn rv" id="venn">
+        <div class="c c1"><span>Brand fit</span></div>
+        <div class="c c2"><span>Technical reality</span></div>
+        <div class="c c3"><span>Consumer desire</span></div>
+        <div class="core">Advance</div>
+      </div>
+      <div class="rv d1">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span class="mono" style="color:var(--fg-soft)">Mark each check the room agrees on</span>
+          <button class="chip-btn" id="suggestBtn" type="button" style="font-size:10px">Suggest from tasting</button>
+        </div>
+        <div class="checks" id="checks"></div>
+        <div class="dec-count"><span class="n" id="advN">0</span><span class="mono" style="color:var(--fg-soft)">of 3 concepts advancing</span></div>
+        <div style="margin-top:22px"><span class="mono" style="color:var(--fg-soft)">Choose two platforms to build in</span>
+          <div class="plat-pick" id="platPick"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 TRAVEL (aside) ============ -->
+<section class="scene travel" id="travel" data-world="travel" data-tone="light" data-phase="Choose" data-title="Beyond the bottle" data-stop>
+  <div class="wrap travel-grid">
+    <div class="stack" style="justify-content:center">
+      <span class="eyebrow rv">Also from the studio</span>
+      <h2 class="d d-m rv d1">Beyond the bottle: a TheraBreath travel kit.</h2>
+      <p class="body rv d2">A side project, shown because it’s how we think: the whole experience, not just the liquid. Compact, TSA-ready, unmistakably TheraBreath.</p>
+      <span class="mono rv d3" style="color:var(--fg-soft)">Liquids ≤ 3.4 oz / 100 mL · fits one quart-size bag</span>
+    </div>
+    <div class="kit pane rv d1" id="zipKit">
+      <span class="mono" style="color:var(--thera)">Concept A</span>
+      <h3>Zip &amp; Go</h3>
+      <svg viewBox="0 0 400 260" aria-label="Clear zip pouch holding five travel items">
+        <defs><linearGradient id="pouch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#DCEAF3" stop-opacity=".7"/></linearGradient></defs>
+        <rect x="20" y="40" width="360" height="200" rx="26" fill="url(#pouch)" stroke="#9BB7CF"/>
+        <rect x="20" y="40" width="360" height="22" rx="11" fill="#1D4E9E"/>
+        <line x1="40" y1="51" x2="360" y2="51" stroke="#fff" stroke-dasharray="3 4" opacity=".8"/>
+        <circle cx="352" cy="51" r="7" fill="#fff"/>
+        <g transform="translate(52,84)">
+          <rect x="0" y="22" width="46" height="112" rx="10" fill="#CFE3F4" stroke="#1D4E9E"/><rect x="8" y="0" width="30" height="24" rx="4" fill="#fff" stroke="#1D4E9E"/><rect x="5" y="62" width="36" height="40" rx="4" fill="#fff"/><text x="23" y="86" font-size="7" text-anchor="middle" fill="#1D4E9E" font-family="Hanken Grotesk" font-weight="700">RINSE</text>
+          <path d="M70,134 L70,40 Q70,24 86,24 L100,24 Q116,24 116,40 L116,134 Z" fill="#fff" stroke="#1D4E9E"/><rect x="80" y="8" width="26" height="18" rx="3" fill="#1D4E9E"/><text x="93" y="84" font-size="7" text-anchor="middle" fill="#1D4E9E" font-family="Hanken Grotesk" font-weight="700" transform="rotate(-90 93 84)">TOOTHPASTE</text>
+          <rect x="140" y="4" width="12" height="130" rx="6" fill="#fff" stroke="#1D4E9E"/><rect x="138" y="4" width="16" height="30" rx="4" fill="#8DB8F0"/>
+          <rect x="176" y="50" width="38" height="84" rx="12" fill="#E4F0F9" stroke="#1D4E9E"/><rect x="186" y="34" width="18" height="18" rx="4" fill="#1D4E9E"/><text x="195" y="96" font-size="7" text-anchor="middle" fill="#1D4E9E" font-family="Hanken Grotesk" font-weight="700">SPRAY</text>
+          <rect x="236" y="74" width="54" height="60" rx="14" fill="#fff" stroke="#1D4E9E"/><circle cx="263" cy="104" r="12" fill="none" stroke="#8DB8F0" stroke-width="3"/><text x="263" y="146" font-size="7" text-anchor="middle" fill="#1D4E9E" font-family="IBM Plex Mono">FLOSS</text>
+        </g>
+      </svg>
+      <p class="small" style="margin:0">A clear, flat-bottomed pouch that stands in a hotel bathroom and goes straight through security.</p>
+    </div>
+    <div class="kit pane rv d2" id="foldKit">
+      <span class="mono" style="color:var(--thera)">Concept B</span>
+      <h3>Fold &amp; Go</h3>
+      <svg viewBox="0 0 400 260" class="fold" aria-label="Tri-fold case that opens flat">
+        <g>
+          <rect class="pa" x="30" y="50" width="110" height="170" rx="16" fill="#E4F0F9" stroke="#1D4E9E"/>
+          <rect x="145" y="50" width="110" height="170" rx="16" fill="#fff" stroke="#1D4E9E"/>
+          <rect class="pc" x="260" y="50" width="110" height="170" rx="16" fill="#E4F0F9" stroke="#1D4E9E"/>
+          <rect x="165" y="74" width="30" height="120" rx="8" fill="#CFE3F4" stroke="#1D4E9E"/><rect x="205" y="68" width="30" height="130" rx="14" fill="#fff" stroke="#1D4E9E"/>
+          <text x="200" y="212" font-size="8" text-anchor="middle" fill="#1D4E9E" font-family="Hanken Grotesk" font-weight="700">TheraBreath</text>
+        </g>
+      </svg>
+      <button class="btn ghost" id="foldBtn" type="button" style="align-self:flex-start">Fold it</button>
+      <p class="small" style="margin:0">A slim tri-fold that closes to the size of a passport and lies flat when open.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 ASSIGN ============ -->
+<section class="scene assign" id="assign" data-world="assign" data-tone="dark" data-phase="Assign" data-title="Short list" data-stop>
+  <div class="wrap stack" style="gap:clamp(36px,6vh,64px)">
+    <div class="arcflow rv">
+      <div><span class="mono">Frame</span><span class="d d-s">Possibility</span></div>
+      <div><span class="mono">Taste</span><span class="d d-s">Evidence</span></div>
+      <div><span class="mono">Choose</span><span class="d d-s">Focus</span></div>
+      <div class="on"><span class="mono" style="color:#E6F04A">Assign</span><span class="d d-s">Action</span></div>
+    </div>
+    <div>
+      <span class="eyebrow rv">What we leave with</span>
+      <h2 class="d d-xl rv d1" style="margin-top:22px">Leave with<br><em>a short list.</em></h2>
+    </div>
+    <div class="short">
+      <div class="col pane rv">
+        <h3><span>Platforms</span><span>2</span></h3>
+        <div id="shortPlat"></div>
+      </div>
+      <div class="col pane rv d1">
+        <h3><span>Lead concepts · owner · next action</span><span>3</span></h3>
+        <div id="shortLeads"></div>
+      </div>
+    </div>
+    <div class="finale rv">
+      <div>
+        <p class="d d-m" style="margin:0 0 10px">Familiar enough to trust.<br><em>Different enough to remember.</em></p>
+        <span class="mono" style="color:var(--fg-soft)">The Flavor Factory for TheraBreath · Princeton · November 9, 2026</span>
+      </div>
+      <button class="btn" id="copyPlan" type="button">Copy the short list</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ STUDIO NOTES ============ -->
+<div class="notes" id="notes" hidden role="dialog" aria-modal="true" aria-labelledby="notesTitle">
+  <button class="chip-btn close" id="notesClose" type="button">Close · Esc</button>
+  <div class="wrap">
+    <span class="eyebrow">Studio notes · for the presenting team</span>
+    <h2 class="d d-l" id="notesTitle" style="margin-top:18px">How this experience is built</h2>
+    <section><h3>Design thesis</h3><div>
+      <p><strong>One rinse, many worlds.</strong> The whole experience is a single liquid field that lives behind every screen. It never cuts to a new slide; it changes temperature. Icy and clear at the opening, night-dark over the map, warm for Elevated Escape, a different atmosphere for every flavor, and TheraBreath blue at the end. The room feels freshness expand as they scroll.</p>
+      <p>Every screen answers one question: big idea, one supporting line, one piece of evidence. The presenter talks; the screen shows.</p>
+    </div></section>
+    <section><h3>Typography</h3><div class="specimen">
+      <span class="d d-l">Fraunces <em>Soft</em></span>
+      <p>Display. A variable serif whose “softness” axis literally animates on the word <em>fresh</em>. Light weights only, tight tracking, italic for the emotional half of every headline.</p>
+      <span style="font-weight:600;font-size:22px">Hanken Grotesk</span>
+      <p>Body and interface. Clean, clinical, close to TheraBreath’s own sans. Carries the trust.</p>
+      <span class="mono">IBM Plex Mono · labels, times, codes</span>
+      <p>The lab voice: seconds of the rinse, blind sample codes, platform numbers. It says “we measure things.”</p>
+    </div></section>
+    <section><h3>Colour strategy</h3><div>
+      <p>A fixed brand spine (ink, cool paper, TheraBreath blue) plus a world palette per scene that only lives in the fluid field. Coral is reserved for one meaning: overreach.</p>
+      <div class="swatches" id="swatches"></div>
+    </div></section>
+    <section><h3>Motion rules</h3><div><ul>
+      <li>Motion follows breath: slow in, slower out (inhale ≈ 4 s, exhale ≈ 6 s).</li>
+      <li>Only three kinds of movement: the fluid field changing world, content settling into place, and instruments that carry meaning (rings, spectrum, spokes, timeline).</li>
+      <li>Nothing moves for decoration while the presenter is talking over a data screen.</li>
+      <li>Reduced-motion settings freeze everything to a still, complete layout.</li>
+    </ul></div></section>
+    <section><h3>Presenting</h3><div><ul>
+      <li>← → or Page Up / Down moves exactly one screen. F goes full screen. N opens these notes.</li>
+      <li>Tasting scores, checks and owners are saved in this browser only. Use “Copy the short list” to paste the outcome into the follow-up email.</li>
+      <li>Print (⌘P) gives a clean one-scene-per-page takeaway.</li>
+      <li>Swap the typeset wordmark in the header for the official TheraBreath logo file before the session.</li>
+    </ul></div></section>
+    <section><h3>Storyboard &amp; emotional arc</h3><div class="board-strip" id="storyboard"></div></section>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(() => {
+"use strict";
+document.documentElement.classList.add("js");
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const hex = h => { const n = parseInt(h.slice(1), 16); return [(n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255]; };
+const rgba = (h, a) => { const [r, g, b] = hex(h); return `rgba(${r * 255 | 0},${g * 255 | 0},${b * 255 | 0},${a})`; };
+const rng = seed => () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+
+/* ------------------------------------------------------------------ data */
+// Each world = three colours for the living field + energy (speed/caustics)
+const WORLDS = {
+  "open":       { c: ["#F4F9FB", "#D3E7EF", "#9CCBE0"], e: .35 },
+  "opp":        { c: ["#EEF4F8", "#C3D8EC", "#6E9BD6"], e: .4 },
+  "signals":    { c: ["#F5F1EF", "#DCE7EC", "#EBCFC6"], e: .45 },
+  "map":        { c: ["#050C18", "#0B1F3A", "#17466B"], e: .3 },
+  "anchor":     { c: ["#F0F6F4", "#CDE7DE", "#9ED0C4"], e: .4 },
+  "ws":         { c: ["#08131F", "#0F2C40", "#1F6A7E"], e: .45 },
+  "platintro":  { c: ["#F3F6F2", "#DDE9E2", "#E9EDC2"], e: .4 },
+  "p-newfresh": { c: ["#F2F8EE", "#CDE8C8", "#EFE27C"], e: .55 },
+  "p-sensory":  { c: ["#04121F", "#0B456A", "#8EE3FF"], e: 1.0 },
+  "p-ritual":   { c: ["#FAEEE3", "#EBCBB8", "#98AEDB"], e: .4 },
+  "p-elevated": { c: ["#140E0E", "#432A26", "#C4926A"], e: .45 },
+  "six":        { c: ["#F3F7F8", "#E2ECEE", "#D8E6C6"], e: .45 },
+  "c-yuzu":     { c: ["#EAF5F9", "#B9E1F2", "#E8F24C"], e: .95 },
+  "c-gtc":      { c: ["#EEF5EF", "#C6DECA", "#87B596"], e: .3 },
+  "c-ginger":   { c: ["#161E12", "#5B7A1C", "#DB832C"], e: 1.0 },
+  "c-grapefruit": { c: ["#FCEFEA", "#F4C5B9", "#92D3C0"], e: .5 },
+  "c-pear":     { c: ["#F3F0DF", "#D8D2A8", "#8F7E57"], e: .35 },
+  "c-chamomile": { c: ["#0E1330", "#252E5A", "#E6D3A2"], e: .25 },
+  "wild":       { c: ["#F4F6F3", "#E1EAE4", "#CFE3E8"], e: .4 },
+  "taste":      { c: ["#F5F7F8", "#E1EBEF", "#C4D8E1"], e: .3 },
+  "decide":     { c: ["#07121F", "#11294A", "#1D4E9E"], e: .4 },
+  "travel":     { c: ["#F3F7FA", "#DCE8F1", "#BCD4EA"], e: .35 },
+  "assign":     { c: ["#071B3F", "#133C7E", "#5F95DA"], e: .5 }
+};
+
+const PLATS = { newfresh: "New Fresh", sensory: "Sensory Proof", ritual: "Ritual by Time", elevated: "Elevated Escape" };
+
+const CONCEPTS = [
+  { id: "yuzu", n: "01", name: "Arctic Yuzu", status: "lead", code: "318", tone: "light", acc: "#C9D82C",
+    liquid: ["#F3F8B6", "#B8E2F3"], kw: ["electric", "icy", "citrus", "clean", "modern", "energetic"],
+    feels: "The first breath outside on a clear winter morning, lit by citrus.",
+    arc: ["Sharp yuzu peel, almost electric.", "A clean cold wave builds, with no burn.", "Bright, awake, completely clean."],
+    plat: ["newfresh", "sensory"],
+    note: "Build the yuzu from oxidation-tolerant top notes, since citral-heavy lemon profiles fade in oxidizing rinse systems. Non-menthol cooling agents carry the cold without the burn.",
+    avoid: "Lemon mouthwash. Snowflakes." },
+  { id: "gtc", n: "02", name: "Green Tea Cucumber", status: "lead", code: "742", tone: "light", acc: "#5E9E7A",
+    liquid: ["#E3F2E3", "#A9D2B6"], kw: ["clean", "botanical", "spa-like", "calm", "hydrating", "effortless"],
+    feels: "A glass of cold water in a quiet, sunlit room.",
+    arc: ["Soft green sencha, cool and light.", "Watery cucumber freshness settles in.", "Hydrated and calm, nothing left over."],
+    plat: ["newfresh", "ritual"],
+    note: "Cucumber’s green notes are volatile and fragile. A quiet spearmint backbone protects the profile and keeps it reading as oral care.",
+    avoid: "Health-food store. Cucumber slices on eyes." },
+  { id: "ginger", n: "03", name: "Ginger Lime", status: "lead", code: "506", tone: "dark", acc: "#E58B3A",
+    liquid: ["#D5EE74", "#F2B866"], kw: ["bright", "kinetic", "warming", "crisp", "energetic", "unexpected"],
+    feels: "Cold lime on the tongue, then a spark of warmth underneath.",
+    arc: ["A zesty lime snap.", "Ginger warmth rises under the cool.", "Crisp, energized, clean."],
+    plat: ["sensory", "ritual"],
+    note: "Warmth has to read as lively, never as burn, because no-burn is the TheraBreath promise. Keep ginger’s pungency well below irritation and let cooling lead.",
+    avoid: "Margaritas. Anything that looks like a cocktail." },
+  { id: "grapefruit", n: "04", name: "Grapefruit Rose Mint", status: "contender", code: "261", tone: "light", acc: "#E2654F",
+    liquid: ["#FBD9CF", "#F0A596"], kw: ["elevated", "aromatic", "modern botanical", "citrus floral"],
+    feels: "Morning light through pink glass.",
+    arc: ["Juicy pink grapefruit.", "A dry, green rose heart: more stem than petal.", "Cool mint comes back to close."],
+    plat: ["elevated", "newfresh"],
+    note: "Use a green, geranium-leaning rose accord rather than a sweet floral. That keeps it far from soap and perfume cues.",
+    avoid: "Perfume counter. Bath soap." },
+  { id: "pear", n: "05", name: "Pear Cardamom Mint", status: "contender", code: "893", tone: "light", acc: "#9C8A4E",
+    liquid: ["#F1EBC2", "#C8BE86"], kw: ["elegant", "layered", "culinary", "premium", "sophisticated"],
+    feels: "A chef’s pairing, translated into freshness.",
+    arc: ["Crisp green pear, cool.", "Cardamom’s airy, eucalyptus-like lift.", "Soft, clean spice held by mint."],
+    plat: ["elevated"],
+    note: "Cardamom naturally carries 1,8-cineole, the same cool note as eucalyptus. It is a built-in bridge between spice and mint.",
+    avoid: "Holiday baking. Dessert." },
+  { id: "chamomile", n: "06", name: "Chamomile Vanilla Mint", status: "open", code: "437", tone: "dark", acc: "#E6D3A2",
+    liquid: ["#F4E8C4", "#C4BEE6"], kw: ["calm", "evening", "gentle", "soft", "comforting"],
+    feels: "Lights low. The day is done.",
+    arc: ["Gentle, soft mint.", "Honeyed chamomile calm.", "A dry vanilla softness, still clean."],
+    plat: ["ritual"],
+    note: "Keep the vanilla dry and airy, low in sweetness, so the finish reads clean rather than dessert.",
+    avoid: "Tea packaging. Candles." }
+];
+const CONTROL = { id: "control", name: "TheraBreath Fresh Breath", code: "150", acc: "#1D4E9E" };
+const SAMPLES = [...CONCEPTS, CONTROL];
+const byId = id => SAMPLES.find(c => c.id === id);
+const STATUS = { lead: "Current lead", contender: "Contender", open: "Open exploration" };
+
+const REGIONS = [
+  { id: "japan", name: "Kōchi & Kyoto", country: "Japan", lon: 135.5, lat: 33.6, cue: "Yuzu · Sencha · Shiso · Hinoki", line: "Citrus that reads clean rather than sweet, and green tea as a daily reset.", teach: "Fresh can be bright and quiet at the same time.", plat: ["newfresh", "elevated"], links: ["yuzu", "gtc"], sw: ["#E6F04A", "#9CC5A1"] },
+  { id: "seoul", name: "Seoul", country: "South Korea", lon: 127, lat: 37.5, cue: "Rice water · Green tea · Cica · Layered routines", line: "Personal care built as layered, repeated rituals.", teach: "Oral care can be a step people look forward to.", plat: ["ritual", "newfresh"], links: ["gtc"], sw: ["#F3EEE6", "#B9D6C0"] },
+  { id: "kerala", name: "Kerala", country: "India", lon: 76.3, lat: 10, cue: "Green cardamom · Fresh ginger · Black pepper", line: "Cardamom pods are chewed after meals as a breath freshener.", teach: "Warm spice already means a fresh mouth for millions of people.", plat: ["sensory", "elevated"], links: ["pear", "ginger"], sw: ["#9BB36A", "#E0A550"] },
+  { id: "bangkok", name: "Bangkok", country: "Thailand", lon: 100.5, lat: 13.7, cue: "Lemongrass · Makrut lime leaf · Pandan", line: "Aromatic herbs do the work of cooling in a hot climate.", teach: "Herbal brightness can feel as refreshing as menthol.", plat: ["newfresh", "sensory"], links: ["ginger"], sw: ["#D9EC7A", "#5E9E6A"] },
+  { id: "mexico", name: "Mexico City & Oaxaca", country: "Mexico", lon: -97, lat: 18, cue: "Lime · Chile · Tamarind · Hoja santa", line: "Heat and sour served together as refreshment.", teach: "Contrast is a sensation people seek out.", plat: ["sensory"], links: ["ginger"], sw: ["#C8E84A", "#E0703C"] },
+  { id: "la", name: "Los Angeles", country: "United States", lon: -118.2, lat: 34, cue: "Cucumber water · Matcha · Electrolytes", line: "Wellness culture turned hydration into an aesthetic.", teach: "Clean and hydrated have become flavors.", plat: ["newfresh", "ritual"], links: ["gtc"], sw: ["#CFE9D6", "#8FD0E0"] },
+  { id: "marrakech", name: "Marrakech", country: "Morocco", lon: -8, lat: 31.6, cue: "Fresh mint tea · Rose · Orange blossom", line: "Mint is poured as hospitality, often alongside rose or orange blossom.", teach: "Mint can be the host, not the whole meal.", plat: ["ritual", "elevated"], links: ["grapefruit"], sw: ["#7FC8A6", "#E9A6A0"] },
+  { id: "grasse", name: "Grasse", country: "France", lon: 6.9, lat: 43.6, cue: "Rose centifolia · Grapefruit · Fig leaf", line: "Perfumers build scent in layers: top, heart, base.", teach: "A rinse can be structured like a fragrance.", plat: ["elevated"], links: ["grapefruit", "pear"], sw: ["#F2B5B0", "#F4C98A"] },
+  { id: "london", name: "London", country: "United Kingdom", lon: -0.1, lat: 51.5, cue: "Afternoon tea · Zero-proof botanicals · Tonic", line: "Low- and no-alcohol bars made adult flavor about craft, not proof.", teach: "Sophisticated and alcohol-free go together. TheraBreath already is both.", plat: ["elevated", "ritual"], links: ["pear", "grapefruit"], sw: ["#C9B28A", "#8FB9A6"] },
+  { id: "nordics", name: "Copenhagen", country: "Denmark", lon: 12.6, lat: 55.7, cue: "Sea buckthorn · Birch · Spruce tip · Cold plunge", line: "Cold is treated as a wellness practice, not only a temperature.", teach: "Cooling can signal vitality, and proof.", plat: ["sensory"], links: ["yuzu"], sw: ["#9FE0FF", "#F2A33C"] },
+  { id: "nile", name: "Nile Delta", country: "Egypt", lon: 31, lat: 30.6, cue: "Chamomile · Hibiscus", line: "One of the world’s largest chamomile-growing regions.", teach: "Calm has a flavor, and people already drink it at night.", plat: ["ritual"], links: ["chamomile"], sw: ["#F2DE8A", "#B9B7E0"] },
+  { id: "madagascar", name: "Sava coast", country: "Madagascar", lon: 50, lat: -14.3, cue: "Bourbon vanilla", line: "The source of most of the world’s vanilla.", teach: "Softness can round off sharp edges without adding sweetness.", plat: ["ritual", "elevated"], links: ["chamomile"], sw: ["#F1E3B8", "#8C6A4A"] }
+];
+const HOME = { lon: -74.66, lat: 40.35 };
+
+// Land mask, 144 × 54 equirectangular cells (lat 78° to −56°), one hex digit per 4 cells
+const GRID = { W: 144, H: 54, top: 78, bot: -56, rows: ["000000e86f8ffffe000200003000e0000000", "0000030000007fff00000002003ff0000000", "000003fc8fc03ffe000000041ffffff0f000", "01ffbf3e32382ffc0001f810dbffffffffef", "e1fffffffe1e1fc00003ff3fffffffffffff", "00fffffffe5c1f01c00fbdfffffffffffffe", "03ffffffe0640e00003e7fffffffffffffbc", "01d0ffffc0700000003e3fffffffffffe480", "00203ffff07e00000216fffffffffffe0180", "00000ffffeff80000508fffffffffffe0300", "000007ffffffc0000b3fffffffffffff8000", "000007fffff8400001ffffffffffffff4000", "000003fffffc000001fffef7fffffffe0000", "000003fffffa000001fbf5effffffffc0000", "000003fffff000000f94e063fffffff00000", "000003ffffc000000f12bff7ffffff208000", "000001ffff80000006001ff3ffffff910000", "000000ffff80000007f003ffffffff060000", "0000007fff0000000ffcc3ffffffff880000", "0000001fd10000000fffffefffffff800000", "0000002f810000001ffffff5ffffff000000", "00000017800000003ffffdfa1ffffe800000", "00000003818000007ffffeff0ff7f8000000", "00000003881000007ffffefe07c7c0000000", "00000000f80000003fffff7c0783e0800000", "000000001e0000007fffff700301f0800000", "00000000061000007fffff80030170c00000", "00000000022e00001ffffff0010121000000", "00000000007f80001ffffff0008000200000", "00000000007fe000003fffe0000282000000", "00000000007ff000000fffc000014e000000", "0000000010ffe000000fff8000008e080000", "0000000000fffe00000fff000000ee870000", "0000000000ffffc00007ff0000000001c800", "0000000000ffffc00007ff0000001809e000", "00000000007fffc00007ff00000000401800", "00000000007fff800007ff000000000e0000", "00000000003fff000007ff100000003c4000", "00000000001fff000007fe300000007fc000", "00000000000fff000007fc30000000ffe000", "00000000000ffe000003fc60000007fff000", "00000000000ff8000003fc20000007fff800", "00000000000ff8000003f800000003fff800", "00000000001ff0000001f000000003fff800", "00000000001fe0000001e000000003c3f800", "00000000001f80000000000000000001f000", "00000000001f80000000000000000000f000", "00000000001e000000000000000000000002", "00000000003e000000000000000000002000", "00000000001c000000000000000000000010", "00000000003c000000000000000000000000", "000000000038000000000000000000000000", "000000000038000000000000000000000000", "00000000000c004000000000000000000000"] };
+
+const SPECTRUM = [
+  { v: 3, name: "Classic peppermint", c: false, line: "Trusted, and easy to forget." },
+  { v: 12, name: "Cool mint", c: false, line: "The category default." },
+  { v: 21, name: "Spearmint", c: false, line: "A small step. Still expected." },
+  { v: 33, name: "Chamomile Vanilla Mint", c: true },
+  { v: 40, name: "Green Tea Cucumber", c: true },
+  { v: 48, name: "Arctic Yuzu", c: true },
+  { v: 55, name: "Pear Cardamom Mint", c: true },
+  { v: 61, name: "Grapefruit Rose Mint", c: true },
+  { v: 67, name: "Ginger Lime", c: true },
+  { v: 81, name: "Smoked chili cola", c: false, line: "Memorable once. Hard to buy twice." },
+  { v: 94, name: "Pickle-brine mint", c: false, line: "Novelty for its own sake." }
+];
+
+const AXES = [
+  ["Adventurous", "from familiar"], ["Warming", "from cooling"], ["Calming", "from bright"], ["Layered", "from simple"],
+  ["Elevated", "from everyday"], ["Ritual", "from routine"], ["Experiential", "from functional"]
+];
+const BASE = [.12, .05, .14, .12, .14, .12, .16];
+const SHAPES = {
+  yuzu: [.52, .05, .1, .22, .3, .2, .88], gtc: [.34, .05, .82, .24, .44, .56, .3], ginger: [.6, .78, .1, .34, .28, .26, .7],
+  grapefruit: [.48, .1, .28, .72, .76, .32, .3], pear: [.5, .34, .34, .86, .8, .34, .24], chamomile: [.38, .24, .86, .38, .44, .86, .2],
+  all: [.95, .9, .82, .94, .92, .9, .95]
+};
+
+const MOMENTS = [
+  { h: 6.5, t: "6:30 AM", name: "Wake", flavor: "Arctic Yuzu", line: "A bright, cold start." },
+  { h: 12.5, t: "12:30 PM", name: "Midday reset", flavor: "Green Tea Cucumber", line: "Clean and calm, back to the afternoon." },
+  { h: 15.25, t: "3:15 PM", name: "After coffee", flavor: "Ginger Lime", line: "Cut through coffee, lift the energy." },
+  { h: 19, t: "7:00 PM", name: "Before going out", flavor: "Grapefruit Rose Mint", line: "Confident, elevated, social." },
+  { h: 22.5, t: "10:30 PM", name: "Wind-down", flavor: "Chamomile Vanilla Mint", line: "Soft, clean, ready for sleep." }
+];
+
+const WILD = [
+  { name: "Hinoki Spearmint", plat: "elevated", line: "Japanese cypress and cool spearmint. Forest-bathing, in a rinse.", sw: ["#D8E4CF", "#7C9A7E"] },
+  { name: "Watermelon Shiso", plat: "newfresh", line: "Watery summer fruit with a green, herbal snap.", sw: ["#F7C6C0", "#7FB08A"] },
+  { name: "Makrut Lime & Sea Salt", plat: "sensory", line: "Mineral, coastal and bright. Salinity as a sensation.", sw: ["#E6F1F0", "#B9D86A"] }
+];
+
+const DIMS = [
+  ["fr", "Freshness", "How fresh does it make my mouth feel?"], ["un", "Uniqueness", "Have I tasted this in oral care before?"],
+  ["li", "Flavor liking", "Do I enjoy it?"], ["fit", "TheraBreath fit", "Could this sit on the TheraBreath shelf?"],
+  ["me", "Memorability", "Will I remember it tonight?"], ["re", "Repeat-use potential", "Would I use it every day?"],
+  ["se", "Sensory experience", "Did I feel it working?"]
+];
+
+const ACTIONS = ["Bench samples in base", "Accelerated stability test", "Sensory panel", "Consumer concept screen", "Naming & pack sketch"];
+
+const STORY = [
+  ["open", "Opening", "Curiosity", "Where could fresh go?"], ["opp", "Opportunity", "Recognition", "What do we keep?"],
+  ["signals", "Signals", "Recognition", "What is changing?"], ["map", "Flavor map", "Possibility", "Where are cues coming from?"],
+  ["anchor", "Anchor", "Possibility", "How far is too far?"], ["ws", "White space", "Possibility", "Which dimension do we stretch?"],
+  ["p-sensory", "Platforms", "Possibility", "Which worlds could we own?"], ["c-yuzu", "Six concepts", "Desire", "What would we taste?"],
+  ["taste", "Tasting", "Participation", "How does the whole rinse perform?"], ["decide", "Decide", "Participation", "What clears all three checks?"],
+  ["travel", "Beyond the bottle", "Possibility", "How else do we think?"], ["assign", "Assign", "Clarity", "Who owns what next?"]
+];
+
+/* ------------------------------------------------------------------ state */
+const KEY = "tb-flavor-playbook-2026";
+let S = { scores: {}, words: {}, checks: {}, advance: [], platforms: [], assign: {}, reveal: false, cur: "yuzu" };
+try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+let toastT;
+const toast = msg => { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("on"), 2400); };
+const copy = (text, ok) => {
+  const done = () => toast(ok);
+  const fallback = () => { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch (e) { toast("Select and copy manually"); } ta.remove(); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+};
+
+/* ------------------------------------------------------------------ bottle */
+// Concept render of the TheraBreath rinse bottle: rounded shoulders, clear body, white cap.
+let bottleN = 0;
+function bottle(liquid, l1, l2, band) {
+  const id = "b" + (bottleN++);
+  const body = "M42,44 L78,44 L78,56 C78,66 106,68 106,88 L106,278 Q106,294 90,294 L30,294 Q14,294 14,278 L14,88 C14,68 42,66 42,56 Z";
+  return `<svg viewBox="0 0 120 300" aria-hidden="true"><defs>
+  <linearGradient id="${id}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${liquid[0]}"/><stop offset="1" stop-color="${liquid[1]}"/></linearGradient>
+  <linearGradient id="${id}g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".25" stop-color="#fff" stop-opacity=".05"/><stop offset=".8" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
+  <clipPath id="${id}c"><path d="${body}"/></clipPath></defs>
+  <path d="${body}" fill="rgba(255,255,255,.28)" stroke="rgba(255,255,255,.85)" stroke-width="1.2"/>
+  <g clip-path="url(#${id}c)"><rect x="0" y="92" width="120" height="210" fill="url(#${id}l)" opacity=".92"/><rect x="0" y="90" width="120" height="4" fill="#fff" opacity=".5"/></g>
+  <path d="${body}" fill="url(#${id}g)"/>
+  <rect x="36" y="2" width="48" height="44" rx="6" fill="#FBFCFD" stroke="rgba(10,26,47,.12)"/>
+  <g stroke="rgba(10,26,47,.1)">${Array.from({ length: 9 }, (_, i) => `<line x1="${41 + i * 4.8}" y1="8" x2="${41 + i * 4.8}" y2="40"/>`).join("")}</g>
+  <rect x="36" y="40" width="48" height="5" fill="${band}"/>
+  <rect x="24" y="148" width="72" height="110" rx="7" fill="rgba(255,255,255,.94)"/>
+  <text x="60" y="171" text-anchor="middle" font-family="Hanken Grotesk, Arial, sans-serif" font-size="11.5" font-weight="750" fill="#1D4E9E" letter-spacing="-.2">Thera<tspan font-weight="400">Breath</tspan></text>
+  <line x1="36" y1="180" x2="84" y2="180" stroke="rgba(29,78,158,.25)"/>
+  <text x="60" y="200" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="10.5" fill="#0A1A2F">${l1}</text>
+  <text x="60" y="213" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="10.5" fill="#0A1A2F">${l2}</text>
+  <text x="60" y="233" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="5" textLength="62" lengthAdjust="spacingAndGlyphs" fill="#1D4E9E">ORAL RINSE · ALCOHOL-FREE</text>
+  <rect x="24" y="244" width="72" height="14" fill="${band}" opacity=".9"/>
+  </svg>`;
+}
+const splitName = n => { const w = n.split(" "); if (w.length === 1) return [n, ""]; const m = Math.ceil(w.length / 2); return [w.slice(0, m).join(" "), w.slice(m).join(" ")]; };
+$$('[data-bottle="classic"]').forEach(el => el.innerHTML = bottle(["#8CC4F2", "#2F74C9"], "Fresh Breath", "Oral Rinse", "#1D4E9E"));
+
+/* ------------------------------------------------------------------ concept scenes */
+const italLast = n => { const w = n.split(" "); const l = w.pop(); return (w.length ? w.join(" ") + " " : "") + `<em>${l}</em>`; };
+$("#conceptScenes").innerHTML = CONCEPTS.map((c, i) => {
+  const [a, b] = splitName(c.name);
+  return `<section class="scene" id="c-${c.id}" data-world="c-${c.id}" data-tone="${c.tone}" data-phase="Taste" data-title="${c.name}" data-stop>
+  <div class="wrap concept${i % 2 ? " rev" : ""}">
+    <div class="lens rv"><canvas data-art="${c.id}" aria-label="Sensory artwork for ${c.name}"></canvas><div class="bottle-wrap">${bottle(c.liquid, a, b, c.acc)}</div></div>
+    <div style="--acc:${c.acc}">
+      <div class="c-meta rv"><span class="mono" style="color:var(--fg-soft)">Concept ${c.n} / 06</span><span class="status">${STATUS[c.status]}</span></div>
+      <h2 class="d rv d1" style="font-size:clamp(46px,5.6vw,108px)">${italLast(c.name)}</h2>
+      <div class="kw rv d1">${c.kw.join(" · ")}</div>
+      <p class="feels rv d2">${c.feels}</p>
+      <div class="arc rv d2"><div><b>Opening</b>${c.arc[0]}</div><div><b>Development</b>${c.arc[1]}</div><div><b>Finish</b>${c.arc[2]}</div></div>
+      <div class="c-foot rv d3">
+        <div><h4>Formulation note</h4><p>${c.note}</p></div>
+        <div><h4>Platforms</h4><div class="tags">${c.plat.map(p => `<span class="tag">${PLATS[p]}</span>`).join("")}</div><h4 style="margin-top:16px">Stay clear of</h4><p>${c.avoid}</p></div>
+      </div>
+    </div>
+  </div></section>`;
+}).join("");
+$("#sixRow").innerHTML = CONCEPTS.map(c => `<a href="#c-${c.id}"><div class="lensmini"><canvas data-mini="${c.id}" width="320" height="320" style="width:100%;height:100%;display:block"></canvas></div><span class="mono">${c.n} · ${STATUS[c.status]}</span><span class="nm">${c.name}</span></a>`).join("");
+$("#wildRow").innerHTML = WILD.map(w => `<div class="wild-card pane rv"><div class="sw" style="background:linear-gradient(120deg,${w.sw[0]},${w.sw[1]})"></div><span class="mono" style="color:var(--fg-soft)">${PLATS[w.plat]}</span><h3>${w.name}</h3><p class="small" style="margin:0">${w.line}</p></div>`).join("");
+
+/* ------------------------------------------------------------------ living field (WebGL) */
+const field = (() => {
+  const cv = $("#fluid");
+  const gl = cv.getContext("webgl", { antialias: false, alpha: false, powerPreference: "low-power" });
+  const cur = { c: WORLDS.open.c.map(hex), e: WORLDS.open.e }, tgt = { c: cur.c.map(v => v.slice()), e: cur.e };
+  const api = { set(w) { const W = WORLDS[w]; if (!W) return; tgt.c = W.c.map(hex); tgt.e = W.e; }, kick: 0, mx: 0, my: 0 };
+  if (!gl) return api;
+  const vs = "attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
+  const fs = `precision mediump float;uniform vec2 r;uniform float t,e;uniform vec3 c1,c2,c3;uniform vec2 m;
+  float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+  float n(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),u.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),u.x),u.y);}
+  float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*n(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return v;}
+  void main(){vec2 uv=gl_FragCoord.xy/r;vec2 p=(gl_FragCoord.xy-.5*r)/min(r.x,r.y)+m*.06;
+    float T=t*.035;
+    vec2 q=vec2(fbm(p*1.3+vec2(0.,T)),fbm(p*1.3+vec2(5.2,-T)+1.3));
+    vec2 w=vec2(fbm(p*1.1+2.2*q+vec2(1.7,9.2)+T*.8),fbm(p*1.1+2.2*q+vec2(8.3,2.8)-T*.6));
+    float f=fbm(p*1.05+2.6*w);
+    vec3 col=mix(c1,c2,smoothstep(.25,.78,f));
+    col=mix(col,c3,smoothstep(.5,.95,f*length(w)*1.35));
+    float ca=pow(1.-abs(sin((f*1.4+w.x)*8.5+T*2.)),14.);
+    col+=ca*.10*e*(.5+.5*c3);
+    col=mix(col,c1,.18*smoothstep(.9,.0,uv.y));
+    col*=1.-.22*pow(length(uv-.5)*1.25,2.2);
+    col+=(h(gl_FragCoord.xy+fract(t))-.5)*.022;
+    gl_FragColor=vec4(col,1.);}`;
+  const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };
+  const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr);
+  if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return api;
+  gl.useProgram(pr);
+  const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+  const lp = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(lp); gl.vertexAttribPointer(lp, 2, gl.FLOAT, false, 0, 0);
+  const U = {}; ["r", "t", "e", "c1", "c2", "c3", "m"].forEach(k => U[k] = gl.getUniformLocation(pr, k));
+  const resize = () => { const s = .5 * Math.min(devicePixelRatio || 1, 2); cv.width = Math.max(2, innerWidth * s | 0); cv.height = Math.max(2, innerHeight * s | 0); gl.viewport(0, 0, cv.width, cv.height); };
+  addEventListener("resize", resize); resize();
+  let t = 20, last = performance.now(), mx = 0, my = 0;
+  const frame = now => {
+    const dt = Math.min(.05, (now - last) / 1000); last = now;
+    if (!document.hidden) {
+      const k = 1 - Math.pow(.001, dt * .55);
+      for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) cur.c[i][j] = lerp(cur.c[i][j], tgt.c[i][j], k);
+      api.kick *= Math.pow(.02, dt);
+      cur.e = lerp(cur.e, tgt.e + api.kick, k);
+      t += dt * (REDUCED ? .1 : (.6 + cur.e * 1.4));
+      mx = lerp(mx, api.mx, .04); my = lerp(my, api.my, .04);
+      gl.uniform2f(U.r, cv.width, cv.height); gl.uniform1f(U.t, t); gl.uniform1f(U.e, cur.e);
+      gl.uniform3fv(U.c1, cur.c[0]); gl.uniform3fv(U.c2, cur.c[1]); gl.uniform3fv(U.c3, cur.c[2]); gl.uniform2f(U.m, mx, my);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    }
+    requestAnimationFrame(frame);
+  };
+  requestAnimationFrame(frame);
+  return api;
+})();
+addEventListener("pointermove", e => { field.mx = e.clientX / innerWidth - .5; field.my = .5 - e.clientY / innerHeight; }, { passive: true });
+
+/* ------------------------------------------------------------------ scroll engine */
+const worldEls = $$("[data-world]");
+const opp = $("#opportunity");
+// sub-stops inside the sticky opportunity scene so the presenter can step through the rings
+[1, 2].forEach(k => { const m = document.createElement("i"); m.setAttribute("data-stop", ""); m.style.cssText = `position:absolute;left:0;top:${k * 100}vh;width:1px;height:1px`; opp.appendChild(m); });
+const rail = $("#rail");
+const phases = ["Frame", "Taste", "Choose", "Assign"];
+const railScenes = $$("section[data-stop]");
+rail.innerHTML = phases.map(ph => `<div class="ph" data-ph="${ph}"><span class="ph-l">${ph.toUpperCase()}</span>${railScenes.filter(s => s.dataset.phase === ph).map(s => `<a href="#${s.id}" data-for="${s.id}" aria-label="${s.dataset.title}"><span>${s.dataset.title}</span></a>`).join("")}</div>`).join("");
+let activeEl = null, lastY = scrollY;
+function onScroll() {
+  const mid = innerHeight * .5;
+  let a = worldEls[0];
+  for (const el of worldEls) { const r = el.getBoundingClientRect(); if (r.top <= mid && r.bottom >= mid) a = el; }
+  if (a !== activeEl) {
+    activeEl = a; field.set(a.dataset.world);
+    document.body.dataset.tone = a.dataset.tone || "light";
+    $(".keys").style.opacity = a.id === "open" ? "" : "0";
+    $("#chapter").textContent = `${a.dataset.phase || ""} · ${a.dataset.title || ""}`;
+    $$("a", rail).forEach(x => x.classList.toggle("on", x.dataset.for === a.id));
+    $$(".ph", rail).forEach(x => x.classList.toggle("on", x.dataset.ph === a.dataset.phase));
+  }
+  const dy = Math.abs(scrollY - lastY); lastY = scrollY;
+  field.kick = Math.min(.5, field.kick + dy * .0012);
+  const max = document.documentElement.scrollHeight - innerHeight;
+  $("#progress").style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+  // opportunity rings
+  if (innerWidth > 860) {
+    const r = opp.getBoundingClientRect();
+    const p = clamp(-r.top / (r.height - innerHeight), 0, 1);
+    const step = p < .3 ? 0 : p < .6 ? 1 : 2;
+    $$("#oppSteps li").forEach((li, i) => li.classList.toggle("on", i <= step));
+    $(".r2", opp).classList.toggle("on", p >= .3); $(".r3", opp).classList.toggle("on", p >= .6);
+    $$(".verb", opp).forEach((v, i) => v.classList.toggle("on", p > .62 + i * .06));
+  }
+}
+let ticking = false;
+addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { onScroll(); ticking = false; }); } }, { passive: true });
+addEventListener("resize", onScroll);
+
+/* reveal */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: .08 });
+$$(".rv").forEach(el => io.observe(el));
+const waveIO = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle("in", e.isIntersecting)), { threshold: .3 });
+waveIO.observe($("#wave"));
+// visibility helper for animated canvases
+const visible = new Set();
+const visIO = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? visible.add(e.target) : visible.delete(e.target)), { threshold: .01 });
+
+/* ------------------------------------------------------------------ opening tuner */
+(() => {
+  const words = ["cool", "bright", "calm", "electric", "warm", "layered", "like a ritual", "like yours"];
+  let i = 0; const el = $("#tune");
+  if (REDUCED) return;
+  setInterval(() => { el.style.opacity = 0; setTimeout(() => { i = (i + 1) % words.length; el.textContent = words[i]; el.style.opacity = 1; }, 450); }, 2200);
+})();
+
+/* ------------------------------------------------------------------ signals minis */
+(() => {
+  const cols = ["#E6F04A", "#9CC5A1", "#F2B5B0", "#F4C98A", "#7FC8A6", "#C9B28A", "#9FE0FF", "#E0703C", "#B9B7E0", "#D9EC7A", "#F1E3B8", "#5E9E6A", "#E86F5C", "#8FD0E0", "#A89A5C", "#F7C6C0"];
+  $("#vFlavor").innerHTML = Array.from({ length: 32 }, (_, i) => `<i style="background:${cols[(i * 7) % cols.length]};animation-delay:${-(i * .37) % 6}s"></i>`).join("");
+  const svg = $("#vSense");
+  const mk = (amp, per, y, ph) => { let d = ""; for (let x = 0; x <= 600; x += 4) d += (x ? "L" : "M") + x + "," + (y + Math.sin(x / per * Math.PI * 2 + ph) * amp * (0.4 + 0.6 * Math.sin(x / 600 * Math.PI))).toFixed(1); return d; };
+  svg.innerHTML = [["#1D4E9E", 26, 150, 85, 0], ["#5FB6D9", 18, 100, 85, 1], ["#B7D94A", 12, 75, 85, 2]].map(([c, a, p, y, ph], i) =>
+    `<path d="${mk(a, p, y, ph)}" stroke="${c}" opacity="${.9 - i * .2}" style="animation:sense ${6 + i * 2}s linear infinite"/>`).join("");
+  const st = document.createElement("style"); st.textContent = "@keyframes sense{from{transform:translateX(0)}to{transform:translateX(-300px)}}"; document.head.appendChild(st);
+})();
+
+/* ------------------------------------------------------------------ flavor map */
+(() => {
+  const stage = $("#mapStage"), cv = $("#mapCanvas"), ctx = cv.getContext("2d"), card = $("#mapCard");
+  const bits = GRID.rows.map(r => r.split("").map(ch => parseInt(ch, 16).toString(2).padStart(4, "0")).join(""));
+  const toXY = (lon, lat) => [(lon + 180) / 360 * GRID.W, (GRID.top - lat) / (GRID.top - GRID.bot) * GRID.H];
+  let sel = REGIONS[0], filt = "all", w = 0, h = 0, dpr = 1;
+  const home = toXY(HOME.lon, HOME.lat);
+  REGIONS.forEach(r => {
+    const [x, y] = toXY(r.lon, r.lat);
+    const b = document.createElement("button"); b.type = "button"; b.className = "hot"; b.style.left = x / GRID.W * 100 + "%"; b.style.top = y / GRID.H * 100 + "%"; b.style.setProperty("--c", r.sw[0]);
+    b.innerHTML = `<span class="lab">${r.name}</span>`; b.setAttribute("aria-label", `${r.name}, ${r.country}`);
+    b.addEventListener("click", () => select(r)); r.el = b; stage.appendChild(b);
+  });
+  const hm = document.createElement("div"); hm.className = "hot home"; hm.style.left = home[0] / GRID.W * 100 + "%"; hm.style.top = home[1] / GRID.H * 100 + "%"; hm.innerHTML = `<span class="lab">Princeton · the room</span>`; stage.appendChild(hm);
+  function select(r) {
+    sel = r;
+    REGIONS.forEach(x => x.el.classList.toggle("on", x === r));
+    card.innerHTML = `<div class="sw" style="background:linear-gradient(135deg,${r.sw[0]},${r.sw[1]})"></div>
+      <span class="mono" style="color:var(--fg-soft)">${r.country}</span><h3>${r.name}</h3>
+      <div class="cue-l">${r.cue}</div><p class="small" style="margin:0">${r.line}</p><p class="teach">${r.teach}</p>
+      <div class="links">${r.links.map(id => `<span class="tag" style="border-color:${rgba(r.sw[0], .6)};color:var(--fg)">${byId(id).name}</span>`).join("")}${r.plat.map(p => `<span class="tag">${PLATS[p]}</span>`).join("")}</div>`;
+  }
+  $$("#mapFilters .filt").forEach(b => b.addEventListener("click", () => {
+    filt = b.dataset.f; $$("#mapFilters .filt").forEach(x => x.classList.toggle("on", x === b));
+    REGIONS.forEach(r => r.el.classList.toggle("dim", filt !== "all" && !r.plat.includes(filt)));
+    if (filt !== "all" && !sel.plat.includes(filt)) select(REGIONS.find(r => r.plat.includes(filt)));
+  }));
+  const size = () => { const r = stage.getBoundingClientRect(); dpr = Math.min(devicePixelRatio || 1, 2); w = r.width; h = r.height; cv.width = w * dpr; cv.height = h * dpr; };
+  addEventListener("resize", size); size();
+  const bez = (a, b, c, t) => [(1 - t) * (1 - t) * a[0] + 2 * (1 - t) * t * b[0] + t * t * c[0], (1 - t) * (1 - t) * a[1] + 2 * (1 - t) * t * b[1] + t * t * c[1]];
+  function draw(time) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
+    const cw = w / GRID.W, ch = h / GRID.H;
+    const [sx, sy] = toXY(sel.lon, sel.lat);
+    const [cr, cg, cb] = hex(sel.sw[0]);
+    for (let y = 0; y < GRID.H; y++) for (let x = 0; x < GRID.W; x++) {
+      if (bits[y][x] !== "1") continue;
+      const d = Math.hypot(x - sx, (y - sy) * 1.2);
+      const k = Math.max(0, 1 - d / 11) * (0.75 + 0.25 * Math.sin(time * 2 - d * .6));
+      const rr = 234 + (cr * 255 - 234) * k, gg = 242 + (cg * 255 - 242) * k, bb = 246 + (cb * 255 - 246) * k;
+      ctx.fillStyle = `rgba(${rr | 0},${gg | 0},${bb | 0},${.16 + k * .7})`;
+      ctx.beginPath(); ctx.arc((x + .5) * cw, (y + .5) * ch, Math.min(cw, ch) * (.26 + k * .14), 0, 6.283); ctx.fill();
+    }
+    const H = [(home[0]) * cw, (home[1]) * ch];
+    REGIONS.forEach(r => {
+      if (filt !== "all" && !r.plat.includes(filt)) return;
+      const [x, y] = toXY(r.lon, r.lat); const A = [x * cw, y * ch];
+      const dist = Math.hypot(A[0] - H[0], A[1] - H[1]);
+      const C = [(A[0] + H[0]) / 2, Math.min(A[1], H[1]) - dist * .32];
+      const on = r === sel;
+      ctx.beginPath(); ctx.moveTo(A[0], A[1]); ctx.quadraticCurveTo(C[0], C[1], H[0], H[1]);
+      ctx.strokeStyle = on ? rgba(r.sw[0], .75) : "rgba(234,242,246,.09)"; ctx.lineWidth = on ? 1.4 : 1; ctx.stroke();
+      if (on) {
+        for (let j = 0; j < 3; j++) {
+          const tt = ((time * .35 + j / 3) % 1); const [px, py] = bez(A, C, H, tt);
+          const g = ctx.createRadialGradient(px, py, 0, px, py, 10); g.addColorStop(0, rgba(r.sw[0], .95)); g.addColorStop(1, rgba(r.sw[0], 0));
+          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px, py, 10, 0, 6.283); ctx.fill();
+        }
+      }
+    });
+  }
+  visIO.observe(stage);
+  let t0 = performance.now();
+  const loop = now => { if (visible.has(stage) || !draw.once) { draw((now - t0) / 1000); draw.once = true; } requestAnimationFrame(loop); };
+  requestAnimationFrame(loop);
+  select(sel);
+})();
+
+/* ------------------------------------------------------------------ spectrum */
+(() => {
+  const sp = $("#spectrum"), bar = $(".spec-bar", sp), hd = $("#specHandle"), ticks = $("#specTicks");
+  ticks.style.cssText = "position:absolute;left:0;right:0;top:0;height:170px";
+  ticks.innerHTML = SPECTRUM.map((s, i) => `<div class="spec-tick" data-i="${i}" style="left:${s.v}%;bottom:6px"><span style="${s.c ? "" : "opacity:.6"}">${s.name}</span><i></i></div>`).join("");
+  let v = 48;
+  const set = (nv, snap) => {
+    v = clamp(nv, 0, 100);
+    let best = SPECTRUM[0], bd = 1e9; SPECTRUM.forEach(s => { const d = Math.abs(s.v - v); if (d < bd) { bd = d; best = s; } });
+    if (snap && bd < 4) v = best.v;
+    hd.style.left = v + "%"; hd.setAttribute("aria-valuenow", Math.round(v));
+    const zone = v < 28 ? "Expected" : v <= 72 ? "Worth remembering" : "Novelty";
+    $("#specZone").textContent = zone; $("#specZone").style.color = v > 72 ? "var(--coral)" : "var(--thera)";
+    $("#specName").textContent = best.name;
+    $("#specLine").textContent = best.line || "Familiar enough to trust, different enough to remember.";
+    $$(".spec-tick", ticks).forEach(t => t.classList.toggle("on", +t.dataset.i === SPECTRUM.indexOf(best)));
+  };
+  const fromX = x => { const r = bar.getBoundingClientRect(); return (x - r.left) / r.width * 100; };
+  let drag = false;
+  sp.addEventListener("pointerdown", e => { if (e.target.closest(".spec-read")) return; drag = true; sp.setPointerCapture(e.pointerId); set(fromX(e.clientX)); });
+  sp.addEventListener("pointermove", e => { if (drag) set(fromX(e.clientX)); });
+  sp.addEventListener("pointerup", e => { if (drag) { drag = false; set(fromX(e.clientX), true); } });
+  hd.addEventListener("keydown", e => { if (e.key === "ArrowLeft" || e.key === "ArrowRight") { e.preventDefault(); set(v + (e.key === "ArrowRight" ? 2 : -2)); } });
+  set(v);
+})();
+
+/* ------------------------------------------------------------------ white space instrument */
+(() => {
+  const svg = $("#instrument"), C = 260, R = 210, N = AXES.length;
+  const ang = i => i / N * Math.PI * 2 - Math.PI / 2;
+  const pt = (i, v) => [C + Math.cos(ang(i)) * R * v, C + Math.sin(ang(i)) * R * v];
+  const poly = vals => vals.map((v, i) => pt(i, v).map(n => n.toFixed(1)).join(",")).join(" ");
+  let html = "";
+  [.25, .5, .75, 1].forEach(k => html += `<polygon points="${poly(Array(N).fill(k))}" fill="none" stroke="rgba(234,242,246,${k === 1 ? .28 : .1})"/>`);
+  AXES.forEach((a, i) => {
+    const [x, y] = pt(i, 1); html += `<line x1="${C}" y1="${C}" x2="${x}" y2="${y}" stroke="rgba(234,242,246,.16)"/>`;
+    const [lx, ly] = pt(i, 1.12); const cx = Math.cos(ang(i));
+    const anchor = cx > .25 ? "start" : cx < -.25 ? "end" : "middle";
+    html += `<text class="big" x="${lx}" y="${ly}" text-anchor="${anchor}">${a[0]}</text><text x="${lx}" y="${ly + 15}" text-anchor="${anchor}">${a[1]}</text>`;
+  });
+  html += `<polygon id="wsBase" points="${poly(BASE)}" fill="rgba(234,242,246,.1)" stroke="rgba(234,242,246,.55)" stroke-dasharray="3 4"/>`;
+  html += `<polygon id="wsShape" points="${poly(BASE)}" fill="rgba(230,240,74,.18)" stroke="#E6F04A" stroke-width="1.6" stroke-linejoin="round"/>`;
+  html += AXES.map((_, i) => `<circle class="wsv" r="4" cx="${C}" cy="${C}" fill="#E6F04A"/>`).join("");
+  html += `<text x="${C}" y="${C + 4}" text-anchor="middle" style="fill:rgba(234,242,246,.55)">classic mint</text>`;
+  svg.innerHTML = html;
+  const shape = $("#wsShape"), dots = $$(".wsv", svg);
+  let curV = BASE.slice(), anim;
+  const opts = [...CONCEPTS.map(c => ({ id: c.id, name: c.name, col: c.acc })), { id: "all", name: "Change everything", col: "#E8745E" }];
+  $("#wsCtrl").innerHTML = opts.map(o => `<button type="button" class="ws-btn${o.id === "all" ? " warn" : ""}" data-id="${o.id}">${o.name}</button>`).join("");
+  const show = id => {
+    const o = opts.find(x => x.id === id), tgt = SHAPES[id], from = curV.slice(), t0 = performance.now();
+    $$("#wsCtrl .ws-btn").forEach(b => b.classList.toggle("on", b.dataset.id === id));
+    const col = id === "all" ? "#E8745E" : (o.col === "#E6D3A2" ? "#E6D3A2" : o.col);
+    shape.setAttribute("stroke", col); shape.setAttribute("fill", rgba(col, .2)); dots.forEach(d => d.setAttribute("fill", col));
+    if (id === "all") shape.setAttribute("stroke-dasharray", "6 5"); else shape.removeAttribute("stroke-dasharray");
+    cancelAnimationFrame(anim);
+    const step = now => {
+      const k = clamp((now - t0) / 900, 0, 1), e = 1 - Math.pow(1 - k, 3);
+      curV = from.map((v, i) => lerp(v, tgt[i], e));
+      shape.setAttribute("points", poly(curV)); dots.forEach((d, i) => { const [x, y] = pt(i, curV[i]); d.setAttribute("cx", x); d.setAttribute("cy", y); });
+      if (k < 1) anim = requestAnimationFrame(step);
+    };
+    anim = requestAnimationFrame(step);
+    const diffs = tgt.map((v, i) => [v - BASE[i], i]).sort((a, b) => b[0] - a[0]);
+    const stretched = diffs.filter(d => d[0] > .35).map(d => AXES[d[1]][0]);
+    const held = AXES.filter((a, i) => !stretched.includes(a[0])).map(a => a[0].toLowerCase());
+    $("#wsRead").innerHTML = id === "all"
+      ? `<span class="mono" style="color:var(--coral)">Overreach</span><div class="d d-s">Everything changes at once, so nothing is left to trust.</div><p class="small" style="margin:0">This is where novelty lives. People try it once.</p>`
+      : `<span class="mono" style="color:${col}">${o.name}</span><div class="d d-s">Stretches ${stretched.join(" + ")}.</div><p class="small" style="margin:0">Holds close to home on ${held.join(", ")}.</p>`;
+  };
+  $("#wsCtrl").addEventListener("click", e => { const b = e.target.closest(".ws-btn"); if (b) show(b.dataset.id); });
+  show("yuzu");
+})();
+
+/* ------------------------------------------------------------------ new fresh orbit */
+(() => {
+  const A = [["Yuzu", "#E6F04A"], ["Sencha", "#9CC5A1"], ["Cucumber", "#CFE9D6"], ["Grapefruit", "#F2A596"], ["Pear", "#E5E0A6"], ["Lemongrass", "#D9EC7A"]];
+  const B = [["Shiso", "#7FB08A"], ["Rose", "#F2B5B0"], ["Spearmint", "#7CC7AE"], ["Chamomile", "#F2DE8A"]];
+  const place = (ring, list, off) => ring.innerHTML = list.map(([n, c], i) => {
+    const a = i / list.length * Math.PI * 2 + off;
+    return `<div class="nf-s" style="left:${50 + Math.cos(a) * 50}%;top:${50 + Math.sin(a) * 50}%"><b><i style="background:radial-gradient(circle at 35% 30%,#fff,${c} 55%,${c})"></i><em>${n}</em></b></div>`;
+  }).join("");
+  const rA = $("#nfA"), rB = $("#nfB");
+  place(rA, A, -Math.PI / 2); place(rB, B, Math.PI / 4);
+  const vis = rA.parentNode; visIO.observe(vis);
+  const spin = (ring, deg) => { ring.style.transform = `rotate(${deg}deg)`; $$(".nf-s b", ring).forEach(b => b.style.transform = `translate(-50%,-50%) rotate(${-deg}deg)`); };
+  const t0 = performance.now();
+  const loop = now => { if (visible.has(vis) && !REDUCED) { const t = (now - t0) / 1000; spin(rA, t * 6); spin(rB, -t * 8); } requestAnimationFrame(loop); };
+  requestAnimationFrame(loop);
+})();
+
+/* ------------------------------------------------------------------ ritual dial */
+(() => {
+  const wrap = $("#dialWrap"); let idx = 0, user = false;
+  MOMENTS.forEach((m, i) => {
+    const th = (180 + m.h * 15) * Math.PI / 180;
+    const b = document.createElement("button"); b.type = "button"; b.className = "moment";
+    b.style.left = 50 + 44 * Math.sin(th) + "%"; b.style.top = 50 - 44 * Math.cos(th) + "%";
+    b.innerHTML = `<span>${m.name}</span>`; b.setAttribute("aria-label", `${m.t} ${m.name}`);
+    b.addEventListener("click", () => { user = true; show(i); }); wrap.appendChild(b);
+  });
+  const show = i => {
+    idx = i; const m = MOMENTS[i];
+    $$(".moment", wrap).forEach((b, j) => b.classList.toggle("on", j === i));
+    $("#dT").textContent = m.t; $("#dN").textContent = m.name; $("#dF").textContent = m.flavor; $("#dL").textContent = m.line;
+  };
+  show(0); visIO.observe(wrap);
+  setInterval(() => { if (!user && visible.has(wrap) && !REDUCED) show((idx + 1) % MOMENTS.length); }, 3600);
+})();
+
+/* ------------------------------------------------------------------ concept lenses (generative) */
+const ART = {
+  yuzu: {
+    init(r) {
+      const cx = .4, cy = .44, shards = [], rays = 26, rings = [0, .09, .2, .34, .52, .8];
+      const angs = Array.from({ length: rays }, (_, i) => (i + r() * .7) / rays * Math.PI * 2);
+      const jit = rings.map(() => angs.map(() => .85 + r() * .3));
+      for (let k = 0; k < rings.length - 1; k++) for (let i = 0; i < rays; i++) {
+        const j = (i + 1) % rays, P = (a, rr) => [cx + Math.cos(a) * rr, cy + Math.sin(a) * rr];
+        shards.push({ p: [P(angs[i], rings[k] * jit[k][i]), P(angs[j], rings[k] * jit[k][j]), P(angs[j], rings[k + 1] * jit[k + 1][j]), P(angs[i], rings[k + 1] * jit[k + 1][i])], d: (rings[k] + rings[k + 1]) / 2, y: r() < .14, ph: r() * 6 });
+      }
+      return { shards, cx, cy, bolt: [], bt: 0, r };
+    },
+    draw(c, w, h, t, s) {
+      let g = c.createRadialGradient(s.cx * w, s.cy * h, 0, s.cx * w, s.cy * h, w * .8);
+      g.addColorStop(0, "#FFFFFF"); g.addColorStop(.35, "#D8F0FA"); g.addColorStop(1, "#5DA6CC");
+      c.fillStyle = g; c.fillRect(0, 0, w, h);
+      s.shards.forEach(sh => {
+        const wave = Math.max(0, Math.sin(t * 1.3 - sh.d * 9 + sh.ph * .2));
+        c.beginPath(); sh.p.forEach(([x, y], i) => i ? c.lineTo(x * w, y * h) : c.moveTo(x * w, y * h)); c.closePath();
+        c.fillStyle = sh.y ? `rgba(236,248,90,${.18 + wave * .4})` : `rgba(255,255,255,${.05 + wave * .28})`; c.fill();
+        c.strokeStyle = `rgba(255,255,255,${.35 + wave * .5})`; c.lineWidth = 1; c.stroke();
+      });
+      if (t - s.bt > .12) {
+        s.bt = t; s.bolt = []; let a = s.r() * Math.PI * 2, x = s.cx, y = s.cy;
+        for (let i = 0; i < 14; i++) { a += (s.r() - .5) * 1.1; x += Math.cos(a) * .04; y += Math.sin(a) * .04; s.bolt.push([x, y]); }
+      }
+      c.save(); c.shadowColor = "#F4FF5A"; c.shadowBlur = 18; c.strokeStyle = "rgba(244,255,90,.9)"; c.lineWidth = 1.6;
+      c.beginPath(); c.moveTo(s.cx * w, s.cy * h); s.bolt.forEach(([x, y]) => c.lineTo(x * w, y * h)); c.stroke(); c.restore();
+      const pr = .12 + .03 * Math.sin(t * 2.2);
+      g = c.createRadialGradient(s.cx * w, s.cy * h, 0, s.cx * w, s.cy * h, w * pr * 2);
+      g.addColorStop(0, "rgba(246,255,140,.85)"); g.addColorStop(1, "rgba(246,255,140,0)"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+    }
+  },
+  gtc: {
+    init(r) { return { src: [[.34, .38], [.66, .62], [.5, .8]], r }; },
+    draw(c, w, h, t, s) {
+      let g = c.createLinearGradient(0, 0, w * .3, h); g.addColorStop(0, "#F6FBF6"); g.addColorStop(1, "#B5D6BE"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      for (let i = 0; i < 4; i++) {
+        const x = ((t * .015 + i * .27) % 1.4 - .2) * w;
+        g = c.createLinearGradient(x - w * .12, 0, x + w * .12, 0); g.addColorStop(0, "rgba(255,255,255,0)"); g.addColorStop(.5, "rgba(255,255,255,.35)"); g.addColorStop(1, "rgba(255,255,255,0)");
+        c.save(); c.translate(w / 2, h / 2); c.rotate(-.5); c.translate(-w / 2, -h / 2); c.fillStyle = g; c.fillRect(x - w * .12, -h, w * .24, h * 3); c.restore();
+      }
+      const cx = w * .56, cy = h * .5, R = w * .3, rot = t * .04;
+      c.save(); c.translate(cx, cy); c.rotate(rot);
+      c.fillStyle = "rgba(255,255,255,.38)"; c.beginPath(); c.arc(0, 0, R, 0, 6.283); c.fill();
+      c.strokeStyle = "rgba(94,143,116,.45)"; c.lineWidth = 2.5; c.stroke();
+      c.strokeStyle = "rgba(94,143,116,.22)"; c.lineWidth = 1; c.beginPath(); c.arc(0, 0, R * .86, 0, 6.283); c.stroke();
+      c.fillStyle = "rgba(210,232,200,.55)"; c.beginPath(); c.arc(0, 0, R * .5, 0, 6.283); c.fill();
+      for (let k = 0; k < 3; k++) { const a = k / 3 * 6.283; for (let j = 0; j < 5; j++) { const rr = R * (.18 + j * .065), aa = a + (j - 2) * .1; c.save(); c.translate(Math.cos(aa) * rr, Math.sin(aa) * rr); c.rotate(aa); c.fillStyle = "rgba(255,255,255,.75)"; c.beginPath(); c.ellipse(0, 0, R * .045, R * .022, 0, 0, 6.283); c.fill(); c.restore(); } }
+      c.restore();
+      s.src.forEach(([sx, sy], i) => {
+        for (let k = 0; k < 4; k++) {
+          const p = ((t * .22 + k / 4 + i * .31) % 1), rr = p * w * .45;
+          c.strokeStyle = `rgba(70,120,90,${(1 - p) * .28})`; c.lineWidth = 1.2; c.beginPath(); c.ellipse(sx * w, sy * h, rr, rr * .92, 0, 0, 6.283); c.stroke();
+        }
+      });
+    }
+  },
+  ginger: {
+    init(r) { return { parts: Array.from({ length: 70 }, () => ({ x: r(), y: r(), v: .02 + r() * .05, s: 1 + r() * 2.5 })) }; },
+    draw(c, w, h, t, s) {
+      const seam = x => .5 + .08 * Math.sin(t * .8) + (x - .5) * -.6;
+      let g = c.createRadialGradient(w * .8, h * .75, 0, w * .8, h * .75, w * .9); g.addColorStop(0, "#F6B35A"); g.addColorStop(.6, "#D86E2A"); g.addColorStop(1, "#7A3514"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      c.save(); c.beginPath(); c.moveTo(0, 0); c.lineTo(w, 0); c.lineTo(w, seam(1) * h - (1 - 0) * 0); for (let i = 20; i >= 0; i--) { const x = i / 20; c.lineTo(x * w, (seam(x) + .02 * Math.sin(x * 12 + t * 3)) * h); } c.closePath(); c.clip();
+      g = c.createLinearGradient(0, 0, w, h * .6); g.addColorStop(0, "#EAFB7A"); g.addColorStop(1, "#8DBB1E"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      c.strokeStyle = "rgba(255,255,255,.28)"; c.lineWidth = 1;
+      for (let x = 0; x < 1; x += .022) { const o = Math.sin(t * 6 + x * 40) * 2; c.beginPath(); c.moveTo(x * w + o, 0); c.lineTo(x * w - o, h); c.stroke(); }
+      c.restore();
+      c.save(); c.shadowColor = "#fff"; c.shadowBlur = 16; c.strokeStyle = "rgba(255,255,255,.9)"; c.lineWidth = 2; c.beginPath();
+      for (let i = 0; i <= 20; i++) { const x = i / 20, y = (seam(x) + .02 * Math.sin(x * 12 + t * 3)) * h; i ? c.lineTo(x * w, y) : c.moveTo(0, y); } c.stroke(); c.restore();
+      s.parts.forEach(p => {
+        p.x += p.v * .016; p.y -= p.v * .01; if (p.x > 1.05 || p.y < -.05) { p.x = -.05; p.y = Math.random() * 1.1; }
+        const above = p.y < seam(p.x);
+        c.fillStyle = above ? "rgba(250,255,210,.85)" : "rgba(255,214,150,.9)"; c.beginPath(); c.arc(p.x * w, p.y * h, p.s * (w / 600), 0, 6.283); c.fill();
+      });
+    }
+  },
+  grapefruit: {
+    init() { return {}; },
+    draw(c, w, h, t) {
+      let g = c.createRadialGradient(w * .5, h * .45, 0, w * .5, h * .5, w * .75); g.addColorStop(0, "#FFF4F0"); g.addColorStop(1, "#F2B7A8"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      const cx = w * .5, cy = h * .5, R = w * .36;
+      c.save(); c.translate(cx, cy); c.rotate(t * .05);
+      for (let i = 0; i < 11; i++) {
+        const a0 = i / 11 * 6.283, a1 = (i + 1) / 11 * 6.283;
+        c.beginPath(); c.moveTo(0, 0); c.arc(0, 0, R, a0 + .03, a1 - .03); c.closePath();
+        g = c.createRadialGradient(0, 0, R * .1, 0, 0, R); g.addColorStop(0, "rgba(255,200,185,.3)"); g.addColorStop(1, "rgba(232,100,80,.42)"); c.fillStyle = g; c.fill();
+        c.strokeStyle = "rgba(255,255,255,.85)"; c.lineWidth = 3; c.stroke();
+      }
+      c.restore();
+      c.save(); c.translate(cx, cy); c.rotate(-t * .08);
+      for (let i = 0; i < 5; i++) { c.save(); c.rotate(i / 5 * 6.283); c.beginPath(); c.ellipse(R * .42, 0, R * .5, R * .22, 0, 0, 6.283); c.fillStyle = "rgba(255,255,255,.16)"; c.fill(); c.strokeStyle = "rgba(190,80,95,.22)"; c.lineWidth = 1; c.stroke(); c.restore(); }
+      c.restore();
+      c.save(); c.translate(cx, cy); c.rotate(t * .2); c.shadowColor = "#8FD1BE"; c.shadowBlur = 24; c.strokeStyle = "rgba(143,209,190,.85)"; c.lineWidth = w * .016; c.lineCap = "round";
+      c.beginPath(); c.arc(0, 0, R * 1.14, 0, 1.9); c.stroke(); c.beginPath(); c.arc(0, 0, R * 1.14, 3.2, 4.1); c.stroke(); c.restore();
+    }
+  },
+  pear: {
+    init(r) { return { pods: Array.from({ length: 16 }, () => ({ x: .15 + r() * .7, y: r(), v: .01 + r() * .02, a: r() * 6, s: .6 + r() * .6 })) }; },
+    draw(c, w, h, t, s) {
+      let g = c.createLinearGradient(0, 0, 0, h); g.addColorStop(0, "#F7F4E6"); g.addColorStop(1, "#D2C99A"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      g = c.createRadialGradient(w * .3, h * .25, 0, w * .3, h * .25, w * .6); g.addColorStop(0, "rgba(255,244,200,.8)"); g.addColorStop(1, "rgba(255,244,200,0)"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      const cx = w * .5, cy = h * .56, br = 1 + .012 * Math.sin(t * .9);
+      for (let k = 14; k >= 1; k--) {
+        const sc = k / 14 * br, R = w * .26 * sc;
+        c.beginPath();
+        for (let a = 0; a <= 6.3; a += .08) {
+          const bulge = 1 - .42 * Math.max(0, -Math.sin(a)) * (1 - Math.abs(Math.cos(a)) * .2);
+          const x = Math.cos(a) * R * bulge, y = Math.sin(a) * R * (Math.sin(a) < 0 ? 1.45 : 1);
+          a ? c.lineTo(cx + x, cy + y) : c.moveTo(cx + x, cy + y);
+        }
+        c.closePath(); c.strokeStyle = `rgba(107,90,62,${.12 + (14 - k) * .012})`; c.lineWidth = 1; c.stroke();
+        if (k === 14) { c.fillStyle = "rgba(214,222,160,.28)"; c.fill(); }
+      }
+      c.strokeStyle = "rgba(107,90,62,.5)"; c.lineWidth = 2; c.beginPath(); c.moveTo(cx, cy - w * .26 * 1.45); c.quadraticCurveTo(cx + w * .02, cy - w * .44, cx + w * .06, cy - w * .47); c.stroke();
+      s.pods.forEach(p => {
+        p.y -= p.v * .016; if (p.y < -.05) p.y = 1.05;
+        const x = (p.x + Math.sin(t * .6 + p.a) * .015) * w, y = p.y * h;
+        c.save(); c.translate(x, y); c.rotate(p.a + t * .2);
+        c.fillStyle = "rgba(128,146,84,.55)"; c.beginPath(); c.ellipse(0, 0, w * .018 * p.s, w * .009 * p.s, 0, 0, 6.283); c.fill();
+        c.strokeStyle = "rgba(90,100,60,.4)"; c.beginPath(); c.moveTo(-w * .016 * p.s, 0); c.lineTo(w * .016 * p.s, 0); c.stroke(); c.restore();
+      });
+    }
+  },
+  chamomile: {
+    init(r) { return { dust: Array.from({ length: 90 }, () => ({ x: r(), y: r(), v: .003 + r() * .01, s: .5 + r() * 1.6, p: r() * 6 })) }; },
+    draw(c, w, h, t, s) {
+      let g = c.createRadialGradient(w * .5, h * .4, 0, w * .5, h * .45, w * .8); g.addColorStop(0, "#3E4476"); g.addColorStop(.5, "#1A2044"); g.addColorStop(1, "#0B0F25"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      const br = .5 + .5 * Math.sin(t * .6);
+      const mr = w * (.11 + br * .012);
+      g = c.createRadialGradient(w * .5, h * .4, 0, w * .5, h * .4, mr * 4.5); g.addColorStop(0, "rgba(241,227,184,.55)"); g.addColorStop(.3, "rgba(241,227,184,.14)"); g.addColorStop(1, "rgba(241,227,184,0)"); c.fillStyle = g; c.fillRect(0, 0, w, h);
+      g = c.createRadialGradient(w * .47, h * .37, 0, w * .5, h * .4, mr); g.addColorStop(0, "#FFF8E6"); g.addColorStop(1, "#EAD7A4"); c.fillStyle = g; c.beginPath(); c.arc(w * .5, h * .4, mr, 0, 6.283); c.fill();
+      for (let k = 1; k <= 3; k++) { c.strokeStyle = `rgba(241,227,184,${.1 / k})`; c.lineWidth = 1; c.beginPath(); c.arc(w * .5, h * .4, mr * (1.6 + k * .7 + br * .1), 0, 6.283); c.stroke(); }
+      g = c.createLinearGradient(0, h * .68, 0, h); g.addColorStop(0, "rgba(185,183,224,0)"); g.addColorStop(1, "rgba(185,183,224,.22)"); c.fillStyle = g; c.fillRect(0, h * .6, w, h * .4);
+      s.dust.forEach(d => { d.y -= d.v * .016; if (d.y < 0) d.y = 1; const a = .25 + .35 * Math.sin(t + d.p); c.fillStyle = `rgba(245,232,196,${a})`; c.beginPath(); c.arc((d.x + Math.sin(t * .2 + d.p) * .01) * w, d.y * h, d.s * (w / 700), 0, 6.283); c.fill(); });
+    }
+  }
+};
+(() => {
+  const lenses = $$("canvas[data-art]").map((cv, i) => {
+    const art = ART[cv.dataset.art], st = art.init(rng(101 + i * 17));
+    const ctx = cv.getContext("2d"); const L = { cv, ctx, art, st, w: 0, h: 0 };
+    const sz = () => { const r = cv.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 1.75); L.w = r.width; L.h = r.height; cv.width = Math.max(1, r.width * d); cv.height = Math.max(1, r.height * d); ctx.setTransform(d, 0, 0, d, 0, 0); };
+    sz(); addEventListener("resize", sz); visIO.observe(cv); return L;
+  });
+  let t0 = performance.now();
+  const loop = now => {
+    const t = (now - t0) / 1000 * (REDUCED ? .05 : 1) + 8;
+    lenses.forEach(L => { if ((visible.has(L.cv) || !L.drawn) && L.w) { L.art.draw(L.ctx, L.w, L.h, t, L.st); L.drawn = true; } });
+    requestAnimationFrame(loop);
+  };
+  requestAnimationFrame(loop);
+  // static thumbnails for the "six enter" row
+  $$("canvas[data-mini]").forEach((cv, i) => { const a = ART[cv.dataset.mini]; a.draw(cv.getContext("2d"), cv.width, cv.height, 11 + i, a.init(rng(900 + i))); });
+})();
+
+/* ------------------------------------------------------------------ tasting */
+(() => {
+  const samplesEl = $("#samples"), dimsEl = $("#dims"), word = $("#oneWord"), rows = $("#boardRows");
+  const avg = id => { const s = S.scores[id] || {}; const v = DIMS.map(d => s[d[0]]).filter(Boolean); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0; };
+  const renderSamples = () => {
+    samplesEl.innerHTML = SAMPLES.map(c => { const n = Object.keys(S.scores[c.id] || {}).length;
+      return `<button type="button" role="tab" class="sample${S.cur === c.id ? " on" : ""}" data-id="${c.id}" aria-selected="${S.cur === c.id}"><span class="code">${c.code}</span><span class="sn">${S.reveal ? c.name : (c.id === "control" ? "Control" : "Sample")}</span><span class="done">${n ? n + "/7 scored" : "&nbsp;"}</span></button>`; }).join("");
+    $("#revealBtn").textContent = S.reveal ? "Hide names" : "Reveal names";
+  };
+  const renderDims = () => {
+    const s = S.scores[S.cur] || {};
+    dimsEl.innerHTML = DIMS.map(([k, l, q]) => `<div class="dim"><label>${l}<small>${q}</small></label><div class="dots" role="group" aria-label="${l}">${[1, 2, 3, 4, 5].map(v => `<button type="button" data-k="${k}" data-v="${v}" class="${s[k] === v ? "on" : ""}" aria-pressed="${s[k] === v}">${v}</button>`).join("")}</div></div>`).join("");
+    word.value = S.words[S.cur] || "";
+  };
+  const renderBoard = () => {
+    const list = SAMPLES.map(c => ({ c, a: avg(c.id) })).sort((x, y) => y.a - x.a);
+    rows.innerHTML = list.map(({ c, a }) => `<div class="bar-row${a ? "" : " empty"}"><span>${S.reveal ? c.name : c.code + (c.id === "control" ? " · Control" : "")}</span><div class="track"><div class="fill" style="width:${a / 5 * 100}%;background:${c.acc}"></div></div><span class="v">${a ? a.toFixed(1) : "–"}</span></div>`).join("");
+  };
+  const all = () => { renderSamples(); renderDims(); renderBoard(); };
+  samplesEl.addEventListener("click", e => { const b = e.target.closest(".sample"); if (!b) return; S.cur = b.dataset.id; save(); renderSamples(); renderDims(); });
+  dimsEl.addEventListener("click", e => { const b = e.target.closest("button[data-k]"); if (!b) return; const s = S.scores[S.cur] = S.scores[S.cur] || {}; const v = +b.dataset.v; if (s[b.dataset.k] === v) delete s[b.dataset.k]; else s[b.dataset.k] = v; save(); renderDims(); renderSamples(); renderBoard(); window.dispatchEvent(new Event("tb:scores")); });
+  word.addEventListener("input", () => { S.words[S.cur] = word.value; save(); });
+  $("#revealBtn").addEventListener("click", () => { S.reveal = !S.reveal; save(); renderSamples(); renderBoard(); });
+  $("#copyScores").addEventListener("click", () => {
+    const txt = ["TheraBreath Flavor Playbook · tasting scores · Nov 9, 2026", "", ...SAMPLES.map(c => { const s = S.scores[c.id] || {}; return `${c.code} ${c.name}: avg ${avg(c.id) ? avg(c.id).toFixed(1) : "–"} | ` + DIMS.map(d => `${d[1]} ${s[d[0]] || "–"}`).join(", ") + (S.words[c.id] ? ` | “${S.words[c.id]}”` : ""); })].join("\n");
+    copy(txt, "Scores copied");
+  });
+  let armed = 0;
+  $("#resetScores").addEventListener("click", e => {
+    if (Date.now() - armed > 3000) { armed = Date.now(); e.currentTarget.textContent = "Tap again to clear"; setTimeout(() => e.currentTarget && (e.currentTarget.textContent = "Clear"), 3000); return; }
+    S.scores = {}; S.words = {}; save(); all(); e.currentTarget.textContent = "Clear"; toast("Scores cleared"); window.dispatchEvent(new Event("tb:scores"));
+  });
+  all();
+  // guided rinse
+  const tls = $$(".tl"), head = $("#tlHead"), clock = $("#clock"), cue = $("#rinseCue"), btn = $("#rinseBtn");
+  const CUES = ["Opening. First impression: say one word out loud.", "Development. Keep rinsing. Is it changing? Cooler? Brighter?", "Spit. Finish: what is left behind?", "Repeat. Would you want this tomorrow morning? Score it now."];
+  let timer = null, start = 0;
+  const stop = () => { clearInterval(timer); timer = null; btn.textContent = "Start guided rinse"; };
+  btn.addEventListener("click", () => {
+    if (timer) { stop(); head.classList.remove("run"); tls.forEach(t => t.classList.remove("on")); clock.textContent = "0:00"; cue.textContent = "Everyone sips together. We call out each stage."; return; }
+    start = Date.now(); btn.textContent = "Stop"; head.classList.add("run");
+    timer = setInterval(() => {
+      const s = (Date.now() - start) / 1000;
+      const st = s < 5 ? 0 : s < 60 ? 1 : s < 180 ? 2 : 3;
+      const spans = [[0, 5], [5, 60], [60, 180]];
+      const tl = tls[Math.min(st, 3)];
+      const frac = st < 3 ? (s - spans[st][0]) / (spans[st][1] - spans[st][0]) : 0;
+      head.style.left = (tl.offsetLeft + frac * tl.offsetWidth) + "px";
+      tls.forEach((x, i) => x.classList.toggle("on", i <= st));
+      clock.textContent = `${Math.floor(Math.min(s, 180) / 60)}:${String(Math.floor(Math.min(s, 180) % 60)).padStart(2, "0")}`;
+      cue.textContent = CUES[st];
+      if (st === 3) stop();
+    }, 200);
+  });
+  window.__avg = avg;
+})();
+
+/* ------------------------------------------------------------------ decision */
+const renderAssign = (() => {
+  const plat = $("#shortPlat"), leads = $("#shortLeads");
+  const render = () => {
+    const ps = S.platforms.slice(0, 2);
+    plat.innerHTML = [0, 1].map(i => ps[i] ? `<div class="slot"><span class="mono" style="color:var(--fg-soft)">Platform ${i + 1}</span><span class="d d-s">${PLATS[ps[i]]}</span></div>` : `<div class="slot empty"><span class="mono" style="color:var(--fg-soft)">Platform ${i + 1}</span><span class="d d-s">Chosen in the room</span></div>`).join("");
+    const ad = S.advance.slice(0, 3);
+    leads.innerHTML = [0, 1, 2].map(i => {
+      const c = ad[i] && byId(ad[i]); const key = c ? c.id : "slot" + i; const a = S.assign[key] || {};
+      return `<div class="lead-row" style="--c:${c ? c.acc : "transparent"}">
+        <span class="d d-s" style="${c ? "" : "opacity:.4;font-style:italic"}">${c ? `<i></i>${c.name}` : "Lead concept " + (i + 1)}</span>
+        <div class="field"><label for="own-${i}">Owner</label><input id="own-${i}" data-key="${key}" data-f="owner" value="${(a.owner || "").replace(/"/g, "&quot;")}" placeholder="Name"></div>
+        <div class="field"><label for="act-${i}">Next action</label><select id="act-${i}" data-key="${key}" data-f="action">${ACTIONS.map((x, j) => `<option${(a.action || ACTIONS[i === 0 ? 0 : i === 1 ? 1 : 3]) === x ? " selected" : ""}>${x}</option>`).join("")}</select></div>
+        <div class="field"><label for="due-${i}">By</label><input id="due-${i}" type="date" data-key="${key}" data-f="date" value="${a.date || ""}"></div>
+      </div>`;
+    }).join("");
+  };
+  leads.addEventListener("input", e => { const el = e.target; if (!el.dataset.key) return; (S.assign[el.dataset.key] = S.assign[el.dataset.key] || {})[el.dataset.f] = el.value; save(); });
+  leads.addEventListener("change", e => { const el = e.target; if (!el.dataset.key) return; (S.assign[el.dataset.key] = S.assign[el.dataset.key] || {})[el.dataset.f] = el.value; save(); });
+  $("#copyPlan").addEventListener("click", () => {
+    const ps = S.platforms.slice(0, 2).map(p => PLATS[p]); const ad = S.advance.slice(0, 3);
+    const lines = ["TheraBreath Flavor Playbook · short list", "Princeton, NJ · November 9, 2026", "", "Platforms: " + (ps.length ? ps.join(" + ") : "to be chosen"), "", "Lead concepts:"];
+    [0, 1, 2].forEach(i => { const c = ad[i] && byId(ad[i]); const key = c ? c.id : "slot" + i; const a = S.assign[key] || {};
+      lines.push(`${i + 1}. ${c ? c.name : "(open)"} · owner: ${a.owner || "TBD"} · next: ${a.action || ACTIONS[i === 0 ? 0 : i === 1 ? 1 : 3]}${a.date ? " · by " + a.date : ""}`); });
+    lines.push("", "Familiar enough to trust. Different enough to remember.");
+    copy(lines.join("\n"), "Short list copied");
+  });
+  render(); return render;
+})();
+
+(() => {
+  const venn = $("#venn"), checks = $("#checks");
+  const POS = { "": [3, 3], "f": [50, 17], "m": [15, 78], "c": [85, 78], "fm": [34, 47], "fc": [66, 47], "mc": [50, 82], "fmc": [50, 57] };
+  CONCEPTS.forEach(c => { const d = document.createElement("div"); d.className = "vdot"; d.style.setProperty("--c", c.acc); d.innerHTML = `<i></i><span>${c.name}</span>`; c.dot = d; venn.appendChild(d); });
+  const keyOf = id => { const k = S.checks[id] || {}; return (k.fit ? "f" : "") + (k.make ? "m" : "") + (k.choose ? "c" : ""); };
+  const render = () => {
+    const groups = {};
+    CONCEPTS.forEach(c => { const k = keyOf(c.id); (groups[k] = groups[k] || []).push(c); });
+    Object.entries(groups).forEach(([k, list]) => list.forEach((c, i) => {
+      const [x, y] = POS[k]; const off = k === "" ? [0, i * 6.5] : [0, (i - (list.length - 1) / 2) * 7.5];
+      c.dot.classList.toggle("wait", k === "");
+      c.dot.style.left = x + off[0] + "%"; c.dot.style.top = y + off[1] + "%";
+      c.dot.classList.toggle("adv", S.advance.includes(c.id));
+    }));
+    checks.innerHTML = CONCEPTS.map(c => { const k = S.checks[c.id] || {};
+      return `<div class="chk" style="--c:${c.acc}"><span class="nm"><i></i>${c.name}</span>
+      <div class="pills">${[["fit", "Fit"], ["make", "Make"], ["choose", "Choose"]].map(([f, l]) => `<button type="button" class="pill${k[f] ? " on" : ""}" data-id="${c.id}" data-f="${f}" aria-pressed="${!!k[f]}">${l}</button>`).join("")}</div>
+      <button type="button" class="adv-btn${S.advance.includes(c.id) ? " on" : ""}" data-adv="${c.id}" aria-pressed="${S.advance.includes(c.id)}">${S.advance.includes(c.id) ? "Advancing" : "Advance"}</button></div>`; }).join("");
+    $("#advN").textContent = S.advance.length;
+    $("#platPick").innerHTML = Object.entries(PLATS).map(([id, n]) => `<button type="button" class="pill${S.platforms.includes(id) ? " on" : ""}" data-plat="${id}" aria-pressed="${S.platforms.includes(id)}">${n}</button>`).join("");
+    renderAssign();
+  };
+  checks.addEventListener("click", e => {
+    const p = e.target.closest(".pill"); const a = e.target.closest(".adv-btn");
+    if (p) { const k = S.checks[p.dataset.id] = S.checks[p.dataset.id] || {}; k[p.dataset.f] = !k[p.dataset.f]; }
+    if (a) { const id = a.dataset.adv; if (S.advance.includes(id)) S.advance = S.advance.filter(x => x !== id); else if (S.advance.length >= 3) { toast("Three advance. Remove one first."); return; } else S.advance.push(id); }
+    if (p || a) { save(); render(); }
+  });
+  $("#platPick").addEventListener("click", e => { const b = e.target.closest("[data-plat]"); if (!b) return; const id = b.dataset.plat;
+    if (S.platforms.includes(id)) S.platforms = S.platforms.filter(x => x !== id); else if (S.platforms.length >= 2) { toast("Two platforms. Remove one first."); return; } else S.platforms.push(id);
+    save(); render(); });
+  $("#suggestBtn").addEventListener("click", () => {
+    let n = 0;
+    CONCEPTS.forEach(c => { const s = S.scores[c.id]; if (!s) return; const k = S.checks[c.id] = S.checks[c.id] || {};
+      if (s.fit) { k.fit = s.fit >= 4; n++; }
+      const des = ["li", "re", "me"].map(d => s[d]).filter(Boolean); if (des.length) k.choose = des.reduce((a, b) => a + b, 0) / des.length >= 3.5; });
+    save(); render(); toast(n ? "Fit and Choose suggested from tasting" : "No tasting scores yet");
+  });
+  render();
+})();
+
+/* ------------------------------------------------------------------ travel fold */
+$("#foldBtn").addEventListener("click", e => { const k = $("#foldKit"); k.classList.toggle("folded"); e.currentTarget.textContent = k.classList.contains("folded") ? "Open it" : "Fold it"; });
+
+/* ------------------------------------------------------------------ studio notes */
+(() => {
+  const sw = [["Ink", "#0A1A2F"], ["Cool paper", "#F2F7F9"], ["TheraBreath blue", "#1D4E9E"], ["Sky", "#8DB8F0"], ["Overreach", "#E8745E"]];
+  $("#swatches").innerHTML = sw.map(([n, c]) => `<div><i style="background:${c}"></i><span>${n}<br>${c}</span></div>`).join("") +
+    CONCEPTS.map(c => { const W = WORLDS["c-" + c.id].c; return `<div><i style="background:linear-gradient(120deg,${W[0]},${W[1]} 50%,${W[2]})"></i><span>${c.name}<br>world</span></div>`; }).join("");
+  $("#storyboard").innerHTML = STORY.map(([w, t, emo, q], i) => { const W = WORLDS[w].c; return `<div class="frame"><i style="background:radial-gradient(circle at 30% 40%,${W[2]},${W[1]} 45%,${W[0]})"></i><div><b>${String(i + 1).padStart(2, "0")} · ${emo}</b>${t}<em>${q}</em></div></div>`; }).join("");
+  const notes = $("#notes");
+  const open = () => { notes.hidden = false; $("#notesClose").focus(); };
+  const close = () => { notes.hidden = true; $("#notesBtn").focus(); };
+  $("#notesBtn").addEventListener("click", open); $("#notesClose").addEventListener("click", close);
+  window.__notes = { open, close, el: notes };
+})();
+
+/* ------------------------------------------------------------------ presenting: keys + fullscreen */
+const fs = () => { const d = document; if (!d.fullscreenElement) { const p = d.documentElement.requestFullscreen && d.documentElement.requestFullscreen(); p && p.catch && p.catch(() => {}); } else d.exitFullscreen && d.exitFullscreen(); };
+$("#fsBtn").addEventListener("click", fs);
+const stops = () => $$("[data-stop]").map(el => el.getBoundingClientRect().top + scrollY).sort((a, b) => a - b);
+const go = dir => {
+  const ys = stops(), y = scrollY;
+  const target = dir > 0 ? ys.find(v => v > y + 8) : [...ys].reverse().find(v => v < y - 8);
+  if (target !== undefined) scrollTo({ top: target, behavior: REDUCED ? "auto" : "smooth" });
+};
+addEventListener("keydown", e => {
+  const n = window.__notes;
+  if (e.key === "Escape" && !n.el.hidden) { n.close(); return; }
+  if (e.target.closest("input,select,textarea,[role=slider]") || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (!n.el.hidden) return;
+  if (e.key === " " && e.target.closest("button,a")) return;
+  if (["ArrowRight", "ArrowDown", "PageDown", " "].includes(e.key)) { e.preventDefault(); go(1); }
+  else if (["ArrowLeft", "ArrowUp", "PageUp"].includes(e.key)) { e.preventDefault(); go(-1); }
+  else if (e.key === "f" || e.key === "F") fs();
+  else if (e.key === "n" || e.key === "N") n.open();
+});
+
+onScroll();
+})();
+</script>
+</body>
+</html>
